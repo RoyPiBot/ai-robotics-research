@@ -1,0 +1,1068 @@
+# ROS 與機械手臂入門指南
+
+> 撰寫日期：2026-03-31（第四次更新）
+> 對象：完全新手，從零開始
+> 環境：Raspberry Pi 5 (16GB RAM)
+
+---
+
+## 目錄
+
+1. [ROS 是什麼](#1-ros-是什麼)
+2. [機械手臂基本原理](#2-機械手臂基本原理)
+3. [如何在樹莓派上安裝 ROS 2](#3-如何在樹莓派上安裝-ros-2)
+4. [簡單範例程式](#4-簡單範例程式)
+5. [推薦學習路線](#5-推薦學習路線)
+
+---
+
+## 1. ROS 是什麼
+
+### 一句話解釋
+
+ROS（Robot Operating System，機器人作業系統）是一套讓你輕鬆開發機器人的**軟體框架**。雖然名字裡有「作業系統」，但它其實不是 Windows 或 Linux 那種作業系統，而是跑在 Linux **之上**的一組工具和函式庫。
+
+### 用比喻來理解
+
+想像你在蓋一棟房子：
+
+- **沒有 ROS**：你得自己燒磚頭、自己拉電線、自己做水管。每個零件之間要怎麼連接，全都要你從頭設計。
+- **有了 ROS**：就像有了標準規格的建材和水電規範。插座是統一尺寸的，水管接頭是標準的。你只要專心設計房子長什麼樣，不用煩惱底層怎麼接。
+
+再換一個比喻：ROS 就像機器人世界的「手機 App Store」。有人做好了導航的 App、有人做好了影像辨識的 App、有人做好了手臂控制的 App。你要組合出自己的機器人，只要把需要的 App 裝起來，讓它們互相溝通就好。
+
+### ROS 的核心概念
+
+| 概念 | 比喻 | 說明 |
+|------|------|------|
+| **Node（節點）** | 一個工人 | 每個 Node 負責一件事，例如讀取感測器、控制馬達 |
+| **Topic（話題）** | 公佈欄 | Node 之間透過 Topic 傳遞訊息，就像在公佈欄上貼公告 |
+| **Publisher** | 貼公告的人 | 把資料發佈到 Topic 上 |
+| **Subscriber** | 看公告的人 | 從 Topic 讀取資料 |
+| **Service** | 問答服務台 | 一問一答的互動，例如「現在溫度幾度？」→「25 度」 |
+| **Package（套件）** | 一個工具箱 | 把相關的程式碼打包在一起，方便分享和重複使用 |
+
+### 為什麼需要 ROS？
+
+1. **不用重新造輪子** — 全球數萬名開發者貢獻了大量現成的套件
+2. **標準化通訊** — 不管你用什麼感測器、什麼馬達，都用同一套方式溝通
+3. **模擬環境** — 用 Gazebo 模擬器就能在電腦上測試，不怕弄壞真正的機器人
+4. **社群龐大** — 遇到問題很容易找到解答
+
+### ROS 1 vs ROS 2
+
+目前建議直接學 **ROS 2**。ROS 1 已經不再積極開發，而 ROS 2 改善了很多架構問題，包括即時性、安全性和多平台支持。
+
+### ROS 2 版本現況（2026 年 3 月更新）
+
+| 版本 | 代號 | 發布日期 | 支援至 | 狀態 |
+|------|------|----------|--------|------|
+| ROS 2 Jazzy | Jazzy Jalisco | 2024 年 5 月 | 2029 年 5 月 | **LTS 穩定版** |
+| ROS 2 Kilted | Kilted Kaiju | 2025 年 5 月 | 2026 年 11 月 | **目前最新版** |
+| ROS 2 Lyrical | Lyrical Luth | 2026 年 5 月（預計） | 2027 年 11 月（預計） | 開發中 |
+
+**Kilted Kaiju 重要新特性**：
+- **Zenoh 成為 Tier 1 中介層**：首個將 Eclipse Zenoh 列為 Tier 1 的版本，效能大幅提升
+- **Python Events Executor**：從 C++ 移植，效能提升最高 **10 倍**
+- 2026 年 3 月更新：新增 27 個套件、更新 304 個現有套件
+
+**Lyrical Luth 已知新功能**（距離發布約 2 個月）：
+- **外掛系統改進**：支援將參數傳遞至建構子（constructor arguments），外掛不再需要預設建構子
+- **Python API 變更**：將 Python `set` 物件傳入陣列/序列欄位已被棄用，改用 `list`、`tuple` 或 `numpy.ndarray`
+- **Image Transport**：`point_cloud_transport` 支援 lifecycle nodes；新增 NV12 影像格式
+- **Windows 11 支援**：計畫提升 Windows 平台體驗
+- [官方發行頁面](https://docs.ros.org/en/rolling/Releases/Release-Lyrical-Luth.html)
+
+**新手建議**：從 **Jazzy Jalisco（LTS）** 開始學最穩定；想用最新功能可選 **Kilted Kaiju**。Lyrical 預計 5 月發布，屆時可評估是否升級。
+
+---
+
+## 2. 機械手臂基本原理
+
+### 什麼是機械手臂？
+
+機械手臂就是模仿人類手臂動作的機械裝置。想像你的手臂：肩膀可以轉、手肘可以彎、手腕可以扭——機械手臂也是用類似的方式，透過一個個「關節」來完成各種動作。
+
+### 自由度（Degrees of Freedom, DoF）
+
+**自由度**就是機械手臂能獨立運動的方向數量。
+
+用生活例子來理解：
+- **1 個自由度**：像門——只能開和關（繞一個軸轉動）
+- **2 個自由度**：像搖頭娃娃——能上下點頭，也能左右搖頭
+- **3 個自由度**：能在三維空間中移動到任意位置（上下、左右、前後）
+- **6 個自由度**：能移動到任意位置，**還能**用任意角度面對那個位置（完整控制位置 + 方向）
+
+常見配置：
+
+| 自由度 | 能做什麼 | 適合的任務 |
+|--------|----------|------------|
+| 3 DoF | 到達空間中的任意點 | 簡單的取放 |
+| 4 DoF | 到達任意點 + 旋轉末端 | 基本組裝 |
+| 5 DoF | 接近完整的靈活度 | 大部分教育用途 |
+| 6 DoF | 完整的位置和方向控制 | 工業焊接、噴漆 |
+| 7 DoF | 有冗餘，能繞過障礙物 | 醫療、複雜環境 |
+
+**新手建議**：從 3~4 自由度的手臂開始就夠了！不需要一開始就追求 6 軸。
+
+### 關節類型
+
+機械手臂主要有兩種關節：
+
+1. **旋轉關節（Revolute Joint）** — 像門鉸鏈一樣轉動，這是最常見的類型
+2. **滑動關節（Prismatic Joint）** — 像抽屜一樣直線滑動
+
+絕大多數你會接觸到的機械手臂都是用旋轉關節。
+
+### 末端執行器（End Effector）
+
+末端執行器就是機械手臂「手」的部分，裝在最後一節。常見的有：
+
+- **夾爪（Gripper）** — 像筷子夾東西，最常見
+- **吸盤（Suction Cup）** — 用真空吸住物體
+- **工具頭** — 焊接槍、噴漆器等等
+
+### 運動學基礎（別怕，很簡單）
+
+運動學聽起來很嚇人，但概念其實很直覺：
+
+#### 正向運動學（Forward Kinematics）
+
+> 「我知道每個關節轉了多少度，請告訴我手臂末端在哪裡。」
+
+就像你彎曲手臂的每個關節到特定角度，然後看你的手指到了哪個位置。這個計算相對簡單。
+
+#### 逆向運動學（Inverse Kinematics）
+
+> 「我知道我要讓手臂末端到哪個位置，請告訴我每個關節該轉多少度。」
+
+這就像有人指著桌上一個杯子說「去拿那個」，你的大腦自動計算肩膀、手肘、手腕該怎麼動。這個計算比較複雜，但好消息是——**ROS 裡的 MoveIt 套件會幫你算**，你不需要自己推數學公式。
+
+### 機械手臂的座標系
+
+機械手臂通常使用兩種座標：
+
+- **關節空間（Joint Space）** — 用每個關節的角度來描述姿態，例如「關節1轉30度、關節2轉45度...」
+- **笛卡爾空間（Cartesian Space）** — 用 x, y, z 位置和方向來描述末端位置，例如「移到 (0.3, 0.1, 0.5) 公尺的位置」
+
+---
+
+## 3. 如何在樹莓派上安裝 ROS 2
+
+### 前置知識
+
+- 你需要會基本的 Linux 終端機操作（cd、ls、sudo 這些指令）
+- 如果完全不熟 Linux，建議先花一兩天學基本指令
+
+### 方案選擇
+
+在 Raspberry Pi 5 上有兩種方式安裝 ROS 2：
+
+| 方案 | 優點 | 缺點 |
+|------|------|------|
+| **方案 A：安裝 Ubuntu 24.04 + ROS 2 Jazzy** | 官方支援、最穩定 | 需要重灌系統為 Ubuntu |
+| **方案 B：用 Docker 在 Pi OS 上跑 ROS 2** | 不用換系統 | 設定稍複雜、佔約 3.3GB |
+
+**建議新手用方案 A**，比較不會遇到奇怪的問題。
+
+---
+
+### 方案 A：Ubuntu 24.04 + ROS 2 Jazzy（推薦）
+
+#### 步驟 1：準備 SD 卡
+
+1. 在你的電腦上下載並安裝 [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
+2. 插入 SD 卡（建議至少 **32GB**，64GB 更好）
+3. 在 Imager 中選擇：
+   - 裝置：Raspberry Pi 5
+   - 作業系統：**Ubuntu Desktop 24.04 LTS (64-bit)**
+   - 儲存裝置：你的 SD 卡
+4. 點擊「設定」，可以預先設定 Wi-Fi、使用者名稱等
+5. 寫入 SD 卡
+
+#### 步驟 2：開機與初始設定
+
+```bash
+# 插入 SD 卡到 Pi 5，接上螢幕鍵盤，開機
+# 完成 Ubuntu 初始設定精靈
+# 開啟終端機，先更新系統
+sudo apt update && sudo apt upgrade -y
+```
+
+#### 步驟 3：設定語言環境
+
+```bash
+sudo apt install locales -y
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+```
+
+#### 步驟 4：加入 ROS 2 套件庫
+
+```bash
+# 安裝必要工具
+sudo apt install software-properties-common curl -y
+
+# 加入 ROS 2 的 GPG 金鑰
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
+  -o /usr/share/keyrings/ros-archive-keyring.gpg
+
+# 加入 ROS 2 套件庫
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] \
+  http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | \
+  sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+
+# 更新套件列表
+sudo apt update
+```
+
+#### 步驟 5：安裝 ROS 2 Jazzy
+
+```bash
+# 安裝桌面版（含 RViz 視覺化工具和範例程式）
+sudo apt install ros-jazzy-desktop -y
+
+# 安裝開發工具
+sudo apt install python3-colcon-common-extensions -y
+sudo apt install ros-dev-tools -y
+```
+
+> 這一步會花比較久的時間（可能 15~30 分鐘），喝杯咖啡等一下。
+
+#### 步驟 6：設定環境變數
+
+```bash
+# 加入 bashrc，這樣每次開終端機都會自動載入 ROS 2
+echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+
+#### 步驟 7：驗證安裝
+
+開兩個終端機視窗：
+
+```bash
+# 終端機 1：啟動一個 talker（發送者）
+ros2 run demo_nodes_cpp talker
+```
+
+```bash
+# 終端機 2：啟動一個 listener（接收者）
+ros2 run demo_nodes_cpp listener
+```
+
+如果你看到 listener 不斷收到 talker 發出的 "Hello World" 訊息，恭喜你，ROS 2 安裝成功了！
+
+---
+
+### 方案 B：Docker 方式（保留 Pi OS）
+
+如果你不想重灌系統，可以用 Docker：
+
+```bash
+# 安裝 Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker $USER
+# 登出再登入讓群組生效
+
+# 拉取 ROS 2 Jazzy 映像
+docker pull ros:jazzy
+
+# 啟動 ROS 2 容器
+docker run -it --rm \
+  --name ros2_jazzy \
+  --network host \
+  ros:jazzy \
+  bash
+
+# 進入容器後就能使用 ROS 2 了
+source /opt/ros/jazzy/setup.bash
+ros2 run demo_nodes_cpp talker
+```
+
+> 注意：Docker 方式在使用 GUI 工具（如 RViz）時需要額外設定 X11 轉發，比較麻煩。
+
+---
+
+## 4. 簡單範例程式
+
+### 範例一：用 ROS 2 建立一個簡單的關節控制節點
+
+這個範例展示如何用 Python 寫一個 ROS 2 節點，模擬控制一個 3 自由度機械手臂的各個關節。
+
+#### 建立工作空間
+
+```bash
+# 建立 ROS 2 工作空間
+mkdir -p ~/ros2_ws/src
+cd ~/ros2_ws/src
+
+# 建立套件
+ros2 pkg create --build-type ament_python simple_arm_controller \
+  --dependencies rclpy std_msgs sensor_msgs
+```
+
+#### 寫控制程式
+
+建立檔案 `~/ros2_ws/src/simple_arm_controller/simple_arm_controller/arm_controller.py`：
+
+```python
+#!/usr/bin/env python3
+"""
+簡單的 3 DoF 機械手臂關節控制範例
+這個程式會讓三個關節依序來回擺動
+"""
+
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import JointState
+import math
+
+
+class SimpleArmController(Node):
+    """一個簡單的機械手臂控制節點"""
+
+    def __init__(self):
+        super().__init__('simple_arm_controller')
+
+        # 建立一個 Publisher，用來發布關節狀態
+        self.joint_pub = self.create_publisher(
+            JointState,       # 訊息類型
+            'joint_states',   # Topic 名稱
+            10                # 佇列大小
+        )
+
+        # 定義三個關節的名稱
+        self.joint_names = ['base_joint', 'shoulder_joint', 'elbow_joint']
+
+        # 目前的時間（用來產生擺動動作）
+        self.time = 0.0
+
+        # 每 0.05 秒（20Hz）發布一次關節狀態
+        self.timer = self.create_timer(0.05, self.publish_joint_states)
+
+        self.get_logger().info('機械手臂控制器已啟動！')
+        self.get_logger().info(f'控制關節：{self.joint_names}')
+
+    def publish_joint_states(self):
+        """計算並發布關節角度"""
+
+        # 建立 JointState 訊息
+        msg = JointState()
+        msg.header.stamp = self.get_clock().now().to_msg()
+        msg.name = self.joint_names
+
+        # 用 sin 函數讓關節來回擺動（不同頻率和幅度）
+        msg.position = [
+            math.sin(self.time * 0.5) * 1.57,    # 底座：慢速大幅擺動 (-90° ~ +90°)
+            math.sin(self.time * 0.8) * 0.78,     # 肩膀：中速中幅擺動 (-45° ~ +45°)
+            math.sin(self.time * 1.2) * 1.05,     # 手肘：快速擺動 (-60° ~ +60°)
+        ]
+
+        # 發布訊息
+        self.joint_pub.publish(msg)
+
+        # 更新時間
+        self.time += 0.05
+
+        # 每 2 秒顯示一次狀態
+        if int(self.time * 20) % 40 == 0:
+            angles_deg = [f'{math.degrees(p):.1f}°' for p in msg.position]
+            self.get_logger().info(f'關節角度：{angles_deg}')
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    controller = SimpleArmController()
+
+    try:
+        rclpy.spin(controller)  # 持續運行
+    except KeyboardInterrupt:
+        controller.get_logger().info('收到停止訊號，關閉控制器...')
+    finally:
+        controller.destroy_node()
+        rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
+```
+
+#### 設定套件進入點
+
+修改 `~/ros2_ws/src/simple_arm_controller/setup.py`，在 `entry_points` 中加入：
+
+```python
+entry_points={
+    'console_scripts': [
+        'arm_controller = simple_arm_controller.arm_controller:main',
+    ],
+},
+```
+
+#### 編譯並執行
+
+```bash
+# 回到工作空間根目錄
+cd ~/ros2_ws
+
+# 編譯
+colcon build --packages-select simple_arm_controller
+
+# 載入環境
+source install/setup.bash
+
+# 執行
+ros2 run simple_arm_controller arm_controller
+```
+
+你會看到關節角度不斷變化的訊息。在另一個終端機，你可以用以下指令觀察 Topic 上的訊息：
+
+```bash
+source ~/ros2_ws/install/setup.bash
+ros2 topic echo /joint_states
+```
+
+---
+
+### 範例二：不用 ROS，直接用 Python 控制伺服馬達（更簡單的起步）
+
+如果你手邊有伺服馬達和 PCA9685 驅動板，可以先從這個更基礎的範例開始：
+
+```python
+#!/usr/bin/env python3
+"""
+直接用 Python 控制伺服馬達的簡單範例
+需要硬體：PCA9685 驅動板 + SG90 伺服馬達
+安裝依賴：pip install adafruit-circuitpython-pca9685 adafruit-circuitpython-servokit
+"""
+
+from adafruit_servokit import ServoKit
+import time
+
+# 初始化 PCA9685（16 通道伺服馬達控制板）
+kit = ServoKit(channels=16)
+
+# 定義三個關節對應的通道
+BASE = 0       # 底座旋轉
+SHOULDER = 1   # 肩膀上下
+ELBOW = 2      # 手肘彎曲
+
+def move_to(base_angle, shoulder_angle, elbow_angle, speed=0.02):
+    """
+    讓機械手臂移動到指定角度
+    speed: 每步之間的延遲（秒），越小越快
+    """
+    print(f"移動到：底座={base_angle}°, 肩膀={shoulder_angle}°, 手肘={elbow_angle}°")
+    kit.servo[BASE].angle = base_angle
+    kit.servo[SHOULDER].angle = shoulder_angle
+    kit.servo[ELBOW].angle = elbow_angle
+    time.sleep(0.5)  # 等待到位
+
+def demo():
+    """展示一組動作"""
+    print("--- 機械手臂 Demo 開始 ---")
+
+    # 回到初始位置
+    move_to(90, 90, 90)
+    time.sleep(1)
+
+    # 動作 1：往左看
+    move_to(30, 90, 90)
+
+    # 動作 2：往右看
+    move_to(150, 90, 90)
+
+    # 動作 3：抬高
+    move_to(90, 45, 45)
+
+    # 動作 4：放低
+    move_to(90, 135, 135)
+
+    # 動作 5：回到初始位置
+    move_to(90, 90, 90)
+
+    print("--- Demo 結束 ---")
+
+if __name__ == '__main__':
+    try:
+        demo()
+    except KeyboardInterrupt:
+        print("\n手動停止")
+    finally:
+        # 放鬆所有伺服馬達
+        for i in range(3):
+            kit.servo[i].angle = None
+        print("伺服馬達已放鬆")
+```
+
+---
+
+## 5. 推薦學習路線
+
+### 階段一：打基礎（第 1~2 週）
+
+**目標：搞懂基本概念**
+
+- [ ] 學會基本 Linux 終端機操作
+- [ ] 理解 ROS 2 的核心概念（Node、Topic、Publisher、Subscriber）
+- [ ] 在 Pi 上安裝好 ROS 2，跑通 talker/listener 範例
+- [ ] 學會用 `ros2 topic list`、`ros2 topic echo` 等指令觀察系統
+
+**推薦資源：**
+- [ROS 2 官方文件 — 初學者教學](https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools.html)
+- [ROS 2 官方文件 — Raspberry Pi 安裝指南](https://docs.ros.org/en/jazzy/How-To-Guides/Installing-on-Raspberry-Pi.html)
+- 書籍：《Robot Operating System (ROS) for Absolute Beginners》by Lentin Joseph
+
+### 階段二：學 Python + ROS 2 程式設計（第 3~4 週）
+
+**目標：能自己寫 ROS 2 節點**
+
+- [ ] 寫自己的 Publisher 和 Subscriber
+- [ ] 學會建立自己的 ROS 2 Package
+- [ ] 了解 launch 檔案如何使用
+- [ ] 試著用 RViz 視覺化工具看資料
+
+**推薦資源：**
+- [ROS 2 官方 Python 教學](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries.html)
+- [The Robotics Back-End](https://roboticsbackend.com/) — 有很多 ROS 2 Python 教學
+
+### 階段三：認識機械手臂模擬（第 5~6 週）
+
+**目標：在模擬環境中操控機械手臂**
+
+- [ ] 安裝 Gazebo 模擬器
+- [ ] 了解 URDF（機器人描述格式）
+- [ ] 在 Gazebo 中載入一個簡單的機械手臂模型
+- [ ] 學會用 MoveIt 2 做運動規劃
+
+**推薦資源：**
+- [MoveIt 2 官方教學](https://moveit.picknik.ai/main/doc/tutorials/tutorials.html)
+- [Gazebo 模擬器](https://gazebosim.org/)
+- Medium 教學：[Simulate 6 DoF Robot Arm in ROS2, Gazebo And MoveIt2](https://kolkemboi.medium.com/simulate-6-dof-robot-arm-in-ros2-gazebo-and-moveit2-a171c7e9b0ad)
+
+### 階段四：動手做硬體（第 7~8 週）
+
+**目標：連接真實的伺服馬達**
+
+- [ ] 買一個入門級機械手臂套件（或 3D 列印零件 + 伺服馬達）
+- [ ] 學會透過 PCA9685 或其他方式控制伺服馬達
+- [ ] 把 ROS 2 節點和實體馬達連接起來
+- [ ] 實現簡單的取放動作
+
+**推薦入門套件：**
+- **Yahboom DOFBOT** — 專為 Raspberry Pi 設計的 AI 機械手臂，自帶 ROS 支援和完整教程
+- **Arctos Robot Arm** — 開源設計，可 3D 列印，有完整文件
+- **自製方案** — SG90 伺服馬達 x 3~4 個 + PCA9685 驅動板 + 3D 列印或壓克力零件
+
+### 階段五：進階提升（第 9 週以後）
+
+**目標：做出有用的應用**
+
+- [ ] 加入攝影機，做簡單的視覺辨識
+- [ ] 學習 MoveIt Servo 做即時遙控
+- [ ] 嘗試路徑規劃和避障
+- [ ] 挑戰更複雜的任務（分類、堆疊等）
+
+**推薦資源：**
+- [MoveIt Servo 即時控制教學](https://moveit.picknik.ai/main/doc/examples/realtime_servo/realtime_servo_tutorial.html)
+- [GitHub — RoboticArm（Pi 5 + ROS 2 專案）](https://github.com/pepperberry/RoboticArm)
+- [OpenCV 官方教學](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html)
+
+---
+
+## 附錄：常用 ROS 2 指令速查表
+
+```bash
+# 查看所有正在運行的節點
+ros2 node list
+
+# 查看所有 Topic
+ros2 topic list
+
+# 即時顯示某個 Topic 的內容
+ros2 topic echo /joint_states
+
+# 查看某個 Topic 的訊息類型
+ros2 topic info /joint_states
+
+# 查看所有可用的套件
+ros2 pkg list
+
+# 執行某個套件裡的程式
+ros2 run <套件名稱> <程式名稱>
+
+# 用 launch 檔啟動多個節點
+ros2 launch <套件名稱> <launch檔名>
+```
+
+---
+
+## 附錄：參考資源連結
+
+### 官方文件
+- [ROS 2 官方文件](https://docs.ros.org/)
+- [MoveIt 2 官方文件](https://moveit.picknik.ai/)
+- [Gazebo 模擬器](https://gazebosim.org/)
+
+### 教學與課程
+- [Class Central — ROS 線上課程列表](https://www.classcentral.com/subject/ros)
+- [The Autonomy Report — ROS 入門指南](https://www.theautonomyreport.com/p/ros-guide)
+- [Serial Hobbyism — 如何在 Pi 5 安裝 ROS 2](https://serialhobbyism.com/how-to-install-ros2-on-a-raspberry-pi-5)
+
+### 硬體專案
+- [Yahboom DOFBOT](https://category.yahboom.net/products/dofbot-pi)
+- [Arctos Robotics](https://arctosrobotics.com/)
+- [Interbotix 機械手臂文件](https://docs.trossenrobotics.com/interbotix_xsarms_docs/)
+
+### 社群與活動
+- [ROS Discourse 論壇](https://discourse.openrobotics.org/)
+- [ROS Answers](https://answers.ros.org/)
+- [r/ROS — Reddit](https://www.reddit.com/r/ROS/)
+- [ros2edu.github.io](https://ros2edu.github.io/) — ROS 2 教學方法論社群
+- **iRoboCity2030 Summer School** — 西班牙馬德里，2026/06/22-26（ROS 2 + AI + 田野機器人）
+- **ROSCon Global 2026** — 加拿大多倫多 Sheraton Centre，2026/09/22-24（已開放投稿，全程實體）([官網](https://roscon.ros.org/2026/))
+- **ROSCon Espana 2026** — 西班牙瓦倫西亞，2026/10/27-28
+
+### 前沿技術
+- [ROS-Z — Rust + Zenoh 原生 ROS 2 實作](https://fosdem.org/2026/schedule/event/BQ8DVM-ros-z/)（FOSDEM 2026 發表）
+- [Meta-ROS — 下一代中介層，吞吐量比標準 ROS 2 高 30%](https://arxiv.org/html/2601.21011v1)
+- [ROS 2 Kilted Kaiju Release Notes](https://docs.ros.org/en/rolling/Releases/Release-Kilted-Kaiju.html)
+- [ros-realtime Pi 映像](https://github.com/ros-realtime/ros-realtime-rpi4-image) — Pi 3/4/5 預裝 ROS 2 + Linux RT
+
+---
+
+> 最後一個小建議：不要想著一次學完所有東西。先讓東西動起來，享受那個「哇，它真的動了！」的感覺，再慢慢深入理解原理。玩機器人最重要的就是好玩！祝你學習愉快！ 🤖
+
+---
+
+## 附錄 B：2026 年 3 月最新 ROS 2 + 機械手臂動態
+
+### 開源 3D 列印機械手臂推薦（2026 年更新）
+
+| 專案名稱 | 特色 | ROS 2 支援 | 成本 | 連結 |
+|----------|------|------------|------|------|
+| **G-ARM** | 學術驗證、FreeCAD 設計、8 個月課堂實測 | ROS 2 Humble + MoveIt 2 | 低 | [Springer](https://link.springer.com/article/10.1007/s11042-025-20748-8) |
+| **Arduinobot** | 配套 Udemy 課程、入門最簡單 | ROS 2 | 低 | [GitHub](https://github.com/AntoBrandi/Arduino-Bot) |
+| **Thor** | DIY 6 軸、Docker 支援 | ROS 2 + MoveIt 2 | 中 | [GitHub](https://github.com/AngelLM/Thor) |
+| **HELENE** | 6 自由度、閉迴路位置控制、模組化設計 | ROS | 中 | [MDPI](https://www.mdpi.com/2813-6640/3/3/7) |
+| **reBot-DevArm** | Seeed 出品、Python SDK + Isaac Sim + LeRobot | ROS 2 Humble（2026/04） | 中 | [GitHub](https://github.com/Seeed-Projects/reBot-DevArm) |
+
+### G-ARM：最適合教學的開源手臂
+
+G-ARM 是 2025-2026 年最值得關注的教育用機械手臂專案：
+
+- **經過學術驗證**：在西班牙 Rey Juan Carlos 大學的工業機器人和軟體架構課程中使用了 8 個月
+- **使用 FreeCAD 設計**：完全開源的 CAD 工具，不需要商業軟體
+- **ROS 2 Humble + MoveIt 2 整合**：可以直接做運動規劃和控制
+- **低成本零件**：3D 列印本體 + 廉價伺服馬達
+- **論文發表**：Springer Nature Multimedia Tools and Applications
+
+### Pi 5 複合機器人趨勢
+
+2026 年的趨勢是把手臂、移動底盤、相機整合成「複合機器人」：
+
+- **Hiwonder ArmPi Ultra**：專為 Pi 設計的 AI 機械手臂，搭配 3D 深度相機，支援 ROS 2
+  - 分散式架構：Pi 5 負責 3D 深度感知、AI 推理、全域路徑規劃
+  - 6DOF 手臂可在 3D 空間執行追蹤、抓取、分類、搬運
+  - [Hackster.io 介紹](https://www.hackster.io/HiwonderRobot/why-armpi-ultra-is-the-ultimate-ros-2-entry-point-for-makers-4c4757)
+
+- **Pi 5 Composite Bot**：結合移動底盤 + 機械手臂 + 視覺系統
+  - [Hackster.io 專案](https://www.hackster.io/HiwonderRobot/pi-5-powerhouse-building-the-ultimate-ros-2-composite-bot-fd2bc1)
+
+### MoveIt Pro 9.0（2026 年 2 月）— 商業版重大突破
+
+> 詳見附錄 C 的「MoveIt 動態」章節取得最新資訊。
+
+- **效能飛躍**：IK 求解器快 35 倍、運動規劃快 4 倍、笛卡爾規劃器快 30 倍
+- **LLM 生成行為樹**：內建文字提示介面，用大型語言模型即時生成完整 Behavior Tree
+- **自動化工具路徑**：掃描點雲後自動產生工具路徑，適用於噴塗、打磨等
+- **NVIDIA Jetson Orin 支援**：官方建置與測試
+- [MoveIt Pro 9.0 Release Notes](https://docs.picknik.ai/release-notes/2026/02/12/9.0.0/)
+
+### 2026 年 3 月 Hackaday 六軸 3D 列印手臂
+
+最新開源專案，2026/03/24 發表：
+- **六自由度**，全 3D 列印零件
+- **行星齒輪傳動 + 磁性編碼器**
+- **STM32 控制器 + CAN bus** 連接 Raspberry Pi
+- 計畫使用 ROS 2 軟體堆疊
+- [專案頁面](https://hackaday.com/2026/03/24/3d-printed-robot-arm-built-for-learning-purposes/)
+
+### Embodied AI：機器人 + LLM 的融合
+
+2026 年最大的趨勢是將大型語言模型整合到機器人中：
+
+- 機器人不再只依賴預寫腳本，而是透過多模態 LLM 進行**推理、任務分解、語義理解**
+- ROS 2 生態系統的成熟讓「全功能複合機器人」從高端奢侈品變成了可及的現實
+- Pi 5 + Ubuntu 22.04 + ROS 2 Humble 是 2026 年最常見的配置
+- NEMA17 步進馬達可搭配 ros2_control 用於手臂關節
+
+### 2026 年硬體選擇建議更新
+
+| 方案 | 處理器 | 適合場景 | 參考價格 |
+|------|--------|----------|----------|
+| Pi 5 + ROS 2 Humble | ARM Cortex-A76 | 教育、輕量應用 | ~$80 USD |
+| Jetson Nano + ROS 2 | Maxwell GPU | 需要 AI 推理加速 | ~$150 USD |
+| Pi 5 + USB 加速器 | ARM + Coral TPU | 邊緣 AI + 機器人 | ~$130 USD |
+
+**資料來源**：
+- [Pi 5 Composite Bot — Hackster.io](https://www.hackster.io/HiwonderRobot/pi-5-powerhouse-building-the-ultimate-ros-2-composite-bot-fd2bc1)
+- [ROS2 Robotics 2026: Jetson vs Pi 5 — Hackster.io](https://www.hackster.io/HiwonderRobot/ros2-robotics-2026-jetson-nano-or-raspberry-pi-5-kit-ba5299)
+- [G-ARM Paper — Springer](https://link.springer.com/article/10.1007/s11042-025-20748-8)
+- [3D Printed Robot Arm — Hackaday](https://hackaday.com/2026/03/24/3d-printed-robot-arm-built-for-learning-purposes/)
+- [ROS 2 Evolved: AI Super Brain — Hackster.io](https://www.hackster.io/HiwonderRobot/ros-2-evolved-unleashing-the-ai-super-brain-89df67)
+- [Pi 5 Affordable ROS 2 Robot — LetsDataScience](https://www.letsdatascience.com/news/raspberry-pi-5-powers-affordable-ros-2-robot-832fd4c7)
+
+---
+
+## 附錄 C：2026 年 3 月 31 日最新更新（第四次更新）
+
+### ROS 2 發行版動態
+
+#### ROS 2 Kilted Kaiju 持續更新
+- 2026 年 3 月 12 日最新同步：**新增 27 個套件，更新 304 個套件**
+- **首個支援 Eclipse Zenoh 作為 Tier 1 中介軟體的版本**，大幅改善通訊效能
+- Python events executor 效能提升高達 **10 倍**（從 C++ 移植）
+- 支援同時播放多個 ROSBag
+- [同步公告](https://discourse.openrobotics.org/t/new-packages-for-kilted-kaiju-2026-03-12/53174)
+
+#### ROS 2 Lyrical Luth（預計 2026 年 5 月）
+- 第十二個 ROS 2 發行版，目前開發中，預計 2026 年 5 月正式發布
+- **外掛系統改進**：支援將參數傳遞至建構子，外掛不再需要預設建構子
+- **Python API 變更**：`set` 物件傳入陣列/序列欄位已棄用，改用 `list`/`tuple`/`numpy.ndarray`
+- **Image Transport**：`point_cloud_transport` 支援 lifecycle nodes；新增 NV12 影像格式
+- **Windows 11**：計畫改善 Windows 平台的 ROS 使用體驗
+- **ros2_control 更新**：realtime_tools 模組已有 Kilted → Lyrical 的 [Release Notes](https://control.ros.org/rolling/doc/realtime_tools/doc/release_notes.html)
+- [官方發行頁面](https://docs.ros.org/en/rolling/Releases/Release-Lyrical-Luth.html)
+
+### 新增平價 ROS 2 機械手臂套件
+
+| 名稱 | 價格 | 特點 | 連結 |
+|------|------|------|------|
+| **Koch v1.1** | ~$250-430 | 3D 列印 + Dynamixel，HuggingFace LeRobot 整合 | [Robotis](https://robotis.us/koch-v1-1-low-cost-robot-arm-leader/) |
+| **SO-ARM101** | ~$110-150 | 6 軸開源，原生 LeRobot + ROS 2 + MoveIt | [GitHub](https://github.com/TheRobotStudio/SO-ARM100) |
+| **Elephant myArm 300 Pi** | ~$195 起 | 樹莓派底座，Python/ROS/MoveIt | [官網](https://www.elephantrobotics.com/) |
+| **OpenArm (Enactic)** | ~$6,500 | 7-DOF 仿人手臂，★2,017，MuJoCo + Isaac Sim | [GitHub](https://github.com/enactic/openarm) |
+
+### 新增開源 3D 列印機械手臂（2026 新專案）
+
+#### ElRobot — 7+1 DOF 全 3D 列印手臂（2026 年 2 月發布）
+
+由 **Norma-Core** 團隊開源，專為 Physical AI 研究和模仿學習設計：
+
+- **7+1 自由度**：提供人類手臂等級的靈活度，適合收集高品質軌跡資料
+- **完全 3D 列印**：提供 STEP/STL 檔案和 Bambu Lab 專案，附逐步組裝說明
+- **URDF 模擬檔案**：可在模擬器中測試，不需要先買零件
+- **瀏覽器即時試玩**：2026 年 3 月新增線上 playground，可直接在瀏覽器中操控手臂模型
+- **成本極低**：只需幾捲耗材和伺服馬達的費用
+- [GitHub](https://github.com/norma-core/norma-core/tree/main/hardware/elrobot)
+- [RoboHorizon 報導](https://robohorizon.com/en-us/news/2026/02/norma-core-open-sources-elrobot-a-fully-3d-printed-7-dof-arm/)
+
+#### PAROL6 — 工業等級桌上型手臂
+
+由 Source Robotics 開發，設計理念模仿工業機器人：
+
+- **6 自由度**，400mm 工作範圍，1kg 負載，0.08mm 重複定位精度
+- **STM32F446 控制器** + 步進馬達 + 精密行星齒輪箱
+- 完整 ROS 2 整合：搭配 **Gazebo + MoveIt 2 + ros2_control + MoveIt Servo**
+- 附帶自訂 Qt GUI 控制介面
+- 開源機構、電路、軟體
+- [GitHub](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm) | [ROS 2 整合](https://github.com/CroboticSolutions/parol6_ros2)
+
+### ROS 2 + AI/LLM 整合框架（2026 年最熱門趨勢）
+
+這是 2026 年機器人領域最重要的發展方向——用自然語言控制機器人：
+
+1. **NASA ROSA** (★1,455) — NASA JPL 開源的 ROS AI 代理，用自然語言查詢、診斷、操作 ROS 1/2 系統，基於 LangChain
+   - [GitHub](https://github.com/nasa-jpl/rosa)
+
+2. **ROS-LLM** — 已發表於 **Nature Machine Intelligence (2026)**，讓非專業人員用自然語言控制機器人、從示範中學習新技能
+   - [Nature 論文](https://www.nature.com/articles/s42256-026-01186-z) | [GitHub](https://github.com/Auromix/ROS-LLM)
+
+3. **RAI (RobotecAI)** (★479) — 廠商無關的 Agentic Physical AI 框架
+   - [GitHub](https://github.com/RobotecAI/rai)
+
+4. **Vector OS Nano** (★77) — $450 硬體成本，說「pick up the battery」就能執行
+   - [GitHub](https://github.com/VectorRobotics/vector-os-nano)
+
+5. **LLMControlsArm** (★47) — 用 DeepSeek 控制 Panda 機器人手臂
+   - [GitHub](https://github.com/laoxue888/LLMControlsArm)
+
+### MoveIt 動態（2026 年 3 月）
+
+#### MoveIt 2 開源版
+- 持續維護，但主要的創新功能集中在商業版 MoveIt Pro
+
+#### MoveIt Pro 9.0（2026 年 2 月）— 商業版重大更新
+- **效能飛躍**：IK 求解器快 35 倍、運動規劃快 4 倍、笛卡爾規劃器快 30 倍
+- **LLM 生成行為樹**：內建文字提示介面，用大型語言模型即時生成完整 Behavior Tree
+- **MoveIt Pro Core**：模組化即時 C++ 函式庫，最小依賴，適用於太空、醫療等高度客製化場景
+- **200+ 機器人技能庫**：AI 模型、訓練工具、控制演算法、操作能力
+- **注意**：MoveIt Pro 已完全移除對 MoveIt 2 開源版的依賴，改用自家更快、更安全的實作
+- **NVIDIA Jetson Orin 支援**：官方建置與測試
+- **KUKA Gold Support**：支援 KUKA KR Cybertech 系列 + 第七軸線性軌道
+- [Release Notes](https://docs.picknik.ai/release-notes/2026/02/12/9.0.0/) | [March Newsletter](https://picknik.ai/2026/03/12/Newsletter-March.html)
+
+### Gazebo Kura（確認 2026 年 8 月 31 日發布）
+- 發布日期從原定時程提前至 **2026 年 8 月 31 日**，避開 ROSCon 2026
+- 物理引擎遷移至 **DART 6.16**，改善操控、接觸密集型任務及高速移動機器人的 AI 驗證品質
+- 著重無頭部署（headless deployment）和測試流程改進
+- 改善物理與感測器輸出的可重複性，提升 AI 行為驗證品質
+- [路線圖分析](https://www.3l3c.ai/us/blog/ai-in-robotics-automation/gazebo-ai-simulation-roadmap)
+- [官方公告](https://discourse.openrobotics.org/t/new-release-date-for-gazebo-kura/51429)
+
+### GitHub 上值得關注的新專案
+
+| 專案 | Stars | 說明 |
+|------|-------|------|
+| [enactic/openarm](https://github.com/enactic/openarm) | ★2,017 | 7-DOF 仿人手臂，MuJoCo/Isaac Sim |
+| [norma-core/elrobot](https://github.com/norma-core/norma-core/tree/main/hardware/elrobot) | 新 | 7+1 DOF 全 3D 列印，Physical AI 研究用 |
+| [PCrnjak/PAROL6](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm) | 活躍 | 工業風格 6-DOF，ROS 2 + MoveIt 2 整合 |
+| [Jelatine/mockway_robotics](https://github.com/Jelatine/mockway_robotics) | ★100 | 開源六軸協作機械臂（含機構、電路、軟體） |
+| [msf4-0/so101_ros2](https://github.com/msf4-0/so101_ros2) | 新 | SO101 手臂 ROS 2 + MoveIt 整合 |
+| [ros2-jazzy-6-axis-arm-planning](https://github.com/ShaotianZhou/ros2-jazzy-6-axis-arm-planning) | 新 | ROS 2 Jazzy 6 軸手臂 RRT* 路徑規劃 |
+
+### ROS 2 教育資源（2026 年新增）
+
+#### 暑期學校與活動
+- **iRoboCity2030 Summer School 2026** — 西班牙馬德里，2026/06/22-26，主題：ROS 2、AI 與田野機器人
+  - [活動頁面](https://discourse.openrobotics.org/t/irobocity2030-summer-school-2026-ros-2-ai-and-field-robotics/53487)
+- **JdeRobot GSoC 2026** — Google Summer of Code，8 個專案中 7 個與 ROS 2 相關
+  - [專案列表](https://discourse.openrobotics.org/t/jderobot-google-summer-of-code-2026/53344)
+- **ROSCon Global 2026** — 加拿大多倫多，Sheraton Centre，2026/09/22-24（已開放投稿）
+  - 全程實體活動，不接受遠端報告
+  - [官網](https://roscon.ros.org/2026/) | [Call for Proposals](https://discourse.openrobotics.org/t/call-for-proposals-global-roscon-2026-in-toronto/53171)
+
+#### 線上課程
+- [ROS 2 for Beginners (Jazzy - 2026)](https://www.udemy.com/course/ros2-for-beginners/) — 從零開始學 ROS 2
+- [Robotics and ROS 2: Learn by Doing! Manipulators](https://www.udemy.com/course/robotics-and-ros-2-learn-by-doing-manipulators/) — 專門針對機械手臂
+- [ros2edu.github.io](https://ros2edu.github.io/) — 40+ 位教育者共同整理的 ROS 2 教學平台與方法論
+
+#### 教學用硬體
+- **Rosbot 2** — 專為教育與研究設計的一體式 ROS 2 機器人
+- **Hiwonder ArmPi Ultra** — Pi 5 + STM32 + 3D 深度相機 + AI 語音盒，支援 ROS 2
+  - [官網](https://www.hiwonder.com/products/armpi-ultra)
+
+### 學習建議更新
+
+依 Roy 的預算與目標，建議的入門路徑：
+
+- **零預算**：Gazebo Jetty + ROS 2 Kilted + MoveIt 2 模擬，搭配 [ros2_control 官方 6DOF 教學](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)；也可試試 ElRobot 的[瀏覽器 playground](https://robohorizon.com/en-us/news/2026/03/normacore-now-lets-you-test-its-robot-arm-directly-in-your-browser/)
+- **低預算（$110-430）**：SO-ARM101 或 Koch v1.1 套件，搭配 LeRobot 做模仿學習
+- **中預算 DIY**：3D 列印 ElRobot 或 PAROL6，前者適合 AI 研究，後者更接近工業風格
+- **AI 整合方向**：從 NASA ROSA 或 ROS-LLM 開始，學習用 LLM 控制機器人
+- **進階課程**：[Udemy — Robotics and ROS 2: Manipulators](https://www.udemy.com/course/robotics-and-ros-2-learn-by-doing-manipulators/)
+- **實體活動**：考慮參加 iRoboCity2030 暑期學校（6 月）或 ROSCon Toronto（9 月）
+- **VLA 入門**：安裝 LeRobot + SmolVLA，搭配 [Hugging Face 機器人課程](https://huggingface.co/learn/robotics-course/unit0/1)
+
+---
+
+## 附錄 D：第四次更新 — VLA 模型與 AI 機器人新時代（2026-03-31）
+
+### Vision-Language-Action（VLA）模型：機器人的 AI 大腦
+
+2025-2026 年機器人領域最具革命性的進展，就是 **VLA 模型**的爆發式成長。ICLR 2026 就有 **164 篇 VLA 相關論文**投稿，學術界和產業界都在全力推進。
+
+#### 一句話解釋
+
+> 給機器人一張照片和一句話（例如「把紅色杯子放到盤子上」），VLA 模型就能直接算出手臂該怎麼動。不需要寫控制程式，不需要手動設定路徑規劃。
+
+#### VLA 模型如何運作
+
+傳統做法：寫程式定義每一步動作 → 複雜、不靈活
+VLA 做法：**圖像輸入 + 語言指令 → 模型直接輸出低階馬達指令**
+
+這就像教小孩做事——你示範幾次，他就學會了，而不是給他一本 500 頁的操作手冊。
+
+#### 2025-2026 年重要 VLA 模型一覽
+
+| 模型 | 開發者 | 參數量 | 特點 | 開源 |
+|------|--------|--------|------|------|
+| **π0 (pi-zero)** | Physical Intelligence | 大型 | 7 種機器人平台、68 種任務，可摺衣服、收餐桌 | 是 ([GitHub](https://github.com/Physical-Intelligence/openpi)) |
+| **Gemini Robotics** | Google DeepMind | 大型 | 基於 Gemini 2.0，有 On-Device 輕量版可本地運行 | 否 |
+| **Helix** | Figure AI | 大型 | 首個能高頻控制人形機器人全上半身（手臂、手指、軀幹、頭部）的 VLA | 否 |
+| **GR00T N1** | NVIDIA | 大型 | 雙系統架構，混合機器人軌跡、人類示範影片和合成資料訓練 | 部分 |
+| **SmolVLA** | Hugging Face | **4.5 億** | 可在消費級 GPU 甚至 MacBook 上運行，完全開源 | **是** |
+
+#### SmolVLA：新手最友善的 VLA 模型
+
+[SmolVLA](https://huggingface.co/blog/smolvla) 是 Hugging Face 推出的輕量級 VLA，特別值得 Roy 關注：
+
+- **只有 4.5 億參數**，單顆消費級 GPU 就能訓練和推理
+- **完全開源**，訓練資料來自 LeRobot 社群精選的 481 個資料集
+- 已在 **SO-100 和 SO-101 機械手臂**上實測取放、堆疊、分類任務
+- 可搭配 LeRobot 框架直接使用：`pip install lerobot`
+- [論文](https://arxiv.org/abs/2506.01844) | [模型頁](https://huggingface.co/lerobot/smolvla_base) | [訓練教學](https://docs.phospho.ai/learn/train-smolvla)
+
+#### π0：目前最強的通用機器人基礎模型
+
+Physical Intelligence 開源的 [π0](https://www.pi.website/blog/pi0)：
+
+- 在 **7 種不同機器人平台、68 種任務**上訓練
+- 能執行摺衣服、收拾餐桌、裝箱、裝袋等複雜靈巧操作
+- 使用 **flow matching** 生成 50Hz 的平滑動作軌跡
+- 只需 **1-20 小時的示範資料**就能微調到新任務
+- π0.5 版本已整合進 LeRobot v0.4.0
+- [開源倉庫](https://github.com/Physical-Intelligence/openpi)
+
+#### 對新手的意義
+
+VLA 模型讓「教機器人做事」變得前所未有地簡單——你不需要寫複雜的運動學程式，只要：
+1. **收集示範資料**：用 LeRobot 工具，拿一隻「領導者手臂」示範動作
+2. **訓練模型**：用 SmolVLA 或 π0 在你的資料上微調
+3. **部署到手臂**：模型直接輸出馬達指令
+
+這是從「寫程式控制」到「示範教學」的典範轉移，大幅降低了機器人開發的門檻。
+
+### LeRobot 生態系統重大更新
+
+[LeRobot](https://github.com/huggingface/lerobot) 是 Hugging Face 的開源機器人學習框架，2026 年發展極為迅速。
+
+#### LeRobot v0.5.0（2026 年 3 月 9 日發布）
+
+- 論文已被 **ICLR 2026** 接收，學術認可度極高
+- **端到端學習**已成為人形機器人的主流範式
+- [GitHub](https://github.com/huggingface/lerobot) | [文件](https://huggingface.co/docs/lerobot/index)
+
+#### LeRobot v0.4.0 主要更新（2025 年 10 月）
+
+- **Datasets v3.0**：全新可擴展資料集格式
+- **新 VLA 模型**：內建 PI0.5 和 GR00T N1.5 支援
+- **外掛系統**：更容易整合新硬體（不同的機械手臂、感測器）
+- **模擬環境**：新增 LIBERO 和 Meta-World 支援
+- **多 GPU 訓練**：簡化設定流程
+
+#### NVIDIA 合作（2026 年 1 月）
+
+NVIDIA 將 Isaac 和 GR00T 技術整合進 LeRobot：
+- GR00T N 模型可直接在 LeRobot 中微調和評估
+- Isaac Lab-Arena 整合，提供更強大的模擬環境
+- [NVIDIA 公告](https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots)
+
+#### 自駕資料集擴展（2025 年 3 月）
+
+Hugging Face 與 Yaak 合作，為 LeRobot 新增超過 **1 PB** 的自駕訓練資料（Learning to Drive, L2D），包含德國駕訓班的攝影機、GPS 和車輛動態資料。
+
+### Hugging Face 免費機器人學習課程
+
+全新推出的 [Robotics Course](https://huggingface.co/learn/robotics-course/unit0/1) 是 2026 年最好的免費入門資源：
+
+- **完全免費**、自主進度、無需認證
+- **課程涵蓋**：
+  - 古典機器人學基礎
+  - 強化學習（Reinforcement Learning）
+  - 模仿學習（Imitation Learning）
+  - VLA 基礎模型
+- 每單元約 **30-45 分鐘**
+- 可搭配模擬環境練習，概念直接對應真實硬體
+- 配合 LeRobot 框架實作
+
+### SO-ARM100/101 深入介紹
+
+[SO-ARM100](https://github.com/TheRobotStudio/SO-ARM100) 系列已成為開源機器人學習的首選入門硬體，是 Hugging Face 官方推薦搭配 LeRobot 使用的機械手臂。
+
+#### 規格比較
+
+| 型號 | 伺服扭力 | 電壓 | 自由度 | 適合對象 |
+|------|----------|------|--------|----------|
+| **SO-ARM100** | 19.5 kg·cm | 7.4V | 6 DOF + 夾爪 | 入門學習、輕量任務 |
+| **SO-ARM101** | 30 kg·cm | 12V | 6 DOF + 夾爪 | 進階應用、較重物件 |
+
+#### 硬體特色
+
+- 使用 **STS3215 匯流排伺服馬達**，內建 12-bit 磁性編碼器，UART 通訊
+- 光固化 3D 列印零件（手臂段、底座、夾爪、馬達座）
+- 完整套件包含：馬達、驅動板、電源適配器、3D 列印件
+- 價格約 **$110-150 USD**
+
+#### 購買管道
+
+- [Seeed Studio](https://www.seeedstudio.com/SO-ARM100-Low-Cost-AI-Arm-Kit.html)（國際/中國/日本/Aliexpress）
+- [WowRobo](https://shop.wowrobo.com/)（國際/中國）
+- [Waveshare](https://www.waveshare.com/so-arm100-3dp-parts-kit.htm)
+- PartaBot（美國）
+
+#### 快速上手流程
+
+```bash
+# 1. 安裝 LeRobot
+pip install lerobot
+
+# 2. 依照官方指南校準手臂
+# https://huggingface.co/docs/lerobot/en/so100
+
+# 3. 收集示範資料（需要兩隻手臂：一隻當遙控器，一隻當執行者）
+# 4. 訓練 SmolVLA 模型
+# 5. 部署並測試
+```
+
+#### 搭配 NVIDIA Jetson
+
+SO-ARM100 可搭配 Seeed Studio reComputer J4012（Jetson Orin NX）做邊緣 AI 推理，實現即時處理和模型訓練。
+
+### MoveIt 2 最新進展補充
+
+#### NVBlox vs. Octomap 比較（2026 年 3 月）
+
+PickNik 發表了 [深度比較文章](https://picknik.ai/2026/03/04/Octomap-vs-NVBlox-Smarter-3D-Planning-in-the-Real-World.html)，比較兩種 3D 環境重建方案：
+- **Octomap**：CPU 版本，適合資源受限的平台（如 Pi 5）
+- **NVBlox**：GPU 加速版本，在有 NVIDIA GPU 的系統上表現更佳
+
+#### 工業機器人驅動更新
+
+- **FANUC** 和 **Kawasaki** 的 ROS 2 驅動已更新，支援高頻寬串流控制
+- 主要工業機械手臂 OEM 廠商持續增加 ros_control 支援
+
+#### 多鏈導納控制
+
+Joint Trajectory Admittance Controller (JTAC) 現支援多末端和多運動鏈的力控制，適用於雙臂機器人和多手指抓取。
+
+### 2026 年 Q2 值得關注的事件
+
+| 日期 | 事件 | 說明 |
+|------|------|------|
+| 2026 年 5 月 | **ROS 2 Lyrical Luth 發布** | 第十二個 ROS 2 發行版 |
+| 2026 年 6 月 | **iRoboCity2030 暑期學校** | 馬德里，ROS 2 + AI + 田野機器人 |
+| 2026 年 8 月 31 日 | **Gazebo Kura 發布** | 新物理引擎 DART 6.16 |
+| 2026 年 9 月 22-24 日 | **ROSCon Global 2026** | 多倫多，CFP 已開放 |
+
+### 第四次更新的學習路線建議
+
+根據 VLA 模型的快速發展，新增一條 **AI 優先路線**：
+
+#### 路線 D：AI 優先 + 實體機器人（2026 年最新推薦）
+
+| 步驟 | 行動 | 時間 | 成本 |
+|------|------|------|------|
+| 1 | 完成 [Hugging Face 機器人課程](https://huggingface.co/learn/robotics-course/unit0/1) | 1-2 週 | 免費 |
+| 2 | 購入 SO-ARM100 套件（兩隻：leader + follower） | — | ~$220-300 |
+| 3 | 安裝 LeRobot，跑通 SO-100 快速入門 | 1 天 | 免費 |
+| 4 | 收集 50-100 個示範 episode | 2-3 天 | 免費 |
+| 5 | 訓練 SmolVLA 模型（需 GPU，可用 Colab） | 數小時 | 免費/低 |
+| 6 | 部署到手臂，測試取放任務 | 1 天 | 免費 |
+| 7 | 選修：學 ROS 2 基礎，理解底層通訊 | 2-4 週 | 免費 |
+
+**這條路線的優勢**：最快看到成果（手臂真的能自己做事），同時學到最前沿的 AI 機器人技術。
+
+### 本次更新資料來源
+
+- [VLA 模型 — Wikipedia](https://en.wikipedia.org/wiki/Vision-language-action_model)
+- [ICLR 2026 VLA 研究現況](https://mbreuss.github.io/blog_post_iclr_26_vla.html)
+- [VLA Survey](https://vla-survey.github.io/) — 100+ VLA 架構統一分類
+- [Nature Machine Intelligence — VLA 綜述](https://www.nature.com/articles/s42256-025-01168-7)
+- [SmolVLA 論文 (arXiv)](https://arxiv.org/abs/2506.01844)
+- [SmolVLA — Hugging Face Blog](https://huggingface.co/blog/smolvla)
+- [π0 官方部落格](https://www.pi.website/blog/pi0)
+- [LeRobot v0.4.0 Release](https://huggingface.co/blog/lerobot-release-v040)
+- [LeRobot GitHub](https://github.com/huggingface/lerobot)
+- [NVIDIA Physical AI 公告](https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots)
+- [Hugging Face Robotics Course](https://huggingface.co/learn/robotics-course/unit0/1)
+- [SO-ARM100 GitHub](https://github.com/TheRobotStudio/SO-ARM100)
+- [SO-100 快速入門](https://huggingface.co/docs/lerobot/en/so100)
+- [MoveIt Pro Release Notes](https://docs.picknik.ai/release-notes/)
+- [NVBlox vs Octomap — PickNik](https://picknik.ai/2026/03/04/Octomap-vs-NVBlox-Smarter-3D-Planning-in-the-Real-World.html)
+- [ROSCon 2026 官網](https://roscon.ros.org/2026/)
+- [Gazebo Kura 發布日期](https://discourse.openrobotics.org/t/new-release-date-for-gazebo-kura/51429)
