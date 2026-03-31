@@ -1,6 +1,6 @@
 # 2026 年最新 AI 研究動態
 
-> 更新日期：2026-03-31（第四次更新）
+> 更新日期：2026-03-31（第五次更新）
 > 整理者：Roy 的 AI 研究助理
 
 ---
@@ -22,8 +22,8 @@
 ### 3. Gemini 3.1 Pro — 13 項基準測試領先
 - **機構**：Google DeepMind
 - **發布時間**：2026 年 2 月
-- **摘要**：在 16 項主要基準測試中的 13 項取得領先，包括 GPQA Diamond（專家級科學知識）94.3% 和 ARC-AGI-2 77.1% 的驚人成績。價格與 Gemini 3 Pro 持平。
-- **重要性**：以相同價格提供大幅性能提升，在科學知識和通用推理方面樹立新標竿。
+- **摘要**：在 16 項主要基準測試中的 13 項取得領先，包括 GPQA Diamond（專家級科學知識）94.3% 和 ARC-AGI-2 77.1% 的驚人成績。擁有業界最大的 **250 萬 token 上下文窗口**，能一次處理整套技術文檔或大型程式碼庫。價格與 Gemini 3 Pro 持平。
+- **重要性**：以相同價格提供大幅性能提升，250 萬 token 上下文窗口為所有模型之最，在科學知識和通用推理方面樹立新標竿。
 
 ### 4. 推理模型在數學競賽中達到金牌水準
 - **機構**：OpenAI、Google DeepMind、DeepSeek
@@ -386,6 +386,68 @@
 
 ---
 
+## 十、2026 年 3 月底第五次補充 — Agent 標準化、機器人商業化、基礎設施
+
+### 56. NVIDIA Nemotron 3 Super — Agent 專用高效能開放模型
+- **機構**：NVIDIA
+- **發布時間**：2026 年 3 月 11 日（GTC 2026）
+- **摘要**：Nemotron 3 Super 是 120B 總參數的混合 MoE 模型，每次推論僅啟用 **12B 參數**，在 Blackwell GPU 上以 NVFP4 精度運行時，吞吐量較上一代提升 **5 倍**。專為複雜多代理應用設計，涵蓋軟體開發、網路安全分類與 Agent 工作流。同時發布 **NVIDIA Agent Toolkit**（含 NemoClaw 安全執行環境、AI-Q 研究代理藍圖）和 **Nemotron Coalition**，超過 150 個創始合作夥伴（含 Mistral AI、LangChain、Perplexity、Cursor 等）承諾基於 Nemotron 生態建設。
+- **重要性**：NVIDIA 從「賣 GPU」擴展到「定義 Agent 基礎設施」，Nemotron Coalition 是繼 CUDA 開發者計畫後最具野心的生態系佈局。
+- **來源**：[NVIDIA Blog](https://blogs.nvidia.com/blog/nemotron-3-super-agentic-ai/) | [Futurum Group](https://futurumgroup.com/insights/at-gtc-2026-nvidia-stakes-its-claim-on-autonomous-agent-infrastructure/) | [NVIDIA Investor](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Launches-Nemotron-Coalition-of-Leading-Global-AI-Labs-to-Advance-Open-Frontier-Models/default.aspx)
+
+### 57. NIST AI Agent 標準倡議 — 自主 AI 治理框架啟動
+- **機構**：NIST CAISI（美國國家標準暨技術研究院）
+- **發布時間**：2026 年 2 月 17 日
+- **摘要**：NIST 下屬 AI 標準與創新中心（CAISI）正式啟動 **AI Agent 標準倡議**，確保自主 AI 代理能被安全、可信賴地廣泛採用。三大支柱：（1）推動業界主導的 Agent 標準開發與美國在國際標準機構中的領導地位；（2）促進社群主導的開源協議（如 MCP、A2A）開發與維護；（3）推進 AI Agent 安全與身份認證研究。與 Linux 基金會合作，確保評估框架與實際協議演進同步。
+- **重要性**：這是全球首個由國家級標準機構發起的 AI Agent 專門標準計畫，將深遠影響企業 Agent 的合規要求與採用信心。
+- **來源**：[NIST 公告](https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure) | [Meta Intelligence 分析](https://www.meta-intelligence.tech/en/insight-nist-agent-standards)
+
+### 58. Agentic AI Foundation — Agent 開源標準化組織成立
+- **機構**：Linux Foundation
+- **成立時間**：2025 年 12 月，2026 年 Q1 活躍運作
+- **摘要**：Linux 基金會下成立 **Agentic AI Foundation**，由三大核心貢獻錨定：Anthropic 的 **Model Context Protocol（MCP）**、OpenAI 的 **AGENTS.md** 規範、Block 的 **Goose** 框架。目標是建立 Agent 互操作性的開放標準，避免各廠商各行其是導致的碎片化。
+- **重要性**：三大競爭對手（Anthropic、OpenAI、Block）共同貢獻開源標準，標誌著 Agent 生態從「各自為政」走向「標準協作」的成熟階段。
+
+### 59. Google DeepMind Gemini Robotics — 基礎模型進入實體機器人
+- **機構**：Google DeepMind、Boston Dynamics、Agile Robots
+- **發布時間**：2026 年 3 月 24 日
+- **摘要**：Google DeepMind 發布 **Gemini Robotics** 基礎模型系列，並同時宣布兩大合作：（1）與 **Boston Dynamics** 合作，將 Gemini Robotics 整合到 Atlas 人形機器人中，使其能在非結構化環境中推理複雜指令並自主行動；（2）與 **Agile Robots** 合作，將基礎模型與精密機器人硬體結合。這標誌著 Google 在物理 AI 領域的全面佈局。
+- **重要性**：大型語言模型廠商直接進入機器人控制領域，Gemini Robotics + Atlas 的組合可能成為人形機器人智慧化的標竿。
+- **來源**：[CNBC](https://www.cnbc.com/2026/03/24/google-agile-robots-ai-robotics.html) | [TechCrunch](https://techcrunch.com/2026/03/24/agile-robots-becomes-the-latest-robotics-company-to-partner-with-google-deepmind/) | [NVIDIA Newsroom](https://nvidianews.nvidia.com/news/nvidia-and-global-robotics-leaders-take-physical-ai-to-the-real-world)
+
+### 60. Tesla Optimus 量產計畫 — 年產百萬台目標
+- **機構**：Tesla
+- **發布時間**：2026 年 3 月
+- **摘要**：Tesla 確認將 Fremont 工廠的 Model S/X 產線轉型為 **Optimus 人形機器人製造線**。2026 年資本支出計畫超過 **200 億美元**，其中顯著比例投入 Optimus 量產，**目標年產 100 萬台**。這是迄今最具野心的人形機器人量產計畫。
+- **重要性**：若 Tesla 成功實現百萬台年產目標，將從根本上改變人形機器人的成本結構和產業規模。
+- **來源**：[Fortune](https://fortune.com/2026/03/25/ai-robots-cost-13000-by-2035-what-that-means-for-cfos/)
+
+### 61. Figure AI 進入白宮 — 人形機器人的政治里程碑
+- **機構**：Figure AI
+- **時間**：2026 年 3 月 25 日
+- **摘要**：Figure AI 的 **Figure 3** 人形機器人成為首位「造訪」白宮的人形機器人，在第一夫人 Melania Trump 主持的「培育未來全球聯盟峰會」上亮相。Figure AI 已在 BMW 工廠部署機器人執行製造任務（如處理鈑金零件），Toyota Motor Manufacturing Canada 也簽約部署 7 台以上 Agility Robotics 的 Digit 人形機器人。
+- **重要性**：人形機器人從工廠車間走進政治殿堂，反映其已從科技圈的新奇事物轉變為國家級戰略議題。
+- **來源**：[CNBC](https://www.cnbc.com/2026/03/26/figure-ai-the-robotics-company-hosted-by-melania-trump.html)
+
+### 62. 人形機器人成本預測 — 2035 年降至 $13,000
+- **機構**：Bank of America Institute
+- **發布時間**：2026 年 3 月
+- **摘要**：美國銀行研究機構預測，人形機器人的材料成本將從 2025 年的約 **$35,000** 降至 2035 年的 **$13,000-$17,000**，降幅超過 50%。這一成本曲線類似智慧型手機和電動車的早期發展軌跡。
+- **重要性**：當機器人成本降至一輛經濟型汽車的價格，大規模消費級部署將成為可能，深刻改變勞動力市場結構。
+- **來源**：[Fortune CFO 分析](https://fortune.com/2026/03/25/ai-robots-cost-13000-by-2035-what-that-means-for-cfos/)
+
+---
+
+## 十一、更新後趨勢觀察：第五次更新的三個新訊號
+
+1. **Agent 標準化進入國家級議程**：NIST AI Agent 標準倡議（#57）和 Agentic AI Foundation（#58）的成立，加上 NVIDIA Nemotron Coalition 的 150+ 合作夥伴（#56），標誌著 Agent 生態從「技術創新」轉向「標準治理」。MCP、A2A、AGENTS.md 等協議正成為 Agent 基礎設施的 HTTP/TCP 等價物。
+
+2. **基礎模型廠商直接進入機器人**：Google DeepMind 的 Gemini Robotics 與 Boston Dynamics/Agile Robots 的合作（#59），是 LLM 廠商首次將基礎模型直接部署到頂級人形機器人硬體。這與 VLA 模型趨勢（#7）形成呼應——物理 AI 的「GPT 時刻」可能正在到來。
+
+3. **人形機器人從原型走向量產經濟學**：Tesla 年產百萬台的目標（#60）、Bank of America 的成本預測（#62）、Figure AI 的白宮亮相（#61），共同描繪出一條清晰的路線圖：從每台數萬美元的工業部署，到數年後每台一萬多美元的消費普及。
+
+---
+
 ## Sources
 
 ### LLM 與模型發布
@@ -475,3 +537,16 @@
 - [LLM API Pricing 2026 — TLDL](https://www.tldl.io/resources/llm-api-pricing-2026)
 - [Best AI Models 2026 — Zapier](https://zapier.com/blog/best-llm/)
 - [International AI Safety Report 2026 — arXiv](https://arxiv.org/abs/2602.21012)
+
+### 第五次更新來源（2026-03-31）
+- [Nemotron 3 Super — NVIDIA Blog](https://blogs.nvidia.com/blog/nemotron-3-super-agentic-ai/)
+- [GTC 2026 Agent Infrastructure — Futurum Group](https://futurumgroup.com/insights/at-gtc-2026-nvidia-stakes-its-claim-on-autonomous-agent-infrastructure/)
+- [Nemotron Coalition — NVIDIA Investor](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Launches-Nemotron-Coalition-of-Leading-Global-AI-Labs-to-Advance-Open-Frontier-Models/default.aspx)
+- [NIST AI Agent Standards Initiative — NIST](https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure)
+- [NIST Agent Standards 分析 — Meta Intelligence](https://www.meta-intelligence.tech/en/insight-nist-agent-standards)
+- [Google DeepMind x Agile Robots — CNBC](https://www.cnbc.com/2026/03/24/google-agile-robots-ai-robotics.html)
+- [Agile Robots x DeepMind — TechCrunch](https://techcrunch.com/2026/03/24/agile-robots-becomes-the-latest-robotics-company-to-partner-with-google-deepmind/)
+- [Figure AI 白宮亮相 — CNBC](https://www.cnbc.com/2026/03/26/figure-ai-the-robotics-company-hosted-by-melania-trump.html)
+- [人形機器人成本預測 — Fortune](https://fortune.com/2026/03/25/ai-robots-cost-13000-by-2035-what-that-means-for-cfos/)
+- [GTC 2026 NemoClaw — NVIDIA Blog](https://blogs.nvidia.com/blog/rtx-ai-garage-gtc-2026-nemoclaw/)
+- [GTC 2026 概覽 — Bain & Company](https://www.bain.com/insights/nvidia-gtc-2026-ai-becomes-the-operating-layer/)
