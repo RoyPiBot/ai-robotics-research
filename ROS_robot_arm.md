@@ -540,6 +540,7 @@ if __name__ == '__main__':
 
 **推薦資源：**
 - [MoveIt 2 官方教學](https://moveit.picknik.ai/main/doc/tutorials/tutorials.html)
+- [MoveIt 2 規劃管道改進指南](https://moveit.ai/planning%20pipeline/moveit2/motion%20planning/2024/03/25/MoveIt-Planning-Pipeline-Refactoring.html) — 2026 年支援多規劃器串聯與並行規劃
 - [Gazebo 模擬器](https://gazebosim.org/)
 - Medium 教學：[Simulate 6 DoF Robot Arm in ROS2, Gazebo And MoveIt2](https://kolkemboi.medium.com/simulate-6-dof-robot-arm-in-ros2-gazebo-and-moveit2-a171c7e9b0ad)
 
@@ -627,6 +628,7 @@ ros2 launch <套件名稱> <launch檔名>
 - **ROSCon Espana 2026** — 西班牙瓦倫西亞，2026/10/27-28
 
 ### 前沿技術
+- [ROS 2 Control 框架](https://control.ros.org/rolling/doc/resources/resources.html) — 硬體無關的模組化控制系統，2026 支援 Franka FR3、Kinova、Universal Robots 等工業機械手臂
 - [ROS-Z — Rust + Zenoh 原生 ROS 2 實作](https://fosdem.org/2026/schedule/event/BQ8DVM-ros-z/)（FOSDEM 2026 發表）
 - [Meta-ROS — 下一代中介層，吞吐量比標準 ROS 2 高 30%](https://arxiv.org/html/2601.21011v1)
 - [ROS 2 Kilted Kaiju Release Notes](https://docs.ros.org/en/rolling/Releases/Release-Kilted-Kaiju.html)
