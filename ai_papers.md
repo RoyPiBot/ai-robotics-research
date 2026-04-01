@@ -557,3 +557,9 @@
 - [Mythos 功能與架構 — PYMNTS](https://www.pymnts.com/artificial-intelligence-2/2026/anthropics-unreleased-claude-mythos-might-be-the-most-advanced-ai-model-yet/)
 - [Capybara/Mythos 能力對標 — CSO Online](https://www.csoonline.com/article/4151801/leak-reveals-anthropics-mythos-a-powerful-ai-model-aimed-at-cybersecurity-use-cases.html)
 - [Anthropic 資料洩露事件 — Fortune](https://fortune.com/2026/03/31/anthropic-source-code-claude-code-data-leak-second-security-lapse-days-after-accidentally-revealing-mythos/)
+
+### 第七次更新來源（2026-04-01）
+- [GPT-5.4 具 1M Token 上下文窗口 — OpenAI](https://openai.com/index/introducing-gpt-5-4/)
+- [Mercury 擴散語言模型 ICLR 2026 — arXiv](https://arxiv.org/list/cs.AI/current)
+- [Gemini 3.1 Pro 基準測試領先 — Google DeepMind](https://deepmind.google/research/publications/)
+- [LLM Agent 通訊安全調查 — ICLR 2026](https://arxiv.org/list/cs.AI/recent)
