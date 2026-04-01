@@ -550,3 +550,10 @@
 - [人形機器人成本預測 — Fortune](https://fortune.com/2026/03/25/ai-robots-cost-13000-by-2035-what-that-means-for-cfos/)
 - [GTC 2026 NemoClaw — NVIDIA Blog](https://blogs.nvidia.com/blog/rtx-ai-garage-gtc-2026-nemoclaw/)
 - [GTC 2026 概覽 — Bain & Company](https://www.bain.com/insights/nvidia-gtc-2026-ai-becomes-the-operating-layer/)
+
+### 第六次更新來源（2026-04-01）
+- [Anthropic Claude Mythos 洩露 — Fortune](https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/)
+- [Mythos 網路安全風險分析 — Axios](https://www.axios.com/2026/03/29/claude-mythos-anthropic-cyberattack-ai-agents)
+- [Mythos 功能與架構 — PYMNTS](https://www.pymnts.com/artificial-intelligence-2/2026/anthropics-unreleased-claude-mythos-might-be-the-most-advanced-ai-model-yet/)
+- [Capybara/Mythos 能力對標 — CSO Online](https://www.csoonline.com/article/4151801/leak-reveals-anthropics-mythos-a-powerful-ai-model-aimed-at-cybersecurity-use-cases.html)
+- [Anthropic 資料洩露事件 — Fortune](https://fortune.com/2026/03/31/anthropic-source-code-claude-code-data-leak-second-security-lapse-days-after-accidentally-revealing-mythos/)
