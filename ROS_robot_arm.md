@@ -697,6 +697,21 @@ G-ARM 是 2025-2026 年最值得關注的教育用機械手臂專案：
 
 - 機器人不再只依賴預寫腳本，而是透過多模態 LLM 進行**推理、任務分解、語義理解**
 - ROS 2 生態系統的成熟讓「全功能複合機器人」從高端奢侈品變成了可及的現實
+
+---
+
+### 2026 年 4 月 — ROS 2 生態全面成熟
+
+#### ROS 1 正式終支（2025 年 5 月）
+- ROS 1（Noetic）已於 2025 年 5 月達到官方生命週期終點
+- **所有新專案必須使用 ROS 2**，使得 2026 年成為 ROS 2 統一時代的開始
+- ros2_control 在 ROS 2 Jazzy 版本新增字串資料傳遞支援，拓展機器人應用範疇
+
+#### ROSpider AI 機器人（2026 年 3 月 30 日發表）
+- **18-DOF 仿生運動** + **6-DOF 機械手臂** + **3D 視覺系統**
+- 整合大型語言模型，直接將自然語言指令轉換為機械臂軌跡規劃
+- 使用 MoveIt 2 進行無碰撞軌跡計算，展示 Embodied AI 與 ROS 2 的深度融合
+- [Hackster.io 介紹](https://www.hackster.io/HiwonderRobot/llm-on-ros-2-a-guide-to-rospider-ai-hexpod-robot-5e32f8)
 - Pi 5 + Ubuntu 22.04 + ROS 2 Humble 是 2026 年最常見的配置
 - NEMA17 步進馬達可搭配 ros2_control 用於手臂關節
 
