@@ -563,3 +563,8 @@
 - [Mercury 擴散語言模型 ICLR 2026 — arXiv](https://arxiv.org/list/cs.AI/current)
 - [Gemini 3.1 Pro 基準測試領先 — Google DeepMind](https://deepmind.google/research/publications/)
 - [LLM Agent 通訊安全調查 — ICLR 2026](https://arxiv.org/list/cs.AI/recent)
+
+### 第八次更新來源（2026-04-01）
+- [DeepSeek V4 與騰訊 HunYuan 模型 4 月發布 — Dataconomy](https://dataconomy.com/2026/03/16/deepseek-v4-and-tencents-new-hunyuan-model-to-launch-in-april/)
+- [DeepSeek V4 規格與基準 — NxCode](https://www.nxcode.io/resources/news/deepseek-v4-release-specs-benchmarks-2026)
+- [GPT-5.5 發布預測市場 74% 機率 6 月前 — Polymarket](https://polymarket.com/event/gpt-5pt5-released-by)
