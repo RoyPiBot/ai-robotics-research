@@ -571,6 +571,8 @@ if __name__ == '__main__':
 - [MoveIt Servo 即時控制教學](https://moveit.picknik.ai/main/doc/examples/realtime_servo/realtime_servo_tutorial.html)
 - [GitHub — RoboticArm（Pi 5 + ROS 2 專案）](https://github.com/pepperberry/RoboticArm)
 - [OpenCV 官方教學](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html)
+- [Embodied AI on ROS 2: ROSOrin Pro 與 LLM 整合指南](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26) — 2026 年新趨勢，LLM + 視覺 + 6-DOF 手臂
+- [ROS 2 機械臂開發教學（含 MoveIt）](https://github.com/jiuyewxy/ros_arm_tutorials) — 支援 Humble/Kilted Kaiju
 
 ---
 
