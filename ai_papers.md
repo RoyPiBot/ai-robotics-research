@@ -568,3 +568,10 @@
 - [DeepSeek V4 與騰訊 HunYuan 模型 4 月發布 — Dataconomy](https://dataconomy.com/2026/03/16/deepseek-v4-and-tencents-new-hunyuan-model-to-launch-in-april/)
 - [DeepSeek V4 規格與基準 — NxCode](https://www.nxcode.io/resources/news/deepseek-v4-release-specs-benchmarks-2026)
 - [GPT-5.5 發布預測市場 74% 機率 6 月前 — Polymarket](https://polymarket.com/event/gpt-5pt5-released-by)
+
+### 第九次更新來源（2026-04-01）
+- [April 2026 AI 模型發布追蹤 — LLM Stats](https://llm-stats.com/ai-news)
+- [Claude Sonnet 4.6 性能領先 GDPval-AA Elo 1633 分 — Design for Online](https://designforonline.com/the-best-ai-models-so-far-in-2026/)
+- [Grok 4.20 Beta 2 API 開放與多代理架構 — Mean CEO](https://blog.mean.ceo/new-ai-model-releases-news-april-2026/)
+- [Llama 4 Maverick 400B 10M Token 開源模型 — Renovate QR](https://renovateqr.com/blog/ai-models-april-2026)
+- [DeepSeek V4 4月發布預期 (1T 參數 MoE 架構) — Atlas Cloud](https://www.atlascloud.ai/news/DeepSeek-V4-Expect-in-2026)
