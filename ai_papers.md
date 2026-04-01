@@ -42,9 +42,15 @@
 
 ### 7. DeepSeek V4 — 萬億參數多模態（預計 2026 年 4 月發布）
 - **機構**：DeepSeek（梁文鋒團隊）
-- **發布時間**：原預計 2 月中旬，延遲至 2026 年 4 月（與騰訊新 Hunyuan 模型同步發布）
-- **摘要**：DeepSeek V4 為 ~1 兆參數 Mixture-of-Experts 模型，僅 ~37B 活躍參數。採用原生多模態架構，配備 1M+ 上下文窗口（Engram 條件記憶）和原生視訊生成能力。核心創新：原生稀疏注意力（NSA）機制速度提升 11 倍、DualPath 推理系統優化智能體負載（吞吐量 +1.87 倍）、編程/長期記憶/視覺/AI 搜尋四大維度突破。V4 Lite 版本已在 3 月 9 日短暫出現。
-- **重要性**：DeepSeek 晉升為前沿閉源模型行列，原生多模態與百萬上下文將直接挑戰 GPT-5.4 和 Gemini 3.1 Pro。
+- **發布時間**：原預計 2 月中旬，延遲至 2026 年 4 月。截至 4 月 2 日，V4 Lite 版本已於 3 月 9 日發布，官方 V4 仍在推出中。
+- **摘要**：DeepSeek V4 為 ~1 兆參數 Mixture-of-Experts 模型，僅 ~37B 活躍參數。採用原生多模態架構，配備 1M+ 上下文窗口（Engram 條件記憶）和原生視訊生成能力。洩露基準測試聲稱達 90% HumanEval 和 80%+ SWE-Bench Verified，與 Claude Opus 4.6 相當，但仍待第三方驗證。
+- **重要性**：DeepSeek 晉升為前沿閉源模型行列，定價極具競爭力，開源權重預計採 Apache 2.0 發布。
+
+### 8. Gemini 3 Flash 系列 — Google 推出超快多尺寸模型梯隊
+- **機構**：Google DeepMind
+- **發布時間**：2026 年 3 月–4 月
+- **摘要**：Google 發布 Gemini 3 Flash（現為 Gemini 應用預設模型）、Gemini 3.1 Flash Lite（測試版，$0.25/1M input）和 Gemini 3.1 Flash Live（實時音訊模型）。Gemini 3 Flash 在 GPQA Diamond 達 90.4%，Humanity's Last Exam 達 33.7%；Gemini 3.1 Flash Lite 相比 2.5 Flash 速度提升 2.5 倍；Flash Live 支援 90+ 語言的實時多模態對話，為下一代語音優先 AI 奠基。
+- **重要性**：Google 以速度與成本優化正面對標 OpenAI 與 Anthropic 的推理模型，構築涵蓋高端到邊緣的完整模型梯隊。
 
 ---
 
