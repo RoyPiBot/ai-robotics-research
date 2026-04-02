@@ -596,6 +596,22 @@ if __name__ == '__main__':
 - [Embodied AI on ROS 2: ROSOrin Pro 與 LLM 整合指南](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26) — 2026 年新趨勢，LLM + 視覺 + 6-DOF 手臂
 - [ROS 2 機械臂開發教學（含 MoveIt）](https://github.com/jiuyewxy/ros_arm_tutorials) — 支援 Humble/Kilted Kaiju
 
+### ROS 2 Humble 導航與物體識別整合（2026 年新增）
+
+**目標：打造自主移動機械手臂**
+
+- **Navigation2 (Nav2)**：ROS 2 官方導航棧，支援 LiDAR + IMU SLAM、動態障礙物迴避、多機器人協調
+  - [官方文件](https://docs.ros.org/en/humble/Tutorials/Navigation/Navigation.html)
+  - 已驗證支援 Humble 至 Rolling
+
+- **視覺物體識別**：
+  - Intel Robotics Open Source 支援：物體檢測/追蹤、人員偵測、工業機械臂抓取點分析
+  - **YOLO11 整合**：搭配 ROS 2 Humble，可即時檢測並觸發機械臂抓取
+  - [Hiwonder ROSMASTER M3 Pro 6DOF 整合方案](https://github.com/topics/ros2-humble?l=python)：完整 Nav2 + MoveIt 2 + 視覺伺服範例
+
+- **力控制與柔順操控**（後續重點）：ROS 2 Humble 新增 ros2_control 非同步支援，適合精密裝配、人機協作
+  - 毫秒級即時響應、關節力量限制、碰撞偵測自適應
+
 ---
 
 ## 附錄：常用 ROS 2 指令速查表
