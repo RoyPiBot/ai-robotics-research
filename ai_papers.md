@@ -454,6 +454,13 @@
 - **重要性**：當機器人成本降至一輛經濟型汽車的價格，大規模消費級部署將成為可能，深刻改變勞動力市場結構。
 - **來源**：[Fortune CFO 分析](https://fortune.com/2026/03/25/ai-robots-cost-13000-by-2035-what-that-means-for-cfos/)
 
+### 64. Claude Mythos（Capybara）— Anthropic 超級模型進入早期訪問
+- **機構**：Anthropic
+- **發布時間**：2026 年 3 月 26 日洩露，4 月份進入早期訪問
+- **摘要**：Anthropic 未公開的 **Claude Mythos** 模型（內部代號 **Capybara**）在數據洩露後正式確認。該模型是 Anthropic 迄今最強的，參數量達 10 兆以上，在軟體編程、學術推理、網路安全等領域的評分遠超 Claude Opus 4.6，是新的第四層超級模型等級。由於推論成本極高和網路安全風險，目前僅向精選早期訪問客戶開放。
+- **重要性**：標誌 Anthropic 進入「超級大模型」時代，規模與能力已超越 Opus，將重新定義高端 LLM 應用邊界。
+- **來源**：[Fortune 獨家](https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/) | [The New Stack](https://thenewstack.io/anthropic-march-2026-roundup/) | [SiliconANGLE](https://siliconangle.com/2026/03/27/anthropic-launch-new-claude-mythos-model-advanced-reasoning-features/)
+
 ---
 
 ## 十一、更新後趨勢觀察：第五次更新的三個新訊號
