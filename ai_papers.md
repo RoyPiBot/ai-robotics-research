@@ -657,3 +657,6 @@
 ### 第十六次更新來源（2026-04-03 深化補充）
 - **DeepSeek V4 LTM 技術突破** - 4 月發布在即，核心創新為 Long-Term Memory (LTM) 技術，上下文窗口擴展至 1 百萬 Token，成本下降 50%，支援多模態（文字、圖像、視頻）原生處理，採用 DSA 稀疏注意機制與國產晶片深度適配，標誌中國自主 AI 能力新高度 [DeepSeek V4 Release Date (2026) — Evolink.ai](https://evolink.ai/blog/deepseek-v4-release-window-prep)
 - **Tencent Hunyuan 3.0 領導架構** - 由前 OpenAI 研究員姚舜宇擔任首席 AI 科學家領導，30B 參數規模，強調場景驅動應用而非基準競賽，在上下文學習與智能體可用性上優化，同步 4 月發布，推進 WeChat AI 智能體整合 [Tencent to Launch Hunyuan 3.0 in April — Caixin Global](https://www.caixinglobal.com/2026-03-18/tencent-to-launch-hunyuan-30-in-april-build-wechat-ai-agent-102424421.html)
+
+### 第十七次更新來源（2026-04-03 最新狀態）
+- **Claude Mythos 內測狀態確認** - Anthropic 正式向早期訪問客戶測試 Claude Mythos，內部文件稱其為「能力躍升」(step change)，該模型可獨立規劃與執行多步驟任務序列，跨系統操作無需人類每步確認，定位新 Capybara 層級，成本與能力均超越現有 Opus。目標發布時間 4 月 30 日前機率約 25%，需密切監控 [Claude Mythos Model Testing — Fortune](https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/)、[Claude Mythos Capabilities — Dataconomy](https://dataconomy.com/2026/04/02/anthropic-tests-claude-mythos-as-its-most-powerful-ai-model/)
