@@ -653,3 +653,7 @@
 ### 第十五次更新來源（2026-04-03）
 - **Microsoft 三款企業基礎模型** - 2026 年 4 月發布，包括 MAI-Transcribe-1（語音轉文字）、MAI-Voice-1（語音生成）、MAI-Image-2（圖像生成），涵蓋三大商業價值模態，展現 Microsoft 自研 AI 晶片與模型整合的成果，對標 OpenAI 和 Google 的多模態能力佈局 [Microsoft launches 3 new AI models — VentureBeat](https://venturebeat.com/technology/microsoft-launches-3-new-ai-models-in-direct-shot-at-openai-and-google/)
 - **Alibaba Qwen3.6-Plus 推出** - 阿里巴巴在 4 月連續發布多款模型，Qwen3.6-Plus 展現新一代大模型效率與性能平衡，繼續鞏固中國開源模型領先地位，與 DeepSeek、百度文心等形成三強鼎立局面 [New AI Model Releases News April 2026 — Mean CEO](https://blog.mean.ceo/new-ai-model-releases-news-april-2026/)
+
+### 第十六次更新來源（2026-04-03 深化補充）
+- **DeepSeek V4 LTM 技術突破** - 4 月發布在即，核心創新為 Long-Term Memory (LTM) 技術，上下文窗口擴展至 1 百萬 Token，成本下降 50%，支援多模態（文字、圖像、視頻）原生處理，採用 DSA 稀疏注意機制與國產晶片深度適配，標誌中國自主 AI 能力新高度 [DeepSeek V4 Release Date (2026) — Evolink.ai](https://evolink.ai/blog/deepseek-v4-release-window-prep)
+- **Tencent Hunyuan 3.0 領導架構** - 由前 OpenAI 研究員姚舜宇擔任首席 AI 科學家領導，30B 參數規模，強調場景驅動應用而非基準競賽，在上下文學習與智能體可用性上優化，同步 4 月發布，推進 WeChat AI 智能體整合 [Tencent to Launch Hunyuan 3.0 in April — Caixin Global](https://www.caixinglobal.com/2026-03-18/tencent-to-launch-hunyuan-30-in-april-build-wechat-ai-agent-102424421.html)
