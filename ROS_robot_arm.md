@@ -614,6 +614,15 @@ if __name__ == '__main__':
 - **力控制與柔順操控**（後續重點）：ROS 2 Humble 新增 ros2_control 非同步支援，適合精密裝配、人機協作
   - 毫秒級即時響應、關節力量限制、碰撞偵測自適應
 
+### ROS 2 分散式系統時間同步（2026 年新增）
+
+**多機械臂協作的時間同步基礎**
+
+- **PTP 精確時鐘協議**：工業級時間同步解決方案，可達到次微秒級精度（無需 GPS），適合多機械臂協調任務
+  - [ROS 2 Clock 與 Time 官方設計文件](https://design.ros2.org/articles/clock_and_time.html)
+  - Chrony 時間同步：於 Robot 與 Host 間建立時間同步鏈，確保訊息戳記一致性
+- **MoveIt 2 與 ros2_control 整合**：支援[Example 7: 6DOF 機械臂完整教程](https://control.ros.org/humble/doc/ros2_control_demos/example_7/doc/userdoc.html)，毫秒級控制延遲與運動規劃同步
+
 ---
 
 ## 附錄：常用 ROS 2 指令速查表
