@@ -606,3 +606,7 @@
 - **Mistral Large 3（675B MoE）** - 活躍參數 41B，85.5% MMLU (8-language)，HumanEval ~92% pass@1，代碼生成能力超群，在 LMArena 排行第二，超越 Kimi-K2、Deepseek-3.1 [Mistral Large 3 MoE LLM — IntuitionLabs](https://intuitionlabs.ai/articles/mistral-large-3-moe-llm-explained/)
 - **Mistral Small 4（2026-03 發布）** - 119B 總參數，活躍 6B，比 Small 3 延遲降低 40%，吞吐量提升 3 倍，高效推理首選 [OpenAI & Mistral 新型硬體高效語言模型 — SiliconANGLE](https://siliconangle.com/2026/03/17/openai-mistral-ai-release-new-hardware-efficient-language-models/)
 - **Codestral 25.01** - 程式設計專用，86.6% HumanEval，7/10 測試完全通過 [Mistral AI Codestral 基準測試 2026 — Index.dev](https://www.index.dev/blog/mistral-ai-coding-challenges-tests)
+
+### 第十二次更新來源（2026-04-02）
+- **Claude Mythos 上市時間預測** - Polymarket 預測市場顯示 Claude Mythos 在 4 月 30 日前獲得公開存取的機率約 25%，內部文件確認其為 Anthropic 有史以來最強大的 AI 模型，定位於新的 Capybara 層級，超越現有 Opus 等級 [Anthropic Mythos AI Model — Fortune](https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/)
+- **DeepSeek V4 產業影響評估** - 預期 Q2 2026 發布，其 1 兆參數 MOE 架構若進一步縮小與西方前沿模型的差距，同時維持價格優勢，將對 OpenAI 和 Anthropic 造成業界級定價壓力，推動 LLM 價格戰升溫 [LLM Updates April 2026 — LLM Stats](https://llm-stats.com/llm-updates)
