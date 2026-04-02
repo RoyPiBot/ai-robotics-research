@@ -581,6 +581,7 @@ if __name__ == '__main__':
 - **ROS 2 Jazzy ros2_control 強化（2026 年 Q1）**：全面支援字符串與自訂資料型別、自動存儲管理、即時性能優化，標準化接口支援多廠牌機械手臂。
 - **6-DOF 機械臂新教程（2026 年 Q2）**：官方發布完整的 6-DOF 機械臂仿真與控制教程，涵蓋 URDF 建模、MoveIt 2 路徑規劃、視覺伺服與硬體實裝，推進教育應用。
 - **MoveIt 2 實時性能躍進**：新版本實現毫秒級響應時間，支援離線運動規劃與線上軌跡適應，適合高精度工業應用與協作機械臂。
+- **ROS-Industrial 強化學習應用（2026 Q1）**：ROS-Industrial Consortium Asia Pacific 推出「Reinforcement Learning for Robot Arm Manipulation」工作坊，展示如何應用深度強化學習演算法改進機械臂控制精度與自適應能力，特別適合多工場景與動態環境適應。
 
 ### 階段五：進階提升（第 9 週以後）
 
