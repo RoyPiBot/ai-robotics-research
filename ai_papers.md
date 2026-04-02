@@ -597,3 +597,8 @@
 ### 第十次更新來源（2026-04-01 20:50）
 - **DeepSeek V4 核心創新** - Engram 架構分離靜態記憶與推理，1M+ Token 上下文處理成本下降 50%，採用 DeepSeek Sparse Attention (DSA) 技術。V3.2 成本 $0.14 input / $0.28 output per 1M tokens，效能達 GPT-4o 級別，成本降低 95% [Best AI Models 2026 — Design for Online](https://designforonline.com/the-best-ai-models-so-far-in-2026/)
 - **Q2 2026 預期發布** - Claude Mythos (Anthropic)、Grok 5 (xAI) [Complete AI Models Guide 2026 — Web Solution Centre](https://www.websolutioncentre.com/blog/2026/02/02/complete-ai-models-guide-2026-gpt-5-claude-gemini-deepseek-grok-and-more/)
+
+### 第十一次更新來源（2026-04-02）
+- **Mistral Large 3（675B MoE）** - 活躍參數 41B，85.5% MMLU (8-language)，HumanEval ~92% pass@1，代碼生成能力超群，在 LMArena 排行第二，超越 Kimi-K2、Deepseek-3.1 [Mistral Large 3 MoE LLM — IntuitionLabs](https://intuitionlabs.ai/articles/mistral-large-3-moe-llm-explained/)
+- **Mistral Small 4（2026-03 發布）** - 119B 總參數，活躍 6B，比 Small 3 延遲降低 40%，吞吐量提升 3 倍，高效推理首選 [OpenAI & Mistral 新型硬體高效語言模型 — SiliconANGLE](https://siliconangle.com/2026/03/17/openai-mistral-ai-release-new-hardware-efficient-language-models/)
+- **Codestral 25.01** - 程式設計專用，86.6% HumanEval，7/10 測試完全通過 [Mistral AI Codestral 基準測試 2026 — Index.dev](https://www.index.dev/blog/mistral-ai-coding-challenges-tests)
