@@ -645,3 +645,7 @@
 ### 第十三次更新來源（2026-04-02 14:45）
 - **智譜 AI Agent 模型** - 2026 年 3 月發布，上下文長度 200K token，重點強化工具調用、指令遵循、定時與持續性任務、高吞吐長鏈路執行四項核心能力，對標國際智能體框架發展方向 [2026 年中國 AI 發展趨勢 — 清華大學](https://www.tsinghua.edu.cn/info/1182/124190.htm)
 - **李曼玲、李飛飛團隊空間智商研究** - ICLR 2026 獲收接論文「Theory of Space: Can Foundation Models Construct Spatial Beliefs through Active Exploration?」，探討基礎模型如何透過主動探索建立空間認知，突破模型感知維度限制 [ICLR 2026 論文集](https://tech.sina.cn/2026-03-08/detail-inhqfxan0946903.d.html)
+
+### 第十四次更新來源（2026-04-02 20:45）
+- **騰訊 HunYuan 4 月發布預期** - 與 DeepSeek V4 同期推出，為中國自主智能體發展的關鍵一步，預期在多模態推理與長上下文處理上對標國際水準，標誌著中國 LLM 產業進入新一階段競爭 [LLM Updates April 2026 — LLM Stats](https://llm-stats.com/llm-updates)
+- **Gemini 3.1 Pro 基準對標分析** - 在 13/16 主要基準測試中領先，與 GPT-5.4 Pro 表現相當，同時 API 成本約為競爭對手的三分之一，成為成本效益最優選項 [The Best AI Models in 2026 — Pluralsight](https://www.pluralsight.com/resources/blog/ai-and-data/best-ai-models-2026-list)
