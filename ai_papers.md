@@ -649,3 +649,7 @@
 ### 第十四次更新來源（2026-04-02 20:45）
 - **騰訊 HunYuan 4 月發布預期** - 與 DeepSeek V4 同期推出，為中國自主智能體發展的關鍵一步，預期在多模態推理與長上下文處理上對標國際水準，標誌著中國 LLM 產業進入新一階段競爭 [LLM Updates April 2026 — LLM Stats](https://llm-stats.com/llm-updates)
 - **Gemini 3.1 Pro 基準對標分析** - 在 13/16 主要基準測試中領先，與 GPT-5.4 Pro 表現相當，同時 API 成本約為競爭對手的三分之一，成為成本效益最優選項 [The Best AI Models in 2026 — Pluralsight](https://www.pluralsight.com/resources/blog/ai-and-data/best-ai-models-2026-list)
+
+### 第十五次更新來源（2026-04-03）
+- **Microsoft 三款企業基礎模型** - 2026 年 4 月發布，包括 MAI-Transcribe-1（語音轉文字）、MAI-Voice-1（語音生成）、MAI-Image-2（圖像生成），涵蓋三大商業價值模態，展現 Microsoft 自研 AI 晶片與模型整合的成果，對標 OpenAI 和 Google 的多模態能力佈局 [Microsoft launches 3 new AI models — VentureBeat](https://venturebeat.com/technology/microsoft-launches-3-new-ai-models-in-direct-shot-at-openai-and-google/)
+- **Alibaba Qwen3.6-Plus 推出** - 阿里巴巴在 4 月連續發布多款模型，Qwen3.6-Plus 展現新一代大模型效率與性能平衡，繼續鞏固中國開源模型領先地位，與 DeepSeek、百度文心等形成三強鼎立局面 [New AI Model Releases News April 2026 — Mean CEO](https://blog.mean.ceo/new-ai-model-releases-news-april-2026/)
