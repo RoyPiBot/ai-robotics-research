@@ -599,6 +599,10 @@
 - **Q2 2026 預期發布** - Claude Mythos (Anthropic)、Grok 5 (xAI) [Complete AI Models Guide 2026 — Web Solution Centre](https://www.websolutioncentre.com/blog/2026/02/02/complete-ai-models-guide-2026-gpt-5-claude-gemini-deepseek-grok-and-more/)
 
 ### 第十一次更新來源（2026-04-02）
+- **Gemini 3.1 Flash-Lite 性能優化版** - Google 推出效率導向新模型，回應時間加快 2.5x，輸出生成速度提升 45%，定價僅 $0.25 per million input tokens，提供高效能推理選項 [New AI Model Releases News April 2026 — Mean CEO](https://blog.mean.ceo/new-ai-model-releases-news-april-2026/)
+- **GPT-5.4 代碼基準領先** - OpenAI 模型在 Terminal-Bench 2.0 排行榜中領導 90% 分數，與 GPT-5.2-Codex 及 GPT-5.1-Codex-Max 並列頂級編程能力。Sonnet 4.6 在 GDPval-AA Elo 基準中居首，達 1,633 分，Gemini 3.1 Pro 在 13/16 基準測試領先，GLM-4.7 (Zhipu AI) 在開源模型中表現突出 [AI Model Benchmarks Mar 2026 — LM Council](https://lmcouncil.ai/benchmarks)
+
+### 第十一次更新來源（2026-04-02）
 - **Mistral Large 3（675B MoE）** - 活躍參數 41B，85.5% MMLU (8-language)，HumanEval ~92% pass@1，代碼生成能力超群，在 LMArena 排行第二，超越 Kimi-K2、Deepseek-3.1 [Mistral Large 3 MoE LLM — IntuitionLabs](https://intuitionlabs.ai/articles/mistral-large-3-moe-llm-explained/)
 - **Mistral Small 4（2026-03 發布）** - 119B 總參數，活躍 6B，比 Small 3 延遲降低 40%，吞吐量提升 3 倍，高效推理首選 [OpenAI & Mistral 新型硬體高效語言模型 — SiliconANGLE](https://siliconangle.com/2026/03/17/openai-mistral-ai-release-new-hardware-efficient-language-models/)
 - **Codestral 25.01** - 程式設計專用，86.6% HumanEval，7/10 測試完全通過 [Mistral AI Codestral 基準測試 2026 — Index.dev](https://www.index.dev/blog/mistral-ai-coding-challenges-tests)
