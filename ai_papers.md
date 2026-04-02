@@ -479,6 +479,24 @@
 
 ---
 
+## 十二、2026 年 4 月初補充更新 — Anthropic Mythos 5、DeepSeek V4 正式發布、Google 成本優化
+
+### 65. Anthropic Claude Mythos 5 — 10 兆參數超級模型與 Capybara 模型家族
+- **機構**：Anthropic
+- **發布時間**：2026 年 4 月初（4 月 2 日時尚未完全公開，但媒體報導已確認）
+- **摘要**：Anthropic 發布 **Claude Mythos 5**（10 兆參數級別）和輕量級平價模型 **Capybara**。Mythos 5 針對網路安全、高端編碼與複雜推理優化，達到當前最高能力等級。Capybara 為平價化推理模型，試圖搶占成本敏感市場。此舉標誌 Anthropic 從「單一超級模型」進入「上下游模型梯隊」策略。
+- **重要性**：Anthropic 直接對標 OpenAI GPT-5 系列與 Google Gemini 梯隊，確立三大廠商全面競爭的局面。Mythos 5 的淨容量與安全隱憂將成為 2026 年下半年監控重點。
+- **來源**：[Blog.mean.ceo April 2026 Startup Edition](https://blog.mean.ceo/new-ai-model-releases-news-april-2026/) | [LLM Stats](https://llm-stats.com/ai-news)
+
+### 66. DeepSeek V4 與 Tencent Hunyuan 4.0 — 4 月發布窗口開啟
+- **機構**：DeepSeek、Tencent
+- **預計發布時間**：2026 年 4 月（與 Mythos 5 幾乎同步）
+- **摘要**：DeepSeek V4 多年延遲終於進入 4 月發布窗口。官方確認為 ~1 兆參數 MoE、原生多模態、支援 1M+ token 上下文。洩露基準聲稱 90% HumanEval、80%+ SWE-Bench，與 Claude Opus 4.6 相當。同期 Tencent Hunyuan 4.0 亦將上線，競爭態勢激化。
+- **重要性**：DeepSeek V4 發布將結束長達 2 個月的等待期，確認中國開源陣營的能力水位。與 Mythos 5 同期發布形成美中競爭新態勢。
+- **來源**：[Dataconomy](https://dataconomy.com/2026/03/16/deepseek-v4-and-tencents-new-hunyuan-model-to-launch-in-april/)
+
+---
+
 ## Sources
 
 ### LLM 與模型發布
