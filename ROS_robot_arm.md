@@ -541,7 +541,9 @@ if __name__ == '__main__':
 **推薦資源：**
 - [MoveIt 2 官方教學](https://moveit.picknik.ai/main/doc/tutorials/tutorials.html)
 - [MoveIt 2 規劃管道改進指南](https://moveit.ai/planning%20pipeline/moveit2/motion%20planning/2024/03/25/MoveIt-Planning-Pipeline-Refactoring.html) — 2026 年支援多規劃器串聯與並行規劃
-- [Gazebo 模擬器](https://gazebosim.org/)
+- **MoveIt 2 規劃算法**：支援 STOMP（隨機軌跡最優化）、CHOMP（碰撞免除軌跡最優化）、OMPL（開放動作規劃庫）等多種算法，可根據任務需求選擇
+- [Gazebo 模擬器](https://gazebosim.org/) — **重要：Gazebo Classic 已於 2025 年 1 月 EOL，建議改用現代 Gazebo + ign_ros2_control**
+- [ROS 2 Control 文件](https://control.ros.org/humble/doc/resources/resources.html) — 硬體無關的模組化控制系統，2026 年 3 月更新支援多廠牌機械手臂
 - Medium 教學：[Simulate 6 DoF Robot Arm in ROS2, Gazebo And MoveIt2](https://kolkemboi.medium.com/simulate-6-dof-robot-arm-in-ros2-gazebo-and-moveit2-a171c7e9b0ad)
 
 ### 階段四：動手做硬體（第 7~8 週）
