@@ -617,3 +617,7 @@
 ### 第十二次更新來源（2026-04-02）
 - **Claude Mythos 上市時間預測** - Polymarket 預測市場顯示 Claude Mythos 在 4 月 30 日前獲得公開存取的機率約 25%，內部文件確認其為 Anthropic 有史以來最強大的 AI 模型，定位於新的 Capybara 層級，超越現有 Opus 等級 [Anthropic Mythos AI Model — Fortune](https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/)
 - **DeepSeek V4 產業影響評估** - 預期 Q2 2026 發布，其 1 兆參數 MOE 架構若進一步縮小與西方前沿模型的差距，同時維持價格優勢，將對 OpenAI 和 Anthropic 造成業界級定價壓力，推動 LLM 價格戰升溫 [LLM Updates April 2026 — LLM Stats](https://llm-stats.com/llm-updates)
+
+### 第十三次更新來源（2026-04-02 14:45）
+- **智譜 AI Agent 模型** - 2026 年 3 月發布，上下文長度 200K token，重點強化工具調用、指令遵循、定時與持續性任務、高吞吐長鏈路執行四項核心能力，對標國際智能體框架發展方向 [2026 年中國 AI 發展趨勢 — 清華大學](https://www.tsinghua.edu.cn/info/1182/124190.htm)
+- **李曼玲、李飛飛團隊空間智商研究** - ICLR 2026 獲收接論文「Theory of Space: Can Foundation Models Construct Spatial Beliefs through Active Exploration?」，探討基礎模型如何透過主動探索建立空間認知，突破模型感知維度限制 [ICLR 2026 論文集](https://tech.sina.cn/2026-03-08/detail-inhqfxan0946903.d.html)
