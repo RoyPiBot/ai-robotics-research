@@ -696,3 +696,7 @@
 ### 第二十三次更新來源（2026-04-03 22:15）
 - **Stanford s1 模型 Test-Time Scaling 突破** - Stanford、華盛頓大學等機構研發的 s1 模型採用「預算強制」(budget forcing) 策略，僅用 1000 個精心挑選的範例微調，即在數學競賽基準上超越 OpenAI o1-preview 達 27%，訓練耗時不足 26 分鐘（16 張 H100 GPU），標誌 AI 推理能力從模型規模競賽轉向推論時計算效率優化的新典範 [s1: How 1,000 Training Examples Beat OpenAI's o1-preview — Introl Blog](https://introl.com/blog/s1-simple-test-time-scaling-budget-forcing-2026)
 - **Alibaba Qwen3-Max-Thinking 推理模型發布** - 阿里雲推出 Qwen3-Max-Thinking，具備自適應工具調用與 test-time scaling 能力，對標 GPT-5.2 與 Claude Opus 4.5，展現中國開源模型在推理層次的進階突破，與西方前沿系統性能相當 [Qwen3-Max-Thinking Reasoning Model — HowAIWorks.ai](https://howaiworks.ai/blog/qwen3-max-thinking-announcement-2026)
+
+### 第二十四次更新來源（2026-04-03 23:30）
+- **OpenAI GPT-5.5（Spud）預訓練完成** - 代號為 Spud 的 GPT-5.5 已完成預訓練階段，根據 OpenAI 內部資料稱其為「推理能力兩年進展的量級躍升」，預期 Q2 2026 發布（6月前發布機率約 74%），將搭配完整推理版本與高性能 Pro 版本，標誌 OpenAI 下半年競爭核心，與 Claude Mythos 搶占前沿模型市場領導地位 [LLM Updates April 2026 — LLM Stats](https://llm-stats.com/llm-updates)
+- **Claude Mythos 早期訪問客戶測試進行中** - Anthropic 已向早期訪問客戶發布 Claude Mythos 進行測試，該模型代表「能力躍升」(step change)，可獨立規劃與執行多步驟任務無需人類逐步確認，跨系統操作與自主決策能力突破，定位全新 Capybara 層級，Polymarket 預測市場顯示 4 月 30 日前獲得公開存取的機率約 25%，成本與能力均超越現有 Opus 4.6 [Claude Mythos Capabilities — Dataconomy](https://dataconomy.com/2026/04/02/anthropic-tests-claude-mythos-as-its-most-powerful-ai-model/)
