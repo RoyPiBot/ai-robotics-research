@@ -685,6 +685,8 @@ ros2 launch <套件名稱> <launch檔名>
 - [Meta-ROS — 下一代中介層，吞吐量比標準 ROS 2 高 30%](https://arxiv.org/html/2601.21011v1)
 - [ROS 2 Kilted Kaiju Release Notes](https://docs.ros.org/en/rolling/Releases/Release-Kilted-Kaiju.html)
 - [ros-realtime Pi 映像](https://github.com/ros-realtime/ros-realtime-rpi4-image) — Pi 3/4/5 預裝 ROS 2 + Linux RT
+- **Lyrical Luth ROS 2 新版本**（2026 年 5 月）— 第十二個官方版本，新增插件構造函數支援、改善即時控制能力
+- **Embodied AI 與 LLM 整合** — OpenClaw Agent 框架整合 GPT-4/Llama 3，使 ROS 2 機器人具備環境感知與自主決策能力
 
 ---
 
