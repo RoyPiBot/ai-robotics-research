@@ -894,6 +894,18 @@ G-ARM 是 2025-2026 年最值得關注的教育用機械手臂專案：
 | [msf4-0/so101_ros2](https://github.com/msf4-0/so101_ros2) | 新 | SO101 手臂 ROS 2 + MoveIt 整合 |
 | [ros2-jazzy-6-axis-arm-planning](https://github.com/ShaotianZhou/ros2-jazzy-6-axis-arm-planning) | 新 | ROS 2 Jazzy 6 軸手臂 RRT* 路徑規劃 |
 
+### ROS 2 通訊層與實時控制（2026 年 4 月新增）
+
+#### DDS（Data Distribution Service）標準與通訊改進
+- **架構升級**：ROS 2 採用分散式多對多的 DDS 規範（已成為美國國防部強制標準）
+- **Fast DDS**：為實時系統提供高效可靠的資料分發，Humble 起預設使用，適合毫秒級控制
+- **DDS-Security**：提供身份驗證、存取控制、加密三項資料安全服務，工業級應用必備
+
+#### 具身 AI 與實時決策（2026 最新趨勢）
+- **LLM 整合**：從腳本自動化升級至具身人工智能，機械手臂結合大型語言模型實現自主決策
+- **OpenClaw Agent Framework**：標準化橋樑，使基於 ROS 2 的機械手臂能感知複雜環境、即時決策和精細任務執行
+- **參考資源**：[ROS 2 Control 框架最新發展](https://control.ros.org/rolling/doc/resources/resources.html)、[Embodied AI 整合指南](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
+
 ### ROS 2 教育資源（2026 年新增）
 
 #### 暑期學校與活動
