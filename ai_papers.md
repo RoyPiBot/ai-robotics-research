@@ -507,6 +507,20 @@
 - **重要性**：DeepSeek V4 發布將結束長達 2 個月的等待期，確認中國開源陣營的能力水位。與 Mythos 5 同期發布形成美中競爭新態勢。
 - **來源**：[Dataconomy](https://dataconomy.com/2026/03/16/deepseek-v4-and-tencents-new-hunyuan-model-to-launch-in-april/)
 
+### 67. Google Gemma 4 四種尺寸發布 — 4 月推出
+- **機構**：Google DeepMind
+- **發布時間**：2026 年 4 月
+- **摘要**：Google 針對 Gemma 系列推出四種尺寸模型，涵蓋邊緣計算到雲端部署。原生多模態支援、1M token 上下文、專為開發者與研究者優化。
+- **重要性**：進一步鞏固 Google 在開源模型生態的領導地位，與開源陣營形成正面競爭。
+- **來源**：Google AI Blog (April 2026)
+
+### 68. AI Scientist v2 升級版與論文自動生成突破
+- **機構**：Sakana AI
+- **進展時間**：2025 年升級，持續迭代
+- **摘要**：AI Scientist 升級版在論文自動生成領域取得突破，2025 升級版已有論文被 ICLR 2025 Workshop 收錄。系統能自動搜索文獻、設計實驗、撰寫論文，推進研究自動化邊界。
+- **重要性**：實證 AI 輔助科研的可行性，預示學術論文生成將成為重要研究方向。
+- **來源**：[Sakana AI 官方文件](https://www.sakana.ai)
+
 ---
 
 ## Sources
