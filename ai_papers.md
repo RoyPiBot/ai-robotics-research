@@ -58,6 +58,18 @@
 - **摘要**：Google 發布 Gemini 3 Flash（現為 Gemini 應用預設模型）、Gemini 3.1 Flash Lite（測試版，$0.25/1M input）和 Gemini 3.1 Flash Live（實時音訊模型）。Gemini 3 Flash 在 GPQA Diamond 達 90.4%，Humanity's Last Exam 達 33.7%；Gemini 3.1 Flash Lite 相比 2.5 Flash 速度提升 2.5 倍；Flash Live 支援 90+ 語言的實時多模態對話，為下一代語音優先 AI 奠基。
 - **重要性**：Google 以速度與成本優化正面對標 OpenAI 與 Anthropic 的推理模型，構築涵蓋高端到邊緣的完整模型梯隊。
 
+### 9. Grok 4.20 — xAI 多代理架構新模型
+- **機構**：xAI（Elon Musk）
+- **發布時間**：2026 年 4 月
+- **摘要**：xAI 推出完全新的多代理架構 Grok 4.20，允許多個專門化代理協調工作解決複雜任務，標誌著向多代理系統的演進。
+- **重要性**：業界邁向協調代理團隊模式，與 Gartner 多代理採用趨勢一致。
+
+### 10. GPT-5.5/GPT-6 — OpenAI 下一代開發中
+- **機構**：OpenAI
+- **發布時間**：預計 2026 年 Q2（5-6 月）
+- **摘要**：根據 OpenAI 開發節奏，代號「Spud」的下一代模型已完成開發，預期 5-6 月發布，將命名為 GPT-5.5 或 GPT-6，代表 GPT-5 系列重大升級。
+- **重要性**：預告近期重大模型發布，預計刷新 LLM 性能基準。
+
 ---
 
 ## 二、多模態 AI
