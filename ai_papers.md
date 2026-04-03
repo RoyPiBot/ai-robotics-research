@@ -684,3 +684,7 @@
 ### 第二十次更新來源（2026-04-03 多模態與科學發現）
 - **BloCaw: 全知多模態智能體工作區** - 新興多模態agentic系統，整合文本、圖像、音頻、視頻等多源輸入，專門服務科學發現與複雜工程問題求解，體現AI從單模態推理向多模態多智能體協作的進階方向 [BloCaw Omniscient Agentic Workspace — arXiv](https://arxiv.org/list/cs.AI/current)
 - **AI 論文分析工具發展** - 人工智能結合機械學習的科學文獻系統分析能力突破，可自動映射概念關係並預測未來2-3年的研究趨勢，為科研資助與論文選題決策提供數據驅動支撐，標誌academic intelligence新賽道成熟 [AI Maps Science Papers to Predict Trends — TechXplore](https://techxplore.com/news/2026-04-ai-science-papers-trends-years.html)
+
+### 第二十一次更新來源（2026-04-03 14:50）
+- **DeepSeek V4 與騰訊 HunYuan 4月發布官方確認** - 梁文鋒團隊開發的 DeepSeek V4 與騰訊由前 OpenAI 研究員姚舜宇領導的 HunYuan 模型雙雙於 2026 年 4 月正式發布，DeepSeek V4 採用 1 兆參數 MOE 架構，支援多模態（文字/圖像/視頻）原生處理，內容窗口達 100 萬 Token；騰訊 HunYuan 30B 參數，強調場景應用而非基準競賽，兩款新品將加劇中美 AI 產業競爭格局 [DeepSeek V4 and Tencent Hunyuan AI Model Set For April Launch — TechBriefly](https://techbriefly.com/2026/03/16/deepseek-v4-and-tencent-hunyuan-ai-model-set-for-april-launch/)
+- **Anthropic Claude Mythos 自主執行能力突破** - 洩露文件確認 Mythos 具備真正的自主代理能力，無需人類逐步確認即可獨立規劃並跨系統執行多步驟操作流程，能自主穿透企業網路，代表 AI 從被動工具向自主代理的根本轉變，Anthropic 正向政府警告該模型可能催化大規模網路攻擊威脅，預期4月30日前發布機率約25% [Claude Mythos Capabilities Analysis — Dataconomy](https://dataconomy.com/2026/04/02/anthropic-tests-claude-mythos-as-its-most-powerful-ai-model/)
