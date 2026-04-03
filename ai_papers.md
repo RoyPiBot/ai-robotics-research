@@ -660,3 +660,7 @@
 
 ### 第十七次更新來源（2026-04-03 最新狀態）
 - **Claude Mythos 內測狀態確認** - Anthropic 正式向早期訪問客戶測試 Claude Mythos，內部文件稱其為「能力躍升」(step change)，該模型可獨立規劃與執行多步驟任務序列，跨系統操作無需人類每步確認，定位新 Capybara 層級，成本與能力均超越現有 Opus。目標發布時間 4 月 30 日前機率約 25%，需密切監控 [Claude Mythos Model Testing — Fortune](https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/)、[Claude Mythos Capabilities — Dataconomy](https://dataconomy.com/2026/04/02/anthropic-tests-claude-mythos-as-its-most-powerful-ai-model/)
+
+### 第十八次更新來源（2026-04-03 對標評測）
+- **GPT-5.4 vs Claude Opus 4.6 vs Gemini 3 Pro 三大旗艦對比** - GPT-5.4（100萬token上下文、Thinking推理版、Pro高性能版）vs Claude Opus 4.6（編程與推理王者、論文評審準確率85%、成本最高）vs Gemini 3.1 Pro（2M超長上下文、多模態能力強、3月發布）。性價比評測：GPT-5.4-mini 編程性價比無敵，Opus 4.6 絕對能力領先但成本為 GPT-5.4 的 6 倍 [GPT-5.4 vs Claude Opus 4.6 vs Gemini 3 Pro — ofox.ai](https://ofox.ai/zh/blog/gpt-5-4-vs-claude-opus-vs-gemini-flagship-comparison-2026/)
+- **GLM-5 國產開源模型突破** - 智譜 AI 最新推出，首次在開源模型中逼平 Claude Opus 4.5 水準，標誌國產開源模型進入新競爭梯隊，成為中美大模型競賽的關鍵節點 [GLM-5 Opens Source Model Breakthrough — 53AI](https://www.53ai.com/news/OpenSourceLLM/2026021278324.html)
