@@ -769,6 +769,12 @@ G-ARM 是 2025-2026 年最值得關注的教育用機械手臂專案：
 - Pi 5 + Ubuntu 22.04 + ROS 2 Humble 是 2026 年最常見的配置
 - NEMA17 步進馬達可搭配 ros2_control 用於手臂關節
 
+#### ros2_control 框架：硬件無關的實時控制（2026 年 4 月更新）
+- **模組化設計**：支援多種硬體配置無需修改控制邏輯，廣泛適用於自製手臂與商業機械手臂
+- **MoveIt 2 深度整合**：控制器透過 ROS 介面與 MoveIt 2 軌跡規劃器無縫協作，實現實時位置追蹤
+- **新增支援**：ROS 2 Kilted Kaiju 版本增加 27 個套件、305 個更新，強化通訊與執行效能
+- 最新文檔：[ros2_control Rolling — 2026 年 3 月](https://control.ros.org/rolling/doc/resources/resources.html)
+
 ### 2026 年硬體選擇建議更新
 
 | 方案 | 處理器 | 適合場景 | 參考價格 |
