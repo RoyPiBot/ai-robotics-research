@@ -700,3 +700,7 @@
 ### 第二十四次更新來源（2026-04-03 23:30）
 - **OpenAI GPT-5.5（Spud）預訓練完成** - 代號為 Spud 的 GPT-5.5 已完成預訓練階段，根據 OpenAI 內部資料稱其為「推理能力兩年進展的量級躍升」，預期 Q2 2026 發布（6月前發布機率約 74%），將搭配完整推理版本與高性能 Pro 版本，標誌 OpenAI 下半年競爭核心，與 Claude Mythos 搶占前沿模型市場領導地位 [LLM Updates April 2026 — LLM Stats](https://llm-stats.com/llm-updates)
 - **Claude Mythos 早期訪問客戶測試進行中** - Anthropic 已向早期訪問客戶發布 Claude Mythos 進行測試，該模型代表「能力躍升」(step change)，可獨立規劃與執行多步驟任務無需人類逐步確認，跨系統操作與自主決策能力突破，定位全新 Capybara 層級，Polymarket 預測市場顯示 4 月 30 日前獲得公開存取的機率約 25%，成本與能力均超越現有 Opus 4.6 [Claude Mythos Capabilities — Dataconomy](https://dataconomy.com/2026/04/02/anthropic-tests-claude-mythos-as-its-most-powerful-ai-model/)
+
+### 第二十五次更新來源（2026-04-04）
+- **Google Gemma 4 開放模型發布** - Google 在 4 月發布 Gemma 4 開放源碼模型，持續擴展其開源 AI 生態，與商業旗艦模型 Gemini 形成差異化競爭，強化 Google 從閉源到開源的全面佈局，並為開發者提供可自主部署的高性能模型選擇 [New AI Model Releases News April 2026 — Mean CEO](https://blog.mean.ceo/new-ai-model-releases-news-april-2026/)
+- **Gemini 2.5 Pro 上下文窗口擴至 200 萬 Token** - Google 推出 Gemini 2.5 Pro，上下文窗口達 200 萬 Token（2M），超越 Gemini 3.1 Pro 的 250 萬 Token 設定，在多模態理解、視覺推理與長文件處理等任務上實現新的基準，標誌超長上下文成為大模型競爭的新常態，進一步推進 AI 對複雜現實世界任務的適應能力 [AI Models in April 2026 — RenovateQR](https://renovateqr.com/blog/ai-models-april-2026)
