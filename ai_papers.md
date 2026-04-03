@@ -697,6 +697,10 @@
 - **Stanford s1 模型 Test-Time Scaling 突破** - Stanford、華盛頓大學等機構研發的 s1 模型採用「預算強制」(budget forcing) 策略，僅用 1000 個精心挑選的範例微調，即在數學競賽基準上超越 OpenAI o1-preview 達 27%，訓練耗時不足 26 分鐘（16 張 H100 GPU），標誌 AI 推理能力從模型規模競賽轉向推論時計算效率優化的新典範 [s1: How 1,000 Training Examples Beat OpenAI's o1-preview — Introl Blog](https://introl.com/blog/s1-simple-test-time-scaling-budget-forcing-2026)
 - **Alibaba Qwen3-Max-Thinking 推理模型發布** - 阿里雲推出 Qwen3-Max-Thinking，具備自適應工具調用與 test-time scaling 能力，對標 GPT-5.2 與 Claude Opus 4.5，展現中國開源模型在推理層次的進階突破，與西方前沿系統性能相當 [Qwen3-Max-Thinking Reasoning Model — HowAIWorks.ai](https://howaiworks.ai/blog/qwen3-max-thinking-announcement-2026)
 
+### 第二十四次更新來源（2026-04-04）
+- **Google Gemma 4 開源模型正式發布** - Google 於 2026 年 4 月 2-3 日正式發布開源模型家族 Gemma 4，共四種尺寸規格：Effective 2B (E2B)、Effective 4B (E4B)、26B Mixture of Experts (MoE)、31B Dense。31B 密集模型在 Arena AI 文本排行榜排名第 3，26B MoE 排名第 6，成為目前最具競爭力的開源模型。全系列原生支援多模態：文字、圖像（可變解析度）、視頻，E2B/E4B 特別加入原生音頻輸入能力；訓練涵蓋 140+ 語言，採 Apache 2.0 開源許可，面向進階推理與智能體工作流優化，標誌開源模型邁向前沿對齊階段 [Google Gemma 4 — Google Blog](https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/)
+- **Claude Mythos 測試狀態動態** - Anthropic 繼續向早期訪問客戶小規模測試 Claude Mythos，暫未設定公開發布日期，主因該模型成本高昂難以規模化部署。公司正優化推理效率，計畫分階段發布：先期通過 API 面向選定客戶（特別重視網安應用評估），逐步擴大存取，預示未來數月內市場可能見證 Mythos 帶來的「能力躍升」(step change) [Claude Mythos Latest Update — WaveSpeedAI](https://wavespeed.ai/blog/posts/what-is-claude-mythos/)
+
 ### 第二十四次更新來源（2026-04-03 23:30）
 - **OpenAI GPT-5.5（Spud）預訓練完成** - 代號為 Spud 的 GPT-5.5 已完成預訓練階段，根據 OpenAI 內部資料稱其為「推理能力兩年進展的量級躍升」，預期 Q2 2026 發布（6月前發布機率約 74%），將搭配完整推理版本與高性能 Pro 版本，標誌 OpenAI 下半年競爭核心，與 Claude Mythos 搶占前沿模型市場領導地位 [LLM Updates April 2026 — LLM Stats](https://llm-stats.com/llm-updates)
 - **Claude Mythos 早期訪問客戶測試進行中** - Anthropic 已向早期訪問客戶發布 Claude Mythos 進行測試，該模型代表「能力躍升」(step change)，可獨立規劃與執行多步驟任務無需人類逐步確認，跨系統操作與自主決策能力突破，定位全新 Capybara 層級，Polymarket 預測市場顯示 4 月 30 日前獲得公開存取的機率約 25%，成本與能力均超越現有 Opus 4.6 [Claude Mythos Capabilities — Dataconomy](https://dataconomy.com/2026/04/02/anthropic-tests-claude-mythos-as-its-most-powerful-ai-model/)
