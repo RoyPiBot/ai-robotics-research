@@ -521,6 +521,16 @@
 - **重要性**：實證 AI 輔助科研的可行性，預示學術論文生成將成為重要研究方向。
 - **來源**：[Sakana AI 官方文件](https://www.sakana.ai)
 
+### 69. CircuitProbe — 推理電路穩定區偵測新方法
+- **方向**：機械可解釋性（Mechanistic Interpretability）
+- **摘要**：CircuitProbe 透過穩定區偵測（Stability Zone Detection）預測 Transformer 的推理電路，突破了傳統線性關聯分析的侷限。能將推理過程中的「黑盒計算」映射到可驗證的神經元網絡，對推理模型的監管與驗證具有重要意義。
+- **重要性**：解釋推理 LLM 內部決策過程的新途徑，支援安全認證與事後稽核。
+
+### 70. UniDriveVLA — 自駕車多模態視覺語言動作統一模型
+- **發展方向**：Vision-Language-Action Model（VLA）
+- **摘要**：UniDriveVLA 統一多模態感知，透過混合 Transformer（MoE）架構解耦空間感知與語義推理，在自駕車控制上達到新的效率水位。展示 VLA 從機械手臂擴展到自駕車領域的可行性。
+- **重要性**：多模態動作模型從實驗室走向實際交通場景，VLA 泛用性的新證據。
+
 ---
 
 ## Sources
