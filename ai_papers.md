@@ -742,3 +742,7 @@
 ### 第三十次更新來源（2026-04-04 12:45）
 - **1-Bit 模型與 PrismML Bonsai 革命性突破** - PrismML 開發的 Bonsai 模型族系統化實現 1-Bit 量化，使 80 億參數模型執行所需記憶體壓縮至僅 1GB，突破邊界裝置 AI 部署的記憶體瓶頸，為本地推理與離線運行開啟新可能，標誌量化技術邁向極限效率層次，推進 AI 民主化與設備側運行 [Revolutionizing AI: The Breakthrough of 1-Bit LLMs — Frank's World](https://www.franksworld.com/2026/04/03/revolutionizing-ai-the-breakthrough-of-1-bit-llms-and-the-future-of-local-models/)
 - **Google TurboQuant 向量量化演算法 ICLR 2026 發表** - Google AI 於國際學習表徵會議 (ICLR 2026) 公開 TurboQuant 算法，針對向量量化 (vector quantization) 的記憶體開銷問題提出系統化解決方案，可將模型部署記憶體需求降低 6 倍同時保持性能完整性，加速邊界 AI 與邊緣計算成為主流部署範式，標誌量化技術進入工程化實用階段 [Latest AI Papers 2026 — arXiv](https://arxiv.org/list/cs.AI/current)
+
+### 第三十一次更新來源（2026-04-04 14:45）
+- **Claude Mythos 5 正式發布確認** - Anthropic 正式發布 Claude Mythos 5，參數規模達 10 兆，代表 Anthropic 有史以來最強大的 AI 模型，具備自主執行多步驟任務、跨系統操作與動態決策能力，定位新 Capybara 層級，標誌 AI 智能體能力邁向新境界，將與 GPT-5.5 在 Q2 2026 展開前沿模型領導權競爭 [April 2026 Latest Model Releases — devFlokers](https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs)
+- **AI 科研自動化進入新階段** - 業界中心重心轉向「Agentic 系統」（智能體 AI），不限於對話交互，而是可跨本地與雲端執行複雜多步工作流，推進 AI 從被動工具向主動代理轉變，標誌產業應用範式根本演變，企業級智能體框架與部署成為新焦點 [AI Trends April 2026 — Radical Data Science](https://radicaldatascience.wordpress.com/2026/04/03/ai-news-briefs-bulletin-board-for-april-2026/)
