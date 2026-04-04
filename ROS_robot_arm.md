@@ -858,6 +858,18 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 - **3D 感知整合**：完整支援 RGB-D 相機、TOF LiDAR、事件相機等多種視覺感測器，透過 Point Cloud 進行環境建模與障礙物規避
 - **協作機械臂應用**：內置安全性驗證與力控制約束，適合人機協作場景的精密操作
 
+### NVIDIA cuRobo GPU 加速軌跡規劃與邊界推理（2026 年 4 月）
+
+**2025-2026 工業應用突破**：
+- **3× 週期時間改善**：cuRobo GPU 加速實現相比傳統規劃器 3 倍速度提升，直接提高製造生產率
+- **擴展 DOF 系統支援**：2025 年 8 月研究突破，cuRobo 整合 7 軸機械臂 + 第 7 軸滑軌系統，支援複合工業應用
+- **MPC 動態重規劃**：模型預測控制實現即時軌跡調整，配合視覺伺服反饋達成動態環境適應
+- **30ms 內全運動生成**：正運動、逆運動、碰撞檢測、數值最佳化、軌跡最佳化一體化，GPU 並行計算實現毫秒級回應
+
+**邊界推理整合**（Edge Computing Deployment）：
+- **CUDA 加速無縫部署**：cuRobo 在 Jetson Orin Nano 邊界計算節點上運行，軌跡規劃從雲端遷移至機械臂側，降低網路延遲
+- **參考資源**：[cuRobo GitHub](https://github.com/NVlabs/curobo)、[Industrial Motion Planning Paper (arXiv 2508.04146)](https://arxiv.org/abs/2508.04146)
+
 ### Embodied AI 時代的機械手臂自主決策（2026 年 4 月新動向）
 
 **LLM 驅動的機械臂智能化**：
