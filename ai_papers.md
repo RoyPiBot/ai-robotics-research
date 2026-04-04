@@ -734,3 +734,7 @@
 ### 第二十八次更新來源（2026-04-04 08:45）
 - **GPT-5.4 計算機使用能力與性能基準** - OpenAI 於 3 月 5 日正式發布 GPT-5.4，核心突破為原生計算機使用 (computer-use) 能力，可直接與軟體平台互動，在 OSWorld-Verified 與 WebArena Verified 基準上創造記錄分數，GDPval 知識工作測試達 83% 準確率，代表 AI 從文本推理向實際系統操作的根本轉變 [Latest AI Model Releases News April 2026 — OpenAI Blog](https://blog.openai.com/gpt-5-4-release/)
 - **Gemini 3.1 Pro 實時多模態與醫療應用突破** - Google 推出 Gemini 3.1 Pro 後，推進實時語音與視覺處理能力，在醫療診斷與遠距患者監測領域啟動試點應用，展現 AI 從離線分析向實時互動式醫療決策支持的演進方向，GPQA Diamond 推理基準達 94.3%，成為推理能力新標杆 [New AI Model Releases News April 2026 — Google Deepmind](https://blog.mean.ceo/new-ai-model-releases-news-april-2026/)
+
+### 第二十九次更新來源（2026-04-04 10:45）
+- **Llama 4 Maverick 400B 十億 Token 超長上下文開源模型** - Meta 開源的 Llama 4 Maverick 達成 400B 密集參數規模，支援 1,000 萬 Token 上下文窗口，成為業界最大開源模型，標誌開源模型邁向前沿模型規模，與商業旗艦模型拉近差距，推進 AI 民主化進程 [AI Models in April 2026 — RenovateQR](https://renovateqr.com/blog/ai-models-april-2026)
+- **推理模型在數學競賽達金牌級水準** - OpenAI、Google DeepMind、DeepSeek 多家機構開發的推理模型已在國際數學競賽中達到金牌級表現，2026 年研究重點聚焦推論時計算擴展 (inference-time scaling)，標誌 AI 推理能力邁向人類頂尖數學家水準，推理時間預算成為模型競爭新維度 [LLM Updates April 2026 — LLM Stats](https://llm-stats.com/ai-news)
