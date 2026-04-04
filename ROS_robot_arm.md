@@ -839,6 +839,20 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 - 相比傳統視覺伺服的影像處理 pipeline，事件驅動架構減少記憶體消耗 60-80%，適合 Raspberry Pi 5 邊界 AI 應用
 - [Event-Centric Robot Communication (ResearchGate)](https://researchgate.net/publication/382301942_Demonstration_of_real-time_event_camera_to_collaborative_robot_communication)
 
+### MoveIt 2 實時控制與運動規劃最新進展（2026 年 4 月）
+
+**MoveIt 2 核心能力**：
+- **實時運動規劃**：支援 ROS 2 Control 框架下的 1kHz+ 伺服迴圈，結合 RRT/RRT* 演算法實現無碰撞軌跡規劃
+- **3D 感知整合**：完整支援 RGB-D 相機、TOF LiDAR、事件相機等多種視覺感測器，透過 Point Cloud 進行環境建模與障礙物規避
+- **協作機械臂應用**：內置安全性驗證與力控制約束，適合人機協作場景的精密操作
+
+### Embodied AI 時代的機械手臂自主決策（2026 年 4 月新動向）
+
+**LLM 驅動的機械臂智能化**：
+- **OpenClaw Agent Framework**：將 GPT-4、Llama 3 等 LLM 與 ROS 2 無縫整合，賦予機械臂自然語言理解與任務規劃能力
+- **多感測器融合決策**：結合視覺伺服、力反饋、聽覺輸入，實現複雜環境下的實時決策與自適應控制
+- **應用前景**：已在精密組裝、動態目標追蹤、物體分揀等工業應用中驗證效能
+
 ### 2026 年硬體選擇建議更新
 
 | 方案 | 處理器 | 適合場景 | 參考價格 |
