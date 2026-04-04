@@ -762,3 +762,7 @@
 ### 第三十一次更新來源（2026-04-04 14:45）
 - **Claude Mythos 5 正式發布確認** - Anthropic 正式發布 Claude Mythos 5，參數規模達 10 兆，代表 Anthropic 有史以來最強大的 AI 模型，具備自主執行多步驟任務、跨系統操作與動態決策能力，定位新 Capybara 層級，標誌 AI 智能體能力邁向新境界，將與 GPT-5.5 在 Q2 2026 展開前沿模型領導權競爭 [April 2026 Latest Model Releases — devFlokers](https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs)
 - **AI 科研自動化進入新階段** - 業界中心重心轉向「Agentic 系統」（智能體 AI），不限於對話交互，而是可跨本地與雲端執行複雜多步工作流，推進 AI 從被動工具向主動代理轉變，標誌產業應用範式根本演變，企業級智能體框架與部署成為新焦點 [AI Trends April 2026 — Radical Data Science](https://radicaldatascience.wordpress.com/2026/04/03/ai-news-briefs-bulletin-board-for-april-2026/)
+
+### 第三十二次更新來源（2026-04-04 20:45）
+- **推理時間擴展（Inference-Time Scaling）成為 2026 核心研發方向** - 業界研究焦點從訓練規模轉向推論時計算擴展，採用獎勵模型與粒子蒙特卡洛方法在數學推理任務上實現 4-16 倍更優擴展效果，過程獎勵模型 (Process Reward Models, PRMs) 透過生成驗證鏈式思考實現資料高效方向，標誌 AI 從模型規模競賽轉向推論預算最優化的新典範 [The Inference Report](https://inference.report/)、[Awesome Inference-Time Scaling](https://github.com/ThreeSR/Awesome-Inference-Time-Scaling)
+- **AMD AI 推理性能突破 100 萬 tokens/秒** - AMD 在 MLPerf Inference v6.0 基準測試中達成 1 百萬 tokens/秒里程碑，使用 Instinct MI355X GPU 執行 Llama 2 70B 與 GPT-OSS-120B 等大型語言模型跨多節點叢集，標誌邊界推理性能進入新量級，推進高效率邊緣計算與低延遲 AI 應用可行性 [AI Inference Performance Crosses Threshold](https://www.electronicsforu.com/news/ai-inference-performance-crosses-threshold)
