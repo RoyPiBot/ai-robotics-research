@@ -766,3 +766,7 @@
 ### 第三十二次更新來源（2026-04-04 20:45）
 - **推理時間擴展（Inference-Time Scaling）成為 2026 核心研發方向** - 業界研究焦點從訓練規模轉向推論時計算擴展，採用獎勵模型與粒子蒙特卡洛方法在數學推理任務上實現 4-16 倍更優擴展效果，過程獎勵模型 (Process Reward Models, PRMs) 透過生成驗證鏈式思考實現資料高效方向，標誌 AI 從模型規模競賽轉向推論預算最優化的新典範 [The Inference Report](https://inference.report/)、[Awesome Inference-Time Scaling](https://github.com/ThreeSR/Awesome-Inference-Time-Scaling)
 - **AMD AI 推理性能突破 100 萬 tokens/秒** - AMD 在 MLPerf Inference v6.0 基準測試中達成 1 百萬 tokens/秒里程碑，使用 Instinct MI355X GPU 執行 Llama 2 70B 與 GPT-OSS-120B 等大型語言模型跨多節點叢集，標誌邊界推理性能進入新量級，推進高效率邊緣計算與低延遲 AI 應用可行性 [AI Inference Performance Crosses Threshold](https://www.electronicsforu.com/news/ai-inference-performance-crosses-threshold)
+
+### 第三十三次更新來源（2026-04-05 新增補充）
+- **清華大學 AI 論文分析研究突破** - 2026 年 1 月發布於《Nature》的研究，統計分析 4,100+ 萬篇科研論文發現，使用 AI 的科學家個人生產力提升顯著，年均論文發表量提高 3.02 倍，標誌 AI 從研究工具升級為生產力乘數，加速科學發現與學術創新進程 [Science and AI Report — Tsinghua University](https://www.tsinghua.edu.cn/info/1182/124190.htm)
+- **MiniMax M2.7 Agent 模型深度自迭代架構** - 2026 年 3 月發布，為 MiniMax 首個原生 Agent 模型，支援自主架構設計與複雜任務分解，可獨立構建 Agent Harness 執行多步驟工作流，在生產力任務與推理能力上突破傳統 LLM 邊界，代表 AI 從單純文本生成向自主決策系統演進的關鍵進展 [MiniMax Agent Model Release Notes 2026](https://hub.baai.ac.cn/papers)
