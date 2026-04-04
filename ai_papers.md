@@ -770,3 +770,7 @@
 ### 第三十三次更新來源（2026-04-05 新增補充）
 - **清華大學 AI 論文分析研究突破** - 2026 年 1 月發布於《Nature》的研究，統計分析 4,100+ 萬篇科研論文發現，使用 AI 的科學家個人生產力提升顯著，年均論文發表量提高 3.02 倍，標誌 AI 從研究工具升級為生產力乘數，加速科學發現與學術創新進程 [Science and AI Report — Tsinghua University](https://www.tsinghua.edu.cn/info/1182/124190.htm)
 - **MiniMax M2.7 Agent 模型深度自迭代架構** - 2026 年 3 月發布，為 MiniMax 首個原生 Agent 模型，支援自主架構設計與複雜任務分解，可獨立構建 Agent Harness 執行多步驟工作流，在生產力任務與推理能力上突破傳統 LLM 邊界，代表 AI 從單純文本生成向自主決策系統演進的關鍵進展 [MiniMax Agent Model Release Notes 2026](https://hub.baai.ac.cn/papers)
+
+### 第三十四次更新來源（2026-04-05 最新搜索）
+- **OpenAI GPT-5.4 Test-Time Compute 推理突破** - GPT-5.4 "Thinking" 變體原生整合測試時計算能力，模型在輸出回應前可進行延展推理，在複雜問題上實現「先思後答」的決策流程，標誌推理從單次前向通道向反覆驗證優化的根本轉變，特別適用於數學競賽、代碼調試與科學研究場景 [LLM News Today (April 2026) — LLM Stats](https://llm-stats.com/ai-news)
+- **Google Gemini 3.1 Flash-Lite 輕量推理版發布** - Google 推出面向邊界部署的 Gemini 3.1 Flash-Lite 優化版，回應延遲加快 2.5 倍，輸出生成速度提升 45%，API 成本降至 $0.25 per million input tokens，推進 AI 應用向實時互動轉變 [Google AI News April 2026 — devFlokers](https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs)
