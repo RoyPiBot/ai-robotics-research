@@ -726,3 +726,7 @@
 ### 第二十六次更新來源（2026-04-04 05:30）
 - **AI Scientist v2 論文自動生成突破** - OpenAI 與 DeepMind 合作的新版 AI Scientist 系統實現端到端論文自動生成能力，可獨立設計實驗、執行代碼、生成可視化、撰寫論文全流程，已於 arXiv 發布多篇由系統生成的研究論文，標誌學術出版與科研流程自動化進入新階段 [Latest AI Research Papers 2026 — arXiv](https://arxiv.org/list/cs.AI/current)
 - **AI 模型生成動態蛋白質突破** - DeepMind 最新研究展示 AI 系統可基於蛋白質振動與運動特性生成新型蛋白質結構，開啟動態生物材料與適應式療法的新可能，在蛋白質工程與藥物發現領域具重大應用價值 [AI maps science papers to predict research trends — TechXplore](https://techxplore.com/news/2026-04-ai-science-papers-trends-years.html)
+
+### 第二十七次更新來源（2026-04-04 06:45）
+- **PaddleOCR-VL 多模態文檔理解突破** - 百度發布視覺語言模型 PaddleOCR-VL，融合 NaViT 動態解析度與 ERNIE 語言能力，在文檔解析與元素識別任務上達 SOTA 性能，同時保持高效推理效率，標誌開源模型在文檔智能領域的實用突破 [Trending Papers - Hugging Face](https://huggingface.co/papers/trending)
+- **UniDriveVLA 自動駕駛統一視覺-語言-動作模型** - 新型多模態智能體系統透過 Mixture-of-Transformers 架構實現空間感知與語義推理解耦，支援端到端自動駕駛任務規劃與執行，標誌自動駕駛 AI 從感知驅動向推理驅動轉變，逐步推進自主決策能力 [Trending Papers - Hugging Face](https://huggingface.co/papers/trending)
