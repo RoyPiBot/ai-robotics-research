@@ -738,3 +738,7 @@
 ### 第二十九次更新來源（2026-04-04 10:45）
 - **Llama 4 Maverick 400B 十億 Token 超長上下文開源模型** - Meta 開源的 Llama 4 Maverick 達成 400B 密集參數規模，支援 1,000 萬 Token 上下文窗口，成為業界最大開源模型，標誌開源模型邁向前沿模型規模，與商業旗艦模型拉近差距，推進 AI 民主化進程 [AI Models in April 2026 — RenovateQR](https://renovateqr.com/blog/ai-models-april-2026)
 - **推理模型在數學競賽達金牌級水準** - OpenAI、Google DeepMind、DeepSeek 多家機構開發的推理模型已在國際數學競賽中達到金牌級表現，2026 年研究重點聚焦推論時計算擴展 (inference-time scaling)，標誌 AI 推理能力邁向人類頂尖數學家水準，推理時間預算成為模型競爭新維度 [LLM Updates April 2026 — LLM Stats](https://llm-stats.com/ai-news)
+
+### 第三十次更新來源（2026-04-04 12:45）
+- **1-Bit 模型與 PrismML Bonsai 革命性突破** - PrismML 開發的 Bonsai 模型族系統化實現 1-Bit 量化，使 80 億參數模型執行所需記憶體壓縮至僅 1GB，突破邊界裝置 AI 部署的記憶體瓶頸，為本地推理與離線運行開啟新可能，標誌量化技術邁向極限效率層次，推進 AI 民主化與設備側運行 [Revolutionizing AI: The Breakthrough of 1-Bit LLMs — Frank's World](https://www.franksworld.com/2026/04/03/revolutionizing-ai-the-breakthrough-of-1-bit-llms-and-the-future-of-local-models/)
+- **Google TurboQuant 向量量化演算法 ICLR 2026 發表** - Google AI 於國際學習表徵會議 (ICLR 2026) 公開 TurboQuant 算法，針對向量量化 (vector quantization) 的記憶體開銷問題提出系統化解決方案，可將模型部署記憶體需求降低 6 倍同時保持性能完整性，加速邊界 AI 與邊緣計算成為主流部署範式，標誌量化技術進入工程化實用階段 [Latest AI Papers 2026 — arXiv](https://arxiv.org/list/cs.AI/current)
