@@ -730,3 +730,7 @@
 ### 第二十七次更新來源（2026-04-04 06:45）
 - **PaddleOCR-VL 多模態文檔理解突破** - 百度發布視覺語言模型 PaddleOCR-VL，融合 NaViT 動態解析度與 ERNIE 語言能力，在文檔解析與元素識別任務上達 SOTA 性能，同時保持高效推理效率，標誌開源模型在文檔智能領域的實用突破 [Trending Papers - Hugging Face](https://huggingface.co/papers/trending)
 - **UniDriveVLA 自動駕駛統一視覺-語言-動作模型** - 新型多模態智能體系統透過 Mixture-of-Transformers 架構實現空間感知與語義推理解耦，支援端到端自動駕駛任務規劃與執行，標誌自動駕駛 AI 從感知驅動向推理驅動轉變，逐步推進自主決策能力 [Trending Papers - Hugging Face](https://huggingface.co/papers/trending)
+
+### 第二十八次更新來源（2026-04-04 08:45）
+- **GPT-5.4 計算機使用能力與性能基準** - OpenAI 於 3 月 5 日正式發布 GPT-5.4，核心突破為原生計算機使用 (computer-use) 能力，可直接與軟體平台互動，在 OSWorld-Verified 與 WebArena Verified 基準上創造記錄分數，GDPval 知識工作測試達 83% 準確率，代表 AI 從文本推理向實際系統操作的根本轉變 [Latest AI Model Releases News April 2026 — OpenAI Blog](https://blog.openai.com/gpt-5-4-release/)
+- **Gemini 3.1 Pro 實時多模態與醫療應用突破** - Google 推出 Gemini 3.1 Pro 後，推進實時語音與視覺處理能力，在醫療診斷與遠距患者監測領域啟動試點應用，展現 AI 從離線分析向實時互動式醫療決策支持的演進方向，GPQA Diamond 推理基準達 94.3%，成為推理能力新標杆 [New AI Model Releases News April 2026 — Google Deepmind](https://blog.mean.ceo/new-ai-model-releases-news-april-2026/)
