@@ -774,3 +774,7 @@
 ### 第三十四次更新來源（2026-04-05 最新搜索）
 - **OpenAI GPT-5.4 Test-Time Compute 推理突破** - GPT-5.4 "Thinking" 變體原生整合測試時計算能力，模型在輸出回應前可進行延展推理，在複雜問題上實現「先思後答」的決策流程，標誌推理從單次前向通道向反覆驗證優化的根本轉變，特別適用於數學競賽、代碼調試與科學研究場景 [LLM News Today (April 2026) — LLM Stats](https://llm-stats.com/ai-news)
 - **Google Gemini 3.1 Flash-Lite 輕量推理版發布** - Google 推出面向邊界部署的 Gemini 3.1 Flash-Lite 優化版，回應延遲加快 2.5 倍，輸出生成速度提升 45%，API 成本降至 $0.25 per million input tokens，推進 AI 應用向實時互動轉變 [Google AI News April 2026 — devFlokers](https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs)
+
+### 第三十五次更新來源（2026-04-05 多模態評估與推理）
+- **多模態大型模型安全評估新基準 Uni-SafeBench** - 新興安全評估框架針對統一多模態模型（整合文本、圖像、音頻、視頻輸入）的對抗魯棒性、隱私洩露與有害內容生成等關鍵風險進行系統化評估，為多模態 AI 安全部署建立行業標準，標誌多模態模型評估從性能基準轉向安全治理新階段 [Uni-SafeBench: A Safety Benchmark for Unified Multimodal Large Models — arXiv](https://arxiv.org/list/cs.AI/current)
+- **多模態算法推理 (MAR) 研究突破 — CVPR 2026** - 業界聚焦多模態算法推理的關鍵挑戰：視覺與物理推理的新架構設計、程序化數據生成、推理上界理論探索，推進 AI 從單模態符號推理向整合視覺-語言-物理的多源推理轉變，CVPR 2026 工作坊彙集學界企業研究成果，標誌多模態推理成為下一代智能體系統的核心能力 [Multimodal Algorithmic Reasoning Workshop — CVPR 2026](https://marworkshop.github.io/cvpr26/)
