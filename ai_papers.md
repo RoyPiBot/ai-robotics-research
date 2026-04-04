@@ -778,3 +778,7 @@
 ### 第三十五次更新來源（2026-04-05 多模態評估與推理）
 - **多模態大型模型安全評估新基準 Uni-SafeBench** - 新興安全評估框架針對統一多模態模型（整合文本、圖像、音頻、視頻輸入）的對抗魯棒性、隱私洩露與有害內容生成等關鍵風險進行系統化評估，為多模態 AI 安全部署建立行業標準，標誌多模態模型評估從性能基準轉向安全治理新階段 [Uni-SafeBench: A Safety Benchmark for Unified Multimodal Large Models — arXiv](https://arxiv.org/list/cs.AI/current)
 - **多模態算法推理 (MAR) 研究突破 — CVPR 2026** - 業界聚焦多模態算法推理的關鍵挑戰：視覺與物理推理的新架構設計、程序化數據生成、推理上界理論探索，推進 AI 從單模態符號推理向整合視覺-語言-物理的多源推理轉變，CVPR 2026 工作坊彙集學界企業研究成果，標誌多模態推理成為下一代智能體系統的核心能力 [Multimodal Algorithmic Reasoning Workshop — CVPR 2026](https://marworkshop.github.io/cvpr26/)
+
+### 第三十六次更新來源（2026-04-05 機械可解釋性與推理硬件）
+- **機械可解釋性 (Mechanistic Interpretability) 成為 MIT 2026 突破技術** - MIT Technology Review 官方認可機械可解釋性為 2026 年十大突破技術，該領域致力於映射 AI 模型內部關鍵特徵與推理路徑，Anthropic 在 2024-2025 年開發的「模型顯微鏡」能追蹤 Claude 內部推理序列，OpenAI、Google DeepMind 亦採用類似技術解釋異常行為，標誌 AI 安全部署從黑盒操作向可解釋推理的根本轉變 [Mechanistic interpretability: 10 Breakthrough Technologies 2026 — MIT Technology Review](https://www.technologyreview.com/2026/01/12/1130003/mechanistic-interpretability-ai-research-models-2026-breakthrough-technologies/)
+- **Meta MTIA 推理芯片路線圖加速推進** - Meta 公開四代 MTIA 晶片路線圖，計畫在 2 年內完成全部部署，刷新業界 6 個月發佈週期紀錄，其中 MTIA 300 已投入生產用於排名與推薦訓練，MTIA 400-500 聚焦生成式 AI 推理（圖文生成、視頻生成等任務），與 Broadcom 合作採用模組化可複用設計，標誌企業級推理硬件從通用加速向專用 GenAI 最佳化的架構演進 [Meta: Expanding Custom Silicon to Power Our AI Workloads — Meta AI Blog](https://ai.meta.com/blog/next-generation-meta-training-inference-accelerator-AI-MTIA/)
