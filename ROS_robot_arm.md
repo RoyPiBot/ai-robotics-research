@@ -797,6 +797,18 @@ G-ARM 是 2025-2026 年最值得關注的教育用機械手臂專案：
 - **成本優化**：大幅降低推理負擔，適合邊界設備（Raspberry Pi 5 + USB Coral TPU）
 - **應用場景**：工業檢測、環境掃描、動態環境適應
 
+### 事件相機視覺伺服與微秒級控制（2026 年 4 月新進展）
+
+**SEBVS 框架的突破**：
+- **融合 RGB 與事件串流**：將高解析度幀與非同步事件流在統一轉換器架構內融合，控制精度與任務成功率均超越單一模式方案
+- **微秒級延遲**：事件相機逐像素報告亮度變化，取樣速率達微秒等級，完全無動態模糊，適合高速抓取與邊界推理
+- **多物體抓取**：已驗證框架可在雜亂場景中同時辨識已知與未知物體，是 UR5 + Robotiq 2F-85 夾爪的標準組合
+- **研究資源**：[SEBVS arXiv](https://arxiv.org/html/2508.17643)、[Event-based Vision Resources](https://github.com/uzh-rpg/event-based_vision_resources)
+
+**ROS 2 Kilted Kaiju 通訊與性能優化**：
+- **新增 Zenoh 支援**：Tier 1 RMW（Middleware），強化分散式機器人系統的實時通訊可靠性
+- **RCLPy 改進**：新增事件執行器，性能大幅提升，適合高頻視覺迴路與軌跡更新（>100 Hz）
+
 ### PAL Robotics ROS 2 全面轉型（2026 年 4 月）
 
 自 2026 年 4 月 1 日起，PAL Robotics 官方支援完全轉向 ROS 2 Humble/Ubuntu 22.04：
