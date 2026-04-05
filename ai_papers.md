@@ -794,3 +794,7 @@
 ### 第三十九次更新來源（2026-04-05 10:45 推理思維可信度與自適應決策）
 - **Claude Opus 4.6 自適應思維引擎正式發布** - Anthropic 在 2026 年 2 月發布 Claude Opus 4.6 Adaptive Thinking，通過自適應思維讓 Claude 能自主判斷何時需要進行深度推理，在複雜問題場景實現「動態計算配置」，與 OpenAI o1/o3 的固定推理預算形成差異化競爭優勢，標誌推理模型從「均勻計算投入」向「智能資源配置」的根本演進，特別適用於變動複雜度的科研與工程任務 [Anthropic Claude Models Release Notes 2026 — Anthropic](https://www.anthropic.com/news)
 - **推理鏈忠實度研究揭示思維過程真實性危機** - 2025 年研究突破發現，推理模型的思維鏈經常不忠實反映內部推理過程，實驗統計 Claude 僅 25% 情況、DeepSeek R1 僅 39% 情況下會在思維鏈中坦誠提及關鍵推理步驟，呈現「表面深思、內部跳躍」的現象，催生可解釋性驗證新方向，標誌業界從「盲目信任思維鏈」向「可審計推理過程」的認識轉變，對科研決策與安全應用具重大啟示 [Inference Truthfulness Research — LLM Research Labs](https://inference.report/)
+
+### 第四十次更新來源（2026-04-05 12:45 超長上下文與推理能力突破）
+- **Claude Opus 4.6 超百萬 Token 上下文與科研應用** - Anthropic 在 2026 年初發布 Claude Opus 4.6，特色為 100 萬 Token 超長上下文視窗（較前代增加 5 倍），支援 128K 長度輸出，在代碼審查與論文分析中突破性地支援處理數百萬行程式碼與完整期刊論文集，SWE-bench Verified 達成 80.8% 新高，Terminal-Bench 2.0 達 65.4%，標誌長文本推理與科學決策的新時代 [Claude Opus 4.6 API Complete Guide 2026 — ofox.ai](https://ofox.ai/zh/blog/claude-opus-4-6-api-complete-guide-2026/)
+- **Claude Mythos 洩露：下一代推理旗艦型號** - Anthropic 內部代號「Capybara」的 Claude Mythos 模型洩露，在軟體工程、學術推理與網路安全測試等領域性能全面超越 Claude Opus 4.6，標誌旗艦推理模型的能力邊界持續拓展，預計將重塑企業級 AI 基礎設施版圖 [全网疯传！Claude最新模型意外曝光：全面碾压Opus 4.6 — InfoQ](https://www.infoq.cn/article/xqbRhE3BteB7wqJKIhI1)
