@@ -582,6 +582,8 @@ if __name__ == '__main__':
 - **6-DOF 機械臂新教程（2026 年 Q2）**：官方發布完整的 6-DOF 機械臂仿真與控制教程，涵蓋 URDF 建模、MoveIt 2 路徑規劃、視覺伺服與硬體實裝，推進教育應用。
 - **MoveIt 2 實時性能躍進**：新版本實現毫秒級響應時間，支援離線運動規劃與線上軌跡適應，適合高精度工業應用與協作機械臂。
 - **ROS-Industrial 強化學習應用（2026 Q1）**：ROS-Industrial Consortium Asia Pacific 推出「Reinforcement Learning for Robot Arm Manipulation」工作坊，展示如何應用深度強化學習演算法改進機械臂控制精度與自適應能力，特別適合多工場景與動態環境適應。
+- **ros2_control 異步元件完整化（2025-2026）**：新增異步元件支援、URDF 全域存取、集成式關節限制器（硬體層），性能提升 65%。支援變體與自訂資料型別，標準化接口適配多廠牌機械臂。
+- **SEBVS 事件相機視覺伺服（2025 年 8 月）**：合成事件視覺伺服框架實現 1-2 kHz 伺服迴圈率（框架式視覺僅 30-200 Hz），取放誤差收斂時間 0.6s → 0.15s，像素誤差與角度誤差相較減 2-4×，RGB+事件融合方案性能最優。[GitHub 開源](https://github.com/eventbasedvision/SEBVS)、ROS 2 Gazebo 驗證。
 
 ### 階段五：進階提升（第 9 週以後）
 
