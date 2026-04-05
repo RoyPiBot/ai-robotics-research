@@ -879,6 +879,19 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 - **多感測器融合決策**：結合視覺伺服、力反饋、聽覺輸入，實現複雜環境下的實時決策與自適應控制
 - **應用前景**：已在精密組裝、動態目標追蹤、物體分揀等工業應用中驗證效能
 
+### Hiwonder JetArm 高性能視覺機械臂（2026 年 4 月新品）
+
+**JetArm 3D 視覺機械臂系統**：
+- **硬體配置**：6 軸智能串列匯流排伺服馬達 + Jetson Nano/Orin Nano/Orin NX 核心控制器 + 3D 深度相機、6 麥克風陣列
+- **ROS 完整支援**：原生相容 ROS 1 與 ROS 2 Humble/Iron，內建多模態 AI 大模型推理
+- **應用場景**：3D 空間抓取、動態目標追蹤、物體分揀、場景理解、語音控制，特別適合教育與工業應用
+
+### Tesseract 運動規劃框架 1.0 衝刺（2026 年 Q2 目標）
+
+**框架現況**：
+- **核心改進**：API 打磨、單元測試強化、轉向基於插件的規劃管道架構，支援自訂碰撞檢測器與 Task Composer
+- **社群重點**：改進多舰隊協調（OpenRMF）、Rust 生態發展（rclrs）、多模態感測器 AI 擴展
+
 ### 2026 年硬體選擇建議更新
 
 | 方案 | 處理器 | 適合場景 | 參考價格 |
@@ -886,6 +899,7 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 | Pi 5 + ROS 2 Humble | ARM Cortex-A76 | 教育、輕量應用 | ~$80 USD |
 | Jetson Nano + ROS 2 | Maxwell GPU | 需要 AI 推理加速 | ~$150 USD |
 | Pi 5 + USB 加速器 | ARM + Coral TPU | 邊緣 AI + 機器人 | ~$130 USD |
+| JetArm 3D | Jetson Orin Nano | 視覺導向 + AI 應用 | ~$450 USD |
 
 **資料來源**：
 - [Pi 5 Composite Bot — Hackster.io](https://www.hackster.io/HiwonderRobot/pi-5-powerhouse-building-the-ultimate-ros-2-composite-bot-fd2bc1)
