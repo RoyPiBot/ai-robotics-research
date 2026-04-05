@@ -816,3 +816,7 @@
 ### 第四十三次更新來源（2026-04-05 20:46 Gemini 3.1 Pro 推理突破與 Claude Context 擴展）
 - **Gemini 3.1 Pro 推理與科學知識領先 - ARC-AGI 翻倍突破** - Google 於 2026-02-19 發布 Gemini 3.1 Pro，在 ARC-AGI-2 推理基準達成 77.1%（相比前代 31.1% 翻倍），GPQA Diamond 科學知識測試達 94.3%，在 16 項主流基準中領先 13 項，超越 Claude Opus 4.6 與 GPT-5.2，標誌推理能力邊界的新突破 [AI Model Benchmarks Apr 2026 — LM Council](https://lmcouncil.ai/benchmarks)
 - **Claude Opus 4.6 百萬 Token 研究版本發布 - Context 邊界突破** - Anthropic 於 2026-02-發布 Claude Opus 4.6 測試版，首次實現百萬 token 上下文窗口（1M tokens），突破傳統 context 限制，支援長文本推理與多文檔分析，推進複雜學術研究與代碼審查任務的可行邊界 [Claude 模型概覽 — Anthropic Platform](https://platform.claude.com/docs/en/about-claude/models/overview)
+
+### 第四十四次更新來源（2026-04-06 更新）
+- **Claude Sonnet 4.6 升格為免費預設模型 - 民主化推進** - Anthropic 宣布 Claude Sonnet 4.6 升級為 claude.ai 免費版預設模型，保持 $3/$15 定價，新增百萬 token 上下文支援（測試版），實現高效能與成本平衡，推進 AI 應用民主化，降低開發者採用門檻 [Claude 模型新聞 2026 — Anthropic](https://www.anthropic.com/news)
+- **Test-Time Compute（思維擴展）成為 2026 產業共識** - OpenAI、Anthropic、Google 推出的「思維」系統標誌推理範式轉變：模型於推理時動態配置計算資源進行深度思考，相較傳統單次前向通道實現 4-16 倍性能提升，特別在數學、代碼調試、科學研究等複雜任務上優勢顯著，標誌 AI 推理從「快速回應」向「思考密集」的演進 [AI Updates Today (April 2026) — LLM Stats](https://llm-stats.com/llm-updates)
