@@ -848,6 +848,14 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 - **多傳感器硬件同步**：新型多傳感器系統可達 78 微秒同步精度，透過 ros2_control 框架的 1kHz 伺服迴圈確保臂端效應器 < 110ms 的端到端反應延遲
 - **實時協作機械臂應用**：事件相機已在揮手手勢即時識別、物體追蹤、動態環境適應等場景驗證，與 ROS 2 的 tf2 坐標轉換無縫整合
 
+### ROS 2 Kilted Kaiju 與 ros2_control 2026 年 4 月完全成熟（新增）
+
+**ros2_control 框架達成關鍵里程碑**：
+- **非同步元件與 URDF 統一**：2026 年 ROS 2 Kilted 版本支援完整的非同步控制器、變體支援、全局 URDF 訪問，硬體層整合關節限制器
+- **實時接觸任務控制**：新增專用控制器處理工具插入、裝配等高精度接觸任務，已通過工業機械臂（UR、ABB、KUKA）驗證
+- **微控制器與邊界支援**：ros2_control 已成功在 ESP32 微控制器上部署，擴展至嵌入式機械手臂應用場景
+- **廣泛機器人支援矩陣**：Universal Robots、Kinova Kortex Gen3、Mitsubishi MELFA、ROBOTIS OpenMANIPULATOR、xArm、KUKA 等業界標準機械臂已提供官方 ROS 2 驅動與工程指南
+
 **ROSOrin Pro 邊緣計算新配置**（2026/04）：
 - NVIDIA Jetson Orin Nano 級別的邊緣推理，配合事件相機的稀疏資料流，大幅降低計算負擔
 - 相比傳統視覺伺服的影像處理 pipeline，事件驅動架構減少記憶體消耗 60-80%，適合 Raspberry Pi 5 邊界 AI 應用
