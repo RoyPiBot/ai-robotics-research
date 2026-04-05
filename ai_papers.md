@@ -797,6 +797,12 @@
 
 ### 第四十次更新來源（2026-04-05 12:45 超長上下文與推理能力突破）
 - **Claude Opus 4.6 超百萬 Token 上下文與科研應用** - Anthropic 在 2026 年初發布 Claude Opus 4.6，特色為 100 萬 Token 超長上下文視窗（較前代增加 5 倍），支援 128K 長度輸出，在代碼審查與論文分析中突破性地支援處理數百萬行程式碼與完整期刊論文集，SWE-bench Verified 達成 80.8% 新高，Terminal-Bench 2.0 達 65.4%，標誌長文本推理與科學決策的新時代 [Claude Opus 4.6 API Complete Guide 2026 — ofox.ai](https://ofox.ai/zh/blog/claude-opus-4-6-api-complete-guide-2026/)
+
+### 第四十一次更新來源（2026-04-05 16:30 超大規模 Agent 與推理模型新紀元）
+- **Claude Mythos 5 十萬億參數 Agent 模型突破** - Anthropic 發布首個十萬億參數等級的 Claude Mythos 5，為應對網路安全、學術研究與複雜編程等高風險場景而設計，標誌 Agent 模型參數規模跨越至前所未有的量級，可實現自主多步推理、複雜決策與知識整合，推進 AI 從單點推理向分布式自主決策系統的演進 [LLM News Today (April 2026)](https://llm-stats.com/ai-news)
+- **Microsoft 三模態基礎模型套件發布** - Microsoft AI 公布 MAI 系列三大基礎模型，包含 MAI-Transcribe-1（跨 25 語言語音轉文字、比 Azure Fast 快 2.5 倍）、MAI-Omni（原生音頻處理）與文生圖能力，結合 Foundry 部署平台，推進企業級多模態 AI 應用的成本與速度邊界 [Microsoft AI News 2026](https://microsoft.ai/)
+- **Mercury 超快推理語言模型族** - 新興研究推出 Mercury 家族擴散語言模型，採用粗-細精煉架構並行生成多個 Token，Mercury Mini 與 Small 版本分別達 1109 與 737 tokens/sec（H100 測試），標誌推理速度向實時多媒體互動的新境界拓展 [arXiv cs.AI 2026](https://arxiv.org/list/cs.AI/current)
+- **DeepSeek V4 開源一萬億參數 MoE 競逐** - DeepSeek 推出 V4 系列（十萬億參數 MoE 架構），全權重開源，在訓練成本僅 5.2 百萬美元前提下達到與 US 前沿模型相當性能，重塑開源模型的經濟效益與競爭力景觀 [DeepSeek Blog](https://deepseek.com/)
 - **Claude Mythos 洩露：下一代推理旗艦型號** - Anthropic 內部代號「Capybara」的 Claude Mythos 模型洩露，在軟體工程、學術推理與網路安全測試等領域性能全面超越 Claude Opus 4.6，標誌旗艦推理模型的能力邊界持續拓展，預計將重塑企業級 AI 基礎設施版圖 [全网疯传！Claude最新模型意外曝光：全面碾压Opus 4.6 — InfoQ](https://www.infoq.cn/article/xqbRhE3BteB7wqJKIhI1)
 
 ### 第四十一次更新來源（2026-04-05 14:45 下一代 Claude 與推理 API 突破）
