@@ -782,3 +782,7 @@
 ### 第三十六次更新來源（2026-04-05 機械可解釋性與推理硬件）
 - **機械可解釋性 (Mechanistic Interpretability) 成為 MIT 2026 突破技術** - MIT Technology Review 官方認可機械可解釋性為 2026 年十大突破技術，該領域致力於映射 AI 模型內部關鍵特徵與推理路徑，Anthropic 在 2024-2025 年開發的「模型顯微鏡」能追蹤 Claude 內部推理序列，OpenAI、Google DeepMind 亦採用類似技術解釋異常行為，標誌 AI 安全部署從黑盒操作向可解釋推理的根本轉變 [Mechanistic interpretability: 10 Breakthrough Technologies 2026 — MIT Technology Review](https://www.technologyreview.com/2026/01/12/1130003/mechanistic-interpretability-ai-research-models-2026-breakthrough-technologies/)
 - **Meta MTIA 推理芯片路線圖加速推進** - Meta 公開四代 MTIA 晶片路線圖，計畫在 2 年內完成全部部署，刷新業界 6 個月發佈週期紀錄，其中 MTIA 300 已投入生產用於排名與推薦訓練，MTIA 400-500 聚焦生成式 AI 推理（圖文生成、視頻生成等任務），與 Broadcom 合作採用模組化可複用設計，標誌企業級推理硬件從通用加速向專用 GenAI 最佳化的架構演進 [Meta: Expanding Custom Silicon to Power Our AI Workloads — Meta AI Blog](https://ai.meta.com/blog/next-generation-meta-training-inference-accelerator-AI-MTIA/)
+
+### 第三十七次更新來源（2026-04-05 系統推理與持續學習）
+- **DeepSeek V3.2 開源推理模型突破** - DeepSeek 最新推出的 V3.2 模型在顯著降低訓練成本的前提下，於推理與代理工作負載領域達到與商業前沿模型相當的性能，成為開源生態中推理能力的新標杆，標誌中國開源 AI 在思考密集型任務上的根本進展 [DeepSeek Model Updates 2026 — DeepSeek Blog](https://deepseek.com/)
+- **AI 模型持續學習架構成為 2026 核心議題** - 業界預測持續學習（Continual Learning）將成為 2026 年 AI 演進的關鍵技術方向，模型不再依賴靜態預訓練，而是在實時交互與自動化任務執行過程中持續自我改進與進化，解決傳統訓練-部署模式的靜態化瓶頸，標誌 AI 從「冷啟動」向「永生化自適應」的根本轉變 [Google DeepMind Continual Learning Research 2026 — DeepMind Publications](https://deepmind.google/research/publications/)
