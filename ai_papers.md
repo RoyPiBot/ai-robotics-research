@@ -812,3 +812,7 @@
 ### 第四十二次更新來源（2026-04-05 18:45 推理模型競速與開源突破）
 - **DeepSeek V3.2 HumanEval 94.7% 確認 - 開源推理標杆奠定** - 獨立驗證確認 DeepSeek V3.2 在 HumanEval 編程基準達成 94.7% 成績，訓練成本僅 $0.28 per MTok（相比 OpenAI GPT-5.4 $2+ 成本優勢逾 90%），標誌開源推理模型已與商業前沿系統達到性能對齐，成本優勢更為突出，推進全球 AI 民主化進程邁向新里程碑 [LLM Benchmarks 2026 — LLM Stats](https://llm-stats.com/)
 - **推理時間擴展（Inference-Time Scaling）成為業界共識 2026 核心方向** - 業界已形成共識：2026 年 AI 研發重點從單純參數規模競賽轉向推論時計算最優化，通過粒子蒙特卡洛方法與過程獎勵模型在數學推理上實現 4-16 倍性能收益，AMD 推理性能突破 100 萬 tokens/sec，標誌推理速度與效率邁向實時互動新時代 [Awesome Inference-Time Scaling](https://github.com/ThreeSR/Awesome-Inference-Time-Scaling)
+
+### 第四十三次更新來源（2026-04-05 20:46 Gemini 3.1 Pro 推理突破與 Claude Context 擴展）
+- **Gemini 3.1 Pro 推理與科學知識領先 - ARC-AGI 翻倍突破** - Google 於 2026-02-19 發布 Gemini 3.1 Pro，在 ARC-AGI-2 推理基準達成 77.1%（相比前代 31.1% 翻倍），GPQA Diamond 科學知識測試達 94.3%，在 16 項主流基準中領先 13 項，超越 Claude Opus 4.6 與 GPT-5.2，標誌推理能力邊界的新突破 [AI Model Benchmarks Apr 2026 — LM Council](https://lmcouncil.ai/benchmarks)
+- **Claude Opus 4.6 百萬 Token 研究版本發布 - Context 邊界突破** - Anthropic 於 2026-02-發布 Claude Opus 4.6 測試版，首次實現百萬 token 上下文窗口（1M tokens），突破傳統 context 限制，支援長文本推理與多文檔分析，推進複雜學術研究與代碼審查任務的可行邊界 [Claude 模型概覽 — Anthropic Platform](https://platform.claude.com/docs/en/about-claude/models/overview)
