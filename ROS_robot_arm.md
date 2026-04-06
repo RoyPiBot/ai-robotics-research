@@ -1083,6 +1083,20 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 - **Hiwonder ArmPi Ultra** — Pi 5 + STM32 + 3D 深度相機 + AI 語音盒，支援 ROS 2
   - [官網](https://www.hiwonder.com/products/armpi-ultra)
 
+### ROS 2 Control 框架與感知整合（2026 年 4 月新增）
+
+#### ros2_control 6DOF 範例與工具
+- **官方教學更新**：ROS 2 Control 提供完整的 6DOF 機械手臂示範、URDF 編寫和控制器配置
+  - [Example 7: Full tutorial with a 6DOF robot](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+  - 支援 Gazebo Kura 模擬，便於驗證實體機器人的動態行為
+
+#### RQT Frame Editor 與視覺化工具
+- **RQT Frame Editor**：ROS 原生外掛，直觀視覺化和編輯 TF 座標轉換框架，在 RViz 中即時建立和調整
+
+#### 感知驅動應用與 ROS-Industrial 進展
+- **Scan-N-Plan 解決方案**：ROS-Industrial 推出的感知驅動表面加工框架，適用於磨削、拋光等精密任務
+- **應用潛力**：可與 Octomap 動態環境感知整合，支援多臂協作和自適應操作
+
 ### 學習建議更新
 
 依 Roy 的預算與目標，建議的入門路徑：
