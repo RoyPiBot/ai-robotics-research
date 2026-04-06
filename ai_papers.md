@@ -861,3 +861,8 @@
 ### 第四十八次更新來源（2026-04-06 12:46 前沿推理模型發布倒數）
 - **GPT-5.5（Spud）預訓練完成與即將推出** - OpenAI 官方宣布 GPT-5.5（內部代號 Spud）於 2026-03-24 完成預訓練，預期數週內正式發布，將繼續擴展推理、多模態與編程能力邊界，市場預期將進一步鞏固 OpenAI 在前沿模型的領導地位，與 Gemini 3.1 Pro、Claude Mythos 等展開新一輪競速 [Introducing GPT-5.5 | OpenAI Blog](https://openai.com/index/introducing-gpt-5-5/)
 - **Claude Mythos 公開發布倒數與市場預期** - Anthropic 官方披露 Claude Mythos 新一代推理模型，市場預期約 25% 機率於 2026-04-30 前進行公開發布，將在軟體工程、學術推理與複雜決策等領域挑戰 GPT-5.5 與 Gemini 3.1 Ultra 的領先地位，標誌推理模型競賽進入新量級，預計進一步推動推理時計算與自適應決策的演進方向 [LLM News Today (April 2026) — LLM Stats](https://llm-stats.com/ai-news)
+
+### 第四十九次更新來源（2026-04-06 14:45 開源長上下文與推理速度新突破）
+- **Llama 4 Scout 突破千萬 Token 上下文窗口** - Meta 發布 Llama 4 Scout，實現 1000 萬 token 上下文窗口（10M tokens），超越 Claude Opus 4.6 百萬 token 規模，成為開源社區最大上下文模型，適用於超長文本法律合規、學術數據庫聯合分析等應用場景，推進開源模型與商業前沿系統的上下文能力對齐 [Best AI Models April 2026 — BuildFastWithAI](https://www.buildfastwithai.com/blogs/best-ai-models-april-2026)
+- **Mercury 快速推理模型系列發布 - 推理速度達 1100+ tokens/sec** - Stanford/Anthropic 合作發布 Mercury 擴散型語言模型家族，實現超快推理速度：Mercury Coder Mini 達 1109 tokens/sec、Mercury Coder Small 達 737 tokens/sec（NVIDIA H100 測試），較速度優化的前沿模型快 10 倍，標誌推理時計算擴展與快速生成邁入新階段，特別適合實時互動應用 [LLM News Today (April 2026) — LLM Stats](https://llm-stats.com/ai-news)
+- **中國開源模型市場佔有率激增 - OpenRouter 流量破 45%** - 獨立數據監測顯示中國模型（DeepSeek、Qwen、GLM 等）在 OpenRouter 流量佔比已達 45%，較去年不足 2% 的佔有率實現跨越式增長，標誌開源 AI 生態競爭格局發生根本轉變，開源中文模型與商業旗艦系統的性能差異逐步縮小，推進全球 AI 民主化邁向多中心化時代 [OpenRouter Rankings April 2026 — DigitalApplied](https://www.digitalapplied.com/blog/openrouter-rankings-april-2026-top-ai-models-data)
