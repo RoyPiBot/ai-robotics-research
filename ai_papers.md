@@ -871,3 +871,7 @@
 - **AMD MLPerf Inference 6.0 突破百萬 tokens/sec 里程碑** - AMD 在 MLPerf Inference 6.0 基準測試中率先達成每秒百萬 token 推理速度（1M tokens/sec）的歷史性突破，測試基於 Llama 2 70B 與 GPT-OSS-120B 在多節點 AMD Instinct MI355X GPU 集群上的結果，標誌推理硬件性能邁向新量級，挑戰 NVIDIA 在推理領域的壟斷地位 [AMD MLPerf Inference 6.0 — AMD Blog](https://www.amd.com/en/blogs/2026/amd-delivers-breakthrough-mlperf-inference-6-0-results.html)
 - **NVIDIA Rubin 推理平台發布 - 成本降低 10 倍** - NVIDIA 在 GTC 2026 正式發布 Rubin AI 推理計算平台，相比 Blackwell 實現推理單位成本降低 10 倍，優化混合專家模型推理，Rubin 產品預計 2026 下半年上市，AWS/Google Cloud/Microsoft/OCI 等主要雲服務商已確認支援，標誌推理基礎設施進入成本革命時代 [NVIDIA Rubin Platform — NVIDIA Newsroom](https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer)
 - **Groq 3 LPU 推理專用晶片發布** - NVIDIA 與 Groq 合作推出 Groq 3 LPU（Lateral Processing Unit），為推理工作負載量身定制的專用晶片，採用 SRAM 內存嵌入式設計（避免高帶寬記憶體瓶頸），與 Rubin GPU 協同加速推理，標誌推理加速從通用 GPU 向專用芯片架構的演進，推進推理延遲與能耗優化的新邊界 [Groq 3 LPU — IEEE Spectrum](https://spectrum.ieee.org/nvidia-groq-3)
+
+### 第五十一次更新來源（2026-04-06 KV Cache 優化與開源生態進展）
+- **Google TurboQuant 於 ICLR 2026 發布 - KV Cache 壓縮革命** - Google 研究團隊推出 TurboQuant 算法，結合 PolarQuant 向量旋轉與 Quantized Johnson-Lindenstrauss 壓縮方法，實現 KV cache 記憶體開銷的顯著降低，推理成本相較傳統方案削減 6 倍，標誌長序列推理與多模態處理的基礎設施優化新方向，為企業級超長上下文應用奠定經濟基礎 [ICLR 2026 Research — Google AI](https://www.iclr.cc/)
+- **開源模型與商業旗艦全面對齐新時代** - Mistral、Meta Llama 4、DeepSeek 等開源模型已在多項基準測試中達成與 OpenAI、Google、Anthropic 商業前沿系統相當的性能，但成本優勢明顯（較商業方案降低 50-90%），標誌開源 AI 生態邁向價效比全面超越商業方案的新階段，推進全球 AI 民主化與去中心化進程
