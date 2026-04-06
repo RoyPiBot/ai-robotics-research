@@ -1,6 +1,6 @@
 # 2026 年最新 AI 研究動態
 
-> 更新日期：2026-04-06（第八次更新）
+> 更新日期：2026-04-07（第五十五次更新）
 > 整理者：Roy 的 AI 研究助理
 
 ---
@@ -890,4 +890,8 @@
 
 ### 第五十四次更新來源（2026-04-07 14:00 多代理架構與企業級 Agent 標準化）
 - **xAI Grok 4.20 多代理協作突破 - 平行推理新範式** - xAI 宣布 Grok 4.20 採用創新的四代理並行架構：Harper（實時事實查證）、Benjamin（邏輯與編碼）、Lucas（創意推理）與協調代理，四個專門 Agent 在複雜查詢上實時辯論後產生統一答案，標誌 Agent 協作從串列向並列轉變，相比單一模型推理能力提升 3-5 倍，特別適合需要多角度分析的專業應用 [xAI Grok 4.20 Blog](https://www.xai.com/)
+
+### 第五十五次更新來源（2026-04-07 科研自動化與多模態應用新紀元）
+- **The AI Scientist - 自動化 AI 科研流程完成首次同行評審突破** - Nature 發表的 The AI Scientist 系統標誌著 AI 從工具向科研自主決策者的演變，該系統可自動化 AI 論文研究的完整週期（假設生成、實驗設計、模型訓練、結果驗證），由 AI 生成的論文已成功通過機器學習學術會議同行評審，顯示 AI 生成內容在學術嚴謹性上已達可發表水準，預期將加速基礎科學與應用研究的迭代週期，對學術出版與科研評估體系帶來深遠影響 [AI Scientist Passes Peer Review — Nature](https://phys.org/news/2026-03-ai-paper-peer.html)
+- **iQIYI Nadou Pro 多模態內容生成突破 - 視頻與互動體驗自動化** - iQIYI 發布 Nadou Pro 多模態內容生成平台，整合文本→圖像→視頻→互動體驗的端到端生成流程，特別優化短視頻、直播互動與虛擬主播應用場景，實現「一鍵內容工廠」，標誌多模態 AI 從靜態內容生成向「動態互動體驗」轉變，推進娛樂與媒體產業的 AI 驅動生產革命 [iQIYI AI Content Platform](https://www.iqiyi.com/)
 - **iQIYI Nadou Pro - 中文影視製作首個垂直 Agent** - iQIYI 於 2026-03-30 發布 Nadou Pro，整合 QiZhi 多模態模型與 SeeDance、Kling、Vidu 等生成工具，成為中國首個專業電影電視製作 AI Agent，支援文本、圖像、視頻、音頻端到端生成，標誌多模態 Agent 應用從通用向垂直產業深化，推動內容創意產業 AI 轉型 [iQIYI AI Blog](https://www.iqiyi.com/)
