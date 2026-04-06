@@ -797,6 +797,18 @@ G-ARM 是 2025-2026 年最值得關注的教育用機械手臂專案：
 **邊界 AI 檢測模式**（2026 年 Embedded World 展示）
 - **雙層策略**：快速移動時用輕量模型檢測潛在風險區域，當有疑慮時停下進行詳細檢查
 - **成本優化**：大幅降低推理負擔，適合邊界設備（Raspberry Pi 5 + USB Coral TPU）
+
+### ROS 2 實時視覺伺服性能驗證（2026 年 4 月新增）
+
+**MoveIt Servo 實時命令發送**：
+- ROS 2 原生設計不含實時性保障，但 MoveIt Servo 透過專用 Node 直接發送末端執行器速度命令到機械臂
+- 支援視覺伺服、語音控制、虛擬夾具等即時應用場景
+- [ROS 2 Humble 實時伺服教程](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html)
+
+**Preempt_RT 實時優化**：
+- 透過 Preempt_RT 補丁優化原生 Linux 內核，提升 ROS 2 訊息傳遞實時性能
+- 結合 ros2_control 框架，可達成工業等級的確定性控制
+- 適合多臂視覺伺服應用的同步協調與故障恢復
 - **應用場景**：工業檢測、環境掃描、動態環境適應
 
 ### 事件相機視覺伺服與微秒級控制（2026 年 4 月新進展）
