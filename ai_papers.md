@@ -837,3 +837,6 @@
 ### 第四十五次更新來源（2026-04-06 最新監控）
 - **GPT-5.5（Spud）預訓練完成 - 即將發布** - OpenAI 宣布 GPT-5.5（內部代號 Spud）於 2026-03-24 完成預訓練，預期數週內發布，代表 GPT 系列的下一代突破，將延續推理與多模態能力邊界擴展，標誌 OpenAI 進一步鞏固前沿地位，與 Gemini 3.1 Ultra、Claude Mythos 等形成新一輪競速 [Introducing GPT-5.5 | OpenAI Blog](https://openai.com/index/introducing-gpt-5-5/)
 - **Microsoft 三大多模態基礎模型官宣** - Microsoft AI 正式發布 MAI 系列多模態基礎模型：MAI-Transcribe-1（跨 25 語言語音轉文字，比 Azure Fast 快 2.5 倍）、MAI-Voice-1（原生音頻處理）與文生圖能力，搭配 Foundry 部署平台，推進企業級多模態 AI 應用成本與速度新境界，挑戰 Gemini 與 GPT-5 系列多模態優勢地位 [Microsoft AI Launches Multimodal Foundation Models — TheAIInsider](https://theaiinsider.tech/2026/04/03/microsoft-ai-launches-multimodal-foundation-models-to-expand-in-house-ai-capabilities/)
+
+### 第四十六次更新來源（2026-04-06 06:45 多模態基準競爭新態勢）
+- **MMMU-Pro 多模態基準競賽 - Gemini 領先優勢確立** - MMMU-Pro 基準測試（大規模跨學科多模態理解，涵蓋藝術、商業、科學、醫學、人文社科、技術工程等 11.5K 考試級題目）成為 2026 年多模態 AI 評估標準，Gemini 3 Pro 與 GPT-5.4 並佔榜首，其中 Gemini 在 MMMU-Pro 達成 95 分（相較 GPT-5.4 的 81 分），在圖像、文檔與混合媒體理解上展現領先優勢，GLM-4.5V、Qwen2.5-VL-32B 等開源模型緊跟其後，標誌多模態推理正成為企業級 AI 應用的核心競爭力 [Best multimodal AI model in 2026: MMMU-Pro benchmark leaderboard — BRC AI](https://www.bracai.eu/post/mmmu-benchmark)
