@@ -947,3 +947,7 @@
 ### 第六十四次更新來源（2026-04-08 11:00 機械手臂世界模型與具身 AI 推理加速）
 - **GigaWorld-Policy - 動作中心世界模型推理提速 9 倍** - GigaWorld-Policy 是新一代行動中心的世界-動作模型（WAM），創新設計解決現有方案推理開銷與視覺動作耦合問題，採用因果設計使未來影像標記不影響動作預測，推理部署時可選擇跳過影像生成，在真實機械手臂平台達成相比 Motus 基線 9 倍推理加速（75 ms 內完成決策），任務成功率提升 7%，相比 pi-0.5 性能提升 95%，標誌機械手臂推理從「高延遲複雜架構」向「邊緣即時決策」的轉變 [GigaWorld-Policy — ArXiv 2603.17240](https://arxiv.org/abs/2603.17240)
 - **X Square Robot 首屆具身 AI 開發者大會 (EAIDC 2026) - 從實驗室向現實應用轉變** - X Square Robot 於 2026 年 4 月成功舉辦首屆全球具身 AI 開發者大會 (Embodied AI Developers Conference 2026)，匯聚領先研究者與業界開發者，賽題涵蓋四大核心能力：抓取放置、語言理解、精細操控與長地平線決策，標誌具身 AI 從單點任務優化向「視覺-語言-動作統一架構」與複雜現實場景適應的轉變，推進機器人系統從實驗室原型向工業與服務業規模化部署 [EAIDC 2026 — X Square Robot](https://www.prnewswire.com/news-releases/x-square-robot-hosts-inaugural-eaidc-2026-advancing-real-world-deployment-of-embodied-ai-302732507.html)
+
+### 第六十五次更新來源（2026-04-08 12:15 世界模型決策新進展與具身 AI 評估標準化）
+- **世界模型決策能力綜合評估突破 - 決策耦合與通用型架構雙軌並進** - 最新綜合調查指出世界模型在決策支持上的進展，提出功能維度（決策耦合 vs 通用型）、時間建模（序列模擬與推理 vs 全局差分預測）、空間表示四軸分類框架，標誌世界模型從動作預測向「內部模擬環境、支持反事實推理」的深化，推進機械手臂與自主系統的決策複雜度提升，加速邊緣推理部署 [World Models Survey — ArXiv 2510.16732](https://arxiv.org/abs/2510.16732)
+- **CVPR 2026 第二屆 3D-LLM/VLA Workshop - 多模態感知決策新標準** - 於 CVPR 2026 成功舉辦第二屆 3D-LLM/Vision-Language-Action Workshop，深化 3D 場景理解與動作規劃的統一架構研究，標誌視覺-語言-動作統一模型（VLA）從單模態優化向「多源 3D 感知決策」的轉變，為機器人系統在複雜室內外環境的導航與操作奠定基礎 [3D-LLM/VLA Workshop — CVPR 2026](https://3d-llm-vla.github.io/)
