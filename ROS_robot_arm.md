@@ -998,6 +998,30 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 3. **RAI (RobotecAI)** (★479) — 廠商無關的 Agentic Physical AI 框架
    - [GitHub](https://github.com/RobotecAI/rai)
 
+---
+
+## 附錄 D：2026 年 4 月更新 — 力控制與邊緣 AI 部署融合
+
+### ROS 2 協作機械臂力控制新進展
+
+**力控制框架成熟化**：
+- **ROS 2 Control + 力回饋系統** — FPGA 加速 FOC 控制 + 逆運動學實現低延遲遠端力回饋，適用於精密裝配與接觸任務
+- **實時接觸任務控制** — 新增 ROS 2 控制器支援工具插入、打磨等實時接觸任務，Admittance Controller 確保力限制與運動約束
+- **協作機械臂支援** — Franka FR3、Kinova Kortex Gen3 等主流協作臂原生整合
+
+**應用場景** — 精密螺絲鎖付、柔順打磨、零件組裝時的力/位置混合控制
+
+### 邊緣 AI 部署優化（2026 年 4 月亮點）
+
+**Arm 架構中心化**：
+- 2026 年工業機器人與服務機器人平台（Boston Dynamics Atlas、Hyundai Robotics）絕大多數採用 **Arm 處理器** 進行本地感知、運動規劃、控制
+- **NVIDIA IGX Thor Mini** — 邊緣設備級的實時 AI，適合移動機械臂與自主系統
+
+**分佈式多機械臂協調**：
+- 無中央閘道的邊緣協調模式，機械臂群能在本地共享上下文、即時調適，大幅提升響應速度和韌性
+
+**推薦部署組合**：Pi 5 + ROS 2 (Humble/Lyrical) + ros2_control 力回饋 + 邊緣 AI 推理（Coral/Jetson Nano）
+
 4. **Vector OS Nano** (★77) — $450 硬體成本，說「pick up the battery」就能執行
    - [GitHub](https://github.com/VectorRobotics/vector-os-nano)
 
