@@ -1065,6 +1065,19 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 - **協調控制優勢**：減少臂端同步誤差和交互作用力波動，IEEE 2025 論文證實穩定性提升 35%
 - **技術堆疊**：ROS 2 原生整合，可與 MoveIt 2、Gazebo 無縫搭配
 
+#### Gazebo 多臂協作操作框架（2026 年 4 月新進展）
+- **環境適應**：多機械臂在動態、障礙密集環境中的協作操作，採用 Leader-Follower 架構
+- **深度學習整合**：YOLOv2 物體檢測 + 模擬 RGB-D 相機和 2D LiDAR 感測器進行即時任務執行
+- **應用場景**：需要協力合作的複雜操作（例如兩臂提取重物、動態協作組裝）
+- **模擬品質改善**：Gazebo Kura 採用 DART 6.16 物理引擎，大幅改善接觸密集型任務的模擬保真度
+- [研究論文 (Frontiers in Robotics and AI, 2025)](https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1585544/full)
+
+#### ros2_control 2026 年完整功能成熟（第一季度達成）
+- **非同步元件與 URDF 統一**：完整支援非同步控制器、變體支援、全局 URDF 訪問能力
+- **硬體層關節限制**：關節限制器在硬體層實現，控制器層可直接使用
+- **微控制器擴展**：成功部署至 ESP32，支援嵌入式機械臂應用
+- [ros2_control 完整文件 (Mar 2026)](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
 ### GitHub 上值得關注的新專案
 
 | 專案 | Stars | 說明 |
