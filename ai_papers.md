@@ -943,3 +943,7 @@
 ### 第六十三次更新來源（2026-04-08 10:30 量子化優化與物理 AI 應用深化）
 - **Google TurboQuant - ICLR 2026 向量量子化記憶優化突破** - Google 研究團隊在 ICLR 2026 發布 TurboQuant 演算法，有效解決向量量子化（Vector Quantization）在高維空間的記憶開銷問題，相比傳統量子化方法降低 50-70% 的儲存需求，同時保持推理準確度，推進 AI 模型在邊緣設備與移動端的高效部署，加速本地化推理的商業化進程 [Google AI Research 2026](https://research.google/blog/)
 - **Maximo 太陽機器人完成 100MW 電站部署 - 物理 AI 規模化突破** - 太陽機器人公司 Maximo 利用 NVIDIA 加速運算與 Isaac Sim 框架開發的自主機器人艦隊，成功完成單座 100 百萬瓦級太陽能電站的全自動化部署與安裝，標誌物理 AI 應用從實驗室原型向能源基礎設施規模化部署的重大進展，推進可再生能源產業降本增效，驗證 AI 機器人在複雜戶外環境的可靠性與成本效益優勢 [NVIDIA National Robotics Week 2026](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
+
+### 第六十四次更新來源（2026-04-08 11:00 機械手臂世界模型與具身 AI 推理加速）
+- **GigaWorld-Policy - 動作中心世界模型推理提速 9 倍** - GigaWorld-Policy 是新一代行動中心的世界-動作模型（WAM），創新設計解決現有方案推理開銷與視覺動作耦合問題，採用因果設計使未來影像標記不影響動作預測，推理部署時可選擇跳過影像生成，在真實機械手臂平台達成相比 Motus 基線 9 倍推理加速（75 ms 內完成決策），任務成功率提升 7%，相比 pi-0.5 性能提升 95%，標誌機械手臂推理從「高延遲複雜架構」向「邊緣即時決策」的轉變 [GigaWorld-Policy — ArXiv 2603.17240](https://arxiv.org/abs/2603.17240)
+- **X Square Robot 首屆具身 AI 開發者大會 (EAIDC 2026) - 從實驗室向現實應用轉變** - X Square Robot 於 2026 年 4 月成功舉辦首屆全球具身 AI 開發者大會 (Embodied AI Developers Conference 2026)，匯聚領先研究者與業界開發者，賽題涵蓋四大核心能力：抓取放置、語言理解、精細操控與長地平線決策，標誌具身 AI 從單點任務優化向「視覺-語言-動作統一架構」與複雜現實場景適應的轉變，推進機器人系統從實驗室原型向工業與服務業規模化部署 [EAIDC 2026 — X Square Robot](https://www.prnewswire.com/news-releases/x-square-robot-hosts-inaugural-eaidc-2026-advancing-real-world-deployment-of-embodied-ai-302732507.html)
