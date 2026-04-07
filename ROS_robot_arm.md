@@ -1198,6 +1198,26 @@ Physical Intelligence 開源的 [π0](https://www.pi.website/blog/pi0)：
 - π0.5 版本已整合進 LeRobot v0.4.0
 - [開源倉庫](https://github.com/Physical-Intelligence/openpi)
 
+---
+
+## 附錄 E：ROS 2 機械手臂生態更新（2026-04-07）
+
+### ROS 2 硬體相容性與廠商支持進展
+
+#### PickNik 機器人硬體生態資料庫
+- **Gold Integration**：由 PickNik 集成驗證，具有完整的 ROS 2 駕動程式支持
+- **Basic Integration**：第三方完成但未由 PickNik 驗證的集成
+- [完整資料庫](https://picknik.ai/hardware-ecosystem/) — Open Robotics 與全球機械手臂製造商合作，鼓勵 ROS 2 駕動支持
+
+#### 新興教育機械手臂：G-ARM
+- **開源低成本方案**：G-ARM（2025 年 Springer Nature 發表）
+- ROS 2 原生整合，支援教育與研究用途
+- [論文](https://link.springer.com/article/10.1007/s11042-025-20748-8)
+
+### ROS 2 控制標準化進展
+- **支援機器人列表持續擴展**：[ROS 2 Control Supported Robots](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+- **ros2_control Rolling 版本**：增強了多臂協作、邊界部署驗證能力
+
 #### 對新手的意義
 
 VLA 模型讓「教機器人做事」變得前所未有地簡單——你不需要寫複雜的運動學程式，只要：
