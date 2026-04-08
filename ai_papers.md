@@ -980,4 +980,8 @@
 
 ### 第六十九次更新來源（2026-04-08 15:15 邊緣推理框架成熟化與 LLM 邊緣部署加速）
 - **Google LiteRT-LM - 高性能邊緣設備 LLM 推論框架發布** - Google 官方推出 LiteRT-LM，一個專為邊緣設備優化的生產級高性能推論框架，專針對大型語言模型（LLM）在邊緣硬體上的高效執行，相比傳統框架實現顯著推論加速，標誌邊緣 AI 推論從通用框架向「LLM 特化優化」的轉變，推進智慧手機、IoT 裝置與機械手臂邊緣推理部署的實現 [LiteRT-LM Launch — Google AI Blog](https://aitoolly.com/ai-news/article/2026-04-07-google-launches-litert-lm-a-high-performance-production-grade-framework-for-edge-device-llm-deployme)
+
+### 第七十次更新來源（2026-04-08 18:46 開源模型商業化與邊緣多模態推理新時代）
+- **Google Gemma 4 開源發布 - 邊緣裝置原生多模態支援** - Google DeepMind 於 2026 年 4 月 2 日正式發布 Gemma 4，採用 Apache 2.0 許可完全開源，原生支援邊緣設備（手機、IoT、樹莓派、Jetson Nano）與低延遲離線推理，標誌開源前沿模型進入「多模態 + 邊緣部署」新階段，加速邊緣 AI 應用的商業化進程與開源生態繁榮 [Google Gemma 4 Release — CometAPI 2026](https://www.cometapi.com/google-releases-gemma-4-open-source-model/)
+- **Alibaba Qwen 家族登頂全球開源部署 - 商業化應用生態成熟化** - Alibaba Qwen 家族成為全球最廣泛部署的開源權重模型家族，驅動力來自 Apache 2.0 開放許可、業界領先基準性能與覆蓋 7B-72B 全尺度模型範圍，在邊緣推理、行動模型（VLA）與多模態應用中廣泛應用，標誌開源模型從研究工具向企業級生產基礎設施的完全轉變，推進邊緣 AI 應用從高成本商業模型向低成本開源方案的大規模遷移 [Qwen Models — Alibaba AI](https://www.digitalapplied.com/blog/open-source-ai-landscape-april-2026-gemma-qwen-llama)
 - **邊緣 LLM 推論綜合調查 - SmoothQuant/OmniQuant 量子化新標準確立** - Tsinghua Science and Technology 發布《Efficient Inference for Edge Large Language Models》綜合調查，系統評估推測解碼（Speculative Decoding）、模型卸載（Model Offloading）等邊緣優化技術，分析 SmoothQuant 與 OmniQuant 量子化方案，確立後訓練量子化（Post-Training Quantization）為邊緣 LLM 部署的標準最佳實踐，加速機械手臂與自主系統的本地化推理能力 [Efficient Inference Survey — Tsinghua Science and Technology 2026](https://www.sciopen.com/article/10.26599/TST.2025.9010166)
