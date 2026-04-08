@@ -1004,4 +1004,8 @@
 
 ### 第七十一次更新來源（2026-04-09 09:15 多模態模型新世代與邊緣多模態推理深化）
 - **Qwen3-VL - Alibaba 最強多模態推理模型發布** - Alibaba Qwen 系列推出 Qwen3-VL 旗艦多模態模型，提供 235B-A22B（完整版）與 30B-A3B（輕量版）兩個規格，原生支援 Instruct 與 Thinking 推理模式，兩版本均配備官方 FP8 量化版本，在多模態基準測試中與 Gemini-2.5-Pro、GPT-5 等業界頂尖模型持平，標誌開源多模態模型邁入「超大規模 MoE + 原生推理增強」新階段，加速行動識別、場景理解與機械手臂視覺決策的邊緣部署 [Qwen3-VL Release — Alibaba AI](https://www.alibabacloud.com/blog)
+
+### 第七十二次更新來源（2026-04-09 14:20 VLA 架構創新與機械手臂決策新突破）
+- **ICLR 2026 VLA 研究突破 - 擴散式與流匹配架構雙軌並進** - ICLR 2026 彙集 164 篇 Vision-Language-Action 模型論文，展現 VLA 從階層式管道（串列視覺→語言→動作）向統一架構（單次前向傳播同時完成多模態理解與動作生成）的根本轉變。MMaDA-VLA 構建全擴散骨幹實現端到端統一，Fast-dVLA 與 LaMP 分別優化推理即時性與幾何先驗，π₀ 則基於預訓練 VLM 與流匹配設計達到多機械手臂平台通用化，標誌具身 AI 決策從任務特化向「互聯網規模語義繼承的跨平台控制」的進化，推進單臂、雙臂與移動操作機械手的智能化統一 [ICLR 2026 VLA State of Art — Moritz Reuss](https://mbreuss.github.io/blog_post_iclr_26_vla.html)
+- **VLA 模型十大挑戰路線圖 - 多模態推理、安全與人機協作新維度** - 最新綜合分析提出 VLA 發展的十大主要里程碑：多模態融合深度、複雜推理能力、數據多樣性與標註規模、跨任務評估基準、跨機械手臂動作泛化、邊緣推理效率、全身協調控制、安全保障機制、多 Agent 調度與人機自然協作，標誌 VLA 從「單機械手臂單任務優化」向「多模態多智能體人機共融生態」的系統化進化方向，為期待已久的通用機械手開發奠定理論與評估基礎 [VLA 10 Open Challenges — ArXiv 2511.05936](https://arxiv.org/pdf/2511.05936)
 - **多模態主動學習 RL-MBA 框架突破 - 難度感知與模態平衡雙重優化** - 最新研究提出 RL-MBA（Label What Matters: Modality-Balanced and Difficulty-Aware Multimodal Active Learning），利用強化學習框架動態調整多模態權重與難度感知選擇機制，相比傳統主動學習方案在有限標籤下實現分類準確度與公平性的同步提升，推進多模態模型的數據標註效率與邊緣裝置的輕量化訓練能力 [RL-MBA Paper — ArXiv](https://arxiv.org/abs)
