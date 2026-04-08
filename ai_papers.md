@@ -955,3 +955,7 @@
 ### 第六十六次更新來源（2026-04-08 13:45 通用物理 AI 與世界模型競賽新時代）
 - **GEN-1 - 首個商業化可行的通用物理 AI 基礎模型** - Generalist AI 推出 GEN-1，被業界認可為首個跨越商業可行性門檻的通用物理 AI 模型，訓練於 50 萬小時真實世界機器人操作數據，實現跨任務與機器人平台的廣泛泛化，標誌具身基礎模型從「研究原型」向「商業部署」的重大轉變，預期將加速工業機械臂、自主移動機器人與服務機器人的智能化進程 [GEN-1 Launch — Generalist AI Blog](https://generalistai.com/blog/apr-02-2026-GEN-1)
 - **AGIBOT World Challenge at ICRA 2026 - 世界模型競賽拉開序幕** - AGIBOT 宣布於 2026 年 ICRA 國際會議啟動 AGIBOT World Challenge，獎金池 530,000 美元，設置「世界模型」專項賽道，匯聚全球頂尖具身 AI 團隊競技，標誌世界模型從學術研究向「標準化評估與產業應用」轉變，推進機械手臂邊緣推理與決策實時性的產業化突破 [AGIBOT World Challenge — AGIBOT Official](https://www.agibot.com/)
+
+### 第六十七次更新來源（2026-04-08 14:30 開源模型崛起與邊緣推理優化新時代）
+- **DeepSeek V4 開源發布 - 一兆參數 MoE 模型成本優化新里程碑** - DeepSeek 官方發布 V4 模型，採用一兆參數 Mixture-of-Experts 架構，以 Apache 2.0 開源許可發布完整權重，訓練成本僅需 520 萬美元，相比商業旗艦型模型降低 95%+ 以上，HumanEval 編程能力達 94.7%，性能與 Claude Opus 4.6、GPT-5.4 相當，標誌開源 AI 在「成本效益 + 性能平衡」上實現重大突破，推進邊緣部署與離線應用的實現可行性 [DeepSeek V4 Release — Multiple AI News Sources](https://www.devflokers.com/)
+- **Google TurboQuant 量子化優化深化 - 邊緣推理記憶開銷削減 6 倍** - Google 研究團隊推出 TurboQuant 進階演算法，在解決向量量子化高維記憶開銷問題上實現突破性進展，相比傳統量子化方法削減記憶使用 6 倍以上，同時維持推理準確度無衰減，推進大規模模型在邊緣設備（移動端、IoT、機械手臂控制器）的高效部署，加速具身 AI 與自主系統的實時決策能力 [Google TurboQuant — Google AI Research](https://research.google/blog/)
