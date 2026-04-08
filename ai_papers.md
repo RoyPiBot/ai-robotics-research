@@ -998,6 +998,10 @@
 - **Alibaba Qwen 家族登頂全球開源部署 - 商業化應用生態成熟化** - Alibaba Qwen 家族成為全球最廣泛部署的開源權重模型家族，驅動力來自 Apache 2.0 開放許可、業界領先基準性能與覆蓋 7B-72B 全尺度模型範圍，在邊緣推理、行動模型（VLA）與多模態應用中廣泛應用，標誌開源模型從研究工具向企業級生產基礎設施的完全轉變，推進邊緣 AI 應用從高成本商業模型向低成本開源方案的大規模遷移 [Qwen Models — Alibaba AI](https://www.digitalapplied.com/blog/open-source-ai-landscape-april-2026-gemma-qwen-llama)
 - **邊緣 LLM 推論綜合調查 - SmoothQuant/OmniQuant 量子化新標準確立** - Tsinghua Science and Technology 發布《Efficient Inference for Edge Large Language Models》綜合調查，系統評估推測解碼（Speculative Decoding）、模型卸載（Model Offloading）等邊緣優化技術，分析 SmoothQuant 與 OmniQuant 量子化方案，確立後訓練量子化（Post-Training Quantization）為邊緣 LLM 部署的標準最佳實踐，加速機械手臂與自主系統的本地化推理能力 [Efficient Inference Survey — Tsinghua Science and Technology 2026](https://www.sciopen.com/article/10.26599/TST.2025.9010166)
 
+### 第七十一次更新來源（2026-04-09 08:00 多模態融合與 Vision-Language-Action 模型新進展）
+- **GLM-4.6V 多模態能力升級 - 原生工具使用與 128K 上下文窗口** - 智譜清言發布 GLM-4.6V，支援原生多模態工具調用能力，視覺推理性能提升 40%，上下文窗口擴展至 128K token，標誌開源多模態模型進入「工具集成與超長推理」新階段，推進邊緣設備與機械手臂的複雜決策能力 [GLM-4.6V Release — Multiple AI News](https://www.bentoml.com/blog/multimodal-ai-a-guide-to-open-source-vision-language-models)
+- **Vision-Language-Action 模型在機器人應用中的多模態融合突破** - 最新綜合調查指出 VLA 模型在機械手臂與自主系統中實現了視覺-語言-動作的統一架構，支援 RGBD 感測器融合與多任務學習，標誌具身 AI 從單模態向完整多感官決策的轉變，加速機器人在複雜場景的泛化能力 [Multimodal Fusion Survey — ScienceDirect 2026](https://www.sciencedirect.com/science/article/pii/S1566253525007249)
+
 ### 第七十一次更新來源（2026-04-09 09:15 多模態模型新世代與邊緣多模態推理深化）
 - **Qwen3-VL - Alibaba 最強多模態推理模型發布** - Alibaba Qwen 系列推出 Qwen3-VL 旗艦多模態模型，提供 235B-A22B（完整版）與 30B-A3B（輕量版）兩個規格，原生支援 Instruct 與 Thinking 推理模式，兩版本均配備官方 FP8 量化版本，在多模態基準測試中與 Gemini-2.5-Pro、GPT-5 等業界頂尖模型持平，標誌開源多模態模型邁入「超大規模 MoE + 原生推理增強」新階段，加速行動識別、場景理解與機械手臂視覺決策的邊緣部署 [Qwen3-VL Release — Alibaba AI](https://www.alibabacloud.com/blog)
 - **多模態主動學習 RL-MBA 框架突破 - 難度感知與模態平衡雙重優化** - 最新研究提出 RL-MBA（Label What Matters: Modality-Balanced and Difficulty-Aware Multimodal Active Learning），利用強化學習框架動態調整多模態權重與難度感知選擇機制，相比傳統主動學習方案在有限標籤下實現分類準確度與公平性的同步提升，推進多模態模型的數據標註效率與邊緣裝置的輕量化訓練能力 [RL-MBA Paper — ArXiv](https://arxiv.org/abs)
