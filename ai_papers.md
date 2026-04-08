@@ -951,3 +951,7 @@
 ### 第六十五次更新來源（2026-04-08 12:15 世界模型決策新進展與具身 AI 評估標準化）
 - **世界模型決策能力綜合評估突破 - 決策耦合與通用型架構雙軌並進** - 最新綜合調查指出世界模型在決策支持上的進展，提出功能維度（決策耦合 vs 通用型）、時間建模（序列模擬與推理 vs 全局差分預測）、空間表示四軸分類框架，標誌世界模型從動作預測向「內部模擬環境、支持反事實推理」的深化，推進機械手臂與自主系統的決策複雜度提升，加速邊緣推理部署 [World Models Survey — ArXiv 2510.16732](https://arxiv.org/abs/2510.16732)
 - **CVPR 2026 第二屆 3D-LLM/VLA Workshop - 多模態感知決策新標準** - 於 CVPR 2026 成功舉辦第二屆 3D-LLM/Vision-Language-Action Workshop，深化 3D 場景理解與動作規劃的統一架構研究，標誌視覺-語言-動作統一模型（VLA）從單模態優化向「多源 3D 感知決策」的轉變，為機器人系統在複雜室內外環境的導航與操作奠定基礎 [3D-LLM/VLA Workshop — CVPR 2026](https://3d-llm-vla.github.io/)
+
+### 第六十六次更新來源（2026-04-08 13:45 通用物理 AI 與世界模型競賽新時代）
+- **GEN-1 - 首個商業化可行的通用物理 AI 基礎模型** - Generalist AI 推出 GEN-1，被業界認可為首個跨越商業可行性門檻的通用物理 AI 模型，訓練於 50 萬小時真實世界機器人操作數據，實現跨任務與機器人平台的廣泛泛化，標誌具身基礎模型從「研究原型」向「商業部署」的重大轉變，預期將加速工業機械臂、自主移動機器人與服務機器人的智能化進程 [GEN-1 Launch — Generalist AI Blog](https://generalistai.com/blog/apr-02-2026-GEN-1)
+- **AGIBOT World Challenge at ICRA 2026 - 世界模型競賽拉開序幕** - AGIBOT 宣布於 2026 年 ICRA 國際會議啟動 AGIBOT World Challenge，獎金池 530,000 美元，設置「世界模型」專項賽道，匯聚全球頂尖具身 AI 團隊競技，標誌世界模型從學術研究向「標準化評估與產業應用」轉變，推進機械手臂邊緣推理與決策實時性的產業化突破 [AGIBOT World Challenge — AGIBOT Official](https://www.agibot.com/)
