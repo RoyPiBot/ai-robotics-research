@@ -588,6 +588,7 @@ if __name__ == '__main__':
 - **SEBVS 事件相機視覺伺服（2025 年 8 月）**：合成事件視覺伺服框架實現 1-2 kHz 伺服迴圈率（框架式視覺僅 30-200 Hz），取放誤差收斂時間 0.6s → 0.15s，像素誤差與角度誤差相較減 2-4×，RGB+事件融合方案性能最優。[GitHub 開源](https://github.com/eventbasedvision/SEBVS)、ROS 2 Gazebo 驗證。
 - **多模態 AI 與機械臂整合（2026 年）**：最新進展包括 ArmPi Ultra 等平台整合多模態大型語言模型（MLLM），機械臂不僅執行程式碼，更能理解人類意圖。系統同步監聽語音命令、掃描環境目標物件、規劃無碰撞路徑。搭配 TOF LiDAR 和 3D 深度視覺，點雲數據直接輸入逆向運動學（IK）引擎，實現感知驅動的自適應運動規劃。
 - **ROS 2 感知驅動路徑規劃框架（2026 年）**：Scan-N-Plan 技術提供基於 3D 掃描數據的即時軌跡規劃，支援表面加工、精密組裝等應用。整合 ROS 2 perception_pcl 與 MoveIt 2，無需預設路徑，機械臂根據環境實時適應。
+- **ROS 2 Control Rolling Release（2026 年 2-3 月）**：支援即時機械臂控制的硬體無關框架，新增 async components、URDF 直接存取、整合關節限制器（Joint Limiters）。[官方支援機械臂清單](https://control.ros.org/master/doc/supported_robots/supported_robots.html)涵蓋 Doosan、Universal Robots、KUKA 等商業機械臂及自定義設計。框架模組化組合，標準化 ROS interfaces 簡化控制層開發。
 
 ### 階段五：進階提升（第 9 週以後）
 
