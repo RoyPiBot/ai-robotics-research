@@ -587,6 +587,13 @@
 - **重要性**：能源效率與成本優化成為 2026 年下半年的關鍵競爭指標，對邊緣計算、物聯網設備與大規模部署至關重要。此突破預示 AI 從「性能競速」轉向「效率競速」的新階段。
 - **來源**：[ScienceDaily: AI Breakthrough Cuts Energy Use](https://www.sciencedaily.com/releases/2026/04/260405003952.htm) | [MIT News: LLM Training Efficiency](https://news.mit.edu/2026/new-method-could-increase-llm-training-efficiency-0226)
 
+### 73. Alibaba Qwen 3.5-Omni — 開源全模態實時交互模型
+- **機構**：Alibaba DAMO Academy
+- **發布時間**：2026 年 3 月 30 日
+- **摘要**：Alibaba 推出 **Qwen 3.5-Omni**，原生全模態模型支援文本、圖像、音頻、影片統一處理，256K 上下文窗口，可處理 10+ 小時音頻與 400+ 秒 720P 影片。核心亮點為 Thinker-Talker 實時交互架構、113 語言語音識別、36 語言語音生成、語義中斷與轉換意圖識別。在音頻理解、推理、識別、翻譯上超越 Gemini 3.1 Pro，視音融合達到對等，並以開源權重形式發布，降低企業部署門檻。
+- **重要性**：開源全模態模型競爭白熱化，Qwen 3.5-Omni 的發布標誌中國 AI 陣營進入與 Google/OpenAI 並駕齊驅的新階段，尤其在多語言與實時交互領域的突破加速行業標準化。
+- **來源**：[MarkTechPost](https://www.marktechpost.com/2026/03/30/alibaba-qwen-team-releases-qwen3-5-omni-a-native-multimodal-model-for-text-audio-video-and-realtime-interaction/) | [MindStudio](https://www.mindstudio.ai/blog/what-is-qwen-3-5-omni-multimodal-model)
+
 ---
 
 ## Sources
