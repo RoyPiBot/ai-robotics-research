@@ -586,6 +586,8 @@ if __name__ == '__main__':
 - **ROS-Industrial 強化學習應用（2026 Q1）**：ROS-Industrial Consortium Asia Pacific 推出「Reinforcement Learning for Robot Arm Manipulation」工作坊，展示如何應用深度強化學習演算法改進機械臂控制精度與自適應能力，特別適合多工場景與動態環境適應。
 - **ros2_control 異步元件完整化（2025-2026）**：新增異步元件支援、URDF 全域存取、集成式關節限制器（硬體層），性能提升 65%。支援變體與自訂資料型別，標準化接口適配多廠牌機械臂。
 - **SEBVS 事件相機視覺伺服（2025 年 8 月）**：合成事件視覺伺服框架實現 1-2 kHz 伺服迴圈率（框架式視覺僅 30-200 Hz），取放誤差收斂時間 0.6s → 0.15s，像素誤差與角度誤差相較減 2-4×，RGB+事件融合方案性能最優。[GitHub 開源](https://github.com/eventbasedvision/SEBVS)、ROS 2 Gazebo 驗證。
+- **多模態 AI 與機械臂整合（2026 年）**：最新進展包括 ArmPi Ultra 等平台整合多模態大型語言模型（MLLM），機械臂不僅執行程式碼，更能理解人類意圖。系統同步監聽語音命令、掃描環境目標物件、規劃無碰撞路徑。搭配 TOF LiDAR 和 3D 深度視覺，點雲數據直接輸入逆向運動學（IK）引擎，實現感知驅動的自適應運動規劃。
+- **ROS 2 感知驅動路徑規劃框架（2026 年）**：Scan-N-Plan 技術提供基於 3D 掃描數據的即時軌跡規劃，支援表面加工、精密組裝等應用。整合 ROS 2 perception_pcl 與 MoveIt 2，無需預設路徑，機械臂根據環境實時適應。
 
 ### 階段五：進階提升（第 9 週以後）
 
