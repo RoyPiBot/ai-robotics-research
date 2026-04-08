@@ -580,6 +580,13 @@
 - **重要性**：（1）遞迴自我修正標誌推理品質的新階段；（2）DeepSeek 對華為芯片的原生優化預示地緣政治重塑 AI 供應鏈；（3）五大廠商同步競速加速「模型商品化」與「成本戰」進程。
 - **來源**：[Q2 2026 AI Preview — DigitalApplied](https://www.digitalapplied.com/blog/deepseek-v4-gpt-5-5-grok-5-ai-models-q2-2026) | [AI 江湖群侠传 — 知乎](https://zhuanlan.zhihu.com/p/2011803903986008414)
 
+### 72. AI 能源效率突破 — 神經網絡結合符號推理實現百倍能耗降低
+- **機構**：多家研究機構合作
+- **發布時間**：2026 年 4 月
+- **摘要**：研究人員開發出將神經網絡與人類符號推理相結合的新方法，可將 AI 能源消耗減少至多 100 倍，同時提升準確度。同期新的訓練方法實現了 70-210% 的訓練加速，保持模型準確度不變。
+- **重要性**：能源效率與成本優化成為 2026 年下半年的關鍵競爭指標，對邊緣計算、物聯網設備與大規模部署至關重要。此突破預示 AI 從「性能競速」轉向「效率競速」的新階段。
+- **來源**：[ScienceDaily: AI Breakthrough Cuts Energy Use](https://www.sciencedaily.com/releases/2026/04/260405003952.htm) | [MIT News: LLM Training Efficiency](https://news.mit.edu/2026/new-method-could-increase-llm-training-efficiency-0226)
+
 ---
 
 ## Sources
