@@ -594,6 +594,18 @@
 - **重要性**：開源全模態模型競爭白熱化，Qwen 3.5-Omni 的發布標誌中國 AI 陣營進入與 Google/OpenAI 並駕齊驅的新階段，尤其在多語言與實時交互領域的突破加速行業標準化。
 - **來源**：[MarkTechPost](https://www.marktechpost.com/2026/03/30/alibaba-qwen-team-releases-qwen3-5-omni-a-native-multimodal-model-for-text-audio-video-and-realtime-interaction/) | [MindStudio](https://www.mindstudio.ai/blog/what-is-qwen-3-5-omni-multimodal-model)
 
+### 74. MiniCPM-V 系列 — 邊緣設備中的 GPT-4V 級多模態突破
+- **機構**：OpenBMB 與 Tsinghua
+- **發布時間**：2026 年 4 月更新確認
+- **摘要**：**MiniCPM-V** 是針對邊緣設備優化的高效多模態模型，8B 參數版本在 11 項公開基準上超越 GPT-4V、Gemini Pro 與 Claude 3，同時可流暢運行於手機等資源受限設備。核心創新為精細化架構設計、知識蒸餾、資料優化，實現「邊緣級性能」與「旗艦級能力」的統一。支援長上下文、多輪對話、圖表理解。
+- **重要性**：多模態邊緣推理進入實用階段，打破「強能力必須雲端」的傳統認知，加速邊緣 AI 基礎設施標準化。
+
+### 75. 小模型浪潮加速 — Llama 3.2、Gemma 3、Phi-4 mini 聚焦邊緣部署
+- **機構**：Meta、Google、Microsoft
+- **發布時間**：2026 年 3-4 月窗口
+- **摘要**：主流廠商齊推超小型高效模型：**Llama 3.2** (1B/3B 版本)、**Gemma 3** (最小至 270M)、**Phi-4 mini** (3.8B)、**SmolLM2** (135M-1.7B)、**Qwen2.5** (0.5B-1.5B)。從過往「7B 是最小實用規模」演進到「百萬參數級可運行實用任務」，驅動力為蒸餾、量化、高效運行時突破。
+- **重要性**：邊緣 AI 從「局部實驗」進入「規模部署」時代，邊緣集群、嵌入式設備、物聯網應用的成本與延遲瓶頸大幅改善。
+
 ---
 
 ## Sources
