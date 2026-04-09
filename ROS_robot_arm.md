@@ -997,6 +997,24 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 - 完整 ROS 2 整合：搭配 **Gazebo + MoveIt 2 + ros2_control + MoveIt Servo**
 - 附帶自訂 Qt GUI 控制介面
 - 開源機構、電路、軟體
+
+---
+
+## 2026 年 4 月 9 日補充：ROS 版本支援時程表與廠商策略轉型
+
+### ROS 1 Noetic 終止支援（已於 2025 年 5 月）
+
+**關鍵決定**：ROS 1（包括 Noetic）已於 2025 年 5 月正式終止支援，成為歷史版本。所有新專案應直接採用 ROS 2，無例外。
+
+### ROS 2 LTS 版本選擇指南
+
+**2026 年可用的活躍 LTS 版本**：
+- **ROS 2 Humble**：支援至 2027 年 5 月（穩定成熟，推薦生產環境）
+- **ROS 2 Jazzy**：支援至 2029 年 5 月（最新 LTS，具備前沿功能）
+
+**廠商全面轉向 ROS 2**：PAL Robotics、Universal Robots 等業界領導者已 100% 遷移至 ROS 2，確認 ROS 2 為工業級標準。對於多臂視覺伺服與邊緣 AI 應用，建議優先選擇 **Humble LTS 環境**以確保穩定性，或在 Jetson Orin 邊界節點上測試 Jazzy 的高頻伺服迴圈（>100Hz）。
+
+**ROSOrin Pro 作為參考架構**：搭載 Jetson Orin Nano/NX、6-DOF 機械臂、多模態 AI 的整合方案，已成為 2026 年邊界機器人開發的標準參考平台。
 - [GitHub](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm) | [ROS 2 整合](https://github.com/CroboticSolutions/parol6_ros2)
 
 ### ROS 2 + AI/LLM 整合框架（2026 年最熱門趨勢）
