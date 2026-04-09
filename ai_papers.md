@@ -1124,14 +1124,24 @@
 - Foundation Models + Simulation + Robot Learning 三位一體
 - **參考**：[NVIDIA Blog](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
 
-### H. 前沿模型競爭格局（2026 年 4 月）
+### H. GPT-6 與邊緣 AI 的未來（2026 年 4 月預期發佈）
 
-截至 2026 年 4 月，至少 **5 個前沿級模型** 在基準測試上僅差幾個百分點：
+- **OpenAI GPT-6** 預訓練於 2026 年 3 月 24 日完成（Stargate 超級計算機）
+- **預期發佈**：2026 年 4 月（較 GPT-5.4 晚約 2 週）
+- **本機統一多模態**：原生支援文字、圖片、音訊的端對端處理
+- **推理能力突升 40%**：程式碼生成、邏輯推理、Agent 任務性能提升
+- **邊緣部署趨勢**：Gemma 4（4B-31B）+ GPT-6 邊界版本搶攻設備端市場
+- **參考**：[CometAPI](https://www.cometapi.com/gpt-6-revealed-when-will-it-be-released/) / [BVA Technology 深度分析](https://www.bvainc.com/2026/04/03/google-gemma-4-models-open-agentic-ai-built-for-advanced-reasoning-and-local-deployment/)
+
+### I. 前沿模型競爭格局（2026 年 4 月）
+
+截至 2026 年 4 月，至少 **6 個前沿級模型** 在基準測試上僅差幾個百分點：
 
 | 模型 | 組織 | 狀態 |
 |------|------|------|
 | Claude Mythos | Anthropic | 限制存取（Glasswing） |
 | GPT-5.4 | OpenAI | 公開可用 |
+| GPT-6 | OpenAI | 4 月預期發佈 |
 | Gemini 3.1 Ultra | Google | 公開可用 |
 | GLM-5.1 | 智譜 | 開源 (MIT) |
 | Qwen 3.6-Plus | Alibaba | 公開可用 |
