@@ -1,6 +1,6 @@
 # 2026 年最新 AI 研究動態
 
-> 更新日期：2026-04-07（第五十七次更新）
+> 更新日期：2026-04-09（第五十八次更新）
 > 整理者：Roy 的 AI 研究助理
 
 ---
@@ -1038,3 +1038,102 @@
 ### 第七十九次更新來源（2026-04-09 16:45 多模態推理邊緣部署與Gemini 3.1超大上下文整合）
 - **Google Gemini 3.1 Ultra - 200萬 Token 原生多模態推理與邊緣推理新標準** - Google 發佈 Gemini 3.1 Ultra，突破性支援 200 萬 Token 超大上下文窗口，原生跨文字、影像、音頻與影片多模態推理，從訓練層面設計實現所有模態的同步推理，標誌多模態大模型從條件化模態堆疊向「端到端統一表示」的架構轉變，推進機械手臂與具身 AI 系統的長序列決策與複雜場景理解能力 [Gemini 3.1 Ultra Multimodal — Google AI](https://gemini.google.com/)
 - **MTBench 多模態時間序列推理基準與邊緣部署評估框架** - 最新研究發佈 MTBench，針對時間序列多模態推理的完整基準測試集，涵蓋視覺、數值與文本模態的混合時序推理任務，驗證邊緣設備上多模態推理模型的泛化與延遲性能，標誌 VLA 與多模態 AI 從靜態影像場景向「動態時間序列環境」的進化，支援機械手臂長期任務規劃與適應性控制的評估體系 [MTBench Temporal Reasoning — CVPR 2026 MAR Workshop](https://marworkshop.github.io/cvpr26/)
+
+### 第八十次更新來源（2026-04-09 18:00 Meta Muse Spark 多模態推理突破與 Netflix VOID 開源影片編輯模型）
+- **Meta Muse Spark - 新一代超大多模態推理模型發布** - Meta 超級智慧實驗室於 2026 年 4 月 8 日正式發表 Muse Spark，一個具備超高複雜推理能力的大型語言模型，在多模態感知、推理、醫療與智能體任務中表現極具競爭力，計算成本相比舊版中型 Llama 4 降低一個數量級，標誌多模態大模型從規模堆砌向效率優化的新階段，推進邊緣設備與機械手臂推理的成本可行性 [Meta Muse Spark — Meta AI](https://www.newmobilelife.com/2026/04/09/meta-ai-muse-spark/)
+- **Netflix VOID 開源影片編輯 AI - Hugging Face 發布** - Netflix 與索菲亞大學共同開發開源影片編輯 AI 模型 VOID，可一鍵移除畫面物件並自動修正物理互動，已在 Hugging Face 開源釋出，標誌 AI 在視覺內容製作領域的新應用突破，推進影片後製自動化與內容編輯智能化的民主化進程 [Netflix VOID — Hugging Face](https://www.cool3c.com/article/247536)
+
+---
+
+## 🔥 2026 年 4 月第一週重大新聞（第五十八次更新 — 2026-04-09）
+
+> **以下內容來自 2026 年 4 月 1-9 日的網路搜尋，全部為新料。**
+
+### A. Claude Mythos 正式發布 — Project Glasswing（2026 年 4 月 7-8 日）
+
+- **事件**：Anthropic 在 3 月底因 CMS 設定錯誤洩露約 3,000 份內部文件後，於 **4 月 7 日正式公開 Claude Mythos Preview**
+- **代號**：Capybara（內部開發代號）
+- **定位**：比 Opus 4.6 更高一個等級的「Capybara tier」，號稱「step change in capabilities」
+- **能力**：軟體編碼、學術推理、網路安全漏洞檢測均大幅超越 Opus 4.6
+- **存取方式**：目前僅透過 **Project Glasswing** 開放，限約 40 個組織用於防禦性網路安全研究
+- **安全爭議**：洩露文件揭示 Mythos 具有自主規劃與跨系統執行的能力，引發重大安全擔憂。Anthropic 已向政府機構通報
+- **參考**：[Fortune 獨家報導](https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/) / [The Decoder](https://the-decoder.com/anthropic-leak-reveals-new-model-claude-mythos-with-dramatically-higher-scores-on-tests-than-any-previous-model/) / [FindSkill.ai 解析](https://findskill.ai/blog/claude-mythos-anthropic-leaked-model/)
+
+### B. Google Gemma 4 — 開源 AI 新標竿（2026 年 4 月 2 日）
+
+| 變體 | 參數量 | 上下文窗口 | 授權 |
+|------|--------|-----------|------|
+| E2B | 2B | 128K | Apache 2.0 |
+| E4B | 4B | 128K | Apache 2.0 |
+| 26B MoE | 26B (MoE) | 256K | Apache 2.0 |
+| 31B Dense | 31B | 256K | Apache 2.0 |
+
+- **重大突破**：首次採用完全開放的 **Apache 2.0 授權**（之前 Gemma 用自訂授權）
+- **多模態原生**：所有尺寸都支援文字 + 圖片輸入；邊緣模型額外支援音頻
+- **邊緣部署**：與 Qualcomm、MediaTek 合作優化，可在**手機、Raspberry Pi、NVIDIA Jetson** 上完全離線運行
+- **31B 打 400B**：31B Dense 版本在多項基準上超越 400B 級別的競爭模型，intelligence-per-parameter 創新紀錄
+- **支援 140+ 語言**，含繁體中文
+- **Roy 注意**：E4B 可能可以在 Pi 5 (16GB) 上用量化版本跑起來！
+- **參考**：[Google 官方 Blog](https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/) / [DeepMind 產品頁](https://deepmind.google/models/gemma/gemma-4/) / [Analytics Vidhya 深度分析](https://www.analyticsvidhya.com/blog/2026/04/googles-gemma-4-open-source-model/)
+
+### C. 2026 年 4 月第一週開源模型爆發
+
+| 模型 | 組織 | 參數 | 授權 | 亮點 |
+|------|------|------|------|------|
+| **GLM-5.1** | 智譜 Zhipu | 744B (MoE) | MIT | 最大開源 MoE 模型之一 |
+| **GLM-5V-Turbo** | 智譜 Zhipu | — | MIT | 多模態 → 程式碼生成 |
+| **Qwen 3.6-Plus** | Alibaba | — | — | Agentic coding, 1M 上下文 |
+| **PrismML Bonsai 8B** | PrismML | 8B (1-bit 量化) | — | 極致壓縮，邊緣設備友好 |
+| **MAI 系列** | Microsoft | — | — | 語音、聲音、影像生成基礎模型 |
+
+**趨勢觀察**：純文字 LLM 作為產品類別已結束。2026 年 4 月發布的每一個主要模型都是**多模態 by default**。
+
+### D. AI + 量子計算 — 加密破解時程大幅提前（2026 年 4 月）
+
+這是本週最震撼的跨領域消息：
+
+- **Oratomic（Caltech 衍生新創）**發現新演算法，只需 **3 個原子** 編碼一個 qubit（之前需要 300 個），將建造量子電腦所需的粒子數降低 **100 倍**
+- **Google 研究**估計 **50 萬量子位元** 即可在數分鐘內破解 secp256k1 加密（以前估計需要 1000 萬）
+- RSA 加密：從需要 2000 萬量子位元降至**不到 100 萬**
+- AI 在這些突破中扮演關鍵角色：「毫無疑問，我們使用了 AI 來加速這項開發」
+- **Cloudflare** 宣布將後量子密碼學遷移時程**加速到 2029 年**
+- **Time Magazine 標題**：「AI Helped Spark a Quantum Breakthrough. The World 'Is Not Prepared'」
+- **參考**：[Time Magazine](https://time.com/article/2026/04/07/ai-quantum-computing-advance/) / [Nature](https://www.nature.com/articles/d41586-026-01054-1) / [HPCwire — Oratomic](https://www.hpcwire.com/off-the-wire/oratomic-launches-to-build-utility-scale-quantum-computers-following-breakthrough-research-with-caltech/)
+
+### E. 神經符號 AI — 能耗降低 100 倍（2026 年 4 月 5 日）
+
+- **Tufts University** 研究團隊提出結合神經網路與符號推理的新架構
+- 機器人從「暴力試錯」改為「像人一樣邏輯思考」
+- 能耗降低 **100 倍**，同時準確度反而提升
+- 將在 2026 年 5 月維也納 ICRA（International Conference of Robotics and Automation）正式發表
+- **對機械手臂的意義**：大幅降低邊緣設備上的 AI 推理能耗，讓小型嵌入式系統也能跑複雜決策
+- **參考**：[ScienceDaily](https://www.sciencedaily.com/releases/2026/04/260405003952.htm)
+
+### F. Google TurboQuant — ICLR 2026 KV Cache 壓縮突破
+
+- Google 在 ICLR 2026 發表 **TurboQuant** 演算法
+- 大幅降低 LLM 推理時 KV Cache 的記憶體開銷
+- 兩步驟流程：**PolarQuant**（向量旋轉）+ **量化 Johnson-Lindenstrauss 壓縮**
+- 讓百萬級上下文窗口模型在更少記憶體下運行
+- **對 Pi 5 的意義**：未來量化 LLM 在 16GB RAM 上的可用性可能進一步提升
+
+### G. NVIDIA 國家機器人週 — Physical AI 進入部署階段（2026 年 4 月）
+
+- NVIDIA 在 National Robotics Week 2026 重點展示 Physical AI 進展
+- 機器人從虛擬環境訓練到真實世界部署的速度**前所未有地快**
+- Foundation Models + Simulation + Robot Learning 三位一體
+- **參考**：[NVIDIA Blog](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
+
+### H. 前沿模型競爭格局（2026 年 4 月）
+
+截至 2026 年 4 月，至少 **5 個前沿級模型** 在基準測試上僅差幾個百分點：
+
+| 模型 | 組織 | 狀態 |
+|------|------|------|
+| Claude Mythos | Anthropic | 限制存取（Glasswing） |
+| GPT-5.4 | OpenAI | 公開可用 |
+| Gemini 3.1 Ultra | Google | 公開可用 |
+| GLM-5.1 | 智譜 | 開源 (MIT) |
+| Qwen 3.6-Plus | Alibaba | 公開可用 |
+
+**產業觀察**：前沿模型之間的性能差距正在收斂，競爭焦點轉向多模態能力、Agent 化程度、邊緣部署效率、以及授權開放性。
