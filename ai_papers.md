@@ -1190,3 +1190,11 @@
 - **對抗性強化** - 神經形態稀疏性同時提升對抗攻擊抵抗力，安全性與效率兼顧
 - **機械手臂應用** - 特別適合無外部電源供應的移動機械手臂與嵌入式視覺系統
 - **參考**：[STEAR 2026 — Neuromorphic Edge Robotics](https://arxiv.org/html/2603.13880) / [HiPEAC 2026 Krakow](https://www.hipeac.org/)
+
+#### 7. TensorRT Edge-LLM SDK — Jetson 邊緣推理加速框架（2026 年 4 月）
+- **NVIDIA TensorRT Edge-LLM** - 開源 C++ SDK，針對 Jetson 邊緣平台最佳化
+- **支援模型族**：LLM + Vision Language Models (VLM)，實現高效離線推理
+- **核心優勢**：消除雲端依賴，低延遲實時推理，適合機械手臂、無人機、自主系統
+- **推薦邊緣模型組合**：Meta-Llama-3.1-8B-Instruct、GLM-4-9B、Qwen2.5-VL-7B（2026 性能/效率最佳）
+- **應用場景**：Jetson T4000/Thor 上運行完整 RAG 系統，實現本地知識檢索與決策推理
+- **參考**：[NVIDIA TensorRT Edge-LLM GitHub](https://github.com/NVIDIA/TensorRT-LLM) / [SiliconFlow 邊緣 LLM 2026 指南](https://www.siliconflow.com/articles/en/best-llms-for-edge-ai-devices-2025)
