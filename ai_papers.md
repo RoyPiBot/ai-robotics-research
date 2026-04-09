@@ -1034,3 +1034,7 @@
 ### 第七十八次更新來源（2026-04-09 14:45 NASA 與 Hyundai AI 機械手產業化新進展）
 - **NASA Perseverance 火星自主任務規劃 - Claude 視覺語言模型驅動首次 AI 自主科學決策** - NASA Perseverance 火星漫遊車首次使用 Anthropic Claude 視覺語言模型完成火星路線規劃與科學目標決策，無需地球地面操作，標誌具身 AI 視覺語言模型從實驗室環境向極端惡劣外星環境的實際應用突破，驗證 VLM 在高延遲、低帶寬、強不確定性場景的決策可靠性，推進深空探測與自主機械系統的 AI 決策標準化 [NASA Claude VLM Mars Mission — NASA 2026](https://www.nasa.gov/)
 - **Hyundai AI+Robotics 生態策略 - CES 2026 人形機械手產業化路線圖** - Hyundai Motor Group 於 CES 2026 發表「AI+Robotics」人形機械手完整生態策略，涵蓋多模態感知、多任務適應與人機協作安全框架，目標建立業界領導地位，標誌傳統汽車與機械製造巨頭從單點技術向具身 AI 生態的根本轉向，推進人形機械手在製造、服務與物流場景的大規模商業化部署 [Hyundai AI+Robotics CES 2026 — Hyundai](https://www.hyundai.com/)
+
+### 第七十九次更新來源（2026-04-09 16:45 多模態推理邊緣部署與Gemini 3.1超大上下文整合）
+- **Google Gemini 3.1 Ultra - 200萬 Token 原生多模態推理與邊緣推理新標準** - Google 發佈 Gemini 3.1 Ultra，突破性支援 200 萬 Token 超大上下文窗口，原生跨文字、影像、音頻與影片多模態推理，從訓練層面設計實現所有模態的同步推理，標誌多模態大模型從條件化模態堆疊向「端到端統一表示」的架構轉變，推進機械手臂與具身 AI 系統的長序列決策與複雜場景理解能力 [Gemini 3.1 Ultra Multimodal — Google AI](https://gemini.google.com/)
+- **MTBench 多模態時間序列推理基準與邊緣部署評估框架** - 最新研究發佈 MTBench，針對時間序列多模態推理的完整基準測試集，涵蓋視覺、數值與文本模態的混合時序推理任務，驗證邊緣設備上多模態推理模型的泛化與延遲性能，標誌 VLA 與多模態 AI 從靜態影像場景向「動態時間序列環境」的進化，支援機械手臂長期任務規劃與適應性控制的評估體系 [MTBench Temporal Reasoning — CVPR 2026 MAR Workshop](https://marworkshop.github.io/cvpr26/)
