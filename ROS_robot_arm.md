@@ -631,6 +631,12 @@ if __name__ == '__main__':
   - Chrony 時間同步：於 Robot 與 Host 間建立時間同步鏈，確保訊息戳記一致性
 - **MoveIt 2 與 ros2_control 整合**：支援[Example 7: 6DOF 機械臂完整教程](https://control.ros.org/humble/doc/ros2_control_demos/example_7/doc/userdoc.html)，毫秒級控制延遲與運動規劃同步
 
+### 2026 年 4 月最新進展
+
+- **ArmPi Ultra 多模態 AI 整合（2026 年 4 月）**：Hiwonder 發布 ArmPi Ultra，首次將多模態大型語言模型（MLLM）與桌面級機械臂整合，機械臂無需傳統程式碼即可理解人類意圖。搭載端到端語音互動模組，支援低延遲自然語言對話，整合 TOF LiDAR 與 3D 深度視覺，點雲數據直接輸入逆向運動學（IK）引擎。
+- **教育級 3D 列印機械臂新標準（2026 年 3 月）**：新興教育機械臂專案採用 Raspberry Pi + ROS 2 軟體棧，配合 3D 列印零件與商用伺服馬達。由於 ROS 2 生態在 2025-2026 年間已成熟（MoveIt 2、Nav2、ros2_control 完整可用），業界與教學機構遷移至 ROS 2 速度加快，使教育成本大幅下降。
+- **ROS 2 生態成熟確認（2026 年）**：原先 2019-2021 年的生態缺口已完全彌補，MoveIt 2 提供完整運動規劃、Nav2 提供導航棧支援，適配 ROS 2 Humble、Kilted Kaiju 與 Rolling 版本。ESP32 單晶片控制 5-DOF 機械臂已成為低成本教學平台標準配置。
+
 ---
 
 ## 附錄：常用 ROS 2 指令速查表
