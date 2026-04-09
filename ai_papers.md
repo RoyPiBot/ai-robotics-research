@@ -1026,3 +1026,7 @@
 ### 第七十六次更新來源（2026-04-09 10:50 VLA 業界旗艦模型架構對比與邊緣部署新格局）
 - **Figure AI Helix - 人形機械手雙系統架構新標準** - Figure AI 推出 Helix VLA 模型採用雙系統架構設計：大規模視覺語言骨幹網絡處理高階推理與任務理解，輕量級快速視覺運動策略網絡負責實時控制信號生成，兩部分端到端聯合訓練，實現邊界操作的毫秒級延遲與多任務通用化，標誌人形機械手臂 VLA 從單一模型向「層次化決策」的架構轉變，推進複雜人機協作場景的高頻率精細控制 [Helix Architecture — The Robot Report 2026](https://www.therobotreport.com/vision-language-action-models-are-the-next-leap-in-autonomous-robotics/)
 - **Qualcomm Dragonwing Q-8750/Q-7790 邊緣 AI 晶片 - 無雲連接的邊緣推理新生態** - Qualcomm 推出 Dragonwing 系列邊緣 AI 處理器（Q-8750 與 Q-7790），專為無人機、智慧相機與工業視覺系統設計，支援本地複雜推理而無需雲端連接，標誌邊緣 AI 推理從雲中心向設備中心的根本轉變，與 VLA 邊緣部署深度整合，推進機械手臂與自主系統的隱私保護與低延遲決策 [Qualcomm Edge AI Processors — 2026 CES](https://futurumgroup.com/insights/qualcomm-unveils-future-of-intelligence-at-ces-2026-pushes-the-boundaries-of-on-device-ai/)
+
+### 第七十七次更新來源（2026-04-09 12:45 統一視覺運動碼與業界規模 VLA 模型新突破）
+- **XR-1 統一視覺運動碼 UVMC - ICLR 2026 離散表示新標準** - ICLR 2026 提交論文 XR-1 推出統一視覺運動碼（Unified Vision-Motion Codes, UVMC），採用離散隱式表示同時編碼視覺動態與機械手臂動作，實現視覺與動作空間的緊密整合，標誌 VLA 從獨立視覺語言骨幹向「跨模態聯合表示」的架構轉變，推進多機械手臂平台的統一動作決策與實時推理能力 [ICLR 2026 VLA Submissions](https://openreview.net/)
+- **LingBot-VLA 業界規模模型 - 螞蟻集團 20,000 小時雙臂機械手訓練數據** - 螞蟻集團推出 LingBot-VLA，一個在 20,000 小時真實雙臂機械手操作數據上訓練的工業級 VLA 模型，覆蓋 9 種不同機械手配置，實現跨平台動作泛化與複雜操作場景的高精度控制，標誌具身 AI 基礎模型從學術規模向企業級大規模訓練數據的升級，推進製造業與倉儲物流機械手系統的智能化部署 [LingBot-VLA — Ant Group AI](https://www.antgroup.com/)
