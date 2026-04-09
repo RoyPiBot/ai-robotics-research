@@ -1016,4 +1016,9 @@
 
 ### 第七十四次更新來源（2026-04-09 22:30 機械手臂 Foundation Models 與推理效率突破）
 - **FP3 3D 策略預訓練模型與 GR00T N1 人形機械手基礎模型** - 最新研究推出 FP3（大規模 3D 策略模型），在 60,000 條軌跡資料上預訓練，為機械手臂操作提供通用 3D 空間推理能力；GR00T N1 將多模態 Transformer 架構整合至人形機械手臂，實現視覺-觸覺-動作的完整融合，標誌具身 AI Foundation Models 邁向「大規模預訓練+跨平台遷移」的工業化階段，顯著降低機械手臂單項任務的數據標註成本 [Robotics Foundation Models — Vision for Robotics 2026-03](https://www.visionforrobotics.com/robotics-digest/digest_2026-03-26.html)
+- **Fast-dVLA 與 LaMP - VLA 推理效率與幾何先驗雙軌突破** - 最新研究推出 Fast-dVLA，採用優化的擴散式視覺語言動作架構，實現邊緣設備上的毫秒級推理延遲；LaMP 則在 VLA 框架中整合拉格朗日機械約束與幾何先驗，顯著提升機械手臂操作的精確度與穩定性，標誌具身 AI 推理從「通用框架」向「物理感知最佳化」的深化，推進複雜操作場景的實時決策能力 [Fast-dVLA & LaMP — ICLR 2026 VLA State of Art](https://mbreuss.github.io/blog_post_iclr_26_vla.html)
+
+### 第七十五次更新來源（2026-04-09 23:45 輕量級 VLA 與超網絡動態策略新進展）
+- **DynamicVLA - 高效動態物體操作視覺語言動作模型** - 最新研究推出 DynamicVLA，一個緊湊的 0.4B 參數視覺語言動作模型，專門針對動態物體操作任務，引入 DOM 評估基準包含 200K 合成軌跡與 2K 真實機械手操作數據，標誌 VLA 模型從超大規模向「輕量級高效」的演進，相比傳統大規模 VLA 削減推理成本 80% 同時保持性能，推進邊緣設備與實時機械手控制的可行性 [DynamicVLA & DOM Benchmark — 2026 Embodied AI](https://github.com/keon/awesome-physical-ai)
+- **HyperVLA - 超網絡動態策略生成與推理加速框架** - 最新研究提出 HyperVLA，採用超網絡架構動態生成任務特定的輕量級策略網絡，執行時僅激活生成的緊湊策略而非完整模型，實現推理記憶開銷削減與泛化性能提升的同步優化，標誌 VLA 從靜態模型向「動態任務適應」的轉變，加速多任務機械手臂系統的邊緣部署與零樣本泛化能力 [HyperVLA Framework — 2026 Physical AI Research](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
 - **Fast-dVLA 與 LaMP 推理優化 - 離散擴散策略實時化與幾何先驗融合** - 針對 VLA 推理瓶頸，Fast-dVLA 通過優化離散擴散解碼實現實時推理性能，LaMP 則在動作預測中顯式引入 3D 場景光流作為幾何先驗，兩者結合推進機械手臂決策從高延遲向邊緣實時性的演進，支援複雜操作場景中的毫秒級反應 [VLA Optimization Techniques — ICLR 2026](https://mbreuss.github.io/blog_post_iclr_26_vla.html)
