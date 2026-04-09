@@ -1147,3 +1147,30 @@
 | Qwen 3.6-Plus | Alibaba | 公開可用 |
 
 **產業觀察**：前沿模型之間的性能差距正在收斂，競爭焦點轉向多模態能力、Agent 化程度、邊緣部署效率、以及授權開放性。
+
+### J. 邊緣推理模型突破 — 從 1B 到 31B 的完整生態（2026 年 4 月）
+
+**核心趨勢**：小模型生態成熟，推理能力與邊緣部署成為核心競爭點。
+
+#### 1. DeepSeek R1T Chimera — 邊緣推理新標竿
+- **創新**：Assembly of Experts 架構，整合大模型推理能力與邊緣設備效率
+- **特色**：專為邊緣設備設計，速度與準確度新平衡
+- **應用**：手機、Raspberry Pi、NVIDIA Jetson 本機推理
+
+#### 2. 主流邊緣模型矩陣
+| 系列 | 參數範圍 | 企業 | 特色 |
+|------|--------|------|------|
+| Llama 3.2 | 1B/3B | Meta | 極致輕量，離線 LLM |
+| Gemma 3 | 270M/2B/8B | Google | Apache 2.0，多語言 |
+| Qwen 2.5 | 0.5B-1.5B | Alibaba | 中文優化 |
+| SmolLM2 | 135M-1.7B | Hugging Face | 多語多模態 |
+| Phi-4 Mini | 3.8B | Microsoft | 邏輯推理強化 |
+
+#### 3. 邊緣最佳化新技術
+- **量化突破**：16-bit 訓練 → 4-bit 部署，**內存減少 4 倍**
+- **推測解碼**：小草稿模型並行驗證，**推理速度 2-3 倍**
+- **KV Cache 壓縮**：TurboQuant 演算法，支援 100 萬 token 上下文
+
+**Roy 注意**：Gemma 4 E4B (4B) 或量化後的 Qwen 2.5-1B 可能能在 Pi 5 (16GB RAM) 上跑 local RAG 系統。
+
+**參考**：[SiliconFlow 邊緣 LLM 指南 2026](https://www.siliconflow.com/articles/en/best-llms-for-edge-ai-devices-2025) / [Edge AI Vision Alliance 報告](https://www.edge-ai-vision.com/2026/01/on-device-llms-in-2026-what-changed-what-matters-whats-next/)
