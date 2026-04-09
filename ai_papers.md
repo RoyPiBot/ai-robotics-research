@@ -1178,3 +1178,15 @@
 - **YOLO26 邊緣最佳化** - 物件檢測模型 43% CPU 推理加速相比 YOLO11，專為無 GPU 設備優化，支援小物件精度與邊緣部署，成為 ROS 視覺感知的輕量級標準，推進機械手臂即時物體識別與操作決策的可行性 [YOLO26 Release Notes](https://blog.roboflow.com/yolo26/)
 
 **參考**：[SiliconFlow 邊緣 LLM 指南 2026](https://www.siliconflow.com/articles/en/best-llms-for-edge-ai-devices-2025) / [Edge AI Vision Alliance 報告](https://www.edge-ai-vision.com/2026/01/on-device-llms-in-2026-what-changed-what-matters-whats-next/)
+
+#### 5. Jetson Thor + Nemotron 開源模型生態（2026 年 4 月新突破）
+- **NVIDIA Jetson Thor** - 全新邊緣超級計算平台，專為複雜機械手臂與自主系統設計，支援即時推理與低延遲決策
+- **Nemotron 開源模型族** - NVIDIA 推出的優化邊緣推理模型，搭配 **vLLM 推理引擎** 實現 3-4 倍速度提升，支援本地 RAG、視覺推理、機械手臂動作規劃
+- **端對端私密部署** - OpenClaw 已在 Jetson Thor 上實現完全本地化，無需雲端連接，適合機械手臂自主決策場景
+- **參考**：[NVIDIA Blog — National Robotics Week 2026](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
+
+#### 6. 神經形態邊緣計算 — 能耗新低（2026 年 4 月 STEAR Workshop）
+- **Neuromorphic Systems** - 在 STEAR 2026 Workshop 展示，相比傳統神經網路推理，**能耗僅 45 微焦耳/推論**（降低 100 倍）
+- **對抗性強化** - 神經形態稀疏性同時提升對抗攻擊抵抗力，安全性與效率兼顧
+- **機械手臂應用** - 特別適合無外部電源供應的移動機械手臂與嵌入式視覺系統
+- **參考**：[STEAR 2026 — Neuromorphic Edge Robotics](https://arxiv.org/html/2603.13880) / [HiPEAC 2026 Krakow](https://www.hipeac.org/)
