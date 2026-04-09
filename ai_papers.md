@@ -1030,3 +1030,7 @@
 ### 第七十七次更新來源（2026-04-09 12:45 統一視覺運動碼與業界規模 VLA 模型新突破）
 - **XR-1 統一視覺運動碼 UVMC - ICLR 2026 離散表示新標準** - ICLR 2026 提交論文 XR-1 推出統一視覺運動碼（Unified Vision-Motion Codes, UVMC），採用離散隱式表示同時編碼視覺動態與機械手臂動作，實現視覺與動作空間的緊密整合，標誌 VLA 從獨立視覺語言骨幹向「跨模態聯合表示」的架構轉變，推進多機械手臂平台的統一動作決策與實時推理能力 [ICLR 2026 VLA Submissions](https://openreview.net/)
 - **LingBot-VLA 業界規模模型 - 螞蟻集團 20,000 小時雙臂機械手訓練數據** - 螞蟻集團推出 LingBot-VLA，一個在 20,000 小時真實雙臂機械手操作數據上訓練的工業級 VLA 模型，覆蓋 9 種不同機械手配置，實現跨平台動作泛化與複雜操作場景的高精度控制，標誌具身 AI 基礎模型從學術規模向企業級大規模訓練數據的升級，推進製造業與倉儲物流機械手系統的智能化部署 [LingBot-VLA — Ant Group AI](https://www.antgroup.com/)
+
+### 第七十八次更新來源（2026-04-09 14:45 NASA 與 Hyundai AI 機械手產業化新進展）
+- **NASA Perseverance 火星自主任務規劃 - Claude 視覺語言模型驅動首次 AI 自主科學決策** - NASA Perseverance 火星漫遊車首次使用 Anthropic Claude 視覺語言模型完成火星路線規劃與科學目標決策，無需地球地面操作，標誌具身 AI 視覺語言模型從實驗室環境向極端惡劣外星環境的實際應用突破，驗證 VLM 在高延遲、低帶寬、強不確定性場景的決策可靠性，推進深空探測與自主機械系統的 AI 決策標準化 [NASA Claude VLM Mars Mission — NASA 2026](https://www.nasa.gov/)
+- **Hyundai AI+Robotics 生態策略 - CES 2026 人形機械手產業化路線圖** - Hyundai Motor Group 於 CES 2026 發表「AI+Robotics」人形機械手完整生態策略，涵蓋多模態感知、多任務適應與人機協作安全框架，目標建立業界領導地位，標誌傳統汽車與機械製造巨頭從單點技術向具身 AI 生態的根本轉向，推進人形機械手在製造、服務與物流場景的大規模商業化部署 [Hyundai AI+Robotics CES 2026 — Hyundai](https://www.hyundai.com/)
