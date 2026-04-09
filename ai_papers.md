@@ -1173,4 +1173,8 @@
 
 **Roy 注意**：Gemma 4 E4B (4B) 或量化後的 Qwen 2.5-1B 可能能在 Pi 5 (16GB RAM) 上跑 local RAG 系統。
 
+#### 4. ROS 機械手臂專用邊緣推理生態（2026 年 4 月新增）
+- **NVIDIA Jetson T4000 + JetPack 7.1** - Blackwell 架構邊緣計算晶片，專為機械手臂與自主系統設計，支援 VLA 推理加速與 ROS 整合，毫秒級延遲實現複雜操作決策，推進邊緣 AI 從雲連接向完全離線自主決策的轉變 [NVIDIA Jetson T4000 for Robotics](https://www.edge-ai-vision.com/2026/01/accelerate-ai-inference-for-edge-and-robotics-with-nvidia-jetson-t4000-and-nvidia-jetpack-7-1/)
+- **YOLO26 邊緣最佳化** - 物件檢測模型 43% CPU 推理加速相比 YOLO11，專為無 GPU 設備優化，支援小物件精度與邊緣部署，成為 ROS 視覺感知的輕量級標準，推進機械手臂即時物體識別與操作決策的可行性 [YOLO26 Release Notes](https://blog.roboflow.com/yolo26/)
+
 **參考**：[SiliconFlow 邊緣 LLM 指南 2026](https://www.siliconflow.com/articles/en/best-llms-for-edge-ai-devices-2025) / [Edge AI Vision Alliance 報告](https://www.edge-ai-vision.com/2026/01/on-device-llms-in-2026-what-changed-what-matters-whats-next/)
