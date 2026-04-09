@@ -1013,3 +1013,7 @@
 ### 第七十三次更新來源（2026-04-09 16:00 純視覺語言動作模型綜合調查與具身 AI Agent 進展）
 - **Pure Vision Language Action 模型完整調查 - 端到端統一架構最新進展綜述** - 最新 Pure VLA 模型綜合調查 (arXiv:2509.19012) 系統梳理視覺-語言-動作統一架構的前沿進展，分析包括 Diffusion-based VLA、Flow Matching VLA、Transformer 序列模型等多項關鍵設計模式，評估 50+ 開源與商業模型的性能、延遲、記憶開銷維度，揭示 VLA 在邊緣推理、跨平台泛化、長地平線決策中的系統性能權衡，標誌 VLA 從實驗室原型向生產級部署的成熟化評估框架確立 [Pure VLA Survey — ArXiv:2509.19012](https://arxiv.org/html/2509.19012v1)
 - **Embodied Agentic AI 新維度 - LLM 與 VLM 驅動的機械手臂自主決策體系綜合評述** - 最新綜合評論論文 (arXiv:2508.05294) 深入分析大規模語言模型與視覺語言模型驅動的具身 AI Agent 系統設計，提出從「工具調用+環境互動」向「內部世界模型+多步推理」的演進框架，涵蓋 Agent 路由、動作空間編碼、實時反饋融合等核心問題，標誌具身 Agent 從單任務優化向「多模態推理+自主決策+環境反應」的完整智能體系的建構方向 [Embodied Agentic AI Review — ArXiv:2508.05294](https://arxiv.org/html/2508.05294v4)
+
+### 第七十四次更新來源（2026-04-09 22:30 機械手臂 Foundation Models 與推理效率突破）
+- **FP3 3D 策略預訓練模型與 GR00T N1 人形機械手基礎模型** - 最新研究推出 FP3（大規模 3D 策略模型），在 60,000 條軌跡資料上預訓練，為機械手臂操作提供通用 3D 空間推理能力；GR00T N1 將多模態 Transformer 架構整合至人形機械手臂，實現視覺-觸覺-動作的完整融合，標誌具身 AI Foundation Models 邁向「大規模預訓練+跨平台遷移」的工業化階段，顯著降低機械手臂單項任務的數據標註成本 [Robotics Foundation Models — Vision for Robotics 2026-03](https://www.visionforrobotics.com/robotics-digest/digest_2026-03-26.html)
+- **Fast-dVLA 與 LaMP 推理優化 - 離散擴散策略實時化與幾何先驗融合** - 針對 VLA 推理瓶頸，Fast-dVLA 通過優化離散擴散解碼實現實時推理性能，LaMP 則在動作預測中顯式引入 3D 場景光流作為幾何先驗，兩者結合推進機械手臂決策從高延遲向邊緣實時性的演進，支援複雜操作場景中的毫秒級反應 [VLA Optimization Techniques — ICLR 2026](https://mbreuss.github.io/blog_post_iclr_26_vla.html)
