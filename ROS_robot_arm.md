@@ -647,6 +647,7 @@ if __name__ == '__main__':
 - **ROS 2 官方 6-DOF 機械臂完整教程（2026 年 Q2）**：ROS2_Control Rolling 發布 Example 7 完整教程，涵蓋從 URDF 設計、gazebo 仿真、MoveIt 2 運動規劃到實體硬體控制的端到端流程。支援 Doosan、Universal Robots、KUKA 等廠牌機械臂，標準化 ROS 接口簡化控制層開發。
 - **Realman 工業級機械臂 ROS 2 升級（2026 年）**：睿爾曼正式發布機械臂 ROS 2 完整套件，支援 ROS 2 Humble 與 Rolling，提供完整二次開發文件與實例應用。工業級 6-DOF 機械臂與 ros2_control 無縫整合，內建實時力控制與碰撞偵測自適應，適配 PI 5 低成本教學部署。
 - **OpenClaw Agent Framework ROS 2 整合（2026 年）**：OpenClaw 框架提供標準化的 ROS 2 + LLM 橋接方案，使機器人感知複雜環境、進行實時決策並自主執行精細任務。結合多模態 AI（視覺感知、語音互動、強化學習），為 6-DOF 及多機械臂系統提供統一的決策框架。
+- **ROS 2 Jazzy ros2_control 控制框架完善（2026 年 4 月）**：ROS 2 Jazzy 官方發布成熟的 ros2_control 框架，包含 Joint Trajectory Controller、PID Controller、Position Controller、Effort Controller 等標準控制器，支援 MoveIt 2 與 Nav2 無縫整合。[gazebo_ros2_control](https://control.ros.org/jazzy/doc/gz_ros2_control/doc/index.html) 外掛完全支援 Gazebo Harmonic，提供硬體介面統一標準。Gripper 控制器已遷移至 `parallel_gripper_action_controller`，提供更穩定的夾爪控制方案。[6-DOF 機械臂完整教程](https://control.ros.org/jazzy/doc/ros2_control_demos/example_7/doc/userdoc.html)涵蓋 URDF → 模擬 → 硬體部署全流程。
 
 ---
 
