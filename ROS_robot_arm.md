@@ -1038,6 +1038,13 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 3. **RAI (RobotecAI)** (★479) — 廠商無關的 Agentic Physical AI 框架
    - [GitHub](https://github.com/RobotecAI/rai)
 
+### MoveIt 2 Jazzy LTS 與機械臂硬體整合（2026 年 4 月新增）
+
+**MoveIt 2 Jazzy 成為推薦版本**：PickNik 發布 MoveIt 2 Jazzy LTS，成為機械臂軌跡規劃與碰撞檢測的黃金標準。ros2_control 框架正式支援 27 個新套件與 304 項更新，包括：
+- **主流機械臂完整支援**：Universal Robots UR 系列、Kinova Kortex Gen3、xArm、Techman Robot 等廠商級機械臂
+- **教育級實例**：UR3 + Robotiq 2-Finger 夾爪的 Pick & Place 完整整合（[GitHub](https://github.com/darshmenon/UR3_ROS2_PICK_AND_PLACE)）
+- **模擬與實硬體無縫銜接**：Gazebo Harmonic 搭配 MoveIt 2，Techman Robot TM5-700 可直接在 Isaac Sim 中測試後部署至實機
+
 ---
 
 ## 附錄 D：2026 年 4 月更新 — 力控制與邊緣 AI 部署融合
