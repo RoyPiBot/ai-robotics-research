@@ -1175,6 +1175,15 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
   - [Example 7: Full tutorial with a 6DOF robot](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
   - 支援 Gazebo Kura 模擬，便於驗證實體機器人的動態行為
 
+#### ros2_control 硬體介面架構（2026 年 4 月補充）
+- **硬體介面類型**（Joint、Sensor、GPIO）
+  - **Joint 介面**：控制與讀取關節狀態（馬達位置、速度、扭矩指令）
+  - **Sensor 介面**：讀取 IMU、力/扭矩感測器、相機等感測器資料
+  - **GPIO 介面**：數位輸出（氣動夾爪、電磁鐵）與數位輸入（極限開關）
+- **動態硬體元件加載**：pluginlib 機制讓控制器管理器動態加載硬體驅動程式，支援模組化設計與熱插拔
+- **多速率控制**：Jazzy 支援不同更新率的硬體元件（例如高頻力迴饋 @1kHz、視覺伺服 @30Hz），無需同步
+- [官方文件 — Hardware Interface Types](https://control.ros.org/jazzy/doc/ros2_control/hardware_interface/doc/hardware_interface_types_userdoc.html)
+
 #### RQT Frame Editor 與視覺化工具
 - **RQT Frame Editor**：ROS 原生外掛，直觀視覺化和編輯 TF 座標轉換框架，在 RViz 中即時建立和調整
 
