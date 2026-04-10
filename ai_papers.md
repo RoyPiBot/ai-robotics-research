@@ -1265,4 +1265,16 @@
 - **評估對象** - NVIDIA GR00t、OpenVLA、Figure 01 Helix 02 等最新開源與商業 VLA 前沿模型
 - **評析維度** - 推理速度、泛化能力、邊緣部署適應性、開源資源可獲得性
 - **研究價值** - Meta-analysis 將當前 VLA 領域最佳實踐與技術路線圖化，助力後進者快速選型與集成
+
+#### 17. DeepRoute.ai 40B Vision-Language-Action 基礎模型 — 自動駕駛加速（2026 年 4 月）
+- **模型規模與應用** - 40B 參數 VLA 基礎模型，在 NVIDIA GTC 2026 展示，專為自主駕駛系統設計
+- **核心優勢** - 統一視覺、語言與動作控制，加速自動駕駛決策系統從雲端轉向邊緣部署
+- **對 ROS 機械手臂的啟示** - VLA 架構從自駕領域向機械手臂泛化，證明多感官融合動作規劃的可行性
+- **參考** - [DeepRoute.ai GTC 2026 發表](https://www.prnewswire.com/news-releases/deeprouteai-presents-40b-vision-language-action-foundation-model-at-nvidia-gtc-2026-accelerating-autonomous-driving-at-scale-302716046.html)
+
+#### 18. 2026 年 4 月 VLA 與開源模型最新排行（DataCamp/Dextra Labs）
+- **頂級開源 VLM** - Gemma 3 (4B–27B)、Qwen 2.5 VL (7B–72B) 視頻支援、LLaMA 3.2 Vision (11B–90B) OCR 特長
+- **新興前沿** - Qwen3-VL、GLM-4.6V 推動開源多模態邊界，部分指標已追平 GPT-4o
+- **邊緣優化** - Qwen2.5-VL 支援 LoRA 微調（5K-50K 樣本，$100-$5K），為本地機械手臂應用開路
+- **參考** - [DataCamp VLM 2026 排行](https://www.datacamp.com/blog/top-vision-language-models) / [Dextra Labs 基準評測](https://dextralabs.com/blog/top-10-vision-language-models/)
 - **對 Roy 機械手臂的參考** - 幫助評估現有架構與最新 VLA 方案的適配可能性
