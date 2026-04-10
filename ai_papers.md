@@ -1278,3 +1278,15 @@
 - **邊緣優化** - Qwen2.5-VL 支援 LoRA 微調（5K-50K 樣本，$100-$5K），為本地機械手臂應用開路
 - **參考** - [DataCamp VLM 2026 排行](https://www.datacamp.com/blog/top-vision-language-models) / [Dextra Labs 基準評測](https://dextralabs.com/blog/top-10-vision-language-models/)
 - **對 Roy 機械手臂的參考** - 幫助評估現有架構與最新 VLA 方案的適配可能性
+
+#### 19. VLM-3R — 視覺-語言模型與 3D 重建融合（CVPR 2026）
+- **核心機制** - 通過幾何編碼器從單目視頻幀生成隱性 3D tokens，表達空間理解
+- **模型架構** - 預訓練大型多模態模型（LMM）整合幾何編碼、相機視角編碼、視覺特徵提取
+- **應用場景** - 多視角視覺推理，增強機械手臂在 3D 空間中的環境感知與動作規劃
+- **參考** - [VLM-3R GitHub](https://github.com/VITA-Group/VLM-3R)
+
+#### 20. Spatial VLM — 3D 空間視覺問答框架（CVPR 2026）
+- **創新框架** - 自動化 3D 空間 VQA 資料生成，將 2D 影像提升至度量尺度 3D 點雲
+- **規模突破** - 資料管道擴展至 20 億 VQA 例子（基於 1,000 萬真實世界影像）
+- **對機械手臂的意義** - 讓視覺語言模型理解 3D 空間拓撲，提升複雜環境中的操作精度
+- **參考** - [Spatial VLM](https://spatial-vlm.github.io/)
