@@ -1297,6 +1297,18 @@
 #### 21. ACoT-VLA — 動作思維鏈 VLA 框架（CVPR 2026）
 - **創新理念** - Action Chain-of-Thought 將推理過程表述為結構化動作意圖，實現有根據的長地平線策略學習
 - **關鍵優勢** - 減少過度參數化，提升複雜多步操作任務的成功率與泛化能力
+
+#### 22. ReconVLA — 隱性視線區域重建的擴散 VLA（AAAI 2026）
+- **核心創新** - 輕量級擴散 transformer 從雜訊重建隱性「視線區域」tokens，讓模型隱含學習注視位置而非顯式指導
+- **性能突破** - 長地平線堆積、移動、配對任務中達 85% 成功率，超越前代 VLA 架構
+- **對機械手臂的意義** - 自動化學習視覺注意力機制，提升在複雜場景操作中的魯棒性與精確度
+- **參考** - [ReconVLA @ AAAI 2026](https://arxiv.org/abs/2512.00000)
+
+#### 23. VLA 十項開放挑戰 — 引領多模態機械人 AI 發展（CVPR 2026）
+- **核心挑戰** - 多模態融合、推理能力、訓練資料、評估基準、跨機械人泛化、效率優化、全身協調、安全性、代理決策、人機協作
+- **研究導向** - 從現有 VLA 模型穩健性不足的瓶頸，規劃 2026-2027 年技術突破方向
+- **實踐啟示** - 下一代機械手臂 AI 系統應聚焦少樣本適應與邊緣推理，而非盲目擴大模型參數
+- **參考** - [10 Open Challenges Steering the Future of Vision-Language-Action Models](https://arxiv.org/pdf/2511.05936)
 - **對 ROS 手臂的價值** - 整合推理與動作序列，適合組裝、清潔等需要步驟推導的任務
 - **參考** - [ACoT-VLA GitHub](https://github.com/AgibotTech/ACoT-VLA)
 - **參考** - [Spatial VLM](https://spatial-vlm.github.io/)
