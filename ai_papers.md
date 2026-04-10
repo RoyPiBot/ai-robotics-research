@@ -1198,3 +1198,11 @@
 - **推薦邊緣模型組合**：Meta-Llama-3.1-8B-Instruct、GLM-4-9B、Qwen2.5-VL-7B（2026 性能/效率最佳）
 - **應用場景**：Jetson T4000/Thor 上運行完整 RAG 系統，實現本地知識檢索與決策推理
 - **參考**：[NVIDIA TensorRT Edge-LLM GitHub](https://github.com/NVIDIA/TensorRT-LLM) / [SiliconFlow 邊緣 LLM 2026 指南](https://www.siliconflow.com/articles/en/best-llms-for-edge-ai-devices-2025)
+
+#### 8. Vision-Language-Action (VLA) 多模態與小模型革命（2026 年 4 月）
+- **VLA 模型突破** - 多模態 Vision-Language-Action 模型整合視覺、語言與動作控制，機械手臂從原始試錯改進為「語言引導的視覺推理」
+- **小模型優勢崛起** - Gartner 預測到 2027 年，企業使用小型任務特定 AI 模型頻率將達通用 LLM 的 **3 倍**，成本與延遲優勢明顯
+- **量化蒸餾成熟** - 新一代量化（16-bit 訓練 → 4-bit 推論）與知識蒸餾推動 LLM 推理遷移至邊緣與嵌入式設備
+- **工業部署加速** - Humanoid robots 預計 2026-2028 年在製造業、倉儲、物流場景大規模部署，Foundation Models + 模擬 + 機械手臂學習三位一體驅動
+- **對 ROS 機械手臂的意義** - VLA 模型搭配量化邊緣推理，讓中型機械手臂在 Jetson Thor 上實現複雜視覺-語言-動作決策，無需雲端連接
+- **參考**：[NVIDIA National Robotics Week 2026](https://blogs.nvidia.com/blog/national-robotics-week-2026/) / [Arm Physical AI 白皮書](https://newsroom.arm.com/blog/the-next-platform-shift-physical-and-edge-ai-powered-by-arm/) / [Deloitte 2026 物理 AI 報告](https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/physical-ai-humanoid-robots.html)
