@@ -1248,6 +1248,19 @@
 - **對邊緣部署的意義** - 最小化 Jetson Thor 上的計算與記憶體成本，使中型機械手臂能即時執行視覺-動作推理
 - **參考** - [VLA-Adapter 論文與程式碼](https://arxiv.org/abs/2505.04769)
 
+#### 15. Microsoft Rho-Alpha — 觸覺融合機械臂視覺語言動作模型（2026 年 4 月）
+- **創新設計** - 整合觸覺感知至 VLA 框架，支援按鈕推動、轉旋鈕、插入插頭等精密操作任務
+- **學習機制** - 在實際部署中從人類反饋在線學習，實現持續改進
+- **多感官整合** - 融合視覺、語言與觸覺信號，提升機械手臂在物理交互中的魯棒性
+- **對 ROS 手臂的意義** - 為複雜精密操作（組裝、修復）提供全感官指導策略
+- **參考** - [Microsoft Rho-Alpha 公告](https://theaiinsider.tech/2026/01/22/microsoft-announces-robotics-model-rho-alpha-built-on-companys-vision-language-models/)
+
+#### 16. NVIDIA 最新物理 AI 模型族 — Cosmos Reason 2 與 GR00T N1.6（2026 年 4 月）
+- **Cosmos Reason 2** - 開源推理視覺語言模型，支援複雜世界模型推理與機械手臂動作預測
+- **Isaac GR00T N1.6** - 人形機器人專用 VLA，開源組合包含推理模型、模擬藍圖、訓練資料集
+- **整合優勢** - 與 Jetson Thor + Nemotron 完美適配，支援端到端物理 AI 部署無雲端依賴
+- **參考** - [NVIDIA National Robotics Week 2026](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
+
 #### 15. VLA 前沿模型綜合評析 — OpenVLA / GR00t / π0.5 / Helix 02（2026 年 4 月 9 日）
 - **評估對象** - NVIDIA GR00t、OpenVLA、Figure 01 Helix 02 等最新開源與商業 VLA 前沿模型
 - **評析維度** - 推理速度、泛化能力、邊緣部署適應性、開源資源可獲得性
