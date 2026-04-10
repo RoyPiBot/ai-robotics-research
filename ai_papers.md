@@ -1213,3 +1213,15 @@
 - **部署優勢** - 與 Jetson Thor + Nemotron 完美整合，支援物理 AI 端到端部署，無需雲端依賴
 - **對 Roy 機械手臂的意義** - Cosmos 模型可加速 ROS 手臂從視覺輸入到動作執行的推理，Alpamayo 框架降低訓練成本 50%
 - **參考**：[NVIDIA Blog — 2026 CES Presentation](https://blogs.nvidia.com/blog/2026-ces-special-presentation/)
+
+#### 10. RoboLab — NVIDIA 機器人政策生成基準（2026 年 4 月）
+- **核心功能** - 高保真模擬基準，用於開發與評估通用機器人政策，支援跨環境多任務學習
+- **技術棧** - 基於 NVIDIA Isaac Sim 與 Omniverse，提供光學擬真環境與物理計算
+- **意義** - 在虛擬環境訓練的模型能無縫遷移至真實機械手臂，加速 sim-to-real 轉移效率
+- **對 ROS 手臂開發的影響** - 結合 Cosmos foundation model，可快速原型複雜操作任務
+
+#### 11. FSUNav — 大腦-小腦架構零樣本導航（2026 年 4 月）
+- **論文發表** - IEEE AIM 2026 會議論文（Fast, Safe, and Universal Zero-Shot Goal-Oriented Navigation）
+- **架構創新** - 結合高層推理規劃與低層控制反應，類似神經系統分層設計
+- **性能突破** - 零樣本環境下導航精度與速度突破，無需環境特定微調
+- **應用場景** - 移動機械手臂自主導航、動態環境適應
