@@ -641,6 +641,8 @@ if __name__ == '__main__':
 - **教育級 3D 列印機械臂新標準（2026 年 3 月）**：新興教育機械臂專案採用 Raspberry Pi + ROS 2 軟體棧，配合 3D 列印零件與商用伺服馬達。由於 ROS 2 生態在 2025-2026 年間已成熟（MoveIt 2、Nav2、ros2_control 完整可用），業界與教學機構遷移至 ROS 2 速度加快，使教育成本大幅下降。
 - **ROS 2 生態成熟確認（2026 年）**：原先 2019-2021 年的生態缺口已完全彌補，MoveIt 2 提供完整運動規劃、Nav2 提供導航棧支援，適配 ROS 2 Humble、Kilted Kaiju 與 Rolling 版本。ESP32 單晶片控制 5-DOF 機械臂已成為低成本教學平台標準配置。
 - **分散式多機械臂協作編隊與力控制整合（2026 年 4 月）**：ROS2_Control Rolling 版本完整支援多廠牌機械臂標準化接口；任務變異阻抗調整（Task-Varying Impedance）已開源實現；CRISP 框架使深度強化學習策略可無縫部署於硬體上。混合力-位置控制新突破：Hybrid Force-Position 框架支援精密操作與安全人機互動並行。
+- **Gazebo gz_ros2_control 完整整合（2026 年 3 月）**：新版 Gazebo 與 ROS 2 原生整合，提供無縫模擬到硬體轉移。gz_ros2_control 外掛完全取代舊 gazebo_ros_control，支援 ros2_control 所有硬體接口標準，使 6-DOF 機械臂的 Gazebo 模擬模型可直接部署至實體硬體。
+- **ROS 2 官方 6-DOF 機械臂完整教程（2026 年 Q2）**：ROS2_Control Rolling 發布 Example 7 完整教程，涵蓋從 URDF 設計、gazebo 仿真、MoveIt 2 運動規劃到實體硬體控制的端到端流程。支援 Doosan、Universal Robots、KUKA 等廠牌機械臂，標準化 ROS 接口簡化控制層開發。
 
 ---
 
