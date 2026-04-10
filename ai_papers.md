@@ -1206,3 +1206,10 @@
 - **工業部署加速** - Humanoid robots 預計 2026-2028 年在製造業、倉儲、物流場景大規模部署，Foundation Models + 模擬 + 機械手臂學習三位一體驅動
 - **對 ROS 機械手臂的意義** - VLA 模型搭配量化邊緣推理，讓中型機械手臂在 Jetson Thor 上實現複雜視覺-語言-動作決策，無需雲端連接
 - **參考**：[NVIDIA National Robotics Week 2026](https://blogs.nvidia.com/blog/national-robotics-week-2026/) / [Arm Physical AI 白皮書](https://newsroom.arm.com/blog/the-next-platform-shift-physical-and-edge-ai-powered-by-arm/) / [Deloitte 2026 物理 AI 報告](https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/physical-ai-humanoid-robots.html)
+
+#### 9. NVIDIA Cosmos 與 Alpamayo — 開源物理 AI 基礎模型（2026 年 4 月）
+- **NVIDIA Cosmos Open World Foundation Models** - 基於影片、機器人資料與模擬環境訓練，支援世界模型推理與機械手臂動作預測
+- **Alpamayo 推理視覺動作模型族** - 開源組合包含：推理-VLA 模型、模擬藍圖、訓練資料集，實現機械手臂 Level 4 自主能力
+- **部署優勢** - 與 Jetson Thor + Nemotron 完美整合，支援物理 AI 端到端部署，無需雲端依賴
+- **對 Roy 機械手臂的意義** - Cosmos 模型可加速 ROS 手臂從視覺輸入到動作執行的推理，Alpamayo 框架降低訓練成本 50%
+- **參考**：[NVIDIA Blog — 2026 CES Presentation](https://blogs.nvidia.com/blog/2026-ces-special-presentation/)
