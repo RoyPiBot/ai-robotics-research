@@ -1097,6 +1097,10 @@
 - RSA 加密：從需要 2000 萬量子位元降至**不到 100 萬**
 - AI 在這些突破中扮演關鍵角色：「毫無疑問，我們使用了 AI 來加速這項開發」
 - **Cloudflare** 宣布將後量子密碼學遷移時程**加速到 2029 年**
+
+### 第八十一次更新來源（2026-04-11 能耗與視頻 VLA 新突破）
+- **Mimic-Video VLA 模型 - 網際網路規模視頻預訓練驅動 10x 樣本效率提升** - Mimic Robotics 推出 mimic-video，整合預訓練網際網路規模視頻模型與流匹配動作解碼器，突破傳統靜態影像語言骨幹的限制，在視覺動態編碼與機械手操作學習中實現 10 倍更佳樣本效率與 2 倍更快收斂速度，標誌 VLA 從「單幀視覺推理」向「視頻動態理解與預測」的架構轉變，加速邊緣機械手的數據高效訓練與少樣本學習 [Mimic-Video VLA — National Robotics Week 2026](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
+- **神經符號方法能耗突破 - 符號推理優於 VLA 削減 100 倍能量消耗** - 最新研究「The Price Is Not Right: Neuro-Symbolic Methods Outperform VLAs on Structured Long-Horizon Manipulation Tasks with Significantly Lower Energy Consumption」揭示神經符號方法在長地平線結構化操作任務中超越 VLA，同時能耗削減 100 倍，透過人類邏輯推理與神經網絡融合替代 VLA 的蠻力試驗錯誤，標誌具身 AI 決策從「純學習驅動」向「邏輯推理增強」的演進方向，推進機械手臂與複雜操作系統的高效能源使用與長期自主規劃 [Neuro-Symbolic Methods — ScienceDaily 2026](https://www.sciencedaily.com/releases/2026/04/260405003952.htm)
 - **Time Magazine 標題**：「AI Helped Spark a Quantum Breakthrough. The World 'Is Not Prepared'」
 - **參考**：[Time Magazine](https://time.com/article/2026/04/07/ai-quantum-computing-advance/) / [Nature](https://www.nature.com/articles/d41586-026-01054-1) / [HPCwire — Oratomic](https://www.hpcwire.com/off-the-wire/oratomic-launches-to-build-utility-scale-quantum-computers-following-breakthrough-research-with-caltech/)
 
