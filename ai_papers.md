@@ -1143,6 +1143,12 @@
 - Foundation Models + Simulation + Robot Learning 三位一體
 - **參考**：[NVIDIA Blog](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
 
+---
+
+### 第八十二次更新來源（2026-04-11 12:30 開放世界泛化與次世代機械手基礎模型）
+- **π0.5 開放世界泛化突破 - Physical Intelligence 通用機械手策略新里程碑** - Physical Intelligence 發布 π0.5，進階版本相比 π0 實現開放世界泛化，支援移動操作機械手在完全未見過的新環境（廚房、臥室）中執行長地平線複雜清潔任務（10-15 分鐘），透過知識隔離訓練方法顯著提升跨環境泛化能力，標誌具身 AI 從「訓練分佈限制」向「真實世界開放環境應用」的根本轉變，推進通用機械手在家庭與商業場景的實際部署可行性 [π0.5 Open-World VLA — Physical Intelligence Blog](https://www.pi.website/blog/pi05)
+- **NVIDIA GR00T N2 預告 - 基於 DreamZero 世界模型的次世代機械手基礎模型** - NVIDIA GTC 2026 發表下一代機械手基礎模型 GR00T N2，基於創新 DreamZero 世界動作模型架構設計，在新任務與新環境的成功率相比現有最優 VLA 模型提升 2 倍以上，當前已在 MolmoSpaces 與 RoboArena 基準測試中排名第一，計劃 2026 年底發布，標誌 VLA 技術從泛化上界突破，加速複雜製造、手術協作與娛樂機械手應用的規模化部署 [GR00T N2 Preview — NVIDIA Newsroom](https://nvidianews.nvidia.com/news/nvidia-and-global-robotics-leaders-take-physical-ai-to-the-real-world)
+
 ### H. GPT-6 與邊緣 AI 的未來（2026 年 4 月預期發佈）
 
 - **OpenAI GPT-6** 預訓練於 2026 年 3 月 24 日完成（Stargate 超級計算機）
