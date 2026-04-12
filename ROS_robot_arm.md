@@ -2145,3 +2145,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Embodied AI 與 LLM 驅動的機械臂自主決策**：最新研究趨勢展示 OpenClaw Agent Framework 作為 ROS 2 機械臂與大語言模型（GPT-4、Llama 3）的標準橋樑，使機械臂能實時感知複雜環境、做出決策、執行精細操作。該架構支援多模態感知（視覺、力感測）與自然語言指令，標誌著機器人自動化從「腳本驅動」向「具身智慧」（Embodied AI）的轉變，特別適用於邊界設備上的自適應操作。[Embodied AI on ROS 2: The OpenClaw & ROSOrin Pro Guide](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
 
+### G-ARM：開源低成本 3D 列印機械臂教育平台（2026 年 4 月新增）
+
+**G-ARM 教育級機械臂與 ROS 2 整合**：Springer Nature 期刊《Multimedia Tools and Applications》最新發表論文探討 G-ARM（開源 3D 列印機械臂）與 ROS 2 的深度整合。該平台採用 FreeCAD 設計、3D 列印零件與商用馬達組成，成本控制在教育級預算範圍，完整支援 ROS 2 驅動框架、MoveIt 2 運動規劃與 Gazebo 模擬環境。G-ARM 已驗證適合 Raspberry Pi 5 邊界推理應用，為全球高校與 STEM 教育提供低門檻的機械臂開發平台，促進開源硬體生態與 ROS 社群的深度融合。[G-ARM: An open-source and low-cost robotic arm integrated with ROS2 for educational purposes](https://link.springer.com/article/10.1007/s11042-025-20748-8)
+
