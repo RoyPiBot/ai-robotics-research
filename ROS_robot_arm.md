@@ -2138,3 +2138,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROSCon 2026 多倫多大會與社群動向**：ROS 全球年度盛會 ROSCon 2026 將於多倫多召開，聚焦多臂編隊、邊界推理、Rust 開發與感知驅動製造等主題。ROS 2 Hardware Ecosystem 認證體系已涵蓋 60+ 款機械臂平台，標誌著 ROS 工業應用的規模化時代。
 
+
+### ROS 2 Control 標準化與 AI 整合加速（2026 年 4 月補充）
+
+**ROS 2 Control Framework 統一硬體介面**：ROS 2 官方推進的控制框架提供標準 C++ 介面，涵蓋硬體交互與使用者定義控制指令的統一查詢機制，大幅增進代碼模組化與機械臂硬體無關性。該框架於 Doosan、Universal Robots、Franka Emika 等主流協作臂全面支援，並支持實時控制迴圈（>500Hz）。ROS 2 Control 已與 MoveIt 2 深度整合，提供透明的動作執行層。[ROS2_Control Rolling Documentation](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
+**Embodied AI 與 LLM 驅動的機械臂自主決策**：最新研究趨勢展示 OpenClaw Agent Framework 作為 ROS 2 機械臂與大語言模型（GPT-4、Llama 3）的標準橋樑，使機械臂能實時感知複雜環境、做出決策、執行精細操作。該架構支援多模態感知（視覺、力感測）與自然語言指令，標誌著機器人自動化從「腳本驅動」向「具身智慧」（Embodied AI）的轉變，特別適用於邊界設備上的自適應操作。[Embodied AI on ROS 2: The OpenClaw & ROSOrin Pro Guide](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
+
