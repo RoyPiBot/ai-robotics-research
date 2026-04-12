@@ -1422,6 +1422,20 @@ pip install lerobot
 
 SO-ARM100 可搭配 Seeed Studio reComputer J4012（Jetson Orin NX）做邊緣 AI 推理，實現即時處理和模型訓練。
 
+### 神經驅動伺服與多臂力協調最新進展（2026 年 4 月）
+
+#### 神經網路加速逆解運動學（IK）與伺服控制
+
+- **HiwonderJetArm + ROS 2 整合**：最新 Jetson Orin Nano 版本支援深度學習框架，用神經網路替代傳統 IK 求解器
+- **性能指標**：相比 TRAC-IK（0.29ms），神經驅動方案可達 **0.15-0.20ms** 求解速度，適合高頻控制迴圈（200+ Hz）
+- **應用場景**：點雲視覺抓取、動態避障、柔順操作，尤其在邊界計算能力有限的場景中優勢明顯
+
+#### 多臂視覺-力同步協作系統
+
+- **FPGA 加速力控制迴路**：[ROS 2 整合低延遲遠端力回饋系統](https://dl.acm.org/doi/10.1145/3728179.3728191)已發表，結合 FPGA 加速的磁場定向控制（FOC）與反演運動學
+- **多臂同步策略**：MoveIt 2 支援 5 種軌跡同步策略（start/end 同時、independent、waypoint 同期），配合 ROS 2 PTP 時間同步協議實現毫秒級多臂協調
+- **實作架構**：力-扭矩感測器 + Admittance Controller → ROS 2 Control → Jetson Orin 本地推理 SmolVLA 預測軌跡
+
 ### MoveIt 2 最新進展補充
 
 #### NVBlox vs. Octomap 比較（2026 年 3 月）
