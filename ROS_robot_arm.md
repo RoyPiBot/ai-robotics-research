@@ -2132,3 +2132,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Embodied AI 與機械臂整合新進展**：Yahboom 2026 ROSMASTER 選擇指南與 HiwonderRobot 最新方案展示 6-DOF 機械臂整合 AI 語音模塊，實現自然語言驅動的複雜操作。該整合架構基於 ROS 2 原生驅動，支援 LLM 推理與實時視覺伺服的端對端協調，開啟教育與工業邊界 AI 應用新格局。[Embodied AI on ROS 2](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
 
+### MARA 完全模組化機械臂與 ROSCon 2026（2026 年 4 月新增）
+
+**MARA Robot Arm — 每模組獨立 ROS 2.0 運行**：新型 MARA（Modular Collaborative Robot Arm）機械臂採用完全模組化設計，每個關節模組內部獨立運行 ROS 2.0，具有自主的控制單元與網路通訊能力。該架構支援熱插拔組態變更、故障隔離與動態重組，相比傳統集中式控制提升了系統冗餘度與靈活性。MARA 已驗證支援 MoveIt 2 規劃與即時力反饋，適用於協作與製造應用。[MARA Modular Robot Arm](https://www.hackster.io/news/new-mara-robot-arm-is-completely-modular-with-ros-2-0-running-in-every-module-6f95604ac24)
+
+**ROSCon 2026 多倫多大會與社群動向**：ROS 全球年度盛會 ROSCon 2026 將於多倫多召開，聚焦多臂編隊、邊界推理、Rust 開發與感知驅動製造等主題。ROS 2 Hardware Ecosystem 認證體系已涵蓋 60+ 款機械臂平台，標誌著 ROS 工業應用的規模化時代。
+
