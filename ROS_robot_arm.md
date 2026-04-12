@@ -1097,6 +1097,22 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 - 發布日期從原定時程提前至 **2026 年 8 月 31 日**，避開 ROSCon 2026
 - 物理引擎遷移至 **DART 6.16**，改善操控、接觸密集型任務及高速移動機器人的 AI 驗證品質
 - 著重無頭部署（headless deployment）和測試流程改進
+
+---
+
+## 附錄 E：2026 年 4 月 13 日最新進展 — 工業標準鞏固與開源平台統一
+
+### PAL Robotics 正式終止 ROS 1 支援（2026 年 4 月 1 日）
+
+**里程碑決定**：PAL Robotics 從 2026 年 4 月 1 日起正式停止 ROS 1 技術堆棧的維護與新功能開發，所有安全補丁、Bug 修復、新功能開發均獨家通過 ROS 2 交付。此舉標誌工業級機器人廠商全面確認 ROS 2 為生產環境唯一標準，進一步鞏固 ROS 2 在協作臂與服務機器人領域的地位。
+
+### ROS-Industrial 與 Tesseract 軌跡規劃進展
+
+**Tesseract 1.0 衝刺**：ROS-Industrial 社群開發的開源軌跡最佳化引擎 Tesseract 已完成約 50% 工作量，即將達成 1.0 穩定版。相較 MoveIt 2 傳統規劃限制，Tesseract 提供更靈活的軌跡最佳化能力，適合高精度工業應用。
+
+### OpenArm 成為學術與企業基準平台
+
+**市場成熟信號**：六軸與七軸協作機械臂價格已降至 $10,000 以下（至少 14 家製造商、5 國），**OpenArm 開源平台**已成為學術研究與企業試驗的「事實標準」，降低技術門檻，加速邊界 AI + 機械臂的應用部署。
 - 改善物理與感測器輸出的可重複性，提升 AI 行為驗證品質
 - [路線圖分析](https://www.3l3c.ai/us/blog/ai-in-robotics-automation/gazebo-ai-simulation-roadmap)
 - [官方公告](https://discourse.openrobotics.org/t/new-release-date-for-gazebo-kura/51429)
