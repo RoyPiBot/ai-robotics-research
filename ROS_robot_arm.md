@@ -2172,6 +2172,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 點式視覺伺服在精準採收中的應用**：2026 年最新研究整合深度學習物體偵測、3D 位姿估測與自適應軌跡規劃，於動態工作空間環境實現點式視覺伺服（Point-based Visual Servoing）。該方案應用於番茄採收等農業精準操作，透過即時視覺反饋與比例控制相結合，達成毫米級定位精度。框架支援 ROS 2 生態整合，為邊界推理與協作機械臂架構提供標準化測試平台。[Point-based Visual Servoing for Autonomous Object Handling](https://www.tandfonline.com/doi/full/10.1080/15397734.2026.2636936?ai=zh&mi=j0k0ox&af=R)、[Hybrid Visual Servo Control for Cherry Tomato Harvesting](https://www.mdpi.com/2076-0825/12/6/253)
 
+### ROS 2 Lyrical Luth 與工業機械臂廠商支援擴展（2026 年 4 月新增）
+
+**ROS 2 Lyrical Luth（2026 年 5 月發布）核心改進**：官方文檔已發佈即將於 5 月推出的 Lyrical Luth 版本新功能。主要改進包括：外掛系統支援建構子參數傳遞、Python API 改用 list/tuple/numpy.ndarray 替代 set 物件、Point Cloud Transport 支援生命週期節點、新增 NV12 影像格式支援、Windows 11 平台體驗大幅提升。預期該版本將進一步擴展工業級機械臂的 ROS 2 支援生態。[ROS 2 Lyrical Luth 官方發行頁](https://docs.ros.org/en/rolling/Releases/Release-Lyrical-Luth.html)
+
+**工業機械臂廠商 ROS 2 原生支援成熟化**：Realman 睿爾曼與 UFactory 已於 2026 年提供完整的 ROS 2 機械臂驅動包與官方支援。兩廠牌均遵循 ros2_control 標準框架，支援 MoveIt 2 直接整合、力回饋感測與即時伺服控制。該進展標誌著工業級機械臂的 ROS 2 支援已達業界標準，顯著降低多廠牌整合成本。結合 ROS 2 Control 的中介軟體選擇靈活性（支援 DDS、Zenoh、MQTT 等），為 Pi 5 邊界部署提供全新的工業級可能性。
+
 ---</thinking>
 
 記錄狀態中…
