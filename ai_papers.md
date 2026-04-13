@@ -1705,3 +1705,17 @@
 - **應用場景** - 通用機械人需要具備行動前的「心智預演」能力，預測行動如何重塑未來世界狀態
 - **對機械手臂的意義** - 支援手臂在高不確定性環境中的自適應控制，強化環境認知、動態規劃與實時決策的整合度
 - **參考** - [Embodied Intelligence Review @ Frontiers](https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1668910/full)
+
+#### 79. Visual Generation Unlocks Human-Like Reasoning through Multimodal World Models（2026）
+- **核心創新** - 統一多模態模型（UMMs）整合文本與圖像生成，透過多模態路徑實現類人推理，世界模型嵌入於大型基礎模型內
+- **技術方向** - 大世界模型（LWMs）整合時空、物理維度的多模態資料，包括文本、影像、音頻、感測器信號、視頻序列與互動環境
+- **推理優勢** - 結合思鏈（Chain-of-Thought）推理，世界模型能支援因果推理、反事實決策與多步驟規劃
+- **對機械手臂的意義** - 多模態推理能力提升手臂對複雜場景的理解，支援更加靈活的適應性控制與決策預演
+- **參考** - [Visual Generation Unlocks @ arXiv](https://arxiv.org/html/2601.19834v1)
+
+#### 80. Google Gemini 3.1 Ultra — 多模態推理與超大上下文窗口突破（2026）
+- **核心特性** - 業界最大的 250 萬 Token 上下文窗口，原生支援文本、圖像、音頻與視頻的同步跨模態推理
+- **技術突破** - 從訓練階段即設計為多模態同步推理架構，能一次處理整套技術文檔或超大型程式碼庫
+- **性能表現** - 在 GPQA Diamond（專家級科學知識）達 94.3%、ARC-AGI-2 77.1% 的驚人成績，在 16 項基準中 13 項領先
+- **對機械手臂的意義** - 超大上下文窗口支援複雜多模態感知與長地平線任務規劃，多模態推理增強手臂對視覺、音聲與觸覺信號的聯合理解
+- **參考** - [Google DeepMind @ Gemini Blog](https://blog.google/technology/ai/)
