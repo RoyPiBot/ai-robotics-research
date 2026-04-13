@@ -798,6 +798,22 @@ G-ARM 是 2025-2026 年最值得關注的教育用機械手臂專案：
 - Pi 5 + Ubuntu 22.04 + ROS 2 Humble 是 2026 年最常見的配置
 - NEMA17 步進馬達可搭配 ros2_control 用於手臂關節
 
+#### 2026 年 4 月最新進展 — ros2_control 與 LeRobot 邊界感知整合
+
+**ROS 2 Control Rolling（2026/03）的新功能**
+- 非 C++ 資料傳遞支援：新增字串傳遞，擴展硬體控制介面彈性度
+- [詳見官方文件](https://control.ros.org/rolling/doc/resources/resources.html)
+
+**OpenClaw Agent 框架成熟應用**
+- 整合 GPT-4 / Llama 3 LLM，提供環境感知與自主決策能力
+- 標配邊界感知控制，機械手臂可自動檢測工作環圍並調整軌跡
+- MoveIt 2 與 LeRobot 深度整合，支援機器人邊界推理部署
+- ROSOrin Pro 6-DOF + OpenClaw 成為企業級解決方案
+
+**Gazebo Harmonic 物理模擬驗證方法論確立**
+- ROS 2 生態中標準的機械手臂模擬→實機遷移流程
+- ros2_control 與 Gazebo 無縫對接，支援 6+ DOF 動力學精確模擬
+
 #### ros2_control 框架：硬件無關的實時控制（2026 年 4 月更新）
 - **模組化設計**：支援多種硬體配置無需修改控制邏輯，廣泛適用於自製手臂與商業機械手臂
 - **MoveIt 2 深度整合**：控制器透過 ROS 介面與 MoveIt 2 軌跡規劃器無縫協作，實現實時位置追蹤
