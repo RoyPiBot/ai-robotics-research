@@ -1645,3 +1645,11 @@
 - **對機械手臂的意義** - 提供開源替代方案，降低專有模型依賴，加速手臂級多步驟任務自動化部署
 - **參考** - [NVIDIA Isaac GR00T @ NVIDIA Robotics Week 2026](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
 - **參考** - [NVIDIA Physical AI Data Factory @ NVIDIA Newsroom](https://nvidianews.nvidia.com/news/nvidia-announces-open-physical-ai-data-factory-blueprint-to-accelerate-robotics-vision-ai-agents-and-autonomous-vehicle-development)
+
+#### 72. VLASER — 協同具身推理與端到端控制的 VLA 模型（ICLR 2026）
+- **核心創新** - 統合具身推理與動作控制的統一框架，支援複雜推理決策與精準執行
+- **技術突破** - 構建 Vlaser-6M 大規模資料集，在 13 項具身推理基準中達成 SOTA 性能
+- **關鍵能力** - 推理型 VLA 架構，支援長地平線任務規劃與多步驟決策
+- **應用場景** - 複雜工業組裝、多步驟物流操作、動態環境中的自適應決策
+- **對機械手臂的意義** - 推理能力強化手臂的複雜任務理解與執行，提升決策精準度與計劃能力
+- **參考** - [VLASER @ ICLR 2026](https://zhuanlan.zhihu.com/p/1961724511847192399)
