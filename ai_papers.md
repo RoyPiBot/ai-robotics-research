@@ -1617,3 +1617,18 @@
 - **對機械手臂的意義** - 支援合成資料驅動的 VLA 預訓練與領域遷移，減少真實資料標註成本
 - **參考** - [NVIDIA Cosmos @ Research](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
 - **對機械手臂的意義** - 驗證工業級人形機械人的大規模製造可行性與市場需求
+
+#### 68. MIT Wave-Former — 生成式 AI 無線視覺穿障礙物感知（Mar 2026）
+- **核心創新** - 利用生成式 AI 與 mmWave 雷達反射，重建隱藏物體與室內場景三維結構
+- **技術突破** - Wave-Former 提出多個潛在物體表面，由生成 AI 完成形狀、迭代精煉，場景重建精度較現有方法提升約 2 倍
+- **訓練方法** - 改寫大規模電腦視覺資料集以模擬 mmWave 反射特性，融入 mmWave 物理模型建立合成訓練集
+- **對機械手臂的意義** - 支援隔障物體感知與複雜室內環境導航，無需可見光資訊的備選方案
+- **參考** - [MIT Wave-Former @ MIT News](https://news.mit.edu/2026/generative-ai-improves-wireless-vision-system-sees-through-obstructions-0319)
+
+#### 69. NVIDIA Physical AI Data Factory Blueprint — 開源資料生產框架（Mar 2026）
+- **核心框架** - 統一自動化訓練資料生成、增強與評估的開源參考架構，加速物理 AI 系統規模化
+- **關鍵能力** - 支援合成資料生成、強化學習評估、Cosmos 開源世界基礎模型整合、邊界案例與長尾場景補充
+- **產業採用** - FieldAI、Hexagon Robotics、Uber、Teradyne Robotics 等採用，Microsoft Azure 與 Nebius 提供雲平台支援
+- **開源工具** - OSMO 編排框架整合 Claude Code、OpenAI Codex 等代理工具，實現 AI 原生運維與自動化資源管理
+- **對機械手臂的意義** - 加速大規模標註資料的生成與多環境遷移學習，降低實世界訓練成本
+- **參考** - [NVIDIA Physical AI Data Factory @ NVIDIA Newsroom](https://nvidianews.nvidia.com/news/nvidia-announces-open-physical-ai-data-factory-blueprint-to-accelerate-robotics-vision-ai-agents-and-autonomous-vehicle-development)
