@@ -1631,4 +1631,17 @@
 - **產業採用** - FieldAI、Hexagon Robotics、Uber、Teradyne Robotics 等採用，Microsoft Azure 與 Nebius 提供雲平台支援
 - **開源工具** - OSMO 編排框架整合 Claude Code、OpenAI Codex 等代理工具，實現 AI 原生運維與自動化資源管理
 - **對機械手臂的意義** - 加速大規模標註資料的生成與多環境遷移學習，降低實世界訓練成本
+
+#### 70. Vision-Language-Action (VLA) 模型 — ICLR 2026 研究熱點（2026）
+- **研究規模** - ICLR 2026 共 164 篇 Vision-Language-Action 模型論文投稿，顯示 VLA 已成業界核心研究方向
+- **核心進展** - 涵蓋離散擴散 VLA、推理型 VLA、多模態融合架構、零樣本跨體具身泛化等多個研究分支
+- **基礎模型** - Google DeepMind RT-X（13M+ trajectories、22 種機械人體具）、OpenAI VPT-R（YouTube 人類操作視頻訓練）建立產業基準
+- **對機械手臂的意義** - VLA 統一視覺、語言、動作三模態，支援自然語言指令驅動的手臂操作，推動具身 AI 規模化應用
+
+#### 71. NVIDIA Isaac GR00T — 多步驟自然語言規劃基礎模型（2026）
+- **核心能力** - 開源基礎模型，支援機械人理解自然語言指令並自主規劃複雜多步任務執行流程
+- **技術亮點** - 整合視覺-語言-動作推理，支援零樣本環境遷移與動態任務調適
+- **應用場景** - 工業裝配、物流分揀、複雜家務，實現不需手工編程的自主機械人
+- **對機械手臂的意義** - 提供開源替代方案，降低專有模型依賴，加速手臂級多步驟任務自動化部署
+- **參考** - [NVIDIA Isaac GR00T @ NVIDIA Robotics Week 2026](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
 - **參考** - [NVIDIA Physical AI Data Factory @ NVIDIA Newsroom](https://nvidianews.nvidia.com/news/nvidia-announces-open-physical-ai-data-factory-blueprint-to-accelerate-robotics-vision-ai-agents-and-autonomous-vehicle-development)
