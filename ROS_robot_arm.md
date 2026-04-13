@@ -2188,3 +2188,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **G-ARM 教育級機械臂與 ROS 2 整合**：Springer Nature 期刊《Multimedia Tools and Applications》最新發表論文探討 G-ARM（開源 3D 列印機械臂）與 ROS 2 的深度整合。該平台採用 FreeCAD 設計、3D 列印零件與商用馬達組成，成本控制在教育級預算範圍，完整支援 ROS 2 驅動框架、MoveIt 2 運動規劃與 Gazebo 模擬環境。G-ARM 已驗證適合 Raspberry Pi 5 邊界推理應用，為全球高校與 STEM 教育提供低門檻的機械臂開發平台，促進開源硬體生態與 ROS 社群的深度融合。[G-ARM: An open-source and low-cost robotic arm integrated with ROS2 for educational purposes](https://link.springer.com/article/10.1007/s11042-025-20748-8)
 
+### ROS2_Control 工具鏈改進與工業平台整合（2026 年 4 月 13 日新增）
+
+**RQT Frame Editor — TF 框架視覺化工具**：ROS-Industrial 聯盟推出 RQT Frame Editor，提供直觀的 TF（Transform Frame）框架編輯介面，簡化機械臂坐標系配置與除錯，支援 ROS 2 Humble/Jazzy。該工具大幅降低多臂協作時的坐標變換配置複雜度，已驗證於 UR、Kinova、xArm 等主流平台。
+
+**ROS2_Control 硬體驅動生態擴展**：2026 年第一季度，ros2_control 框架已原生支援 27 個新硬體驅動套件、304 項更新，涵蓋 Mitsubishi MELFA、ROBOTIS OpenMANIPULATOR、KUKA 系列與移動操縱臂（TIAGo）。所有主流協作機械臂廠商已通過 ROS 2 Hardware Ecosystem 認證體系，並標準化支援 >500Hz 實時控制迴圈。Pi 5 + ROS 2 Humble + ros2_control 組合已驗證支援完整 6-DOF 機械臂感知-規劃-執行閉迴圈。
+
