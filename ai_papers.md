@@ -1726,3 +1726,17 @@
 - **參考** - [AGIBOT Genie Sim 3.0](https://www.therobotreport.com/agibot-introduces-genie-sim-3-0-simulation-platform-embodied-ai/)
 - **對機械手臂的意義** - 超大上下文窗口支援複雜多模態感知與長地平線任務規劃，多模態推理增強手臂對視覺、音聲與觸覺信號的聯合理解
 - **參考** - [Google DeepMind @ Gemini Blog](https://blog.google/technology/ai/)
+
+#### 82. MemoryVLA — 知覺-認知記憶框架的 VLA 機械人操作模型（ICLR 2026）
+- **核心創新** - 受人類記憶系統啟發的 Cognition-Memory-Action 架構，透過工作記憶與長期記憶銀行支援長地平線操作任務
+- **技術突破** - 預訓練 VLM 編碼觀察為知覺與認知 Token，形成工作記憶；感知-認知記憶庫儲存低階細節與高階語義，工作記憶自適應融合與動態更新
+- **實驗成果** - 150+ 模擬與真實機械人任務評估，SimplerEnv-Bridge 達 71.9% 成功率、LIBERO-5 達 96.5%、12 項真實任務達 84% 成功率，較 SOTA 基線提升 +26 分
+- **對機械手臂的意義** - 強化手臂長地平線任務的時序依賴學習，支援複雜多步操作中的記憶檢索與自適應決策融合
+- **參考** - [MemoryVLA @ ICLR 2026](https://arxiv.org/abs/2508.19236)
+
+#### 83. GEN-1 — 具身基礎模型規模化里程碑（Apr 2026）
+- **核心進展** - Generalist AI 宣示 GEN-1 基礎模型的規模化突破，在多項任務上展現可靠性、速度與即興應變的顯著躍升
+- **性能指標** - 多項任務成功率達 99% 以上（可靠性）、相比 SOTA 完成速度提升 3 倍、在非預期場景中展現緊急恢復能力（即興性）
+- **技術基礎** - 在 GEN-0 基礎上透過模型規模擴展與演算法創新迭代，開啟具身基礎模型大規模實用化的新階段
+- **對機械手臂的意義** - 驗證規模化路線在具身任務學習中的有效性，為手臂級多技能基礎模型的工業化部署提供技術參考
+- **參考** - [Generalist AI GEN-1](https://generalistai.com/blog/apr-02-2026-GEN-1)
