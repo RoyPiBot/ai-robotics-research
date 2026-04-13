@@ -1638,6 +1638,14 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Humble Hawksbill 生態擴展**（2026 年 3 月 29 日）：新增 15 個官方套件與 138 個相容性更新，主要涵蓋 ros2_control 硬體驅動、視覺/語音整合、邊界 AI 推理框架。**ArmPi Ultra** 已支援文本、語音、視覺實時多模態同步，可直接運行量化 VLA 模型，適合多臂編隊的智慧控制。
 
+### ROS 2 Kilted Kaiju 與硬體驅動加速（2026 年 4 月）
+
+**ROS 2 Kilted Kaiju 最新特性**：ROS 2 生態最新版本帶來核心效能提升與駕駛支援擴展。其中 **Zenoh 升級為 Tier 1 RMW（Middleware）**，提供更低延遲與更好的邊界計算支援；**RCLPy 新事件執行器**改進了 Python 應用的非同步效率，適合多臂協調的複雜邏輯編排。
+
+**ros2_control 硬體驅動突破**：據 [ROS 2 Control Rolling 官方文件](https://control.ros.org/rolling/doc/resources/resources.html)，2026 年 Q1-Q2 已新增 27 個工業與教育機械手臂驅動、304 項相容性更新，覆蓋 Doosan（協作臂）、Kawasaki（工業臂）、FANUC（高頻寬串流控制）、以及 Teradyne/MARA 模組化多臂等廠商。**MARA Robot Arm** 為業界首款將 ROS 2.0 執行環境嵌入每個模組的模組化機械手臂，單個模組可獨立決策與協調，適合分佈式多臂編隊研究。
+
+**推薦資源**：[ROS 2 supported robots 完整清單](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+
 **實時性能強化**：ros2_control 在 2026 年引入微秒級時序精度（μs resolution）與動態優先級排程，支援多廠商驅動無縫整合（FANUC、Kawasaki、Universal Robots、xArm 等工業機械手臂的高頻寬串流控制已驗證可達 1 kHz）。
 
 ### ROS 2 Lyrical Luth 系統強化（2026 年 5 月發布）
