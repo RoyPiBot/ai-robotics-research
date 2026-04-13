@@ -1493,6 +1493,18 @@ PickNik 發表了 [深度比較文章](https://picknik.ai/2026/03/04/Octomap-vs-
 
 Joint Trajectory Admittance Controller (JTAC) 現支援多末端和多運動鏈的力控制，適用於雙臂機器人和多手指抓取。
 
+### 2025-2026 社區重點發展
+
+#### ROSCon 2025 新加坡會議亮點
+
+- **参與規模**：1,000+ 參與者來自 52 個國家，重點議題包括 OpenRMF 多機隊協調、Rust 生態完整化（rclrs feature-complete）
+- **AI 整合挑戰**：識別出多模態感知擴展和策略執行管道優化為 2026 主要研究方向
+
+#### 開源教育機械手臂
+
+- **bcr_arm**：7-DOF 冗餘設計，支援 ROS 2 + Gazebo + Isaac Sim，適合運動學複雜任務研究
+- **G-ARM**：低成本可 3D 列印教育手臂，FreeCAD 設計，多篇論文已發表於 Springer Nature（2025-2026）
+
 ### 2026 年 Q2 值得關注的事件
 
 | 日期 | 事件 | 說明 |
