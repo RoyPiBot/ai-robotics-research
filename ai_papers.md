@@ -1602,4 +1602,18 @@
 - **應用場景** - 工業自動化、物流分揀、複雜環境探索中的實時自主決策
 - **對機械手臂的意義** - 實現手臂級邊緣部署的 AI 控制，降低雲端依賴，提升響應速度與系統自主性
 - **參考** - [NVIDIA Jetson Thor Robotics](https://www.trendforce.com/news/2026/03/17/news-nvidia-jetson-thor-and-robotics-the-real-challenge-of-multimodal-ai/)
+
+#### 66. ReconVLA — 視覺注意力隱式學習的 VLA 架構（AAAI 2026）
+- **核心創新** - 集成輕量級擴散變換器，透過重建隱性「視覺注視區域」實現視覺語言融合
+- **技術突破** - 模型在從雜訊中隱式學習觀看位置，優化視覺焦點與任務相關性
+- **實驗成果** - 長地平線操作任務（如堆積積木）達成 85% 成功率，顯著超越基線方法
+- **對機械手臂的意義** - 支援動態環境中的視覺焦點自適應，提升複雜多步操作的成功率
+- **參考** - [ReconVLA @ AAAI 2026](https://www.bohrium.com/blog/research-notes/aaai-2026-accepted-papers-highlights/)
+
+#### 67. NVIDIA Cosmos World Models — 機械人世界模型與合成訓練（2026）
+- **核心能力** - 生成式世界模型產生高保真合成資料，支援機械人大規模預訓練
+- **技術亮點** - 與 Cosmos Reason 推理引擎配套，實現世界理解與動作預測的聯合優化
+- **應用場景** - 加速機械人在多環境、多任務場景中的學習與泛化能力
+- **對機械手臂的意義** - 支援合成資料驅動的 VLA 預訓練與領域遷移，減少真實資料標註成本
+- **參考** - [NVIDIA Cosmos @ Research](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
 - **對機械手臂的意義** - 驗證工業級人形機械人的大規模製造可行性與市場需求
