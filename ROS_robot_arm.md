@@ -2222,3 +2222,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS2_Control 硬體驅動生態擴展**：2026 年第一季度，ros2_control 框架已原生支援 27 個新硬體驅動套件、304 項更新，涵蓋 Mitsubishi MELFA、ROBOTIS OpenMANIPULATOR、KUKA 系列與移動操縱臂（TIAGo）。所有主流協作機械臂廠商已通過 ROS 2 Hardware Ecosystem 認證體系，並標準化支援 >500Hz 實時控制迴圈。Pi 5 + ROS 2 Humble + ros2_control 組合已驗證支援完整 6-DOF 機械臂感知-規劃-執行閉迴圈。
 
+### LeRobot 邊界感知與 ROS 2 Manipulation 統一化（2026 年 4 月 13 日補充）
+
+**ROS 2 Manipulation 官方課程與控制層標準化**：The Construct 平台發布 ROS 2 Manipulation Basics 教學，涵蓋 Joint Position Controller（接收期望位置）與 Joint Trajectory Controller（執行 MoveIt 2 軌跡）的完整工作流。該課程強調控制層的硬體無關性與實時性，適合 LeRobot 邊界部署時的快速整合。MoveIt 2 + ros2_control 架構已驗證支援無模擬到實體的直接遷移。
+
+**Doosan 協作臂強化學習與邊界推理環境**：開源 robotic_arm_environment 專案整合 Doosan 6-DOF 臂、Gazebo 模擬、Reinforcement Learning 與 ROS 2 控制。該架構已移植至 Jetson Orin 邊界設備，驗證端對端強化學習策略的可行性，支援 >100Hz 視覺回饋迴圈。
+
