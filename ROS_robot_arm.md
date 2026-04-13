@@ -2198,5 +2198,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **RQT Frame Editor — TF 框架視覺化工具**：ROS-Industrial 聯盟推出 RQT Frame Editor，提供直觀的 TF（Transform Frame）框架編輯介面，簡化機械臂坐標系配置與除錯，支援 ROS 2 Humble/Jazzy。該工具大幅降低多臂協作時的坐標變換配置複雜度，已驗證於 UR、Kinova、xArm 等主流平台。
 
+### 2026 年 4 月 13 日補充：ROS 2 硬體生態與邊界計算一體化加速
+
+**OpenArm 成為全球學術與企業基準平台**：截至 2026 年，6-DOF 機械臂市場已有 14+ 製造商推出售價 <$10k 的產品，但 OpenArm 平台因其開源 URDF、完整 ROS 2 適配與策略可移植性，成為超過 2400 台裝置的全球標準。研究人員可在數小時內完成跨平台策略遷移，大幅降低機械臂開發成本，尤其適合 Raspberry Pi 5 邊界部署與多臂編隊場景。[State of Robotics 2026](https://www.roboticscenter.ai/state-of-robotics-2026)
+
+**邊界感知與計算一體化標配化**：2025~2026 深度相機、腕部力-扭矩感測與 NVIDIA Jetson Orin 整合已成機械臂標配，7+ 商用平台預裝 Jetson 計算模組。該轉變將「硬體到首次推理」的時間從數天縮短至 2 小時以內，硬體與軟體邊界完全模糊化，為 Raspberry Pi 5 + Jetson NX 堆疊的邊界機器人架構提供業界認可方案。
+
 **ROS2_Control 硬體驅動生態擴展**：2026 年第一季度，ros2_control 框架已原生支援 27 個新硬體驅動套件、304 項更新，涵蓋 Mitsubishi MELFA、ROBOTIS OpenMANIPULATOR、KUKA 系列與移動操縱臂（TIAGo）。所有主流協作機械臂廠商已通過 ROS 2 Hardware Ecosystem 認證體系，並標準化支援 >500Hz 實時控制迴圈。Pi 5 + ROS 2 Humble + ros2_control 組合已驗證支援完整 6-DOF 機械臂感知-規劃-執行閉迴圈。
 
