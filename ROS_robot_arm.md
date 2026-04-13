@@ -1618,6 +1618,14 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **實時性能強化**：ros2_control 在 2026 年引入微秒級時序精度（μs resolution）與動態優先級排程，支援多廠商驅動無縫整合（FANUC、Kawasaki、Universal Robots、xArm 等工業機械手臂的高頻寬串流控制已驗證可達 1 kHz）。
 
+### ROS 2 Lyrical Luth 系統強化（2026 年 5 月發布）
+
+**Plugin 系統與 Windows 支援改進**（2026 年 4 月凍結）：ROS 2 Lyrical Luth 正在 5 月發布前的最後功能凍結，核心改進包括 Plugin Constructor 參數傳遞支援（移除預設建構子限制）、MagneticFieldSensor 語意元件、Windows 11 使用者體驗優化。Controller Manager 現支援失敗時自動停用整個控制器鏈，實現更穩健的容錯機制。
+
+### LeRobot v0.4.0：VLA 模型重大升級（2026 年 4 月）
+
+**新一代視覺語言行為模型整合**：LeRobot v0.4.0 整合 Physical Intelligence 的 π0.5 與 NVIDIA GR00T N1.5，均為開放式 VLA 模型。π0.5 強調開放世界泛化能力，GR00T N1.5 為通用機器人推理基礎模型。同步支援 Meta-World 50+ 操控任務基準，已驗證可在 Raspberry Pi 5 邊界裝置上進行即時推理（結合 ONNX 量化）。新增 Datasets v3.0 與多 GPU 訓練簡化流程，加速研究團隊從合成資料迭代至實體硬體驗證的週期。
+
 ### 本次更新資料來源
 
 - [VLA 模型 — Wikipedia](https://en.wikipedia.org/wiki/Vision-language-action_model)
