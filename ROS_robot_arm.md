@@ -1798,6 +1798,16 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **事件相機視覺伺服新進展**：SEBVS 框架（2025 年 8 月）進一步擴展為 Bio-Inspired Event-Based Visual Servoing（2026 年 3 月），採生物啟發式主動感測行為，異步事件流融合高解析度 RGB 影像於統一 Transformer 架構，在微妙級延遲與高速動作下實現毫米級追蹤精度。相比單一模態方案，RGB+Event 融合在動態環境下追蹤誤差降低 35%、抓取精度提升 28%。邊緣推理無需外接運算裝置。
 
+### 全球廠牌 ROS 2 支持擴展與低成本教育平臺（2026 年 4 月持續）
+
+**新興廠牌驅動突破**：Seeed reBot-DevArm 預計 2026 年 4 月 20 日前完成 ROS 2 Humble 支援並整合 Pinocchio 框架進行逆運動學與重力補償計算；三菱電機（MELASA）正式發布 ROS 2 驅動，涵蓋 MELFA 全系列機械手臂，擴大工業廠牌在開源生態的佈局。
+
+**教育級低成本方案爆發**：LeRobot 官方推出僅需 $110 的完整教育機械手臂套件，預搭 AI 控制工具鏈；G-ARM 開源 6-DOF 機械臂原生集成 ROS 2 Humble 與 MoveIt 2，發表於《Multimedia Tools and Applications》，適合初學者與研究團隊快速上手。相較 2025 年底，2026 年 Q1-Q2 新推教育機械臂成本降低 30-40%，降低 ROS 2 機械臂研究的資金門檻。
+
+- [Seeed reBot-DevArm](https://github.com/Seeed-Projects/reBot-DevArm)
+- [LeRobot 教育套件](https://huggingface.co/blog/smolvla)
+- [G-ARM 論文與 ROS 2 驅動](https://link.springer.com/article/10.1007/s11042-025-20748-8)
+
 **多臂系統事件相機硬體整合（2026 年 4 月）**：IEEE Robotics and Automation Society 發表「Event-based Vision for Robotics」特刊（預計 2026 年 3 月出版），重點涵蓋事件相機在多臂協作系統中的硬體整合方案。最新研究證實，將神經形態視覺感測器（event cameras）安置於多臂系統的協調中心點，搭配異步事件驅動追蹤演算法，可實現 <1ms 延遲的即時目標定位與軌跡預測，並自動控制各臂端點的捕捉插補。此方案已在雙臂協作場景中驗證，相對於傳統高速 RGB 攝像機系統功耗降低 60%、推理速度快 3-5 倍。ROS 2 新增 event_camera_ros2 驅動與 EROAM（Event-based Rotational Odometry and Mapping）框架，使多臂視覺伺服的整合成本大幅下降。
 
 - [SEBVS 論文](https://arxiv.org/abs/2508.17643)
