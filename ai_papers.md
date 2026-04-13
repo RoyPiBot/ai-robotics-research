@@ -1667,3 +1667,15 @@
 - **對機械手臂的意義** - 提供大規模高質量訓練資料，加速手臂級 VLA 模型的預訓練與領域遷移，降低企業自建資料成本
 - **產業採用** - 被多家機械人企業採納，成為 2026 具身 AI 研究的重要資料基礎設施
 - **參考** - [AGIBOT WORLD 2026](https://www.therobotreport.com/agibot-world-2026-dataset-open-source-accelerate-embodied-ai-development/)
+
+#### 75. ExecuTorch 與 Small Language Models (SLMs) 邊緣推理生態（2026）
+- **核心演進** - Meta ExecuTorch 框架進化，支援小語言模型在邊緣設備上高效推理，足跡輕量 50KB，已在 Instagram、WhatsApp、Messenger、Facebook 等賦能數十億用戶
+- **SLM 優勢** - Llama 3.2 (1B/3B)、Gemma 3 (270M)、Qwen2.5 (0.5B-1.5B)、SmolLM2 (135M-1.7B) 等聚焦邊緣最適化，Gartner 預測 2027 年企業將使用小型任務專精模型的頻率將超越通用 LLM 三倍
+- **推理架構** - 整合 Speculative Decoding 草稿模型與驗證機制，達成 2-3 倍推理加速；Post-Training 量化技術（SmoothQuant、OmniQuant）實現 LLM 邊緣部署且精度損失最小
+- **對機械手臂的意義** - 支援低延遲邊緣決策與實時多模態感知，減少雲端依賴並提升機械人自主運作能力
+
+#### 76. 邊緣推理優化突破 — Post-Training 量化與推測解碼（Apr 2026）
+- **量化技術進展** - SmoothQuant、OmniQuant 等演算法突破，實現大語言模型在邊緣設備上的低精度推理部署，精度保留率達 95% 以上
+- **推測解碼加速** - 採用輕量草稿模型提議多個 token，由目標模型並行驗證，效能較自迴歸解碼提升 2-3 倍，適合邊緣低計算環境
+- **技術組合** - 量化 + 推測解碼 + 動態批次處理，整合優化推理管道，支援邊緣設備在延遲與能耗約束下運行複雜 AI 模型
+- **對機械手臂的意義** - 強化手臂邊緣推理的實時性與能效，支援複雜視覺推理與決策在毫秒級延遲內完成
