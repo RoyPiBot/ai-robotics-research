@@ -2332,3 +2332,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 硬體生態資料庫開放**：PickNik 正式開放「ROS 2 Compatible Hardware Database」，涵蓋 60+ 協作與工業機械臂的相容性驗證標籤。該資料庫已成為採購決策與集成商的準務必參考，加速 ROS 2 在工業現場的部署速度。[PickNik Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/)
 
+### Jetson Orin Nano/NX 邊界推理與 ROS 2 視覺伺服標準化（2026 年 4 月 15 日補充）
+
+**JetArm 與 Jetson Orin NX 的端到端邊界推理架構**：JetArm 搭配 Jetson Orin NX 已成為邊界機械臂推理的業界標準參考設計。自 2026 年 1 月起，JetArm 預裝 JetPack 6.2，整合 NVIDIA CUDA/cuDNN 加速、TensorRT 推理引擎與原生 ROS 2 驅動。該架構結合 3D 深度相機與 NVIDIA Jetson 的視覺處理能力，支援實時物件檢測、6-DOF 位姿估計與視覺引導操縱，已驗證適合工業檢測、零件分揀與實驗室自動化應用。[NVIDIA Accelerating AI Modules for ROS and ROS 2 on Jetson](https://developer.nvidia.com/blog/accelerating-ai-modules-for-ros-and-ros-2-on-jetson/)
+
+**LanderPi — Raspberry Pi 5 + STM32 + 多模態 LLM 的嵌入式 AI 機械臂**：The Construct 與 Hiwonder 合作推出 LanderPi，整合 Raspberry Pi 5 主控制器、STM32 雙核心協處理器、TOF LiDAR、3D 深度相機與 6-DOF 機械臂。該平台內建 YOLO11 視覺識別、MoveIt 軌跡規劃與多模態 LLM 推理，支援 SLAM 同步定位建圖、自主操縱決策與自然語言指令，標誌著 Raspberry Pi 5 已達成完整機械臂自主系統的硬體與軟體成熟度。[Embodied AI with LanderPi: Fusing LLMs, ROS 2, and 3D Vision](https://www.hackster.io/HiwonderRobot/embodied-ai-with-landerpi-fusing-llms-ros-2-and-3d-vision-1f744b)
+
