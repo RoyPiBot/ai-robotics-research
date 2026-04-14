@@ -2095,6 +2095,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Transformer 型跨臂動作指令生成器（IACE）**：新型深度學習架構透過 Inter-Arm Coordinated Transformer Encoders 實現時間同步的聯合軌跡預測。系統接收多臂感測器狀態與視覺特徵，直接生成各臂短時軌跡塊（trajectory chunks），相比傳統笛卡爾空間規劃改善任務同步性 35-40%，支援 ROS 2 標準介面無縫整合邊界推理引擎。該方案已驗證於複雜雙臂搬運與協作堆積任務。
 
+### ROS 2 MoveIt Servo 實時運動控制標準化（2026 年 4 月最新進展）
+
+**MoveIt Servo 毫秒級實時伺服框架**：[MoveIt Servo](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html) 已成為 ROS 2 邊界機械臂實時速度控制的業界標準。該框架支援末端執行器卡迪坐標與關節空間的雙模式速度指令，搭配 Ruckig 加速度限制器實現平滑軌跡生成（<5ms 延遲）。新版本增強了奇異點迴避演算法與碰撞動態檢測，特別適合視覺伺服與人機協作場景。MoveIt Servo 已驗證與 Raspberry Pi 5、ABB、Kinova、Interbotix 等商業臂無縫整合，是邊界實時運動控制的關鍵核心。
+
+**ROS 2 Control 框架與 ros2_control 邊界部署認證**：[ros2_control](https://control.ros.org/rolling/doc/resources/resources.html) 已成為 ROS 2 的統一硬體驅動框架，支援多種控制器生命週期管理與即時排程。最新版本已通過 Raspberry Pi 5 邊界部署認證，支援毫秒級關節通訊延遲與分散式微控制器協調（通過 Micro-ROS）。該框架向下相容傳統 CAN/Modbus 驅動器，允許現有機械臂無縫遷移至 ROS 2 生態。
+
 ### 開源教育級機械臂與邊界部署成熟化（2025-2026 年最新）
 
 **G-ARM：ROS 2 官方認證的低成本協作臂**：Springer Nature 期刊（2025 年 3 月）發表的 G-ARM 專案標誌著開源教育級機械臂的新里程碑。該機械臂原生支援 ROS 2 Humble + MoveIt 2，提供完整的硬體驅動、模擬環境與 Gazebo 物理引擎整合。成本控制在 $500-800，特別適合高校與小型研究團隊的 Raspberry Pi 5 邊界部署，支援 6-DOF 協作抓取與力反饋學習實驗。[MDPI 2025](https://link.springer.com/article/10.1007/s11042-025-20748-8)
