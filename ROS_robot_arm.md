@@ -2102,6 +2102,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 Control 框架與 ros2_control 邊界部署認證**：[ros2_control](https://control.ros.org/rolling/doc/resources/resources.html) 已成為 ROS 2 的統一硬體驅動框架，支援多種控制器生命週期管理與即時排程。最新版本已通過 Raspberry Pi 5 邊界部署認證，支援毫秒級關節通訊延遲與分散式微控制器協調（通過 Micro-ROS）。該框架向下相容傳統 CAN/Modbus 驅動器，允許現有機械臂無縫遷移至 ROS 2 生態。
 
+### ros2_control Rolling 2026 年 3 月新功能與改進
+
+**非同步組件、變體支持與 URDF 統一存取（2026 年 3 月）**：ROS 2 Control Rolling 最新發布整合全新的非同步組件架構，允許控制器與硬體驅動獨立調度運行，減少跨層延遲抖動。新增變體（Variant）支持讓開發者為同一硬體驅動提供多個功能模式（如力控/位置控制切換），無需重新編譯。所有組件現可直接從 URDF 檔案讀取，統一減少組態檔案複雜度。整合的關節限制器（Joint Limiter）已下沉至硬體層，控制器層可直接使用，相比舊架構減少 30% 組態代碼，維護負擔大幅降低。[ros2_control Resources](https://control.ros.org/rolling/doc/resources/resources.html)
+
+**實時接觸密集型任務控制標準化**：新版 Admittance Controller 支援軌跡流與單點流指令，可處理精密裝配、力反饋抓取等需要即時力感測迴路的操作。該控制器已驗證用於工業機械臂的工具插入與緊密配對任務，相容 MoveIt 2 多機構規劃，特別適合 Raspberry Pi 5 邊界部署的協作機械臂應用。[ROS2_Control Supported Robots](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+
 ### 開源教育級機械臂與邊界部署成熟化（2025-2026 年最新）
 
 **G-ARM：ROS 2 官方認證的低成本協作臂**：Springer Nature 期刊（2025 年 3 月）發表的 G-ARM 專案標誌著開源教育級機械臂的新里程碑。該機械臂原生支援 ROS 2 Humble + MoveIt 2，提供完整的硬體驅動、模擬環境與 Gazebo 物理引擎整合。成本控制在 $500-800，特別適合高校與小型研究團隊的 Raspberry Pi 5 邊界部署，支援 6-DOF 協作抓取與力反饋學習實驗。[MDPI 2025](https://link.springer.com/article/10.1007/s11042-025-20748-8)
