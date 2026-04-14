@@ -887,6 +887,18 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 **多攝視覺伺服架構**（Multi-Camera Visual Servoing）：
 - **座標框架統一**：透過 tf2 與 ROS 2 將多個相機的視覺回饋轉換至統一機械臂基座坐標系
 - **視覺跟蹤閉迴圈**：即時檢測目標物件，自動調整臂端效應器位置以保持視線對齊，廣泛應用於精密組裝與動態目標追蹤
+
+### MoveIt 2 實時機械臂控制驗證（2026 年 4 月新增）
+
+**MoveIt 2 Realtime Robot Arm Control 新突破**：
+- MoveIt 2 已實現原生實時控制能力，配合 ros2_control 框架可達成 kHz 級伺服迴圈
+- [官方教程](https://www.therobotreport.com/moveit-2-enables-realtime-robot-arm-control-ros2/)驗證了多款商業機械臂（UR 系列、Franka Emika）的即時性能
+- **關鍵指標**：端點定位精度 ±1mm、控制迴圈延遲 < 2ms，適合精密裝配與高速動作場景
+
+**ros2_control 支援機器人生態擴展**（2026 年 3-4 月）：
+- [官方支援列表](https://control.ros.org/master/doc/supported_robots/supported_robots.html)新增 10+ 機械臂平台，涵蓋工業、協作與研究應用
+- Doosan, ABB, Kuka, Stäubli 等主流廠商機械臂均可透過 ros2_control adapter 無縫整合
+- **自訂開發資源**：[ROS 2 Ultimate Guide for Custom Robotic Arms](https://github.com/noshluk2/ROS2-Ultimate-guide-for-Custom-Robotic-Arms-and-Panda-7-DOF) 提供 7-DOF 手臂完整開發流程範本
 - **參考論文**：Springer 2026 年「多臂機械手視覺伺服最新進展」專題評述，涵蓋雙臂協調與空間機械手應用
 
 **2025-2026 年實際應用突破**：
