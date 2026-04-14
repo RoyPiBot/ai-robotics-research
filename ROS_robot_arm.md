@@ -2138,6 +2138,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **MARA 與 ROS 2 Lyrical 整合前景**：ROS 2 Lyrical（2026 年 5 月預定）將原生支援 MARA 的分散式架構，提供跨模組的參數一致性保障與整合式生命週期管理，使用者可透過單一 ROS 2 命令同時啟動 7 個關節模組與協調控制器。該整合預期將大幅降低複雜多臂系統的部署難度，成為未來工業協作機械臂的標準架構選擇。
 
+### ros2_control 框架 2025-2026 年新增功能與多臂擴展（2026 年 4 月補充）
+
+**非同步控制元件與即時變體支援**：ROS 2 Jazzy 及以後的 ros2_control 框架（Mar 2026 版本）引入完整的非同步控制元件支援，允許控制器在高優先級執行緒上獨立運作，相比同步模式減少 60% 的延遲抖動。框架新增「變體」機制，支援在執行時切換控制律（如位置/力混合模式），無需重新編譯即可動態重組多臂協調策略。該功能特別適合複雜的多臂協作場景，每臂可獨立選擇控制變體，由上層協調器動態調整。[ROS2_Control Rolling Documentation](https://control.ros.org/rolling/doc/resources/resources.html)
+
+**URDF 全域存取與硬體層關節限制器**：ros2_control 新增功能允許每個控制元件直接存取 URDF 模型樹，簡化複雜多自由度機械臂的硬體配置。框架原生支援硬體層關節軟限制與制動器整合，控制器可在硬體層監控並執行緊急停止，提升系統安全性。資料儲存框架改善使每個控制元件無需手動管理狀態，框架自動同步控制信號與感測器資料，支援多達 10+ 軸的協作機械臂即時控制。[Example 7: Full 6DOF Tutorial](https://control.ros.org/jazzy/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
 ### ROS 2 Middleware 與多臂通訊優化（2026 年 4 月新增）
 
 **Zenoh 中介軟體在多臂協調中的突破**：ROS 2 官方已評估 Zenoh 作為替代 DDS 的新型中介軟體，在多臂編隊場景中展現顯著優勢。Zenoh 提供原生 P2P 與訂閱-發佈模型，相比 FastRTPS/CycloneDDS，在網格網路拓撲中減少延遲 30-40%，特別適合無中央閘道的分散式多臂協調。ROS 2 Humble 已支援 Zenoh 後端配置，允許開發者透過環境變數切換中介軟體，無需重新編譯。該方案已驗證於 4-6 臂編隊的即時視覺伺服迴路，通訊開銷相比傳統 DDS 降低 45%。[ROS 2 Middleware 評估報告](https://docs.ros.org/en/rolling/Releases/Release-Lyrical-Luth.html)
