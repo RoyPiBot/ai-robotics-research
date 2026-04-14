@@ -1617,6 +1617,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 - **感知端**：Gazebo 2 + ROS 2 原生支援 URDF 動態加載，RViz 2 可即時可視化多臂協作場景
 - **規劃端**：MoveIt 2 在 2026 年最新版本納入 CHOMP（梯度上升軌跡最佳化）與 STOMP（隨機軌跡最佳化）加速器，相比舊版本規劃效率提升 40%
+- **伺服端**：MoveIt Servo 2026 年升級支援 Ruckig 實時抖動限制平滑（jerk-limited smoothing），在實時核心上自動啟用 SCHED_FIFO 優先級排程；支援奇異點處理與碰撞檢測，最小化關節命令延遲
 - **決策端**：llama_ros 框架支援量化 LLM（如 Llama 2 7B）在 Pi 5 上執行，結合視覺輸入實現自然語言指令 → 機械手臂動作的端對端映射
 - **應用案例**：HiWonder JetArm Pro 搭載 OpenClaw，可自主執行多步驟裝配工作（識別零件 → 抓取 → 放置 → 驗證）
 
