@@ -2287,3 +2287,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **MoveIt 2 實時性能與邊界部署驗證**：最新研究確認 MoveIt 2 在 ROS 2 架構下，相較 ROS 1 版本達成 2-3 倍效能提升，規劃週期從 500ms 縮減至 150-200ms。該性能躍升使邊界設備（如 Raspberry Pi 5 + Jetson NX）上的實時機械臂控制成為可行方案，已驗證支援 >500Hz 實時控制迴圈與低延遲視覺伺服。[ROS2_Control Resources](https://control.ros.org/rolling/doc/resources/resources.html)
 
+### 雙臂協調操縱與欠驅動系統（2026 年 4 月 14 日補充）
+
+**雙臂操縱與 ROS 2 Control 協調框架**：2026 年最新研究展示 ROS 2 Control 框架在雙臂系統中的應用，特別是欠驅動雙臂機械臂的獨立關節控制與視覺引導協調。該架構支援變可變肩部距離的遠端操作、力回饋與狀態擴散學習，已驗證適用於高精度組裝任務（如齒輪箱構築）與日常生活技能訓練。新型協調框架使 ROS 2 Humble/Jazzy 支援 >500Hz 雙臂同步控制迴圈，標誌著邊界雙臂機器人的工業化時代。[Enhancing bimanual teleoperation](https://www.nature.com/articles/s44182-025-00057-w)、[Learning Coordinated Bimanual Manipulation](https://arxiv.org/html/2503.23271v1)
+
