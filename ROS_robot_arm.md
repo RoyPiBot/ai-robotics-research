@@ -2209,6 +2209,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS-Industrial 2026 訓練課程與感知管道進展**：ROS-Industrial Consortium Americas 將於 2026 年 3 月 10-12 日舉辦三日進階開發者訓練課，特別強化感知管道與相機標定主題。scan_n_plan_workshop 儲存庫於 2026 年 1 月 9 日更新，持續推進即時視覺感知驅動製造的工業應用。該培訓涵蓋邊界推理加速、多臂協調感知與即時碰撞檢測新進展。[ROS-Industrial Training](https://rosindustrial.org/events/2026/ros-industrial-training-americas-2026-mar)
 
+### OpenClaw Agent Framework：ROS 2 具身 AI 標準橋接層（2026 年 4 月新增）
+
+**OpenClaw 作為統一的具身 AI 橋接層**：OpenClaw Agent Framework 代表了 ROS 2 生態在具身 AI 領域的標準化突破。該框架為 ROS 2 機械臂提供統一的認知-決策-執行工作流程，允許機械手臂透過多模態感知（RGB-D + 力感測 + IMU）理解複雜環境，結合大型語言模型進行任務規劃與動作生成。框架原生相容 MoveIt 2 運動規劃、ros2_control 硬體驅動層與邊界推理引擎（NVIDIA Jetson/Hailo 加速卡）。該方案已驗證於 HiWonder ArmPi Ultra、ROSOrin Pro 等平臺，實現自然語言驅動的自主操作與實時環境適應。[Embodied AI on ROS 2: The OpenClaw & ROSOrin Pro Guide](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
+
 ### 動態工作空間點式視覺伺服與農業精準操作（2026 年 4 月新增）
 
 **ROS 2 點式視覺伺服在精準採收中的應用**：2026 年最新研究整合深度學習物體偵測、3D 位姿估測與自適應軌跡規劃，於動態工作空間環境實現點式視覺伺服（Point-based Visual Servoing）。該方案應用於番茄採收等農業精準操作，透過即時視覺反饋與比例控制相結合，達成毫米級定位精度。框架支援 ROS 2 生態整合，為邊界推理與協作機械臂架構提供標準化測試平台。[Point-based Visual Servoing for Autonomous Object Handling](https://www.tandfonline.com/doi/full/10.1080/15397734.2026.2636936?ai=zh&mi=j0k0ox&af=R)、[Hybrid Visual Servo Control for Cherry Tomato Harvesting](https://www.mdpi.com/2076-0825/12/6/253)
