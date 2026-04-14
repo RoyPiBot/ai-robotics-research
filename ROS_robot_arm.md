@@ -2320,3 +2320,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **雙臂操縱與 ROS 2 Control 協調框架**：2026 年最新研究展示 ROS 2 Control 框架在雙臂系統中的應用，特別是欠驅動雙臂機械臂的獨立關節控制與視覺引導協調。該架構支援變可變肩部距離的遠端操作、力回饋與狀態擴散學習，已驗證適用於高精度組裝任務（如齒輪箱構築）與日常生活技能訓練。新型協調框架使 ROS 2 Humble/Jazzy 支援 >500Hz 雙臂同步控制迴圈，標誌著邊界雙臂機器人的工業化時代。[Enhancing bimanual teleoperation](https://www.nature.com/articles/s44182-025-00057-w)、[Learning Coordinated Bimanual Manipulation](https://arxiv.org/html/2503.23271v1)
 
+### 工業級機械臂驅動標準化與生態整合（2026 年 4 月 15 日補充）
+
+**ABB ROS 2 官方驅動程式推出**：PickNik 與 Optimax 合作開發 abb_ros2 開源驅動程式，補足 ROS 2 對 ABB 協作臂的完整支援空白。此前缺乏 ROS 2 原生驅動是 ABB 在學術與中小企業應用中採用率不高的主要原因。該驅動基於 ros2_control 框架，已驗證支援多款 ABB 型號（IRB 1200 / 1410 / 1600），適應工業檢測、自動組裝與實驗室應用。[abb_ros2 GitHub](https://github.com/PickNikRobotics/abb_ros2)
+
+**ROS 2 硬體生態資料庫開放**：PickNik 正式開放「ROS 2 Compatible Hardware Database」，涵蓋 60+ 協作與工業機械臂的相容性驗證標籤。該資料庫已成為採購決策與集成商的準務必參考，加速 ROS 2 在工業現場的部署速度。[PickNik Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/)
+
