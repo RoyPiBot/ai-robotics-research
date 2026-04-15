@@ -2248,6 +2248,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **工業機械臂廠商 ROS 2 原生支援成熟化**：Realman 睿爾曼與 UFactory 已於 2026 年提供完整的 ROS 2 機械臂驅動包與官方支援。兩廠牌均遵循 ros2_control 標準框架，支援 MoveIt 2 直接整合、力回饋感測與即時伺服控制。該進展標誌著工業級機械臂的 ROS 2 支援已達業界標準，顯著降低多廠牌整合成本。結合 ROS 2 Control 的中介軟體選擇靈活性（支援 DDS、Zenoh、MQTT 等），為 Pi 5 邊界部署提供全新的工業級可能性。
 
+### Interbotix X-Series 與 Doosan 強化學習環境（2026 年 4 月新增）
+
+**Interbotix X-Series ROS 2 官方整合**：Trossen Robotics 旗下 Interbotix 系列協作臂已發佈完整的 ROS 2 整合包，涵蓋 PincherX、WidowX 與 VortexX 等多款教育與工業級平台。官方文檔提供 ros2_control 驅動架構、MoveIt 2 運動規劃與 Gazebo 模擬支援，特別適合大學與研究機構的課程開發。[Interbotix X-Series ROS 2 Documentation](https://docs.trossenrobotics.com/interbotix_xsarms_docs/ros2_packages.html)
+
+**Doosan 強化學習機械臂環境框架**：GitHub 社群已開源 Doosan 機械臂的完整強化學習環境，整合 Gazebo 模擬、ros2_control 與深度強化學習（DRL）訓練管道。該框架支援多臂協調與視覺伺服任務的自動化策略學習，實現從模擬到實機的零樣本遷移（Zero-shot Transfer）。適合 Pi 5 邊界推理部署進行即時策略執行。[dvalenciar/robotic_arm_environment](https://github.com/dvalenciar/robotic_arm_environment)
+
 ---</thinking>
 
 記錄狀態中…
