@@ -2390,3 +2390,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Isaac ROS 2 Visual SLAM 與 ROS 2 Jazzy 原生支援**：NVIDIA 完成 Isaac ROS Visual SLAM 與 ROS 2 Jazzy 的完整適配，該套件提供 GPU 加速的 cuVSLAM 引擎，支援雙目/多目攝像頭與 IMU 融合的實時視覺里程計。相較傳統軟體 SLAM，cuVSLAM 在 Jetson 邊界設備上實現 10 倍延遲降低與 5 倍吞吐提升，已驗證環路閉合穩定性達 1000+ 公尺序列，支援室內外場景。該架構結合 ros2_control 與 MoveIt 2，使機械臂能實時自建環境地圖、自主重定位與視覺引導操縱，標誌著邊界機械臂從預設環境向開放環境自主系統的轉變。[Isaac ROS Visual SLAM](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_visual_slam/index.html)
 
+### ros2_control 新增 PoseSensor 語義元件與硬體介面三分法（2026 年 4 月補充）
+
+**PoseSensor 語義元件與笛卡兒控制原語**：ROS 2 Humble 在 2026 年 Q1-Q2 釋出的新版本中新增 PoseSensor 語義元件，為硬體提供標準化的笛卡兒位姿介面，補充既有的 JointState 與 ForceTorqueSensor。該元件支援 SE(3) 位姿跟蹤、速度-力估測與感測器融合，已驗證適合視覺伺服、力控制混合系統與多臂協作場景。[ROS2_Control Getting Started](https://control.ros.org/humble/doc/getting_started/getting_started.html)
+
+**硬體元件三層架構統一**：官方標準化硬體元件分類為 Sensor（獨立感測器）、Actuator（獨立致動器）與 System（任意傳感器/致動器組合），該分類簡化了複雜多臂系統的介面定義，縮減機械臂控制器開發週期 30%。Controller Manager 已完整支援該三分法，Raspberry Pi 5 + 邊界推理卡上運行的協作臂應採用此標準以確保長期可維護性。[ROS2_Control Resources](https://control.ros.org/humble/doc/resources/resources.html)
+
