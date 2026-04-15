@@ -2352,3 +2352,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Hailo-8/-10H 與 ROS 2 社區驅動整合**：雖然 Hailo 官方尚無 ROS 2 原生支援，但社區已開發成熟的整合方案（hailo_tappas_ros2）。該架構整合 Hailo-8（26 TOPS、3 TOPS/W）或 Hailo-10H（邊界 LLM 推理）與 ROS 2 Humble，經由 TAPPAS 視覺應用框架實現實時物件檢測、人臉識別與視覺伺服。已驗證透過 Raspberry Pi AI Hat+ 搭配 Raspberry Pi 5，支援完整的即時攝像頭推理與機械臂控制閉迴圈，適合低功耗邊界機器人與工業檢測應用。[hailo_tappas_ros2 GitHub](https://github.com/kyrikakis/hailo_tappas_ros2)、[Hailo-10H on-device LLMs](https://awesomeagents.ai/hardware/hailo-10h/)
 
+### Gazebo Harmonic 與 ROS 2 Jazzy 完整模擬環境（2026 年 4 月 15 日補充）
+
+**Gazebo Harmonic + ROS 2 Jazzy + MoveIt 2 端到端機械臂模擬**：最新社區專案（MOGI-ROS Week-9-10-Simple-arm）展示 Gazebo Harmonic 與 ROS 2 Jazzy 的完整協作機械臂模擬工作流。該堆疊支援無模擬-到-實機直接遷移，已驗證適合教學與工業原型開發。Gazebo Harmonic 已成為 Gazebo 經典版（2025 年生命週期終止）的標準替代方案，效能與物理引擎準確度均達業界水準。[MOGI-ROS Week 9-10 Simple Arm Repository](https://github.com/MOGI-ROS/Week-9-10-Simple-arm)
+
+### MoveIt 2 實時性能突破與邊界實機驗證（2026 年 4 月 15 日補充）
+
+**MoveIt 2 v2.8+ 實時規劃性能提升**：ROS 2 架構下的 MoveIt 2（相較 ROS 1 版本）達成 2-3 倍效能躍升，規劃週期從 500ms 縮減至 150-200ms，支援 >500Hz 實時控制迴圈與低延遲視覺伺服。此性能突破使 Raspberry Pi 5 + Jetson NX 邊界堆疊上的實時機械臂控制成為可行方案，已驗證於 6-DOF 協作臂的視覺引導操縱與精密組裝任務。[MoveIt 2 Real-time Control](https://www.therobotreport.com/moveit-2-enables-realtime-robot-arm-control-ros2/)
+
