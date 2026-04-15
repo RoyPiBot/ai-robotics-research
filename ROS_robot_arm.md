@@ -2366,3 +2366,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **實時/非實時控制器動態切換機制**：Jazzy 新增 `--switch-asap` 與 `--no-switch-asap` spawner 參數，允許在運行時動態啟用/停用實時和非實時模式的控制器。該機制支援視覺伺服與力控制的無縫切換，解決複雜任務中計算負載動態變化的問題。該機制已驗證適合 Raspberry Pi 5 + 邊界推理加速卡的協作機械臂場景，減少模式切換延遲至 <10ms。[ros2_control Example 7: Full 6DOF Robot](https://control.ros.org/jazzy/doc/ros2_control_demos/example_7/doc/userdoc.html)
 
+### MoveIt Pro 9.0 ROS 2 Jazzy LTS 正式支援（2026 年 4 月 15 日補充）
+
+**MoveIt Pro 9.0 與 ROS 2 Jazzy LTS 完整適配**：PickNik 發佈 MoveIt Pro 9.0，正式支援 ROS 2 Jazzy LTS（支援至 2029 年 5 月）同時保持 ROS Humble 相容性。該版本整合 Humble 與 Jazzy 的軌跡規劃 API、碰撞檢測優化與 Gazebo Harmonic 模擬工作流統一，支援長期穩定部署。MoveIt Pro 9.0 已驗證於 Franka FR3、UR 系列與開源平台，成為工業級機械臂控制的標準參考框架。[MoveIt Pro 9.0 Release Notes](https://moveit.picknik.ai/)
+
+**雙臂乒乓球合作與 Jazzy 高頻控制驗證**：最新學術研究展示雙 Franka FR3 機械臂使用 ROS 2 Jazzy + Gazebo Harmonic + MoveIt 2，實現 >1000Hz 雙臂同步控制與視覺-力回饋融合的複雜協調任務。該成果驗證 ROS 2 Jazzy 在多臂高精度應用中的實時性能，為邊界雙臂機械臂製造與組裝奠定基礎。
+
