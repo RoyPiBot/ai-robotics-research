@@ -2344,3 +2344,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **LanderPi — Raspberry Pi 5 + STM32 + 多模態 LLM 的嵌入式 AI 機械臂**：The Construct 與 Hiwonder 合作推出 LanderPi，整合 Raspberry Pi 5 主控制器、STM32 雙核心協處理器、TOF LiDAR、3D 深度相機與 6-DOF 機械臂。該平台內建 YOLO11 視覺識別、MoveIt 軌跡規劃與多模態 LLM 推理，支援 SLAM 同步定位建圖、自主操縱決策與自然語言指令，標誌著 Raspberry Pi 5 已達成完整機械臂自主系統的硬體與軟體成熟度。[Embodied AI with LanderPi: Fusing LLMs, ROS 2, and 3D Vision](https://www.hackster.io/HiwonderRobot/embodied-ai-with-landerpi-fusing-llms-ros-2-and-3d-vision-1f744b)
 
+### JetArm Pro 與移動式機械臂模組化平台（2026 年 4 月 15 日補充）
+
+**JetArm Pro — 6-DOF 機械臂的移動機械手平台**：JetArm Pro 搭配模組化硬體擴充，包括移動底座、線性滑軌與傳送帶，將單體機械臂轉化為多功能移動操縱平台。該架構原生支援 ROS 2、MoveIt 2 路徑規劃與自主導航（Nav2），已驗證適合工業撿貨、邊界檢測與實驗室自動化。JetArm Pro 與 Jetson Orin 整合後，支援實時視覺伺服與多模態 LLM 推理，標誌著行動機械臂進入模組化、可擴展的邊界自主系統時代。[JetArm Pro: Expandable ROS Platform for Mobile Manipulation](https://www.hackster.io/HiwonderRobot/jetarm-pro-expandable-ros-platform-for-mobile-manipulation-aff995)
+
+### Hailo + ROS 2 社區邊界推理整合（2026 年 4 月 15 日補充）
+
+**Hailo-8/-10H 與 ROS 2 社區驅動整合**：雖然 Hailo 官方尚無 ROS 2 原生支援，但社區已開發成熟的整合方案（hailo_tappas_ros2）。該架構整合 Hailo-8（26 TOPS、3 TOPS/W）或 Hailo-10H（邊界 LLM 推理）與 ROS 2 Humble，經由 TAPPAS 視覺應用框架實現實時物件檢測、人臉識別與視覺伺服。已驗證透過 Raspberry Pi AI Hat+ 搭配 Raspberry Pi 5，支援完整的即時攝像頭推理與機械臂控制閉迴圈，適合低功耗邊界機器人與工業檢測應用。[hailo_tappas_ros2 GitHub](https://github.com/kyrikakis/hailo_tappas_ros2)、[Hailo-10H on-device LLMs](https://awesomeagents.ai/hardware/hailo-10h/)
+
