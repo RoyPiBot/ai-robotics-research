@@ -2372,3 +2372,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **雙臂乒乓球合作與 Jazzy 高頻控制驗證**：最新學術研究展示雙 Franka FR3 機械臂使用 ROS 2 Jazzy + Gazebo Harmonic + MoveIt 2，實現 >1000Hz 雙臂同步控制與視覺-力回饋融合的複雜協調任務。該成果驗證 ROS 2 Jazzy 在多臂高精度應用中的實時性能，為邊界雙臂機械臂製造與組裝奠定基礎。
 
+### MoveIt Pro 9.0/9.1.0 性能革新與演算法統一（2026 年 4 月 15 日補充）
+
+**MoveIt Pro 9.1.0 性能躍升的核心改進**：PickNik 發佈 MoveIt Pro 9.1.0，達成歷史性的三倍效能提升：逆運動學（IK）求解器 35 倍加速、軌跡規劃 4 倍加速、笛卡兒規劃 30 倍加速。該版本完全重寫了核心演算法套件，一舉取代了 OMPL、MoveIt Servo、KDL 與 IKFast，整合更穩健且高效的新演算法，已驗證於工業協作臂（UR、Franka、KUKA）與研究平台。[MoveIt Pro 9.1.0 Release Notes](https://docs.picknik.ai/release-notes/2026/04/03/9.1.0/)
+
+**Diffusion Policies 端到端操作學習框架**：MoveIt Pro 9.0+ 整合新一代機械臂操作學習能力，支援收集遠端操作示範資料、透過 Diffusion 模型進行訓練，並直接部署至實機。該框架已驗證於複雜操縱任務（碟盤堆疊、精密組裝），成功率超過 85%，標誌著 ROS 2 機械臂系統從規劃驅動向學習驅動的範典轉變。
+
