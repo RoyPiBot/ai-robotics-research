@@ -1967,6 +1967,19 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 - [ROS 2 Point Cloud Library Integration](https://github.com/ros-perception/perception_pcl)
 - [Advanced Kinematics Applications with Vision Feedback](https://www.theconstruct.ai/robotigniteacademy_learnros/ros-courses-library/ros2-manipulation-basics/)
 
+### 模仿學習與視覺語言模型主流化（2026 年最新）
+
+**模仿學習超越強化學習**：State of Robotics 2026 數據顯示，模仿學習（Imitation Learning）已成為操縱任務的主要訓練方法，佔 61% 的應用比例，較傳統強化學習的 31% 大幅領先。此轉變源於模仿學習在樣本效率與訓練穩定性上的優勢，特別適合協作機械臂的安全受限場景。
+
+**視覺語言模型（VLA）商用爆發**：Q1 2026 已有至少 11+ 商用部署採用 VLA 模型作為主要控制策略，量化 VLA 模型已能在消費級 GPU 上以 10-25Hz 即時執行。搭配 ROS 2 的多模態感知框架，機械臂可直接理解視覺場景與自然語言指令，實現端到端的自主操縱。
+
+**開放硬體平台 OpenArm**：全球 14+ 製造商跨 5 個國家推出 6-DOF/7-DOF 機械臂價格 <$10,000，OpenArm 成為學術與初創企業的事實標準，2025 年出貨 2,400+ 台。OpenArm 開源 URDF 與 ROS 2 原生相容，研究團隊可在數小時內將訓練策略從一款機械臂遷移至另一款。
+
+**數位孿生結合 Soft Actor-Critic RL**：最新研究將數位孿生技術與 SAC 強化學習算法整合至 ROS 2 框架，實現製造環境中的實時自適應控制。聯邦學習框架進一步支援分散式多智能體學習，降低單機運算負荷，加速多臂系統的協調策略優化。
+
+- [State of Robotics 2026 — SVRC](https://www.roboticscenter.ai/state-of-robotics-2026)
+- [Doosan Robotic Arm RL Environment](https://github.com/dvalenciar/robotic_arm_environment)
+
 ### ROS 2 Control 框架生態確認與 Zenoh 中介軟體升級（2026 年 4 月更新）
 
 **ros-controls OSRA 認證與生態成熟**：ROS 2 Control 框架正式升級為 OSRA（Open Robotics Standalone Rollout Architecture）認證專案，maintainers 數量倍增，確認全球 80%+ 新開源機械臂專案預設採用該框架。2025-2026 推出的全面升級包括完全非同步元件架構、運行時變數支援、所有元件的 URDF 存取能力，以及硬體層整合式關節限制器，大幅簡化複雜多臂系統整合。
