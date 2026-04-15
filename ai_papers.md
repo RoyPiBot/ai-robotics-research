@@ -1947,6 +1947,20 @@
 #### 115. LingBot-VLA — 業界級雙臂機械人開源VLA模型（2026）
 - **核心創新** - 螞蟻集團開發的業界級 VLA 模型，基於 20,000 小時實際雙臂機械人操控數據訓練，完全開源
 - **技術特色** - 支援 9 種不同配置的機械人部署，相比現有 VLA 編碼庫實現 1.5-2.8 倍訓練加速，兼具效率與性能
+
+#### 116. The AI Scientist — 自動化 AI 論文研究與實驗全流程（Nature, Apr 2026）
+- **核心創新** - Sakana AI 發布於 Nature 的 AI Scientist，實現 AI 自動執行機器學習研究的完整生命週期，包括論文生成、實驗設計、文獻搜索與驗證
+- **技術特色** - 以基礎模型為引擎，自動化研究想法生成、實驗設計與執行、論文撰寫；研究品質隨模型能力提升而增長
+- **應用意義** - 標誌著 AI 科研自動化的新階段，降低研究進入門檻，加速知識探索與實驗循環
+- **對 AI 機械手臂研究的意義** - 支援自動化生成具身 AI 實驗方案與論文，加速機械人學習算法的迭代與優化
+- **參考** - [The AI Scientist - Sakana AI](https://sakana.ai/ai-scientist-nature/)
+
+#### 117. 2026 年可靠世界模型與持續學習原型突破（Apr 2026）
+- **核心創新** - 2026 年成為可靠世界模型與持續學習原型的突破年，Interactive Genie 系統在具身智能與機械人領域開始落地應用
+- **技術趨勢** - Omni-Model（整合文本、視覺、動作、記憶）架構加速成熟，邊緣部署與多模態融合成為關鍵進展
+- **產業實現** - 從實驗室研究向商業部署轉變，多代理系統（Multi-Agent）從理論步入生產環境
+- **對機械手臂的意義** - 提供預測環境動態的世界模型，增強自適應決策與長視地平線任務規劃，推進機械人自主學習與持續進化
+- **參考** - [NextBigFuture: 2026 Breakthrough Year for Reliable AI World Models and Continual Learning](https://www.nextbigfuture.com/2026/04/2026-is-breakthrough-year-for-reliable-ai-world-models-and-continual-learning-prototypes.html)
 - **應用優勢** - 作為首個業界規模的開源雙臂 VLA，加速工業機械人領域的商業化與標準化進程
 
 #### 116. Thinking VLA — Google Gemini Robotics 執行前內部模擬機制（2026）
