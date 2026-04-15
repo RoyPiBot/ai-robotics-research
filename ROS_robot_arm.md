@@ -2112,6 +2112,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **G-ARM：ROS 2 官方認證的低成本協作臂**：Springer Nature 期刊（2025 年 3 月）發表的 G-ARM 專案標誌著開源教育級機械臂的新里程碑。該機械臂原生支援 ROS 2 Humble + MoveIt 2，提供完整的硬體驅動、模擬環境與 Gazebo 物理引擎整合。成本控制在 $500-800，特別適合高校與小型研究團隊的 Raspberry Pi 5 邊界部署，支援 6-DOF 協作抓取與力反饋學習實驗。[MDPI 2025](https://link.springer.com/article/10.1007/s11042-025-20748-8)
 
+### Jetson Orin NX 邊界推理與 Pi 5 邊界推理生態成熟（2026 年 4 月最新）
+
+**Jetson Orin NX SUPER 與 Raspberry Pi 5 邊界推理對比與混合部署**：Jetson Orin NX SUPER 提供 157 TOPS AI 性能（可配置 10-40W 功耗），相比 Raspberry Pi 5 的 Hailo-10H（40 TOPS）性能提升 3.9 倍，適合複雜多模態推理與實時視覺伺服。ROS 2 生態已發布統一的驅動框架支援兩者共存部署：Pi 5 專注高層語義理解與軌跡規劃，Jetson Orin NX SUPER 負責密集型視覺推理與實時物件追蹤。ROSMASTER X3 PLUS 示範此架構，配備 6-DOF 機械臂、LiDAR、深度相機與語音識別，可動態切換 Pi 5/Jetson Orin Nano SUPER/Orin NX SUPER 作為計算核心，特別適合教育與工業協作應用。[ROSMASTER X3 PLUS](https://category.yahboom.net/products/rosmaster-x3-plus)
+
+**AMD Ryzen AI Max+ 395 與 ROS 2 邊界推理整合（2026 年 4 月 9 日新發布）**：AMD Ryzen AI Max+ 395（Strix-Halo）平台提供高效 NPU 與 iGPU，Ryzen CVML 函式庫支援視覺 AI 模型的即插即用部署。該平台在 ROS 2 機械臂應用中提供更優的功耗效率，特別適合移動機械臂與邊界視覺伺服系統。相比 Jetson Orin NX 的功耗優勢與成本優化特性，Ryzen AI 成為 x86 邊界推理的新選擇。[Edge AI Vision Alliance 2026](https://www.edge-ai-vision.com/2026/04/building-robotics-applications-with-ryzen-ai-and-ros-2/)
+
 **FPGA 加速力回饋系統與嵌入式反向運動學**：最新研究（2025 年）提出 FPGA 加速的 FOC（Field-Oriented Control）演算法與即時反向運動學計算，透過硬體加速將系統延遲從傳統 STM32 實現的 15-20ms 降低至 <5ms。該方案搭配 ROS 2 DDS-XRCE 中介軟體，允許微控制器級力回饋伺服直接與 Pi 5 高層規劃器通訊，已驗證用於精密組裝與動態協作任務中的力閉迴圈控制。[HEART 2025](https://dl.acm.org/doi/10.1145/3728179.3728191)
 
 **ROS 2 LTS 版本策略與機械臂控制穩定性（2026 年 4 月更新）**：ROS 2 Humble 確認支援至 2027 年 5 月，成為當前穩定部署首選。分層控制架構（底層三環 PID + 上層模型預測補償）已成為複雜多自由度機械臂的工業標準。MoveIt 2 實時伺服功能搭配高帶寬伺服驅動（FPGA 硬體加速）與微秒級控制週期，支援複雜耦合工況。該整合方案在開源社群驗證完善，特別適合 Raspberry Pi 5 邊界部署的協作機械臂。
