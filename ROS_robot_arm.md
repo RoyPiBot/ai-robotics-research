@@ -2396,3 +2396,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **硬體元件三層架構統一**：官方標準化硬體元件分類為 Sensor（獨立感測器）、Actuator（獨立致動器）與 System（任意傳感器/致動器組合），該分類簡化了複雜多臂系統的介面定義，縮減機械臂控制器開發週期 30%。Controller Manager 已完整支援該三分法，Raspberry Pi 5 + 邊界推理卡上運行的協作臂應採用此標準以確保長期可維護性。[ROS2_Control Resources](https://control.ros.org/humble/doc/resources/resources.html)
 
+### ROS 2 Kilted Kaiju 版本正式發布與實時中介軟體躍升（2026 年 4 月 16 日補充）
+
+**ROS 2 Kilted Kaiju：Zenoh 列為第 1 級中介軟體與 RCLPy 效能革新**：ROS 2 最新長期支持版本 Kilted Kaiju（2026 年發布）將 Zenoh 通訊層列為「Tier 1」（與 DDS 同等地位），原生支援邊界網路、低延遲發布/訂閱與時間同步（TSYNC）。改進的 RCLPy 新增事件執行器（Event Executor），相較傳統回調執行器，I/O 延遲降低 60%，已驗證於機械臂多執行緒視覺伺服系統。Zenoh 的「queryable」機制使分散式多臂系統能無縫共享機械臂狀態與規劃結果，適合工廠自動化與協作機械臂編隊場景。[ROS 2 Kilted Kaiju Documentation](https://docs.ros.org/en/jazzy/index.html)
+
