@@ -2384,3 +2384,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Gazebo Harmonic + ros2_control 無縫虛實映射**：Gazebo Harmonic 中的 `ign_ros2_control` 外掛完整相容 ros2_control Example 7（6-DOF 完整教程），支援關節限制器、碰撞偵測與摩擦模型，機械臂在模擬環境中的性能曲線與實機偏差 <3%，縮短開發週期 50% 以上。
 
+### NVIDIA Jetson Thor 與 Isaac ROS 2 邊界推理加速（2026 年 4 月 15 日補充）
+
+**Jetson Thor 邊界 AI 推理與機械臂視覺伺服**：Advantech 與 NVIDIA 聯合推出基於 Jetson Thor 的邊界機械臂控制器（ASR-A702/AFE-A702），整合 GPU 加速的 SLAM、多路 GMSL 攝像頭支援與 Isaac ROS 2 感知套件。該平台支援實時物件偵測、距離估計、位姿追蹤與視覺 SLAM，已驗證適合工業協作臂與移動操縱平台的視覺伺服與自主導航。Jetson Thor 相較 Jetson Orin 實現 3 倍以上的邊界推理性能提升，為 6-DOF 機械臂融合視覺-力控制的邊界自主系統奠定基礎。[Advantech Edge AI Solutions with Jetson Thor](https://www.advantech.com/en-us/resources/news/advantech-unveils-edge-ai-solutions-accelerated-by-nvidia-jetson-thor-for-robotics-medical-ai-and-data-intelligence)
+
+**Isaac ROS 2 Visual SLAM 與 ROS 2 Jazzy 原生支援**：NVIDIA 完成 Isaac ROS Visual SLAM 與 ROS 2 Jazzy 的完整適配，該套件提供 GPU 加速的 cuVSLAM 引擎，支援雙目/多目攝像頭與 IMU 融合的實時視覺里程計。相較傳統軟體 SLAM，cuVSLAM 在 Jetson 邊界設備上實現 10 倍延遲降低與 5 倍吞吐提升，已驗證環路閉合穩定性達 1000+ 公尺序列，支援室內外場景。該架構結合 ros2_control 與 MoveIt 2，使機械臂能實時自建環境地圖、自主重定位與視覺引導操縱，標誌著邊界機械臂從預設環境向開放環境自主系統的轉變。[Isaac ROS Visual SLAM](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_visual_slam/index.html)
+
