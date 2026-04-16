@@ -2123,3 +2123,17 @@
 - **合作策略** - 整合傳統工業自動化能力與前沿具身 AI 技術，加速商業化應用與產業化進展
 - **對機械手臂的意義** - 驗證多臂協作在商業化供應鏈的可行性，推動具身 AI 從實驗走向規模生產
 - **參考** - [PIA Automation Launches New Business Segment for Embodied AI and Humanoid Robotics](https://theaiinsider.tech/2026/04/15/pia-automation-launches-new-business-segment-for-embodied-ai-and-humanoid-robotics/)
+
+#### 137. Liquid AI LFM2.5-VL-450M — 邊緣視覺語言模型在機械人的推理突破（Apr 2026）
+- **核心創新** - Liquid AI 發佈 450M 參數視覺語言模型 LFM2.5-VL-450M，在 NVIDIA Jetson Orin 實現 <250ms 推理時延，支援視覺語言行動整合
+- **性能特徵** - 輕量化架構適配邊緣設備，實現 4 FPS 視頻流處理，性能接近大 10 倍的模型，支援多語言與邊界框預測
+- **應用優勢** - 邊緣部署成本大幅降低，消除雲端往返延遲，支援實時環境感知與複雜視覺決策
+- **對機械手臂的意義** - 本地 VLA 推理的高效實現，支援多臂協作系統的邊緣視覺感知與任務理解
+- **參考** - [Liquid AI LFM2.5-VL-450M: Sub-250ms Edge Inference](https://earezki.com/ai-news/2026-04-12-liquid-ai-releases-lfm25-vl-450m/)
+
+#### 138. MIT 軟體機械臂神經藍圖 — 具身 AI 與材料科學融合（Feb 2026）
+- **核心創新** - MIT 研究團隊提出大腦靈感 AI 框架，將神經科學原理應用於軟體機械臂控制，實現通用任務適應與魯棒性提升
+- **性能突破** - 在重負擾動下追蹤誤差降低 44-55%，負載變化與執行器失效下形狀精度保持 92% 以上，超越傳統任務特定調參
+- **技術特色** - 融合材料科學與 AI，支援軟體機械臂自動切換任務與動態環境適應，無需重新標定
+- **對機械手臂的意義** - 打破軟體與剛性機械臂的技術分界，為柔性多臂系統提供通用智能控制框架
+- **參考** - [MIT: A neural blueprint for human-like intelligence in soft robots](https://news.mit.edu/2026/neural-blueprint-human-intelligence-in-soft-robots-0219)
