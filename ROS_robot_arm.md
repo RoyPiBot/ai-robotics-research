@@ -2419,3 +2419,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 Kilted Kaiju：Zenoh 列為第 1 級中介軟體與 RCLPy 效能革新**：ROS 2 最新長期支持版本 Kilted Kaiju（2026 年發布）將 Zenoh 通訊層列為「Tier 1」（與 DDS 同等地位），原生支援邊界網路、低延遲發布/訂閱與時間同步（TSYNC）。改進的 RCLPy 新增事件執行器（Event Executor），相較傳統回調執行器，I/O 延遲降低 60%，已驗證於機械臂多執行緒視覺伺服系統。Zenoh 的「queryable」機制使分散式多臂系統能無縫共享機械臂狀態與規劃結果，適合工廠自動化與協作機械臂編隊場景。[ROS 2 Kilted Kaiju Documentation](https://docs.ros.org/en/jazzy/index.html)
 
+### MoveIt Servo + ROS 2 硬體驅動生態整合（2026 年 4 月 16 日補充）
+
+**PickNik ROS 2 硬體驅動頁面與視覺伺服標準化**：PickNik Robotics 官方發布 ROS 2 Hardware Drivers 合作夥伴頁面，匯集 20+ 相容工業級與教育機械臂平台。最新研究表明 ROS 2 視覺伺服系統（MoveIt Servo + MoveIt 2）相較 ROS 1 實現 23.53% 精度提升與 2-3 倍實時規劃性能躍升，已驗證於醫療針跡追蹤、視覺引導組裝與精密操縱應用。高頻驅動架構支援 >500Hz 控制迴圈與毫秒級視覺伺服反饋，為邊界機械臂+視覺系統融合奠定基礎。[PickNik ROS 2 Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/)
+
+### Jetson Orin Nano Super 與 JetArm Pro 邊界教育平台（2026 年 4 月 16 日補充）
+
+**Jetson Orin Nano Super：1.7 倍效能躍升與 $249 親民定價**：NVIDIA 發布 Jetson Orin Nano Super，相較前代實現 1.7 倍生成式 AI 推理效能提升、70% 整體性能增強與 50% 記憶體頻寬擴展，同時將開發者套件價格降至 $249（原 $499）。該平台支援實時多路攝像頭推理（物體檢測、植物健康監測）並可直接驅動精密機械臂（毫米級精度）。Hiwonder 基於該硬體推出 JetArm Pro，集成 Jetson Nano/Orin Nano/Orin NX、六軸高扭矩伺服、3D 深度攝像頭、觸控螢幕與麥克風陣列，完整支援 ROS 1/2 與生成式 AI（3D 自主抓取、目標追蹤、物件分類、語音控制、具身 AI），成為 ROS 邊界機械臂教育與輕工業應用的標準平台。[Jetson Orin Nano Super](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/)
+
