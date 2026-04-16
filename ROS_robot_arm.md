@@ -2427,3 +2427,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Jetson Orin Nano Super：1.7 倍效能躍升與 $249 親民定價**：NVIDIA 發布 Jetson Orin Nano Super，相較前代實現 1.7 倍生成式 AI 推理效能提升、70% 整體性能增強與 50% 記憶體頻寬擴展，同時將開發者套件價格降至 $249（原 $499）。該平台支援實時多路攝像頭推理（物體檢測、植物健康監測）並可直接驅動精密機械臂（毫米級精度）。Hiwonder 基於該硬體推出 JetArm Pro，集成 Jetson Nano/Orin Nano/Orin NX、六軸高扭矩伺服、3D 深度攝像頭、觸控螢幕與麥克風陣列，完整支援 ROS 1/2 與生成式 AI（3D 自主抓取、目標追蹤、物件分類、語音控制、具身 AI），成為 ROS 邊界機械臂教育與輕工業應用的標準平台。[Jetson Orin Nano Super](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/)
 
+### SEBVS 事件型視覺伺服與 PuppyPi 應用（2026 年 4 月 16 日補充）
+
+**SEBVS：合成事件型視覺伺服融合框架**：2025 年 8 月發布的 SEBVS（Synthetic Event-based Visual Servoing）將 RGB 高解析度影像與非同步事件串流融合於統一的 Transformer 架構中，實現機械臂導航與操縱的精確控制。該框架結合毫秒級事件訊號與高分辨率幀資訊，相較單一模態方案提升控制精度、強化魯棒性與任務成功率。ROS 2 原生實現已驗證於邊界機械臂視覺伺服應用，適合低光/高速動態場景的視覺引導操縱。[SEBVS Research](https://arxiv.org/html/2508.17643)
+
+**PuppyPi + 2-DOF 機械臂視覺自主抓取**：Hiwonder 在 2026 年初將 2-DOF 機械臂整合至 PuppyPi 四足機器人，實現 AI 驅動的視覺搜尋、自主抓取與遠端遞送任務。該平台透過 ROS 2 與 MoveIt 支援即時軌跡規劃，計畫添加末端夾持器微型攝像頭以實現眼手視覺伺服，展示低成本邊界機械臂平台的開源生態潛力。
+
