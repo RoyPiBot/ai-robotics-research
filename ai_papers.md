@@ -2151,3 +2151,17 @@
 - **應用場景** - 自動駕駛、工業機械人、邊緣 VLA 系統的實時決策支援
 - **對機械手臂的意義** - 邊緣推理加速基礎設施，支援多臂協作系統的毫秒級視覺語言決策與完全自主控制
 - **參考** - [NVIDIA TensorRT Edge-LLM for Automotive and Robotics](https://developer.nvidia.com/blog/accelerating-llm-and-vlm-inference-for-automotive-and-robotics-with-nvidia-tensorrt-edge-llm/)
+
+#### 141. Qualcomm Dragonwing IQ10 — 人形機械人邊緣推理晶片（2026 年初）
+- **核心創新** - Qualcomm 推出 Dragonwing IQ10 系列高性能邊緣 AI 晶片，專為人形與協作機械人設計，18 核 CPU 架構支援視覺語言動作（VLA）模型
+- **技術特色** - 整合感知決策與執行控制，支援自然語言指令理解與多步複雜任務執行，實現邊緣完整推理閉環
+- **應用場景** - 物流 AMR、製造業協作機械臂、家用人形機械人的感知決策與自主導航
+- **對機械手臂的意義** - 為多臂協作提供統一的邊緣 AI 晶片基礎設施，消除對雲端計算的依賴，支援實時多機協調決策
+- **參考** - [Qualcomm Introduces a Full Suite of Robotics Technologies](https://www.qualcomm.com/news/releases/2026/01/qualcomm-introduces-a-full-suite-of-robotics-technologies-power)
+
+#### 142. Qualcomm × Neura Robotics「腦+神經系統」協作架構（2026 年 3 月）
+- **核心創新** - Qualcomm 與 Neura Robotics 簽訂長期合作，共同開發人形機械人的「腦+神經系統」參考架構，統一感知-決策-動作控制流水線
+- **技術架構** - 基於 Dragonwing 晶片的分布式邊緣推理框架，支援多臂神經協調與實時環境自適應
+- **應用意義** - 為下一代人形與協作機械人提供端到端的邊緣 AI 標準化部署模式
+- **對機械手臂的意義** - 建立多臂協作的標準化「大腦」架構，加速產業化進展，支援複雜工業自動化任務的邊緣群體智能實現
+- **參考** - [Qualcomm and Neura Robotics Strategic Collaboration](https://www.advantech.com/en-eu/resources/news/advantech-and-qualcomm-strengthen-strategic-collaboration-to-revolutionize-edge-ai-and-robotics-applications)
