@@ -2298,6 +2298,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **NVIDIA Isaac ROS GPU 加速視覺感知管道**：NVIDIA 推出的 Isaac ROS 整合 CUDA 加速計算包與 AI 模型，專為機械臂視覺伺服場景設計。框架支援高頻寬視覺回饋迴圈（>500Hz）與低延遲邊界推理，可部署於 NVIDIA Jetson 系列（Nano、NX、Orin）。Isaac ROS 已與 ROS 2 官方生態深度整合，支援 MoveIt 2 感知管道與實時物體追蹤，特別適合動態視覺伺服與多臂協作場景。[NVIDIA Isaac ROS](https://developer.nvidia.com/isaac/ros)
 
+**YOLO 物體偵測與 ROS 2 視覺伺服整合（2026 年 4 月新增）**：ROS-Industrial Consortium 領導人 Dr. Carlos Acosta 提出將 YOLO（You Only Look Once）深度學習演算法與 ROS 2 框架整合，用於機械臂視覺伺服的物體偵測與定位。該方案透過高效的 YOLO 推理獲取即時目標位置資訊，結合 ROS 2 視覺伺服控制器實現自適應追蹤。該工作流已驗證支援 Raspberry Pi 5 + Hailo-10H 邊界推理加速，可達成 30fps 的實時物體跟蹤與精密抓取。[ROS-Industrial Community Resources](https://rosindustrial.org/)
+
+**LanderPi 多模態具身 AI 與 3D 視覺融合（2026 年 4 月新增）**：HiWonder 發布 LanderPi 平台融合多模態大型語言模型、3D 視覺感知與 ROS 2 框架，為機械臂提供「超智能大腦」。系統整合 RGB-D 相機與深度學習，通過點雲資料送入逆運動學（IK）引擎，實現「智慧抓取」——自動計算最佳接近角度與執行無人自主操作。該方案已驗證於 HiWonder ArmPi Ultra、ROSOrin Pro 等平台，為邊界推理與自然語言驅動的機械臂自主操作提供標準化架構。[Embodied AI with LanderPi](https://www.hackster.io/HiwonderRobot/embodied-ai-with-landerpi-fusing-llms-ros-2-and-3d-vision-1f744b)
+
 **ROS 2 Hardware Ecosystem 官方認證體系**：PickNik Robotics 於 2025 年 1 月發布 ROS 2 Hardware Drivers Page，建立機械臂與移動機器人的官方相容性資料庫。該體系已認證 60+ 款工業級、協作級與教育級機械臂平台，包括 JetArm Pro（搭載 Jetson 的 6DOF 協作臂）、ROSMASTER 系列與協作機械臂生態。高頻寬驅動（>500Hz）已標準化於視覺伺服、精密加工與動態協作應用。[PickNik Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/)
 
 ### MoveIt Python 與 ROS2_Control 2025 性能突破（2026 年 4 月補充）
