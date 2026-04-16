@@ -2109,3 +2109,17 @@
 - **市場規模** - 2026 年全年產能已被 Hyundai 和 Google DeepMind 預定，正式告別純技術展示階段
 - **對機械手臂的意義** - 驗證多自由度人形系統的工業可行性，為多臂協作與通用機械人提供商業部署參考
 - **參考** - [CES 2026 機械人年度回顧：從技術實驗邁向全球規模化部署](https://naipnews.naipo.com/38146/)
+
+#### 135. Advantech MIC-735 AI 推理系統 — 多機械手臂協作邊緣推理認證框架（Apr 2026）
+- **核心創新** - Advantech 與 Fort Robotics 合作推出 MIC-735 AI 推理系統，搭載 Nvidia IGX T5000 模組，實現 SIL 認證的確定性邊緣推理
+- **技術特色** - Holoscan Sensor Bridge 支援多傳感器實時同步高頻寬通訊，實現毫秒級決策響應與分散式協作控制
+- **應用優勢** - 企業級安全認證架構，支援多臂協作系統的確定性決策與邊緣自主運作
+- **對機械手臂的意義** - 為多機械手臂協作系統提供認證級邊緣推理基礎設施，消除雲端依賴，支援 24/7 工業自動化部署
+- **參考** - [Advantech Releases Edge AI Inference System](https://www.automationworld.com/control/news/55368663/advantech-releases-edge-ai-inference-system)
+
+#### 136. PIA Automation 機械人業務拓展 — 具身 AI 與人形機械人商業化（Apr 2026）
+- **核心創新** - PIA Automation 推出新事業部門專注具身 AI 與人形機械人工業化，透過 Joybot Manufacture 與 AGIBOT 深度合作
+- **市場定位** - 標誌具身 AI 從實驗室邁向主流工業應用，多臂協作系統成為標準部署方案
+- **合作策略** - 整合傳統工業自動化能力與前沿具身 AI 技術，加速商業化應用與產業化進展
+- **對機械手臂的意義** - 驗證多臂協作在商業化供應鏈的可行性，推動具身 AI 從實驗走向規模生產
+- **參考** - [PIA Automation Launches New Business Segment for Embodied AI and Humanoid Robotics](https://theaiinsider.tech/2026/04/15/pia-automation-launches-new-business-segment-for-embodied-ai-and-humanoid-robotics/)
