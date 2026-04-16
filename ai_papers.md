@@ -2067,3 +2067,17 @@
 - **應用場景** - 多機械手臂協同組裝、分布式傳感協作、工業自動化中的動態任務分派
 - **對機械手臂的意義** - 打破單臂局限，實現群體機械手的自主協作決策，支援複雜製造流程的邊緣分布式控制
 - **參考** - [Enhancing intelligence in multi-agent systems with edge-assisted causal knowledge aggregation](https://www.nature.com/articles/s44459-025-00006-x)
+
+#### 131. NVIDIA Nemotron 3 Nano — 混合式 MoE 邊緣 AI 框架（Apr 2026）
+- **核心創新** - NVIDIA 推出開源 Nemotron 3 Nano，專為多代理系統設計，採用混合式 MoE 架構實現邊緣部署
+- **性能特徵** - 支援 1M token 長上下文，在邊緣裝置實現毫秒級推理，相比雲端部署顯著降低推理成本
+- **應用優勢** - 適配機械人、自動駕駛、IoT 等邊緣自主系統，支援複雜多步決策與實時環境感知
+- **對機械手臂的意義** - 提供邊緣友好的多代理框架，支援多臂協作系統的分布式決策與群體智能編排
+- **參考** - [NVIDIA 發佈全新物理 AI 模型與全球機器人合作](https://blogs.nvidia.cn/blog/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots/)
+
+#### 132. 高通邊緣 AI 150+ 優化模型套件（Apr 2026）
+- **核心創新** - 高通推出超過 150 個預先最佳化的開源 AI 模型，支援行動裝置、物聯網及機械人運算平台
+- **優化策略** - 針對邊緣裝置記憶體約束，優化大語言模型在終端的執行效率，實現完全離線自主推理
+- **應用場景** - 工業機械人的視覺感知、任務規劃、多機協作決策，無需依賴雲端連接
+- **對機械手臂的意義** - 加速邊緣 AI 硬體標準化與模型生態成熟，為多臂協作系統提供統一的部署與推理基礎
+- **參考** - [高通邊緣 AI 模型套件與邊緣計算優化](https://cmnews.com.tw/article/newsyoudeservetoknow-5225da0a-3751-11f1-882d-ec6677699b02)
