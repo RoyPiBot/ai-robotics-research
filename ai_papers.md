@@ -2137,3 +2137,17 @@
 - **技術特色** - 融合材料科學與 AI，支援軟體機械臂自動切換任務與動態環境適應，無需重新標定
 - **對機械手臂的意義** - 打破軟體與剛性機械臂的技術分界，為柔性多臂系統提供通用智能控制框架
 - **參考** - [MIT: A neural blueprint for human-like intelligence in soft robots](https://news.mit.edu/2026/neural-blueprint-human-intelligence-in-soft-robots-0219)
+
+#### 139. NVIDIA Isaac GR00T 與 Cosmos 世界模型 — 開源機械人視覺語言動作框架（Apr 2026）
+- **核心創新** - NVIDIA 開源 GR00T 模型，結合視覺語言動作推理；同時發布 Cosmos 世界模型，讓機械人通過物理原理學習
+- **性能特徵** - 支援自然語言指令理解與複雜多步任務執行；Cosmos 加速具身 AI 模型訓練，提升跨環境泛化能力
+- **應用優勢** - 開源框架加速行業部署，世界模型使機械人更有效學習環境動力學與後果預測
+- **對機械手臂的意義** - 統一視覺語言動作推理框架，支援多臂任務協作與端到端決策學習
+- **參考** - [NVIDIA 發佈全新物理 AI 模型與全球機器人合作](https://blogs.nvidia.cn/blog/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots/)
+
+#### 140. NVIDIA TensorRT Edge-LLM — 邊緣推理加速框架（Apr 2026）
+- **核心創新** - NVIDIA 開源 TensorRT Edge-LLM，專為 DRIVE AGX Thor 與 Jetson Thor 邊緣設備設計，支援高效 LLM/VLM 推理
+- **性能特徵** - 低延遲推理支援實時視覺感知，整合汽車與機械人嵌入式系統的推理最佳化，相比標準部署降低 2-3 倍推理成本
+- **應用場景** - 自動駕駛、工業機械人、邊緣 VLA 系統的實時決策支援
+- **對機械手臂的意義** - 邊緣推理加速基礎設施，支援多臂協作系統的毫秒級視覺語言決策與完全自主控制
+- **參考** - [NVIDIA TensorRT Edge-LLM for Automotive and Robotics](https://developer.nvidia.com/blog/accelerating-llm-and-vlm-inference-for-automotive-and-robotics-with-nvidia-tensorrt-edge-llm/)
