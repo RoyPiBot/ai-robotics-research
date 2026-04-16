@@ -2443,3 +2443,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **SMP Robotics Argus S5.4 — Jetson Orin NX 移動操縱平台**：SMP Robotics 於 2026 年 3 月發布 Argus S5.4 自主移動機器人，搭載 Jetson Orin NX 計算單元，支援 CUDA 加速開發、第三方軟體整合與工業級邊界推理應用。該平台已驗證適合自主保安、工業檢測與倉庫自動化，結合 ROS 2 控制棧與視覺伺服架構，標誌著邊界機械臂與移動平台的標準化集成時代。[SMP Robotics Argus S5.4](https://smprobotics.com/usa/argus-s5-4-nvidia-jetson-orin-third-party-ai-software/)
 
+### 視覺伺服控制與教育級機械臂生態（2026 年 4 月 16 日補充）
+
+**視覺伺服控制最新綜合綜述**：Springer Nature 2026 年新發表論文《Recent advances on visual servo control of robotic arms: methods and applications》涵蓋視覺伺服在工業、工程、航太、農業採收與醫療設備等五大領域的最新進展。該論述整合位置型視覺伺服（PBVS）、影像型視覺伺服（IBVS）與混合型視覺伺服（HBVS）的控制策略，驗證深度學習控制器在 2-DOF 機械臂視覺伺服任務中的精度與反應時間表現，適合邊界機械臂與視覺導引操縱應用。[Recent advances on visual servo control of robotic arms](https://link.springer.com/article/10.1007/s40430-025-06122-7)
+
+**Hiwonder ArmPi Ultra — AI 驅動的樹莓派 ROS 機械臂平台**：Hiwonder 針對 STEAM 教育與邊界 AI 應用推出 ArmPi Ultra，整合 Raspberry Pi 主控制器、6-DOF 高精度伺服臂、3D 視覺相機與深度學習推理引擎。該平台原生支援 ROS 與 MoveIt，透過 Python 與 OpenCV/YOLOv8 進行端對端視覺伺服開發，已驗證支援 >20Hz 視覺迴圈與毫米級位置精度，為 Raspberry Pi 5 使用者提供完整的機械臂視覺自主系統。[Hiwonder ArmPi Ultra](https://www.hiwonder.com/collections/robotic-arm)
+
