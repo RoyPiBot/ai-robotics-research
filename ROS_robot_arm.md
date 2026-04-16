@@ -2455,3 +2455,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **移動式機械臂位置型視覺伺服（PBVS）狀態機框架**：新研究展示位置型視覺伺服在移動機械臂上的應用，使用狀態機引導任務執行的不同階段（接近、調整、操作），已驗證於螺釘緊固、精密零件組裝等工業應用，搭配 ROS 2 與 ros2_control 框架實現閉迴圈反饋控制。[Visual Servoing Architecture of Mobile Manipulators](https://www.mdpi.com/2218-6581/13/5/71)
 
+### MoveIt Python ROS 2 性能革新與邊界部署標準化（2026 年 4 月 16 日補充）
+
+**MoveIt Python 2-3 倍規劃加速與低延遲視覺伺服**：2025-2026 年期間，PickNik 發布的 MoveIt Python ROS 2 實現相較 ROS 1 版本達成 2-3 倍規劃加速，規劃週期從 500ms 降低至 150-200ms，可直接支援毫秒級視覺伺服迴圈。該性能躍升使 Raspberry Pi 5 + Jetson NX 邊界設備上的實時機械臂控制成為可行方案，已驗證支援 >500Hz 實時控制迴圈與低延遲視覺伺服應用。MoveIt Python API 相較 C++ 實現提供相當的性能，降低開發複雜度，適合快速原型開發與邊界部署。[MoveIt Python ROS2: Motion Planning Manipulation Robots 2025](https://johal.in/moveit-python-ros2-motion-planning-manipulation-robots-2025/)
+
+### ROS 2 協作臂生態標準化與工業級驅動程式推廣（2026 年 4 月 16 日補充）
+
+**PickNik 硬體生態資料庫與 60+ 協作臂相容性驗證**：PickNik Robotics 開放「ROS 2 Compatible Hardware Database」，涵蓋 Kinova Kortex、ABB、KUKA、UR、Franka、Doosan 等 60+ 協作與工業機械臂的標準化相容性標籤。該資料庫已成為採購決策與系統集成商的參考標準，加速 ROS 2 在工業現場的部署速度。官方推出的 abb_ros2 驅動程式補足 ABB 協作臂在 ROS 2 中的支援空白，基於 ros2_control 框架，支援 IRB 1200/1410/1600 等多款型號，已驗證適合工業檢測、自動組裝與實驗室應用。[PickNik Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/)
+
