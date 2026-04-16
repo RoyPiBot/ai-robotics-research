@@ -2433,3 +2433,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **PuppyPi + 2-DOF 機械臂視覺自主抓取**：Hiwonder 在 2026 年初將 2-DOF 機械臂整合至 PuppyPi 四足機器人，實現 AI 驅動的視覺搜尋、自主抓取與遠端遞送任務。該平台透過 ROS 2 與 MoveIt 支援即時軌跡規劃，計畫添加末端夾持器微型攝像頭以實現眼手視覺伺服，展示低成本邊界機械臂平台的開源生態潛力。
 
+### Jetson Orin NX 視覺伺服與工業級邊界機械臂生態（2026 年 4 月 16 日新增）
+
+**Jetson Orin NX 在邊界機械臂視覺伺服的應用突破**：NVIDIA Jetson Orin NX 於 2025-2026 年間成為邊界機械臂視覺伺服的工業標配。e-con Systems 推出 Darsi Pro 邊界 AI 計算平台基於 Jetson Orin NX，支援多攝像頭同步串流（8 路 HDR GMSL 攝像頭）與高解析度 3D 深度感測，實現即時物體檢測、位姿估計與視覺伺服控制。相較上一代 Jetson Xavier NX，Orin NX 性能提升 5 倍，功耗可調 10-40W，已驗證支援 6-DOF 機械臂在工業檢測、零件分揀與實驗室自動化應用的實時視覺回饋迴圈（>100Hz）。[Darsi Pro: NVIDIA Jetson Orin NX 邊界 AI 計算平台](https://www.econ.co.th/)
+
+**SMP Robotics Argus S5.4 — Jetson Orin NX 移動操縱平台**：SMP Robotics 於 2026 年 3 月發布 Argus S5.4 自主移動機器人，搭載 Jetson Orin NX 計算單元，支援 CUDA 加速開發、第三方軟體整合與工業級邊界推理應用。該平台已驗證適合自主保安、工業檢測與倉庫自動化，結合 ROS 2 控制棧與視覺伺服架構，標誌著邊界機械臂與移動平台的標準化集成時代。[SMP Robotics Argus S5.4](https://smprobotics.com/usa/argus-s5-4-nvidia-jetson-orin-third-party-ai-software/)
+
