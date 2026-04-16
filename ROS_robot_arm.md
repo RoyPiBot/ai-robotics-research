@@ -2477,3 +2477,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **MoveIt Servo 實時奇異值避免與碰撞檢測**：MoveIt Servo 支援自動奇異值迴避（Singularity Avoidance）與即時碰撞檢測，使機械臂能在高速實時控制迴圈中安全執行複雜軌跡。該功能透過 Jacobian 矩陣監測與動態奇異值阈值調整，防止機械臂進入奇異值區域導致的控制失效。碰撞偵測模組於每個控制週期（<1ms）進行環境檢測，支援多目標物體與自碰撞檢測，已驗證於協作臂視覺伺服、力控制混合系統與高速操縱任務。該機制結合 MoveIt 2 Humble/Jazzy 的空間索引最佳化，實現毫秒級碰撞檢測而不損失實時性能。[MoveIt Servo Documentation](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html)
 
+### Joint Trajectory Controller 與 ROS 2 Manipulation 標準流程（2026 年 4 月 17 日補充）
+
+**Joint Trajectory Controller 在 ROS 2 Manipulation Pipeline 中的核心角色**：ROS 2 標準機械臂操縱流程採用 MoveIt 2 × Joint Trajectory Controller 的分工模式：MoveIt 2 負責規劃從起點到終點的無碰撞軌跡，輸出關節位置序列；Joint Trajectory Controller 接收軌跡指令，逐一輸出位置、速度或力矩指令給硬體控制界面（Hardware Interface），驅動機械臂按軌跡執行。該控制器支援多種回饋模式（位置、速度、加速度），已驗證支援 6-DOF 工業臂與協作臂的實時軌跡執行。Raspberry Pi 5 搭配 Jetson NX 邊界加速，可實時運行 ROS 2 Complete Manipulation Basics 課程，涵蓋環境感知、軌跡規劃、即時控制與碰撞處理的完整訓練迴圈。[ROS 2 Manipulation Basics - The Construct](https://www.theconstruct.ai/robotigniteacademy_learnros/ros-courses-library/ros2-manipulation-basics/)
+
