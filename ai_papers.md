@@ -1096,6 +1096,10 @@
 - **Meta Muse Spark - 新一代超大多模態推理模型發布** - Meta 超級智慧實驗室於 2026 年 4 月 8 日正式發表 Muse Spark，一個具備超高複雜推理能力的大型語言模型，在多模態感知、推理、醫療與智能體任務中表現極具競爭力，計算成本相比舊版中型 Llama 4 降低一個數量級，標誌多模態大模型從規模堆砌向效率優化的新階段，推進邊緣設備與機械手臂推理的成本可行性 [Meta Muse Spark — Meta AI](https://www.newmobilelife.com/2026/04/09/meta-ai-muse-spark/)
 - **Netflix VOID 開源影片編輯 AI - Hugging Face 發布** - Netflix 與索菲亞大學共同開發開源影片編輯 AI 模型 VOID，可一鍵移除畫面物件並自動修正物理互動，已在 Hugging Face 開源釋出，標誌 AI 在視覺內容製作領域的新應用突破，推進影片後製自動化與內容編輯智能化的民主化進程 [Netflix VOID — Hugging Face](https://www.cool3c.com/article/247536)
 
+### 第八十一次更新來源（2026-04-16 08:45 CVPR 2026 具身 AI 與世界模型競賽新時代）
+- **CVPR 2026 Embodied AI Workshop 與 ManipArena 實體競賽啟動** - 2026 年 6 月 3-7 日丹佛 CVPR 大會正式啟動具身 AI 工作坊，著重「世界模型驅動決策」主題，舉辦 ManipArena 實體機械手臂操作競賽，評測模型在 20 項真實任務中的物理推理、泛化與決策能力，標誌具身 AI 從模擬評估向「真實機械手硬件驗證」的轉變，推進多臂協作與邊緣推理在製造業的規模部署 [CVPR 2026 Embodied AI Workshop](https://embodied-ai.org/cvpr2026/)
+- **AGIBOT WORLD 2026 開源異構數據集與標準化評估框架** - AGIBOT 正式發布 WORLD 2026 開源數據集與評估框架，涵蓋多視角觀測、機械手臂多配置與真實環境變異，支援五條核心研究路徑（物體檢測、軌跡預測、動作分類、場景理解、長期規劃），標誌具身 AI 訓練數據從私有專有向「業界開放標準」的民主化轉向，加速邊緣推理模型的通用化與跨平台泛化 [AGIBOT WORLD 2026](https://www.therobotreport.com/agibot-world-2026-dataset-open-source-accelerate-embodied-ai-development/)
+
 ---
 
 ## 🔥 2026 年 4 月第一週重大新聞（第五十八次更新 — 2026-04-09）
