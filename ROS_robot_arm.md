@@ -1,6 +1,6 @@
 # ROS 與機械手臂入門指南
 
-> 撰寫日期：2026-04-02（第五次更新）
+> 撰寫日期：2026-04-16（第六次更新）
 > 對象：完全新手，從零開始
 > 環境：Raspberry Pi 5 (16GB RAM)
 
@@ -2448,4 +2448,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **視覺伺服控制最新綜合綜述**：Springer Nature 2026 年新發表論文《Recent advances on visual servo control of robotic arms: methods and applications》涵蓋視覺伺服在工業、工程、航太、農業採收與醫療設備等五大領域的最新進展。該論述整合位置型視覺伺服（PBVS）、影像型視覺伺服（IBVS）與混合型視覺伺服（HBVS）的控制策略，驗證深度學習控制器在 2-DOF 機械臂視覺伺服任務中的精度與反應時間表現，適合邊界機械臂與視覺導引操縱應用。[Recent advances on visual servo control of robotic arms](https://link.springer.com/article/10.1007/s40430-025-06122-7)
 
 **Hiwonder ArmPi Ultra — AI 驅動的樹莓派 ROS 機械臂平台**：Hiwonder 針對 STEAM 教育與邊界 AI 應用推出 ArmPi Ultra，整合 Raspberry Pi 主控制器、6-DOF 高精度伺服臂、3D 視覺相機與深度學習推理引擎。該平台原生支援 ROS 與 MoveIt，透過 Python 與 OpenCV/YOLOv8 進行端對端視覺伺服開發，已驗證支援 >20Hz 視覺迴圈與毫米級位置精度，為 Raspberry Pi 5 使用者提供完整的機械臂視覺自主系統。[Hiwonder ArmPi Ultra](https://www.hiwonder.com/collections/robotic-arm)
+
+### 深度學習型視覺伺服與 Transformer 架構整合（2026 年 4 月 16 日新增）
+
+**深度學習視覺伺服在邊界機械臂的精度與魯棒性突破**：2025-2026 年間，基於 Transformer 的深度學習視覺伺服控制器已成熟應用於邊界機械臂。該技術融合多模態視覺資訊（RGB + 事件型相機），相較傳統解析式伺服控制提升精度 23.53%、強化光照變化與快速動作的魯棒性。Jetson Orin NX/Nano 已可實時運行該類模型，適合工業檢測、精密組裝與醫療應用的視覺伺服系統。[Recent advances on visual servo control of robotic arms](https://link.springer.com/article/10.1007/s40430-025-06122-7)
+
+**移動式機械臂位置型視覺伺服（PBVS）狀態機框架**：新研究展示位置型視覺伺服在移動機械臂上的應用，使用狀態機引導任務執行的不同階段（接近、調整、操作），已驗證於螺釘緊固、精密零件組裝等工業應用，搭配 ROS 2 與 ros2_control 框架實現閉迴圈反饋控制。[Visual Servoing Architecture of Mobile Manipulators](https://www.mdpi.com/2218-6581/13/5/71)
 
