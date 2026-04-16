@@ -2053,3 +2053,17 @@
 - **市場預測** - 2027 年組織使用 SLM 的頻率將是通用 LLM 的 3 倍，邊緣推理成為主流部署模式
 - **對機械手臂的意義** - 支援完全邊緣自主的視覺動作決策，消除雲端延遲依賴，實現毫秒級多臂協作與實時環境適應
 - **參考** - [Dell: The Power of Small - Edge AI Predictions for 2026](https://www.dell.com/en-us/blog/the-power-of-small-edge-ai-predictions-for-2026/)
+
+#### 129. Ro-SLM：機械手臂任務規劃與代碼生成系統（arxiv, 2026）
+- **核心創新** - 專門為機械手臂設計的小語言模型，將自然語言指令轉換為動作代碼與任務規劃，在邊緣設備上實現毫秒級推理
+- **性能優勢** - SLM 在高複雜度任務下優於大型 LLM，具備更好的泛化能力，能適應不同任務複雜度的變化
+- **實際應用** - 工廠機械人自動化、複雜組裝任務的零樣本遷移學習，消除雲端延遲依賴
+- **對機械手臂的意義** - 實現邊緣自主的任務理解與動作代碼自動生成，支援多步操作流程與複雜環境適應
+- **參考** - [Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation](https://arxiv.org/html/2604.10929)
+
+#### 130. 多臂協作邊緣推理與因果知識聚合（Nature npj Wireless Technology, 2025）
+- **核心創新** - 邊緣輔助的因果知識聚合系統，將分散機械手臂的決策融合為統一協作框架，在邊緣節點實現實時推理與協調
+- **技術架構** - 結合結構化因果推理與數據驅動學習，在邊界計算環境中實現多臂自適應決策
+- **應用場景** - 多機械手臂協同組裝、分布式傳感協作、工業自動化中的動態任務分派
+- **對機械手臂的意義** - 打破單臂局限，實現群體機械手的自主協作決策，支援複雜製造流程的邊緣分布式控制
+- **參考** - [Enhancing intelligence in multi-agent systems with edge-assisted causal knowledge aggregation](https://www.nature.com/articles/s44459-025-00006-x)
