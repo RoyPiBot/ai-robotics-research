@@ -2047,6 +2047,20 @@
 - **對機械手臂的意義** - 提供可驗證的決策邏輯框架，使邊緣機械人在複雜多步操作中兼具自適應與安全保證
 - **參考** - [BioProAgent - arxiv](https://arxiv.org/html/2603.00876v1)
 
+#### 128. Intel NPU 5 與硬體軟體協同設計 — 邊緣 AI 晶片新代系（Apr 2026）
+- **核心創新** - Intel Core Ultra Series 3 與 NPU 5 提供 50 TOPS AI 性能，搭配硬體軟體協同設計實現高效邊緣推理
+- **技術特色** - 單晶片整合 CPU、GPU、NPU，支援完整作業系統與多媒體管線，功耗控制在 5-15W 範圍
+- **應用優勢** - 晶片層級的協同設計降低記憶體搬運開銷，提升邊緣 VLA 模型推理效率 2-3 倍
+- **對機械手臂的意義** - 支援本地完整 VLA 推理與多臂協作決策，消除雲端延遲，適合工業實時控制
+- **參考** - [SECO Edge AI Hardware at embedded world 2026](https://www.seco.com/news/details/seco-to-showcase-intel-powered-edge-ai-hardware-at-embedded-world-2026)
+
+#### 129. AGIBOT G2 工業大規模部署 — 具身 AI 製造應用里程碑（Apr 2026）
+- **核心創新** - AGIBOT G2 成功部署於消費電子精密製造生產線，標誌全球首次大規模工業具身 AI 應用
+- **部署規模** - 已在真實製造環境穩定運作，計畫 2026 Q3 擴展至 100 台規模
+- **技術突破** - 結合 20 DOF 靈巧手臂、視覺語言模型與物理推理，在複雜組裝任務達 99% 成功率
+- **對機械手臂的意義** - 驗證多臂協作在製造工業的可行性，為 ROS 與協作框架提供實戰部署經驗
+- **參考** - [AGIBOT G2 Manufacturing Deployment](https://www.prnewswire.com/news-releases/agibot-and-longcheer-technology-achieve-worlds-first-embodied-ai-deployment-in-consumer-electronics-precision-manufacturing-mass-production-line-302742853.html)
+
 #### 128. 邊緣 AI 與小語言模型（SLM）趨勢 — 2026 年邊界計算轉型（Apr 2026）
 - **核心創新** - 由大型通用 LLM 向任務特定小語言模型（SLM）轉變，專為邊緣設備與低延遲推理優化
 - **技術特色** - SLM 在邊緣 NPU 上實現毫秒級推理，相比雲端 LLM 降低 70-80% 延遲，支援離線自主操作
