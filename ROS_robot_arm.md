@@ -1098,6 +1098,16 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 **分佈式多機械臂協調**：
 - 無中央閘道的邊緣協調模式，機械臂群能在本地共享上下文、即時調適，大幅提升響應速度和韌性
 
+### 視覺伺服與 Jetson 整合加速（2026 年 4 月新進展）
+
+**MoveIt Servo + AI 視覺系統**：
+- ROS 2 社群完成視覺伺服 (Visual Servoing) 與 MoveIt Servo 的深度整合，支援即時 RGB-D/單眼追蹤與端點位置反饋迴圈（>100Hz）
+- DOFBOT SE 與 DOFBOT Pro 等平價教育臂提供完整 ROS 2 + MoveIt + 3D 視覺的開箱即用方案，適合初級研究
+
+**Jetson Orin 驅動的邊緣 AI 視覺伺服**：
+- NVIDIA Jetson（Orin NX/Nano）與 ROS 2 完整適配，支援實時 YOLO 物件檢測 + MoveIt Servo 動作控制的雙迴圈架構
+- 典型案例：Doosan/Universal Robots + Jetson Orin = 本地 100Hz+ 伺服迴圈 + LLM 輔助決策的自適應抓取系統
+
 **推薦部署組合**：Pi 5 + ROS 2 (Humble/Lyrical) + ros2_control 力回饋 + 邊緣 AI 推理（Coral/Jetson Nano）
 
 4. **Vector OS Nano** (★77) — $450 硬體成本，說「pick up the battery」就能執行
