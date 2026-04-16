@@ -2483,3 +2483,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Joint Trajectory Controller 在 ROS 2 Manipulation Pipeline 中的核心角色**：ROS 2 標準機械臂操縱流程採用 MoveIt 2 × Joint Trajectory Controller 的分工模式：MoveIt 2 負責規劃從起點到終點的無碰撞軌跡，輸出關節位置序列；Joint Trajectory Controller 接收軌跡指令，逐一輸出位置、速度或力矩指令給硬體控制界面（Hardware Interface），驅動機械臂按軌跡執行。該控制器支援多種回饋模式（位置、速度、加速度），已驗證支援 6-DOF 工業臂與協作臂的實時軌跡執行。Raspberry Pi 5 搭配 Jetson NX 邊界加速，可實時運行 ROS 2 Complete Manipulation Basics 課程，涵蓋環境感知、軌跡規劃、即時控制與碰撞處理的完整訓練迴圈。[ROS 2 Manipulation Basics - The Construct](https://www.theconstruct.ai/robotigniteacademy_learnros/ros-courses-library/ros2-manipulation-basics/)
 
+### Vision-Language-Action (VLA) 模型與 ROS 2 整合（2026 年 4 月 17 日新增）
+
+**VLA 模型革命性進展**：Vision-Language-Action (VLA) 模型代表自 2022 年端對端模仿學習以來最重要的機械臂學習架構突破。VLA 整合視覺編碼器、語言模型（7B-13B 參數）與動作解碼器，支援自然語言任務規範。2024 年仍以研究原型為主，至 2025 年底已有三家主要機械臂軟體商將 VLA 產品佈署至企業客戶。Embodied AI 架構透過 LLMs（GPT-4、Llama 3、DeepSeek）為 ROS 2 機械臂提供多模態「大腦」，處理文字、視覺與語音統一資料流，推動教育機械臂與邊界平台的 AI 自主性躍進。
+
+### MoveIt Pro 9.1.0 夾持器控制與跨平台支援（2026 年 4 月新增）
+
+**MoveIt Pro 9.1.0 實時介面改進**：PickNik 發布 MoveIt Pro 9.1.0 引入 OverridePoseOrientation 行為，強制夾持器向下接近姿態；Teleop UI 懸停預覽幽靈機械臂，支援位置、關節與夾持器開闔按鈕；SwitchControllers 自動激活/停用控制器鏈，優化臂與夾持器協調。ROS Jazzy 相容性補充，與 ROS Humble 並行，標準化跨 ROS 版本的機械臂部署。
+
