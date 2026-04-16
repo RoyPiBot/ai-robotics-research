@@ -2463,3 +2463,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **PickNik 硬體生態資料庫與 60+ 協作臂相容性驗證**：PickNik Robotics 開放「ROS 2 Compatible Hardware Database」，涵蓋 Kinova Kortex、ABB、KUKA、UR、Franka、Doosan 等 60+ 協作與工業機械臂的標準化相容性標籤。該資料庫已成為採購決策與系統集成商的參考標準，加速 ROS 2 在工業現場的部署速度。官方推出的 abb_ros2 驅動程式補足 ABB 協作臂在 ROS 2 中的支援空白，基於 ros2_control 框架，支援 IRB 1200/1410/1600 等多款型號，已驗證適合工業檢測、自動組裝與實驗室應用。[PickNik Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/)
 
+### MoveIt Servo 自動奇異值與碰撞迴避（2026 年 4 月 16 日補充）
+
+**MoveIt Servo 實時奇異值避免與碰撞檢測**：MoveIt Servo 支援自動奇異值迴避（Singularity Avoidance）與即時碰撞檢測，使機械臂能在高速實時控制迴圈中安全執行複雜軌跡。該功能透過 Jacobian 矩陣監測與動態奇異值阈值調整，防止機械臂進入奇異值區域導致的控制失效。碰撞偵測模組於每個控制週期（<1ms）進行環境檢測，支援多目標物體與自碰撞檢測，已驗證於協作臂視覺伺服、力控制混合系統與高速操縱任務。該機制結合 MoveIt 2 Humble/Jazzy 的空間索引最佳化，實現毫秒級碰撞檢測而不損失實時性能。[MoveIt Servo Documentation](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html)
+
