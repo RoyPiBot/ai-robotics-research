@@ -2527,3 +2527,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **多臂協作閉迴圈視覺伺服整合**：基於 Zenoh 的 ROS 2 機械臂視覺伺服系統已在工廠檢測場景驗證，多支協作臂透過共享視覺感測資訊與任務規劃，實現 <50ms 端對端延遲的協作操縱。該架構結合 MoveIt 2 Jazzy 版本的分散式規劃與 Joint Trajectory Controller 的同步執行，標誌著 ROS 2 邊界機械臂進入多臂協作時代。[ROS2_Control Rolling Documentation](https://control.ros.org/rolling/index.html)
 
+### ROS 2 Control 框架數據型別與硬體抽象層創新（2026 年 4 月 17 日新增）
+
+**Jazzy 版本數據型別靈活性突破**：ROS 2 Jazzy 引入跨世代重大改進，打破過去僅支援 C++ double 數據型別的限制。新版本支援字串傳遞、自訂資料結構與異質硬體介面無痛整合，使機械臂控制器適配各類邊界微控制器（STM32、NXP、ARM Cortex-M）與專用控制晶片（FPGA、神經形態晶片）。該改進直接加速 ROS 2 在低成本教育機械臂與工業級協作臂生態的部署標準化，配合 PickNik 開放硬體相容性資料庫（60+ 機械臂型號），形成完整的「硬體無關」控制框架。[ROS2_Control Rolling Documentation - Supported Robots](https://control.ros.org/rolling/doc/supported_robots/supported_robots.html)
+
+**Gazebo 模擬與實機無縫轉移**：ROS 2 Control 與最新 Gazebo 整合提供物理精確的 6-DOF 機械臂模擬環境，支援接觸動力學、摩擦力建模與伺服馬達特性模擬。開發者可在 Gazebo 中驗證視覺伺服控制律與軌跡規劃算法，後直接部署至實機無需程式碼修改，加速 ROS 2 機械臂應用從研發到量產的時程。該流程已驗證適合 Doosan、UR、Franka 等工業協作臂與 Hiwonder ArmPi 教育平台的完整設計驗證周期。[Example 7: Full tutorial with a 6DOF robot — ROS2_Control](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
