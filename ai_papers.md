@@ -2179,3 +2179,10 @@
 - **應用優勢** - 降低機械人開發門檻，加速工業場景的應用快速迭代，支援多機器人編隊協作
 - **對機械手臂的意義** - 實現多臂系統的統一自然語言控制框架，支援複雜多步協作任務的即時動態編程與適應性學習
 - **參考** - [A robot operating system framework for using large language models in embodied AI](https://www.nature.com/articles/s42256-026-01186-z)
+
+#### 145. ByteDance GR-RL 框架 — VLA 機械人精密操控與強化學習（Dec 2025）
+- **核心創新** - ByteDance 發佈 GR-RL 框架與 GR-3 視覺語言動作模型，突破 VLA 在長視角高精度靈巧操控的限制
+- **技術特色** - 整合視覺語言理解與真實環境強化學習，實現多步驟複雜操作的穩定執行與即時適應
+- **應用突破** - 首次演示機械人完成全程鞋帶綁定任務，驗證 VLA 框架在精密操控的商業可行性
+- **對機械手臂的意義** - 為多臂系統提供精密操控基礎框架，支援細粒度任務學習與複雜環境自適應
+- **參考** - [ByteDance Seed Research: GR-RL Framework](https://seed.bytedance.com/en/blog/seed-research-gr-rl-released-a-breakthrough-in-high-precision-manipulation-for-vla-models)
