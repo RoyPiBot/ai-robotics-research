@@ -2521,3 +2521,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **神經形態視覺感測突破**：事件型相機（Event Camera）與神經形態計算晶片（Intel Loihi 2、Brainscales 2）為邊界機械臂視覺伺服帶來毫秒級延遲與超低功耗優勢。相較 RGB 相機的固定幀率（30-60Hz），事件型相機提供微秒級時間解析度、無運動模糊、HDR 視覺與 <1W 功耗。神經形態處理實現 <5ms 端對端延遲，已驗證適合低功耗邊界部署（Raspberry Pi 5 + Hailo 加速卡）與快速動作的視覺伺服任務，特別適合光照變化劇烈與高速操縱環境。[SEBVS: Synthetic Event-based Visual Servoing](https://arxiv.org/abs/2508.17643)、[Neuromorphic computing for robotic vision](https://www.nature.com/articles/s44172-025-00492-5)
 
+### ROS 2 Lyrical Luth 與 Zenoh 中介軟體躍升（2026 年 4 月 17 日新增）
+
+**ROS 2 Lyrical Luth（2026 年 5 月預計發佈）：Zenoh 晉升 Tier 1 與分散式機械臂系統**：ROS 2 最新長期支持版本 Lyrical Luth 將 Zenoh 通訊層列為「Tier 1」中介軟體（與 DDS 同等地位），原生支援邊界網路、毫秒級低延遲發布/訂閱與硬體時間同步（TSYNC）。該更新使分散式多臂協作系統（Multi-Arm Collaborative）能無縫共享機械臂狀態估測、軌跡規劃與視覺伺服回饋，消除傳統 DDS 在廣域邊界網路的同步延遲問題。ROS 2 官方控制棧（ros2_control）在 Lyrical Luth 中引入增強的 PoseSensor 語義元件與 Zenoh 資訊模型整合，支援 1000+ 機械臂節點的統一管理，適合工廠自動化與協作機械臂編隊場景。[ROS 2 Lyrical Luth Documentation](https://docs.ros.org/en/rolling/Releases/Release-Lyrical-Luth.html)
+
+**多臂協作閉迴圈視覺伺服整合**：基於 Zenoh 的 ROS 2 機械臂視覺伺服系統已在工廠檢測場景驗證，多支協作臂透過共享視覺感測資訊與任務規劃，實現 <50ms 端對端延遲的協作操縱。該架構結合 MoveIt 2 Jazzy 版本的分散式規劃與 Joint Trajectory Controller 的同步執行，標誌著 ROS 2 邊界機械臂進入多臂協作時代。[ROS2_Control Rolling Documentation](https://control.ros.org/rolling/index.html)
+
