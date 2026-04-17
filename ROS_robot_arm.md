@@ -2513,3 +2513,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **STM32 + Raspberry Pi 開源 3D 列印機械臂平台**：Hackaday 2026 年 3 月發表的開源 3D 列印機械臂整合 STM32 微控制器、樹莓派主機與 CAN 匯流排通訊，實現分散式控制架構。STM32 負責低階 PID 控制迴圈與馬達驅動（<10ms），樹莓派透過 ROS 2 native 進行高階軌跡規劃與視覺伺服決策。該架構已驗證適合教育與研究應用，支援 MoveIt 2 與 ros2_control 框架，成本 <$500，標誌著 ROS 2 邊界機械臂開源生態的「學用結合」新典範。[3D Printed Robot Arm Built For Learning Purposes](https://hackaday.com/2026/03/24/3d-printed-robot-arm-built-for-learning-purposes/)
 
+### MoveIt Servo 環境感知即時伺服控制（2026 年 4 月 17 日新增）
+
+**MoveIt Servo 環境適應性視覺伺服框架**：PickNik 發布的 MoveIt Servo 提供環境感知的即時伺服控制，其特點為硬體無關的空間速度控制器在毫秒級實時迴圈中運行。Servo 節點接收空間速度或關節速度指令，並輸出馬達控制命令，完整支援碰撞檢測與自動奇異值迴避。在視覺伺服應用中，MoveIt Servo 與相機驅動（>500Hz）實現閉迴圈反饋控制，已驗證適合邊界機械臂進行實時目標追蹤與自適應操縱。[MoveIt Servo Real-time Control](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html)
+
+### 事件型相機低延遲視覺伺服（Event-Based Visual Servoing）
+
+**神經形態視覺感測突破**：事件型相機（Event Camera）與神經形態計算晶片（Intel Loihi 2、Brainscales 2）為邊界機械臂視覺伺服帶來毫秒級延遲與超低功耗優勢。相較 RGB 相機的固定幀率（30-60Hz），事件型相機提供微秒級時間解析度、無運動模糊、HDR 視覺與 <1W 功耗。神經形態處理實現 <5ms 端對端延遲，已驗證適合低功耗邊界部署（Raspberry Pi 5 + Hailo 加速卡）與快速動作的視覺伺服任務，特別適合光照變化劇烈與高速操縱環境。[SEBVS: Synthetic Event-based Visual Servoing](https://arxiv.org/abs/2508.17643)、[Neuromorphic computing for robotic vision](https://www.nature.com/articles/s44172-025-00492-5)
+
