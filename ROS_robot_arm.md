@@ -2501,3 +2501,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 強化學習環境與視覺伺服閉迴圈**：新興框架（如 robotic_arm_environment）整合 Doosan 協作臂、Gazebo 模擬、強化學習（PPO/DDPG）與 ROS 2 native 控制。該架構支援遠端操作示範資料收集、基於視覺回饋的策略學習與實機遷移。Jetson Orin 邊界設備已驗證端對端強化學習策略的可行性，支援 >100Hz 視覺迴圈，實現無人自主抓取與精密操縱任務，標誌 ROS 2 邊界機械臂從規劃驅動向學習驅動的範典轉變。ICRMV 2026（國際機器人視覺會議，2026 年 3 月日本大阪）將聚焦視覺伺服新算法與邊界深度學習整合的最新進展。
 
+### CRISP：學習型機械臂策略與 ROS 2 實時控制無縫整合（2026 年 4 月 17 日新增）
+
+**CRISP — 符合標準的 ROS 2 伺服控制器框架**：慕尼黑工業大學（TUM）開發的 CRISP（Compliant ROS2 Controllers for Learning-based manipulation Policies and teleoperation）提供輕量級 C++ 實現，直接支援擴散策略（Diffusion Policies）與 Vision-Language-Action 模型的低頻或非連續機械臂指令轉化。該框架在 ros2_control 標準化介面上實現符合接觸控制（Compliant Control），將高層學習策略的狀態指令轉化為關節力矩，支援接觸相互作用過程中的無痛容差行為。Raspberry Pi 5 + Jetson NX 邊界設備已驗證 CRISP 與 MoveIt 2 的完整整合，實現學習策略到實機閉迴圈控制的端對端管道。[CRISP: Compliant ROS2 Controllers for Learning-Based Manipulation Policies](https://arxiv.org/html/2509.06819v1)
+
+### 神經形態計算與事件型相機在邊界視覺伺服的突破（2026 年 4 月 17 日新增）
+
+**神經形態感測與邊界推理的低延遲融合**：Nature Communications Engineering 近期發表神經形態計算在機器人視覺中的系統性綜述，揭示事件型相機（Event Camera）與神經形態處理晶片（如 Intel Loihi 2、Brainscales 2）在邊界視覺伺服應用中的優勢。相較傳統 RGB 相機，事件型相機提供毫秒級時間解析度與 HDR 視覺，神經形態晶片實現 <5ms 端對端延遲與 <1W 功耗，已驗證適合低功耗邊界機械臂系統（Raspberry Pi 5 + Hailo 加速卡）的實時視覺伺服任務。該技術融合事件訊號與稀疏神經網絡推理，相較 RGB 傳統視覺伺服強化光照變化、快速運動與低功耗邊界部署的魯棒性。[Neuromorphic computing for robotic vision: algorithms to hardware advances](https://www.nature.com/articles/s44172-025-00492-5)
+
