@@ -2509,3 +2509,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **神經形態感測與邊界推理的低延遲融合**：Nature Communications Engineering 近期發表神經形態計算在機器人視覺中的系統性綜述，揭示事件型相機（Event Camera）與神經形態處理晶片（如 Intel Loihi 2、Brainscales 2）在邊界視覺伺服應用中的優勢。相較傳統 RGB 相機，事件型相機提供毫秒級時間解析度與 HDR 視覺，神經形態晶片實現 <5ms 端對端延遲與 <1W 功耗，已驗證適合低功耗邊界機械臂系統（Raspberry Pi 5 + Hailo 加速卡）的實時視覺伺服任務。該技術融合事件訊號與稀疏神經網絡推理，相較 RGB 傳統視覺伺服強化光照變化、快速運動與低功耗邊界部署的魯棒性。[Neuromorphic computing for robotic vision: algorithms to hardware advances](https://www.nature.com/articles/s44172-025-00492-5)
 
+### 開源教育級機械臂與微控制器整合生態（2026 年 4 月 17 日新增）
+
+**STM32 + Raspberry Pi 開源 3D 列印機械臂平台**：Hackaday 2026 年 3 月發表的開源 3D 列印機械臂整合 STM32 微控制器、樹莓派主機與 CAN 匯流排通訊，實現分散式控制架構。STM32 負責低階 PID 控制迴圈與馬達驅動（<10ms），樹莓派透過 ROS 2 native 進行高階軌跡規劃與視覺伺服決策。該架構已驗證適合教育與研究應用，支援 MoveIt 2 與 ros2_control 框架，成本 <$500，標誌著 ROS 2 邊界機械臂開源生態的「學用結合」新典範。[3D Printed Robot Arm Built For Learning Purposes](https://hackaday.com/2026/03/24/3d-printed-robot-arm-built-for-learning-purposes/)
+
