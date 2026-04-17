@@ -2545,3 +2545,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **端對端強化學習與力控制混合架構**：2026 年新研究將深度強化學習（PPO/DDPG）與顯式力控制器結合，形成混合決策框架。高層策略網絡（Vision-Language-Action 模型）產生任務意圖，低層力控制器自動調整接觸力以適應環境變化。該架構在 Gazebo 中訓練，域適應微調後直接遷移至實機（Doosan、UR），成功率達 >85%。多臂協同場景中，不同臂可各自運行獨立策略，透過 Zenoh 共享力感測數據與任務狀態，實現無碰撞協調與接觸感知的自主操縱。[robotic_arm_environment GitHub](https://github.com/dvalenciar/robotic_arm_environment)
 
+### 多臂視覺伺服與邊界推理加速整合（2026 年 4 月 18 日新增）
+
+**Hailo-10H 與 Jetson Orin NX 的雙層加速視覺伺服**：ROS 2 邊界機械臂視覺伺服正在採用「視覺編碼層 + 決策層」的雙重加速架構。Hailo-10H 專用晶片負責實時物體檢測、位姿估計與光流計算（>500fps，<5ms 延遲），Jetson Orin NX 則執行 VLA 模型推理與軌跡規劃。該分工模式使多臂系統可同時運行 6-8 支機械臂的視覺伺服迴圈，每支臂維持 >100Hz 控制頻率且端對端延遲 <50ms。已驗證適合工業揀配、精密組裝與協作操縱應用。[Hailo-10H Acceleration Module](https://www.hailo.ai/products/hailo-10h/)
+
+**ROS 2 Zenoh 分散式視覺伺服同步**：多臂系統的視覺伺服回饋現可透過 Zenoh 的硬體時間同步（TSYNC）機制實現亞毫秒級的跨機械臂位姿同步。相較傳統 DDS，Zenoh 在廣域邊界網路上的延遲降低 3-5 倍，支援 >1000 個視覺伺服節點的統一編排。ROS 2 Lyrical Luth（2026 年 5 月）將正式推廣該能力，使分散式多臂協作的視覺導引操縱成為主流。[ROS 2 Lyrical Luth Zenoh Support](https://docs.ros.org/en/rolling/Releases/Release-Lyrical-Luth.html)
+
