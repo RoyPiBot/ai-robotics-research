@@ -2255,3 +2255,10 @@
 - **框架能力** - PhyCore 0.1 整合視覺、決策與控制模組，支援多模態感知與自主任務規劃，具備開源部署與社群協作優勢
 - **對機械手臂的意義** - 為多臂系統提供開源具身智能基礎框架，降低研發門檻，加速協作型人機交互與複雜環境適應能力開發
 - **參考** - ["具身智能"開啟工業新周期，人形機器人邁入實用化臨界點](https://www.esmchina.com/news/13675.html)
+
+#### 157. Generalist AI GEN-1 — 99% 任務成功率與三倍速度提升（Apr 2026）
+- **核心創新** - Generalist AI 發佈 GEN-1 機械人模型，在特定任務上達成 99% 成功率，相比前代系統 64% 的成功率實現重大突破
+- **性能突破** - 完成任務速度提升三倍，系統高度資料高效，僅需一小時機械人特定訓練資料即可適應新任務
+- **資料效率** - 突破傳統深度學習的資料需求瓶頸，支援快速任務適應與跨領域遷移
+- **對機械手臂的意義** - 為多臂系統提供高效率的任務學習與快速適應能力，顯著降低訓練成本與部署時間
+- **參考** - [Generalist AI Unveils GEN-1 Model](https://roboticsandautomationnews.com/2026/04/11/generalist-ai-unveils-gen-1-model-claiming-breakthrough-in-real-world-robotic-task-performance/100516/)
