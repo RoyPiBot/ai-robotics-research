@@ -2539,3 +2539,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Gazebo 模擬與實機無縫轉移**：ROS 2 Control 與最新 Gazebo 整合提供物理精確的 6-DOF 機械臂模擬環境，支援接觸動力學、摩擦力建模與伺服馬達特性模擬。開發者可在 Gazebo 中驗證視覺伺服控制律與軌跡規劃算法，後直接部署至實機無需程式碼修改，加速 ROS 2 機械臂應用從研發到量產的時程。該流程已驗證適合 Doosan、UR、Franka 等工業協作臂與 Hiwonder ArmPi 教育平台的完整設計驗證周期。[Example 7: Full tutorial with a 6DOF robot — ROS2_Control](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
 
+### 多臂協作力控制反饋與邊界強化學習整合驗證（2026 年 4 月 18 日補充）
+
+**多臂力控制同步反饋架構**：ROS 2 Humble/Jazzy 的 ForceTorqueSensor 語義元件與新增 AdmittanceController 實現雙臂協作操縱時的力同步反饋。該架構支援主-從力複制、接觸力限制與虛擬固定點控制，已驗證於 Doosan M0609 雙臂與 Franka Emika 系統的接觸性操作任務。Jetson Orin NX 邊界設備可實時運行 >500Hz 力迴圈，支援毫牛級力精度，為協作機械臂精密裝配奠定基礎。[Force and Torque Control Documentation](https://docs.ros.org/en/ros2_packages/rolling/api/ur_robot_driver/doc/usage/force_torque_control.html)
+
+**端對端強化學習與力控制混合架構**：2026 年新研究將深度強化學習（PPO/DDPG）與顯式力控制器結合，形成混合決策框架。高層策略網絡（Vision-Language-Action 模型）產生任務意圖，低層力控制器自動調整接觸力以適應環境變化。該架構在 Gazebo 中訓練，域適應微調後直接遷移至實機（Doosan、UR），成功率達 >85%。多臂協同場景中，不同臂可各自運行獨立策略，透過 Zenoh 共享力感測數據與任務狀態，實現無碰撞協調與接觸感知的自主操縱。[robotic_arm_environment GitHub](https://github.com/dvalenciar/robotic_arm_environment)
+
