@@ -2198,3 +2198,17 @@
 - **技術整合** - 整合 AI 視覺語言模型、精密致動、環境感知與自主決策，支援通用任務執行與複雜環境適應
 - **對機械手臂的意義** - 低成本人形架構驗證多臂協作的商業可行性，推動具身 AI 與多機械手臂系統的開源研究與社群建設
 - **參考** - [ByteDance Seed Research: GR-RL Framework](https://seed.bytedance.com/en/blog/seed-research-gr-rl-released-a-breakthrough-in-high-precision-manipulation-for-vla-models)
+
+#### 148. Physical Intelligence π0.7 — 組合泛化與零樣本任務遷移（Apr 2026）
+- **核心創新** - Physical Intelligence 發佈 π0.7 模型，實現機械人對未曾訓練過的任務的組合泛化能力，透過不同上下文學習技能的組合完成未知任務
+- **性能突破** - 驗證通用機械人大腦的可行性，支援跨任務、跨環境的組合遷移學習與零樣本適應
+- **技術核心** - 組合泛化的深度學習框架，打破單一任務限制，支援技能重組與即時任務求解
+- **對機械手臂的意義** - 為多臂系統提供通用推理能力，支援複雜多步協作任務的自適應學習與即時決策
+- **參考** - [Physical Intelligence: π0.7 Model for Compositional Robot Generalization](https://techcrunch.com/2026/04/16/physical-intelligence-a-hot-robotics-startup-says-its-new-robot-brain-can-figure-out-tasks-it-was-never-taught/)
+
+#### 149. Build AI Egocentric-1M 數據集 — 百萬小時第一視角物理 AI 基礎設施（Apr 2026）
+- **核心創新** - Build AI 於 4 月 8 日發佈 Egocentric-1M 數據集，包含約 100 萬小時第一視角視訊，為物理 AI 提供最大規模預訓練基礎
+- **數據規模** - 超越所有既有數據集總和，涵蓋多樣化現實世界任務與人類操作行為，支援大規模視覺語言動作模型預訓練
+- **應用意義** - 加速開源物理 AI 模型開發迭代，降低企業自構數據成本，推動具身 AI 民主化進展
+- **對機械手臂的意義** - 為多臂系統提供海量第一視角訓練數據，支援視覺語言動作模型的深度學習與泛化能力提升
+- **參考** - [Build AI Egocentric-1M: 1M Hours of Egocentric Video Dataset](https://www.labellerr.com/blog/egocentric-datasets-robotics/)
