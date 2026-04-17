@@ -2491,3 +2491,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **MoveIt Pro 9.1.0 實時介面改進**：PickNik 發布 MoveIt Pro 9.1.0 引入 OverridePoseOrientation 行為，強制夾持器向下接近姿態；Teleop UI 懸停預覽幽靈機械臂，支援位置、關節與夾持器開闔按鈕；SwitchControllers 自動激活/停用控制器鏈，優化臂與夾持器協調。ROS Jazzy 相容性補充，與 ROS Humble 並行，標準化跨 ROS 版本的機械臂部署。
 
+### ROS 2 多模態 AI 大腦與邊界 VLA 模型實時推理（2026 年 4 月 17 日新增）
+
+**量子化 VLA 模型邊界實時性能突破**：2026 年 Q1 起，至少十一家商業機械臂軟體商已將 VLA 模型佈署至企業級機械臂系統。量子化 VLA 模型在消費級 GPU 上實現 10-25Hz 實時推理，與機械臂操縱迴圈完全相容，成為 ROS 2 邊界機械臂的新標準。ArmPi Ultra 與 ROSOrin Pro 等 Hiwonder 平台已整合 DeepSeek、Qwen 等多模態語言模型，透過統一的文字-視覺-語音資料流直接驅動機械臂自主決策，實現「端對端」理解與執行用戶指令的具身 AI 架構。該框架結合 MoveIt 2 軌跡規劃與 Joint Trajectory Controller 實時控制，展示樹莓派邊界機械臂平台的 AI 自主化新紀元。[ROS 2 Evolved: Unleashing the AI Super Brain](https://www.hackster.io/HiwonderRobot/ros-2-evolved-unleashing-the-ai-super-brain-89df67) • [Embodied AI on ROS 2](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
+
