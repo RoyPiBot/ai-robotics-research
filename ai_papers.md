@@ -2165,3 +2165,17 @@
 - **應用意義** - 為下一代人形與協作機械人提供端到端的邊緣 AI 標準化部署模式
 - **對機械手臂的意義** - 建立多臂協作的標準化「大腦」架構，加速產業化進展，支援複雜工業自動化任務的邊緣群體智能實現
 - **參考** - [Qualcomm and Neura Robotics Strategic Collaboration](https://www.advantech.com/en-eu/resources/news/advantech-and-qualcomm-strengthen-strategic-collaboration-to-revolutionize-edge-ai-and-robotics-applications)
+
+#### 143. Newton — GPU 加速開源物理仿真引擎（Apr 2026）
+- **核心創新** - Newton 是全新開源 GPU 加速物理仿真引擎，基於 NVIDIA Warp 開發，專為機械人研究與複雜動力學模擬設計
+- **技術特色** - 高性能 GPU 計算支援大規模複雜物理系統，支援微分物理模擬與端到端深度學習優化
+- **應用場景** - 機械人運動規劃、觸覺模擬、複雜變形物體操控訓練，加速具身 AI 模型開發迭代
+- **對機械手臂的意義** - 提供高效物理推理基礎，支援多臂複雜操控任務的虛實遷移學習與協作決策優化
+- **參考** - [Newton: Open-Source GPU Physics Engine for Robotics](https://aitoolly.com/ai-news/article/2026-04-10-newton-a-new-open-source-gpu-accelerated-physics-engine-built-on-nvidia-warp-for-robotics-research)
+
+#### 144. ROS-LLM — 機械人自然語言控制與技能學習框架（Apr 2026）
+- **核心創新** - ROS-LLM 是開源系統將大語言模型與機械人作業系統深度整合，使非專家用自然語言控制機械人、從演示學習新技能
+- **技術特色** - 自動調參機制確保現實世界任務可靠執行，支援零樣本新任務泛化與自適應策略優化
+- **應用優勢** - 降低機械人開發門檻，加速工業場景的應用快速迭代，支援多機器人編隊協作
+- **對機械手臂的意義** - 實現多臂系統的統一自然語言控制框架，支援複雜多步協作任務的即時動態編程與適應性學習
+- **參考** - [A robot operating system framework for using large language models in embodied AI](https://www.nature.com/articles/s42256-026-01186-z)
