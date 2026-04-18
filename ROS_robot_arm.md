@@ -2576,3 +2576,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **太空軌道機械臂視覺伺服自主操縱**：視覺伺服在太空機械臂（Space Robotic Manipulators）的 On-Orbit Servicing 應用已成熟進展。ROS 框架在低重力、電磁干擾與高精度要求的空間環境中驗證視覺伺服控制，支援衛星捕獲、軌道修復與零件更換任務。相較地面應用，空間視覺伺服需對應微重力環境的動力學特性與通訊延遲（衛星控制中心延遲 1-3 秒），整合預測性控制與自適應伺服演算法。該領域應用正推動 ROS 2 任務空間（Task Space）控制框架的新發展，結合 MoveIt 2 的軌跡規劃與 Joint Trajectory Controller 的實時執行，標誌著 ROS 2 機械臂視覺伺服應用從地球邊界延伸至外太空的里程碑。[Visual Servoing for Robotic On-Orbit Servicing: A Survey](https://arxiv.org/html/2409.02324v1)
 
+### 2025 年 ROS 2 深度學習視覺伺服與多臂協作新進展（2026 年 4 月 18 日補充）
+
+**光聲機械人視覺伺服系統突破**：美國約翰霍普金斯大學 2025 年 4 月發表的 ROS 2 深度學習光聲機械人視覺伺服系統，結合神經網絡影像分析與實時軌跡規劃，在組織穿刺定位任務中相較傳統 ROS 系統性能提升 23.53%，針尖追蹤誤差從 2.8mm 降至 2.1mm。該系統整合 MoveIt 2 Humble 與高速相機（>500fps），支援多通道視覺伺服回饋，已驗證適合醫療手術機械臂與高精度邊界應用。[Development of a ROS2-based Photoacoustic-Robotic Visual Servoing System](https://pulselab.jhu.edu/wp-content/uploads/2025/04/Folk_SPIE_2025.pdf)
+
+**多臂深度學習協作框架標準化**：Frontiers in Robotics 2025 年新研究展示 ROS 2 多機械臂協作框架整合 YOLOv2 物體檢測、採樣式路徑規劃與 LiDAR 動態避障，支援 Husky 與 KINOVA Gen3 配對高達 6 組無性能衰減。該架構基於 ROS 2 Humble/Jazzy 原生支援，展示 ROS 2 在實際製造環境多臂協作的可靠性與擴展性。[A multi-robot collaborative manipulation framework](https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1585544/full)
+
