@@ -2568,3 +2568,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 Zenoh 分散式視覺伺服同步**：多臂系統的視覺伺服回饋現可透過 Zenoh 的硬體時間同步（TSYNC）機制實現亞毫秒級的跨機械臂位姿同步。相較傳統 DDS，Zenoh 在廣域邊界網路上的延遲降低 3-5 倍，支援 >1000 個視覺伺服節點的統一編排。ROS 2 Lyrical Luth（2026 年 5 月）將正式推廣該能力，使分散式多臂協作的視覺導引操縱成為主流。[ROS 2 Lyrical Luth Zenoh Support](https://docs.ros.org/en/rolling/Releases/Release-Lyrical-Luth.html)
 
+### ROS 2 Hardware Drivers 視覺伺服驅動標準化（2026 年 1 月新公布）
+
+**ROS 2 Hardware Drivers Page — 視覺伺服與邊界驅動統一標準**：PickNik Robotics 於 2025 年 1 月發布《ROS 2 Hardware Drivers Page: A New Resource for the ROS Community》，正式推廣視覺伺服、夾持器控制與敏感力矩反饋驅動的標準化認證。該頁面整合 60+ 協作臂與工業機械臂的驅動狀態評等，對應 ROS 2 版本相容性與視覺伺服支援程度。新增驅動需通過官方審核，驗證視覺伺服回饋迴圈的延遲 <50ms 與力控制精度 <0.1N，正式納入 ROS 2 官方生態認證。該標準化推動邊界機械臂視覺伺服應用的統一部署與驗證，加速企業採用 ROS 2 的信心與完整性保障。[ROS 2 Hardware Drivers Page](https://picknik.ai/2025/01/06/ROS-Hardware-Ecosystems-Announcement.html)
+
+### 空間機械臂視覺伺服與 On-Orbit Servicing 應用（2024-2026）
+
+**太空軌道機械臂視覺伺服自主操縱**：視覺伺服在太空機械臂（Space Robotic Manipulators）的 On-Orbit Servicing 應用已成熟進展。ROS 框架在低重力、電磁干擾與高精度要求的空間環境中驗證視覺伺服控制，支援衛星捕獲、軌道修復與零件更換任務。相較地面應用，空間視覺伺服需對應微重力環境的動力學特性與通訊延遲（衛星控制中心延遲 1-3 秒），整合預測性控制與自適應伺服演算法。該領域應用正推動 ROS 2 任務空間（Task Space）控制框架的新發展，結合 MoveIt 2 的軌跡規劃與 Joint Trajectory Controller 的實時執行，標誌著 ROS 2 機械臂視覺伺服應用從地球邊界延伸至外太空的里程碑。[Visual Servoing for Robotic On-Orbit Servicing: A Survey](https://arxiv.org/html/2409.02324v1)
+
