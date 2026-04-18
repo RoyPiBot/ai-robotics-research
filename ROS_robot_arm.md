@@ -2048,6 +2048,15 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **PickNik & Optimax 聯合開源 ABB 機械臂驅動**：全球領先的運動規劃企業 PickNik 與 Optimax 公司達成合作，正式發布 ABB 機械臂的開源 ROS 2 驅動包，提供硬體介面、MoveIt 2 無縫整合與完整運動規劃方案。該驅動已驗證相容 ROS 2 Humble/Jazzy，支援 Raspberry Pi 5 邊界部署，大幅降低 ABB 機械臂在中小型研發團隊中的技術整合成本，標誌著工業級機械臂開源生態的進一步成熟。
 
+### Joint Trajectory Controller 與 MoveIt 2 深度整合（2026 年 4 月新增）
+
+**Joint Trajectory Controller 標準化**：ROS 2 Control 框架中的 Joint Trajectory Controller 已成為機械臂軌跡控制的業界標準。該控制器接收來自 MoveIt 2 的軌跡資料（joint positions、velocities、efforts），輸出實時指令至硬體介面。支援多種物理模式：位置控制（Position Mode）、速度控制（Velocity Mode）與力控制（Effort Mode），相容 Kinova Kortex、Universal Robots UR、ROBOTIS OpenMANIPULATOR 等主流機械臂。
+
+**MoveIt 2 Servo 與視覺伺服融合**：MoveIt 2 最新版本新增 Servo Teleop（遙控伺服）與視覺伺服反饋環節，允許實時調整機械臂終端執行器速度與方向。搭配影像處理管線（ROS Image Transport 與 NV12 格式支援）與深度學習模型，可實現毫秒級視覺伺服迴圈，適合精密裝配與動態追蹤任務。已驗證於 Gazebo Harmonic 模擬與 Jetson Orin 邊界推理部署。
+
+- [ROS2_Control Documentation](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+- [ros2_control Supported Robots](https://control.ros.org/rolling/doc/supported_robots/supported_robots.html)
+
 ### Pi 5 邊界 AI 機械臂：Multimodal LLM 整合時代（2026 年 4 月最新）
 
 **ArmPi Ultra 與 ROSOrin Pro**：HiWonder 於 2026 年 4 月 7 日發布業界首款整合 Multimodal LLM 的 Raspberry Pi 5 機械臂平台（ArmPi Ultra），支援自然語言指令、視覺感知與複雜操作。該系統基於 ROS 2 架構，結合 OpenCV + MediaPipe 的機器學習能力，可實現 SLAM 自主導航、多自由度協作抓取與實時語音互動。ROSOrin Pro 則進一步整合 6-DOF 機械臂與 AI 語音模組，演示了邊界端完整的具身智能（Embodied AI）工作流。
