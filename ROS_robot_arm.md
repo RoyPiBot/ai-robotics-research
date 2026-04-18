@@ -2582,3 +2582,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **多臂深度學習協作框架標準化**：Frontiers in Robotics 2025 年新研究展示 ROS 2 多機械臂協作框架整合 YOLOv2 物體檢測、採樣式路徑規劃與 LiDAR 動態避障，支援 Husky 與 KINOVA Gen3 配對高達 6 組無性能衰減。該架構基於 ROS 2 Humble/Jazzy 原生支援，展示 ROS 2 在實際製造環境多臂協作的可靠性與擴展性。[A multi-robot collaborative manipulation framework](https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1585544/full)
 
+### ROS 2 生態邁向生產級全面遷移（2026 年 4 月 18 日補充）
+
+**PAL Robotics 官方宣布全面轉向 ROS 2**：PAL Robotics 於 2026 年 4 月 1 日起正式終止 ROS 1 官方支援，基線轉向 ROS 2 Humble 搭配 Ubuntu 22.04。ROS 1（包含 Noetic）已於 2025 年 5 月官方停支，所有新功能、安全補丁與漏洞修復將僅透過 ROS 2 提供。該宣示標誌著業界級協作臂（TIAGo/PMB2 系列）全面拥抱 ROS 2，推動機械臂視覺伺服與多臂協作框架的統一化。[Transitioning to ROS2 | PAL Robotics News](https://pal-robotics.com/news/complete-transition-ros2/)
+
+**ROS 2 產業採納率突破 90%**：Robotics and Automation News 2026 年 4 月報導指出，ROS 2 生態套件下載量年增 85%，現已達年度近 10 億次下載，佔整體 ROS 生態 90% 以上。業界級機械臂軟體商（PickNik、Hiwonder、Universal Robots）已完成 ROS 2 驅動程式完全相容認證，支援視覺伺服 <50ms 端對端延遲標準。ROS Kilted Kaiju 新版本（2026 年發佈）將 Zenoh 列為 Tier 1 中介軟體，進一步優化多臂分散式視覺伺服與邊界協作系統的延遲特性。[ROS 2 and the shift to production robotics](https://roboticsandautomationnews.com/2026/04/13/ros-2-the-next-generation-for-robust-and-scalable-robotics-applications/100535/)
+
