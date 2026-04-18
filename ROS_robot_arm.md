@@ -2588,3 +2588,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 產業採納率突破 90%**：Robotics and Automation News 2026 年 4 月報導指出，ROS 2 生態套件下載量年增 85%，現已達年度近 10 億次下載，佔整體 ROS 生態 90% 以上。業界級機械臂軟體商（PickNik、Hiwonder、Universal Robots）已完成 ROS 2 驅動程式完全相容認證，支援視覺伺服 <50ms 端對端延遲標準。ROS Kilted Kaiju 新版本（2026 年發佈）將 Zenoh 列為 Tier 1 中介軟體，進一步優化多臂分散式視覺伺服與邊界協作系統的延遲特性。[ROS 2 and the shift to production robotics](https://roboticsandautomationnews.com/2026/04/13/ros-2-the-next-generation-for-robust-and-scalable-robotics-applications/100535/)
 
+### reBot Arm B601-DM — 開源 6+1 軸具身 AI 機械臂平台（2026 年 4 月 17 日新增）
+
+**reBot Arm B601-DM 開源機械臂與多框架相容性**：Seeed Studio 於 2026 年 4 月 17 日發布 reBot Arm B601-DM，一款完全開源的 6 軸機械臂搭配平行夾持器（6+1 DoF），採用 Damiao 高性能致動器，達成 0.2mm 重複精度與 1.5kg 有效載荷。該平台原生支援 ROS 1/2、Hugging Face LeRobot、NVIDIA Isaac Sim 與 Pinocchio 動力學引擎，其中 ROS 2 Humble 完整支援與優化的 MoveIt 2 驅動程式正在開發中。作為低成本開源平台，reBot Arm 融合視覺伺服、具身 AI 學習與遠端操作能力，標誌著開源邊界機械臂生態與商業級機械臂收斂的新里程碑，適合研究機構、教育機構與邊界應用開發。[reBot Arm B601-DM — CNX Software](https://www.cnx-software.com/2026/04/17/rebot-arm-b601-dm-an-open-source-61-dof-robotic-arm-for-embodied-ai-and-teleoperation-applications/)
+
