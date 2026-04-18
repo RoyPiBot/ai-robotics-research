@@ -2592,3 +2592,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **reBot Arm B601-DM 開源機械臂與多框架相容性**：Seeed Studio 於 2026 年 4 月 17 日發布 reBot Arm B601-DM，一款完全開源的 6 軸機械臂搭配平行夾持器（6+1 DoF），採用 Damiao 高性能致動器，達成 0.2mm 重複精度與 1.5kg 有效載荷。該平台原生支援 ROS 1/2、Hugging Face LeRobot、NVIDIA Isaac Sim 與 Pinocchio 動力學引擎，其中 ROS 2 Humble 完整支援與優化的 MoveIt 2 驅動程式正在開發中。作為低成本開源平台，reBot Arm 融合視覺伺服、具身 AI 學習與遠端操作能力，標誌著開源邊界機械臂生態與商業級機械臂收斂的新里程碑，適合研究機構、教育機構與邊界應用開發。[reBot Arm B601-DM — CNX Software](https://www.cnx-software.com/2026/04/17/rebot-arm-b601-dm-an-open-source-61-dof-robotic-arm-for-embodied-ai-and-teleoperation-applications/)
 
+### 商用協作臂 ROS 2 升級浪潮（2026 年 4 月 18 日補充）
+
+**睿爾曼 (RealMan) 機械臂 ROS 2 完全升級**：睿爾曼智能於 2026 年 Q1 啟動全線協作臂（RM65/RM70/RM75）的 ROS 2 Humble 生態整合，官方提供完整的 MoveIt 2 配置與 Joint Trajectory Controller 驅動程式。新版本支援視覺伺服反饋迴圈 <40ms、力/扭矩感測器整合與雲端業務邏輯連接，相較舊版本開發週期縮短 35%，企業可直接借用 ROS 生態的深度強化學習工具進行協作臂策略訓練。該升級標誌著國產協作臂正式進入 ROS 2 產業級應用階段，與 UR/Doosan 等國際廠商形成統一的軟體標準。
+
+**協作臂教育與研究生態快速擴展**：ROS 機械臂開發教學專案（《ROS機械臂開發與實踐》）已匯總 Kinetic/Melodic/Noetic/ROS 2 Humble 的完整教學源碼，提供 Python 與 C++ 雙實現版本，支援視覺抓取、軌跡規劃與多臂協調案例。該教材已被國內多所大學採納作為機械人實驗課程基礎，推動 ROS 2 在高校的快速普及，同時降低中小企業進入邊界機械臂應用的技術門檻。[ROS機械臂開發與實踐 GitHub](https://github.com/jiuyewxy/ros_arm_tutorials)
+
