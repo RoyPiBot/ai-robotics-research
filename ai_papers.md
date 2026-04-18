@@ -1297,6 +1297,19 @@
 - **投稿規模** - 共 164 篇 VLA 相關論文投稿，涵蓋離散擴散 VLA、推理模型、基準測試
 - **核心基準** - LIBERO、CALVIN、SIMPLER 等複雜操作任務基準
 - **新興模型** - MemER（經驗檢索機器人記憶）、ABot-M0（動作歧義學習的 VLA 基礎模型）、VLATest（VLA 模型測試框架）
+
+#### 13. ReinboT — 強化學習增強視覺語言機械手臂操作（2026 年 4 月 OpenReview）
+- **核心創新** - 將強化學習與視覺語言模型結合，突破傳統 VLA 的監督學習限制，實現機械手臂自適應操作能力
+- **技術亮點** - 通過 RL 優化機械手臂的動作策略，同時利用 VLM 的語言理解與視覺推理能力進行決策
+- **應用場景** - 長視地平線複雜操作、環境變化適應、從失敗學習的自改進機制
+- **對 Roy 的意義** - RL+VLM 融合是機械手臂自主學習的新方向，適合 ROS 系統研究
+- **參考**：[ReinboT - OpenReview](https://openreview.net/forum?id=Mzz4BhdIFb)
+
+#### 14. 強化學習視覺語言動作模型綜述（2025 年 12 月 TechRxiv）
+- **綜述範圍** - 系統梳理 RL 在 VLA 模型訓練與優化中的應用，涵蓋獎勵設計、策略搜索、多模態學習
+- **分類框架** - 自動回歸型、擴散型、強化型、混合型、專用型五大 VLA 範式對比
+- **實際突破** - 真實機械手臂 RL 訓練成功率從 30% 提升至 90%（200 次實際交互內）
+- **參考**：[A Survey on RL of VLA Models - TechRxiv](https://www.techrxiv.org/doi/full/10.36227/techrxiv.176531955.54563920/v1)
 - **架構趨勢** - VLA 模型去大型 VLM 依賴，輕量級小規模 VLA 開始與標準化
 - **挑戰** - 現有 VLA 模型穩健性不足，離實際部署仍需強化對抗能力
 - **參考** - [ICLR 2026 VLA 分析](https://mbreuss.github.io/blog_post_iclr_26_vla.html) / [VLA 綜合調查](https://arxiv.org/html/2509.19012v1) / [VLATest 論文](https://dl.acm.org/doi/10.1145/3729343)
