@@ -2672,3 +2672,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ros2_control 硬體抽象層靈活性突破與 Jazzy 實時進展**：ROS 2 Jazzy 版本正式推廣 ros2_control 框架的跨版本重大改進，包括字串參數傳遞、自訂資料結構支援與異質硬體無痛整合。該框架現已支援 60+ 協作臂型號（包括教育級、工業級），提供硬體無關的控制器管理、實時迴圈保障 >200Hz，並無縫整合 MoveIt 2 與 Gazebo。ROS 2 官方文檔最新版本（Mar 2026）刊載 6-DOF 機械臂完整實踐範例，展示如何在 Raspberry Pi 5 或 Jetson NX 上運行完整控制管道，為 Roy 的多臂視覺伺服與強化學習提供標準化基礎。[ROS2_Control Rolling Documentation - Example 7: Full tutorial with a 6DOF robot](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
 
+### 開源 3D 列印機械臂教育與 Hugging Face LeRobot 整合（2026 年 3 月新進展）
+
+**Hackaday 開源 3D 列印機械臂設計突破**：2026 年 3 月 24 日 Hackaday 發佈的開源 3D 列印機械臂專案展示低成本教學平台的新可能。該設計完全相容 ROS 2 Humble 與 MoveIt 2，搭配平價步進馬達與 Arduino 控制板，總成本 <$300，已驗證適合大學入門機械人課程。該趨勢推動開源邊界機械臂生態，與 reBot Arm、JetArm Pro 等商業平台形成教學金字塔，加速 ROS 2 在高校的技術普及。同時，Hugging Face LeRobot 框架對 3D 列印機械臂的原生支援正在開發中，預期 2026 年底完成，屆時學生可直接訓練視覺驅動的操作策略。[3D Printed Robot Arm Built For Learning Purposes - Hackaday](https://hackaday.com/2026/03/24/3d-printed-robot-arm-built-for-learning-purposes/)
+
