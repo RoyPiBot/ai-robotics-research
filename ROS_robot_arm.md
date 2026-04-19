@@ -2648,3 +2648,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **事件型相機驅動的多臂強化學習閉迴圈**：SEBVS 框架與多智能體強化學習結合，使機械臂視覺伺服系統在低光與高速場景實現自主策略優化。事件相機的毫秒級時間解析度支援 >100Hz 視覺迴圈，加速強化學習訓練收斂 3-5 倍，已驗證適合邊界機械臂的實時自適應操縱。
 
+### 數位孿生與 SAC 強化學習實時控制驗證（2026 年 4 月 19 日補充）
+
+**數位孿生驅動的機械臂實時適應控制**：近期研究整合軟體演員評論（Soft Actor-Critic, SAC）強化學習算法與數位孿生技術，實現 ROS 2 機械臂的實時自適應控制。該架構透過 Unity 遊戲引擎建立物理精確的機械臂模擬環境，與 ROS 2 實現雙向閉迴圈同步，SAC 算法在虛擬環境中訓練後直接遷移至實機。相較傳統規劃式控制，數位孿生-SAC 混合方案在動態環境中的適應性提升 32%，且訓練收斂時間縮短 50%，已驗證於工業協作臂的實時軌跡追蹤與碰撞迴避應用。該方法為邊界機械臂的自主決策與實時優化提供新典範。[Adaptive robotic arm control through digital twin integration and hybrid neural networks](https://www.nature.com/articles/s41598-025-34822-6)
+
+**混合實境數位孿生人機互動系統優勢**：數位孿生技術在 2026 年已成熟應用於複雜工作環境（特別是危險工況如帶電作業）的機械臂遠端操作。混合實境（Mixed Reality）數位孿生系統將實時機械臂狀態與 AR 視覺疊加整合，操作員可在虛擬-現實融合介面中進行精密操縱，相較傳統遠端視訊控制，任務完成時間平均降低 14.3%。多臂協作場景中，數位孿生提供統一的狀態表示與視覺回饋，支援跨地域多操作員協同，標誌著 ROS 2 邊界機械臂進入「人在迴圈」智能輔助階段。[Design of a mixed reality–based digital twin human–machine interaction system](https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1774317/full)
+
