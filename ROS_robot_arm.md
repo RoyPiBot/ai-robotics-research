@@ -2654,3 +2654,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **混合實境數位孿生人機互動系統優勢**：數位孿生技術在 2026 年已成熟應用於複雜工作環境（特別是危險工況如帶電作業）的機械臂遠端操作。混合實境（Mixed Reality）數位孿生系統將實時機械臂狀態與 AR 視覺疊加整合，操作員可在虛擬-現實融合介面中進行精密操縱，相較傳統遠端視訊控制，任務完成時間平均降低 14.3%。多臂協作場景中，數位孿生提供統一的狀態表示與視覺回饋，支援跨地域多操作員協同，標誌著 ROS 2 邊界機械臂進入「人在迴圈」智能輔助階段。[Design of a mixed reality–based digital twin human–machine interaction system](https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1774317/full)
 
+### FANUC 官方 ROS 2 驅動與 AI-啟用工業機械臂整合（2026 年 4 月 19 日新增）
+
+**FANUC ROS 2 官方支援與 Python 原生整合**：FANUC 於 2025-2026 年期間正式發佈官方 ROS 2 驅動程式（GitHub），實現標準化的機械臂控制與視覺伺服回饋迴圈。官方提供完整的 Python 與 C++ API，支援 Humble/Jazzy 版本，使研究機構與工業部署可直接整合 FANUC 機械臂至 ROS 2 生態，享受 MoveIt 2 規劃、Gazebo 模擬與視覺伺服標準化框架。該支援標誌著日系工業臂廠商正式擁抱開源 ROS 2，打破過去專有系統的局限，加速工業機械臂 AI 轉型。
+
+**Yaskawa MOTOMAN AI-啟用自主操縱系統**：Yaskawa 展示的 MOTOMAN NEXT-NHC 10DE 雙臂機械臂整合深度模仿學習與實時視覺伺服，能從人類示範中學習精密的裝箱操作，自動適應物品形狀與大小變化。該系統支援 ROS 2 驅動（官方測試中）與 NVIDIA Isaac ROS 深度學習推理框架，邊界部署於 Jetson Orin 平台。此類 AI-啟用機械臂代表產業級協作臂進入「從示教自動化到自主學習」的範典轉變，適合製造業、物流與倉儲應用。[FANUC ROS 2 Driver](https://github.com/ros-industrial/fanuc)、[Yaskawa Robotics Autonomous Learning](https://www.therobotreport.com/irex-2025-from-programmed-perceptive/)
+
