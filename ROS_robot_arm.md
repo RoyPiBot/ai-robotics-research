@@ -2694,3 +2694,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **PickNik Robotics ROS 2 Hardware Drivers 官方資源中心**：PickNik 於 2025 年 1 月正式發佈 ROS 2 Hardware Drivers 資源頁面，匯總全球 60+ 協作與工業機械臂的官方 ROS 2 驅動相容性狀態。該資源提供標準化的驅動認證標籤、性能基準測試與相容性驗證，新增機械臂驅動需通過視覺伺服端對端延遲 <50ms、力控制精度 <0.1N 的官方認證。同時，ros-controls 專案已獲納入 OSRA（Open Source Robotics Association）旗下，維護者數量翻倍，異步組件、URDF 原生訪問等長期功能已在 2026 年 3 月正式穩定。該生態擴展標誌著 ROS 2 機械臂驅動邁向「標準化認證 + 社群加速」的成熟產業模式。[PickNik ROS 2 Hardware Ecosystem Database](https://picknik.ai/2025/01/06/ROS-Hardware-Ecosystems-Announcement.html)
 
+### Universal Robots UR3 與 Robotiq 2-Finger 夾爪 ROS 2 Jazzy 整合案例（2026 年 4 月最新）
+
+**UR3 + Robotiq 2-Finger Gripper 完整工作流集成**：開源社群已發佈針對 ROS 2 Jazzy 的 UR3 機械臂加 Robotiq 2-Finger Gripper 完整整合方案，包含 URDF 模型、ros2_control 驅動配置、Gazebo Harmonic 模擬環境、MoveIt Task Constructor 取放路徑規劃、RGB-D 視覺物體辨識與 LLM 驅動的任務規劃功能。該整合方案驗證於 ROS 2 Jazzy 與 Ignition Gazebo，支援端對端的數位孿生仿真至實體部署，使用者可直接評估機械臂夾爪配置、衝突檢測與取放成功率。此案例為產業應用與教學實踐提供了完整藍圖。[GitHub - darshmenon/UR3_ROS2_PICK_AND_PLACE](https://github.com/darshmenon/UR3_ROS2_PICK_AND_PLACE)
+
