@@ -2676,3 +2676,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Hackaday 開源 3D 列印機械臂設計突破**：2026 年 3 月 24 日 Hackaday 發佈的開源 3D 列印機械臂專案展示低成本教學平台的新可能。該設計完全相容 ROS 2 Humble 與 MoveIt 2，搭配平價步進馬達與 Arduino 控制板，總成本 <$300，已驗證適合大學入門機械人課程。該趨勢推動開源邊界機械臂生態，與 reBot Arm、JetArm Pro 等商業平台形成教學金字塔，加速 ROS 2 在高校的技術普及。同時，Hugging Face LeRobot 框架對 3D 列印機械臂的原生支援正在開發中，預期 2026 年底完成，屆時學生可直接訓練視覺驅動的操作策略。[3D Printed Robot Arm Built For Learning Purposes - Hackaday](https://hackaday.com/2026/03/24/3d-printed-robot-arm-built-for-learning-purposes/)
 
+### ROS 2 Control Hardware Interface 標準化與實時控制框架進展（2026 年 4 月 19 日補充）
+
+**ros2_control 硬體無關架構與 State/Command Interface 標準化**：ROS 2 Control 框架核心設計透過 HardwareInterface 抽象層實現硬體無關的機械臂控制。state_interfaces 提供唯讀的感測器資料接口（關節編碼器、力矩感測器），command_interfaces 則提供讀寫的執行器控制接口（位置、速度、力矩指令）。該標準化架構使廠商驅動程式可動態載入，與 MoveIt 2 軌跡規劃無縫整合。ROS 2 Rolling（Mar 2026）官方文檔完整展示 6-DOF 機械臂的 Hardware Interface 實踐，驗證支援 >200Hz 控制迴圈與毫秒級視覺伺服反饋。[ROS2_Control Rolling Documentation - Hardware Interface Example](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
+**ROS-Industrial 聯盟硬體相容性驗證與多廠商生態**：PickNik Robotics 維護的 ROS 2 Hardware Ecosystem Database 已涵蓋 60+ 協作與工業機械臂，提供標準化的相容性標籤與性能基準測試。新增機械臂驅動需通過官方認證驗證視覺伺服端對端延遲 <50ms、力控制精度 <0.1N，確保跨廠商系統的可互操作性。該標準化推動邊界機械臂應用的統一部署，加速 ROS 2 在工業製造與邊界應用的產業級採納。[PickNik ROS 2 Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/)
+
