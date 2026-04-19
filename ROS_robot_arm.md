@@ -2660,3 +2660,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Yaskawa MOTOMAN AI-啟用自主操縱系統**：Yaskawa 展示的 MOTOMAN NEXT-NHC 10DE 雙臂機械臂整合深度模仿學習與實時視覺伺服，能從人類示範中學習精密的裝箱操作，自動適應物品形狀與大小變化。該系統支援 ROS 2 驅動（官方測試中）與 NVIDIA Isaac ROS 深度學習推理框架，邊界部署於 Jetson Orin 平台。此類 AI-啟用機械臂代表產業級協作臂進入「從示教自動化到自主學習」的範典轉變，適合製造業、物流與倉儲應用。[FANUC ROS 2 Driver](https://github.com/ros-industrial/fanuc)、[Yaskawa Robotics Autonomous Learning](https://www.therobotreport.com/irex-2025-from-programmed-perceptive/)
 
+### 協作機械臂數位孿生實時同步驗證（2026 年 4 月 19 日補充）
+
+**Unity-ROS 整合數位孿生雙向同步驗證**：近期研究驗證了 7-DOF JetCobot 協作臂搭配 Unity 遊戲引擎建立的數位孿生系統，實現雙向實時同步。該系統透過 ROS 2 訂閱關節位置與力感測器資料，同步更新虛擬孿生模型；虛擬環境中的路徑規劃結果經由 TCP 連線轉換為 ROS 2 指令控制實機。實驗測量顯示端對端延遲僅 20-77ms，關節位置準確度達 99.99%，支援互動式路徑編輯與實時軌跡生成。該驗證架構標誌著 ROS 2 協作臂邁向「虛實即時融合」應用階段，適合危險環境遠端操作與複雜製造任務規劃。[Unity-ROS Digital Twin Integration Study](https://www.mdpi.com/2075-1702/14/4/387)、[IEEE Real-Time Collaborative Robot Digital Twin Synchronization](https://ieeexplore.ieee.org/document/10333055/)
+
