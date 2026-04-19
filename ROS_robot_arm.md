@@ -2664,3 +2664,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Unity-ROS 整合數位孿生雙向同步驗證**：近期研究驗證了 7-DOF JetCobot 協作臂搭配 Unity 遊戲引擎建立的數位孿生系統，實現雙向實時同步。該系統透過 ROS 2 訂閱關節位置與力感測器資料，同步更新虛擬孿生模型；虛擬環境中的路徑規劃結果經由 TCP 連線轉換為 ROS 2 指令控制實機。實驗測量顯示端對端延遲僅 20-77ms，關節位置準確度達 99.99%，支援互動式路徑編輯與實時軌跡生成。該驗證架構標誌著 ROS 2 協作臂邁向「虛實即時融合」應用階段，適合危險環境遠端操作與複雜製造任務規劃。[Unity-ROS Digital Twin Integration Study](https://www.mdpi.com/2075-1702/14/4/387)、[IEEE Real-Time Collaborative Robot Digital Twin Synchronization](https://ieeexplore.ieee.org/document/10333055/)
 
+### JetArm Pro 模組化 ROS 2 協作平台（2026 年 1 月發佈）
+
+**JetArm Pro 6-DOF 協作臂與邊界擴展生態**：Hiwonder 推出的 JetArm Pro 是原生 ROS 2 設計的教育與研究級 6-DOF 協作臂，搭載 Jetson Orin NX 邊界計算單元，支援模組化硬體擴展（視覺模組、夾爪、感測器）。該平台完全相容 MoveIt 2、ros2_control 標準化框架，官方提供整套 Python/C++ SDK 與 Gazebo 模擬環境。成本 <$2000，已驗證適合大學機械人實驗室與中小企業進行視覺伺服、強化學習與多臂協作研究，標誌著開源教育級協作臂邁向「硬體完整度+軟體成熟度」的新高度。[JetArm Pro: Expandable ROS Platform for Mobile Manipulation - Hackster.io](https://www.hackster.io/HiwonderRobot/jetarm-pro-expandable-ros-platform-for-mobile-manipulation-aff995)
+
+### ros2_control ROS 2 Jazzy 版本功能擴展（2026 年最新）
+
+**ros2_control 硬體抽象層靈活性突破與 Jazzy 實時進展**：ROS 2 Jazzy 版本正式推廣 ros2_control 框架的跨版本重大改進，包括字串參數傳遞、自訂資料結構支援與異質硬體無痛整合。該框架現已支援 60+ 協作臂型號（包括教育級、工業級），提供硬體無關的控制器管理、實時迴圈保障 >200Hz，並無縫整合 MoveIt 2 與 Gazebo。ROS 2 官方文檔最新版本（Mar 2026）刊載 6-DOF 機械臂完整實踐範例，展示如何在 Raspberry Pi 5 或 Jetson NX 上運行完整控制管道，為 Roy 的多臂視覺伺服與強化學習提供標準化基礎。[ROS2_Control Rolling Documentation - Example 7: Full tutorial with a 6DOF robot](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
