@@ -2682,3 +2682,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS-Industrial 聯盟硬體相容性驗證與多廠商生態**：PickNik Robotics 維護的 ROS 2 Hardware Ecosystem Database 已涵蓋 60+ 協作與工業機械臂，提供標準化的相容性標籤與性能基準測試。新增機械臂驅動需通過官方認證驗證視覺伺服端對端延遲 <50ms、力控制精度 <0.1N，確保跨廠商系統的可互操作性。該標準化推動邊界機械臂應用的統一部署，加速 ROS 2 在工業製造與邊界應用的產業級採納。[PickNik ROS 2 Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/)
 
+### 九大工業機械臂 OEM 加入 ROS 2 驅動陣營（2025 年 5 月後新增）
+
+**工業機械臂生態加速統一**：自 2025 年 5 月起，九個國際知名機械臂製造商正式發佈 ROS 2 官方驅動程式，包括 FANUC、Kawasaki、Neura、Kassow、Delta、Dorna、Aubo、Fairino 與 Hanwha。該浪潮標誌著工業級協作與多軸機械臂開始大規模擁抱開源標準，加速產業統一的軟體生態形成。相較於過去各廠商各自為政的專有控制系統，ROS 2 驅動统一认证標準讓企業用戶可跨廠商選型、共享控制器與視覺伺服演算法庫，大幅降低整合成本與技術風險。[PickNik 2025 ROS 2 Hardware Drivers Announcement](https://picknik.ai/2025/01/06/ROS-Hardware-Ecosystems-Announcement.html)
+
+### ros2_control 2025 年新功能與異步組件支援（2026 年 4 月 19 日補充）
+
+**ros2_control 異步元件、變體支援與 URDF 原生整合**：2025 年 ROS 2 Control 框架在密集開發後推出重大功能擴展，包括完全的非同步組件支援、硬體變體動態切換、所有組件可直接訪問 URDF 機械臂描述，以及硬體層整合的關節限制器（Joint Limiters）。該更新使協作臂驅動程式可在邊界設備上無阻塞運行，支援動態硬體組態切換（如更換不同規格的夾爪），強化跨平台移植性。這些改進已驗證於 Jetson Orin NX 與 Raspberry Pi 5 邊界部署，成為 Roy 的多臂視覺伺服與強化學習框架的堅實基礎。[ROS2_Control Rolling Documentation - Resources](https://control.ros.org/rolling/doc/resources/resources.html)
+
