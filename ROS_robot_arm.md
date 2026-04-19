@@ -2032,9 +2032,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### 強化學習與機械臂控制優化（2026 年 4 月新增）
 
 **強化學習在 ROS 2 機械臂的整合進展**：
-- **RL 實驗平臺**：多個開源專案如 [robotic_arm_environment](https://github.com/dvalenciar/robotic_arm_environment)（Doosan 機械臂）將 ROS 2 與強化學習框架（Gym、Ray RLlib）無縫整合，提供完整的模擬-實體轉移（Sim-to-Real）工作流
-- **Gazebo Kura 支援**：新版本 Gazebo 物理引擎遷移至 DART 6.16，大幅改善 RL 訓練時的接觸密集型任務模擬品質
-- **應用成果**：RL 訓練的機械臂控制器在精密抓取、動態適應工況上的性能相比傳統硬編碼控制提升 30-50%
+- **RL 實驗平臺**：多個開源專案如 [robotic_arm_environment](https://github.com/dvalenciar/robotic_arm_environment)（Doosan 機械臂）將 ROS 2 與強化學習框架（Gym、Ray RLlib）無縫整合，提供完整的模擬-實體轉移（Sim-to-Real）工作流。另有 [ROS2Learn](https://arxiv.org/abs/1903.06282) 框架支援 Proximal Policy Optimization 與 Actor-Critic 演算法，直接從關節狀態訓練
+- **力控制強化學習**：CRISP（TUM 研發，C++ 實現）提供相容 ROS 2 與 ros2_control 的柔順控制器，於 Franka Robotics FR3 與 KUKA IIWA 驗證，支援接觸密集型任務的端到端 RL 訓練
+- **Gazebo Kura 與數位孿生**：新版本 Gazebo 物理引擎遷移至 DART 6.16；數位孿生技術結合 SAC（Soft Actor-Critic）RL 演算法與 ROS 2 實現製造應用的實時自適應控制
+- **應用成果**：RL 訓練的機械臂控制器在精密抓取、動態適應工況上的性能相比傳統硬編碼控制提升 30-50%；工業製造場景的數位孿生實時控制已商用化
 
 **RQT Frame Editor 與視覺工具改進**：ROS 外掛已新增視覺化座標轉換編輯功能，簡化複雜多臂系統的運動學設定，減少 URDF 手動調試的工作量。
 
