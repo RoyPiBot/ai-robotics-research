@@ -2728,4 +2728,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **LanderPi 融合 LLM、ROS 2 與 3D 視覺的具身 AI 架構**：Hiwonder 於 2026 年 4 月發表 LanderPi 具身 AI 平台，原生整合多模式大語言模型（Vision-Language-Action）、ROS 2 Humble、3D TOF LiDAR 與深度相機。該平台搭載 Jetson Orin Nano/NX，支援即時場景理解、自然語言任務分解與多臂協作規劃。相較傳統預編程機械臂，LanderPi 通過多模式推理實現「語言驅動的機械臂自主操縱」，單個 LLM 推理週期 <500ms，視覺伺服迴圈維持 >60Hz。該平台標誌著 ROS 2 邊界機械臂進入「自然語言界面」時代，適合複雜現場工況、倉儲揀配與人機協作場景。[Embodied AI with LanderPi: Fusing LLMs, ROS 2, and 3D Vision](https://www.hackster.io/HiwonderRobot/embodied-ai-with-landerpi-fusing-llms-ros-2-and-3d-vision-1f744b)
 
+### ROS 2 版本路線圖與產業統一標準（2026 年 4 月 20 日補充）
+
+**ROS 2 Humble 長期支援至 2027 年與 Lyrical Luth 新版規劃**：ROS 2 Humble 已成為業界主流基線版本，官方支援期限延長至 2027 年底，確保企業級機械臂部署的長期維護與安全補丁支援。同時，ROS 2 Lyrical Luth 預計於 2026 年 5 月發佈，將作為新的 5 年長期支援版本，整合 Zenoh Tier 1 中介軟體、ROS 2 Control 異步組件完全支援與跨邊界設備的統一時間同步機制。該版本規劃標誌著 ROS 2 進入「多版本並行支援」階段，企業可靈活選擇 Humble（穩定遺留系統）或 Lyrical Luth（新型邊界機械臂應用）進行部署。[ROS 2 Release Schedule](https://docs.ros.org/en/kilted/The-ROS2-Project/Release-Schedule.html)
+
+**ROS 2 產業採納達 90% 与 ROSCon Global 2026 社群焦點**：根據 Robotics and Automation News 2026 年 4 月報導，ROS 2 生態年度下載量已逼近 10 億次，佔整體 ROS 生態 90% 以上，標誌著 ROS 1 時代正式落幕。ROSCon Global 2026 將於年度舉辦，聚焦多臂視覺伺服與邊界強化學習的產業級應用，預期超過 1000 名研究者、開發者與產業界人士參與。該趨勢確認 ROS 2 已成為全球機械臂視覺伺服、強化學習與自主決策的統一軟體平台，為 Roy 的多臂協作視覺伺服與邊界 AI 集成提供穩定的長期技術基礎。[ROSCon Global 2026](https://roscon.ros.org/2026/)
+
 **ArmPi Ultra — 工業級 3D 視覺與多臂協作集成**：Hiwonder 最新推出的 ArmPi Ultra 為 6-DOF 教育級機械臂搭配 3D 深度相機與高精度伺服馬達，支援即時 3D 點雲處理與物體位姿估計。該平台原生相容 ROS 2、MoveIt 2 與視覺伺服標準框架，單臂視覺控制迴圈 >100Hz，多臂場景中透過 Zenoh 同步實現無碰撞協調。成本 <$3000，已驗證適合工業訓練、研究機構與邊界應用快速原型化。
