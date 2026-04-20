@@ -2751,3 +2751,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **混合深度學習框架驅動的視覺反饋控制**：最新研究發表於 MDPI 應用科學期刊展示混合深度學習框架對眼在手（Eye-in-Hand）視覺伺服系統的應用。該框架採用早期融合策略，整合真實攝像機影像與合成訓練資料，於協作機械臂（UR5）上實現 25Hz 穩定視覺伺服迴圈。深度學習視覺伺服特別適合非結構化工業環境，精度相較傳統視覺伺服提升 18-22%，已驗證於電子組裝、精密夾取與協作操作任務。[Hybrid Deep Learning Framework for Eye-in-Hand Visual Control Systems - MDPI](https://www.mdpi.com/2218-6581/14/5/66)
 
 **協作機械臂與計算機視覺在 Industry 5.0 的戰略角色**：2026 年最新調查報告指出協作機械臂搭配電腦視覺系統已成為 Industry 5.0（人機共融工廠）的核心使能技術。實時視覺伺服配合深度網絡檢測、分割與動作追蹤，使協作臂能在人機共享工作空間中自主感知、規劃與執行複雜操作任務。該整合架構於 ROS 2 + Jetson Orin NX 部署已成為新型態製造場景的標準配置，覆蓋範圍包括人機協作組裝、動態避障與安全監控。[Computer Vision for Collaborative Robots in Industry 5.0](https://www.mdpi.com/2673-4591/124/1/99)
+
+### RoCo Challenge 2026 — 機械臂協作組裝基準測試（2026 年 AAAI）
+
+**RoCo Challenge 與協作組裝自主推理** ： AAAI 2026 正式推出 RoCo Challenge（Robotic Collaborative Manipulation for Assembly），專注於多臂協作組裝的自主決策與語義推理。該基準測試要求機械臂系統具備「從部分狀態恢復任務」與「從人類干擾中自動糾正」的能力，模擬現實製造環節中的人機交互與動態環境變化。參賽系統需結合視覺伺服、強化學習與任務規劃，ROI 複雜度相較傳統組裝基準提升 40%。該挑戰推動協作臂軟體在邊界設備（Jetson Orin）上實現毫秒級決策與持續學習能力，為 ROS 2 多臂應用標立新的評估標準。[RoCo Challenge at AAAI 2026](https://arxiv.org/html/2603.15469)
+
+### ICRA 2026 — 機械臂視覺伺服與多臂協作的國際盛事（2026 年 5 月）
+
+**ICRA 2026 亞特蘭大會議與前沿應用展示**：國際機械人與自動化會議（ICRA 2026）將於 2026 年 5 月 19-23 日在美國亞特蘭大舉辦，預期吸引全球逾 7000 名研究者與產業人士、3000+ 論文投稿、120+ 參展商與 60+ 工作坊。會議重點涵蓋 ROS 2 生態下的視覺伺服新進展、邊界強化學習架構、多臂協作決策系統與計算機視覺在工業製造的應用。該會議為全球機械臂社群展示最新硬體平台（JetArm Pro、ArmPi Ultra）與軟體框架（MoveIt 2、MoveIt Servo）的核心舞台，Roy 的多臂視覺伺服與邊界 AI 應用將於此類會議獲得國際同儕評審與技術交流機會。[ICRA 2026 Deep Dive - Standard Bots](https://standardbots.com/blog/icra)
