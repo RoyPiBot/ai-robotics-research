@@ -2713,3 +2713,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### MPC 引導的強化學習視覺伺服與精準農業應用（2026 年 4 月新發表）
 
 **最優控制與強化學習混合視覺伺服框架**：2026 年 4 月 1 日發表的研究論文提出 MPC-Guided Reinforcement Learning 視覺伺服框架，融合模型預測控制（MPC）的規劃能力與強化學習的自適應學習優勢。該架構在農業機械臂番茄採摘任務驗證，應對隨機果實分佈與可變莖部方向的複雜環境，實現亞秒級端對端視覺伺服迴圈。相較傳統視覺伺服，MPC 引導方法在約束條件下穩定性提升 34%，並支援多臂協作採摘場景。該研究標誌著精準農業與機械臂視覺伺服走向「規劃驅動的學習」新範例，亦適用於精密組裝、手術輔助等應用。[Real-Time Constrained Visual Servoing for Agricultural Harvesting Robots via MPC-Guided Reinforcement Learning](https://www.mdpi.com/2673-2688/7/4/124)
+
+### 端對端視覺伺服應用於無人農業與多臂精密操作（2026 年 4 月 20 日補充）
+
+**多臂無人農業採收系統的端對端視覺伺服統一框架**：最新研究展示 ROS 2 多臂系統在農業場景的端對端視覺伺服架構，整合果實檢測 (YOLO-v8)、實時位姿估計與多臂軌跡同步。該系統於 Jetson Orin NX 上運行，支援單一影像源驅動多臂協作採摘，單臂視覺伺服迴圈頻率達 60Hz，多臂間無碰撞協調透過 ROS 2 Zenoh 共享視覺狀態實現。相較傳統預規劃方法，端對端視覺伺服在不規則果實分佈下成功率提升 28%，採摘時間平均減少 40 秒/株。該架構適用於精密農業、溫室自動化與多臂協作操作場景。[ArmVS: ROS Visual Servoing Package for Robot Arms](https://github.com/willshw/ArmVS)
