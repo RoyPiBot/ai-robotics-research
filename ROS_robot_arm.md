@@ -2709,3 +2709,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **合成事件型視覺伺服 (SEBVS) 與融合型視覺架構**：Robotics Laboratory 於 2025 年 8 月發佈 SEBVS（Synthetic Event-based Visual Servoing）框架，將高解析度 RGB 影像與非同步事件流整合於統一的 Transformer 架構，用於機械臂導航與操縱。事件相機提供微秒級時間解析度，適合高速動態場景；融合型架構在傳統視覺伺服的基礎上，利用事件流的低延遲特性達到毫秒級控制迴圈。初步驗證顯示，相較純 RGB 視覺伺服，SEBVS 在低光與高速環境下的控制精度提升 28%，端對端延遲降至 <50ms。該框架為 ROS 2 邊界機械臂視覺伺服應用提供新的感知-控制優化方向，特別適合高速精密操作場景（如電子組裝、微創手術輔助）。[SEBVS: Synthetic Event-based Visual Servoing](https://arxiv.org/html/2508.17643v1)
 
+
+### MPC 引導的強化學習視覺伺服與精準農業應用（2026 年 4 月新發表）
+
+**最優控制與強化學習混合視覺伺服框架**：2026 年 4 月 1 日發表的研究論文提出 MPC-Guided Reinforcement Learning 視覺伺服框架，融合模型預測控制（MPC）的規劃能力與強化學習的自適應學習優勢。該架構在農業機械臂番茄採摘任務驗證，應對隨機果實分佈與可變莖部方向的複雜環境，實現亞秒級端對端視覺伺服迴圈。相較傳統視覺伺服，MPC 引導方法在約束條件下穩定性提升 34%，並支援多臂協作採摘場景。該研究標誌著精準農業與機械臂視覺伺服走向「規劃驅動的學習」新範例，亦適用於精密組裝、手術輔助等應用。[Real-Time Constrained Visual Servoing for Agricultural Harvesting Robots via MPC-Guided Reinforcement Learning](https://www.mdpi.com/2673-2688/7/4/124)
