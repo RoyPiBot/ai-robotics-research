@@ -2699,3 +2699,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **UR3 + Robotiq 2-Finger Gripper 完整工作流集成**：開源社群已發佈針對 ROS 2 Jazzy 的 UR3 機械臂加 Robotiq 2-Finger Gripper 完整整合方案，包含 URDF 模型、ros2_control 驅動配置、Gazebo Harmonic 模擬環境、MoveIt Task Constructor 取放路徑規劃、RGB-D 視覺物體辨識與 LLM 驅動的任務規劃功能。該整合方案驗證於 ROS 2 Jazzy 與 Ignition Gazebo，支援端對端的數位孿生仿真至實體部署，使用者可直接評估機械臂夾爪配置、衝突檢測與取放成功率。此案例為產業應用與教學實踐提供了完整藍圖。[GitHub - darshmenon/UR3_ROS2_PICK_AND_PLACE](https://github.com/darshmenon/UR3_ROS2_PICK_AND_PLACE)
 
+### MoveIt 2 視覺伺服架構現代化與 PoseJog Behavior（2026 年）
+
+**MoveIt 視覺伺服框架升級至 PoseJog**：MoveIt 2 最新版本已完成視覺伺服（Visual Servoing）架構現代化，正式棄用舊有的 ServoTowardsPose 方法，引入新的 PoseJog Behavior 作為標準視覺伺服解決方案。PoseJog Behavior 相比前代提供更安全的笛卡爾空間運動控制，內建碰撞迴避與奇異點處理，適合精密視覺伺服應用（如帶電部件裝配、微創手術輔助）。該升級已驗證於 MoveIt Pro 生產部署，配搭實時相機反饋（30-60Hz）可實現 <100ms 端對端視覺控制迴圈，為 Roy 的機械臂視覺伺服系統提供生產級工具鏈。[MoveIt Documentation: Visual Servoing with PoseJog](https://moveit.picknik.ai/main/doc/concepts/moveit_task_constructor/moveit_task_constructor.html)
+
+**MoveIt Pro 生產級應用與 Python API 主導地位**：根據 ROSCon 2025 社群調查，80% 新部署已轉向 Python API 而非 C++，MoveIt Pro（PickNik Robotics 的商業化方案）在製造業、物流、醫療機械人等領域進入規模化部署。Python 主導的趨勢降低開發門檻，加速 ROS 2 機械臂應用於邊界設備（Jetson Orin、Raspberry Pi 5）的新型態應用。該轉變標誌著機械臂軟體從專有系統向開源民主化的邁進。[MoveIt Pro Release Notes - 2025-2026](https://docs.picknik.ai/release-notes/)
+
