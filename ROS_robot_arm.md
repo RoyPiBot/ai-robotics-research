@@ -2723,3 +2723,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Zenoh 驅動的多臂分散式視覺伺服**：ROS 2 Kilted Kaiju 新版本（2026 年）正式將 Zenoh 列為 Tier 1 中介軟體，顯著優化多臂分散式視覺伺服與邊界協作系統的延遲特性。Zenoh 支援動態探索與發布-訂閱模式，使多臂系統可在無中央控制器的情況下共享視覺目標偵測、位姿估計與衝突迴避決策。相較傳統 DDS，Zenoh 在邊界網路環境（Jetson Orin NX/Raspberry Pi 5 叢集）中的端對端延遲降低 35-50%，支援微秒級時間戳記同步，適合精密協作操作（電子組裝、微創手術輔助）。該中介軟體升級為 Roy 多臂精密操作的視覺伺服與強化學習整合提供低延遲通訊基礎。[ROS 2 Execution Management - Zenoh Integration](https://control.ros.org/rolling/doc/resources/resources.html)
 
 **多智能體強化學習與視覺伺服協調的邊界推理**：將多智能體深度強化學習（MARL）與 ROS 2 Zenoh 結合，實現多臂精密操作系統的分散式自主決策。每支機械臂上搭載輕量化 Actor-Critic 網絡（<100MB），在邊界設備（Jetson Orin NX）獨立執行視覺伺服策略，同時透過 Zenoh 共享目標檢測結果與衝突預測。該分散式方法相較集中式規劃支援無延遲邊界決策（<20ms），已驗證於工廠揀配、雙臂精密組裝與無人農業採摘應用，為 Roy 的多臂協作提供完整的邊界-視覺-學習統一框架。
+
+### 具身 AI 平台 LanderPi — ROS 2 與多模式 LLM 融合（2026 年 4 月）
+
+**LanderPi 融合 LLM、ROS 2 與 3D 視覺的具身 AI 架構**：Hiwonder 於 2026 年 4 月發表 LanderPi 具身 AI 平台，原生整合多模式大語言模型（Vision-Language-Action）、ROS 2 Humble、3D TOF LiDAR 與深度相機。該平台搭載 Jetson Orin Nano/NX，支援即時場景理解、自然語言任務分解與多臂協作規劃。相較傳統預編程機械臂，LanderPi 通過多模式推理實現「語言驅動的機械臂自主操縱」，單個 LLM 推理週期 <500ms，視覺伺服迴圈維持 >60Hz。該平台標誌著 ROS 2 邊界機械臂進入「自然語言界面」時代，適合複雜現場工況、倉儲揀配與人機協作場景。[Embodied AI with LanderPi: Fusing LLMs, ROS 2, and 3D Vision](https://www.hackster.io/HiwonderRobot/embodied-ai-with-landerpi-fusing-llms-ros-2-and-3d-vision-1f744b)
+
+**ArmPi Ultra — 工業級 3D 視覺與多臂協作集成**：Hiwonder 最新推出的 ArmPi Ultra 為 6-DOF 教育級機械臂搭配 3D 深度相機與高精度伺服馬達，支援即時 3D 點雲處理與物體位姿估計。該平台原生相容 ROS 2、MoveIt 2 與視覺伺服標準框架，單臂視覺控制迴圈 >100Hz，多臂場景中透過 Zenoh 同步實現無碰撞協調。成本 <$3000，已驗證適合工業訓練、研究機構與邊界應用快速原型化。
