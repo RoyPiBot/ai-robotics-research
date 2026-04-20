@@ -2735,3 +2735,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 產業採納達 90% 与 ROSCon Global 2026 社群焦點**：根據 Robotics and Automation News 2026 年 4 月報導，ROS 2 生態年度下載量已逼近 10 億次，佔整體 ROS 生態 90% 以上，標誌著 ROS 1 時代正式落幕。ROSCon Global 2026 將於年度舉辦，聚焦多臂視覺伺服與邊界強化學習的產業級應用，預期超過 1000 名研究者、開發者與產業界人士參與。該趨勢確認 ROS 2 已成為全球機械臂視覺伺服、強化學習與自主決策的統一軟體平台，為 Roy 的多臂協作視覺伺服與邊界 AI 集成提供穩定的長期技術基礎。[ROSCon Global 2026](https://roscon.ros.org/2026/)
 
 **ArmPi Ultra — 工業級 3D 視覺與多臂協作集成**：Hiwonder 最新推出的 ArmPi Ultra 為 6-DOF 教育級機械臂搭配 3D 深度相機與高精度伺服馬達，支援即時 3D 點雲處理與物體位姿估計。該平台原生相容 ROS 2、MoveIt 2 與視覺伺服標準框架，單臂視覺控制迴圈 >100Hz，多臂場景中透過 Zenoh 同步實現無碰撞協調。成本 <$3000，已驗證適合工業訓練、研究機構與邊界應用快速原型化。
+
+### ROS-Industrial 機械臂深度學習與框架編輯工具（2026 年 4 月）
+
+**ROS-Industrial 強化學習與視覺伺服倡議**：ROS-Industrial 聯盟於 2026 年第二季啟動「Reinforcement Learning for Robot Arm Manipulation」全球倡議，提供開源教材與工業級範例代碼，協助開發者快速上手機械臂強化學習應用。同時推出 RQT Frame Editor——一款直觀的 ROS 外掛，讓開發者在 RViz 環境中視覺化建立、編輯、調整坐標系統（TF Frames），無需手工編寫 URDF 變換，大幅加速多臂協作系統的運動學參數調優。該工具已驗證於 UR、ABB、FANUC 等工業臂的 ROS 2 整合。[ROS-Industrial News](https://rosindustrial.org/news/)
+
+**MoveIt 2 實時控制與 Python 完整整合**：MoveIt 2 最新版本（2026 年 4 月）達成「真實時」機械臂伺服控制，Python API 效能相較 ROS 1 提升 2-3 倍，特別適合邊界設備（樹莓派、Jetson NX）部署。官方新增「6DOF 機械臂完全教程」展示從 URDF 參數化、Gazebo 模擬、MoveIt 2 運動規劃至實體硬體控制的全流程，並支援視覺伺服與強化學習框架的無縫整合。[MoveIt 2 Documentation](https://moveit.picknik.ai/)
