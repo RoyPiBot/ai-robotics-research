@@ -2705,3 +2705,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **MoveIt Pro 生產級應用與 Python API 主導地位**：根據 ROSCon 2025 社群調查，80% 新部署已轉向 Python API 而非 C++，MoveIt Pro（PickNik Robotics 的商業化方案）在製造業、物流、醫療機械人等領域進入規模化部署。Python 主導的趨勢降低開發門檻，加速 ROS 2 機械臂應用於邊界設備（Jetson Orin、Raspberry Pi 5）的新型態應用。該轉變標誌著機械臂軟體從專有系統向開源民主化的邁進。[MoveIt Pro Release Notes - 2025-2026](https://docs.picknik.ai/release-notes/)
 
+### SEBVS 事件相機驅動的實時視覺伺服框架（2026 年 4 月新進展）
+
+**合成事件型視覺伺服 (SEBVS) 與融合型視覺架構**：Robotics Laboratory 於 2025 年 8 月發佈 SEBVS（Synthetic Event-based Visual Servoing）框架，將高解析度 RGB 影像與非同步事件流整合於統一的 Transformer 架構，用於機械臂導航與操縱。事件相機提供微秒級時間解析度，適合高速動態場景；融合型架構在傳統視覺伺服的基礎上，利用事件流的低延遲特性達到毫秒級控制迴圈。初步驗證顯示，相較純 RGB 視覺伺服，SEBVS 在低光與高速環境下的控制精度提升 28%，端對端延遲降至 <50ms。該框架為 ROS 2 邊界機械臂視覺伺服應用提供新的感知-控制優化方向，特別適合高速精密操作場景（如電子組裝、微創手術輔助）。[SEBVS: Synthetic Event-based Visual Servoing](https://arxiv.org/html/2508.17643v1)
+
