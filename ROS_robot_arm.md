@@ -2745,3 +2745,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MoveIt Servo 框架與奇異點自動迴避的實時笛卡爾控制**：MoveIt 官方於 2026 年最新文檔發佈 MoveIt Servo 完整實踐教程，該框架提供實時笛卡爾空間運動控制，內建自動奇異點迴避與碰撞檢測機制，控制迴圈頻率 >200Hz。相較前代 ServoTowardsPose，MoveIt Servo 支援多感測器融合（RGB-D、LiDAR、力感測器）驅動的視覺伺服，已驗證應用於複雜協作操作場景（如帶電部件裝配、精密組裝）。該框架利用 ROS 2 Control 的標準化硬體介面，支援 60+ 機械臂型號。[MoveIt Servo Documentation - Real-Time Arm Servoing](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html)
 
 **MoveIt 2 實時控制與 Python 完整整合**：MoveIt 2 最新版本（2026 年 4 月）達成「真實時」機械臂伺服控制，Python API 效能相較 ROS 1 提升 2-3 倍，特別適合邊界設備（樹莓派、Jetson NX）部署。官方新增「6DOF 機械臂完全教程」展示從 URDF 參數化、Gazebo 模擬、MoveIt 2 運動規劃至實體硬體控制的全流程，並支援視覺伺服與強化學習框架的無縫整合。[MoveIt 2 Documentation](https://moveit.picknik.ai/)
+
+### 深度學習視覺伺服與眼在手協作機械臂實時應用（2026 年 4 月）
+
+**混合深度學習框架驅動的視覺反饋控制**：最新研究發表於 MDPI 應用科學期刊展示混合深度學習框架對眼在手（Eye-in-Hand）視覺伺服系統的應用。該框架採用早期融合策略，整合真實攝像機影像與合成訓練資料，於協作機械臂（UR5）上實現 25Hz 穩定視覺伺服迴圈。深度學習視覺伺服特別適合非結構化工業環境，精度相較傳統視覺伺服提升 18-22%，已驗證於電子組裝、精密夾取與協作操作任務。[Hybrid Deep Learning Framework for Eye-in-Hand Visual Control Systems - MDPI](https://www.mdpi.com/2218-6581/14/5/66)
+
+**協作機械臂與計算機視覺在 Industry 5.0 的戰略角色**：2026 年最新調查報告指出協作機械臂搭配電腦視覺系統已成為 Industry 5.0（人機共融工廠）的核心使能技術。實時視覺伺服配合深度網絡檢測、分割與動作追蹤，使協作臂能在人機共享工作空間中自主感知、規劃與執行複雜操作任務。該整合架構於 ROS 2 + Jetson Orin NX 部署已成為新型態製造場景的標準配置，覆蓋範圍包括人機協作組裝、動態避障與安全監控。[Computer Vision for Collaborative Robots in Industry 5.0](https://www.mdpi.com/2673-4591/124/1/99)
