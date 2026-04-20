@@ -2759,3 +2759,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### ICRA 2026 — 機械臂視覺伺服與多臂協作的國際盛事（2026 年 5 月）
 
 **ICRA 2026 亞特蘭大會議與前沿應用展示**：國際機械人與自動化會議（ICRA 2026）將於 2026 年 5 月 19-23 日在美國亞特蘭大舉辦，預期吸引全球逾 7000 名研究者與產業人士、3000+ 論文投稿、120+ 參展商與 60+ 工作坊。會議重點涵蓋 ROS 2 生態下的視覺伺服新進展、邊界強化學習架構、多臂協作決策系統與計算機視覺在工業製造的應用。該會議為全球機械臂社群展示最新硬體平台（JetArm Pro、ArmPi Ultra）與軟體框架（MoveIt 2、MoveIt Servo）的核心舞台，Roy 的多臂視覺伺服與邊界 AI 應用將於此類會議獲得國際同儕評審與技術交流機會。[ICRA 2026 Deep Dive - Standard Bots](https://standardbots.com/blog/icra)
+
+### DualTHOR — 雙臂人形應急規劃模擬平台（2026 年 6 月新發表）
+
+**DualTHOR 與應急感知規劃框架**：2026 年 6 月，AI 社群發表 DualTHOR — 一套基於 AI2-THOR 擴展的物理驅動模擬平台，專為雙臂人形機械人（H1、X1）的應急規劃訓練而設計。該平台通過物理級低層執行模擬潛在失敗事件，並在多臂協作任務中引入應急機制，使規劃器能在執行過程中動態應對不確定性。實驗結果顯示，當前視覺語言模型（VLM）在複雜雙臂協作與意外事件重新規劃中仍存在瓶頸，但 DualTHOR 提供的應急感知訓練能顯著提升智能體的自主糾正與持續決策能力。該平台涵蓋完整的運動學求解器、雙臂任務套件與實時物理引擎，為 Roy 的多臂應急決策與複雜協作操作研究提供生產級模擬環境。[DualTHOR: A Dual-Arm Humanoid Simulation Platform for Contingency-Aware Planning](https://arxiv.org/html/2506.16012v1)
