@@ -2740,4 +2740,8 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS-Industrial 強化學習與視覺伺服倡議**：ROS-Industrial 聯盟於 2026 年第二季啟動「Reinforcement Learning for Robot Arm Manipulation」全球倡議，提供開源教材與工業級範例代碼，協助開發者快速上手機械臂強化學習應用。同時推出 RQT Frame Editor——一款直觀的 ROS 外掛，讓開發者在 RViz 環境中視覺化建立、編輯、調整坐標系統（TF Frames），無需手工編寫 URDF 變換，大幅加速多臂協作系統的運動學參數調優。該工具已驗證於 UR、ABB、FANUC 等工業臂的 ROS 2 整合。[ROS-Industrial News](https://rosindustrial.org/news/)
 
+### ROS 2 MoveIt Servo 實時協作控制與邊界視覺伺服集成（2026 年 4 月）
+
+**MoveIt Servo 框架與奇異點自動迴避的實時笛卡爾控制**：MoveIt 官方於 2026 年最新文檔發佈 MoveIt Servo 完整實踐教程，該框架提供實時笛卡爾空間運動控制，內建自動奇異點迴避與碰撞檢測機制，控制迴圈頻率 >200Hz。相較前代 ServoTowardsPose，MoveIt Servo 支援多感測器融合（RGB-D、LiDAR、力感測器）驅動的視覺伺服，已驗證應用於複雜協作操作場景（如帶電部件裝配、精密組裝）。該框架利用 ROS 2 Control 的標準化硬體介面，支援 60+ 機械臂型號。[MoveIt Servo Documentation - Real-Time Arm Servoing](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html)
+
 **MoveIt 2 實時控制與 Python 完整整合**：MoveIt 2 最新版本（2026 年 4 月）達成「真實時」機械臂伺服控制，Python API 效能相較 ROS 1 提升 2-3 倍，特別適合邊界設備（樹莓派、Jetson NX）部署。官方新增「6DOF 機械臂完全教程」展示從 URDF 參數化、Gazebo 模擬、MoveIt 2 運動規劃至實體硬體控制的全流程，並支援視覺伺服與強化學習框架的無縫整合。[MoveIt 2 Documentation](https://moveit.picknik.ai/)
