@@ -2819,3 +2819,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### Interbotix X-Series Robot Arms — 工業模塊化設計與生態（2026 年 4 月新進展）
 
 **Interbotix X-Series 多配置與高精度控制**：Interbotix Robotics 的 X-Series 機械臂採用模塊化設計，提供 4-6 自由度配置，工作範圍達 750mm、有效負載 750g，支援 ROS 1/2 完整整合。該平台以低成本 (<$2,000) 與高可擴展性著稱，廣泛應用於學術研究、工業試點與邊界應用快速原型化。[Interbotix X-Series Robot Arms - Modular ROS Compatible Platform](https://www.trossenrobotics.com/)
+
+### OpenVLA 開源視覺語言動作模型與邊界推理實踐（2026 年 4 月最新）
+
+**OpenVLA — 7 倍參數優勢與邊界部署的開源標準**：OpenVLA 是 LMNR Labs 開源的視覺語言動作模型，相較 RT-2-X (55B 參數)，OpenVLA 僅需 7B 參數就能在 29 項操縱任務上超越其 16.5% 的成功率。該模型原生支援 ROS 2，提供 openvla_ros2 套件將 VLA 推理包裝為標準 ROS 2 action servers，訂閱相機主題、發佈至關節控制器，完全相容機械臂生態。2026 年商業部署已突破 11 家企業客戶，標誌著 VLA 技術從研究邁向產業規模化應用。[OpenVLA: An Open-Source Vision-Language-Action Model - GitHub](https://github.com/openvla/openvla)
+
+**VLA 商業部署與工業化進程**：根據 2026 年最新調查，邊界 VLA 推理已成熟至能在 Jetson Orin NX 與 Raspberry Pi 5 上即時運行，單次推理延遲 300-500ms。Q2 2025 時三家主要軟體公司已出貨 VLA 產品，至 Q1 2026 已增至 11 家企業級部署，應用領域涵蓋電子組裝、物流揀配、精準農業與醫療機械人。該成熟度達到使 Roy 的多臂視覺伺服與自主決策系統可完全依託開源 VLA 模型運行邊界推理，消除昂貴的雲端 API 依賴。[State of Robotics 2026 - SVRC](https://www.roboticscenter.ai/state-of-robotics-2026)
