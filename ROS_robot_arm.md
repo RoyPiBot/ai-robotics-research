@@ -2795,3 +2795,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Doosan 機械臂強化學習環境與 Gazebo/ROS2 模擬整合**：GitHub 開源專案 `robotic_arm_environment` 提供 Doosan 機械臂的完整強化學習框架，原生支援 Gazebo 與 ROS 2 模擬環境。該環境實現了視覺控制與運動規劃的端對端強化學習流程，使用 Gym 標準介面訓練機械臂進行高精度操縱任務。特別適合邊界設備（Jetson Orin NX、Raspberry Pi 5 叢集）上的輕量化 RL 策略部署，降低了從訓練至實體部署的遷移成本。[robotic_arm_environment - GitHub](https://github.com/dvalenciar/robotic_arm_environment)
 
 **Gym-Ignition 驅動的視覺伺服強化學習決策框架**：Gym-Ignition 已成熟整合超過 100 個模擬建模工具與視覺伺服決策框架，提供可重現的強化學習環境用於機械臂操縱。該框架特別支援多臂協作場景中的視覺反饋控制策略學習，邊界推理時透過 ROS 2 Zenoh 實現低延遲決策共享。相較中央集中式強化學習，分散式邊界決策架構在視覺伺服控制迴圈中實現 <20ms 端對端延遲，已驗證應用於複雜工業與農業採摘任務。
+
+### 視覺語言模型（VLM）邊界部署與自主操縱系統集成（2026 年 4 月新補充）
+
+**ROSpider AI Hexpod — LLM 驅動的多腿自主導航與操縱系統**：Hiwonder ROSpider 為 18-DOF 仿生爬蟲機械人，搭載視覺語言模型（LLM）驅動的決策層，透過自然語言指令直接生成運動軌跡。該系統原生整合 MoveIt 2 軌跡規劃器，自動迴避機械人自身結構衝突；同時採用 ROS 2 控制層與邊界 GPU（如 Jetson Orin）實現毫秒級推理與運動合成。實驗驗證 ROSpider 能在複雜室內環境中理解人類語言指令、自適應地規劃多腿行走軌跡並執行工業級操縱任務，標誌著 LLM + 視覺反饋的邊界具身 AI 應用已進入產業化階段。[ROSpider AI Hexpod - LLM-Driven Hexapod Robot](https://www.hackster.io/HiwonderRobot/llm-on-ros-2-a-guide-to-rospider-ai-hexpod-robot-5e32f8)
