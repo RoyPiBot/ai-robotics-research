@@ -677,6 +677,12 @@
 - **摘要**：主流廠商齊推超小型高效模型：**Llama 3.2** (1B/3B 版本)、**Gemma 3** (最小至 270M)、**Phi-4 mini** (3.8B)、**SmolLM2** (135M-1.7B)、**Qwen2.5** (0.5B-1.5B)。從過往「7B 是最小實用規模」演進到「百萬參數級可運行實用任務」，驅動力為蒸餾、量化、高效運行時突破。
 - **重要性**：邊緣 AI 從「局部實驗」進入「規模部署」時代，邊緣集群、嵌入式設備、物聯網應用的成本與延遲瓶頸大幅改善。
 
+### 76. MobileLLM-R1.5 — 邊緣推理突破，完全離線推理模型
+- **發布時間**：2026 年 4 月
+- **摘要**：MobileLLM-R1.5 在移動 CPU 上實現複雜推理能力，相比參數量兩倍的模型，推理性能提升 **2-5 倍**，完全離線運行無須網路。同期推薦邊緣推理模型包含 Meta Llama 3.1 8B Instruct、THUDM GLM-4-9B、Qwen2.5-VL-7B。
+- **重要性**：邊緣推理從「文本補全」進入「複雜推理」時代，語音 AI Agent、物聯網決策、車載系統等場景大幅擴展，成為 2026 下半年邊緣 AI 部署的重要驅動。
+- **來源**：[SiliconFlow: Best LLMs for Edge AI 2026](https://www.siliconflow.com/articles/en/best-LLMs-for-real-time-inference-on-edge)
+
 ---
 
 ## Sources
