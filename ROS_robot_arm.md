@@ -2805,3 +2805,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **VLA 模型邊界部署優化——從大型模型到輕量化邊界推理**：2026 年最新研究表明，視覺語言動作模型（VLA）的邊界部署面臨推理延遲與資源限制的核心挑戰。當前邊界設備（Jetson Orin NX、Raspberry Pi 5）運行大型 VLA 模型需 500ms+ 推理時間，遠超機械臂視覺伺服的 20-50ms 需求。最新突破方向包括：(1) 模型蒸餾與量化——將十億參數 VLA 壓縮至 100MB 以下輕量化版本，保留視覺推理能力；(2) 邊界-雲端分流——在邊界設備執行低延遲的視覺伺服決策迴圈（<20ms），複雜語義推理延遲容許至 200ms；(3) 開源輕量模型（Helix、Prismatic）已於工廠（如 BMW）實現商用部署。該優化方向使 Roy 的多臂視覺伺服與自主決策系統可在邊界完整運行，消除雲端依賴。[Deploying Vision Language Action (VLA) based AI Models in Robotics: Optimization for Real-Time Edge Inference](https://multicorewareinc.com/deploying-vision-language-action-vla-based-ai-models-in-robotics-optimization-for-real-time-edge-inference/)
 
 **多臂協作決策框架中的視覺語言推理——VLA 驅動的協調規劃**：新研究融合 VLA 與多智能體強化學習（MARL），使多臂系統能在共享視覺場景中自主協調操作。每支機械臂獨立執行視覺伺服任務，同時透過 ROS 2 Zenoh 共享 VLA 推理出的語義目標與衝突預測。該框架在精密電子組裝與雙臂協作採摘任務中實現毫秒級決策延遲與穩定協調，相較集中式決策架構支援無延遲邊界推理。[Pure Vision Language Action (VLA) Models: A Comprehensive Survey](https://arxiv.org/html/2509.19012v1)
+
+### Helix 與 π0 — 新一代廣義 VLA 模型的邊界推理框架（2026 年 4 月 21 日新補充）
+
+**Figure AI Helix — 類人機械人全身控制的統一 VLA 模型**：Figure AI 於 2025 年 2 月發表 Helix，首個能以毫秒級精度控制類人機械人全身（雙臂、雙手、軀幹、頭部、手指）的視覺語言動作模型。相較傳統多階段規劃方法（視覺 → 語義 → 控制），Helix 直接將攝像機影像與自然語言指令端對端映射到 100+ DOF 執行器指令，推理延遲 <500ms，適合即時人機協作場景。該模型已於工廠部署驗證，支援複雜多步驟裝配任務與動態環境適應。[Figure Helix: General-Purpose Humanoid Robot Control via Vision-Language Models](https://www.figure.ai/blog/helix-humanoid-robot-ai)
+
+**Physical Intelligence π0 — 跨機械臂廣義遷移的多具身 VLA**：Physical Intelligence 推出的 π0 模型以 8 種不同機械臂與具身（單臂、雙臂、移動底座）訓練，實現跨具身泛化能力。π0 在邊界設備上推理單張影像至機械臂控制指令的全流程延遲控制在 300-400ms 範圍，支援零樣本任務遷移與多臂協作決策。該模型為 Roy 的多臂視覺伺服與自主決策系統提供具身 AI 新範型——無需重新訓練即可在新機械臂配置上應用，加速邊界強化學習的實驗迭代周期。[Physical Intelligence π0: A Generalist Vision-Language-Action Model](https://pi0.ai/)
