@@ -2097,6 +2097,15 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **生成式 AI 在 ROS 2 機械臂的深度整合**：NVIDIA 與 Open Robotics 聯合推出的最新工作流程將生成式 AI 工具與 ROS 2 視覺語言模型深度融合。Isaac Manipulator 新增 FoundationPose 與 cuMotion 的全新參考工作流程，加速機器人拾取與放置（pick-and-place）及物件追蹤管道的開發。該方案整合多模態 AI 感知層，使機械臂能理解複雜場景並自主生成最優操作計畫，相比傳統硬編碼規劃的適應性提升 65% 以上。已驗證於協作機械臂的裝配、檢測與動態抓取場景。
 
+### 事件基視覺伺服與實時決策框架（2026 年 4 月最新）
+
+**事件相機驅動的視覺伺服新時代**：最新開源專案 SEBVS（Synthetic Event-based Visual Servoing）展示事件相機與 ROS 2 的深度融合，實現超低延遲的視覺回饋迴路。相比傳統 RGB 相機 30-60ms 的延遲，事件相機可達 1-2ms 毫秒級回應，特別適合高速動態追蹤與精密裝配任務。該框架已整合於 ROS 2 perception_pcl 生態，支援實時點雲處理與協作機械臂的毫秒級視覺伺服決策。
+
+**Isaac ROS 與端邊部署的視覺語言模型推理**：NVIDIA Isaac ROS 框架提供的模組化套件（Perception、Manipulation、Navigation）與 ROS 2 完全相容，可在 Jetson 與邊界運算平臺上無縫部署。新增的量化視覺語言模型支援消費級 GPU 上 10-25Hz 即時執行，搭配 MoveIt 2 Servo 回調機制實現端到端的視覺決策與實時軌跡調整。
+
+- [SEBVS: Synthetic Event-based Visual Servoing](https://github.com/eventbasedvision/SEBVS)
+- [Isaac ROS Documentation](https://developer.nvidia.com/isaac/ros)
+
 **Isaac Sim 虛擬環境與 ROS 2 無縫銜接**：基於 OpenUSD 與 RTX 的 Isaac Sim 提供高保真機械臂運動模擬，ROS 2 開發者可直接連接各自的 ROS 套件進行虛擬測試。新版本增強了 Deformable Object 模擬與接觸力反饋，特別適合柔性物件操作任務開發，大幅縮短虛實轉移（Sim-to-Real）開發週期。
 
 **Pi 5 + 嵌入式微控制器多臂集群方案**：新型設計方案將 Raspberry Pi 5 作為主控制器，搭配多個 Renesas/STM32 微控制器驅動伺服馬達陣列。透過 DDS-XRCE，各微控制器可自主向 ROS 2 主機彙報關節狀態、接收軌跡指令，Pi 5 專注於高層規劃與視覺處理。該架構已驗證支援 6-DOF 雙臂系統，通訊延遲 <5ms，特別適合教育與小型協作機械臂應用。
