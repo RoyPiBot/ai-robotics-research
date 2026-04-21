@@ -2763,3 +2763,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### DualTHOR — 雙臂人形應急規劃模擬平台（2026 年 6 月新發表）
 
 **DualTHOR 與應急感知規劃框架**：2026 年 6 月，AI 社群發表 DualTHOR — 一套基於 AI2-THOR 擴展的物理驅動模擬平台，專為雙臂人形機械人（H1、X1）的應急規劃訓練而設計。該平台通過物理級低層執行模擬潛在失敗事件，並在多臂協作任務中引入應急機制，使規劃器能在執行過程中動態應對不確定性。實驗結果顯示，當前視覺語言模型（VLM）在複雜雙臂協作與意外事件重新規劃中仍存在瓶頸，但 DualTHOR 提供的應急感知訓練能顯著提升智能體的自主糾正與持續決策能力。該平台涵蓋完整的運動學求解器、雙臂任務套件與實時物理引擎，為 Roy 的多臂應急決策與複雜協作操作研究提供生產級模擬環境。[DualTHOR: A Dual-Arm Humanoid Simulation Platform for Contingency-Aware Planning](https://arxiv.org/html/2506.16012v1)
+
+### 開源機械臂硬體平台 reBot Arm B601-DM（2026 年 4 月新進展）
+
+**reBot Arm B601-DM — 具身 AI 與遠操平台的開源硬體方案**：Seeed Studio 於 2026 年 4 月 17 日發佈 reBot Arm B601-DM，一款完全開源的 6-軸機械臂配備平行式夾爪，內建高性能 Damiao 伺服馬達、750mm 工作範圍與 0.2mm 重複精度。該平台設計特別強調「數據友善性」（data friendliness），配備背驅動關節、板載 IMU 堆棧與低延遲 USB-C/Ethernet 連接，專為遠操數據採集與具身 AI 訓練而優化。ROS 2 Humble 原生支援，MoveIt 2 驅動已在開發中，成本 <$3000，已驗證適合學術研究、邊界應用快速原型化與大規模機械臂聯隊部署。[reBot Arm B601-DM — Open-Source Robotic Arm for Embodied AI](https://www.cnx-software.com/2026/04/17/rebot-arm-b601-dm-an-open-source-61-dof-robotic-arm-for-embodied-ai-and-teleoperation-applications/)
+
+### ROS 2 生態成熟度指標與產業級採納標準（2026 年 4 月調查）
+
+**OpenArm 平台引領開源機械臂民主化 — 超過 2400 單位已部署**：根據 2026 年最新調查，OpenArm（開源機械臂基準平台）已成為全球學術與早期企業試點的事實標準，單年出貨 2400+ 單位，年增長率達 60%。該平台的 ROS 2 相容性使開發者能在數小時內將訓練於一款機械臂的策略遷移至另一款，相較舊有 ROS 1 時代縮短數週的適配周期。6-7 軸以下的低成本機械臂（<$10,000）已由全球 14 家廠商跨越 5 個國家推出，標誌著機械臂市場正從昂貴專有系統向開源民主化邁進，為 Roy 的多臂視覺伺服與邊界強化學習應用奠定堅實硬體基礎。[State of Robotics 2026 - SVRC](https://www.roboticscenter.ai/state-of-robotics-2026)
