@@ -2825,3 +2825,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **OpenVLA — 7 倍參數優勢與邊界部署的開源標準**：OpenVLA 是 LMNR Labs 開源的視覺語言動作模型，相較 RT-2-X (55B 參數)，OpenVLA 僅需 7B 參數就能在 29 項操縱任務上超越其 16.5% 的成功率。該模型原生支援 ROS 2，提供 openvla_ros2 套件將 VLA 推理包裝為標準 ROS 2 action servers，訂閱相機主題、發佈至關節控制器，完全相容機械臂生態。2026 年商業部署已突破 11 家企業客戶，標誌著 VLA 技術從研究邁向產業規模化應用。[OpenVLA: An Open-Source Vision-Language-Action Model - GitHub](https://github.com/openvla/openvla)
 
 **VLA 商業部署與工業化進程**：根據 2026 年最新調查，邊界 VLA 推理已成熟至能在 Jetson Orin NX 與 Raspberry Pi 5 上即時運行，單次推理延遲 300-500ms。Q2 2025 時三家主要軟體公司已出貨 VLA 產品，至 Q1 2026 已增至 11 家企業級部署，應用領域涵蓋電子組裝、物流揀配、精準農業與醫療機械人。該成熟度達到使 Roy 的多臂視覺伺服與自主決策系統可完全依託開源 VLA 模型運行邊界推理，消除昂貴的雲端 API 依賴。[State of Robotics 2026 - SVRC](https://www.roboticscenter.ai/state-of-robotics-2026)
+
+### Arduino Braccio++ 與 Luxonis OAK-D ROS 2 協作臂視覺拾取應用（2026 年 4 月）
+
+**教育級協作臂搭配深度視覺的物體檢測與拾取系統**：Edge Impulse 平台已發佈 Arduino Braccio++ 機械臂與 Luxonis OAK-D 3D 深度相機的完整整合教程，實現低成本邊界物體檢測與精準拾取操作。該系統採用 YOLO 物體檢測模型 (轉換為 TinyML 格式)，於 Arduino 主控器上實時運行，視覺控制迴圈頻率達 15-20Hz。相較工業級協作臂 (>$50,000)，Braccio++ 搭配 OAK-D 的成本 <$500，特別適合教育機構、新創企業與邊界應用原型化，標誌著低成本視覺伺服機械臂走向普及化階段。[ROS 2 Pick and Place System - Arduino Braccio++ with Luxonis OAK-D](https://docs.edgeimpulse.com/projects/expert-network/robotic-arm-sorting-arduino-braccio)
