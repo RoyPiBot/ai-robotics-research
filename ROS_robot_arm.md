@@ -2799,3 +2799,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### 視覺語言模型（VLM）邊界部署與自主操縱系統集成（2026 年 4 月新補充）
 
 **ROSpider AI Hexpod — LLM 驅動的多腿自主導航與操縱系統**：Hiwonder ROSpider 為 18-DOF 仿生爬蟲機械人，搭載視覺語言模型（LLM）驅動的決策層，透過自然語言指令直接生成運動軌跡。該系統原生整合 MoveIt 2 軌跡規劃器，自動迴避機械人自身結構衝突；同時採用 ROS 2 控制層與邊界 GPU（如 Jetson Orin）實現毫秒級推理與運動合成。實驗驗證 ROSpider 能在複雜室內環境中理解人類語言指令、自適應地規劃多腿行走軌跡並執行工業級操縱任務，標誌著 LLM + 視覺反饋的邊界具身 AI 應用已進入產業化階段。[ROSpider AI Hexpod - LLM-Driven Hexapod Robot](https://www.hackster.io/HiwonderRobot/llm-on-ros-2-a-guide-to-rospider-ai-hexpod-robot-5e32f8)
+
+### 視覺語言模型邊界推理性能優化與多臂協作決策（2026 年 4 月 21 日新補充）
+
+**VLA 模型邊界部署優化——從大型模型到輕量化邊界推理**：2026 年最新研究表明，視覺語言動作模型（VLA）的邊界部署面臨推理延遲與資源限制的核心挑戰。當前邊界設備（Jetson Orin NX、Raspberry Pi 5）運行大型 VLA 模型需 500ms+ 推理時間，遠超機械臂視覺伺服的 20-50ms 需求。最新突破方向包括：(1) 模型蒸餾與量化——將十億參數 VLA 壓縮至 100MB 以下輕量化版本，保留視覺推理能力；(2) 邊界-雲端分流——在邊界設備執行低延遲的視覺伺服決策迴圈（<20ms），複雜語義推理延遲容許至 200ms；(3) 開源輕量模型（Helix、Prismatic）已於工廠（如 BMW）實現商用部署。該優化方向使 Roy 的多臂視覺伺服與自主決策系統可在邊界完整運行，消除雲端依賴。[Deploying Vision Language Action (VLA) based AI Models in Robotics: Optimization for Real-Time Edge Inference](https://multicorewareinc.com/deploying-vision-language-action-vla-based-ai-models-in-robotics-optimization-for-real-time-edge-inference/)
+
+**多臂協作決策框架中的視覺語言推理——VLA 驅動的協調規劃**：新研究融合 VLA 與多智能體強化學習（MARL），使多臂系統能在共享視覺場景中自主協調操作。每支機械臂獨立執行視覺伺服任務，同時透過 ROS 2 Zenoh 共享 VLA 推理出的語義目標與衝突預測。該框架在精密電子組裝與雙臂協作採摘任務中實現毫秒級決策延遲與穩定協調，相較集中式決策架構支援無延遲邊界推理。[Pure Vision Language Action (VLA) Models: A Comprehensive Survey](https://arxiv.org/html/2509.19012v1)
