@@ -2811,3 +2811,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Figure AI Helix — 類人機械人全身控制的統一 VLA 模型**：Figure AI 於 2025 年 2 月發表 Helix，首個能以毫秒級精度控制類人機械人全身（雙臂、雙手、軀幹、頭部、手指）的視覺語言動作模型。相較傳統多階段規劃方法（視覺 → 語義 → 控制），Helix 直接將攝像機影像與自然語言指令端對端映射到 100+ DOF 執行器指令，推理延遲 <500ms，適合即時人機協作場景。該模型已於工廠部署驗證，支援複雜多步驟裝配任務與動態環境適應。[Figure Helix: General-Purpose Humanoid Robot Control via Vision-Language Models](https://www.figure.ai/blog/helix-humanoid-robot-ai)
 
 **Physical Intelligence π0 — 跨機械臂廣義遷移的多具身 VLA**：Physical Intelligence 推出的 π0 模型以 8 種不同機械臂與具身（單臂、雙臂、移動底座）訓練，實現跨具身泛化能力。π0 在邊界設備上推理單張影像至機械臂控制指令的全流程延遲控制在 300-400ms 範圍，支援零樣本任務遷移與多臂協作決策。該模型為 Roy 的多臂視覺伺服與自主決策系統提供具身 AI 新範型——無需重新訓練即可在新機械臂配置上應用，加速邊界強化學習的實驗迭代周期。[Physical Intelligence π0: A Generalist Vision-Language-Action Model](https://pi0.ai/)
+
+### Hiwonder ROSOrin Pro — 教育與研究級協作臂平台（2026 年 4 月新補充）
+
+**ROSOrin Pro 聲音交互與 ROS 2 原生整合**：Hiwonder 新推出的 ROSOrin Pro 為教育與研究機構打造的中端協作臂，內建 AI 語音交互模組、6-DOF 機械臂與 Jetson/樹莓派 5 深度整合。該平台原生支援 ROS 2，配備視覺伺服框架與實時語音指令理解，使用者可直接用自然語言驅動機械臂動作。相比商業級協作臂 (>$100,000)，ROSOrin Pro 成本低廉 (<$5,000)，特別適合多臂協作研究、邊界 VLA 模型部署與教育訓練場景。[Hiwonder ROSOrin Pro - AI Voice Interactive ROS 2 Robotic Arm](https://www.hiwonder.com/)
+
+### Interbotix X-Series Robot Arms — 工業模塊化設計與生態（2026 年 4 月新進展）
+
+**Interbotix X-Series 多配置與高精度控制**：Interbotix Robotics 的 X-Series 機械臂採用模塊化設計，提供 4-6 自由度配置，工作範圍達 750mm、有效負載 750g，支援 ROS 1/2 完整整合。該平台以低成本 (<$2,000) 與高可擴展性著稱，廣泛應用於學術研究、工業試點與邊界應用快速原型化。[Interbotix X-Series Robot Arms - Modular ROS Compatible Platform](https://www.trossenrobotics.com/)
