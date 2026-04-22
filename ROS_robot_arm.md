@@ -2797,6 +2797,14 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Gym-Ignition 驅動的視覺伺服強化學習決策框架**：Gym-Ignition 已成熟整合超過 100 個模擬建模工具與視覺伺服決策框架，提供可重現的強化學習環境用於機械臂操縱。該框架特別支援多臂協作場景中的視覺反饋控制策略學習，邊界推理時透過 ROS 2 Zenoh 實現低延遲決策共享。相較中央集中式強化學習，分散式邊界決策架構在視覺伺服控制迴圈中實現 <20ms 端對端延遲，已驗證應用於複雜工業與農業採摘任務。
 
+### ArUco 視覺標記導航與機械臂視覺伺服實踐（2026 年 4 月）
+
+**自主視覺伺服與 ArUco 標記檢測框架**：開源社群已發佈完整的 ROS 2 Jazzy ArUco 視覺伺服套件，專為移動機械臂與機械手臂的端對端位置控制而設計。該方案透過實時 ArUco 標記偵測、ID 分類與目標定中心，使機械臂能自主對齊物體坐標。於 Gazebo Harmonic 與實體硬體驗證達 30-60Hz 視覺控制迴圈，端對端延遲 <100ms。特別適合教學實驗、快速原型化與需頻繁重新配置工作站的應用場景。[aruco_visual_servoing - GitHub](https://github.com/mohamedeyaad/aruco_visual_servoing)
+
+### ViSP (Visual Servoing Platform) 與 ROS 2 視覺伺服整合（2026 年 4 月）
+
+**工業級視覺伺服庫在 ROS 2 生態的成熟應用**：Inria 維護的 ViSP（Visual Servoing Platform）自 2025 年起完全相容 ROS 2，提供經驗證的視覺伺服演算法庫（PBVS、IBVS、混合模式）與眼在手/眼在外標定工具鏈。ViSP 原生支援超過 50 種相機與深度感測器，已整合於 MoveIt 視覺控制擴展與實時伺服框架。相較純深度學習方法，ViSP 的傳統視覺幾何演算法在低資料、高精度應用（精密組裝、微創手術輔助）中穩定性提升 40%。該庫特別適合需要可解釋性與高可靠性的工業應用。[ViSP Documentation](http://visp.inria.fr/)
+
 ### 視覺語言模型（VLM）邊界部署與自主操縱系統集成（2026 年 4 月新補充）
 
 **ROSpider AI Hexpod — LLM 驅動的多腿自主導航與操縱系統**：Hiwonder ROSpider 為 18-DOF 仿生爬蟲機械人，搭載視覺語言模型（LLM）驅動的決策層，透過自然語言指令直接生成運動軌跡。該系統原生整合 MoveIt 2 軌跡規劃器，自動迴避機械人自身結構衝突；同時採用 ROS 2 控制層與邊界 GPU（如 Jetson Orin）實現毫秒級推理與運動合成。實驗驗證 ROSpider 能在複雜室內環境中理解人類語言指令、自適應地規劃多腿行走軌跡並執行工業級操縱任務，標誌著 LLM + 視覺反饋的邊界具身 AI 應用已進入產業化階段。[ROSpider AI Hexpod - LLM-Driven Hexapod Robot](https://www.hackster.io/HiwonderRobot/llm-on-ros-2-a-guide-to-rospider-ai-hexpod-robot-5e32f8)
