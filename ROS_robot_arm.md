@@ -2877,6 +2877,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 ### 視覺語言模型多模態融合綜述與 ROS 2 工業應用（2026 年最新綜述）
 
+**ROS 2 Jazzy 控制框架擴展與多臂視覺伺服決策整合**：ROS 2 Jazzy 最新版本中，ros2_control 框架已支援超越 C++ double 資料型態的控制選項，允許直接傳遞字串命令至機械臂硬體介面。該升級結合視覺反饋的邊界決策層，使多臂系統能原生執行複雜的視覺伺服控制與協作規劃。ROS-Industrial Consortium 同步提供機械臂製造商的 ROS 2 硬體介面開發文件與標準化。[ROS 2 Control Framework - Rolling Documentation](https://control.ros.org/rolling/)
+
+**多臂神經網路視覺伺服與自適應指令篩選**：2026 年 3 月新研究提出多關節機械臂視覺伺服強魯控制策略，結合神經網路與自適應指令篩選機制以克服動態不確定性。該方案透過實時視覺反饋與神經網路的決策融合，在複雜工業環境中實現 <50ms 視覺控制迴圈與毫秒級協作協調。特別適用於邊界 VLA 模型驅動的多臂系統，支援複雜電子組裝與精密操縱任務。[Robust Control of Multi-Joint Robotic Arm Visual Servoing](https://www.researchsquare.com/article/rs-9237317/)
+
+**動態拾取系統（VRCDS）與感知-決策-執行-反饋閉迴圈架構**：新研究發展整合多特徵加權 PnP 視覺演算法與多臂協作的動態拾取系統，建立完整的「感知→決策→執行→反饋」閉迴圈架構。該系統於實際物流產線驗證，拾取精度提升 25%，系統效率與能源效率各增進 15-20%。該架構為 Roy 的多臂視覺伺服決策系統提供了產業級的感知-決策整合範型。[Dynamic Grasping System Based on Visual Algorithm and Robot Arm Collaboration](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0340455)
+
 **多模態視覺語言融合的系統性綜述與應用落地**：Science Direct 2026 年最新綜述《Multimodal fusion with vision-language-action models for robotic manipulation: A systematic review》涵蓋 200+ 研究論文，系統分析視覺、語言、力覺反饋在機械臂操縱中的融合策略。該綜述揭示 ROS 2 生態在多模態融合中的核心角色——標準化感測器驅動程式與中介軟體（Zenoh）已使異構感測器集成時間從數週縮短至數天。工業應用案例顯示，融合 RGB 視覺、深度、力覺與聽覺反饋的多臂系統在精密製造中相較單模態視覺系統穩定性提升 25-35%，已被 BMW、ABB 與國際機械臂製造商採納為標準設計模式。該綜述為 Roy 的多臂視覺伺服與邊界強化學習系統提供了最新的多模態融合最佳實踐與評估基準。[Multimodal Fusion with Vision-Language-Action Models for Robotic Manipulation: A Systematic Review](https://www.sciencedirect.com/science/article/pii/S1566253525011248)
 
 **硬體設計標準化與邊界計算整合趨勢（2026 Q2 調查）**：全球 14 家機械臂製造商所推出的 6-DOF 與 7-DOF 機械臂價格已降至 $10,000 以下，設計原則聚焦於「數據友善性」而非原始能力，包括：(1) 後驅動關節與關節級 IMU 堆棧用於力控制與碰撞偵測；(2) 低延遲 USB-C 或以太網直接整合用於遠端操控數據採集；(3) 深度相機、腕部力矩感測器、板載計算（NVIDIA Jetson Orin/Thor）原生整合至機械臂結構。至少 7 家商業平台已預配 NVIDIA 邊界加速模組，使「硬體到首次 VLA 推理」的時間線從傳統的數週壓縮至 2 小時以內。該標準化進展使 Roy 的多臂協作與視覺伺服系統在硬體選型上具有靈活性，支援快速原型迭代與跨機械臂模型部署。[State of Robotics 2026 Hardware Report - SVRC](https://www.roboticscenter.ai/state-of-robotics-2026)
