@@ -2825,6 +2825,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **多模態視覺反饋的邊界視覺伺服突破**：Inria 與業界最新研究發表 SEBVS（Synthetic Event-based Visual Servoing），將 RGB 高解析度影像與非同步事件相機微秒級信號融合於統一的 Transformer 架構，提升視覺伺服的穩定性與速度。相較單一模態方法，SEBVS 在目標追蹤與操縱精度上提升 15-20%，推理延遲維持 <50ms 水準，特別適合快速動作與低光照環境。該技術已驗證應用於多臂高速揀配與精密組裝任務。[SEBVS: Synthetic Event-based Visual Servoing for Robot Navigation and Manipulation](https://arxiv.org/html/2508.17643v1)
 
+### EdgeVLA — 視覺語言動作模型的邊界推理加速框架（2026 年 4 月 22 日新補充）
+
+**7倍推理加速與小型語言模型的邊界VLA突破**：2026年最新研究 EdgeVLA（EVLA）實現視覺語言動作模型在邊界設備的革命性加速，通過兩大創新達成：(1) 消除端點位置預測的自迴歸要求，實現7倍推理加速；(2) 利用小型語言模型（SLM）實現與大型模型相當的訓練效能，計算需求顯著降低。EdgeVLA 在 Jetson Orin NX 與 Raspberry Pi 5 上實現 <150ms 推理延遲，完全相容 ROS 2 Control 標準化介面。該突破使多臂視覺伺服與自主決策能在完全邊界環境中以毫秒級延遲運行，消除雲端 API 依賴並支援實時多臂協作場景。[EdgeVLA: Efficient Vision-Language-Action Models on Edge Devices](https://arxiv.org/abs/2507.14049)
+
 ### Helix 與 π0 — 新一代廣義 VLA 模型的邊界推理框架（2026 年 4 月 21 日新補充）
 
 **Figure AI Helix — 類人機械人全身控制的統一 VLA 模型**：Figure AI 於 2025 年 2 月發表 Helix，首個能以毫秒級精度控制類人機械人全身（雙臂、雙手、軀幹、頭部、手指）的視覺語言動作模型。相較傳統多階段規劃方法（視覺 → 語義 → 控制），Helix 直接將攝像機影像與自然語言指令端對端映射到 100+ DOF 執行器指令，推理延遲 <500ms，適合即時人機協作場景。該模型已於工廠部署驗證，支援複雜多步驟裝配任務與動態環境適應。[Figure Helix: General-Purpose Humanoid Robot Control via Vision-Language Models](https://www.figure.ai/blog/helix-humanoid-robot-ai)
