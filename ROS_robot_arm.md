@@ -2865,4 +2865,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **OpenArm 平台普及化與跨機械臂政策遷移加速**：OpenArm 已成為全球學術研究與工業試點的事實標準基線平台，2025 年出貨超過 2,400 台單位。該平台的開源 URDF 與完整 ROS 2 相容性使研究人員能在數小時內將訓練於某一機械臂的控制政策遷移至其他型號，相較傳統硬體適配時間（數週）提升 50 倍效率。該成就標誌著 ROS 2 生態在機械臂軟硬體解耦上的成熟。
 
+### LingBot-VLA 與 SmolVLA — 產業化 VLA 與開源輕量解決方案（2026 年最新動向）
+
+**Ant Group LingBot-VLA — 雙臂操縱的超大規模訓練突破**：蟻集團於 2026 年 1 月發佈 LingBot-VLA，採集自 9 種不同雙臂機械臂具身的 20,000 小時遠程操控資料進行訓練，於 GM-100 大規模基準測試中驗證跨具身泛化能力。該模型特別針對複雜雙臂協作任務最佳化，支援複雜電子組裝、精密零件裝配與受力控制任務，相較單臂 VLA 提升合成效率 30-40%。該方案展示 VLA 技術在工業雙臂系統的規模化應用潛力，為 Roy 的多臂協作決策框架提供了經驗證的訓練數據與模型架構參考。[Ant Group LingBot-VLA: Vision Language Action Model for Real-World Dual-Arm Robot Manipulation](https://www.marktechpost.com/2026/01/29/ant-group-releases-lingbot-vla-a-vision-language-action-foundation-model-for-real-world-robot-manipulation/)
+
+**ICLR 2026 VLA 研究現狀與社群動向**：國際機器學習大會（ICLR 2026）中 VLA 領域已成為重點研究方向，統計 164 篇 VLA 相關投稿揭示三大趨勢：(1) 離散擴散模型 (Discrete Diffusion VLAs) 成為主流——相較自迴歸方法減少推理時間 50%；(2) 推理模型（Reasoning VLAs）興起——支援複雜多步驟任務規劃與環境適應；(3) LIBERO、CALVIN、SIMPLER 基準測試成熟度提升，已能評估跨具身泛化與實時邊界部署能力。開源社群如 Hugging Face SmolVLA（450M 參數輕量模型）展示邊界可部署的實用 VLA，標誌著 VLA 技術從前沿研究邁向工業生產系統的準備成熟。[State of Vision-Language-Action (VLA) Research at ICLR 2026](https://mbreuss.github.io/blog_post_iclr_26_vla.html)
+
 **硬體設計標準化與邊界計算整合趨勢（2026 Q2 調查）**：全球 14 家機械臂製造商所推出的 6-DOF 與 7-DOF 機械臂價格已降至 $10,000 以下，設計原則聚焦於「數據友善性」而非原始能力，包括：(1) 後驅動關節與關節級 IMU 堆棧用於力控制與碰撞偵測；(2) 低延遲 USB-C 或以太網直接整合用於遠端操控數據採集；(3) 深度相機、腕部力矩感測器、板載計算（NVIDIA Jetson Orin/Thor）原生整合至機械臂結構。至少 7 家商業平台已預配 NVIDIA 邊界加速模組，使「硬體到首次 VLA 推理」的時間線從傳統的數週壓縮至 2 小時以內。該標準化進展使 Roy 的多臂協作與視覺伺服系統在硬體選型上具有靈活性，支援快速原型迭代與跨機械臂模型部署。[State of Robotics 2026 Hardware Report - SVRC](https://www.roboticscenter.ai/state-of-robotics-2026)
