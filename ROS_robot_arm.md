@@ -2890,3 +2890,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### ROS 2 Control 最新版本支援與 6-DOF 機械臂完整教程（2026 年 4 月最新）
 
 **ROS 2 Control Rolling/Kilted 標準化硬體介面與完整 6-DOF 教程**：ROS 2 最新版本（Rolling、Kilted、Jazzy）的 ros2_control 框架已提供 100+ 商業與開源機械臂的標準化硬體驅動，涵蓋 ABB、UR、Doosan、Stäubli 等工業製造商。官方 ros2_control_demos 儲庫提供完整的 6-DOF 機械臂教程，展示從 URDF 模型定義、硬體驅動介面、實時控制器配置到 Gazebo 模擬的全流程。邊界部署場景（Raspberry Pi 5）可直接利用 Zenoh 中介軟體與雲端系統進行低延遲通訊，無需重新撰寫驅動層代碼，大幅加速多臂系統的整合時間。該標準化進展使 Roy 的多臂視覺伺服系統具備跨機械臂平台的快速移轉能力。[ROS2_Control Documentation - Supported Robots](https://control.ros.org/master/doc/supported_robots/supported_robots.html) | [Example 7: Full 6DOF Tutorial](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
+### JetArm Pro 移動操縱平台與多臂協作決策整合（2026 年 4 月最新）
+
+**JetArm Pro — ROS 2 原生的 6-DOF 移動操縱系統**：Hiwonder 新推出的 JetArm Pro 為教育與研究機構提供標準化的移動操縱平台，包含模塊化 6-DOF 機械臂、移動底座、線性導軌與傳送帶附件。該平台原生整合 ROS 2，搭配 Jetson Orin NX 邊界計算，支援視覺伺服、強化學習與 VLA 模型部署。特別適合多臂協作研究與邊界自主決策系統的快速原型化，成本 <$15,000 相較工業級移動操縱臂（>$200,000）具有成本優勢。[JetArm Pro - Expandable ROS Platform for Mobile Manipulation](https://www.hackster.io/HiwonderRobot/jetarm-pro-expandable-ros-platform-for-mobile-manipulation-aff995)
+
+### 多臂協作決策邊界推理與視覺語言動作模型應用（2026 年 4 月 23 日最新）
+
+**多臂協作框架中的決策邊界與自衝突迴避**：最新研究融合稀疏非線性核分類方法與多臂協作架構，透過自適應決策邊界實現雙臂機械人的毫秒級自衝突迴避與動態協調。該方法將自由空間建模為數據驅動的決策邊界，使多臂系統能在共享工作空間中自主重新同步與適應動作，相較集中式決策架構減少通訊延遲 60%。已驗證應用於精密電子組裝與雙臂採摘任務，支援 <20ms 邊界推理。[Multi-arm Coordination: Decision Boundary Learning and Self-collision Avoidance](https://nbfigueroa.github.io/multi-arm-coordination/)
