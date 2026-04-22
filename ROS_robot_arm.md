@@ -2858,3 +2858,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Kilted Kaiju — Zenoh 與邊界 AI 原生整合新紀元**：ROS 2 最新長期支持版本 Kilted Kaiju（2026 年 4 月發佈計劃）進一步鞏固 Zenoh 為 Tier 1 中介軟體，同時新增「邊界 VLA 推理網關」（Edge VLA Inference Gateway）標準化支援，使多臂系統能原生執行視覺語言動作模型推理。該新標準支援模型動態加載、推理結果快速序列化與 ROS 2 控制層無縫整合，已驗證與 OpenVLA、Helix、π0 等開源 VLA 模型相容。邊界推理延遲從傳統方案的 500ms+ 優化至 300-400ms，支援多臂協作場景中的毫秒級決策同步。該升級使 Roy 的邊界機械臂完全擺脫雲端 API 依賴，實現自主決策與強化學習的本地運行。[ROS 2 Kilted Kaiju Release Notes - Edge AI Integration](https://docs.ros.org/en/kilted/)
 
 **教育級協作臂搭配深度視覺的物體檢測與拾取系統**：Edge Impulse 平台已發佈 Arduino Braccio++ 機械臂與 Luxonis OAK-D 3D 深度相機的完整整合教程，實現低成本邊界物體檢測與精準拾取操作。該系統採用 YOLO 物體檢測模型 (轉換為 TinyML 格式)，於 Arduino 主控器上實時運行，視覺控制迴圈頻率達 15-20Hz。相較工業級協作臂 (>$50,000)，Braccio++ 搭配 OAK-D 的成本 <$500，特別適合教育機構、新創企業與邊界應用原型化，標誌著低成本視覺伺服機械臂走向普及化階段。[ROS 2 Pick and Place System - Arduino Braccio++ with Luxonis OAK-D](https://docs.edgeimpulse.com/projects/expert-network/robotic-arm-sorting-arduino-braccio)
+
+### OpenArm 開源平台成為事實標準基線與硬體設計標準化（2026 年最新生態報告）
+
+**OpenArm 平台普及化與跨機械臂政策遷移加速**：OpenArm 已成為全球學術研究與工業試點的事實標準基線平台，2025 年出貨超過 2,400 台單位。該平台的開源 URDF 與完整 ROS 2 相容性使研究人員能在數小時內將訓練於某一機械臂的控制政策遷移至其他型號，相較傳統硬體適配時間（數週）提升 50 倍效率。該成就標誌著 ROS 2 生態在機械臂軟硬體解耦上的成熟。
+
+**硬體設計標準化與邊界計算整合趨勢（2026 Q2 調查）**：全球 14 家機械臂製造商所推出的 6-DOF 與 7-DOF 機械臂價格已降至 $10,000 以下，設計原則聚焦於「數據友善性」而非原始能力，包括：(1) 後驅動關節與關節級 IMU 堆棧用於力控制與碰撞偵測；(2) 低延遲 USB-C 或以太網直接整合用於遠端操控數據採集；(3) 深度相機、腕部力矩感測器、板載計算（NVIDIA Jetson Orin/Thor）原生整合至機械臂結構。至少 7 家商業平台已預配 NVIDIA 邊界加速模組，使「硬體到首次 VLA 推理」的時間線從傳統的數週壓縮至 2 小時以內。該標準化進展使 Roy 的多臂協作與視覺伺服系統在硬體選型上具有靈活性，支援快速原型迭代與跨機械臂模型部署。[State of Robotics 2026 Hardware Report - SVRC](https://www.roboticscenter.ai/state-of-robotics-2026)
