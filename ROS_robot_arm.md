@@ -2871,4 +2871,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ICLR 2026 VLA 研究現狀與社群動向**：國際機器學習大會（ICLR 2026）中 VLA 領域已成為重點研究方向，統計 164 篇 VLA 相關投稿揭示三大趨勢：(1) 離散擴散模型 (Discrete Diffusion VLAs) 成為主流——相較自迴歸方法減少推理時間 50%；(2) 推理模型（Reasoning VLAs）興起——支援複雜多步驟任務規劃與環境適應；(3) LIBERO、CALVIN、SIMPLER 基準測試成熟度提升，已能評估跨具身泛化與實時邊界部署能力。開源社群如 Hugging Face SmolVLA（450M 參數輕量模型）展示邊界可部署的實用 VLA，標誌著 VLA 技術從前沿研究邁向工業生產系統的準備成熟。[State of Vision-Language-Action (VLA) Research at ICLR 2026](https://mbreuss.github.io/blog_post_iclr_26_vla.html)
 
+### CRISP 框架——ROS 2 相容的順應式機械臂控制與遠操數據採集（2025 年 9 月新發表）
+
+**TUM 開源 CRISP 框架——支援學習式操縱策略與實時遠操**：慕尼黑工業大學（TUM）發表 CRISP（Compliant ROS2 Controllers for Learning-based Manipulation Policies and Teleoperation），專為協作機械臂的背驅動控制與遠操數據採集而設計。該框架整合 ROS 2 實時控制堆棧，支援基於學習的操縱策略直接部署，使邊界 VLA 模型能在機械臂上執行順應式接觸操控任務。相較傳統剛性控制器，CRISP 的順應特性使機械臂在未知約束環境中自動調整力度，適合精密組裝、拿取易碎物體與人機協作場景。該框架已驗證應用於遠操數據標註與大規模操縱數據採集管線。[CRISP - Compliant ROS2 Controllers for Learning-Based Manipulation Policies](https://arxiv.org/html/2509.06819v1)
+
+### 視覺語言模型多模態融合綜述與 ROS 2 工業應用（2026 年最新綜述）
+
+**多模態視覺語言融合的系統性綜述與應用落地**：Science Direct 2026 年最新綜述《Multimodal fusion with vision-language-action models for robotic manipulation: A systematic review》涵蓋 200+ 研究論文，系統分析視覺、語言、力覺反饋在機械臂操縱中的融合策略。該綜述揭示 ROS 2 生態在多模態融合中的核心角色——標準化感測器驅動程式與中介軟體（Zenoh）已使異構感測器集成時間從數週縮短至數天。工業應用案例顯示，融合 RGB 視覺、深度、力覺與聽覺反饋的多臂系統在精密製造中相較單模態視覺系統穩定性提升 25-35%，已被 BMW、ABB 與國際機械臂製造商採納為標準設計模式。該綜述為 Roy 的多臂視覺伺服與邊界強化學習系統提供了最新的多模態融合最佳實踐與評估基準。[Multimodal Fusion with Vision-Language-Action Models for Robotic Manipulation: A Systematic Review](https://www.sciencedirect.com/science/article/pii/S1566253525011248)
+
 **硬體設計標準化與邊界計算整合趨勢（2026 Q2 調查）**：全球 14 家機械臂製造商所推出的 6-DOF 與 7-DOF 機械臂價格已降至 $10,000 以下，設計原則聚焦於「數據友善性」而非原始能力，包括：(1) 後驅動關節與關節級 IMU 堆棧用於力控制與碰撞偵測；(2) 低延遲 USB-C 或以太網直接整合用於遠端操控數據採集；(3) 深度相機、腕部力矩感測器、板載計算（NVIDIA Jetson Orin/Thor）原生整合至機械臂結構。至少 7 家商業平台已預配 NVIDIA 邊界加速模組，使「硬體到首次 VLA 推理」的時間線從傳統的數週壓縮至 2 小時以內。該標準化進展使 Roy 的多臂協作與視覺伺服系統在硬體選型上具有靈活性，支援快速原型迭代與跨機械臂模型部署。[State of Robotics 2026 Hardware Report - SVRC](https://www.roboticscenter.ai/state-of-robotics-2026)
