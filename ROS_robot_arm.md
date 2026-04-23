@@ -2917,3 +2917,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### MoveIt 2 Humble/Jazzy 標準化配置與生態成熟度（2026 年 4 月評估）
 
 **MoveIt 2 Humble & Jazzy：URDF-SRDF-Gazebo 標準化流程與跨機械臂通用性**：MoveIt 2 於 ROS 2 Humble（2023 5 月）與 Jazzy（2024 5 月）版本中已建立完整的標準化配置框架，包括：(1) URDF 機械臂機構描述 + SRDF 語義配置檔案，定義機械臂首選運動方式與碰撞檢查模型；(2) Gazebo 模擬環境無縫整合，支援完全的仿真-實機遷移；(3) 100+ 商業與開源機械臂已提供官方 ROS 2 驅動與預配置。該標準化路線圖使研究人員與開發者能在數小時內為全新機械臂平台配置完整的運動規劃堆棧，相較傳統方案（數週）效率提升 50 倍。2026 年已驗證於 UR、ABB、Doosan、Arduino Braccio 等 8+ 商業平台與開源機械臂。[MoveIt 2 Documentation - Supported Robots](https://moveit.ai/) | [ROS 2 Humble Configuration Guide](https://docs.ros.org/en/humble/)
+
+### ArmVS — 開源機械臂視覺伺服套件與零幾何知識自主操縱（2026 年最新）
+
+**ArmVS ROS 視覺伺服框架：無需物體幾何先驗的自主抓取**：ArmVS 是 GitHub 社群開源的 ROS 原生視覺伺服套件（github.com/willshw/ArmVS），實現機械臂在零物體幾何知識情況下的自主抓取操作。該套件整合視覺反饋伺服與運動規劃，支援多種機械臂硬體與 ROS 2 框架。相較傳統需要物體模型的抓取系統，ArmVS 採用實時視覺特徵追蹤驅動伺服控制迴圈，使邊界 VLA 模型的決策指令能快速轉換為視覺伺服命令，特別適合未知環境與動態物體的應用場景。[ArmVS: Open-Source ROS Visual Servoing Package for Robot Arms - GitHub](https://github.com/willshw/ArmVS)
