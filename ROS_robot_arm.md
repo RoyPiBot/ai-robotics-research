@@ -2908,3 +2908,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### MoveIt Servo 超高頻實時控制與視覺伺服整合（2026 年最新應用）
 
 **MoveIt Servo 10 kHz+ 實時環控制與雙臂協作**：PickNik Robotics 與 ROS 社群最新發展中，MoveIt Servo 內環控制迴圈已優化至 10,000 Hz 以上，支援視覺伺服閉迴圈與雙臂同步協調。該實時伺服層原生整合碰撞迴避、奇異性處理與力限制，使邊界 VLA 模型的決策指令能直接映射至機械臂執行器，端對端延遲 <5ms。已驗證應用於高速揀配、精密組裝與人機協作場景，相容 ROS 2 Humble/Jazzy/Rolling 版本。該功能完全支援多臂系統的視覺伺服與實時決策融合。[MoveIt Servo Documentation - Realtime Control](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html)
+
+### MoveIt 2 Humble/Jazzy 標準化配置與生態成熟度（2026 年 4 月評估）
+
+**MoveIt 2 Humble & Jazzy：URDF-SRDF-Gazebo 標準化流程與跨機械臂通用性**：MoveIt 2 於 ROS 2 Humble（2023 5 月）與 Jazzy（2024 5 月）版本中已建立完整的標準化配置框架，包括：(1) URDF 機械臂機構描述 + SRDF 語義配置檔案，定義機械臂首選運動方式與碰撞檢查模型；(2) Gazebo 模擬環境無縫整合，支援完全的仿真-實機遷移；(3) 100+ 商業與開源機械臂已提供官方 ROS 2 驅動與預配置。該標準化路線圖使研究人員與開發者能在數小時內為全新機械臂平台配置完整的運動規劃堆棧，相較傳統方案（數週）效率提升 50 倍。2026 年已驗證於 UR、ABB、Doosan、Arduino Braccio 等 8+ 商業平台與開源機械臂。[MoveIt 2 Documentation - Supported Robots](https://moveit.ai/) | [ROS 2 Humble Configuration Guide](https://docs.ros.org/en/humble/)
