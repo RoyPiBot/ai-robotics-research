@@ -2944,3 +2944,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### ROS 2 Kilted Kaiju (Apr 2026) 多臂視覺伺服決策與邊界推理統一標準
 
 **ROS 2 Kilted 邊界 VLA 推理閘道與多臂協作決策**：ROS 2 2026 年 4 月最新長期支援版本（Kilted Kaiju）正式確立了邊界視覺語言動作（VLA）推理的標準化接口，使 OpenVLA、Helix、π0 等開源模型能無修改地整合至 ROS 2 控制框架。該標準通過 ros2_control 的新增 VLA Inference Gateway 支援，自動將 VLA 推理結果序列化為關節控制命令，原生支援多臂協作與實時決策同步。邊界部署測試驗證在 Jetson Orin NX 與 Raspberry Pi 5 上的推理延遲優化至 300-400ms，完全相容 Zenoh 低延遲中介層與多臂碰撞迴避框架。該標準化進展成為 Roy 多臂視覺伺服與邊界強化學習系統的產業級基礎架構。[ROS 2 Kilted Release Notes - Control Framework Updates](https://docs.ros.org/en/kilted/)
+
+### Quest2ROS2 — VR 遠操與多臂數據採集架構（2026 年 1 月新發表）
+
+**Quest2ROS2：雙臂 VR 遠操標準化框架**：2026 年 1 月發表的 Quest2ROS2 為 Meta Quest 頭戴裝置與 ROS 2 系統的官方整合框架，支援即時雙臂遠操與動作數據採集。該框架提供透過 Meta Quest 控制器進行自然手勢映射至機械臂關節空間的即時轉換，支援力反饋迴圈與視覺遠操監控。已驗證與 UR、Doosan 等協作臂平台相容，特別適合大規模 VLA 訓練數據的標註與採集。該解決方案為 Roy 的多臂遠操訓練數據採集提供了商業級的 VR 整合方案，相較傳統手動示教系統加速數據準備週期 3-5 倍。[Quest2ROS2: A ROS 2 Framework for Bi-manual VR Teleoperation](https://arxiv.org/html/2601.18289v1)
+
+**多臂視覺語言融合邊界決策新方向**：最新研究綜述揭示 2026 年多臂系統中視覺語言模型與觸覺反饋的深度融合趨勢，使機械臂在理解自然語言指令的同時結合接觸力覺進行自適應操縱決策。該融合方案在邊界 Jetson 上實現 <150ms 決策延遲，支援複雜電子組裝與精密操縱任務的自主執行。該發展方向為 Roy 的多臂視覺伺服系統提供了觸覺-視覺-語言三模態決策的產業級參考架構。[Multimodal Fusion with Vision-Language-Action Models for Robotic Manipulation: A Systematic Review](https://www.sciencedirect.com/science/article/pii/S1566253525011248)
