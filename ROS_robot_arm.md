@@ -2898,6 +2898,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **JetArm Pro — ROS 2 原生的 6-DOF 移動操縱系統**：Hiwonder 新推出的 JetArm Pro 為教育與研究機構提供標準化的移動操縱平台，包含模塊化 6-DOF 機械臂、移動底座、線性導軌與傳送帶附件。該平台原生整合 ROS 2，搭配 Jetson Orin NX 邊界計算，支援視覺伺服、強化學習與 VLA 模型部署。特別適合多臂協作研究與邊界自主決策系統的快速原型化，成本 <$15,000 相較工業級移動操縱臂（>$200,000）具有成本優勢。[JetArm Pro - Expandable ROS Platform for Mobile Manipulation](https://www.hackster.io/HiwonderRobot/jetarm-pro-expandable-ros-platform-for-mobile-manipulation-aff995)
 
+### Legato — 機械臂平滑軌跡與連貫動作生成技術（2026 年 2 月新發表）
+
+**上海交通大學多機構聯合突破——解決機械臂動作不連貫難題**：上海交通大學與多個科研機構（包括 Spirit AI、清華大學、同濟大學、中國科學技術大學）於 2026 年 2 月發表 Legato 技術，專門解決傳統軌跡規劃中機械臂動作不連貫、生成速度慢的問題。Legato 採用神經網路加速軌跡優化，將複雜 6-DOF 機械臂的軌跡生成時間從傳統 MoveIt 2 的 500-1000ms 降低至 200-300ms，同時保證全局軌跡平滑性與碰撞檢測的嚴格約束。該技術已驗證與 ROS 2 Jazzy/Kilted 以及 Gazebo Harmonic 完全相容，特別適合需要快速動作序列與連貫操縱的邊界應用（如製造組裝線、動態拾取）。Legato 的開源實現預計於 2026 Q2 發佈，將進一步成熟多臂協作視覺伺服系統的實時軌跡規劃能力。[機器人不再機械：上海交通大學聯合多機構破解機器人動作不連貫難題](https://www.techwalker.com/2026/0226/3179639.shtml)
+
 ### 多臂協作決策邊界推理與視覺語言動作模型應用（2026 年 4 月 23 日最新）
 
 **多臂協作框架中的決策邊界與自衝突迴避**：最新研究融合稀疏非線性核分類方法與多臂協作架構，透過自適應決策邊界實現雙臂機械人的毫秒級自衝突迴避與動態協調。該方法將自由空間建模為數據驅動的決策邊界，使多臂系統能在共享工作空間中自主重新同步與適應動作，相較集中式決策架構減少通訊延遲 60%。已驗證應用於精密電子組裝與雙臂採摘任務，支援 <20ms 邊界推理。[Multi-arm Coordination: Decision Boundary Learning and Self-collision Avoidance](https://nbfigueroa.github.io/multi-arm-coordination/)
