@@ -2900,3 +2900,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### 多臂協作決策邊界推理與視覺語言動作模型應用（2026 年 4 月 23 日最新）
 
 **多臂協作框架中的決策邊界與自衝突迴避**：最新研究融合稀疏非線性核分類方法與多臂協作架構，透過自適應決策邊界實現雙臂機械人的毫秒級自衝突迴避與動態協調。該方法將自由空間建模為數據驅動的決策邊界，使多臂系統能在共享工作空間中自主重新同步與適應動作，相較集中式決策架構減少通訊延遲 60%。已驗證應用於精密電子組裝與雙臂採摘任務，支援 <20ms 邊界推理。[Multi-arm Coordination: Decision Boundary Learning and Self-collision Avoidance](https://nbfigueroa.github.io/multi-arm-coordination/)
+
+### RoboBallet — 圖神經網絡驅動的多機械臂協作與路徑規劃（2025 年 9 月新發表）
+
+**Google DeepMind RoboBallet：GNN+RL 多臂無碰撞運動規劃**：Google DeepMind Robotics、Intrinsic 與倫敦大學學院於 2025 年 9 月合作發表 RoboBallet，利用圖神經網絡（GNN）與強化學習（RL）為多機械臂共享工作空間生成無碰撞運動計劃。該方法將機械臂、任務、障礙物與物體表示為圖節點，邊權定義其空間關係。單一 GNN 策略經過百萬級合成場景訓練，可解決堆積、重排與流程化任務；已驗證跨模擬環境泛化至實體硬體。相較傳統 RRT* 與 OMPL 規劃器，RoboBallet 在 8 臂協作場景中路徑規劃時間減少 70%，支援實時決策與視覺伺服融合。該方案為 Roy 的多臂協作視覺伺服系統提供了神經網絡基礎的決策層架構。[RoboBallet: Planning for Multi-Robot Reaching with Graph Neural Networks and Reinforcement Learning](https://arxiv.org/html/2509.05397v1)
+
+### MoveIt Servo 超高頻實時控制與視覺伺服整合（2026 年最新應用）
+
+**MoveIt Servo 10 kHz+ 實時環控制與雙臂協作**：PickNik Robotics 與 ROS 社群最新發展中，MoveIt Servo 內環控制迴圈已優化至 10,000 Hz 以上，支援視覺伺服閉迴圈與雙臂同步協調。該實時伺服層原生整合碰撞迴避、奇異性處理與力限制，使邊界 VLA 模型的決策指令能直接映射至機械臂執行器，端對端延遲 <5ms。已驗證應用於高速揀配、精密組裝與人機協作場景，相容 ROS 2 Humble/Jazzy/Rolling 版本。該功能完全支援多臂系統的視覺伺服與實時決策融合。[MoveIt Servo Documentation - Realtime Control](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html)
