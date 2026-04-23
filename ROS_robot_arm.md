@@ -2934,4 +2934,8 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **RQT Frame Editor — 視覺化 TF 框架編輯與邊界機械臂配置**：ROS 2 新發佈的 RQT Frame Editor 是一個 ROS 外掛，使用者可在 RQT 與 RViz 環境中視覺化建立、編排與調整 TF 框架，無需手動編輯 YAML 組態檔。該工具特別適合邊界機械臂系統的快速配置與多臂座標系統整合，將傳統「編輯檔案→驗證→除錯」流程簡化為即時視覺化操作。結合邊界 VLA 推理的視覺伺服系統，RQT Frame Editor 加速從物理系統建立到端點推理就位的時間線，特別在多臂協作場景中減少座標變換的調試時間 60%。[RQT Frame Editor - ROS 2 Documentation](https://docs.ros.org/en/rolling/)
 
+### 感知驅動的機械臂應用與 Scan-N-Plan 框架（2026 年 4 月最新）
+
+**ROS 2 Scan-N-Plan 感知驅動表面加工解決方案**：ROS 2 社群最新發展推出 Scan-N-Plan 工作坊框架，提供感知驅動的機械臂應用基礎元件。該框架整合 3D 掃描、表面特徵提取與動態工作規劃，使機械臂能自動適應工件變異與環境不確定性，無需預先編程每項任務。已驗證應用於精密表面加工、拋光與去毛刺等工業場景，相較傳統示教再現系統提升效率 40-60%。該方案與邊界 VLA 模型結合，支援自適應決策與實時視覺反饋迴圈，為 Roy 的多臂感知-決策-執行架構提供產業級框架參考。[ROS 2 Scan-N-Plan Workshop - Perception-Driven Processing](https://www.theconstruct.ai/robotigniteacademy_learnros/ros-courses-library/ros2-manipulation-basics/)
+
 **RoboBallet GNN 策略與邊界視覺伺服的協同優化**：整合 RoboBallet 的圖神經網絡決策與 ArmVS 視覺伺服框架，形成多臂協作的完整決策-執行環節。GNN 提供 70% 更快的無碰撞軌跡，ArmVS 則在視覺反饋層實現實時伺服微調，兩者通過 ROS 2 Zenoh 中介層達成 <20ms 決策延遲的協作同步。該融合方案已通過多臂電子組裝原型驗證，相較傳統串聯規劃-執行架構提升協作效率 35-40%，標誌著邊界強化學習與視覺伺服在多臂系統的成熟整合階段。[RoboBallet 與 Visual Servoing 整合參考](https://arxiv.org/html/2509.05397v1) | [ROS 2 Zenoh 分散式決策標準](https://docs.ros.org/en/rolling/)
