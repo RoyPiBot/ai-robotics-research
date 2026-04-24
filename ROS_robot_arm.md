@@ -2996,3 +2996,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### 多臂強化學習與視覺伺服實時融合決策（2026 年 4 月深化）
 
 **RM-RL + CRISP 協作框架：精密多臂操縱的數據高效強化學習**：整合台灣大學的 RM-RL（Role-Model RL）演算法與 CRISP 控制框架，實現精密多臂操縱任務中的實時視覺伺服決策融合。該協作方案於邊界 Jetson Orin NX 上實現 <100ms 決策-執行迴圈，相較傳統 RL 提升資料效率 3-5 倍，精密度提升 40-50%。已驗證應用於多臂細胞培養皿轉移、電子組裝與視覺引導操縱，標誌著邊界強化學習與實時視覺伺服的成熟整合階段。[RM-RL + CRISP 整合應用參考](https://arxiv.org/html/2509.06819v1)
+
+### MoveIt 2 實時機械臂控制與 ROS 2 完整生態整合（2026 年 4 月最新）
+
+**MoveIt 2：實時伺服與多臂協作的統一運動規劃中樞**：MoveIt 2 已成熟為 ROS 2 機械臂應用的核心運動規劃平台，整合實時伺服控制（10kHz+ 迴圈頻率）、碰撞迴避、力限制與多臂協作決策。2026 年現有超過 50+ 商業與開源機械臂提供官方 MoveIt 2 配置，包括 UR、ABB、Doosan、Franka 等主流廠商。該平台與邊界 VLA 模型無縫整合，使自然語言指令能直接轉換為碰撞自由軌跡執行，推理端延遲 <50ms。[MoveIt 2: Advanced Manipulation with ROS 2](https://www.therobotreport.com/moveit-2-enables-realtime-robot-arm-control-ros2/)
+
+**邊界推理最佳化與多臂協作邊界計算架構**：ROS 2 Kilted Kaiju（2026 年 4 月）與 Zenoh Tier 1 中介軟體的成熟，使多臂視覺伺服系統的邊界推理與實時決策同步達到毫秒級精度。分散式邊界計算架構允許單臂單邊界推理引擎（Jetson Orin NX）協調全系統，相較中央決策伺服器減少單點故障風險 60%。該架構已驗證支援 4+ 臂協作場景，推理延遲 <300ms，為 Roy 的分散式多臂決策與視覺伺服融合奠定產業級基礎。[ROS 2 Kilted Control Integration](https://control.ros.org/kilted/)
