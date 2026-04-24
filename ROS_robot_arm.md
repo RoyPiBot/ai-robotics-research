@@ -2962,3 +2962,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Control 標準化架構對強化學習部署的支援**：ROS 2 最新版本（Rolling、Kilted）的 ros2_control 框架已支援 100+ 商業與開源機械臂的標準化硬體介面，使強化學習訓練環境與實體部署之間的銜接時間縮短至數小時。該標準化接口提供統一的關節控制命令格式與實時反饋回路，使訓練於 Gazebo 模擬環境的 RL 策略能直接在實體機械臂上執行，無需重新適配硬體層代碼。[ROS 2 Control Documentation - Supported Robots](https://control.ros.org/rolling/doc/supported_robots/supported_robots.html)
 
 **Gazebo Harmonic 與強化學習環境的完全整合**：Gazebo 最新長期支持版本（Harmonic，2025 年 5 月發佈）與 ROS 2 Jazzy/Kilted 實現無縫整合，提供高保真的機械臂物理模擬環境。支援複雜接觸動力學、碰撞檢測與力覺反饋模擬，使邊界 RL 訓練（於 Jetson Orin NX、Raspberry Pi 5 運行）的模擬-實機轉換率提升至 90% 以上。該環境已驗證應用於視覺伺服、操縱軌跡優化與多臂協作策略學習，加速 Roy 的邊界強化學習實驗迭代周期。[ROS 2 & Gazebo Integration Guide - Physical Simulation for RL](https://docs.ros.org/en/rolling/)
+
+### ROS 2 Kilted Kaiju 2026 年 4 月中介軟體與分散式控制突破
+
+**Zenoh Tier 1 RMW 與低延遲邊界決策**：ROS 2 Kilted（2026 年 4 月發佈）正式將 Zenoh 升級為 Tier 1 中介軟體（RMW），相較傳統 DDS 實現網路延遲減少 60%，特別適合多臂協作決策中的實時通訊需求。Zenoh 原生支援地邊協同計算，使中央決策伺服器（運行 VLA 推理）與邊界執行層（控制多臂系統）之間的命令-反饋迴圈延遲從 500ms+ 優化至 200-300ms。該中介軟體升級與邊界 VLA 推理閘道標準化，使 OpenVLA、Helix、π0 等開源模型能無修改地整合至 ROS 2 框架，自動序列化多臂關節控制。已驗證應用於邊界 Jetson Orin NX 與 Raspberry Pi 5 環境，為分散式多臂視覺伺服提供產業級基礎。[ROS 2 Kilted Release Notes - Zenoh Middleware](https://docs.ros.org/en/kilted/) | [ROS 2 Rolling Documentation - Edge AI Integration](https://docs.ros.org/en/rolling/)
+
+### RM-RL 角色模型強化學習——ICRA 2026 多臂精密操縱突破
+
+**Role-Model RL：資料效率與精密度的雙重提升**：國立台灣大學與多所機構於 ICRA 2026 發表 RM-RL（Role-Model Reinforcement Learning），針對多臂精密操縱任務中資料採集成本高、精度要求嚴苛的問題提出創新解決方案。RM-RL 透過從重複場景中選擇「角色模型動作」將真實試驗轉換為監督學習信號，相較傳統 RL 提升資料效率 3-5 倍。實驗驗證顯示，RM-RL 在毫米級精密操縱任務中，相較基準方法平移精度提升 53%，旋轉精度提升 20%，在挑戰性的「細胞培養皿轉移至貨架」任務中達成 100% 成功率。該方法已驗證應用於 6-DOF 協作臂與多臂系統，特別適合邊界強化學習與視覺伺服融合的精密組裝應用。[RM-RL: Role-Model Reinforcement Learning for Precise Robot Manipulation - ICRA 2026](https://ntumars.github.io/project/RMRL/) | [GitHub - NTUMARS/RMRL](https://github.com/NTUMARS/RMRL)
