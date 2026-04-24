@@ -2980,3 +2980,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **NVIDIA Jetson Orin 邊界 AI 加速與多臂即時感知融合**：Universal Robots、Techman Robot 等協作臂廠商已內建 NVIDIA Jetson Orin 邊界計算平台，提供 GPU 加速的多感測器數據融合。該方案整合視覺、深度、力覺與紅外線感測，透過 ROS 2 原生驅動實現 <100ms 多模態感知迴圈。2026 年的產業調查顯示，已有 50% 企業採用 AI 與機器學習技術於機械臂應用，特別在自動光學檢測、精密組裝與自我調校等高精度作業中提升產品良率 15-20%。該邊界推理架構為 Roy 的多臂觸覺-視覺融合決策提供了商用級的硬體整合方案。[AI 自動化與機械臂整合趨勢 2026](https://www.universal-robots.com/tw/blog/2025-what-is-ai-automation-robotic-arm-integration-reshaping/)
 
 **物理 AI 與多臂系統的產業應用展望**：UR 與 SVRC 於 2026 年發布的四大物理 AI 預測揭示，多臂系統與邊界強化學習的結合已進入快速商業化階段。產業預計到 2026 年底，基於學習的多臂協作決策將成為精密製造業的標準配置，特別是電子組裝、汽車零件製造與醫療器械生產領域。邊界 RL 訓練環境（Gazebo Harmonic + ROS 2 Kilted）與硬體部署的無縫銜接，使傳統「訓練-部署」週期從數月縮短至 2-4 週。該發展方向為 Roy 的多臂自適應協作研究提供了產業級應用的驗證路徑。[Physical AI Predictions for 2026 and Beyond - Universal Robots](https://www.therobotreport.com/four-physical-ai-predictions-2026-beyond-universal-robots/)
+
+### TacVLA — 觸覺融合視覺語言動作模型（2026 年 4 月最新）
+
+**接觸感知觸覺融合 VLA 新範型**：新研究提出 TacVLA（Tactile-Aware Vision-Language-Action），將觸覺資訊直接融合至 Transformer 基礎 VLA 模型架構。該模型引入「接觸感知閘控機制」（Contact-Aware Gating），在偵測到機械臂接觸物體時選擇激活觸覺符號，使邊界推理系統能同時感知視覺指令、語言描述與接觸反饋進行精密操縱決策。在精密組裝、脆弱物體拾取等任務中相較純視覺 VLA 成功率提升 18-25%，推理延遲維持 <200ms。該技術為 Roy 的多臂觸覺-視覺融合邊界決策提供了神經網路層級的統一表示框架。[TacVLA: Contact-Aware Tactile Fusion for Robust Vision-Language-Action Manipulation](https://arxiv.org/html/2603.12665v1)
+
+### 多臂自適應協作排序系統 — Nature 科學報告（2025 年最新）
+
+**邊界多感測器融合與多臂協作決策的完整實現**：Nature Scientific Reports 2025 年發表的研究展示，採用動態可靠性加權的多模態感測融合演算法（融合視覺、力覺、位置感測），配合分散式邊界計算架構與線上自適應學習控制，實現多臂協作排序系統的 98.7% 準確率與 3.2ms 平均響應延遲。該系統藉由力感測器驗證物體重量、紋理與幾何特性，位置反饋驗證抓取軌跡，相較單視覺系統減少 40-50% 的排序誤差。該自適應協作框架已驗證達成 847 件/小時吞吐量，適用於電子組裝、物流揀配與精密操縱任務，為 Roy 的多臂自適應協作與觸覺-視覺邊界決策部署實現奠定產業級參考架構。[Adaptive control system for collaborative sorting robotic arms based on multimodal sensor fusion and edge computing](https://www.nature.com/articles/s41598-025-18344-9)
