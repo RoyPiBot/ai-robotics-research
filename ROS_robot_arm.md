@@ -1258,6 +1258,32 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 - **Hiwonder ArmPi Ultra** — Pi 5 + STM32 + 3D 深度相機 + AI 語音盒，支援 ROS 2
   - [官網](https://www.hiwonder.com/products/armpi-ultra)
 
+---
+
+## 附錄 G：2026 年 4 月 25 日最新進展 — 具身 AI 平台統一與教育級方案成熟
+
+### 具身 AI 與 LLM 深度整合的成熟平台
+
+**LanderPi 與 ROSOrin Pro 成為業界參考架構**：
+- **LanderPi** — 原生 ROS 2 架構，整合多模態 LLM + 3D 視覺 + SLAM，提供端到端自主智能
+  - 支援 MoveIt 運動規劃與 RViz 即時可視化，理想用於教育與研究
+- **ROSOrin Pro** — 6-DOF 協作臂 + Jetson Orin Nano/NX 邊緣 AI + 語音模組，實現「說話即控制」
+  - 新增 3D 相機空間感知與自適應抓取能力
+  - [相關教程](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
+
+### 教育級低成本機械臂新標準
+
+**G-ARM 開源專案確立教育標準**：
+- 低成本 3D 列印設計，完整 FreeCAD 模組與 ROS 2 Humble + MoveIt 2 整合
+- 適合大專院校與初級研究者快速上手
+- [Springer 發表論文](https://link.springer.com/article/10.1007/s11042-025-20748-8)
+
+### ROS 2 硬體生態擴展（2026 年 4 月最新）
+
+**ros2_control 驅動的機械臂支援清單**：
+- Universal Robots UR 系列、Kinova Kortex Gen3、xArm、Techman Robot、DOFBOT 等廠商級與教育級方案全面 ROS 2 認證
+- [官方支援清單](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+
 ### ROS 2 Control 框架與感知整合（2026 年 4 月新增）
 
 #### ros2_control 6DOF 範例與工具
