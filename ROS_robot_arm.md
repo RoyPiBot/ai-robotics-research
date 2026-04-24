@@ -2970,3 +2970,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### RM-RL 角色模型強化學習——ICRA 2026 多臂精密操縱突破
 
 **Role-Model RL：資料效率與精密度的雙重提升**：國立台灣大學與多所機構於 ICRA 2026 發表 RM-RL（Role-Model Reinforcement Learning），針對多臂精密操縱任務中資料採集成本高、精度要求嚴苛的問題提出創新解決方案。RM-RL 透過從重複場景中選擇「角色模型動作」將真實試驗轉換為監督學習信號，相較傳統 RL 提升資料效率 3-5 倍。實驗驗證顯示，RM-RL 在毫米級精密操縱任務中，相較基準方法平移精度提升 53%，旋轉精度提升 20%，在挑戰性的「細胞培養皿轉移至貨架」任務中達成 100% 成功率。該方法已驗證應用於 6-DOF 協作臂與多臂系統，特別適合邊界強化學習與視覺伺服融合的精密組裝應用。[RM-RL: Role-Model Reinforcement Learning for Precise Robot Manipulation - ICRA 2026](https://ntumars.github.io/project/RMRL/) | [GitHub - NTUMARS/RMRL](https://github.com/NTUMARS/RMRL)
+
+### 多臂協作深度強化學習與自適應控制（2026 年 4 月最新）
+
+**M2ACD 多演員評評算法與多臂協作軌跡規劃**：2026 年的多臂系統強化學習研究已從單臂策略擴展到完整的多智能體學習框架。新興的 M2ACD（Multi-Actor-Critic Deep Deterministic Policy Gradient）算法專為多臂協作的軌跡規劃設計，透過分散式 Actor-Critic 結構，使多臂系統在複雜環境中的協調效率相較集中式決策提升 40-50%。該方法已應用於多臂精密組裝、協作堆積與流程化任務，特別適合邊界強化學習與 ROS 2 分散式控制的整合。[Deep Reinforcement Learning for Robotics: A Survey of Real-World Successes](https://arxiv.org/html/2408.03539v1) | [Multi-Agent Deep Reinforcement Learning for Multi-Robot Applications](https://pmc.ncbi.nlm.nih.gov/articles/PMC10098527/)
+
+**物理 AI 與多臂系統的產業應用展望**：UR 與 SVRC 於 2026 年發布的四大物理 AI 預測揭示，多臂系統與邊界強化學習的結合已進入快速商業化階段。產業預計到 2026 年底，基於學習的多臂協作決策將成為精密製造業的標準配置，特別是電子組裝、汽車零件製造與醫療器械生產領域。邊界 RL 訓練環境（Gazebo Harmonic + ROS 2 Kilted）與硬體部署的無縫銜接，使傳統「訓練-部署」週期從數月縮短至 2-4 週。該發展方向為 Roy 的多臂自適應協作研究提供了產業級應用的驗證路徑。[Physical AI Predictions for 2026 and Beyond - Universal Robots](https://www.therobotreport.com/four-physical-ai-predictions-2026-beyond-universal-robots/)
