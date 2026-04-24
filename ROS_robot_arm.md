@@ -2975,4 +2975,8 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **M2ACD 多演員評評算法與多臂協作軌跡規劃**：2026 年的多臂系統強化學習研究已從單臂策略擴展到完整的多智能體學習框架。新興的 M2ACD（Multi-Actor-Critic Deep Deterministic Policy Gradient）算法專為多臂協作的軌跡規劃設計，透過分散式 Actor-Critic 結構，使多臂系統在複雜環境中的協調效率相較集中式決策提升 40-50%。該方法已應用於多臂精密組裝、協作堆積與流程化任務，特別適合邊界強化學習與 ROS 2 分散式控制的整合。[Deep Reinforcement Learning for Robotics: A Survey of Real-World Successes](https://arxiv.org/html/2408.03539v1) | [Multi-Agent Deep Reinforcement Learning for Multi-Robot Applications](https://pmc.ncbi.nlm.nih.gov/articles/PMC10098527/)
 
+### 邊界多感測器融合與實時 VLA 推理（2026 年 4 月最新應用）
+
+**NVIDIA Jetson Orin 邊界 AI 加速與多臂即時感知融合**：Universal Robots、Techman Robot 等協作臂廠商已內建 NVIDIA Jetson Orin 邊界計算平台，提供 GPU 加速的多感測器數據融合。該方案整合視覺、深度、力覺與紅外線感測，透過 ROS 2 原生驅動實現 <100ms 多模態感知迴圈。2026 年的產業調查顯示，已有 50% 企業採用 AI 與機器學習技術於機械臂應用，特別在自動光學檢測、精密組裝與自我調校等高精度作業中提升產品良率 15-20%。該邊界推理架構為 Roy 的多臂觸覺-視覺融合決策提供了商用級的硬體整合方案。[AI 自動化與機械臂整合趨勢 2026](https://www.universal-robots.com/tw/blog/2025-what-is-ai-automation-robotic-arm-integration-reshaping/)
+
 **物理 AI 與多臂系統的產業應用展望**：UR 與 SVRC 於 2026 年發布的四大物理 AI 預測揭示，多臂系統與邊界強化學習的結合已進入快速商業化階段。產業預計到 2026 年底，基於學習的多臂協作決策將成為精密製造業的標準配置，特別是電子組裝、汽車零件製造與醫療器械生產領域。邊界 RL 訓練環境（Gazebo Harmonic + ROS 2 Kilted）與硬體部署的無縫銜接，使傳統「訓練-部署」週期從數月縮短至 2-4 週。該發展方向為 Roy 的多臂自適應協作研究提供了產業級應用的驗證路徑。[Physical AI Predictions for 2026 and Beyond - Universal Robots](https://www.therobotreport.com/four-physical-ai-predictions-2026-beyond-universal-robots/)
