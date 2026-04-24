@@ -3015,4 +3015,8 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **6DOF 機械臂的完整 ros2_control 配置範例**：ROS 2 Rolling（2026 年 3 月）官方文件更新了完整的 6DOF 機械臂控制範例，涵蓋 URDF 定義、SRDF 語義設定、Joint Trajectory Controller 與實時伺服控制的整合。該範例支援力限制、碰撞迴避與視覺伺服閉迴圈，可直接應用於 UR、Doosan、Franka 等協作臂。相較過往分散的文件指導，標準化流程使新手能在 2-3 小時內配置完整的多臂控制堆棧，加速 Roy 的機械臂控制層實作時程。[ROS2_Control Rolling Example 7 - 6DOF Robot Control](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
 
+### MoveIt Pro + 邊界推理整合與實時多臂協作（2026 年 4 月新進展）
+
+**PickNik MoveIt Pro 實踐指南與邊界決策迴圈**：PickNik Robotics 於 ROSCon 2025 發表的 MoveIt Pro workshop，深入展示從機械臂新平台配置到邊界 VLA 推理部署的完整工作流。該指南涵蓋 ROS 2 套件開發、自訂行為外掛（Behavior Plugins）、ROS Actions 觸發與 MoveIt Pro 無頭啟動，整合 RViz 視覺化與即時決策同步。邊界 Jetson Orin NX 上的端對端推理延遲達 <200ms，支援無碰撞軌跡規劃與視覺伺服閉迴圈，為 Roy 的邊界多臂決策部署提供完整的產業級工作流參考。[Hands-On Workshop with ROS 2 and MoveIt Pro at ROSCon 2025](https://picknik.ai/roscon/workshop/2025/moveit/2025/10/06/Hands-On-Workshop-with-ROS-2-and-MoveIt-Pro-at-ROSCon-2025.html)
+
 **Transformer 基礎多智能體強化學習與分散決策協調**：2026 年研究提出 TransMARL（Transformer-based Multi-Agent Reinforcement Learning），針對多臂系統在部分可觀測環境中的協調決策困難提出創新解決方案。TransMARL 融合圖特徵編碼模組與策略執行模組，支援邊界端完全分散決策下的多臂間無通訊協調。相較集中式觀測者架構，TransMARL 在視覺受限、通訊延遲高的複雜環境中提升協作精度 35-45%，推理端延遲 <200ms。該框架已驗證應用於多臂物體搬運、編隊控制與動態避障場景，為 Roy 的觀測受限環境下多臂自主協作決策提供了神經網路層級的標準化框架。[TransMARL: Transformer-based Multi-Agent Reinforcement Learning](https://www.nature.com/articles/s41598-026-49608-7)
