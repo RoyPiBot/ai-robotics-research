@@ -3002,3 +3002,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MoveIt 2：實時伺服與多臂協作的統一運動規劃中樞**：MoveIt 2 已成熟為 ROS 2 機械臂應用的核心運動規劃平台，整合實時伺服控制（10kHz+ 迴圈頻率）、碰撞迴避、力限制與多臂協作決策。2026 年現有超過 50+ 商業與開源機械臂提供官方 MoveIt 2 配置，包括 UR、ABB、Doosan、Franka 等主流廠商。該平台與邊界 VLA 模型無縫整合，使自然語言指令能直接轉換為碰撞自由軌跡執行，推理端延遲 <50ms。[MoveIt 2: Advanced Manipulation with ROS 2](https://www.therobotreport.com/moveit-2-enables-realtime-robot-arm-control-ros2/)
 
 **邊界推理最佳化與多臂協作邊界計算架構**：ROS 2 Kilted Kaiju（2026 年 4 月）與 Zenoh Tier 1 中介軟體的成熟，使多臂視覺伺服系統的邊界推理與實時決策同步達到毫秒級精度。分散式邊界計算架構允許單臂單邊界推理引擎（Jetson Orin NX）協調全系統，相較中央決策伺服器減少單點故障風險 60%。該架構已驗證支援 4+ 臂協作場景，推理延遲 <300ms，為 Roy 的分散式多臂決策與視覺伺服融合奠定產業級基礎。[ROS 2 Kilted Control Integration](https://control.ros.org/kilted/)
+
+### ROS 2 Kilted 2026 年 3 月更新與 27 項新軟體包發佈
+
+**ROS 2 Kilted 中介軟體與機械臂支援擴展**：ROS 2 Kilted（2026 年 3 月 12 日）發佈 27 項新軟體包與 304 項更新，涵蓋 72 位維護者的貢獻，進一步豐富機械臂生態支援。該次更新包含 ROSOrin Pro 框架（6-DOF 機械臂 + 整合式 AI 語音模組），原生支援多模態 AI 大型模型部署（在線與本地離線）。ROSOrin Pro 與 OpenClaw 代理框架深度整合，支援遠程語音文本指令、自主任務分解與複雜任務執行，特別適合邊界 Jetson 環境的視覺語言實時決策。該更新確保 ROS 2 在機械臂應用中的生態完整性與商業級可靠性。[ROS 2 Kilted 2026 新軟體包釋出](https://discourse.openrobotics.org/t/new-packages-for-kilted-kaiju-2026-03-12/53174)
+
+### TransMARL — 觀測受限多臂協作強化學習新框架（2026 年最新）
+
+**Transformer 基礎多智能體強化學習與分散決策協調**：2026 年研究提出 TransMARL（Transformer-based Multi-Agent Reinforcement Learning），針對多臂系統在部分可觀測環境中的協調決策困難提出創新解決方案。TransMARL 融合圖特徵編碼模組與策略執行模組，支援邊界端完全分散決策下的多臂間無通訊協調。相較集中式觀測者架構，TransMARL 在視覺受限、通訊延遲高的複雜環境中提升協作精度 35-45%，推理端延遲 <200ms。該框架已驗證應用於多臂物體搬運、編隊控制與動態避障場景，為 Roy 的觀測受限環境下多臂自主協作決策提供了神經網路層級的標準化框架。[TransMARL: Transformer-based Multi-Agent Reinforcement Learning](https://www.nature.com/articles/s41598-026-49608-7)
