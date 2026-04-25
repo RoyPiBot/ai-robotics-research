@@ -3045,4 +3045,8 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **PickNik MoveIt Pro 實踐指南與邊界決策迴圈**：PickNik Robotics 於 ROSCon 2025 發表的 MoveIt Pro workshop，深入展示從機械臂新平台配置到邊界 VLA 推理部署的完整工作流。該指南涵蓋 ROS 2 套件開發、自訂行為外掛（Behavior Plugins）、ROS Actions 觸發與 MoveIt Pro 無頭啟動，整合 RViz 視覺化與即時決策同步。邊界 Jetson Orin NX 上的端對端推理延遲達 <200ms，支援無碰撞軌跡規劃與視覺伺服閉迴圈，為 Roy 的邊界多臂決策部署提供完整的產業級工作流參考。[Hands-On Workshop with ROS 2 and MoveIt Pro at ROSCon 2025](https://picknik.ai/roscon/workshop/2025/moveit/2025/10/06/Hands-On-Workshop-with-ROS-2-and-MoveIt-Pro-at-ROSCon-2025.html)
 
+### JetArm Pro 與教育級多臂擴展平台（2026 年 4 月最新）
+
+**JetArm Pro：模組化 6-DOF ROS 2 機械臂與移動底座整合**：Hiwonder 於 2026 年發佈的 JetArm Pro 為可擴展的 ROS 2 原生機械臂平台，支援固定基座、移動底座（輪式/腿式）與線性軌道組態。該平台原生集成 Jetson Orin Nano 邊界計算、RGB-D 視覺模組與協作級扭矩感知，提供完整的多臂協作擴展能力。JetArm Pro 已驗證相容MoveIt 2、ros2_control 與視覺伺服框架，特別適合邊界 AI 研究與教學應用，相較商用協作臂大幅降低多臂實驗成本。[JetArm Pro - Expandable ROS 2 Platform for Mobile Manipulation](https://www.hackster.io/HiwonderRobot/jetarm-pro-expandable-ros-platform-for-mobile-manipulation-aff995)
+
 **Transformer 基礎多智能體強化學習與分散決策協調**：2026 年研究提出 TransMARL（Transformer-based Multi-Agent Reinforcement Learning），針對多臂系統在部分可觀測環境中的協調決策困難提出創新解決方案。TransMARL 融合圖特徵編碼模組與策略執行模組，支援邊界端完全分散決策下的多臂間無通訊協調。相較集中式觀測者架構，TransMARL 在視覺受限、通訊延遲高的複雜環境中提升協作精度 35-45%，推理端延遲 <200ms。該框架已驗證應用於多臂物體搬運、編隊控制與動態避障場景，為 Roy 的觀測受限環境下多臂自主協作決策提供了神經網路層級的標準化框架。[TransMARL: Transformer-based Multi-Agent Reinforcement Learning](https://www.nature.com/articles/s41598-026-49608-7)
