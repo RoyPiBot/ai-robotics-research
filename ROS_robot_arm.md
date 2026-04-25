@@ -3050,3 +3050,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **JetArm Pro：模組化 6-DOF ROS 2 機械臂與移動底座整合**：Hiwonder 於 2026 年發佈的 JetArm Pro 為可擴展的 ROS 2 原生機械臂平台，支援固定基座、移動底座（輪式/腿式）與線性軌道組態。該平台原生集成 Jetson Orin Nano 邊界計算、RGB-D 視覺模組與協作級扭矩感知，提供完整的多臂協作擴展能力。JetArm Pro 已驗證相容MoveIt 2、ros2_control 與視覺伺服框架，特別適合邊界 AI 研究與教學應用，相較商用協作臂大幅降低多臂實驗成本。[JetArm Pro - Expandable ROS 2 Platform for Mobile Manipulation](https://www.hackster.io/HiwonderRobot/jetarm-pro-expandable-ros-platform-for-mobile-manipulation-aff995)
 
 **Transformer 基礎多智能體強化學習與分散決策協調**：2026 年研究提出 TransMARL（Transformer-based Multi-Agent Reinforcement Learning），針對多臂系統在部分可觀測環境中的協調決策困難提出創新解決方案。TransMARL 融合圖特徵編碼模組與策略執行模組，支援邊界端完全分散決策下的多臂間無通訊協調。相較集中式觀測者架構，TransMARL 在視覺受限、通訊延遲高的複雜環境中提升協作精度 35-45%，推理端延遲 <200ms。該框架已驗證應用於多臂物體搬運、編隊控制與動態避障場景，為 Roy 的觀測受限環境下多臂自主協作決策提供了神經網路層級的標準化框架。[TransMARL: Transformer-based Multi-Agent Reinforcement Learning](https://www.nature.com/articles/s41598-026-49608-7)
+
+### SamuRoid — 樹莓派 22-DOF 人形機器人與多模態 LLM 融合（2026 年 4 月新發表）
+
+**多模態 LLM 驅動的樹莓派人形機械系統**：2026 年 4 月新推出的 SamuRoid 為基於樹莓派 5 的 22-DOF 仿生人形機器人，專為研究人員與機器人開發者設計。該平台原生支援 ROS 與多模態 LLM（視覺-文本-語音）整合，支援在線雲端推理與本地邊界離線部署。SamuRoid 與 OpenClaw 多通道代理框架深度相容，可實現複雜任務自動分解、多臂協作決策與自然語言指令執行，特別適合邊界 AI 與多臂強化學習研究。相較商用人形機器人，SamuRoid 大幅降低開發成本，適合 Roy 在樹莓派 5 上實現人形多臂自主決策的實驗平台。[SamuRoid - Raspberry Pi 22-DOF Humanoid Robot](https://www.cnx-software.com/2026/04/22/samuroid-a-raspberry-pi-powered-22-dof-humanoid-robot-with-multimodal-llms-and-ros-support/)
