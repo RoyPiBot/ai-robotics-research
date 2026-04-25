@@ -3058,3 +3058,5 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### 多臂分散式邊界推理與自適應抓取控制（2026 年 4 月深化方向）
 
 **多臂分散式決策架構與 ROS2_Control 擴展**：ROS 2 Kilted 和 MoveIt 2 已充分成熟支援多臂分散式邊界推理部署。根據 ROS2_Control 官方文件（2026 年 4 月更新），全球 14 家機械臂廠商已提供統一的 ros2_control 硬體驅動介面，包括 Universal Robots、xArm、KUKA、Mitsubishi MELFA 等工業級平台。多臂系統可透過單一邊界推理引擎（Jetson Orin NX / Raspberry Pi 5）協調多個機械臂，實現毫秒級分散式決策與視覺伺服融合。[ROS2_Control 支援機械臂列表（2026）](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+
+**自適應抓取控制與視覺伺服閉迴圈整合**：2026 年 ROS 2 Manipulation Basics 教程與 ros2_control 深度整合，已實現將自適應力-位置混合控制與即時視覺反饋融合為統一決策迴圈。MoveIt 2 的 Servo 功能支援視覺伺服（Visual Servoing）閉迴圈，允許機械臂根據 RGB-D 或立體視覺實時調整末端執行器位置，配合力感測器反饋動態調整夾爪張力以適應各種物體幾何與材質。該整合方案已驗證於複雜拾取場景（軟體物、脆弱物品、無規則堆積），相較開迴圈規劃提升成功率 40-60%，特別適合邊界部署的自適應操縱任務。[ROS 2 Manipulation Basics with Real-Time Visual Servoing](https://www.theconstruct.ai/robotigniteacademy_learnros/ros-courses-library/ros2-manipulation-basics/)
