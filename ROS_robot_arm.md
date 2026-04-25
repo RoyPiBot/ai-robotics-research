@@ -3054,3 +3054,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### SamuRoid — 樹莓派 22-DOF 人形機器人與多模態 LLM 融合（2026 年 4 月新發表）
 
 **多模態 LLM 驅動的樹莓派人形機械系統**：2026 年 4 月新推出的 SamuRoid 為基於樹莓派 5 的 22-DOF 仿生人形機器人，專為研究人員與機器人開發者設計。該平台原生支援 ROS 與多模態 LLM（視覺-文本-語音）整合，支援在線雲端推理與本地邊界離線部署。SamuRoid 與 OpenClaw 多通道代理框架深度相容，可實現複雜任務自動分解、多臂協作決策與自然語言指令執行，特別適合邊界 AI 與多臂強化學習研究。相較商用人形機器人，SamuRoid 大幅降低開發成本，適合 Roy 在樹莓派 5 上實現人形多臂自主決策的實驗平台。[SamuRoid - Raspberry Pi 22-DOF Humanoid Robot](https://www.cnx-software.com/2026/04/22/samuroid-a-raspberry-pi-powered-22-dof-humanoid-robot-with-multimodal-llms-and-ros-support/)
+
+### 多臂分散式邊界推理與自適應抓取控制（2026 年 4 月深化方向）
+
+**多臂分散式決策架構與 ROS2_Control 擴展**：ROS 2 Kilted 和 MoveIt 2 已充分成熟支援多臂分散式邊界推理部署。根據 ROS2_Control 官方文件（2026 年 4 月更新），全球 14 家機械臂廠商已提供統一的 ros2_control 硬體驅動介面，包括 Universal Robots、xArm、KUKA、Mitsubishi MELFA 等工業級平台。多臂系統可透過單一邊界推理引擎（Jetson Orin NX / Raspberry Pi 5）協調多個機械臂，實現毫秒級分散式決策與視覺伺服融合。[ROS2_Control 支援機械臂列表（2026）](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
