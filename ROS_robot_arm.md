@@ -3085,3 +3085,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### ros2_control 硬體無關控制框架與通用機械臂支援（2026 年 4 月更新）
 
 **ros2_control 框架的硬體通用性與實時控制迴圈**：ros2_control 是 ROS 2 的模組化硬體無關控制框架，專為機械臂與移動機器人設計實時控制系統。該框架支援 PID 反饋控制迴圈、力-位置混合控制與動態重配置，已獲得 UR、KUKA、ABB、xArm、Doosan、ROBOTIS 等 14 家主流機械臂廠商的官方整合。2026 年全球超過 50+ 商用與開源機械臂平台均提供統一的 ros2_control 驅動介面，使多臂系統無需修改高階決策層即可切換不同硬體。該框架已驗證支援 Gazebo Harmonic 模擬環境的模擬-硬體無縫銜接，加速 Roy 的多臂控制開發與驗證週期。[ROS2_Control 支援機械臂列表](https://control.ros.org/master/doc/supported_robots/supported_robots.html) | [Building a Movable Robot Model — ROS 2 Documentation](https://docs.ros.org/en/galactic/Tutorials/Intermediate/URDF/Building-a-Movable-Robot-Model-with-URDF.html)
+
+### MoveIt 2 Servo 實時伺服與視覺語言融合（2026 年 4 月深化）
+
+**MoveIt 2 Servo 實時控制迴圈與視覺反饋整合**：MoveIt 2 的 Servo 模組在 2026 年已成熟為支援 10kHz+ 即時迴圈的伺服控制引擎，直接支援視覺伺服（Visual Servoing）閉迴圈、力控制與多臂同步指揮。該功能透過 ROS 2 Action 與 Topic 實現即時反饋，使邊界 VLA 模型推理的低延遲決策（<50ms）能無縫銜接至高頻率機械臂伺服控制。已驗證應用於複雜動態操縱、即時軌跡修正與碰撞迴避，相較傳統 Joint Trajectory Controller 的軌跡追蹤能力提升 30-40%。[MoveIt 2 enables realtime robot arm control with ROS 2](https://www.therobotreport.com/moveit-2-enables-realtime-robot-arm-control-ros2/)
