@@ -3076,3 +3076,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### RoboNeuron — 使用 MCP 的通用具身智能部署框架（2026 年最新）
 
 **模型上下文協議與 LLM-ROS 統一決策層**：RoboNeuron 是新興的通用部署框架，利用模型上下文協議（Model Context Protocol, MCP）作為認知橋接，統一整合基礎模型的決策能力與 ROS 的執行環境。該框架將 LLM/VLM 模型的自然語言推理與視覺理解轉換為 ROS 標準化的關節控制命令，支援多臂協作與視覺伺服融合。MCP 的標準化接口使 OpenVLA、Helix、π0 等開源模型能無修改直接接入 ROS 2 系統，相較專用集成方案減少開發時間 60%。該框架已驗證應用於邊界 Jetson 與 Raspberry Pi 5 環境，推理延遲 <200ms，為 Roy 的多臂邊界 AI 決策架構提供了模型中立的通用整合方案。[RoboNeuron: A Modular Framework for LLM-Based Embodied AI](https://arxiv.org/html/2512.10394v1)
+
+### ros2_control 硬體無關控制框架與通用機械臂支援（2026 年 4 月更新）
+
+**ros2_control 框架的硬體通用性與實時控制迴圈**：ros2_control 是 ROS 2 的模組化硬體無關控制框架，專為機械臂與移動機器人設計實時控制系統。該框架支援 PID 反饋控制迴圈、力-位置混合控制與動態重配置，已獲得 UR、KUKA、ABB、xArm、Doosan、ROBOTIS 等 14 家主流機械臂廠商的官方整合。2026 年全球超過 50+ 商用與開源機械臂平台均提供統一的 ros2_control 驅動介面，使多臂系統無需修改高階決策層即可切換不同硬體。該框架已驗證支援 Gazebo Harmonic 模擬環境的模擬-硬體無縫銜接，加速 Roy 的多臂控制開發與驗證週期。[ROS2_Control 支援機械臂列表](https://control.ros.org/master/doc/supported_robots/supported_robots.html) | [Building a Movable Robot Model — ROS 2 Documentation](https://docs.ros.org/en/galactic/Tutorials/Intermediate/URDF/Building-a-Movable-Robot-Model-with-URDF.html)
