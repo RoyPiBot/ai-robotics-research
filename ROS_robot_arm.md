@@ -3064,3 +3064,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **多臂分散式決策架構與 ROS2_Control 擴展**：ROS 2 Kilted 和 MoveIt 2 已充分成熟支援多臂分散式邊界推理部署。根據 ROS2_Control 官方文件（2026 年 4 月更新），全球 14 家機械臂廠商已提供統一的 ros2_control 硬體驅動介面，包括 Universal Robots、xArm、KUKA、Mitsubishi MELFA 等工業級平台。多臂系統可透過單一邊界推理引擎（Jetson Orin NX / Raspberry Pi 5）協調多個機械臂，實現毫秒級分散式決策與視覺伺服融合。[ROS2_Control 支援機械臂列表（2026）](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
 
 **自適應抓取控制與視覺伺服閉迴圈整合**：2026 年 ROS 2 Manipulation Basics 教程與 ros2_control 深度整合，已實現將自適應力-位置混合控制與即時視覺反饋融合為統一決策迴圈。MoveIt 2 的 Servo 功能支援視覺伺服（Visual Servoing）閉迴圈，允許機械臂根據 RGB-D 或立體視覺實時調整末端執行器位置，配合力感測器反饋動態調整夾爪張力以適應各種物體幾何與材質。該整合方案已驗證於複雜拾取場景（軟體物、脆弱物品、無規則堆積），相較開迴圈規劃提升成功率 40-60%，特別適合邊界部署的自適應操縱任務。[ROS 2 Manipulation Basics with Real-Time Visual Servoing](https://www.theconstruct.ai/robotigniteacademy_learnros/ros-courses-library/ros2-manipulation-basics/)
+
+### reBot Arm B601-DM — 開源 6+1 DOF 具身 AI 機械臂（2026 年 4 月新發佈）
+
+**開源模組化機械臂與具身 AI 整合**：2026 年 4 月 17 日發佈的 reBot Arm B601-DM 為全開源的 6 軸 + 1 線性軸機械臂，專為具身 AI 與遠操應用設計。該平台具備 767mm 作業半徑、1.5kg 負載容量、0.2mm 重複精度，原生支援 ROS 1/2 驅動與 MoveIt 2 規劃框架。Humble 版本的完整 MoveIt 2 驅動正在開發中，將支援視覺伺服與力控制整合。reBot Arm 高度相容 Hugging Face LeRobot、NVIDIA Isaac Sim 與 Pinocchio 運動學庫，為 Roy 的邊界具身 AI 與視覺伺服研究提供了低成本的開源硬體平台。[reBot Arm B601-DM - Open-Source 6+1 DoF Robotic Arm](https://www.cnx-software.com/2026/04/17/rebot-arm-b601-dm-an-open-source-61-dof-robotic-arm-for-embodied-ai-and-teleoperation-applications/)
+
+### ROS 2 Lyrical Luth — 2026 年下一代長期支援版（4 月 30 日社群測試啟動）
+
+**ROS 2 Lyrical Luth 社群測試與機械臂生態完善**：ROS 2 Lyrical Luth 為 2026 年下一代長期支援版本（LTS），社群測試已排定於 4 月 30 日正式啟動。該版本繼承 Kilted Kaiju 的 Zenoh Tier 1 中介軟體、邊界 VLA 推理閘道與多臂協作決策標準，進一步強化機械臂系統的即時性與分散式邊界部署能力。Lyrical Luth 預期涵蓋 100+ 商業與開源機械臂的完整 MoveIt 2 配置，為 Roy 的長期多臂研究基礎設施奠定穩定的軟體生態基礎。[ROS 2 Lyrical Luth Community Testing - April 2026](https://discourse.openrobotics.org/t/ros-news-for-the-week-of-april-20th-2026/54297)
