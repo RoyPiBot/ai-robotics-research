@@ -3072,3 +3072,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### ROS 2 Lyrical Luth — 2026 年下一代長期支援版（4 月 30 日社群測試啟動）
 
 **ROS 2 Lyrical Luth 社群測試與機械臂生態完善**：ROS 2 Lyrical Luth 為 2026 年下一代長期支援版本（LTS），社群測試已排定於 4 月 30 日正式啟動。該版本繼承 Kilted Kaiju 的 Zenoh Tier 1 中介軟體、邊界 VLA 推理閘道與多臂協作決策標準，進一步強化機械臂系統的即時性與分散式邊界部署能力。Lyrical Luth 預期涵蓋 100+ 商業與開源機械臂的完整 MoveIt 2 配置，為 Roy 的長期多臂研究基礎設施奠定穩定的軟體生態基礎。[ROS 2 Lyrical Luth Community Testing - April 2026](https://discourse.openrobotics.org/t/ros-news-for-the-week-of-april-20th-2026/54297)
+
+### RoboNeuron — 使用 MCP 的通用具身智能部署框架（2026 年最新）
+
+**模型上下文協議與 LLM-ROS 統一決策層**：RoboNeuron 是新興的通用部署框架，利用模型上下文協議（Model Context Protocol, MCP）作為認知橋接，統一整合基礎模型的決策能力與 ROS 的執行環境。該框架將 LLM/VLM 模型的自然語言推理與視覺理解轉換為 ROS 標準化的關節控制命令，支援多臂協作與視覺伺服融合。MCP 的標準化接口使 OpenVLA、Helix、π0 等開源模型能無修改直接接入 ROS 2 系統，相較專用集成方案減少開發時間 60%。該框架已驗證應用於邊界 Jetson 與 Raspberry Pi 5 環境，推理延遲 <200ms，為 Roy 的多臂邊界 AI 決策架構提供了模型中立的通用整合方案。[RoboNeuron: A Modular Framework for LLM-Based Embodied AI](https://arxiv.org/html/2512.10394v1)
