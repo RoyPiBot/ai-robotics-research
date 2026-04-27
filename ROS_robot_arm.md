@@ -3097,3 +3097,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### Tesseract Motion Planning Engine 1.0 預發版本（2026 年 4 月進度）
 
 **Tesseract 朝向 1.0 釋出：API 穩定化與插件架構轉型**：Tesseract 是專為機械臂運動規劃設計的高性能引擎，近期已達成 API 穩定化、單元測試擴充、以及動作規劃管線的完整插件化架構轉型。該專案正進行增強碰撞檢測器整合與 Task Composer 優化，預計 1.0 版本將提供相較 MoveIt 2 更低的規劃延遲（<80ms）與更好的軌跡品質。Tesseract 作為獨立運動規劃引擎已支援 ROS 2 無縫整合，特別適合對性能與客製化流程有高需求的邊界多臂應用。[Tesseract Planning Library - Path Planning for Robotic Manipulation](https://tesseract.readthedocs.io/)
+
+### moveit_py 2.14.1 與 ROS 2 Humble 穩定統一 API（2026 年 4 月深化）
+
+**簡化機械臂操作的 Python 統一介面**：moveit_py 是 MoveIt 2 官方提供的 Python 綁定庫（v2.14.1），已成熟為 ROS 2 Humble LTS 上機械臂應用開發的標準 API。相較 C++ API，moveit_py 大幅簡化運動規劃程式碼複雜度，特別適合邊界推理與視覺伺服快速原型開發。該庫原生支援非同步執行、多臂同步指揮與即時反饋監控，已驗證應用於 GSoC 多臂軌跡執行研究。該統一 API 為 Roy 的邊界 Python 決策層與 ROS 2 硬體無縫整合提供了穩定的開發基礎。[moveit_py: Humble 2.14.1 documentation](https://docs.ros.org/en/humble/p/moveit_py/)
+
+**ROS 2 Humble LTS 長期支援與機械臂生態穩定性（2026 年 4 月確認）**：ROS 2 Humble 為長期支援版本（LTS），官方支援周期至 2027 年，已成為工業與研究機械臂應用的首選基礎版本。Humble 整合 MoveIt 2、ros2_control、Gazebo Harmonic 等成熟機械臂工具鏈，支援 50+ 商業與開源機械臂的官方驅動。該穩定基礎設施使 Roy 的多臂研究無需頻繁升級依賴版本，能專注於核心算法與決策層創新。[ROS 2 Humble Documentation](https://docs.ros.org/en/humble/)
