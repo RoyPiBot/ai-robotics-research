@@ -3124,6 +3124,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **14 家全球機械臂廠商的官方 ROS 2 驅動支援**：根據 ROS-Industrial Consortium 2026 年最新公告，全球 14 家主流機械臂廠商已推出官方 ROS 2 驅動，涵蓋 Universal Robots 協作臂、xArm 系列、KUKA 工業臂、Mitsubishi MELFA、OpenMANIPULATOR 開源平台等。ros2_control 硬體無關控制框架透過模組化外掛系統，實現統一的驅動界面，使多臂系統整合複雜度大幅降低。該統一生態使 Roy 的多臂協作研究無需針對每套硬體客製化控制程式碼，能直接利用現有的運動規劃與視覺伺服框架。[ros2_control 支援機械臂列表](https://control.ros.org/rolling/doc/resources/resources.html)
 
+### ROS 2 Jazzy 2026 年 4 月軟體包更新與 MoveIt 2 LTS 10 成熟（最新同步）
+
+**ROS 2 Jazzy Jalisco LTS 軟體包擴展與完整機械臂生態**：根據 2026 年 4 月最新官方公告，ROS 2 Jazzy Jalisco（2024 年 5 月發布）已獲 150 項新軟體包與 540 項更新，涵蓋機械臂控制、邊界計算與多臂協作的完整工具鏈。MoveIt 2 LTS 版本 2.10 已於 Gazebo Harmonic 與 ros2_control 完全整合，提供從軌跡規劃、實時伺服到視覺伺服閉迴圈的統一運動規劃平台。該版本支援先進軌跡優化演算法包括 STOMP（隨機軌跡優化）與 CHOMP（協變哈密頓優化），相較傳統採樣規劃器在複雜環境中的規劃成功率提升 25-35%，規劃時間縮短至 <200ms。Jazzy LTS 官方支援至 2029 年 5 月，為 Roy 的長期多臂研究基礎設施提供 5 年穩定的產業級軟體生態。[New Packages for Jazzy Jalisco 2026-04-13](https://discourse.openrobotics.org/t/new-packages-for-jazzy-jalisco-2026-04-13/54004) | [MoveIt 2 Jazzy LTS Release](https://picknik.ai/release/jazzy/rolling/2024/06/30/New-MoveIt-LTS-release-for-ROS-2-Jazzy.html)
+
 ### Scan-N-Plan 感知驅動應用框架（2026 年 ROS-Industrial 新進展）
 
 **感知驅動加工應用軟體框架**：ROS-Industrial Consortium 發佈的 Scan-N-Plan Workshop 提供完整的感知驅動表面加工軟體框架，基於 ROS 2 與 3D 視覺感知，涵蓋表面掃描、特徵點偵測、軌跡規劃至執行的全流程。該框架整合 PCL 點雲處理、MoveIt 2 無碰撞規劃與實時視覺伺服閉迴圈，為複雜曲面加工、拋光、清潔等應用提供標準化解決方案。該工作流特別適合 Roy 的視覺伺服與邊界推理多臂應用場景。[ROS-Industrial Scan-N-Plan Framework](https://rosindustrial.org/news/)
