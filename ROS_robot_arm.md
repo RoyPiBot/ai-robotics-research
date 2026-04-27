@@ -3102,4 +3102,8 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **簡化機械臂操作的 Python 統一介面**：moveit_py 是 MoveIt 2 官方提供的 Python 綁定庫（v2.14.1），已成熟為 ROS 2 Humble LTS 上機械臂應用開發的標準 API。相較 C++ API，moveit_py 大幅簡化運動規劃程式碼複雜度，特別適合邊界推理與視覺伺服快速原型開發。該庫原生支援非同步執行、多臂同步指揮與即時反饋監控，已驗證應用於 GSoC 多臂軌跡執行研究。該統一 API 為 Roy 的邊界 Python 決策層與 ROS 2 硬體無縫整合提供了穩定的開發基礎。[moveit_py: Humble 2.14.1 documentation](https://docs.ros.org/en/humble/p/moveit_py/)
 
+### ROS 2 Humble LTS 長期支援與機械臂生態穩定性（2026 年 4 月確認）
+
+**ROS 2 Humble 長期支援至 2027 年 5 月的產業應用保證**：ROS 2 Humble 作為長期支援版本（LTS），官方保障支援期限延至 2027 年 5 月，為 2026 年及後續多年的機械臂應用提供穩定的基礎軟體棧。該版本已整合 ros2_control、MoveIt 2 與 Zenoh 通訊中介軟體的成熟生態，支援 14+ 商業機械臂廠商的官方驅動（Universal Robots、KUKA、ABB、xArm、Doosan 等）。Humble 上的 moveit_py、ros2_control 與 Gazebo Harmonic 模擬-硬體無縫銜接，使多臂研究與生產部署的軟體週期無需頻繁升級版本。該長期穩定性特別適合 Roy 在樹莓派 5 邊界部署的多臂自主決策系統，確保 3-5 年內軟體生態支援與社群維護的連續性。[ROS 2 Humble LTS Support - May 2027](https://docs.ros.org/en/humble/)
+
 **ROS 2 Humble LTS 長期支援與機械臂生態穩定性（2026 年 4 月確認）**：ROS 2 Humble 為長期支援版本（LTS），官方支援周期至 2027 年，已成為工業與研究機械臂應用的首選基礎版本。Humble 整合 MoveIt 2、ros2_control、Gazebo Harmonic 等成熟機械臂工具鏈，支援 50+ 商業與開源機械臂的官方驅動。該穩定基礎設施使 Roy 的多臂研究無需頻繁升級依賴版本，能專注於核心算法與決策層創新。[ROS 2 Humble Documentation](https://docs.ros.org/en/humble/)
