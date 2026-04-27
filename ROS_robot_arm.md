@@ -3131,3 +3131,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### Scan-N-Plan 感知驅動應用框架（2026 年 ROS-Industrial 新進展）
 
 **感知驅動加工應用軟體框架**：ROS-Industrial Consortium 發佈的 Scan-N-Plan Workshop 提供完整的感知驅動表面加工軟體框架，基於 ROS 2 與 3D 視覺感知，涵蓋表面掃描、特徵點偵測、軌跡規劃至執行的全流程。該框架整合 PCL 點雲處理、MoveIt 2 無碰撞規劃與實時視覺伺服閉迴圈，為複雜曲面加工、拋光、清潔等應用提供標準化解決方案。該工作流特別適合 Roy 的視覺伺服與邊界推理多臂應用場景。[ROS-Industrial Scan-N-Plan Framework](https://rosindustrial.org/news/)
+
+### ROS 2 Lyrical Luth — 2026 年 5 月長期支援版本展望（2026 年 4 月）
+
+**ROS 2 Lyrical Luth LTS 定於 2026 年 5 月 22 日正式發布**：ROS 2 Lyrical Luth（代號 'lyrical'）為下一代長期支援版本，預定 5 月 22 日正式發布。該版本引入新的 rcl_logging_implementation 套件，允許用戶在執行時期透過環境變數動態選擇日誌後端實作，強化邊界系統的彈性與診斷能力。Lyrical 預期將進一步整合 ROS 2 Humble 與 Jazzy 的成熟機械臂生態，為 2026-2031 年機械臂邊界應用提供穩定的軟體基礎。[ROS 2 Lyrical Luth Release Notes](https://docs.ros.org/en/rolling/Releases/Release-Lyrical-Luth.html)
+
+### PLCnext ROS Bridge — 工業 PLC 與 ROS 無縫互操作（2026 年新應用）
+
+**工業自動化基礎設施與 ROS 機械臂的無縫整合**：ROS-Industrial 推出 PLCnext ROS Bridge，為既有 PLC 系統與 ROS 2 生態提供雙向通訊橋接。該方案將工業 PLC 的實時控制信號與 ROS 話題層封裝於 Docker 容器，使傳統工廠自動化設備能直接與 ROS 機械臂系統協同控制。此架構特別適合邊界多臂與現實工廠設備的混合部署，顯著降低工業現場改造成本，成為 Roy 連結樹莓派邊界決策系統與現有工廠設施的重要技術橋接。[PLCnext ROS Bridge - ROS-Industrial 2026](https://rosindustrial.org/news/2026/3/27/plcnext-ros-bridge-enabling-hardware-interoperability-between-industrial-plcs-and-ros)
