@@ -3139,3 +3139,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### PLCnext ROS Bridge — 工業 PLC 與 ROS 無縫互操作（2026 年新應用）
 
 **工業自動化基礎設施與 ROS 機械臂的無縫整合**：ROS-Industrial 推出 PLCnext ROS Bridge，為既有 PLC 系統與 ROS 2 生態提供雙向通訊橋接。該方案將工業 PLC 的實時控制信號與 ROS 話題層封裝於 Docker 容器，使傳統工廠自動化設備能直接與 ROS 機械臂系統協同控制。此架構特別適合邊界多臂與現實工廠設備的混合部署，顯著降低工業現場改造成本，成為 Roy 連結樹莓派邊界決策系統與現有工廠設施的重要技術橋接。[PLCnext ROS Bridge - ROS-Industrial 2026](https://rosindustrial.org/news/2026/3/27/plcnext-ros-bridge-enabling-hardware-interoperability-between-industrial-plcs-and-ros)
+
+### 具身 AI 與 3D Vision 多模態融合（2026 年 4 月新進展）
+
+**多模態 LLM + 3D 視覺 + ROS 2 的端對端具身智能**：2026 年最新 Embodied AI 應用將多模態大型語言模型（視覺-語言-語音）與 3D 深度視覺無縫融合。TOF LiDAR 與 3D Depth Camera 的混合感知方案使機械臂系統能同時進行全局環境理解（SLAM）與精準空間定位（3D Point Cloud）。通過自然語言指令直接映射至機械臂的 6-DOF 控制命令，實現「看得懂、聽得懂、做得好」的完整感知-決策-執行閉迴圈。該方案已驗證應用於 Jetson Orin 與 Raspberry Pi 5 邊界部署，推理延遲 <200ms，為 Roy 的多模態語言驅動機械臂自主決策奠定實踐基礎。[Embodied AI with LanderPi: Fusing LLMs, ROS 2, and 3D Vision - Hackster.io](https://www.hackster.io/HiwonderRobot/embodied-ai-with-landerpi-fusing-llms-ros-2-and-3d-vision-1f744b)
+
+### Federated Learning 多機器人協作框架（2026 年新標準）
+
+**分散式學習與多臂邊界推理協調**：新興的 Federated Learning for Collaborative Robotics 框架允許多個機械臂系統在無中央伺服器的分散式環境中共同學習與協作。各臂端的 Jetson Orin NX / Raspberry Pi 邊界推理引擎獨立執行本地模型訓練，定期同步全局模型參數，避免單點故障並保護隱私敏感資料。該架構已驗證支援多臂視覺伺服、自適應抓取與編隊控制等複雜協作場景，相較中央式決策系統的通訊成本降低 70%，延遲穩定在 <300ms。該方案為 Roy 的邊界多臂自主決策與知識共享提供了標準化的分散式學習框架。[Federated Learning for Collaborative Robotics: A ROS 2-Based Approach - MDPI Electronics](https://www.mdpi.com/2079-9292/14/7/1323)
