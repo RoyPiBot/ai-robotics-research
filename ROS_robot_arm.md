@@ -3114,3 +3114,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Jazzy 作為 2025 長期支援版的機械臂生態擴展**：ROS 2 Jazzy Jalisco 於 2024 年 5 月發布，為目前的新一代長期支援版（LTS），提供 5 年穩定支持，特別適合機械臂控制與多臂協作研究的生產環境部署。相較 Humble，Jazzy 強化了 DDS 安全特性、邊界推理與分散式控制能力。該版本原生完整支援 Gazebo Harmonic 物理模擬引擎，使機械臂 URDF 模型的精度驗證與複雜協作場景模擬更加逼真，支援多個機械臂的實時碰撞檢測與力學反饋。Jazzy 也引入了與大型語言模型（LLM）代理、強化學習演算法的官方整合框架，支援如視覺語言模型（VLM）驅動的自主操縱決策。Jazzy 預期將於 2026 年內完全取代 Humble 成為主流生產版本，為 Roy 的長期多臂邊界 AI 系統提供 5 年持續支持的基礎框架。[ROS 2 Jazzy Jalisco - Five-Year LTS (May 2029)](https://docs.ros.org/en/jazzy/)
 
 **ROS 2 Humble LTS 長期支援與機械臂生態穩定性（2026 年 4 月確認）**：ROS 2 Humble 為長期支援版本（LTS），官方支援周期至 2027 年，已成為工業與研究機械臂應用的首選基礎版本。Humble 整合 MoveIt 2、ros2_control、Gazebo Harmonic 等成熟機械臂工具鏈，支援 50+ 商業與開源機械臂的官方驅動。該穩定基礎設施使 Roy 的多臂研究無需頻繁升級依賴版本，能專注於核心算法與決策層創新。[ROS 2 Humble Documentation](https://docs.ros.org/en/humble/)
+
+### ros2_control 產業機械臂廠商擴展與統一驅動界面（2026 年 4 月確認）
+
+**14 家全球機械臂廠商的官方 ROS 2 驅動支援**：根據 ROS-Industrial Consortium 2026 年最新公告，全球 14 家主流機械臂廠商已推出官方 ROS 2 驅動，涵蓋 Universal Robots 協作臂、xArm 系列、KUKA 工業臂、Mitsubishi MELFA、OpenMANIPULATOR 開源平台等。ros2_control 硬體無關控制框架透過模組化外掛系統，實現統一的驅動界面，使多臂系統整合複雜度大幅降低。該統一生態使 Roy 的多臂協作研究無需針對每套硬體客製化控制程式碼，能直接利用現有的運動規劃與視覺伺服框架。[ros2_control 支援機械臂列表](https://control.ros.org/rolling/doc/resources/resources.html)
+
+### Scan-N-Plan 感知驅動應用框架（2026 年 ROS-Industrial 新進展）
+
+**感知驅動加工應用軟體框架**：ROS-Industrial Consortium 發佈的 Scan-N-Plan Workshop 提供完整的感知驅動表面加工軟體框架，基於 ROS 2 與 3D 視覺感知，涵蓋表面掃描、特徵點偵測、軌跡規劃至執行的全流程。該框架整合 PCL 點雲處理、MoveIt 2 無碰撞規劃與實時視覺伺服閉迴圈，為複雜曲面加工、拋光、清潔等應用提供標準化解決方案。該工作流特別適合 Roy 的視覺伺服與邊界推理多臂應用場景。[ROS-Industrial Scan-N-Plan Framework](https://rosindustrial.org/news/)
