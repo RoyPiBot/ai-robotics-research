@@ -3154,4 +3154,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 ### ROS-Industrial Consortium 強化學習培訓計畫（2026）
 
+**機械臂強化學習應用實踐**：ROS-Industrial 推出針對機械臂操縱的強化學習培訓計畫，涵蓋如何應用深度強化學習技術有效控制機械臂。該計畫整合 Gazebo 物理模擬進行安全的訓練環境，使用 Doosan 協作臂與 Universal Robots 等平台作為實驗標的。該培訓特別適合 Roy 的邊界多臂自適應決策與自主學習研究。[ROS-Industrial Reinforcement Learning Workshop](https://rosindustrial.org/)
+
+### RQT Frame Editor — ROS 2 TF-frames 視覺管理工具（2026 年 4 月新增）
+
+**簡化機械臂座標轉換的直觀 ROS 外掛**：RQT Frame Editor 是 ROS 2 官方推出的視覺化工具外掛，允許使用者在 RQT 與 RViz 環境中直觀地建立、排列與調整 TF（Transform Frame）座標轉換框架。傳統機械臂開發需要手動編寫 URDF 與靜態轉換發佈者，而 RQT Frame Editor 透過拖拽介面大幅簡化該流程。該工具原生支援多臂系統的座標層級管理，特別適合 Roy 的複雜機械臂運動學設置與邊界視覺伺服應用。[RQT Frame Editor - ROS 2 Plugin for TF Management](https://github.com/ros-visualization/rqt_frame_editor)
 **機械臂强化学習入門課程**：ROS-Industrial Consortium Asia Pacific 新開設「Introduction to Reinforcement Learning for Robot Arm Manipulation」培訓，涵蓋 Q-Learning、DQN、Actor-Critic 等演算法在 ROS 2 框架下的實際應用。該課程已驗證於協作臂自適應抓取與複雜軌跡優化場景，相較傳統運動學規劃效率提升 30-45%。[ROS-Industrial Asia Pacific](https://rosindustrial.org/)
