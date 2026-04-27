@@ -497,6 +497,18 @@
 - **重要性**：為邊緣機械臂應用提供完整硬體-軟體棧，消除了「模型能跑但實時性差」的痛點，成為小型協作機械臂與自主檢驗系統的首選平台。
 - **來源**：[OpenAI 公告](https://openai.com/index/advancing-independent-research-ai-alignment/) | [Anthropic Fellows](https://alignment.anthropic.com/2025/anthropic-fellows-program-2026/)
 
+### 50. Vision-Language-Action (VLA) 模型 ICLR 2026 百項突破
+- **機構**：ICLR 2026、Princeton AI Lab、NVIDIA
+- **發布時間**：2026 年 4 月
+- **摘要**：ICLR 2026 審視 164 篇 VLA 模型論文，揭示視覺語言行動模型的典範轉移。關鍵創新包括擴散基 VLA、推理模型、大規模軌跡數據集（DROID、Open X-Embodiment）、及 LIBERO/CALVIN/SIMPLER 基準測試。Princeton 研究顯示機械人微調時的「災難性遺忘」可透過自然語言表示動作而非改變架構來化解。NVIDIA GR00T 開放模型展示多步驟任務的自然語言理解與多模態控制整合。
+- **重要性**：VLA 已成為物理 AI 的核心範例，從單一模型走向多模態軌跡的大規模預訓練與任務通用性。
+
+### 51. 多臂協作邊緣推理系統 — 98.7% 精準度、3.2ms 延遲
+- **機構**：Nature Scientific Reports、Arm 邊緣 AI 聯盟、工業機器人團隊
+- **發布時間**：2026 年 4 月
+- **摘要**：協作分揀機械臂系統整合多模態傳感（視覺、力覺、位置）與邊緣推理，透過動態可信度加權達成 98.7% 分類精準度，邊緣分散計算驅動平均 3.2ms 反應時間。系統展示「協調連續體」範例——多臺機械手、攝影機、工業控制器自發發現彼此並形成分散式 AI 智能體網路，各設備本地運行 AI、共享上下文、即時協調動作。2026 年邊緣 AI 的共識入場門檻為 100 TOPS，模型量化與專用晶片加速使複雜推理模型得以部署到邊界設備。
+- **重要性**：標誌著邊緣推理從雲端備份進化為真實時多臂協調的實現基礎，混合雲邊推理架構成為 2026 工業自動化標準。
+
 ### 48. 企業 AI Agent 採用突破 — Fortune 500 生產部署率翻倍
 - **來源**：多家分析機構、Google Cloud、Moltbook-AI
 - **摘要**：截至 2026 年 3 月，**67% 的 Fortune 500 企業**至少有一個 AI Agent 在生產環境運行（2025 年為 34%，翻倍成長）。NVIDIA 推出 **Agent Toolkit**（含 OpenShell 安全執行環境與 Nemotron 模型）；阿里巴巴推出 **Wukong** 企業 AI 平台，管理多代理執行文件編輯、審批與研究任務。AI Agent 市場預計以 46.3% 年複合成長率成長至 2030 年的 526 億美元。
