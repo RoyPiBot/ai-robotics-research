@@ -3152,6 +3152,14 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **視覺伺服與運動規劃的端對端實時控制**：MoveIt 2 最新版本已整合邊界推理決策層與視覺伺服實時反饋機制。通過 ROS 2 Zenoh 中介軟體的超低延遲通訊（<10ms）與 Gazebo Harmonic 物理模擬精準驗證，機械臂系統能實現基於 RGB-D 感測器的即時軌跡修正。該方案特別適合 Roy 的多臂協作視覺伺服應用，支援動態障礙物迴避與即時力控制。[MoveIt 2 Latest Developments](https://picknik.ai/)
 
+### ros2_control 級聯控制與實時狀態估計（2026 年 4 月最新）
+
+**Controller Chaining 架構支援多層級控制與狀態估計**：ROS 2 Kilted Kaiju 版本強化了 ros2_control 的 Controller Chaining 功能，允許多個控制器以級聯方式串聯執行。該架構支援上層任務規劃控制器與下層實時伺服控制器的分層設計，特別適合複雜機械臂運動規劃與力控制的無縫整合。Control Framework 原生支援非同步與並行控制器執行，使 Roy 的視覺伺服決策層無需干擾底層硬體控制迴圈。[ROS2_Control Rolling Documentation](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
+### ROS 2 Kilted Kaiju 2026 年最新通訊與效能提升（2026 年 4 月）
+
+**Zenoh Tier 1 RMW 與改進 RCLPy 事件執行器**：ROS 2 Kilted Kaiju 釋出版本強化了分散式通訊與邊界計算性能。Zenoh 正式成為第一級中介軟體選項，提供更低延遲的機械臂實時控制通訊（<5ms），特別適合多臂協作場景。同時，改進的 RCLPy 事件執行器提供更靈活的非同步執行策略，使 Roy 的邊界 Python 決策層與 C++ 控制層能高效協作。[ROS 2 Kilted Release Notes 2026-04](https://docs.ros.org/en/rolling/)
+
 ### ROS-Industrial Consortium 強化學習培訓計畫（2026）
 
 **機械臂強化學習應用實踐**：ROS-Industrial 推出針對機械臂操縱的強化學習培訓計畫，涵蓋如何應用深度強化學習技術有效控制機械臂。該計畫整合 Gazebo 物理模擬進行安全的訓練環境，使用 Doosan 協作臂與 Universal Robots 等平台作為實驗標的。該培訓特別適合 Roy 的邊界多臂自適應決策與自主學習研究。[ROS-Industrial Reinforcement Learning Workshop](https://rosindustrial.org/)
