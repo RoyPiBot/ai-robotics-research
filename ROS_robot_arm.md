@@ -3211,3 +3211,23 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### ROS 2 Jazzy 機械臂 URDF 設計與模擬完整教程（2026 年更新）
 
 **從零開始建構機械臂模型：URDF 描述、Gazebo 物理模擬、RViz 視覺化**：ROS 2 官方與社群已發佈系列教程，涵蓋如何使用 URDF（Universal Robot Description Format）描述任意複雜度的機械臂模型，並在 Gazebo Harmonic 環境進行完整物理模擬與控制驗證。該教程示範從基本連桿定義、關節參數設置，到添加感測器、碰撞網格、傳動比等進階配置，使開發者能快速原型化新機械臂設計。此流程已驗證適用於教育級機械臂（如 G-ARM）與工業協作臂，為 Roy 的邊界機械臂設計與驗證提供標準化工具鏈。[教程: Create and Visualize a Robotic Arm with URDF](https://automaticaddison.com/create-and-visualize-a-robotic-arm-with-urdf-ros-2-jazzy/)
+
+---
+
+## 2026 年 4 月 28 日補充：ROS 2 Lyrical Luth 與工業生態全面升級
+
+### ROS 2 Lyrical Luth（預計 2026 年 5 月 GA）新增亮點
+
+**下一代 ROS 2 發行版即將正式發布**：ROS 2 Lyrical Luth 作為第十二個發行版，預計於 2026 年 5 月正式推出，帶來外掛系統改進與 Python API 增強：
+- **外掛建構子靈活性提升**：參數傳遞至建構子，外掛不再強制要求預設建構子
+- **Image Transport NV12 支援**：新增異步事件流影像格式，相容高速視覺伺服應用
+- **Windows 11 平台優化**：官方力度提升 Windows 邊界部署支援
+- [ROS 2 Lyrical Release Notes](https://docs.ros.org/en/rolling/Releases/Release-Lyrical-Luth.html)
+
+### 工業機械臂 ROS 2 生態全面成熟
+
+**Realman 睿尔曼機械臂 ROS 2 完整支援**：2026 年 4 月最新升級，Realman 協作臂已原生支援 ROS 2 Humble/Jazzy 完整驅動棧，包括 ros2_control 硬體無關控制與 MoveIt 2 軌跡規劃，國內廠商已完成業界標準化遷移。
+
+**ROSpider 自主六足機器人 AI 視覺整合**：2026 年新型機器人 ROSpider 結合 ROS 2 架構、AI 視覺識別（目標分類、動態追蹤）、實時協調決策，展示邊界多臂系統與移動基座的融合趨勢。[Frank's World Article](https://www.franksworld.com/2026/04/27/meet-rospider-the-future-of-autonomous-hexapod-robotics/)
+
+**推薦學習資源**：社群完整 ROS 機械臂教學套件 jiuyewxy/ros_arm_tutorials 已涵蓋 ROS 2 Humble/Jazzy 下的機械臂視覺抓取、Moveit 2、Python/C++ 雙語實現。[GitHub](https://github.com/jiuyewxy/ros_arm_tutorials)
