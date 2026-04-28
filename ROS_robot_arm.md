@@ -3231,3 +3231,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROSpider 自主六足機器人 AI 視覺整合**：2026 年新型機器人 ROSpider 結合 ROS 2 架構、AI 視覺識別（目標分類、動態追蹤）、實時協調決策，展示邊界多臂系統與移動基座的融合趨勢。[Frank's World Article](https://www.franksworld.com/2026/04/27/meet-rospider-the-future-of-autonomous-hexapod-robotics/)
 
 **推薦學習資源**：社群完整 ROS 機械臂教學套件 jiuyewxy/ros_arm_tutorials 已涵蓋 ROS 2 Humble/Jazzy 下的機械臂視覺抓取、Moveit 2、Python/C++ 雙語實現。[GitHub](https://github.com/jiuyewxy/ros_arm_tutorials)
+
+### ROS 社群深化發展與工具鏈進步（2026 年 4 月最新）
+
+**ROS-Industrial 與開源運動規劃工具升級**：ROS-Industrial Consortium 社群正積極籌備 Automate 2026 展覽（於芝加哥舉辦），並推進 OMPL 2.0 的新型 VAMP（Vectorized Antipodal Motion Planning）整合，提升複雜場景下運動規劃效能。同步進行的 Tesseract 1.0 版本升級強化了碰撞檢測與模組化規劃管線，特別適合邊界運算環境部署。
+
+**語義發現與 ROS 包復用優化**：社群力推的語義發現框架（semantic discovery），透過知識圖譜與向量搜尋，大幅改善 ROS 套件的可發現性與跨域復用。此技術已驗證在導航、感知、SLAM、機械臂操控等領域顯著提升開發效率。Roy 的多臂視覺伺服系統可透過此框架更快整合現成的感知與規劃組件，加速邊界 AI 應用開發週期。
