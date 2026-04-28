@@ -3237,3 +3237,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS-Industrial 與開源運動規劃工具升級**：ROS-Industrial Consortium 社群正積極籌備 Automate 2026 展覽（於芝加哥舉辦），並推進 OMPL 2.0 的新型 VAMP（Vectorized Antipodal Motion Planning）整合，提升複雜場景下運動規劃效能。同步進行的 Tesseract 1.0 版本升級強化了碰撞檢測與模組化規劃管線，特別適合邊界運算環境部署。
 
 **語義發現與 ROS 包復用優化**：社群力推的語義發現框架（semantic discovery），透過知識圖譜與向量搜尋，大幅改善 ROS 套件的可發現性與跨域復用。此技術已驗證在導航、感知、SLAM、機械臂操控等領域顯著提升開發效率。Roy 的多臂視覺伺服系統可透過此框架更快整合現成的感知與規劃組件，加速邊界 AI 應用開發週期。
+
+### 教育級開源機械臂 G-ARM：ROS 2 低成本集成方案（2026 年 4 月）
+
+**3D 列印機械臂 + ROS 2 完整教育生態**：最新研究發表教育級低成本開源機械臂 G-ARM，採用 FreeCAD 設計、3D 列印連桿、模組化組裝，搭載 ROS 2 原生支援的運動規劃框架。該系統整合 MoveIt 2 進行複雜抓取任務規劃，展示 ROS 2 與 Zenoh 中介軟體在邊界系統中的可靠性與模組化優勢。相較商業機械臂成本降低 85%，特別適合 Roy 的邊界多臂教學與研究原型開發。[G-ARM: Low-cost Robotic Arm with ROS2 - Springer 2025](https://link.springer.com/article/10.1007/s11042-025-20748-8)
+
+### MoveIt 2 協作臂實時控制突破（2026 年 4 月最新）
+
+**MoveIt 2 ROS 2 實時動作規劃與伺服控制統一框架**：PickNik Robotics 與 ROS-Industrial 聯合發布最新研究，証實 MoveIt 2 在 ROS 2 上實現毫秒級即時規劃與協作臂實時伺服控制。該框架支援 UR5/UR10 等協作臂的流式軌跡修正、接觸力反饋與動態障礙物迴避，規劃週期穩定於 <100ms。該進展使 Roy 的樹莓派邊界系統能直接部署商業級協作臂的實時視覺伺服應用，無需專用工業電腦。[MoveIt 2 ROS 2 Realtime Control - PickNik & ROS-Industrial 2026](https://www.therobotreport.com/moveit-2-enables-realtime-robot-arm-control-ros2/)
