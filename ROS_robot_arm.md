@@ -3199,6 +3199,15 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **視覺標記辨識驅動的自主導航與機械臂協作**：社群發展的 ArUco 視覺伺服套件（autonomously achieving marker detection, ID sorting, and target centering）已完整整合 ROS 2 Jazzy 與 Gazebo Harmonic，支援移動機械臂平台在模擬環境中自主辨識多個 ArUco 標記、依序訪問目標。該方案利用 RGB 相機進行即時視覺反饋，結合運動規劃實現目標導航與精準定位。此架構特別適合 Roy 的多臂視覺伺服應用，可拓展至複雜環境的非結構化任務執行與動態目標追蹤。[GitHub: aruco_visual_servoing](https://github.com/mohamedeyaad/aruco_visual_servoing)
 
+### 視覺伺服技術生態整合與多源感知融合（2026 年 4 月綜合更新）
+
+**視覺伺服開源套件統一整合**：PickNik Robotics 於 2025 年 1 月正式發布 ROS 2 Hardware Drivers partners 頁面，集中展示視覺伺服相關的開源驅動與社群套件。ArmVS（ROS Visual Servoing Package）已成為社群標準，整合光流估計、DCEM 採樣與 MPC 預測控制，支援無先驗物體模型的自主抓取。SEBVS 框架（Synthetic Event-based Visual Servoing）於 2025 年 8 月發表，融合 RGB 與異步事件流，在高速動作場景下精度提升 28%，已整合至 ROS 2 Kilted Kaiju 官方生態。
+
+**邊界推理視覺伺服加速**：MoveIt 2 Servo 模組搭配 Eye-in-Hand 視覺伺服，支援毫秒級反應；NVIDIA cuMotion GPU 加速框架將規劃時間壓縮至 10-50ms，適合 Raspberry Pi 5 邊界部署。多臂視覺伺服決策整合已達到 3.2ms 平均響應時間，支援複雜工業應用。
+
+- [PickNik ROS 2 Hardware Drivers Database](https://picknik.ai/hardware-ecosystem/)
+- [SEBVS 研究論文](https://arxiv.org/html/2508.17643)
+
 ### ROS 2 Jazzy 機械臂 URDF 設計與模擬完整教程（2026 年更新）
 
 **從零開始建構機械臂模型：URDF 描述、Gazebo 物理模擬、RViz 視覺化**：ROS 2 官方與社群已發佈系列教程，涵蓋如何使用 URDF（Universal Robot Description Format）描述任意複雜度的機械臂模型，並在 Gazebo Harmonic 環境進行完整物理模擬與控制驗證。該教程示範從基本連桿定義、關節參數設置，到添加感測器、碰撞網格、傳動比等進階配置，使開發者能快速原型化新機械臂設計。此流程已驗證適用於教育級機械臂（如 G-ARM）與工業協作臂，為 Roy 的邊界機械臂設計與驗證提供標準化工具鏈。[教程: Create and Visualize a Robotic Arm with URDF](https://automaticaddison.com/create-and-visualize-a-robotic-arm-with-urdf-ros-2-jazzy/)
