@@ -3190,3 +3190,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### ros2_control 硬體無關控制框架與 MoveIt 2 實時整合（2026 年 4 月）
 
 **模組化控制架構與跨機械臂平台泛用性**：ROS 2 官方 ros2_control 框架已成熟為硬體無關的通用控制框架，支援多臂、移動基座等異質機器人無縫協作。該框架透過 Controller Manager 暴露標準化 ROS 介面，使 MoveIt 2 路徑規劃、自主導航、第三方應用均無需機械臂特化程式碼，僅需配置控制器組態檔即可。最新 ROS 2 Jazzy 與 Kilted 版本進一步強化了記憶體管理與字符串參數支援，顯著簡化邊界多臂部署流程。此架構特別適合 Roy 的分散決策多臂系統，允許一套決策框架統御異質執行器。[ROS2_Control 硬體支援列表](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+
+### ROS 2 Jazzy 快速部署最佳實踐（2026 年 4 月實踐指南）
+
+**零額外客製化代碼：單純配置檔即可運行移動基座+機械臂系統**：根據 2026 年 4 月 ROS 2 官方最佳實踐，任何配備 ros2_control 支援的機械臂（含移動基座）系統無需撰寫驅動程式，僅透過 YAML 控制器組態檔與 URDF 機械臂描述檔即可完整運行。該簡化流程使 Roy 的樹莓派邊界多臂系統可直接套用現成驅動與標準控制器（Joint Trajectory Controller、Admittance Controller 等），快速整合新機械臂無需投入開發資源。此最佳實踐特別適合快速原型與多硬體實驗環境，大幅降低開發週期與維護成本。
