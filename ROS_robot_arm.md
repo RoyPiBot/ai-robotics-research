@@ -3194,3 +3194,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### ROS 2 Jazzy 快速部署最佳實踐（2026 年 4 月實踐指南）
 
 **零額外客製化代碼：單純配置檔即可運行移動基座+機械臂系統**：根據 2026 年 4 月 ROS 2 官方最佳實踐，任何配備 ros2_control 支援的機械臂（含移動基座）系統無需撰寫驅動程式，僅透過 YAML 控制器組態檔與 URDF 機械臂描述檔即可完整運行。該簡化流程使 Roy 的樹莓派邊界多臂系統可直接套用現成驅動與標準控制器（Joint Trajectory Controller、Admittance Controller 等），快速整合新機械臂無需投入開發資源。此最佳實踐特別適合快速原型與多硬體實驗環境，大幅降低開發週期與維護成本。
+
+### ArUco 視覺伺服與自主導航整合（2026 年 4 月新興應用）
+
+**視覺標記辨識驅動的自主導航與機械臂協作**：社群發展的 ArUco 視覺伺服套件（autonomously achieving marker detection, ID sorting, and target centering）已完整整合 ROS 2 Jazzy 與 Gazebo Harmonic，支援移動機械臂平台在模擬環境中自主辨識多個 ArUco 標記、依序訪問目標。該方案利用 RGB 相機進行即時視覺反饋，結合運動規劃實現目標導航與精準定位。此架構特別適合 Roy 的多臂視覺伺服應用，可拓展至複雜環境的非結構化任務執行與動態目標追蹤。[GitHub: aruco_visual_servoing](https://github.com/mohamedeyaad/aruco_visual_servoing)
+
+### ROS 2 Jazzy 機械臂 URDF 設計與模擬完整教程（2026 年更新）
+
+**從零開始建構機械臂模型：URDF 描述、Gazebo 物理模擬、RViz 視覺化**：ROS 2 官方與社群已發佈系列教程，涵蓋如何使用 URDF（Universal Robot Description Format）描述任意複雜度的機械臂模型，並在 Gazebo Harmonic 環境進行完整物理模擬與控制驗證。該教程示範從基本連桿定義、關節參數設置，到添加感測器、碰撞網格、傳動比等進階配置，使開發者能快速原型化新機械臂設計。此流程已驗證適用於教育級機械臂（如 G-ARM）與工業協作臂，為 Roy 的邊界機械臂設計與驗證提供標準化工具鏈。[教程: Create and Visualize a Robotic Arm with URDF](https://automaticaddison.com/create-and-visualize-a-robotic-arm-with-urdf-ros-2-jazzy/)
