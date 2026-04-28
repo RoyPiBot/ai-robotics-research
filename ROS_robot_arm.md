@@ -3245,3 +3245,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ### MoveIt 2 協作臂實時控制突破（2026 年 4 月最新）
 
 **MoveIt 2 ROS 2 實時動作規劃與伺服控制統一框架**：PickNik Robotics 與 ROS-Industrial 聯合發布最新研究，証實 MoveIt 2 在 ROS 2 上實現毫秒級即時規劃與協作臂實時伺服控制。該框架支援 UR5/UR10 等協作臂的流式軌跡修正、接觸力反饋與動態障礙物迴避，規劃週期穩定於 <100ms。該進展使 Roy 的樹莓派邊界系統能直接部署商業級協作臂的實時視覺伺服應用，無需專用工業電腦。[MoveIt 2 ROS 2 Realtime Control - PickNik & ROS-Industrial 2026](https://www.therobotreport.com/moveit-2-enables-realtime-robot-arm-control-ros2/)
+
+---
+
+## 2026 年 4 月 29 日補充：ros2_control 架構深化與強化學習應用
+
+**ros2_control Jazzy 版本功能擴展**：ROS 2 Jazzy 帶來 ros2_control 框架的重大升級，控制器介面新增字串參數傳遞至建構子，突破先前預設建構子的限制，使硬體無關控制更具靈活性。此增強特別適合 Roy 的多臂動態重配置與自適應控制應用，支援執行時期外掛交換與複雜控制策略組合。
+
+**強化學習賦能機械臂動態控制**：ROS-Industrial Consortium Asia Pacific 推進強化學習與傳統控制融合工作流，成功整合 ROS 2 環境與深度強化學習框架（DRL），在複雜非結構化任務中實現自主學習與泛化能力。該方案已驗證於協作臂與移動機械臂協作場景，加速 Roy 的 AI 視覺伺服系統邁向自主決策與自適應抓取能力。
