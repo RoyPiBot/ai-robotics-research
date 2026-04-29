@@ -3319,3 +3319,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Learning-Based Multi-Robot Active SLAM 市場應用擴展**：2025-2026 年發表的多機器人主動 SLAM 框架整合學習型規劃與分散式因子圖估計。該方案支援多臂移動基座隊伍在未知環境中自主協作導航、動態目標追蹤與視覺伺服操縱，無中央伺服器設計降低通訊延遲至 <300ms。市場預測協作機械臂市場 2025 年達 USD 1.8B，2026 年擴增至 USD 2.3B（CAGR 22.8%），驗證此技術的工業應用價值。[Learning-Based Multi-Robot Active SLAM](https://www.mdpi.com/2076-3417/16/3/1412) | [Collaborative Mobile-Manipulator Robots Market 2026](https://www.futuremarketinsights.com/reports/collaborative-mobile-manipulator-robots-market)
 
 **模仿學習直接視覺伺服與動態系統整合**：2025-2026 發表的動態系統模仿學習方法為直接視覺伺服引入大規模深度學習基礎特徵提取，結合機械臂約束優化，相較傳統雅可比矩陣方法降低特徵工程複雜度、提升泛化能力 40-50%。該方案已驗證於多種機械臂硬體平台，支援複雜非結構化任務執行。[ScienceDirect: Imitation Learning-based Direct Visual Servoing](https://www.sciencedirect.com/science/article/pii/S0921889025000570)
+
+## 2026 年 4 月 30 日補充：強化學習與先進控制系統生態整合
+
+**ROSCon 2025 強化學習於機械臂控制應用成果**：ROSCon 2025 研討會展示強化學習原理在 ROS 2 機械臂控制中的實踐，與會者深入學習如何應用強化學習技術實現更精準的機械臂控制。同步展示深度學習與 YOLO 物體偵測、ROS 整合框架，為視覺伺服系統注入端到端的深度學習感知管線。該生態整合提升機械臂在動態環境中的自主決策與自適應控制能力。
+
+**Web-based ROS 系統監控與控制界面**：最新研究發表可高度定製化的 web-based GUI 系統，基於 ROSBridge 與 roslibjs 實現 ROS 話題與服務的無縫通訊。該 web 控制界面支援即時監控、複雜機械臂系統的直觀配置與串流控制，特別適合 Roy 的邊界多臂系統實現統一的遠端監管與人機互動。[PickNik ROS 2 Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/) | [ROS-Industrial Blog](https://rosindustrial.org/news)
