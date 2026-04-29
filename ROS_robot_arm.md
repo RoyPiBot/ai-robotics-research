@@ -3305,3 +3305,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **LanderPi 完整多臂視覺伺服系統架構**：Hiwonder 官方推出的 LanderPi 移動機械臂平台整合 MS200 TOF LiDAR（<5mm 精度）與結構光深度相機，實現厘米級全域 SLAM 與高精度手眼協作。該系統透過 Inverse Kinematics（IK）與點雲即時偵測，支援在動態環境中執行視覺伺服協作抓取、動態目標追蹤與複雜非結構化任務。LanderPi 原生 ROS 2 架構搭配 MoveIt 2 軌跡規劃，實現 3D 點雲實時物體坐標定位、尺寸與朝向判斷，為 Roy 的邊界多臂 SLAM+視覺伺服研究提供完整硬體與軟體參考。
 
 **ROSpider 六足機器人 6-DOF 機械臂協作應用**：新推出的 ROSpider AI 六足機器人配備 6-DOF 機械臂、RGB-D 深度攝像與 TOF 激光感測，原生支援 ROS 2 視覺伺服、自主導航與邊界強化學習決策。該平台驗證了多感測器融合與分散式邊界推理的可靠性，支援複雜環境下機械臂與移動基座的協調操縱，展示機械臂邊界強化學習自適應決策的新方向。
+
+### 深度神經網絡視覺伺服與模仿學習整合（2026 年 4 月 30 日）
+
+**DNN 輔助視覺伺服對象追蹤**：最新研究驗證深度神經網絡在機械臂視覺伺服中的關鍵角色。自主物體追蹤與視覺控制的 DNN 系統在 2-DOF 機械臂達成優異精度與反應時間，相較傳統特徵提取方法追蹤成功率提升至 95%。該方案已驗證於複雜光照變化與部分遮擋場景，為 Roy 的視覺伺服系統注入深度學習智慧。[Nature Scientific Reports: Vision-based 2DOF Robotic Arm Control](https://www.nature.com/articles/s41598-025-97930-3)
+
+**模仿學習直接視覺伺服與動態系統整合**：2025-2026 發表的動態系統模仿學習方法為直接視覺伺服引入大規模深度學習基礎特徵提取，結合機械臂約束優化，相較傳統雅可比矩陣方法降低特徵工程複雜度、提升泛化能力 40-50%。該方案已驗證於多種機械臂硬體平台，支援複雜非結構化任務執行。[ScienceDirect: Imitation Learning-based Direct Visual Servoing](https://www.sciencedirect.com/science/article/pii/S0921889025000570)
