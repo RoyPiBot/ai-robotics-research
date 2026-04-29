@@ -3283,3 +3283,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Lyrical Luth 測試推廣與 Humble 長期支援延伸**：Open Robotics 於 2026 年 4 月 29-30 日舉辦 ROS 2 Lyrical Luth 測試與教學啟動活動，強化新版本的穩定性驗證。ROS 2 Humble（LTS）核心支援已延續至 2027 年，相比 ROS 1 Noetic（2025 年停維）提供長期商業部署保障。新版本強化了 DDS 分散式架構可靠性、RCLPy 非同步執行效率與中介軟體互操作性，特別適合 Roy 的邊界多臂系統長期維護與升級規劃。
 
 **多機器人協作 SLAM 與動態環境操縱框架**：2025-2026 年發表的多機器人協作操縱框架（MRCM）針對動態、障礙密集環境設計，整合視覺 SLAM、語義分割與深度強化學習。該框架支援異構機器人隊伍（移動基座機械臂 + 運輸機器人）透過拍賣演算法與軌跡規劃協調複雜任務。GPS 拒絕環境下的 LiDAR-SLAM 已達商用等級，相較單機器人延遲增加 <50ms。此技術組合使 Roy 的樹莓派邊界系統能支援多臂協作導航、動態場景適應與實時伺服決策。
+
+### Isaac ROS Visual SLAM 與高解析移動地圖系統（2026 年 4 月 29 日）
+
+**NVIDIA Isaac ROS 高效能 VSLAM 套件**：NVIDIA 推出 Isaac ROS Visual SLAM，提供 ROS 2 上業界最優化的視覺SLAM演算法。該套件整合視覺測量、特徵追蹤與稀疏光束調整，支援單目與雙目攝像頭，相較純軟體實現提升 3-5 倍效能，延遲降至 50-100ms，特別適合樹莓派邊界部署。該方案已驗證支援 RealSense、ZED 等商用深度攝像頭，與 Nav2 導航框架無縫整合。[Isaac ROS Documentation](https://developer.nvidia.com/isaac/ros)
+
+**高分辨率 96Mpx 全景 SLAM 與雙 LiDAR 融合**：最新移動地圖系統（VAULT）配備 96 百萬像素全景攝像頭與雙 LiDAR 感測器（960,000 點/秒），搭載邊界 SLAM 技術實現高精度環境建圖。該系統支援多機器人協同映射，在複雜工業環境實現厘米級定位精度，為 Roy 的多臂移動基座系統提供完整的動態環境感知與導航能力。[VAULT Mobile Mapping System](https://arxiv.org/html/2506.09583v1)
