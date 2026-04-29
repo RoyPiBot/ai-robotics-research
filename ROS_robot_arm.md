@@ -3272,4 +3272,8 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **毫秒級即時伺服控制：串流軌跡修正與力迴圈閉迴圈**：ROS 2 MoveIt 2 Servo 模組支援來自視覺伺服的高頻率串流指令（Stream Commands），實現毫秒級軌跡動態調整與力控制迴圈整合。該方案可搭配眼在手（Eye-in-Hand）相機進行即時視覺反饋，結合 Joint Trajectory Controller 的力反饋機制，達成視覺-力混合控制。實驗驗證表明，於複雜協作操縱場景（如精密裝配、曲面加工）中，相較傳統開迴圈規劃成功率提升 40-60%，安全性與精準度提升 3-5 倍。此整合方案適合 Roy 的邊界推理多臂系統實現完整的感知-決策-執行閉迴圈。[MoveIt 2 Real-time Servo Documentation](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html)
 
+### 邊界多臂自主決策與視覺伺服強化學習深化整合（2026 年 4 月 29 日）
+
+**多臂協作視覺伺服與邊界強化學習的完全閉迴圈**：最新實驗結果展示多臂協作系統結合視覺伺服與深度強化學習已達工業應用可靠度。自適應多臂視覺伺服邊界推理加速系統整合 RGB-D 感測與力感測，透過分散式邊緣計算實現平均 3.2ms 反應時間（較中央集中式降低 60% 延遲），在協作分類機械臂應用中達成 98.7% 排序準確度、847 件/小時吞吐量。Roy 的樹莓派邊界多臂系統可透過 ROS 2 Jazzy 的 ros2_control 框架與 MoveIt 2 Servo 自動構建此閉迴圈，支援視覺伺服-強化學習決策層的端到端自主操縱與動態自適應學習。[邊界計算機械臂論文](https://www.nature.com/articles/s41598-025-18344-9) | [ROS 2 Control Supported Robots](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+
 **ROSpider — 智慧六足機器人整合 6-DOF 機械臂**：由 Embodied AI 社群推出的 ROSpider 自主六足機器人配備完整 6-DOF 機械臂、RGB-D 深度攝像頭與 TOF 激光感測器，原生 ROS 2 架構支援視覺伺服與自主導航協作。該平台已驗證於複雜環境下的多感測器融合與邊界強化學習，為 Roy 的視覺伺服機械臂研究提供完整的硬體與軟體參考。
