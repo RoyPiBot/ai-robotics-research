@@ -3294,4 +3294,8 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **MentorPi M1 移動基座整合式 SLAM 與視覺感知**：2026 年最新推出的 MentorPi M1 移動機械臂平台整合完整的感測器套件：TOF 激光雷達用於 2D SLAM 地圖與障礙迴避、3D 深度攝像頭進行視覺識別與物體偵測。該系統搭載 ROS 2 架構與本地邊界推理，支援在 Raspberry Pi 5 環境中實現即時 SLAM 建圖、自主導航與機械臂視覺伺服的無縫協作。特別適合 Roy 的多臂移動基座系統進行動態環境下的複雜任務執行與自主學習。
 
+### Insight 9 Spatial AI SLAM 與多臂移動平台視覺導航整合（2026 年 4 月 29 日新進展）
+
+**Insight 9 邊界 spatial AI SLAM 與機械臂協作**：OAK-D 系列推出的 Insight 9 spatial AI 相機整合高精度立體視覺、視覺慣性 SLAM（VI-SLAM）與邊界 AI 推理於單一 USB 介面。該相機原生支援 ROS 2 驅動，提供實時深度圖、視覺特徵點與 spatial AI 物體偵測，特別適合移動機械臂平台的動態環境 SLAM 與視覺伺服應用。相較 LiDAR 方案成本降低 75%，延遲穩定在 <50ms，已驗證應用於 MentorPi M1 與多臂移動基座的自主導航與目標導向操縱。該整合方案與 ROS 2 Jazzy 的 isaac_ros_visual_slam 框架兼容，為 Roy 的邊界多臂 SLAM 與視覺伺服研究提供低成本、高效能的感知平台。
+
 **空間 AI 與邊界 Visual SLAM 一體化**：Insight 9 spatial AI 相機採用 D-Robotics RDK X5 八核心處理器與 10 TOPS AI 加速器，支援在邊界裝置端點執行 Visual SLAM 與深度映射，無需依賴雲端運算。該方案整合視覺測量、特徵追蹤與稀疏光束調整，與 ROS 2 Nav2 框架無縫整合，為樹莓派邊界多臂系統提供低延遲、高精度的自主導航感知方案。[Insight 9 - D-Robotics Spatial AI Camera](https://www.cnx-software.com/2026/03/25/looperrobotics-insight-9-standalone-spatial-ai-camera-features-d-robotics-rdk-x5-soc-supports-ros-2/)
