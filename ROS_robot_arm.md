@@ -3258,6 +3258,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 Rolling Ridley 大幅更新**：ROS 2 官方於 2026-04-28 發布 Rolling Ridley 版本，新增 125 個套件、843 個更新，強化整體生態穩定性與性能。該更新涵蓋改進的 RCLPy 非同步執行、ros2_control 硬體適配擴展、以及 Gazebo Harmonic 模擬深度整合，加速多臂協作與邊界推理部署。
 
+## 2026 年 4 月 29 日補充：視覺伺服強化學習應用深化
+
+**自適應視覺伺服與多演算法融合**：最新研究突破顯示，視覺伺服與強化學習的整合已達到工業可用等級。自適應圖像視覺伺服（AIVS-Q）使用 Q-Learning 演算法動態調整影像雅可比矩陣，相較傳統固定增益控制提升軌跡光滑度、收斂速度與定位精度。此外，深度強化學習（DRL）框架整合 DQN、Transformer 序列處理與 MPC 預測控制，已驗證於協作臂複雜物體抓取、農業採收機器人與非全非成熟機器人視覺伺服應用，成功率提升 40-60%。Roy 的邊界多臂系統可透過統一視覺伺服-強化學習決策層實現真正的自適應操縱與自主學習能力。[ScienceDirect: Adaptive AIVS-Q](https://www.sciencedirect.com/science/article/abs/pii/S0952197625017804) | [DRL Visual Servoing with FOV Constraints](https://www.mdpi.com/2076-3432/15/8/4447) | [Transformer-based Visual Servoing Control](https://link.springer.com/article/10.1007/s40747-025-02056-8)
+
 **Realman 機械臂 ROS 2 官方支援**：睿爾曼（Realman）推出 ROS 2 官方驅動套件，完整整合 ros2_control 框架，支援其全系列協作臂在 ROS 2 下的零程式碼部署。該整合使用標準化 YAML 組態取代專有驅動，大幅降低硬體適配複雜度，特別適合 Roy 的多臂系統擴展。
 
 **ROSpider — 智慧六足機器人整合 6-DOF 機械臂**：由 Embodied AI 社群推出的 ROSpider 自主六足機器人配備完整 6-DOF 機械臂、RGB-D 深度攝像頭與 TOF 激光感測器，原生 ROS 2 架構支援視覺伺服與自主導航協作。該平台已驗證於複雜環境下的多感測器融合與邊界強化學習，為 Roy 的視覺伺服機械臂研究提供完整的硬體與軟體參考。
