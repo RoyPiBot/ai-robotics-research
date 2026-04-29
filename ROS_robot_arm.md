@@ -3299,3 +3299,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Insight 9 邊界 spatial AI SLAM 與機械臂協作**：OAK-D 系列推出的 Insight 9 spatial AI 相機整合高精度立體視覺、視覺慣性 SLAM（VI-SLAM）與邊界 AI 推理於單一 USB 介面。該相機原生支援 ROS 2 驅動，提供實時深度圖、視覺特徵點與 spatial AI 物體偵測，特別適合移動機械臂平台的動態環境 SLAM 與視覺伺服應用。相較 LiDAR 方案成本降低 75%，延遲穩定在 <50ms，已驗證應用於 MentorPi M1 與多臂移動基座的自主導航與目標導向操縱。該整合方案與 ROS 2 Jazzy 的 isaac_ros_visual_slam 框架兼容，為 Roy 的邊界多臂 SLAM 與視覺伺服研究提供低成本、高效能的感知平台。
 
 **空間 AI 與邊界 Visual SLAM 一體化**：Insight 9 spatial AI 相機採用 D-Robotics RDK X5 八核心處理器與 10 TOPS AI 加速器，支援在邊界裝置端點執行 Visual SLAM 與深度映射，無需依賴雲端運算。該方案整合視覺測量、特徵追蹤與稀疏光束調整，與 ROS 2 Nav2 框架無縫整合，為樹莓派邊界多臂系統提供低延遲、高精度的自主導航感知方案。[Insight 9 - D-Robotics Spatial AI Camera](https://www.cnx-software.com/2026/03/25/looperrobotics-insight-9-standalone-spatial-ai-camera-features-d-robotics-rdk-x5-soc-supports-ros-2/)
+
+### LanderPi 多臂移動基座 TOF+深度視覺整合方案（2026 年 4 月 30 日）
+
+**LanderPi 完整多臂視覺伺服系統架構**：Hiwonder 官方推出的 LanderPi 移動機械臂平台整合 MS200 TOF LiDAR（<5mm 精度）與結構光深度相機，實現厘米級全域 SLAM 與高精度手眼協作。該系統透過 Inverse Kinematics（IK）與點雲即時偵測，支援在動態環境中執行視覺伺服協作抓取、動態目標追蹤與複雜非結構化任務。LanderPi 原生 ROS 2 架構搭配 MoveIt 2 軌跡規劃，實現 3D 點雲實時物體坐標定位、尺寸與朝向判斷，為 Roy 的邊界多臂 SLAM+視覺伺服研究提供完整硬體與軟體參考。
+
+**ROSpider 六足機器人 6-DOF 機械臂協作應用**：新推出的 ROSpider AI 六足機器人配備 6-DOF 機械臂、RGB-D 深度攝像與 TOF 激光感測，原生支援 ROS 2 視覺伺服、自主導航與邊界強化學習決策。該平台驗證了多感測器融合與分散式邊界推理的可靠性，支援複雜環境下機械臂與移動基座的協調操縱，展示機械臂邊界強化學習自適應決策的新方向。
