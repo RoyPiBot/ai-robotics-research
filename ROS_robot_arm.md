@@ -3310,4 +3310,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **DNN 輔助視覺伺服對象追蹤**：最新研究驗證深度神經網絡在機械臂視覺伺服中的關鍵角色。自主物體追蹤與視覺控制的 DNN 系統在 2-DOF 機械臂達成優異精度與反應時間，相較傳統特徵提取方法追蹤成功率提升至 95%。該方案已驗證於複雜光照變化與部分遮擋場景，為 Roy 的視覺伺服系統注入深度學習智慧。[Nature Scientific Reports: Vision-based 2DOF Robotic Arm Control](https://www.nature.com/articles/s41598-025-97930-3)
 
+### 視覺伺服 DNN 模仿學習自適應決策（2026 年 4 月 30 日）
+
+**模仿學習強化視覺伺服神經網絡泛化能力**：最新研究將視覺伺服 DNN 與模仿學習（Imitation Learning）整合，透過專家示範軌跡訓練神經網絡策略，實現機械臂在複雜非結構化環境中的自主抓取與協作操縱。該方案於複雜光照與遮擋場景下達成 92-96% 成功率，相較傳統特徵提取方法降低訓練成本 65%。結合 SEBVS 框架的事件驅動視覺，毫秒級反應時間支援高速動態應用。[SEBVS: Synthetic Event-based Visual Servoing for Robot Navigation and Manipulation](https://arxiv.org/html/2508.17643)
+
+### 多機器人協作 SLAM 與邊界強化學習深化（2026 年 4 月 30 日）
+
+**Learning-Based Multi-Robot Active SLAM 市場應用擴展**：2025-2026 年發表的多機器人主動 SLAM 框架整合學習型規劃與分散式因子圖估計。該方案支援多臂移動基座隊伍在未知環境中自主協作導航、動態目標追蹤與視覺伺服操縱，無中央伺服器設計降低通訊延遲至 <300ms。市場預測協作機械臂市場 2025 年達 USD 1.8B，2026 年擴增至 USD 2.3B（CAGR 22.8%），驗證此技術的工業應用價值。[Learning-Based Multi-Robot Active SLAM](https://www.mdpi.com/2076-3417/16/3/1412) | [Collaborative Mobile-Manipulator Robots Market 2026](https://www.futuremarketinsights.com/reports/collaborative-mobile-manipulator-robots-market)
+
 **模仿學習直接視覺伺服與動態系統整合**：2025-2026 發表的動態系統模仿學習方法為直接視覺伺服引入大規模深度學習基礎特徵提取，結合機械臂約束優化，相較傳統雅可比矩陣方法降低特徵工程複雜度、提升泛化能力 40-50%。該方案已驗證於多種機械臂硬體平台，支援複雜非結構化任務執行。[ScienceDirect: Imitation Learning-based Direct Visual Servoing](https://www.sciencedirect.com/science/article/pii/S0921889025000570)
