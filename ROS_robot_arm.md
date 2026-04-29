@@ -3289,3 +3289,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **NVIDIA Isaac ROS 高效能 VSLAM 套件**：NVIDIA 推出 Isaac ROS Visual SLAM，提供 ROS 2 上業界最優化的視覺SLAM演算法。該套件整合視覺測量、特徵追蹤與稀疏光束調整，支援單目與雙目攝像頭，相較純軟體實現提升 3-5 倍效能，延遲降至 50-100ms，特別適合樹莓派邊界部署。該方案已驗證支援 RealSense、ZED 等商用深度攝像頭，與 Nav2 導航框架無縫整合。[Isaac ROS Documentation](https://developer.nvidia.com/isaac/ros)
 
 **高分辨率 96Mpx 全景 SLAM 與雙 LiDAR 融合**：最新移動地圖系統（VAULT）配備 96 百萬像素全景攝像頭與雙 LiDAR 感測器（960,000 點/秒），搭載邊界 SLAM 技術實現高精度環境建圖。該系統支援多機器人協同映射，在複雜工業環境實現厘米級定位精度，為 Roy 的多臂移動基座系統提供完整的動態環境感知與導航能力。[VAULT Mobile Mapping System](https://arxiv.org/html/2506.09583v1)
+
+### 移動機械臂平台與多感測器融合（2026 年 4 月 29 日補充）
+
+**MentorPi M1 移動基座整合式 SLAM 與視覺感知**：2026 年最新推出的 MentorPi M1 移動機械臂平台整合完整的感測器套件：TOF 激光雷達用於 2D SLAM 地圖與障礙迴避、3D 深度攝像頭進行視覺識別與物體偵測。該系統搭載 ROS 2 架構與本地邊界推理，支援在 Raspberry Pi 5 環境中實現即時 SLAM 建圖、自主導航與機械臂視覺伺服的無縫協作。特別適合 Roy 的多臂移動基座系統進行動態環境下的複雜任務執行與自主學習。
+
+**空間 AI 與邊界 Visual SLAM 一體化**：Insight 9 spatial AI 相機採用 D-Robotics RDK X5 八核心處理器與 10 TOPS AI 加速器，支援在邊界裝置端點執行 Visual SLAM 與深度映射，無需依賴雲端運算。該方案整合視覺測量、特徵追蹤與稀疏光束調整，與 ROS 2 Nav2 框架無縫整合，為樹莓派邊界多臂系統提供低延遲、高精度的自主導航感知方案。[Insight 9 - D-Robotics Spatial AI Camera](https://www.cnx-software.com/2026/03/25/looperrobotics-insight-9-standalone-spatial-ai-camera-features-d-robotics-rdk-x5-soc-supports-ros-2/)
