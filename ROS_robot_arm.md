@@ -3351,3 +3351,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **NVIDIA Isaac ROS CUDA 加速庫與 ROS 2 一體化**：NVIDIA 發布 Isaac ROS 完整生態，提供 CUDA 加速的深度學習推理庫，支援 YOLO 物體偵測、語義分割與視覺追蹤。該框架原生整合 ROS 2 話題介面，直接加速機械臂視覺伺服系統的感知管線。相較純 CPU 推理，GPU 加速提升 10-50 倍效能，使複雜 AI 模型在邊界 GPU（如 Jetson Orin Nano）與樹莓派外掛裝置上實現實時推理。Roy 的多臂視覺伺服系統可透過 Isaac ROS 構建端到端的 GPU 加速感知決策層，支援高速動態場景的自主操縱。
 
 **ROS 2 官方生態包發現框架與語義檢索**：ROS 社群推進語義發現框架，透過知識圖譜與向量搜尋大幅改善 ROS 套件可發現性。該框架已驗證在導航、感知、SLAM、機械臂控制等領域減少 60% 整合時間，加速開發者復用現成套件組件。結合 ROS2_Control 支援的 125+ 商用硬體平台，Roy 的多臂系統可更快發現與集成業界標準驅動與規劃模組。
+
+## 2026 年 4 月 30 日深化更新：事件驅動視覺伺服與 Digital Twin 自適應決策
+
+**Digital Twin + Soft Actor-Critic RL 實時適應控制**：最新研究首次整合 Unity Digital Twin 與 ROS 2 實現真實機械臂的實時自適應控制。該方案採用深度強化學習中的 SAC（Soft Actor-Critic）演算法，在模擬環境進行策略訓練後無縫轉移至實體機械臂，支援製造應用的動態環境適應。系統達成 20ms 關節級同步、完整的 sim-to-real 泛化，為 Roy 的邊界多臂強化學習決策層提供最新的數位孿生整合參考。[Digital twin-enabled real-time control - Journal of Intelligent Manufacturing 2025](https://link.springer.com/article/10.1007/s10845-025-02728-9)
+
+**CRISP 與 LeRobot：ROS 2 標準控制介面的學習友好封裝**：TUM 開發的 CRISP 框架為 ROS 2 機械臂提供相容 ros2_control 的高階控制器，直接支援笛卡爾空間視覺伺服與力控決策。搭配新推出的 Lerobot-ros 輕量介面，可無縫整合強化學習與模仿學習訓練框架，加速從學習策略到硬體部署的週期。該生態完全開源且相容主流機械臂硬體，特別適合 Roy 進行事件驅動視覺伺服與多臂協作強化學習實驗。[CRISP - arxiv.org](https://arxiv.org/html/2509.06819v1) | [Lerobot-ros - Open Robotics Discourse](https://discourse.openrobotics.org/t/lerobot-ros-a-lightweight-interface-for-controlling-ros-based-robotic-arms-using-lerobot/49420)
