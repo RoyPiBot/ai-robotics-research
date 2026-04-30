@@ -3352,6 +3352,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 官方生態包發現框架與語義檢索**：ROS 社群推進語義發現框架，透過知識圖譜與向量搜尋大幅改善 ROS 套件可發現性。該框架已驗證在導航、感知、SLAM、機械臂控制等領域減少 60% 整合時間，加速開發者復用現成套件組件。結合 ROS2_Control 支援的 125+ 商用硬體平台，Roy 的多臂系統可更快發現與集成業界標準驅動與規劃模組。
 
+## 2026 年 4 月 30 日補充：ROS 2 Lyrical Luth 近期發佈與 Image Transport 高速視覺流支援
+
+**ROS 2 Lyrical Luth Image Transport NV12 高速視覺流**：ROS 2 Lyrical Luth（預計 2026 年 5 月 GA）新增 Image Transport NV12 非同步事件流格式，專為高速視覺伺服與事件相機應用優化。該功能直接支援 SEBVS 框架的混合 RGB-Event 視覺回饋，並與 MoveIt 2 Servo 無縫整合，支援毫秒級流式軌跡修正。此增強使 Roy 的樹莓派邊界系統能原生支援最新的高速視覺伺服應用，無需自訂影像傳輸層。
+
+**ROS-Industrial Consortium 2026 年上半年工作坊與 Automate 展覽動向**：ROS-Industrial Consortium Asia Pacific 於 2026 年上半年啟動強化學習與運動規劃應用工作坊，內容涵蓋 DQN、PPO、DDPG 在機械臂協作中的實踐與安全約束整合。同步準備的 Automate 2026 展覽（芝加哥）將展示 OMPL 2.0 VAMP 運動規劃與 Tesseract 1.0 多臂協作框架的最新進展，為 Roy 的視覺伺服強化學習系統提供最新的工業應用參考與標準化方案。
+
 ## 2026 年 4 月 30 日深化更新：事件驅動視覺伺服與 Digital Twin 自適應決策
 
 **Digital Twin + Soft Actor-Critic RL 實時適應控制**：最新研究首次整合 Unity Digital Twin 與 ROS 2 實現真實機械臂的實時自適應控制。該方案採用深度強化學習中的 SAC（Soft Actor-Critic）演算法，在模擬環境進行策略訓練後無縫轉移至實體機械臂，支援製造應用的動態環境適應。系統達成 20ms 關節級同步、完整的 sim-to-real 泛化，為 Roy 的邊界多臂強化學習決策層提供最新的數位孿生整合參考。[Digital twin-enabled real-time control - Journal of Intelligent Manufacturing 2025](https://link.springer.com/article/10.1007/s10845-025-02728-9)
