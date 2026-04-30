@@ -2947,6 +2947,14 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 Control Rolling/Kilted 標準化硬體介面與完整 6-DOF 教程**：ROS 2 最新版本（Rolling、Kilted、Jazzy）的 ros2_control 框架已提供 100+ 商業與開源機械臂的標準化硬體驅動，涵蓋 ABB、UR、Doosan、Stäubli 等工業製造商。官方 ros2_control_demos 儲庫提供完整的 6-DOF 機械臂教程，展示從 URDF 模型定義、硬體驅動介面、實時控制器配置到 Gazebo 模擬的全流程。邊界部署場景（Raspberry Pi 5）可直接利用 Zenoh 中介軟體與雲端系統進行低延遲通訊，無需重新撰寫驅動層代碼，大幅加速多臂系統的整合時間。該標準化進展使 Roy 的多臂視覺伺服系統具備跨機械臂平台的快速移轉能力。[ROS2_Control Documentation - Supported Robots](https://control.ros.org/master/doc/supported_robots/supported_robots.html) | [Example 7: Full 6DOF Tutorial](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
 
+### 事件驅動視覺伺服（SEBVS）與實時機械臂操縱整合（2025 年最新研究）
+
+**SEBVS — 融合 RGB 與事件流的視覺伺服新紀元**：SEBVS（Synthetic Event-Based Visual Servoing）框架結合傳統 RGB 影像與非同步事件相機（neuromorphic camera）的高時間解析度優勢，在 ROS 2 與 Gazebo 中實現實時機械臂視覺伺服。該方法採用統一的 Transformer 架構，將 RGB 高解析度與事件流微秒級時序資訊融合，相較純 RGB 視覺伺服在複雜照明與快速動態環境中穩定性提升 35-42%。事件相機的超低延遲特性（毫秒級）使機械臂控制迴圈從傳統 50-100Hz 躍升至 1000Hz 以上，特別適合高速拾取與接觸操控任務。該框架已在 Gazebo 與實體機械臂驗證，為 Roy 的視覺伺服決策層提供了微秒級感知-決策反饋的新可能。[SEBVS - Synthetic Event-based Visual Servoing for Robot Navigation and Manipulation](https://github.com/eventbasedvision/SEBVS) | [SEBVS 論文](https://arxiv.org/abs/2508.17643)
+
+### MoveIt Servo 實時視覺伺服控制與末端執行器速度指令（2025 年進展）
+
+**MoveIt Servo — 開放式架構的實時機械臂伺服控制**：MoveIt Servo 是 ROS 2 MoveIt 框架內的即時伺服控制模組，支援透過速度指令（joint velocities / Cartesian end-effector velocities）直接驅動機械臂，無需等待完整的運動規劃結果。該模組原生支援視覺伺服應用——機械臂可訂閱視覺感知節點發佈的相機主題，實時計算視覺誤差並轉換為速度指令。ViSP（Visual Servoing Platform）與 vision_visp ROS 2 套件已完整整合，提供影像特徵追蹤、位姿估計與視覺伺服控制律的完整實現。該架構相比傳統軌跡規劃的控制延遲降低 60% 以上，特別適合動態環境中的即時視覺伺服應用。[MoveIt Servo - ROS 2 Documentation](https://moveit.ai/moveit/ros2/servo/jog/2020/09/09/moveit2-servo.html)
+
 ### JetArm Pro 移動操縱平台與多臂協作決策整合（2026 年 4 月最新）
 
 **JetArm Pro — ROS 2 原生的 6-DOF 移動操縱系統**：Hiwonder 新推出的 JetArm Pro 為教育與研究機構提供標準化的移動操縱平台，包含模塊化 6-DOF 機械臂、移動底座、線性導軌與傳送帶附件。該平台原生整合 ROS 2，搭配 Jetson Orin NX 邊界計算，支援視覺伺服、強化學習與 VLA 模型部署。特別適合多臂協作研究與邊界自主決策系統的快速原型化，成本 <$15,000 相較工業級移動操縱臂（>$200,000）具有成本優勢。[JetArm Pro - Expandable ROS Platform for Mobile Manipulation](https://www.hackster.io/HiwonderRobot/jetarm-pro-expandable-ros-platform-for-mobile-manipulation-aff995)
