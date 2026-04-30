@@ -2097,6 +2097,15 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Interbotix X-Series 與教育級機械臂 ROS 2 完整支援**：Interbotix Robotics 已發布完整的 ROS 2 包集，支援 WidowX、PincherX 等系列協作臂在 Humble/Jazzy 上的原生驅動與 MoveIt 2 整合。該方案特別適合教學與快速原型驗證，已驗證相容 Raspberry Pi 5 與 Jetson Nano 邊界部署，文檔齊全且社群活躍。
 
+### 開源 reBot Arm B601-DM 與具身 AI 遠操平臺（2026 年 4 月最新）
+
+**高度可及的 6+1 DoF 開源機械臂**：Seeed Studio 發布的 reBot Arm B601-DM 是一款完全開源設計，專為具身 AI 與遠操應用優化。該機械臂提供 767mm 末端執行器有效工作範圍、1.5kg 有效負載與 0.2mm 重複精度，完全相容 ROS 1/ROS 2（Humble）、NVIDIA Isaac Sim 與 Hugging Face LeRobot 框架，特別適合邊界推理與視覺伺服應用。官方文檔與高度整合的 MoveIt2 驅動器使其成為 Raspberry Pi 5 與 Jetson 平臺上快速部署具身 AI 實驗的理想選擇。
+
+**多臂協作決策整合趨勢**：當前機械臂研究正整合事件驅動視覺伺服（SEBVS）與軟動作評論家強化學習（SAC RL），實現多臂系統在動態環境下的自適應協調決策。該整合在邊界推理平臺上相較傳統運動規劃快 2-3 倍，適合製造業的即時動態工作流調整。
+
+- [reBot Arm B601-DM — CNX Software](https://www.cnx-software.com/2026/04/17/rebot-arm-b601-dm-an-open-source-61-dof-robotic-arm-for-embodied-ai-and-teleoperation-applications/)
+- [Hugging Face LeRobot Platform](https://huggingface.co/lerobot)
+
 - [ros2_control Supported Robots](https://control.ros.org/rolling/doc/supported_robots/supported_robots.html)
 - [Interbotix X-Series ROS 2 Documentation](https://docs.trossenrobotics.com/interbotix_xsarms_docs/ros2_packages.html)
 
