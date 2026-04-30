@@ -3377,4 +3377,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **邊界強化學習（Edge RL）與實時視覺伺服深化整合**：2026 年最新實踐表明，邊界裝置上的 SAC 演算法與事件驅動視覺伺服（SEBVS）結合，可在 Raspberry Pi 5 + GPU 擴展卡環境中實現毫秒級決策延遲。該整合架構透過分散式邊界推理降低中央伺服器依賴，支援多臂系統的自主適應學習與高速動態應用。Roy 的邊界推理多臂系統可借鑒 JetArm Pro 的模組化設計與 SAC RL 應用經驗，加速視覺伺服強化學習邊界推理的工程驗證與性能優化。
 
+## 2026 年 5 月 1 日補充：ROS 2 Lyrical Luth 事件流與多臂視覺伺服應用
+
+**MoveIt 2 Servo 低延遲遠端操作與視覺伺服資料收集**：ROS 2 官方最新發布的 MoveIt Servo 模組提供環境感知的低延遲伺服能力，防碰撞同時維持毫秒級控制迴圈。該功能特別適合多臂系統的遠端視覺操作與自動資料收集，支援穩定軌跡生成與即時碰撞迴避。與 Isaac ROS Visual SLAM 結合，可實現高速動態場景中的自主視覺伺服決策層。[MoveIt Servo for Robot Teleoperation](https://www.blackcoffeerobotics.com/blog/ros2-moveit-servo-for-robot-teleoperation-and-data-collection)
+
+**Isaac ROS Visual SLAM 邊界最佳化 + ROS 2 Control 硬體支援拓展**：NVIDIA Isaac ROS 生態已將視覺 SLAM 推理效能優化至樹莓派 5 級邊界設備，延遲穩定在 50-100ms，並透過 ROS 2 Control 標準化介面支援 Kinova、ROBOTIS、Universal Robots、xArm、ABB、KUKA 等主流協作臂。該一體化生態使 Roy 的多臂移動基座視覺伺服系統可無縫整合最新的感知管線與標準硬體驅動層。[Isaac ROS Hardware Ecosystem](https://developer.nvidia.com/isaac/ros) | [PickNik ROS 2 Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/)
+
 **CRISP 與 LeRobot：ROS 2 標準控制介面的學習友好封裝**：TUM 開發的 CRISP 框架為 ROS 2 機械臂提供相容 ros2_control 的高階控制器，直接支援笛卡爾空間視覺伺服與力控決策。搭配新推出的 Lerobot-ros 輕量介面，可無縫整合強化學習與模仿學習訓練框架，加速從學習策略到硬體部署的週期。該生態完全開源且相容主流機械臂硬體，特別適合 Roy 進行事件驅動視覺伺服與多臂協作強化學習實驗。[CRISP - arxiv.org](https://arxiv.org/html/2509.06819v1) | [Lerobot-ros - Open Robotics Discourse](https://discourse.openrobotics.org/t/lerobot-ros-a-lightweight-interface-for-controlling-ros-based-robotic-arms-using-lerobot/49420)
