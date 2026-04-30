@@ -3390,3 +3390,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Jazzy 硬體抽象層字符串管理與動態配置**：ROS 2 Jazzy 引入新的字符串傳輸支持與硬體管理框架，允許在運行時動態配置多臂系統參數而無需重新編譯。該機制特別適合複雜多臂視覺伺服場景的即時調整與邊界推理決策層的動態加載。結合 ros2_control 的標準化介面，Roy 的樹莓派邊界系統可實現參數驅動的自適應控制策略。[ROS 2 Control - Supported Robots Documentation](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
 
 **樹莓派 5 + 伺服馬達視覺控制應用（2025 年實踐驗證）**：2025 年最新研究驗證樹莓派 5 搭配伺服驅動板（支援 4 通道高精度位置控制）與 ROS 2 框架實現即時視覺伺服。該系統透過 ROS2_Control 對接硬體層，支援 50Hz+ 控制迴圈，毫秒級視覺回饋延遲。特別適合 Roy 的邊界多臂系統進行成本最佳化的視覺伺服原型驗證與強化學習訓練資料蒐集。[Hiwonder ROS 2 Robot Arm Control Documentation](https://docs.hiwonder.com/projects/JetAuto/en/jetauto-orin-nano/docs/8.robot_arm_control.html)
+
+## 2026 年 5 月 1 日補充：ROS 2 Control 硬體介面標準化與 6DOF 機械臂整合
+
+**ROS 2 Control 硬體介面類型與多關節機械臂支援架構**：ROS 2 Control 框架提供標準化的 HardwareInterface 設計，透過 pluginlib 動態載入硬體驅動，支援關節群組（Joint Groups）與錯誤處理機制。6DOF 機械臂實現需整合多個關節的 Command Interface（位置/速度/轉矩）與 State Interface（讀取關節狀態）。官方提供的 RRBot 示例與 so_arm_100 實實例驗證了該架構在 5-6 自由度協作臂的適用性，支援直接硬體通信與 ROS 話題模擬並行。該標準化設計使 Roy 的多臂視覺伺服系統可快速整合異質硬體驅動，無需複雜的平台特定適配。[ROS 2 Control Hardware Interface Types](https://control.ros.org/jazzy/doc/ros2_control/hardware_interface/doc/hardware_interface_types_userdoc.html) | [ROS 2 Control 6DOF Robot Example](https://control.ros.org/master/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
+**JetArm Pro 視覺伺服與 ROS 2 Jazzy Gazebo 仿真整合**：HiWonder 官方驗證 JetArm Pro 6-DOF 機械臂可在 ROS 2 Jazzy 環境中無縫運行，提供完整的 URDF 模型與 Gazebo 仿真配置。該整合支援視覺伺服訓練資料的自動化蒐集、複雜非結構化任務的模擬驗證，與實體硬體的無縫切換。結合 MoveIt 2 軌跡規劃與 Isaac ROS 感知管線，Roy 可在樹莓派 5 邊界環境進行端到端的 sim-to-real 視覺伺服強化學習研究。[ROS 2 Jazzy URDF Robot Arm Creation Guide](https://automaticaddison.com/create-and-visualize-a-robotic-arm-with-urdf-ros-2-jazzy/) | [ROS 2 Gazzy Robotic Arm Simulation](https://automaticaddison.com/how-to-simulate-a-robotic-arm-in-gazebo-ros-2-jazzy/)
