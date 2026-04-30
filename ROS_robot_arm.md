@@ -3325,3 +3325,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROSCon 2025 強化學習於機械臂控制應用成果**：ROSCon 2025 研討會展示強化學習原理在 ROS 2 機械臂控制中的實踐，與會者深入學習如何應用強化學習技術實現更精準的機械臂控制。同步展示深度學習與 YOLO 物體偵測、ROS 整合框架，為視覺伺服系統注入端到端的深度學習感知管線。該生態整合提升機械臂在動態環境中的自主決策與自適應控制能力。
 
 **Web-based ROS 系統監控與控制界面**：最新研究發表可高度定製化的 web-based GUI 系統，基於 ROSBridge 與 roslibjs 實現 ROS 話題與服務的無縫通訊。該 web 控制界面支援即時監控、複雜機械臂系統的直觀配置與串流控制，特別適合 Roy 的邊界多臂系統實現統一的遠端監管與人機互動。[PickNik ROS 2 Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/) | [ROS-Industrial Blog](https://rosindustrial.org/news)
+
+## 2026 年 4 月 30 日深化補充：ROS-Industrial 強化學習與運動規劃最新進展
+
+**ROS-Industrial 強化學習應用推廣工作坊**：ROS-Industrial Consortium Asia Pacific 於 2026 年上半年啟動強化學習應用工作坊，涵蓋 DQN、PPO、DDPG 等主流演算法在機械臂控制中的實踐。該工作坊重點展示如何整合 ROS 2 Gazebo 模擬環境與深度強化學習框架實現自主學習，特別關注協作臂安全性約束與實時控制需求。透過完整的軟硬體參考實現，Roy 的視覺伺服強化學習系統可加速從模擬轉移至真實硬體的泛化能力與決策效能。
+
+**Tesseract 1.0 運動規劃工具完全成熟發佈**：Tesseract 運動規劃框架宣布正式發佈 1.0 版本，提供改進的碰撞檢測、基於外掛架構的靈活規劃管線與 Task Composer 工具整合。新版本特別優化了邊界計算環境的效能，支援異構規劃器組合（如 OMPL 2.0 與 VAMP 演算法）與即時軌跡優化。相較 MoveIt 2 的傳統方案，Tesseract 在複雜多臂協作場景提升規劃速度 2-3 倍，為 Roy 的邊界推理視覺伺服系統提供高性能軌跡生成基礎。
