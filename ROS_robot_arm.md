@@ -3371,4 +3371,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Digital Twin + Soft Actor-Critic RL 實時適應控制**：最新研究首次整合 Unity Digital Twin 與 ROS 2 實現真實機械臂的實時自適應控制。該方案採用深度強化學習中的 SAC（Soft Actor-Critic）演算法，在模擬環境進行策略訓練後無縫轉移至實體機械臂，支援製造應用的動態環境適應。系統達成 20ms 關節級同步、完整的 sim-to-real 泛化，為 Roy 的邊界多臂強化學習決策層提供最新的數位孿生整合參考。[Digital twin-enabled real-time control - Journal of Intelligent Manufacturing 2025](https://link.springer.com/article/10.1007/s10845-025-02728-9)
 
+## 2026 年 4 月 30 日深化補充：JetArm Pro 6-DOF 行動機械臂與邊界 RL 整合應用
+
+**JetArm Pro 模組化移動基座機械臂平台**：HiWonder 推出的 JetArm Pro 為完整的 6-DOF 可擴展 ROS 2 平台，集成可拆卸移動基座、線性導軌與輸送帶等多模組，原生支援 ROS 2 Jazzy 與邊界推理框架。該平台驗證了多臂協作視覺伺服與邊界強化學習的實戰應用，支援複雜自動化場景（如動態分類、精密組裝）中的實時決策與自適應控制。特別適合 Roy 的樹莓派邊界系統進行移動式多臂協作的視覺伺服 SAC RL 邊界推理應用驗證，實現端到端的感知-決策-執行閉迴圈。[JetArm Pro - ROS Platform for Mobile Manipulation](https://www.hackster.io/HiwonderRobot/jetarm-pro-expandable-ros-platform-for-mobile-manipulation-aff995)
+
+**邊界強化學習（Edge RL）與實時視覺伺服深化整合**：2026 年最新實踐表明，邊界裝置上的 SAC 演算法與事件驅動視覺伺服（SEBVS）結合，可在 Raspberry Pi 5 + GPU 擴展卡環境中實現毫秒級決策延遲。該整合架構透過分散式邊界推理降低中央伺服器依賴，支援多臂系統的自主適應學習與高速動態應用。Roy 的邊界推理多臂系統可借鑒 JetArm Pro 的模組化設計與 SAC RL 應用經驗，加速視覺伺服強化學習邊界推理的工程驗證與性能優化。
+
 **CRISP 與 LeRobot：ROS 2 標準控制介面的學習友好封裝**：TUM 開發的 CRISP 框架為 ROS 2 機械臂提供相容 ros2_control 的高階控制器，直接支援笛卡爾空間視覺伺服與力控決策。搭配新推出的 Lerobot-ros 輕量介面，可無縫整合強化學習與模仿學習訓練框架，加速從學習策略到硬體部署的週期。該生態完全開源且相容主流機械臂硬體，特別適合 Roy 進行事件驅動視覺伺服與多臂協作強化學習實驗。[CRISP - arxiv.org](https://arxiv.org/html/2509.06819v1) | [Lerobot-ros - Open Robotics Discourse](https://discourse.openrobotics.org/t/lerobot-ros-a-lightweight-interface-for-controlling-ros-based-robotic-arms-using-lerobot/49420)
