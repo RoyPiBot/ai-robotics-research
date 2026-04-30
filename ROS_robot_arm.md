@@ -3384,3 +3384,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Isaac ROS Visual SLAM 邊界最佳化 + ROS 2 Control 硬體支援拓展**：NVIDIA Isaac ROS 生態已將視覺 SLAM 推理效能優化至樹莓派 5 級邊界設備，延遲穩定在 50-100ms，並透過 ROS 2 Control 標準化介面支援 Kinova、ROBOTIS、Universal Robots、xArm、ABB、KUKA 等主流協作臂。該一體化生態使 Roy 的多臂移動基座視覺伺服系統可無縫整合最新的感知管線與標準硬體驅動層。[Isaac ROS Hardware Ecosystem](https://developer.nvidia.com/isaac/ros) | [PickNik ROS 2 Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/)
 
 **CRISP 與 LeRobot：ROS 2 標準控制介面的學習友好封裝**：TUM 開發的 CRISP 框架為 ROS 2 機械臂提供相容 ros2_control 的高階控制器，直接支援笛卡爾空間視覺伺服與力控決策。搭配新推出的 Lerobot-ros 輕量介面，可無縫整合強化學習與模仿學習訓練框架，加速從學習策略到硬體部署的週期。該生態完全開源且相容主流機械臂硬體，特別適合 Roy 進行事件驅動視覺伺服與多臂協作強化學習實驗。[CRISP - arxiv.org](https://arxiv.org/html/2509.06819v1) | [Lerobot-ros - Open Robotics Discourse](https://discourse.openrobotics.org/t/lerobot-ros-a-lightweight-interface-for-controlling-ros-based-robotic-arms-using-lerobot/49420)
+
+## 2026 年 5 月 1 日補充：ROS 2 Jazzy 字符串傳輸與邊界伺服控制
+
+**ROS 2 Jazzy 硬體抽象層字符串管理與動態配置**：ROS 2 Jazzy 引入新的字符串傳輸支持與硬體管理框架，允許在運行時動態配置多臂系統參數而無需重新編譯。該機制特別適合複雜多臂視覺伺服場景的即時調整與邊界推理決策層的動態加載。結合 ros2_control 的標準化介面，Roy 的樹莓派邊界系統可實現參數驅動的自適應控制策略。[ROS 2 Control - Supported Robots Documentation](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+
+**樹莓派 5 + 伺服馬達視覺控制應用（2025 年實踐驗證）**：2025 年最新研究驗證樹莓派 5 搭配伺服驅動板（支援 4 通道高精度位置控制）與 ROS 2 框架實現即時視覺伺服。該系統透過 ROS2_Control 對接硬體層，支援 50Hz+ 控制迴圈，毫秒級視覺回饋延遲。特別適合 Roy 的邊界多臂系統進行成本最佳化的視覺伺服原型驗證與強化學習訓練資料蒐集。[Hiwonder ROS 2 Robot Arm Control Documentation](https://docs.hiwonder.com/projects/JetAuto/en/jetauto-orin-nano/docs/8.robot_arm_control.html)
