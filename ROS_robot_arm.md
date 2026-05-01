@@ -3415,4 +3415,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **RealMan 智能協作臂 ROS 2 官方驅動完整支持**：國內知名機械臂製造商睿爾曼智能（RealMan Robotics）於 2026 年正式推出官方 ROS 2 驅動包與完整教程，標誌著國產協作臂對 ROS 2 生態的深度整合。驅動包支援 Humble LTS 與 Kilted Kaiju 兩個主流版本，同時提供 Python 與 C++ 雙語言 API，降低開發者的學習門檻。該進展驗證了 ROS 2 作為工業級機械臂控制標準的全球認可，使 Roy 的多臂視覺伺服系統可無縫整合國內外主流機械臂硬體，實現統一的軟體生態與控制架構。[RealMan ROS 2 驅動與教程](https://bbs.realman-robotics.cn/question/174.html)
 
+## 2026 年 5 月 1 日補充：開源協作臂與 ROS 2 生態擴展
+
+**Seeed Studio reBot Arm B601-DM 開源 6 軸協作臂**：Seeed Studio 於 2026 年 4 月推出完全開源的 reBot Arm B601-DM 機械臂，配備 6 自由度 + 並聯夾爪，專為具身 AI 與遠端操作應用設計。該平台原生支援 ROS 2 Humble，MoveIt 2 驅動與運動規劃模組正在開發中，預計 2026 年中旬完全整合。相較商用機械臂，reBot 開源架構降低成本 70% 以上，為 Roy 的邊界多臂視覺伺服研究提供成本最佳化的硬體驗證平台。[reBot Arm B601-DM - CNX Software](https://www.cnx-software.com/2026/04/17/rebot-arm-b601-dm-an-open-source-61-dof-robotic-arm-for-embodied-ai-and-teleoperation-applications/)
+
+**ROS 2 Control 2025-2026 異步組件與動態變體支援**：ROS 2 Control 框架在 Humble LTS 基礎上持續深化，2025-2026 年新增完整的異步元件（async components）支援、運行時變體管理（variants support）與直接 URDF 存取機制。該更新特別優化了複雜多臂協作系統的控制迴圈效能，支援在邊界裝置實現毫秒級的實時控制與視覺伺服決策。Isaac ROS 與 MoveIt 2 Servo 的無縫整合驗證了該框架在高效能邊界推理場景中的成熟度，為 Roy 的樹莓派 5 多臂系統提供工業級的控制與感知基礎架構。[ROS 2 Control Rolling Documentation](https://control.ros.org/rolling/doc/ros2_control/)
+
 **ROS 2 Humble LTS 長期支持至 2027 與產業生態成熟**：ROS 2 Humble 作為現行最穩定的 LTS 版本，官方保證長期技術支持至 2027 年 5 月，在工業應用中已達到 90% 以上的產業採納率。該成熟度使 Roy 的邊界多臂系統可安心選擇 Humble 作為生產級基礎框架，享受超過 2 年的穩定更新與社群支援，同時無需擔心特性陳舊——Humble 集成了 MoveIt 2 運動規劃、ROS 2 Control 硬體驅動框架、Gazebo 模擬環境與事件驅動視覺伺服等完整生態。下一代 LTS 版本 Lyrical Luth 預計於 2026 年 5 月發佈，屆時可評估是否升級以獲得最新的事件流與 GPU 加速特性。
