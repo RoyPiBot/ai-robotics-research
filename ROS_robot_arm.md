@@ -3438,3 +3438,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **開源 SEBVS ROS 2 事件流模擬與策略訓練框架**（2026 年中）：SEBVS 專案發布完整開源實現，整合 ROS 2 與 Gazebo 的事件流模擬器，可從標準 RGB 影像自動生成事件序列。該框架支援使用行為複製（Behavior Cloning）訓練變壓器基控制策略，實驗驗證事件驅動策略在高速與視覺挑戰場景中的魯棒性優於傳統 RGB 方案。特別適合 Roy 進行 sim-to-real 事件驅動視覺伺服決策層的快速原型與迭代驗證。[SEBVS GitHub](https://github.com/eventbasedvision/SEBVS) | [SEBVS arXiv](https://arxiv.org/abs/2508.17643)
 
 **ROS 2 Humble LTS 長期支持至 2027 與產業生態成熟**：ROS 2 Humble 作為現行最穩定的 LTS 版本，官方保證長期技術支持至 2027 年 5 月，在工業應用中已達到 90% 以上的產業採納率。該成熟度使 Roy 的邊界多臂系統可安心選擇 Humble 作為生產級基礎框架，享受超過 2 年的穩定更新與社群支援，同時無需擔心特性陳舊——Humble 集成了 MoveIt 2 運動規劃、ROS 2 Control 硬體驅動框架、Gazebo 模擬環境與事件驅動視覺伺服等完整生態。下一代 LTS 版本 Lyrical Luth 預計於 2026 年 5 月發佈，屆時可評估是否升級以獲得最新的事件流與 GPU 加速特性。
+
+## 2026 年 5 月 1 日補充：感知驅動軌跡規劃與邊界推理加速
+
+**Scan-N-Plan 感知驅動軌跡規劃技術**（2026 年新進展）：ROS 工業聯盟推出的 Scan-N-Plan 框架實現完全基於 3D 掃描資料的實時軌跡規劃，無需預設工件模型。該技術將 3D 視覺感知與運動規劃無縫整合，支援表面加工、組裝等複雜製造工藝的自適應軌跡生成。特別適合 Roy 的視覺伺服決策層搭配多感測器融合進行動態環境下的邊界推理加速。[ROS-Industrial Scan-N-Plan](https://rosindustrial.org/news)
+
+**MoveIt 2 實時控制與碰撞檢測優化**：MoveIt 2 最新版本實現毫秒級實時機械臂控制迴圈，支援即時軌跡更新與動態碰撞檢測，特別適合事件驅動的視覺伺服決策層整合高頻率感知回饋。該框架已驗證可在邊界 GPU 裝置（NVIDIA Jetson/樹莓派擴展板）上實現 300-400ms 端到端推理延遲的複雜操作場景。[MoveIt 2 Realtime Documentation](https://www.therobotreport.com/moveit-2-enables-realtime-robot-arm-control-ros2/)
