@@ -3410,3 +3410,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Humble 原生協作臂硬體生態擴展**：ROS 2 Control 框架已針對 Humble LTS 版本完成對 Kinova Kortex Gen3、ROBOTIS OpenMANIPULATOR、Universal Robots UR5/UR10、xArm 系列、ABB IRB、KUKA 等業界主流 6-DOF 協作臂的原生驅動支援。各硬體廠商基於 ros2_control 的標準化 HardwareInterface 設計獨立驅動，保證與 MoveIt 2 運動規劃、Servo 視覺伺服、Nav2 導航框架的完全相容。該成熟度已達到工業應用級別，使 Roy 的多臂系統無論選擇何種硬體平台均能獲得一致的軟體生態與社群支援。[ROS2_Control: Humble Documentation - Resources](https://control.ros.org/humble/doc/resources/resources.html)
 
 **JetArm Pro 視覺伺服與 ROS 2 Jazzy Gazebo 仿真整合**：HiWonder 官方驗證 JetArm Pro 6-DOF 機械臂可在 ROS 2 Jazzy 環境中無縫運行，提供完整的 URDF 模型與 Gazebo 仿真配置。該整合支援視覺伺服訓練資料的自動化蒐集、複雜非結構化任務的模擬驗證，與實體硬體的無縫切換。結合 MoveIt 2 軌跡規劃與 Isaac ROS 感知管線，Roy 可在樹莓派 5 邊界環境進行端到端的 sim-to-real 視覺伺服強化學習研究。[ROS 2 Jazzy URDF Robot Arm Creation Guide](https://automaticaddison.com/create-and-visualize-a-robotic-arm-with-urdf-ros-2-jazzy/) | [ROS 2 Gazzy Robotic Arm Simulation](https://automaticaddison.com/how-to-simulate-a-robotic-arm-in-gazebo-ros-2-jazzy/)
+
+## 2026 年 5 月 1 日補充：RealMan 官方 ROS 2 驅動與產業應用推廣
+
+**RealMan 智能協作臂 ROS 2 官方驅動完整支持**：國內知名機械臂製造商睿爾曼智能（RealMan Robotics）於 2026 年正式推出官方 ROS 2 驅動包與完整教程，標誌著國產協作臂對 ROS 2 生態的深度整合。驅動包支援 Humble LTS 與 Kilted Kaiju 兩個主流版本，同時提供 Python 與 C++ 雙語言 API，降低開發者的學習門檻。該進展驗證了 ROS 2 作為工業級機械臂控制標準的全球認可，使 Roy 的多臂視覺伺服系統可無縫整合國內外主流機械臂硬體，實現統一的軟體生態與控制架構。[RealMan ROS 2 驅動與教程](https://bbs.realman-robotics.cn/question/174.html)
+
+**ROS 2 Humble LTS 長期支持至 2027 與產業生態成熟**：ROS 2 Humble 作為現行最穩定的 LTS 版本，官方保證長期技術支持至 2027 年 5 月，在工業應用中已達到 90% 以上的產業採納率。該成熟度使 Roy 的邊界多臂系統可安心選擇 Humble 作為生產級基礎框架，享受超過 2 年的穩定更新與社群支援，同時無需擔心特性陳舊——Humble 集成了 MoveIt 2 運動規劃、ROS 2 Control 硬體驅動框架、Gazebo 模擬環境與事件驅動視覺伺服等完整生態。下一代 LTS 版本 Lyrical Luth 預計於 2026 年 5 月發佈，屆時可評估是否升級以獲得最新的事件流與 GPU 加速特性。
