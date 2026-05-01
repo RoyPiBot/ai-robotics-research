@@ -3403,4 +3403,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 Control 硬體介面類型與多關節機械臂支援架構**：ROS 2 Control 框架提供標準化的 HardwareInterface 設計，透過 pluginlib 動態載入硬體驅動，支援關節群組（Joint Groups）與錯誤處理機制。6DOF 機械臂實現需整合多個關節的 Command Interface（位置/速度/轉矩）與 State Interface（讀取關節狀態）。官方提供的 RRBot 示例與 so_arm_100 實實例驗證了該架構在 5-6 自由度協作臂的適用性，支援直接硬體通信與 ROS 話題模擬並行。該標準化設計使 Roy 的多臂視覺伺服系統可快速整合異質硬體驅動，無需複雜的平台特定適配。[ROS 2 Control Hardware Interface Types](https://control.ros.org/jazzy/doc/ros2_control/hardware_interface/doc/hardware_interface_types_userdoc.html) | [ROS 2 Control 6DOF Robot Example](https://control.ros.org/master/doc/ros2_control_demos/example_7/doc/userdoc.html)
 
+## 2026 年 5 月 1 日補充：MoveIt Servo 視覺伺服 PID 控制器設計
+
+**MoveIt Servo 四級聯動 PID 控制器與視覺伺服閉迴圈**：MoveIt Servo 模組為視覺伺服應用實現了四個耦合的 PID 控制器，分別調制末端執行器的 X/Y/Z 笛卡爾軸向位移（前三個控制器）與旋轉速率（第四個控制器）。視覺系統連續回饋目標姿態時，這四個控制器基於影像誤差信號（e.g. 特徵點位移）生成末端速度命令，透過 TwistStamped 訊息發送至 Servo Node。該設計無需預定軌跡，完全由視覺回饋驅動，支援接觸力度調節與奇異點迴避，特別適合 Roy 的邊界視覺伺服決策層進行精密操作與自適應控制。[Realtime Arm Servoing — MoveIt Documentation](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html)
+
+**ROS 2 Humble 原生協作臂硬體生態擴展**：ROS 2 Control 框架已針對 Humble LTS 版本完成對 Kinova Kortex Gen3、ROBOTIS OpenMANIPULATOR、Universal Robots UR5/UR10、xArm 系列、ABB IRB、KUKA 等業界主流 6-DOF 協作臂的原生驅動支援。各硬體廠商基於 ros2_control 的標準化 HardwareInterface 設計獨立驅動，保證與 MoveIt 2 運動規劃、Servo 視覺伺服、Nav2 導航框架的完全相容。該成熟度已達到工業應用級別，使 Roy 的多臂系統無論選擇何種硬體平台均能獲得一致的軟體生態與社群支援。[ROS2_Control: Humble Documentation - Resources](https://control.ros.org/humble/doc/resources/resources.html)
+
 **JetArm Pro 視覺伺服與 ROS 2 Jazzy Gazebo 仿真整合**：HiWonder 官方驗證 JetArm Pro 6-DOF 機械臂可在 ROS 2 Jazzy 環境中無縫運行，提供完整的 URDF 模型與 Gazebo 仿真配置。該整合支援視覺伺服訓練資料的自動化蒐集、複雜非結構化任務的模擬驗證，與實體硬體的無縫切換。結合 MoveIt 2 軌跡規劃與 Isaac ROS 感知管線，Roy 可在樹莓派 5 邊界環境進行端到端的 sim-to-real 視覺伺服強化學習研究。[ROS 2 Jazzy URDF Robot Arm Creation Guide](https://automaticaddison.com/create-and-visualize-a-robotic-arm-with-urdf-ros-2-jazzy/) | [ROS 2 Gazzy Robotic Arm Simulation](https://automaticaddison.com/how-to-simulate-a-robotic-arm-in-gazebo-ros-2-jazzy/)
