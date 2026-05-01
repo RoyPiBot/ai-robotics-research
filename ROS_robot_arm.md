@@ -3431,4 +3431,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 社群強化學習與運動規劃工作坊深化**：ROS-Industrial Consortium Asia Pacific 於 2026 年上半年啟動針對協作臂的強化學習工作坊，涵蓋 DQN、PPO、DDPG 等演算法在機械臂控制中的實踐。搭配 Tesseract 1.0 運動規劃框架與 OMPL 2.0 VAMP 演算法的新進展，工業界正式將邊界強化學習決策層整合入標準化生產工作流。該發展方向與 Roy 的視覺伺服邊界強化學習計畫高度對齊，驗證了事件驅動視覺伺服與邊界 RL 決策層的產業應用前景。
 
+## 2026 年 5 月 1 日補充：MPC 引導強化學習與開源 SEBVS 實現
+
+**MPC 引導強化學習視覺伺服農業採收機械臂**（2026 年 4 月）：最新研究將模型預測控制（MPC）與深度強化學習整合，用於溫室農業採收機械臂的視覺伺服控制。該方案創新結合了最優控制的規劃能力與強化學習的自適應學習與實時推理優勢，在動態非結構化環境中實現毫秒級決策。該框架特別適合 Roy 的邊界多臂視覺伺服系統引入 MPC 約束優化，增強決策穩定性與安全性。[Real-Time Constrained Visual Servoing for Agricultural Harvesting Robots via MPC-Guided RL](https://www.mdpi.com/2673-2688/7/4/124)
+
+**開源 SEBVS ROS 2 事件流模擬與策略訓練框架**（2026 年中）：SEBVS 專案發布完整開源實現，整合 ROS 2 與 Gazebo 的事件流模擬器，可從標準 RGB 影像自動生成事件序列。該框架支援使用行為複製（Behavior Cloning）訓練變壓器基控制策略，實驗驗證事件驅動策略在高速與視覺挑戰場景中的魯棒性優於傳統 RGB 方案。特別適合 Roy 進行 sim-to-real 事件驅動視覺伺服決策層的快速原型與迭代驗證。[SEBVS GitHub](https://github.com/eventbasedvision/SEBVS) | [SEBVS arXiv](https://arxiv.org/abs/2508.17643)
+
 **ROS 2 Humble LTS 長期支持至 2027 與產業生態成熟**：ROS 2 Humble 作為現行最穩定的 LTS 版本，官方保證長期技術支持至 2027 年 5 月，在工業應用中已達到 90% 以上的產業採納率。該成熟度使 Roy 的邊界多臂系統可安心選擇 Humble 作為生產級基礎框架，享受超過 2 年的穩定更新與社群支援，同時無需擔心特性陳舊——Humble 集成了 MoveIt 2 運動規劃、ROS 2 Control 硬體驅動框架、Gazebo 模擬環境與事件驅動視覺伺服等完整生態。下一代 LTS 版本 Lyrical Luth 預計於 2026 年 5 月發佈，屆時可評估是否升級以獲得最新的事件流與 GPU 加速特性。
