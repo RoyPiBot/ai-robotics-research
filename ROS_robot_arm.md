@@ -3444,3 +3444,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Scan-N-Plan 感知驅動軌跡規劃技術**（2026 年新進展）：ROS 工業聯盟推出的 Scan-N-Plan 框架實現完全基於 3D 掃描資料的實時軌跡規劃，無需預設工件模型。該技術將 3D 視覺感知與運動規劃無縫整合，支援表面加工、組裝等複雜製造工藝的自適應軌跡生成。特別適合 Roy 的視覺伺服決策層搭配多感測器融合進行動態環境下的邊界推理加速。[ROS-Industrial Scan-N-Plan](https://rosindustrial.org/news)
 
 **MoveIt 2 實時控制與碰撞檢測優化**：MoveIt 2 最新版本實現毫秒級實時機械臂控制迴圈，支援即時軌跡更新與動態碰撞檢測，特別適合事件驅動的視覺伺服決策層整合高頻率感知回饋。該框架已驗證可在邊界 GPU 裝置（NVIDIA Jetson/樹莓派擴展板）上實現 300-400ms 端到端推理延遲的複雜操作場景。[MoveIt 2 Realtime Documentation](https://www.therobotreport.com/moveit-2-enables-realtime-robot-arm-control-ros2/)
+
+## 2026 年 5 月 1 日補充：ROS 2 Control 框架新特性與 Kilted Kaiju 最新進展
+
+**ROS 2 Kilted Kaiju LTS 發佈與 Control 框架異步組件支援**：ROS 2 最新長期支持版本 Kilted Kaiju（2026 年 4 月-2026 年 11 月支持）引入完整的異步控制組件框架，允許複雜控制演算法在邊界裝置上實現多執行緒無阻塞運行。ROS 2 Control 框架在 Kilted 版本實現了 Controller Chaining（級聯控制器）與 Side-Load Controllers（側邊載入控制器），支援在不中斷實時迴圈的前提下動態切換與加載控制演算法。該架構特別適合 Roy 的邊界多臂視覺伺服系統進行即時切換不同控制策略（如視覺伺服 PID、SAC 強化學習、MPC 預測控制）於同一實時框架內，實現毫秒級決策延遲與高效能邊界推理整合。[ROS 2 Control Rolling Documentation](https://control.ros.org/rolling/doc/ros2_control/)
+
+**ROS 2 Control 原生支援 125+ 商用機械臂與硬體標準化里程碑**：截至 2026 年 4 月，ROS 2 Control 框架已實現對全球主流協作臂製造商（包括 Kinova、ROBOTIS、Universal Robots、xArm、ABB、KUKA、RealMan 等 125+ 機械臂型號）的原生驅動支援。該里程碑標誌著硬體抽象層（Hardware Interface）標準化的完全成熟，使 Roy 的多臂視覺伺服系統無論選用何種硬體平台均能獲得統一的軟體生態。結合 Kilted Kaiju 的異步組件框架與樹莓派 5 的邊界推理能力，Roy 可加速從學術原型到多廠牌複雜多臂場景的工程驗證與產業應用部署。[ROS 2 Control Supported Robots Documentation](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
