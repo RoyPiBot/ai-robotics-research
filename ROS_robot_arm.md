@@ -3458,3 +3458,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 2 日補充：ROS 2 Kilted Kaiju 邊界推理與事件相機原生支援
 
 **事件驅動視覺伺服與 ROS 2 原生整合擴展**：ROS 2 Kilted Kaiju 版本新增事件相機的原生支援與高效率事件流傳輸，配合 Image Transport 框架的非同步事件串流格式直接適配 SEBVS 框架與 MoveIt 2 Servo。該更新使 Roy 的邊界多臂系統可無縫整合最新的事件驅動視覺伺服決策層，在毫秒級延遲下實現高速動態追蹤與自適應操縱。ROS 2 Control 框架同步深化與業界 125+ 硬體平台的標準化驅動支援，完全消除跨廠牌多臂系統的軟體適配複雜度，為邊界強化學習決策層的異構硬體部署提供堅實基礎。[ROS 2 Control Supported Hardware](https://control.ros.org/master/doc/supported_robots/supported_robots.html) | [MoveIt 2 Realtime Control Enhancement](https://www.therobotreport.com/moveit-2-enables-realtime-robot-arm-control-ros2/)
+
+**MoveIt 2 Python ROS2 性能突破與工業級邊界推理加速（2025-2026）**：MoveIt 2 的 Python 繫結在 2025 年達到重大性能突破，相較 2023 基線，ARM 邊界裝置上的運動規劃週期加速 65%，實現了業界首個毫秒級視覺伺服決策迴圈。ROS-Industrial Consortium 官方基準測試驗證，MoveIt Python 在樹莓派 5 + NVIDIA Jetson 異構邊界環境中可實現 2-3 倍的規劃速度提升。該進展直接加速 Roy 的視覺伺服邊界強化學習研究迭代週期，使得複雜多臂協作場景的實時軌跡更新與感知融合決策成為可行。[MoveIt Python ROS2: Motion Planning Manipulation Robots 2025](https://johal.in/moveit-python-ros2-motion-planning-manipulation-robots-2025/)
+
+**ros2_control 硬體無關實時框架與共享控制器生態**：ros2_control 為 ROS 2 推出的硬體無關控制框架，實現模組化控制系統的構成、控制器共享與即時性能保證。該框架支援異步控制元件與動態變體管理，允許複雜運動控制演算法在邊界裝置實現毫秒級實時迴圈。ROS 社群已驗證該框架相容於 Kinova Kortex、ROBOTIS OpenMANIPULATOR、UR 系列、xArm、KUKA 等業界主流協作臂，為 Roy 的多臂整合系統提供統一的驅動與控制介面。[ROS2_Control: Kilted Kaiju Documentation](https://control.ros.org/kilted/doc/resources/resources.html)
