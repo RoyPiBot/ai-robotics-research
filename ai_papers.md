@@ -3751,3 +3751,7 @@
 - **發布時間**：2026 年 4 月 23 日
 - **摘要**：GPT-5.5 代號「Spud」，是 OpenAI 自 GPT-4.5 以來首個完全重新訓練的基礎模型，預訓練完成於 2026 年 3 月 24 日。較 GPT-5.4 更快、推理更敏銳，在相同 per-token 延遲下展現更高智能水平。擅長程式撰寫、線上研究、數據分析、文件生成與跨工具自主工作流執行。NVIDIA 新晶片可將推論成本降低 35 倍。已上線 ChatGPT Plus/Pro/Enterprise 與 API，並推出 GPT-5.5 Pro 企業版本。
 - **重要性**：代表推理時間擴展（Inference-Time Scaling）與 Agent 自主性的進一步進化，全量級基礎模型重訓競賽升溫。
+
+#### 414. Grok Imagine 1.0 — 多模態視頻生成達成全球榜首（Apr-May 2026）
+- **視頻生成超越** - xAI Grok Imagine 在 2026 年 4 月 25 日發佈改進版本，實現業界領先的唇音同步與原生音頻生成（含背景音樂、音效、環境音）。在 DesignArena 三大視頻基準中居首：Video Arena Elo 1337、Video Editing Arena Elo 1291、Image-to-Video Arena Elo 1298，超越 Sora 2 Pro、Runway Gen-4.5 及 Google Veo 3.1，成為 May 2026 公認最佳商用視頻生成模型
+- **邊界計算效率** - 推理延遲 ~30 秒、成本 $0.05/秒、支援最長 15 秒影片與靈活寬高比，已累積超 12.45 億月度視頻生成量，通過自適應自迴歸架構優化計算開銷，成本約為競品（Google Veo 3.1）的 25%，加速 AI 視頻在內容創作與工業設計的邊界商業化應用
