@@ -3425,4 +3425,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 Control 2025-2026 異步組件與動態變體支援**：ROS 2 Control 框架在 Humble LTS 基礎上持續深化，2025-2026 年新增完整的異步元件（async components）支援、運行時變體管理（variants support）與直接 URDF 存取機制。該更新特別優化了複雜多臂協作系統的控制迴圈效能，支援在邊界裝置實現毫秒級的實時控制與視覺伺服決策。Isaac ROS 與 MoveIt 2 Servo 的無縫整合驗證了該框架在高效能邊界推理場景中的成熟度，為 Roy 的樹莓派 5 多臂系統提供工業級的控制與感知基礎架構。[ROS 2 Control Rolling Documentation](https://control.ros.org/rolling/doc/ros2_control/)
 
+## 2026 年 5 月 1 日補充：Hiwonder JetArm 與邊界計算整合
+
+**Hiwonder JetArm Pro 高性能視覺機械臂平台**：Hiwonder 推出的 JetArm Pro 為全套解決方案，搭載 Jetson Nano、Orin Nano 或 Orin NX 作為主控制器，整合 3D 視覺、力觸覺感測與邊界推理能力。該平台完全相容 ROS 1 與 ROS 2 生態，支援即時視覺伺服與深度學習推理。特別適合 Roy 的邊界機械臂視覺伺服與強化學習決策層在樹莓派 5 環境中的加速驗證。該平台驗證了 NVIDIA Jetson 與 ROS 生態的成熟度，為複雜感知決策提供充足的邊界計算資源。
+
+**ROS 社群強化學習與運動規劃工作坊深化**：ROS-Industrial Consortium Asia Pacific 於 2026 年上半年啟動針對協作臂的強化學習工作坊，涵蓋 DQN、PPO、DDPG 等演算法在機械臂控制中的實踐。搭配 Tesseract 1.0 運動規劃框架與 OMPL 2.0 VAMP 演算法的新進展，工業界正式將邊界強化學習決策層整合入標準化生產工作流。該發展方向與 Roy 的視覺伺服邊界強化學習計畫高度對齊，驗證了事件驅動視覺伺服與邊界 RL 決策層的產業應用前景。
+
 **ROS 2 Humble LTS 長期支持至 2027 與產業生態成熟**：ROS 2 Humble 作為現行最穩定的 LTS 版本，官方保證長期技術支持至 2027 年 5 月，在工業應用中已達到 90% 以上的產業採納率。該成熟度使 Roy 的邊界多臂系統可安心選擇 Humble 作為生產級基礎框架，享受超過 2 年的穩定更新與社群支援，同時無需擔心特性陳舊——Humble 集成了 MoveIt 2 運動規劃、ROS 2 Control 硬體驅動框架、Gazebo 模擬環境與事件驅動視覺伺服等完整生態。下一代 LTS 版本 Lyrical Luth 預計於 2026 年 5 月發佈，屆時可評估是否升級以獲得最新的事件流與 GPU 加速特性。
