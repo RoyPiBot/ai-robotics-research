@@ -3454,3 +3454,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 2 日補充：FusionCore 感測融合與 ROS 生態擴展
 
 **FusionCore 高魯棒感測器融合方案**：ROS 社群於 2026 年 5 月推出 FusionCore，新型感測融合演算法針對 robot_localization 標準庫的複雜度與散度問題進行突破。FusionCore 採用 22 狀態無香料卡爾曼濾波器（UKF）系統，相較傳統 EKF 融合方案提升感測器異常偵測與動態環境適應能力。該方案特別適合 Roy 的多臂移動基座 SLAM 與視覺伺服系統在複雜工業環境中進行穩健的位置與速度融合，強化邊界推理決策的感知穩定性。[FusionCore - New Sensor Fusion Solution for ROS](https://www.80aj.com/2026/05/01/fusioncore-sensor-fusion/)
+
+## 2026 年 5 月 2 日補充：ROS 2 Kilted Kaiju 邊界推理與事件相機原生支援
+
+**事件驅動視覺伺服與 ROS 2 原生整合擴展**：ROS 2 Kilted Kaiju 版本新增事件相機的原生支援與高效率事件流傳輸，配合 Image Transport 框架的非同步事件串流格式直接適配 SEBVS 框架與 MoveIt 2 Servo。該更新使 Roy 的邊界多臂系統可無縫整合最新的事件驅動視覺伺服決策層，在毫秒級延遲下實現高速動態追蹤與自適應操縱。ROS 2 Control 框架同步深化與業界 125+ 硬體平台的標準化驅動支援，完全消除跨廠牌多臂系統的軟體適配複雜度，為邊界強化學習決策層的異構硬體部署提供堅實基礎。[ROS 2 Control Supported Hardware](https://control.ros.org/master/doc/supported_robots/supported_robots.html) | [MoveIt 2 Realtime Control Enhancement](https://www.therobotreport.com/moveit-2-enables-realtime-robot-arm-control-ros2/)
