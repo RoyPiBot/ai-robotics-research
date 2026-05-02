@@ -3497,3 +3497,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Universal Robots UR AI Trainer 與仿真學習系統 2026 年 3 月 GTC 發布**：Universal Robots 與 Scale AI 於 2026 年 3 月 NVIDIA GTC 發布 UR AI Trainer，首個針對協作臂的完整仿真學習系統。該系統採用遠端資料收集（Digital Twin）與模仿學習（Behavioral Cloning）相結合，大幅加速從實驗室 AI 模型到工廠部署的週期。搭配 PolyScope X 10 版本（2026 年 1 月 PolyScope 5.26 LTS 發布），Universal Robots 已完成物理 AI 與邊界推理的整合框架，為 Roy 的視覺伺服決策層引入工業級仿真訓練與遠端操控資料自動化蒐集提供參考。[Universal Robots UR AI Trainer - GTC 2026](https://www.universal-robots.com/news-and-media/news-center/universal-robots-scale-ai-launch-imitation-learning-system-accelerate-ai-training-lab-to-factory/)
 
 **ROS 2 異構硬體部署驗證與邊界強化學習決策層整合前瞻**：隨著 G-ARM、Hiwonder JetArm、Seeed reBot 等開源平台與 ROS 2 Control 標準化驅動的成熟，邊界多臂視覺伺服決策層的異構硬體部署驗證已進入實踐階段。下一步重點：(1) 基於事件驅動視覺伺服（SEBVS）的邊界強化學習決策層在樹莓派 5 實時迴圈驗證；(2) MPC 約束優化與深度強化學習（SAC/PPO）的混合決策架構在異構硬體上的效能基準測試；(3) Scan-N-Plan 感知驅動軌跡規劃與邊界邊學習的閉迴圈驗證。該發展方向直接支撐 Roy 的學術研究與工程實踐深度結合。
+
+## 2026 年 5 月 2 日補充：ROS2_Control 平台擴展與 Doosan 機械臂整合
+
+**ROS2_Control 完全支援 Doosan 協作臂與感知驅動控制（2026 年 5 月）**：Doosan Robotics 正式推出完整 ROS 2 驅動支援，整合 ros2_control 硬體無關控制框架，支援 M0609、H2017 等全系協作臂的運動規劃與視覺伺服。該整合包含 Gazebo Harmonic 完整仿真模型、URDF 參數化設計、MoveIt 2 軌跡規劃與實時力控反饋。Doosan 開源 ROS 2 環境套件（robotic_arm_environment）已在 GitHub 上線，提供強化學習訓練專用的模擬環境，加速邊界策略驗證與 sim-to-real 轉移。該進展標誌著東亞協作臂生態對 ROS 2 的完整認可，為 Roy 的多臂視覺伺服邊界研究提供新的硬體平台選擇。[Doosan ROS 2 Integration GitHub](https://github.com/dvalenciar/robotic_arm_environment)
