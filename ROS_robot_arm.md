@@ -3477,3 +3477,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Photoacoustic-Robotic Visual Servoing 新進展（2025 研究）**：JHU PulseLab 推出結合光聲成像與 ROS 2 的新型視覺伺服系統，採用 Moveit 2 與 ROS 2 Control 架構進行目標追蹤與手術工具位置估計。該系統相較 ROS 1 版本在幽靈組織中的追蹤性能提升 23.53%，驗證了深度學習視覺回饋在 ROS 2 實時控制迴圈中的優勢。特別適合 Roy 的邊界視覺伺服決策層引入多模態感知（光聲/RGB/深度）進行複雜環境適應。[ROS 2 Photoacoustic Visual Servoing - SPIE 2025](https://pulselab.jhu.edu/wp-content/uploads/2025/04/Folk_SPIE_2025.pdf)
 
 **PickNik ROS 2 Hardware Ecosystem 驅動標準化擴展（2025 年）**：PickNik Robotics 建立 ROS 2 Hardware Drivers 綜合資料庫，匯聚全球主流機械臂與感測器驅動，強化視覺伺服、力覺控制與移動基座整合。該生態已認證 125+ 硬體型號的官方 ROS 2 支援，為 Roy 的異構多臂協作系統提供一致的硬體抽象層與感知管線。[PickNik ROS 2 Hardware Ecosystem](https://picknik.ai/2025/01/06/ROS-Hardware-Ecosystems-Announcement.html)
+
+## 2026 年 5 月 2 日補充：G-ARM 開源低成本教育機械臂與 ROS 2 邊界部署
+
+**G-ARM：教育級開源機械臂的 ROS 2 原生整合與視覺伺服實踐（2025-2026）**：Springer Nature 期刊收錄的最新研究驗證 G-ARM 開源低成本機械臂（成本遠低於商用臂）完全相容 ROS 2 框架，配備原生 URDF 模型與 Gazebo 仿真環境。G-ARM 特別設計用於教育與邊界研究場景，支援視覺伺服、力控決策與協作操縱訓練。該平台適合 Roy 進行邊界多臂視覺伺服決策層的成本最佳化原型驗證，允許快速迭代強化學習策略而無需昂貴硬體投資。[G-ARM: An open-source and low-cost robotic arm - Springer](https://link.springer.com/article/10.1007/s11042-025-20748-8)
+
+**ROS 2 異構硬體部署驗證與邊界強化學習決策層整合前瞻**：隨著 G-ARM、Hiwonder JetArm、Seeed reBot 等開源平台與 ROS 2 Control 標準化驅動的成熟，邊界多臂視覺伺服決策層的異構硬體部署驗證已進入實踐階段。下一步重點：(1) 基於事件驅動視覺伺服（SEBVS）的邊界強化學習決策層在樹莓派 5 實時迴圈驗證；(2) MPC 約束優化與深度強化學習（SAC/PPO）的混合決策架構在異構硬體上的效能基準測試；(3) Scan-N-Plan 感知驅動軌跡規劃與邊界邊學習的閉迴圈驗證。該發展方向直接支撐 Roy 的學術研究與工程實踐深度結合。
