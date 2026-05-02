@@ -3488,4 +3488,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **G-ARM：教育級開源機械臂的 ROS 2 原生整合與視覺伺服實踐（2025-2026）**：Springer Nature 期刊收錄的最新研究驗證 G-ARM 開源低成本機械臂（成本遠低於商用臂）完全相容 ROS 2 框架，配備原生 URDF 模型與 Gazebo 仿真環境。G-ARM 特別設計用於教育與邊界研究場景，支援視覺伺服、力控決策與協作操縱訓練。該平台適合 Roy 進行邊界多臂視覺伺服決策層的成本最佳化原型驗證，允許快速迭代強化學習策略而無需昂貴硬體投資。[G-ARM: An open-source and low-cost robotic arm - Springer](https://link.springer.com/article/10.1007/s11042-025-20748-8)
 
+## 2026 年 5 月 2 日補充：ROS 2 Lyrical Luth 5月發布與 MoveIt 2 強化學習整合
+
+**ROS 2 Lyrical Luth 5月正式發布與事件流標準化里程碑**：ROS 2 下一代 LTS 版本 Lyrical Luth 已於 2026 年 5 月正式發布，成為繼 Humble（2022）與 Jazzy（2024）後的第三代穩定版本，將獲得 5 年支援至 2031 年。Lyrical Luth 完整集成事件驅動視覺伺服標準支援、Plugin 系統建構子參數傳遞、Python Set 廢棄改用 List/Tuple、Windows 11 平台支援等核心改進。該版本標誌著 ROS 2 事件流與邊界推理的生態成熟，為 Roy 的異構硬體邊界強化學習決策層提供最新的穩定基礎。[ROS 2 Lyrical Luth Release](https://docs.ros.org/en/rolling/Releases/Release-Lyrical-Luth.html)
+
+**Universal Robots UR AI Trainer 與仿真學習系統 2026 年 3 月 GTC 發布**：Universal Robots 與 Scale AI 於 2026 年 3 月 NVIDIA GTC 發布 UR AI Trainer，首個針對協作臂的完整仿真學習系統。該系統採用遠端資料收集（Digital Twin）與模仿學習（Behavioral Cloning）相結合，大幅加速從實驗室 AI 模型到工廠部署的週期。搭配 PolyScope X 10 版本（2026 年 1 月 PolyScope 5.26 LTS 發布），Universal Robots 已完成物理 AI 與邊界推理的整合框架，為 Roy 的視覺伺服決策層引入工業級仿真訓練與遠端操控資料自動化蒐集提供參考。[Universal Robots UR AI Trainer - GTC 2026](https://www.universal-robots.com/news-and-media/news-center/universal-robots-scale-ai-launch-imitation-learning-system-accelerate-ai-training-lab-to-factory/)
+
 **ROS 2 異構硬體部署驗證與邊界強化學習決策層整合前瞻**：隨著 G-ARM、Hiwonder JetArm、Seeed reBot 等開源平台與 ROS 2 Control 標準化驅動的成熟，邊界多臂視覺伺服決策層的異構硬體部署驗證已進入實踐階段。下一步重點：(1) 基於事件驅動視覺伺服（SEBVS）的邊界強化學習決策層在樹莓派 5 實時迴圈驗證；(2) MPC 約束優化與深度強化學習（SAC/PPO）的混合決策架構在異構硬體上的效能基準測試；(3) Scan-N-Plan 感知驅動軌跡規劃與邊界邊學習的閉迴圈驗證。該發展方向直接支撐 Roy 的學術研究與工程實踐深度結合。
