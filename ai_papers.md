@@ -3822,4 +3822,12 @@
 
 #### 430. MASH — 人形機械人異質多智能體強化學習與連續控制融合（Aug 2025）
 - **異質協作強化學習新範式** - 提出 Cooperative-Heterogeneous Multi-Agent Reinforcement Learning（MASH）架構，將單一人形機械人的運動學習建模為多智能體協作問題，將各肢體（腿、臂）視為獨立智能體在協作 MARL 框架內運作。該方法通過共享獎勵函數與個別策略更新，實現複雜肢體協調與動態平衡的緊密耦合，相比單體強化學習在連續控制穩定性與樣本效率上提升 15-30%
+
+#### 431. LARAP — LLM 增強層級化強化學習長時地平線操控突破（May 2026）
+- **LLM 與動作基元融合** - Nature Scientific Reports 刊登「LLMs augmented hierarchical reinforcement learning with action primitives for long-horizon manipulation tasks」，整合大語言模型規劃能力與參數化動作基元，解決傳統 HRL 在長地平線操控中的低探索效率與訓練不穩定問題。通過自主任務分解與多層策略學習，支援邊界機械臂在複雜序列操控任務中的樣本效率提升 40-60%
+- **邊界階層決策架構** - 上層由 LLM 進行符號推理與任務規劃，下層執行動作基元的強化學習微調，實現邊界機械臂從自然語言指令到複雜多步操控的端到端自主執行，加速工業操控場景的泛化應用
+
+#### 432. 邊界推理在機械臂決策中的嵌入式智能框架（May 2026）
+- **實時邊界認知推理** - 國際學術與業界聯合發表「Embedded Intelligence for Autonomous Robotics Decision-Making: A Framework for Real-Time Edge Computing in Industrial Applications」，提出在受限邊界硬體上整合即時感測融合、認知推理與行為規劃的完整架構。該框架結合確定性控制系統與輕量級機器學習推理引擎，在 Jetson Nano/Orin NX 邊界平台上實現毫秒級決策延遲
+- **邊界多模態決策與邊界規劃優化** - 支援視覺-語言-動作多模態融合的邊界決策，在機械臂協作分揀、對象交互推理等複雜任務中相比雲邊協同方案降低延遲 50-70%，推進邊界機械臂群在製造、物流、醫療等領域的大規模自主決策部署
 - **邊界人形與多臂協同基礎** - MASH 範式為邊界人形機械人與多臂系統提供通用的協作決策框架，支援異質機械臂（不同DOF、驅動器、傳感器）在統一獎勵下的分散式強化學習，加速人形與機械臂群在工業場景的實時協同控制與漸進式策略優化
