@@ -3512,4 +3512,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **reBot Arm B601-DM 開源 6 軸臂具身 AI 整合（2026 年 4 月）**：Seeed Studio 推出的 reBot Arm B601-DM 為完全開源的 6 自由度協作臂，專為具身 AI 與遠端操作設計，採用高性能 Damiao 伺服馬達、0.2mm 重複精度與 1.5kg 承載力。該平台原生支援 ROS 2 Humble，並在開發中集成 MoveIt 2 驅動與運動規劃模組。特別亮點是 reBot 開源架構相較商用臂成本降低 70% 以上，為 Roy 的邊界多臂視覺伺服邊界 AI 研究提供成本最佳化硬體驗證平台。[reBot Arm B601-DM CNX Software](https://www.cnx-software.com/2026/04/17/rebot-arm-b601-dm-an-open-source-61-dof-robotic-arm-for-embodied-ai-and-teleoperation-applications/)
 
+## 2026 年 5 月 3 日補充：Scan-N-Plan 感知驅動規劃與 MoveIt 2 整合
+
+**Scan-N-Plan 感知驅動軌跡規劃框架（2025-2026）**：ROS 2 社群推出 Scan-N-Plan 軟體框架，將感知與規劃緊密整合，專為表面處理與複雜操作場景設計。該框架支援視覺感知驅動的動態軌跡規劃，使機械臂能根據即時環境資訊自適應調整運動策略。特別適合 Roy 的視覺伺服決策層，實現感知→規劃→執行的閉迴圈控制，提升複雜環境下的操作可靠性。[ROS 2 Scan-N-Plan Workshop](https://discourse.openrobotics.org/t/scan-n-plan-framework-perception-driven-planning/)
+
+**MoveIt 2 與 cuRobo / Tesseract 運動規劃引擎深度整合（2025-2026）**：MoveIt 2 現已原生支援多個高效運動規劃後端，包括 NVIDIA 的 GPU 加速 cuRobo 與開源的 Tesseract 規劃框架。cuRobo 採用差異化軌跡優化，平均規劃時間 0.19 秒、複雜場景成功率達 100%，適合工業級應用。Tesseract 提供模組化規劃管線與改進的碰撞檢測器，特別適合邊界計算環境。兩者均已驗證與 ROS 2 Kilted/Jazzy 的相容性。[MoveIt 2 Motion Planning](https://moveit.picknik.ai/)
+
 **ROS 2 社群邊界推理與 Multimodal LLM 整合新浪潮**：ROS 2 工業生態進入「具身 AI 超級大腦」時代，多模態大語言模型（LLMs）與視覺-語言-動作（VLA）框架無縫集成至 ROS 2 邊界推理管線，實現機械臂的語義推理與複雜任務分解。Lyrical Luth 版本新增事件流標準支援與 GPU 加速推理優化，使 Roy 的樹莓派 5 邊界系統可整合最新的 Octo/GR00T/Helix 等 VLA 模型，在毫秒級延遲內完成自然語言指令驅動的多臂協作操縱。該進展驗證了事件驅動視覺伺服與邊界強化學習決策層向通用智能機械臂的技術轉向。[ROS News Apr 27 2026](https://discourse.openrobotics.org/t/ros-news-for-the-week-of-april-27th-2026/54463)
