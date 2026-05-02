@@ -3519,3 +3519,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MoveIt 2 與 cuRobo / Tesseract 運動規劃引擎深度整合（2025-2026）**：MoveIt 2 現已原生支援多個高效運動規劃後端，包括 NVIDIA 的 GPU 加速 cuRobo 與開源的 Tesseract 規劃框架。cuRobo 採用差異化軌跡優化，平均規劃時間 0.19 秒、複雜場景成功率達 100%，適合工業級應用。Tesseract 提供模組化規劃管線與改進的碰撞檢測器，特別適合邊界計算環境。兩者均已驗證與 ROS 2 Kilted/Jazzy 的相容性。[MoveIt 2 Motion Planning](https://moveit.picknik.ai/)
 
 **ROS 2 社群邊界推理與 Multimodal LLM 整合新浪潮**：ROS 2 工業生態進入「具身 AI 超級大腦」時代，多模態大語言模型（LLMs）與視覺-語言-動作（VLA）框架無縫集成至 ROS 2 邊界推理管線，實現機械臂的語義推理與複雜任務分解。Lyrical Luth 版本新增事件流標準支援與 GPU 加速推理優化，使 Roy 的樹莓派 5 邊界系統可整合最新的 Octo/GR00T/Helix 等 VLA 模型，在毫秒級延遲內完成自然語言指令驅動的多臂協作操縱。該進展驗證了事件驅動視覺伺服與邊界強化學習決策層向通用智能機械臂的技術轉向。[ROS News Apr 27 2026](https://discourse.openrobotics.org/t/ros-news-for-the-week-of-april-27th-2026/54463)
+
+## 2026 年 5 月 3 日補充：Embodied AI 應用與多臂協作視覺伺服實踐
+
+**MoveIt Pro 工業硬體生態擴展與協作臂統一框架**：PickNik Robotics 推出的 MoveIt Pro 平台於 2025-2026 年完成對廣泛硬體生態的原生支援，包含 Kinova、ROBOTIS、Universal Robots、xArm、ABB、KUKA 等 125+ 協作臂型號，實現硬體無關化的高層操縱抽象。MoveIt Pro 結合了運動規劃、視覺伺服、力控反饋與碰撞迴避等完整能力，特別適合 Roy 的多臂異構系統進行統一的軟體架構設計與跨平台驗證。該方案已在 ROSCon 2025 展示工業應用案例，驗證了邊界視覺伺服決策層與標準化硬體驅動層的深度整合。[PickNik MoveIt Pro Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/)
+
+**ROS 2 邊界 AI 與具身機械臂多臂協作視覺伺服新範式**：2026 年 ROS 社群重點推進具身 AI 在多臂協作視覺伺服中的實踐應用，通過 Lyrical Luth 的事件流標準與 MoveIt 2 實時控制相結合，實現毫秒級感知-規劃-執行閉迴圈。該架構支援多臂系統的分散式決策、視覺協作與邊界強化學習，特別適合工業組裝與複雜操作場景。Roy 的樹莓派 5 邊界系統可直接受惠於該生態成熟度，加速從單臂視覺伺服到多臂協作決策層的研究轉向。
