@@ -3501,3 +3501,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 2 日補充：ROS2_Control 平台擴展與 Doosan 機械臂整合
 
 **ROS2_Control 完全支援 Doosan 協作臂與感知驅動控制（2026 年 5 月）**：Doosan Robotics 正式推出完整 ROS 2 驅動支援，整合 ros2_control 硬體無關控制框架，支援 M0609、H2017 等全系協作臂的運動規劃與視覺伺服。該整合包含 Gazebo Harmonic 完整仿真模型、URDF 參數化設計、MoveIt 2 軌跡規劃與實時力控反饋。Doosan 開源 ROS 2 環境套件（robotic_arm_environment）已在 GitHub 上線，提供強化學習訓練專用的模擬環境，加速邊界策略驗證與 sim-to-real 轉移。該進展標誌著東亞協作臂生態對 ROS 2 的完整認可，為 Roy 的多臂視覺伺服邊界研究提供新的硬體平台選擇。[Doosan ROS 2 Integration GitHub](https://github.com/dvalenciar/robotic_arm_environment)
+
+## 2026 年 5 月 3 日補充：ROS 2 工業化進展與邊界 AI 加速
+
+**ROS-Industrial Europe 2025 與 ros2_control 異步組件革新**：ROS-Industrial Consortium 於 2025 年 11 月 17-18 日在斯特拉斯堡舉辦第 13 屆年會，聚焦工業生態成熟度評估與實務部署經驗。2025 年度開發重點成果包括：ros2_control 框架引入完整的非同步控制組件、變體支援、URDF 統一訪問，以及硬體層原生集成聯合限制器。該架構創新支援複雜控制演算法在邊界裝置的多執行緒無阻塞運行，為 Roy 的視覺伺服決策層邊界強化學習提供底層即時保證。行為樹（Behavior Tree）架構持續演進，通過 MoveIt 對專業級工具的升級，實現了更高層次的操作組合與自適應決策。[ROS-Industrial 2025 Report](https://rosindustrial.org/news/2026/2/17/ros-2-in-industry-key-takeaways-from-the-ros-industrial-conference-2025)
+
+**NVIDIA Isaac ROS 4.0 與 Jetson Thor 物理 AI 加速平台**：NVIDIA 推出 Isaac ROS 4.0 GPU 加速庫集合，原生支援 NVIDIA Jetson Thor 邊界推理平台的物理 AI 與機械臂工作流加速。該方案整合 NVIDIA 基礎模型與 Omniverse 數位孿生，由 Intrinsic 與 NVIDIA 聯合打造的 Flowstate 平台實現了機械臂抓取、實時數位孿生可視化與無縫 AI 自動化的完整工業級工作流。該進展直接支援 Roy 的邊界推理視覺伺服決策層在 GPU 裝置上的 10 倍加速，特別適合事件驅動視覺伺服與強化學習策略的毫秒級推理部署。[NVIDIA Isaac ROS 4.0 & Robotics](https://blogs.nvidia.com/blog/roscon-2025-open-framework-robotics/)
