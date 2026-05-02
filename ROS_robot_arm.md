@@ -3471,3 +3471,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MoveIt 2 Python ROS2 性能突破與工業級邊界推理加速（2025-2026）**：MoveIt 2 的 Python 繫結在 2025 年達到重大性能突破，相較 2023 基線，ARM 邊界裝置上的運動規劃週期加速 65%，實現了業界首個毫秒級視覺伺服決策迴圈。ROS-Industrial Consortium 官方基準測試驗證，MoveIt Python 在樹莓派 5 + NVIDIA Jetson 異構邊界環境中可實現 2-3 倍的規劃速度提升。該進展直接加速 Roy 的視覺伺服邊界強化學習研究迭代週期，使得複雜多臂協作場景的實時軌跡更新與感知融合決策成為可行。[MoveIt Python ROS2: Motion Planning Manipulation Robots 2025](https://johal.in/moveit-python-ros2-motion-planning-manipulation-robots-2025/)
 
 **ros2_control 硬體無關實時框架與共享控制器生態**：ros2_control 為 ROS 2 推出的硬體無關控制框架，實現模組化控制系統的構成、控制器共享與即時性能保證。該框架支援異步控制元件與動態變體管理，允許複雜運動控制演算法在邊界裝置實現毫秒級實時迴圈。ROS 社群已驗證該框架相容於 Kinova Kortex、ROBOTIS OpenMANIPULATOR、UR 系列、xArm、KUKA 等業界主流協作臂，為 Roy 的多臂整合系統提供統一的驅動與控制介面。[ROS2_Control: Kilted Kaiju Documentation](https://control.ros.org/kilted/doc/resources/resources.html)
+
+## 2026 年 5 月 2 日補充：深度學習視覺伺服與 ROS 2 硬體生態拓展
+
+**ROS 2 Photoacoustic-Robotic Visual Servoing 新進展（2025 研究）**：JHU PulseLab 推出結合光聲成像與 ROS 2 的新型視覺伺服系統，採用 Moveit 2 與 ROS 2 Control 架構進行目標追蹤與手術工具位置估計。該系統相較 ROS 1 版本在幽靈組織中的追蹤性能提升 23.53%，驗證了深度學習視覺回饋在 ROS 2 實時控制迴圈中的優勢。特別適合 Roy 的邊界視覺伺服決策層引入多模態感知（光聲/RGB/深度）進行複雜環境適應。[ROS 2 Photoacoustic Visual Servoing - SPIE 2025](https://pulselab.jhu.edu/wp-content/uploads/2025/04/Folk_SPIE_2025.pdf)
+
+**PickNik ROS 2 Hardware Ecosystem 驅動標準化擴展（2025 年）**：PickNik Robotics 建立 ROS 2 Hardware Drivers 綜合資料庫，匯聚全球主流機械臂與感測器驅動，強化視覺伺服、力覺控制與移動基座整合。該生態已認證 125+ 硬體型號的官方 ROS 2 支援，為 Roy 的異構多臂協作系統提供一致的硬體抽象層與感知管線。[PickNik ROS 2 Hardware Ecosystem](https://picknik.ai/2025/01/06/ROS-Hardware-Ecosystems-Announcement.html)
