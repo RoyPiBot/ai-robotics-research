@@ -3398,6 +3398,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Isaac ROS Visual SLAM 邊界最佳化 + ROS 2 Control 硬體支援拓展**：NVIDIA Isaac ROS 生態已將視覺 SLAM 推理效能優化至樹莓派 5 級邊界設備，延遲穩定在 50-100ms，並透過 ROS 2 Control 標準化介面支援 Kinova、ROBOTIS、Universal Robots、xArm、ABB、KUKA 等主流協作臂。該一體化生態使 Roy 的多臂移動基座視覺伺服系統可無縫整合最新的感知管線與標準硬體驅動層。[Isaac ROS Hardware Ecosystem](https://developer.nvidia.com/isaac/ros) | [PickNik ROS 2 Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/)
 
+## 2026 年 5 月 2 日補充：CRISP 框架與 VLA 模型驅動視覺伺服
+
+**CRISP — 學習型操縱策略與遠端操控統一框架（2025-2026）**：德國慕尼黑工業大學（TUM）與機械人智慧實驗室推出的 CRISP（Compliant ROS2 Controllers for Learning-Based Manipulation Policies and Teleoperation）框架，為 ROS 2 提供機器人無關的 Cartesian 和 joint-space 控制器。該框架統一了學習型操縱策略（如深度強化學習政策）與遠端人類操控的硬體抽象層，允許從離線模擬訓練無縫轉移至真實機械臂。CRISP 已驗證支援協作臂的力-位置混合控制、視覺伺服與接觸任務操縱，特別適合 Roy 的邊界強化學習決策層與異構硬體平台的無縫集成。[CRISP GitHub Repository](https://arxiv.org/html/2509.06819v1)
+
+**VLA 模型驅動的多臂視覺伺服邊界推理（2026 年新進展）**：Vision-Language-Action（視覺語言動作）模型在 2026 年達成重大突破，Octo 框架已在 400 萬軌跡、22 個機械臂平台上訓練，實現強化的 sim-to-real 轉移能力。NVIDIA GR00T N1 與 Figure AI Helix 等最新 VLA 模型採用 Diffusion-based 動作解碼器，相較傳統自迴歸政策提升複雜場景中的抓取成功率 20-35%，特別適合非結構化環境的動態視覺伺服與多臂協作決策。該技術與 ROS 2 邊界推理框架結合，可在樹莓派 5 級設備上實現 200-400ms 端到端推理延遲，支援自然語言指令直接驅動機械臂動作序列的智慧化操縱。
+
 **CRISP 與 LeRobot：ROS 2 標準控制介面的學習友好封裝**：TUM 開發的 CRISP 框架為 ROS 2 機械臂提供相容 ros2_control 的高階控制器，直接支援笛卡爾空間視覺伺服與力控決策。搭配新推出的 Lerobot-ros 輕量介面，可無縫整合強化學習與模仿學習訓練框架，加速從學習策略到硬體部署的週期。該生態完全開源且相容主流機械臂硬體，特別適合 Roy 進行事件驅動視覺伺服與多臂協作強化學習實驗。[CRISP - arxiv.org](https://arxiv.org/html/2509.06819v1) | [Lerobot-ros - Open Robotics Discourse](https://discourse.openrobotics.org/t/lerobot-ros-a-lightweight-interface-for-controlling-ros-based-robotic-arms-using-lerobot/49420)
 
 ## 2026 年 5 月 1 日補充：ROS 2 Jazzy 字符串傳輸與邊界伺服控制
