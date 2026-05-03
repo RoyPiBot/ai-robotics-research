@@ -3535,3 +3535,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 3 日補充：MoveIt 2 實時伺服與 Lyrical Luth 邊界工作坊
 
 **MoveIt 2 Servo 與 ROS 2 Control 異步組件整合深化**：最新 ROS 2 社群驗證 MoveIt 2 Servo 可在 ros2_control 異步組件框架下實現毫秒級低延遲視覺伺服，完全避免實時迴圈阻塞。該整合支援複雜多臂協作場景下的感知回饋與動態運動修正，特別適合 Roy 的邊界視覺伺服決策層採用事件驅動策略進行高頻率自適應控制。相關工作坊涵蓋遠端操作資料蒐集與強化學習模型訓練的端到端工作流。[MoveIt 2 Servo & ROS 2 Control Integration](https://www.therobotreport.com/how-ros-2-helped-optimax-overcome-robot-arm-issues/)
+
+## 2026 年 5 月 3 日補充：MoveIt Servo Gamepad 遠端操作與自動資料收集
+
+**MoveIt Servo Gamepad 遠端操作與自動資料蒐集（2026 年新進展）**：MoveIt 2 Servo 原生支援 Gamepad、VR 控制器與 6DoF CAD 滑鼠等多種輸入設備，直接發送末端執行器速度命令至機械臂。該系統特別適合為視覺伺服強化學習蒐集遠端操作示範資料，支援穩定軌跡生成與即時碰撞迴避。ROS 社群已驗證使用 MoveIt Servo Gamepad 遠端操作在資料蒐集過程中同步記錄關節狀態、末端姿態與相機資料，完全同步的多模態資料使強化學習模型訓練效率提升 3-5 倍，特別適合 Roy 進行邊界視覺伺服決策層的高品質訓練資料自動化蒐集。[MoveIt Servo Gamepad Teleoperation](https://moveit.picknik.ai/main/doc/how_to_guides/controller_teleoperation/controller_teleoperation.html)
