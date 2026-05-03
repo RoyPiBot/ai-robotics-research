@@ -3931,3 +3931,11 @@
 #### 454. NVIDIA 邊界推理新一代架構 — Cosmos Reason 2 與 TensorRT 統一推理框架（May 2026）
 - **開放推理 VLA 模型突破** - NVIDIA 發布 Alpamayo R1，為首個開源推理 VLA 模型系列，整合邊界友善的推理擴展（取代傳統預訓練架構），首次在開源社群驗證推理擴展在視覺-語言-動作統一框架中的有效性。結合 Cosmos Reason 2 規劃模型，支援邊界機械臂在複雜環境中的多步自主決策
 - **統一邊界推理基礎設施** - NVIDIA 發布 TensorRT Edge-LLM 進階版本，支援 MoE（混合專家）架構、動態批處理與多模態融合，集成 Qwen3-TTS 語音合成與 Qwen-ASR 語音識別，為邊界機械臂群提供統一的推理、感知與人機交互基礎設施，推動邊界推理從各自為政向標準化平台的轉變
+
+#### 455. AGIBOT 新一代具身 AI 機械人與三層智能融合架構（May 2026）
+- **一機多智能全棧架構** - AGIBOT 於 2026 Partner Conference 發佈新一代具身 AI 機械人與模型體系「One Robotic Body, Three Intelligences」，涵蓋運動智能（Locomotion Intelligence）、操控智能（Manipulation Intelligence）與交互智能（Interactive Intelligence）三層融合，推出四款新型機械人平台與八個基礎 AI 模型，標誌具身 AI 從單一任務向多維度通用智能的轉變
+- **邊界協作與工業規模應用** - AGIBOT 新一代機械人在 Smart Factory & Automation World 2026 首次集體亮相海外市場，與 Fourier Intelligence、Unitree、Huawei 等企業共同推進人形與多臂機械人在製造、物流、服務領域的商業化規模部署，成為中國具身 AI 機械人走向國際的重要標誌
+
+#### 456. Huawei R2C 協議 — 機械人-雲協同的三層計算架構（May 2026）
+- **分散式三層計算範式** - Huawei 於 Smart Factory & Automation World 2026 提議 Robot-to-Cloud（R2C）協議架構，將機械人計算任務分散至三層：雲端負責大規模 AI 模型訓練與推理、邊界節點負責實時推理與決策快速響應、機械人終端專注低延遲運動控制。該架構突破單點邊界硬體的計算瓶頸，實現雲邊端協同的高效通信與任務調度
+- **邊界機械臂群動態卸載與最優化** - R2C 架構支援根據實時網路狀態與任務複雜度動態決定推理位置（本地邊界 vs. 雲端協同），相比純邊界或純雲計算方案降低端到端延遲 30-50%，適合工業場景中多機械臂群的協同決策與資源共享，為異質機械臂系統的大規模部署奠定基礎設施基礎
