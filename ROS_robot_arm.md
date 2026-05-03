@@ -3531,3 +3531,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Control 邊界強化學習整合與多執行緒無阻塞控制迴圈（2026 年進展）**：最新 ros2_control 框架支援異步控制組件與動態變體管理，允許複雜的深度強化學習策略（PPO、SAC 等）在邊界裝置上實現毫秒級實時決策迴圈。該架構完全支援並聯運行古典運動規劃與學習基決策層，為 Roy 的視覺伺服邊界強化學習提供產業級控制基礎設施。2025 年社群驗證在 Jetson Nano 上實現 100Hz 控制週期下的安全策略切換。[ROS 2 Control - Async Components](https://control.ros.org/rolling/doc/ros2_control/)
 
 **MoveIt 2 + cuRobo/Tesseract 運動規劃與邊界推理加速（2026 年 5 月）**：MoveIt 2 現已原生整合 NVIDIA 的 GPU 加速 cuRobo 與開源 Tesseract 規劃引擎，cuRobo 平均規劃時間 0.19 秒、複雜場景成功率 100%，特別適合實時視覺伺服決策。該多後端規劃架構支援運行時動態切換古典與學習基運動規劃策略，驗證了視覺伺服邊界 AI 與標準化硬體生態的深度融合。[MoveIt 2 Motion Planning Engines](https://moveit.picknik.ai/)
+
+## 2026 年 5 月 3 日補充：MoveIt 2 實時伺服與 Lyrical Luth 邊界工作坊
+
+**MoveIt 2 Servo 與 ROS 2 Control 異步組件整合深化**：最新 ROS 2 社群驗證 MoveIt 2 Servo 可在 ros2_control 異步組件框架下實現毫秒級低延遲視覺伺服，完全避免實時迴圈阻塞。該整合支援複雜多臂協作場景下的感知回饋與動態運動修正，特別適合 Roy 的邊界視覺伺服決策層採用事件驅動策略進行高頻率自適應控制。相關工作坊涵蓋遠端操作資料蒐集與強化學習模型訓練的端到端工作流。[MoveIt 2 Servo & ROS 2 Control Integration](https://www.therobotreport.com/how-ros-2-helped-optimax-overcome-robot-arm-issues/)
