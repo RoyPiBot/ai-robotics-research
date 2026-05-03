@@ -3553,3 +3553,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **事件驅動視覺伺服與混合感知融合新進展（2026 年 5 月）**：SEBVS 框架最新研究驗證事件相機與 RGB 相機混合感知的優勢，融合高解析度幀與微秒級事件序列於統一 Transformer 架構，相較單一模態方案在視覺伺服控制準確度與魯棒性提升 15-25%，任務成功率提升 20-35%。該混合感知架構特別適合 Roy 的邊界多臂視覺伺服決策層在樹莓派 5 級邊界設備上進行實時高頻率感知回饋，支援複雜非結構化環境的自適應控制。[SEBVS: Synthetic Event-based Visual Servoing - arXiv 2508.17643](https://arxiv.org/html/2508.17643)
 
 **ROS 2 Control Example 7：完整 6DOF 機械臂教學與邊界硬體整合（2026 年 5 月）**：ROS 2 Control 框架最新提供 Example 7 教學案例，涵蓋 URDF 模型設計、硬體抽象層實現、控制器配置、視覺伺服與碰撞迴避的完整工程流程。該教學支援從 Gazebo 仿真環境快速轉移至實體硬體，特別適合 Roy 進行邊界多臂視覺伺服系統的原型驗證、控制策略集成與跨廠牌硬體部署。教學資源完全開源於 ROS 2 Control 官方文檔，直接降低複雜多臂系統的工程實踐門檻。[ROS2_Control Example 7: Full 6DOF Robot Tutorial](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
+## 2026 年 5 月 3 日補充：LLM 多代理協作與 CoEnv 決策框架
+
+**LLM 多代理協作視覺伺服決策層新範式（2026 年 5 月）**：ROS 2 社群集成 LLM 多代理系統於多臂視覺伺服決策層，實現高階語義理解與協調。該框架 RoCo 引入通訊機制讓多臂機械臂共享環境資訊、適應策略並高效協作完成複合目標。LLM 層提供自然語言規劃與任務分解，底層 ROS 2 Control 負責毫秒級實時執行，將複雜協作操作的決策耦合度從 O(n²) 降至 O(n)。特別適合 Roy 的邊界強化學習系統引入高階任務意圖理解，加速從視覺伺服基礎層到協作決策頂層的完整堆棧整合。[Multi-Agent Systems for Robotic Autonomy with LLMs](https://arxiv.org/html/2505.05762v1)
+
+**CoEnv 組合環境框架：實時多臂協作運動規劃與邊界推理驗證（2026 年 5 月）**：新型 CoEnv 框架提供「實世界-仿真混合」的多臂協作環境，支援多代理空間協調、時序推理與共享工作區感知。該架構允許複雜協作操作在 Gazebo 仿真中驗證策略後無縫部署至實體硬體，毫秒級空間同步誤差 < 5mm。結合邊界視覺伺服與 MoveIt 2 實時運動規劃，CoEnv 驗證了多臂協作決策層與感知-執行閉迴圈的深度融合，為 Roy 的樹莓派 5 邊界系統提供可驗證的多臂協作架構。[CoEnv: Driving Embodied Multi-Agent Collaboration via Compositional Environment](https://arxiv.org/html/2604.05484)
