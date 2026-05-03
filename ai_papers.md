@@ -3907,3 +3907,11 @@
 #### 448. Physical AI 社群標準化與資源生態（2026）
 - **多維度基準與評估框架統一** - 全球 AI/機器人研究社群共同推進 Physical AI 標準化，基準測試包括 LIBERO、CALVIN、SIMPLER 與 WorldArena，Awesome Physical AI GitHub 精選 200+ 論文與開源模型資源，構築完整的 VLA、世界模型與具身 AI 生態
 - **開源模型與數據集加速** - 2026 年見證 Gemma、Llama、DeepSeek 等開源模型在 VLA 與多模態領域的大規模投入，配合新型接觸感知數據集，建立邊界機械臂研究的底層基礎設施，推動從閉源依賴向開源自主訓練的轉變
+
+#### 449. Foundation Models in Robotics 系統綜述 — 多模態預訓練推動具身 AI（Apr 2026）
+- **綜合架構分類與泛化分析** - MDPI《機器人》刊登「Foundation Models in Robotics: A Comprehensive Review of Methods, Models, Datasets, Challenges and Future Research Directions」，系統整理大語言模型、視覺語言模型與多模態大語言模型在機械臂領域的應用現狀。研究涵蓋 40+ 預訓練基礎模型的泛化能力、邊界推理成本與多任務遷移效能，為具身 AI 研究提供完整知識圖譜與未來方向指引
+- **邊界部署與微調策略總結** - 綜述總結基礎模型在機械臂微調中的三大關鍵瓶頸（計算資源、樣本效率、災難遺忘）與應對方案（LoRA、離線強化學習、記憶檢索），為邊界機械臂的實用化部署提供系統化指導
+
+#### 450. CVPR 2026 機械臂創新浪潮 — ManipArena 實機挑戰與視覺推理基準（May 2026）
+- **實機操控與多任務基準突破** - CVPR 2026 Embodied AI 工作坊發布 ManipArena 實機操控挑戰，評估模型在 20 項真實機械臂任務中的物理推理、泛化與決策能力。同步發布 National Robotics Week 資源，涵蓋 NVIDIA Cosmos 世界模型、Isaac GR00T VLA 系列與全球機器人合作伙伴（Boston Dynamics Atlas + Google DeepMind Gemini Robotics）的整合展示
+- **機器人樣本效率與推理協同新標竿** - 新年度基準標示邊界機械臂從 sim-to-real 轉向真實環境中的自主泛化，結合世界模型預測、視覺語言推理與連續控制 VLA 的多層協同，推動邊界機械臂在製造、物流、服務機器人的實用化落地
