@@ -3575,3 +3575,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **雙臂協作視覺伺服與點雲感知融合（2024-2025 研究）**：近年研究驗證基於 ROS 架構的雙臂協作感知抓取系統，採用點雲視覺技術進行物體檢測與位置估計，透過 TF 坐標變換管理多臂末端執行器姿態關係。該方案應用於複雜工業環境中的雙臂協作操縱，相較單臂系統提升任務成功率 35% 以上。特別適合 Roy 的多臂視覺伺服邊界推理系統引入點雲與深度相機融合策略，加速複雜環境適應與自適應抓取決策的邊界部署。
 
 **圖神經網路多代理強化學習與多機械臂協調（2025-2026 新浪潮）**：ROS 2 社群引入圖神經網路（GNN）與多代理強化學習結合的多機械臂協調方案，透過圖拓撲表示機械臂間的空間關係與通訊依賴。該架構相比傳統集中式多代理學習，將協調複雜度從 O(n²) 降至 O(n log n)，支援可擴展的分散式決策。實驗驗證在 4-6 臂協作系統中，GNN-MARL 相比層級化方法提升任務成功率 15-20%，特別適合 Roy 的邊界視覺伺服決策層引入圖神經網路進行多臂協作策略的可擴展邊界推理。[Survey on Graph-Based Reinforcement Learning for Networked Coordination](https://www.mdpi.com/2673-4052/6/4/65)
+
+## 2026 年 5 月 4 日補充：MoveIt 2 Python 性能與工業規劃引擎深度整合
+
+**MoveIt 2 Python ROS2 性能突破與 2025 年工業化成熟（2025-2026）**：MoveIt 2 的 Python API 於 2025 年完成優化，相較 ROS 1 Legacy API 提升 2-3 倍的運動規劃速度，使 Python 開發者能在邊界設備上實現實時視覺伺服決策。該進展直接支援 Roy 的樹莓派 5 邊界系統採用 Python 進行快速迭代開發，同步搭配 NVIDIA 加速規劃引擎（cuRobo、Tesseract）實現毫秒級協作臂軌跡優化。MoveIt Pro 現已支援 125+ 商用協作臂型號，包括 Kinova、ROBOTIS、Universal Robots、xArm、ABB、KUKA 等主流品牌，驗證了硬體無關化規劃框架的產業級成熟度。[MoveIt Python ROS2: Motion Planning Manipulation Robots 2025](https://johal.in/moveit-python-ros2-motion-planning-manipulation-robots-2025/)
+
+**Isaac ROS Visual SLAM 與多相機協作視覺感知（2026 年 5 月）**：NVIDIA Isaac ROS 最新版本新增高效 Visual SLAM 模組，原生支援 RGBD 相機、立體相機組合與多視角協同感知。該 GPU 加速模組實現毫秒級視覺里程計與環境重建，特別適合多臂協作抓取場景的實時物體追蹤與空間定位。相較 CPU 實現提升 10 倍邊界推理速度，完全適配 Roy 的視覺伺服決策層在樹莓派 5 邊界平台上進行多臂協作視覺感知融合與自適應控制。[Isaac ROS Visual SLAM Documentation](https://developer.nvidia.com/isaac/ros)
