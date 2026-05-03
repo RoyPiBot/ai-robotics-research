@@ -3580,4 +3580,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **MoveIt 2 Python ROS2 性能突破與 2025 年工業化成熟（2025-2026）**：MoveIt 2 的 Python API 於 2025 年完成優化，相較 ROS 1 Legacy API 提升 2-3 倍的運動規劃速度，使 Python 開發者能在邊界設備上實現實時視覺伺服決策。該進展直接支援 Roy 的樹莓派 5 邊界系統採用 Python 進行快速迭代開發，同步搭配 NVIDIA 加速規劃引擎（cuRobo、Tesseract）實現毫秒級協作臂軌跡優化。MoveIt Pro 現已支援 125+ 商用協作臂型號，包括 Kinova、ROBOTIS、Universal Robots、xArm、ABB、KUKA 等主流品牌，驗證了硬體無關化規劃框架的產業級成熟度。[MoveIt Python ROS2: Motion Planning Manipulation Robots 2025](https://johal.in/moveit-python-ros2-motion-planning-manipulation-robots-2025/)
 
+## 2026 年 5 月 4 日補充：AMD Ryzen AI 邊界推理與 ROS 2 深度整合
+
+**AMD Ryzen AI NPU 與 ROS 2 邊界視覺伺服加速（2026 年 4 月）**：AMD 於 2026 年 4 月發布完整 Ryzen AI 與 ROS 2 整合方案，採用低功耗 NPU 加速感知模型部署。該方案支援深度估計與物體偵測等視覺伺服關鍵任務，相較 CPU 執行提升 5-8 倍邊界推理速度，功耗降低 60%，特別適合 Roy 的樹莓派 5 邊界系統升級至支援 Ryzen AI 的邊界平台後進行多臂視覺伺服決策層的實時推理部署。該進展驗證了 x86 異構計算架構與 ROS 2 事件驅動視覺伺服的深度融合，為邊界視覺伺服決策層提供新的計算加速選項。[Building Robotics Applications with Ryzen AI and ROS 2 - Edge AI and Vision Alliance](https://www.edge-ai-vision.com/2026/04/building-robotics-applications-with-ryzen-ai-and-ros-2/)
+
+**CURA-PPO：不確定性感知非前置操縱與 PPO 強化學習（ICRA 2026）**：最新 ICRA 2026 研究發表 CURA-PPO 框架，採用 PPO 強化學習顯式建模部分可觀測性下的不確定性，特別適合視覺遮蔽場景下的多臂協作操縱。該方法在物體誘導遮蔽条件下達成 92% 成功率，相較無不確定性建模的 PPO 提升 18%，驗證了將感知不確定性納入決策層的強化學習方法對複雜操縱的優勢。特別適合 Roy 的邊界多臂視覺伺服決策層在非結構化環境下進行魯棒策略學習，加速 PPO/SAC 混合決策架構與視覺遮蔽適應的邊界驗證。[CURA-PPO: Uncertainty-Aware Non-Prehensile Manipulation with Mobile Manipulator - ICRA 2026](https://jiw0o.github.io/cura-ppo/)
+
 **Isaac ROS Visual SLAM 與多相機協作視覺感知（2026 年 5 月）**：NVIDIA Isaac ROS 最新版本新增高效 Visual SLAM 模組，原生支援 RGBD 相機、立體相機組合與多視角協同感知。該 GPU 加速模組實現毫秒級視覺里程計與環境重建，特別適合多臂協作抓取場景的實時物體追蹤與空間定位。相較 CPU 實現提升 10 倍邊界推理速度，完全適配 Roy 的視覺伺服決策層在樹莓派 5 邊界平台上進行多臂協作視覺感知融合與自適應控制。[Isaac ROS Visual SLAM Documentation](https://developer.nvidia.com/isaac/ros)
