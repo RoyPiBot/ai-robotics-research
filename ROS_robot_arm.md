@@ -3545,3 +3545,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ros2_control 非同步組件框架與 125+ 機械臂硬體驅動成熟度**：ROS 2 Control 框架在 Kilted Kaiju 版本完成 125+ 商用機械臂的硬體無關驅動整合，包括 Kinova Kortex、ROBOTIS OpenMANIPULATOR、Universal Robots、xArm、ABB、KUKA、RealMan 等主流品牌。該框架支援異步控制組件與動態變體管理，允許複雜控制演算法在邊界裝置實現毫秒級實時迴圈。特別適合 Roy 的多臂視覺伺服系統選擇任意硬體平台進行統一的軟體架構開發與跨品牌部署驗證。[ROS 2 Control Supported Robots](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
 
 **OMPL 2.0 VAMP 演算法與向量化運動規劃加速**：開源運動規劃庫 OMPL 2.0 新增 VAMP（Vectorized Antipodal Motion Planning）演算法，採用向量化計算加速複雜場景下的軌跡規劃。該演算法在 GPU 支援環境中相較傳統 RRT* 平均規劃時間降低 70%，成功率提升至 98% 以上。MoveIt 2 已原生整合 VAMP，結合 cuRobo 等高效規劃引擎，支援複雜多臂協作場景的實時視覺伺服決策。特別適合 Roy 的邊界強化學習決策層進行複雜動態環境下的實時軌跡優化與碰撞迴避。[OMPL 2.0 VAMP Algorithm](https://ompl.kavrakilab.org/)
+
+## 2026 年 5 月 3 日補充：ROS 2 Control 6DOF 機械臂教學與實踐資源
+
+**ROS 2 Control Example 7：完整 6DOF 機械臂教學與邊界硬體整合（2026 年 5 月）**：ROS 2 Control 框架最新提供 Example 7 教學案例，涵蓋 URDF 模型設計、硬體抽象層實現、控制器配置、視覺伺服與碰撞迴避的完整工程流程。該教學支援從 Gazebo 仿真環境快速轉移至實體硬體，特別適合 Roy 進行邊界多臂視覺伺服系統的原型驗證、控制策略集成與跨廠牌硬體部署。教學資源完全開源於 ROS 2 Control 官方文檔，直接降低複雜多臂系統的工程實踐門檻。[ROS2_Control Example 7: Full 6DOF Robot Tutorial](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
