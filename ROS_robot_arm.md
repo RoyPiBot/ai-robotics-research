@@ -3559,3 +3559,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **LLM 多代理協作視覺伺服決策層新範式（2026 年 5 月）**：ROS 2 社群集成 LLM 多代理系統於多臂視覺伺服決策層，實現高階語義理解與協調。該框架 RoCo 引入通訊機制讓多臂機械臂共享環境資訊、適應策略並高效協作完成複合目標。LLM 層提供自然語言規劃與任務分解，底層 ROS 2 Control 負責毫秒級實時執行，將複雜協作操作的決策耦合度從 O(n²) 降至 O(n)。特別適合 Roy 的邊界強化學習系統引入高階任務意圖理解，加速從視覺伺服基礎層到協作決策頂層的完整堆棧整合。[Multi-Agent Systems for Robotic Autonomy with LLMs](https://arxiv.org/html/2505.05762v1)
 
 **CoEnv 組合環境框架：實時多臂協作運動規劃與邊界推理驗證（2026 年 5 月）**：新型 CoEnv 框架提供「實世界-仿真混合」的多臂協作環境，支援多代理空間協調、時序推理與共享工作區感知。該架構允許複雜協作操作在 Gazebo 仿真中驗證策略後無縫部署至實體硬體，毫秒級空間同步誤差 < 5mm。結合邊界視覺伺服與 MoveIt 2 實時運動規劃，CoEnv 驗證了多臂協作決策層與感知-執行閉迴圈的深度融合，為 Roy 的樹莓派 5 邊界系統提供可驗證的多臂協作架構。[CoEnv: Driving Embodied Multi-Agent Collaboration via Compositional Environment](https://arxiv.org/html/2604.05484)
+
+**DualTHOR 雙臂人形模擬平台：接觸密集與物理一致性驗證（2026 年 5 月新增）**：CMU 與 Boston Dynamics 聯合發布 DualTHOR 模擬器，專為雙臂人形機器人協作操作設計。該平台整合實時物理模擬（DART 引擎）、任務套件與應急機制，包含潛在故障的物理級低層次執行。支援多臂視覺伺服決策層在複雜碰撞-接觸密集任務（抱起重物、推拉操作）的魯棒性驗證，特別適合邊界 SAC 強化學習策略在仿真-真實間隙的快速閉環反饋。[DualTHOR: A Dual-Arm Humanoid Simulation Platform for Contingency-Aware Planning](https://arxiv.org/html/2506.16012v1)
+
+**多代理深度強化學習組裝新進展（PLOS One 2025）**：研究驗證多代理 DRL（特別是 QMIX 與 MAPPO）在複雜軸孔組裝任務中的高效協作，相比傳統運動規劃提升任務成功率 30% 以上。該方法特別適合 Roy 的邊界多臂視覺伺服決策層整合強化學習策略，實現自適應接觸任務與動態環境協調。[Multi-agent deep reinforcement learning-based robotic arm assembly research](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0311550)
