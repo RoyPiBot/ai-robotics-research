@@ -3563,3 +3563,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **DualTHOR 雙臂人形模擬平台：接觸密集與物理一致性驗證（2026 年 5 月新增）**：CMU 與 Boston Dynamics 聯合發布 DualTHOR 模擬器，專為雙臂人形機器人協作操作設計。該平台整合實時物理模擬（DART 引擎）、任務套件與應急機制，包含潛在故障的物理級低層次執行。支援多臂視覺伺服決策層在複雜碰撞-接觸密集任務（抱起重物、推拉操作）的魯棒性驗證，特別適合邊界 SAC 強化學習策略在仿真-真實間隙的快速閉環反饋。[DualTHOR: A Dual-Arm Humanoid Simulation Platform for Contingency-Aware Planning](https://arxiv.org/html/2506.16012v1)
 
 **多代理深度強化學習組裝新進展（PLOS One 2025）**：研究驗證多代理 DRL（特別是 QMIX 與 MAPPO）在複雜軸孔組裝任務中的高效協作，相比傳統運動規劃提升任務成功率 30% 以上。該方法特別適合 Roy 的邊界多臂視覺伺服決策層整合強化學習策略，實現自適應接觸任務與動態環境協調。[Multi-agent deep reinforcement learning-based robotic arm assembly research](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0311550)
+
+## 2026 年 5 月 4 日補充：MoveIt 2 多規劃後端整合與邊界推理加速
+
+**MoveIt 2 多後端規劃引擎深度整合（2026 年 5 月）**：MoveIt 2 已原生整合 NVIDIA cuRobo、開源 Tesseract、OMPL 等多個高效規劃引擎，支援運行時動態切換策略。cuRobo GPU 加速軌跡優化在複雜障礙場景下平均規劃時間 0.19 秒、成功率 100%，特別適合實時視覺伺服決策。Tesseract 模組化規劃管線與改進碰撞檢測器則特別適合邊界計算環境的低延遲部署。該多後端架構驗證了古典與學習基運動規劃策略的無縫融合，直接支撐 Roy 的邊界多臂視覺伺服決策層與樹莓派 5 邊界推理整合。[MoveIt 2 Motion Planning Documentation](https://moveit.picknik.ai/)
+
+**圖神經網路多代理強化學習與多機械臂協調（2025-2026 新浪潮）**：ROS 2 社群引入圖神經網路（GNN）與多代理強化學習結合的多機械臂協調方案，透過圖拓撲表示機械臂間的空間關係與通訊依賴。該架構相比傳統集中式多代理學習，將協調複雜度從 O(n²) 降至 O(n log n)，支援可擴展的分散式決策。實驗驗證在 4-6 臂協作系統中，GNN-MARL 相比層級化方法提升任務成功率 15-20%，特別適合 Roy 的邊界視覺伺服決策層引入圖神經網路進行多臂協作策略的可擴展邊界推理。[Survey on Graph-Based Reinforcement Learning for Networked Coordination](https://www.mdpi.com/2673-4052/6/4/65)
