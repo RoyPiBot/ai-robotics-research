@@ -3606,3 +3606,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **視覺伺服機械臂應用方法與工業前景（2025 年 Springer 綜述）**：Springer Nature 最新發表的綜合論文「Recent advances on visual servo control of robotic arms: methods and applications」統計分析五大應用領域（工業製造、工程施工、航空航太、農業採收、醫療設備）的視覺伺服進展。研究指出古典視覺伺服（相機空間與工作空間伺服）與深度學習視覺伺服的融合已成為主流方向，其中混合控制架構相較單一方法提升任務成功率 18-30%。特別適合 Roy 的多臂視覺伺服決策層設計，結合邊界推理與強化學習策略，實現工業級應用驗證。[Recent advances on visual servo control of robotic arms: methods and applications - Journal of the Brazilian Society of Mechanical Sciences and Engineering](https://link.springer.com/article/10.1007/s40430-025-06122-7)
 
 **ROS 2 社群視覺伺服與邊界推理整合標準化（2026 年進展）**：ROS 2 社群正式發佈「ROS 2 Hardware Drivers and Ecosystem」資源頁面，整合 125+ 協作臂型號的最新驅動與視覺伺服整合指南。該標準化框架支援邊界視覺伺服決策層與 MoveIt 2 實時控制的深度融合，提供從感知、規劃到執行的完整閉迴圈驗證方案。特別適合 Roy 進行多臂視覺伺服系統的硬體無關化開發與跨平台部署驗證。[ROS 2 Hardware Ecosystem and Drivers](https://picknik.ai/hardware-ecosystem/)
+
+## 2026 年 5 月 4 日補充：MoveIt Pro 9.2.0 軌跡混合與邊界適應控制
+
+**MoveIt Pro 9.2.0 BlendJointTrajectories 平滑軌跡合成（2026 年 4 月發布）**：MoveIt Pro 最新版本 9.2.0 引入全新 BlendJointTrajectories Behavior，支援多段預規劃關節軌跡的平滑合成。該機制在各軌跡連接點自動插入加加速度受限的過渡段（jerk-limited transition），實現零顫振軌跡銜接。相較傳統軌跡拼接方式，BlendJointTrajectories 降低機械臂加加速度衝擊 40% 以上，特別適合 Roy 的邊界視覺伺服決策層進行多段動作序列的平滑執行，提升複雜協作操縱的精準度與機械臂壽命。該功能已驗證在協作臂抓取、組裝等接觸密集任務中的應用效果。[MoveIt Pro 9.2.0 Release Notes](https://docs.picknik.ai/release-notes/2026/04/29/9.2.0/)
+
+## 2026 年 5 月 4 日補充：Embodied AI 與 LLM 多模態感知整合新進展
+
+**LanderPi 具身 AI 平台：LLM + ROS 2 + 3D 視覺整合（2026 年）**：新型 LanderPi 平台整合 LLM 多模態理解與 ROS 2 實時控制，實現自然語言驅動的機械臂複雜操縱。該系統結合 3D 視覺感知、MoveIt 2 軌跡規劃與邊界推理，將自然語言指令轉換為具體機械臂動作序列，毫秒級延遲內完成任務分解與執行。特別適合 Roy 的邊界視覺伺服決策層引入 LLM 高階語義理解，加速從低階視覺伺服控制到高階自然語言任務理解的完整堆棧整合。[Embodied AI with LanderPi: Fusing LLMs, ROS 2, and 3D Vision](https://www.hackster.io/HiwonderRobot/embodied-ai-with-landerpi-fusing-llms-ros-2-and-3d-vision-1f744b)
