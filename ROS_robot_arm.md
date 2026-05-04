@@ -3614,3 +3614,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 4 日補充：Embodied AI 與 LLM 多模態感知整合新進展
 
 **LanderPi 具身 AI 平台：LLM + ROS 2 + 3D 視覺整合（2026 年）**：新型 LanderPi 平台整合 LLM 多模態理解與 ROS 2 實時控制，實現自然語言驅動的機械臂複雜操縱。該系統結合 3D 視覺感知、MoveIt 2 軌跡規劃與邊界推理，將自然語言指令轉換為具體機械臂動作序列，毫秒級延遲內完成任務分解與執行。特別適合 Roy 的邊界視覺伺服決策層引入 LLM 高階語義理解，加速從低階視覺伺服控制到高階自然語言任務理解的完整堆棧整合。[Embodied AI with LanderPi: Fusing LLMs, ROS 2, and 3D Vision](https://www.hackster.io/HiwonderRobot/embodied-ai-with-landerpi-fusing-llms-ros-2-and-3d-vision-1f744b)
+
+## 2026 年 5 月 4 日補充：MoveIt Pro Joint Trajectory Admittance Controller 強化與多執行器支援
+
+**MoveIt Pro JTAC 時間縮放與多末端執行器擴展（2026 年 4 月最新）**：MoveIt Pro 9.2.0 新增 Joint Trajectory Admittance Controller (JTAC) 時間縮放功能，允許在軌跡執行期間動態調整速度係數（0.5x-2.0x），支援實時適應環境變化與任務需求。同時 JTAC 原生擴展支援多末端執行器機械臂（multi-tip robots），每個末端與各自的許可度特性（admittance properties）獨立配置，特別適合 Roy 的協作臂組合系統進行柔順控制與動態任務切換。該增強驗證了接觸密集操縱場景下，時間自適應控制與多臂力感知反饋的深度融合。
+
+**ExecuteMTCSolution 雙控制器介面支援（2026 年 4 月）**：MoveIt Pro 新增 ExecuteMTCSolution Behavior 提供兩層控制器選擇模式：(1) 標準 ROS 2 FollowJointTrajectory 控制器（如 ros2_control JTC），適合傳統位置伺服機械臂；(2) 高級 Joint Trajectory Admittance Controller (JTAC)，支援力反饋與環境互動適應。該雙模式架構允許使用者根據硬體能力靈活選擇執行策略，無需修改上層規劃代碼，完全適配 Roy 的異質機械臂系統整合與邊界自適應控制架構。[MoveIt Pro 9.2.0 Release Notes](https://docs.picknik.ai/release-notes/2026/04/29/9.2.0/)
