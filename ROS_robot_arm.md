@@ -3600,3 +3600,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **事件相機與 RGB 融合視覺伺服新方向（2025 年 arXiv）**：SEBVS 框架最新深化驗證，事件驅動感知與高解析 RGB 相機在統一 Transformer 架構下的融合效果。該混合模態方案在低光與快速動作場景中，視覺伺服控制誤差下降 40%，動態環境任務成功率提升 25%。ROS 2 原生支援事件相機驅動（DVS ROS 2 Package），樹莓派 5 邊界推理可直接整合該多模態感知方案進行高魯棒性視覺伺服決策。[SEBVS: Synthetic Event-based Visual Servoing for Robot Manipulation - arxiv 2508.17643](https://arxiv.org/html/2508.17643v1)
 
 **Isaac ROS Visual SLAM 與多相機協作視覺感知（2026 年 5 月）**：NVIDIA Isaac ROS 最新版本新增高效 Visual SLAM 模組，原生支援 RGBD 相機、立體相機組合與多視角協同感知。該 GPU 加速模組實現毫秒級視覺里程計與環境重建，特別適合多臂協作抓取場景的實時物體追蹤與空間定位。相較 CPU 實現提升 10 倍邊界推理速度，完全適配 Roy 的視覺伺服決策層在樹莓派 5 邊界平台上進行多臂協作視覺感知融合與自適應控制。[Isaac ROS Visual SLAM Documentation](https://developer.nvidia.com/isaac/ros)
+
+## 2026 年 5 月 4 日補充：視覺伺服控制機械臂新應用領域與綜合調查
+
+**視覺伺服機械臂應用方法與工業前景（2025 年 Springer 綜述）**：Springer Nature 最新發表的綜合論文「Recent advances on visual servo control of robotic arms: methods and applications」統計分析五大應用領域（工業製造、工程施工、航空航太、農業採收、醫療設備）的視覺伺服進展。研究指出古典視覺伺服（相機空間與工作空間伺服）與深度學習視覺伺服的融合已成為主流方向，其中混合控制架構相較單一方法提升任務成功率 18-30%。特別適合 Roy 的多臂視覺伺服決策層設計，結合邊界推理與強化學習策略，實現工業級應用驗證。[Recent advances on visual servo control of robotic arms: methods and applications - Journal of the Brazilian Society of Mechanical Sciences and Engineering](https://link.springer.com/article/10.1007/s40430-025-06122-7)
+
+**ROS 2 社群視覺伺服與邊界推理整合標準化（2026 年進展）**：ROS 2 社群正式發佈「ROS 2 Hardware Drivers and Ecosystem」資源頁面，整合 125+ 協作臂型號的最新驅動與視覺伺服整合指南。該標準化框架支援邊界視覺伺服決策層與 MoveIt 2 實時控制的深度融合，提供從感知、規劃到執行的完整閉迴圈驗證方案。特別適合 Roy 進行多臂視覺伺服系統的硬體無關化開發與跨平台部署驗證。[ROS 2 Hardware Ecosystem and Drivers](https://picknik.ai/hardware-ecosystem/)
