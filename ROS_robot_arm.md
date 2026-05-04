@@ -3644,3 +3644,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Qualcomm Dragonwing IQ10 機械臂專用邊界推理晶片與 ROS 2 原生支援（2026 年新推出）**：Qualcomm 於 2026 年發布新一代 Dragonwing IQ10 機械臂邊界推理處理器，專為工業機械臂、協作臂與人形機器人設計，支援實時視覺感知推理、觸覺感知融合與邊界決策執行。該晶片原生支援 ROS 2 框架，與 MoveIt 2 直接整合，相較 Jetson 邊界平台在邊界推理功耗降低 40% 而性能維持同級。該方案特別適合 Roy 的多臂視覺伺服邊界推理系統升級，實現從樹莓派 5 CPU 推理至專用邊界 AI 晶片的性能躍進，支援複雜物體偵測、姿態估計與多模態感知融合的 100Hz+ 實時推理迴圈。[Qualcomm Dragonwing IQ10 Robotics Platform](https://www.qualcomm.com/robotics)
 
 **ROS 2 邊界推理性能基準與 ML 增強規劃突破**（2025-2026）：ROS-Industrial Consortium 官方基準測試驗證，MoveIt 2 Python API 在 ARM 邊界裝置（Jetson Nano/樹莓派 5）上達成 65% 運動規劃週期加速，相較 2023 基線。同時，ML 增強規劃器在動態環境中達成 90%+ 成功率預測，為邊界決策層引入機器學習加速提供實驗依據。該進展驗證了邊界推理視覺伺服與標準化規劃框架的深度整合，特別適合 Roy 的樹莓派 5 邊界系統評估 ML 加速規劃對複雜非結構化環境自適應控制的實踐價值。[ROS-Industrial Performance Benchmarks 2025-2026](https://rosindustrial.org/news)
+
+## 2026 年 5 月 5 日補充：ROS 2 工業生態完全成熟與多硬體統一支援
+
+**ROS 2 生態成熟度確認：MoveIt 2 + 125+ 協作臂硬體標準化（2026 年全球驗證）**：ROS 2 與 MoveIt 2 已成為全球工業機械臂控制的產業標準，支援包括 Kinova Kortex、ROBOTIS OpenMANIPULATOR、Universal Robots、xArm、ABB、KUKA、RealMan 等 125+ 商用協作臂型號。該統一硬體無關架構經過 2025-2026 完整工業場景驗證，包括汽車製造、電子組裝、醫療設備等多領域應用。ROS 2 Humble/Jazzy 版本提供 5-10 年長期支援，MoveIt Pro 商業服務層提供完整工業級保證。該成熟度確認為 Roy 的多臂視覺伺服研究提供了穩定的軟體生態基礎。[The Construct ROS 2 Manipulation Basics](https://www.theconstruct.ai/robotigniteacademy_learnros/ros-courses-library/ros2-manipulation-basics/)
+
+**ROS 1 Noetic 正式 EOL 與 ROS 2 完全接棒（2025 年 5 月）**：ROS 1 Noetic 於 2025 年 5 月正式終止生命週期（End-of-Life），所有新項目均應基於 ROS 2 進行開發。該里程碑標誌著十年 ROS 1 時代的正式結束與 ROS 2 全面產業化的確認。ROS 2 在五年內（2020-2025）從初期階段演進至完全生產就緒，覆蓋感知、規劃、控制、強化學習等全棧機械臂應用領域。特別適合 Roy 的新項目架構設計直接採納 ROS 2 標準，避免未來遺留技術債務，同時享受持續優化與社群支援。[ROS 2 Documentation Overview](https://docs.ros.org/)
