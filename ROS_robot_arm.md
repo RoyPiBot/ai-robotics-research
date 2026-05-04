@@ -3632,3 +3632,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MoveIt Pro 9.0 核心演算法重構與性能爆炸性提升（2026 年 3 月）**：MoveIt Pro 首次大版本更新 9.0 於 2026 年 3 月發布，完全重構核心運動規劃引擎，淘汰傳統 OMPL、MoveIt Servo、KDL 與 IKFast 演算法，引入新一代速度最優化規劃器。性能指標達成歷史性突破：逆向運動學 (IK) 求解速度提升 35 倍、運動規劃加速度 4 倍、笛卡爾軌跡規劃器加速 30 倍。該性能躍進特別適合 Roy 的邊界視覺伺服決策層在樹莓派 5 上進行實時多臂協調規劃與高頻率感知反饋迴圈（可達 100Hz+），加速複雜非結構化環境下的自適應操縱與多臂同步控制的邊界驗證。[MoveIt Pro Newsletter March 2026 - PickNik](https://picknik.ai/2026/03/12/Newsletter-March.html)
 
 **Meta Quest 混合實境遙操作與 MoveIt Pro 深度整合（2026 年 2 月）**：MoveIt Pro 9.0+ 原生支援 Meta Quest 控制器進行沉浸式多臂遙操作，支援單臂與雙臂機械臂系統的即時指令流送。該沉浸式介面結合碰撞感知規劃與許可度控制（admittance control），用戶可在虛實混合環境中直觀進行精密操縱任務（組裝、抓取等），無需編寫複雜的位置指令。相較傳統搖桿或鍵盤遙操作，VR 介面顯著降低操作複雜度與學習曲線，特別適合 Roy 的邊界視覺伺服決策層引入沉浸式人機互動模式，或作為複雜任務的人工演示數據收集工具，加速強化學習策略的初始化訓練。該方向驗證了 XR 技術與邊界操縱決策層的深度融合潛力。[MoveIt Pro 2026 Robotics Platform Overview - PickNik](https://picknik.ai/moveit/)
+
+## 2026 年 5 月 5 日補充：Automate 2026 與 ROS 工業生態峰會
+
+**ROS-Industrial Consortium Automate 2026 Chicago 大會與邊界推理焦點**（2026 年 5 月）：ROS-Industrial Consortium 於 2026 年 5 月在美國芝加哥舉辦 Automate 2026 展覽，聚集全球機械臂製造商、系統集成商與研究機構。會議焦點包括 MoveIt Pro 性能演示（IK 求解 35 倍提升）、邊界視覺伺服最佳實踐分享、以及 ROS 2 Control 與 125+ 協作臂的硬體生態成熟度驗證。該峰會進一步確認了 ROS 2 在工業協作臂控制領域的標準地位，為 Roy 的多臂視覺伺服研究提供全球產業應用驗證的參考基準。[ROS-Industrial News Automate 2026](https://rosindustrial.org/news)
+
+**ROS 2 邊界推理性能基準與 ML 增強規劃突破**（2025-2026）：ROS-Industrial Consortium 官方基準測試驗證，MoveIt 2 Python API 在 ARM 邊界裝置（Jetson Nano/樹莓派 5）上達成 65% 運動規劃週期加速，相較 2023 基線。同時，ML 增強規劃器在動態環境中達成 90%+ 成功率預測，為邊界決策層引入機器學習加速提供實驗依據。該進展驗證了邊界推理視覺伺服與標準化規劃框架的深度整合，特別適合 Roy 的樹莓派 5 邊界系統評估 ML 加速規劃對複雜非結構化環境自適應控制的實踐價值。[ROS-Industrial Performance Benchmarks 2025-2026](https://rosindustrial.org/news)
