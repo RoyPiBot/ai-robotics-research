@@ -3649,4 +3649,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 生態成熟度確認：MoveIt 2 + 125+ 協作臂硬體標準化（2026 年全球驗證）**：ROS 2 與 MoveIt 2 已成為全球工業機械臂控制的產業標準，支援包括 Kinova Kortex、ROBOTIS OpenMANIPULATOR、Universal Robots、xArm、ABB、KUKA、RealMan 等 125+ 商用協作臂型號。該統一硬體無關架構經過 2025-2026 完整工業場景驗證，包括汽車製造、電子組裝、醫療設備等多領域應用。ROS 2 Humble/Jazzy 版本提供 5-10 年長期支援，MoveIt Pro 商業服務層提供完整工業級保證。該成熟度確認為 Roy 的多臂視覺伺服研究提供了穩定的軟體生態基礎。[The Construct ROS 2 Manipulation Basics](https://www.theconstruct.ai/robotigniteacademy_learnros/ros-courses-library/ros2-manipulation-basics/)
 
+## 2026 年 5 月 5 日補充：ROS 2 Control 架構升級與產業級成熟確認
+
+**ROS 2 Control Framework 2025-2026 架構優化：非同步組件與硬體層整合**：ROS 2 Control 在 2025 年完成重大架構升級，引入完全非同步組件支援、運行時 URDF 訪問、整合式聯合限制器於硬體層。該升級使複雜多臂控制系統的可組合性與模塊化程度顯著提升，特別適合 Roy 的邊界多臂視覺伺服決策層架構設計中進行硬體無關化控制策略的實時部署。新增專用倉庫提供共享 CMake 定義與預定義 CI 流程，直接加速協作臂原型開發週期。[ROS 2 Control: Supported Robots and Resources - Mar 2026](https://control.ros.org/rolling/doc/resources/resources.html)
+
+**ROS 1 官方生命週期終止確認（2025 年 5 月）**：ROS Noetic 於 2025 年 5 月達成官方 EOL，標誌 ROS 1 時代的正式結束。該里程碑驗證 ROS 2 在過去三年內的產業級成熟度與生態完善，所有新系統開發應優先選用 ROS 2。該轉換確定了 Roy 的邊界多臂視覺伺服系統長期維護性與社群支援持續性，為樹莓派 5 邊界平台上的 ROS 2 深度整合奠定堅實基礎。[ROS 1 Noetic End-of-Life](https://wiki.ros.org/noetic)
+
 **ROS 1 Noetic 正式 EOL 與 ROS 2 完全接棒（2025 年 5 月）**：ROS 1 Noetic 於 2025 年 5 月正式終止生命週期（End-of-Life），所有新項目均應基於 ROS 2 進行開發。該里程碑標誌著十年 ROS 1 時代的正式結束與 ROS 2 全面產業化的確認。ROS 2 在五年內（2020-2025）從初期階段演進至完全生產就緒，覆蓋感知、規劃、控制、強化學習等全棧機械臂應用領域。特別適合 Roy 的新項目架構設計直接採納 ROS 2 標準，避免未來遺留技術債務，同時享受持續優化與社群支援。[ROS 2 Documentation Overview](https://docs.ros.org/)
