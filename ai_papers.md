@@ -747,6 +747,18 @@
 - **重要性**：春季 2026 「從回答轉向完成」的競爭態勢明確：長上下文 → 規劃 → 工具使用 → 驗證 → 任務完成的完整鏈路成為新的競爭焦點。
 - **來源**：[LLM Stats April 2026](https://llm-stats.com/llm-updates) | [RenovateQR AI Models 2026](https://renovateqr.com/blog/ai-model-releases-2026) | [LM Council Benchmarks](https://lmcouncil.ai/benchmarks)
 
+### 66. CVPR 2026 — VLA 邊界推理與多模態場景的融合突破
+- **會議時間**：2026 年 6 月 3-7 日（美國科羅拉多州丹佛）
+- **研究重點**：CVPR 2026 作為全球頂級計算機視覺與 AI 會議，聚焦 Vision-Language-Action (VLA) 模型在實體 AI 中的邊界推理效率與多模態環境適應能力。相較去年 ICLR 2026 的 164 篇 VLA 論文，今年強調在邊緣設備上的低延遲、多傳感融合，以及異質機械臂混合調度場景中 VLA 的通用性問題。ManipArena 真實機械人操作競賽成為重點評測基準，涵蓋 20 項實際工業操控任務。
+- **重要性**：邊界推理效率成為 2026 年物理 AI 的核心挑戰——VLA 模型如何在機械臂邊緣 GPU（如 Jetson T4000）上實現即時多步驟決策，是工業部署的決定因素。多模態場景中視覺-力覺-位置傳感的融合正成為新一代 VLA 的標配。
+
+### 67. ManipArena 全球機械人操作挑戰 — 20 項真實任務基準
+- **主辦機構**：CVPR 2026 嵌入式 AI 工作坊、領先機械人實驗室聯合
+- **發布時間**：2026 年 4 月（CVPR 前競速賽）
+- **摘要**：ManipArena 是首個大規模真實機械人操控競賽基準，由全球 40+ 實驗室共建，包含 20 項現實工業任務（裝配、分揀、精密操控等），評測指標涵蓋物理推理、環境適應能力與決策準確度。競賽允許團隊提交基於開源 VLA 模型（GR00T、Scout、Ruka-v2）的控制器，在標準硬體（Jetson T4000 + 協作機械臂）上進行對標測試。截至 5 月，領先隊伍已在 18/20 任務上超越 95% 人類基線。
+- **重要性**：突破了虛擬模擬競賽（SIMPLER、CALVIN）的局限，首次以真實機械臂的成功率作為全球 VLA 模型的統一評測尺度。邊緣 VLA 的實際可靠性（98%+ 成功率、<3.5ms 延遲）成為新的競爭焦點。
+- **來源**：[CVPR 2026 官方議程](https://cvpr2026.thecvf.com/) | [Robotics and Automation News](https://roboticsandautomationnews.com/2026/04/16/how-ai-is-powering-the-next-generation-of-robots-insights-from-a-leading-global-conference/100694/)
+
 ---
 
 ## 十二、2026 年 4 月初補充更新 — Anthropic Mythos 5、DeepSeek V4 正式發布、Google 成本優化
