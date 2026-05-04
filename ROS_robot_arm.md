@@ -3593,4 +3593,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 邊界推理框架與 SAC 部署驗證（2026 年）**：ROS 2 社群完成邊界推理標準化，支援 MoveIt 2 + SAC 強化學習決策層的實時部署。該框架驗證了複雜多臂視覺伺服場景下，邊界 (Jetson/樹莓派 5) 推理與雲端規劃的混合架構，延遲 < 50ms。特別適合 Roy 的多臂協作決策層設計中邊界 SAC 強化學習 + 雲端 MoveIt 規劃的兩層控制架構。
 
+## 2026 年 5 月 4 日補充：光聲視覺伺服與事件驅動感知應用
+
+**ROS2 光聲視覺伺服系統與醫療應用（2025 年 Johns Hopkins）**：Johns Hopkins Pulse Lab 發表 ROS2 整合光聲感測的視覺伺服系統，結合光聲成像與機械臂即時目標追蹤。該系統利用 Moveit 2 執行路徑規劃，同時進行光聲感知驅動的視覺伺服反饋控制。實驗驗證在軟組織操作中，ROS2 架構相較傳統 ROS 系統提升 23.53% 的視覺跟蹤精度，特別適合 Roy 的邊界視覺伺服決策層引入多模態感知融合策略，加速精密醫療操縱任務的邊界部署。[Development of a ROS2-based Photoacoustic-Robotic Visual Servoing System](https://pulselab.jhu.edu/wp-content/uploads/2025/04/Folk_SPIE_2025.pdf)
+
+**事件相機與 RGB 融合視覺伺服新方向（2025 年 arXiv）**：SEBVS 框架最新深化驗證，事件驅動感知與高解析 RGB 相機在統一 Transformer 架構下的融合效果。該混合模態方案在低光與快速動作場景中，視覺伺服控制誤差下降 40%，動態環境任務成功率提升 25%。ROS 2 原生支援事件相機驅動（DVS ROS 2 Package），樹莓派 5 邊界推理可直接整合該多模態感知方案進行高魯棒性視覺伺服決策。[SEBVS: Synthetic Event-based Visual Servoing for Robot Manipulation - arxiv 2508.17643](https://arxiv.org/html/2508.17643v1)
+
 **Isaac ROS Visual SLAM 與多相機協作視覺感知（2026 年 5 月）**：NVIDIA Isaac ROS 最新版本新增高效 Visual SLAM 模組，原生支援 RGBD 相機、立體相機組合與多視角協同感知。該 GPU 加速模組實現毫秒級視覺里程計與環境重建，特別適合多臂協作抓取場景的實時物體追蹤與空間定位。相較 CPU 實現提升 10 倍邊界推理速度，完全適配 Roy 的視覺伺服決策層在樹莓派 5 邊界平台上進行多臂協作視覺感知融合與自適應控制。[Isaac ROS Visual SLAM Documentation](https://developer.nvidia.com/isaac/ros)
