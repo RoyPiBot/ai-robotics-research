@@ -3626,3 +3626,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MoveIt Servo 即時速度指令視覺伺服控制（2026 年）**：MoveIt Servo 已成為 ROS 2 視覺伺服應用的標準選擇，支援實時 Cartesian 速度指令（TwistStamped）與關節速度指令（JointJog）的雙通道輸入。該機制允許外部視覺伺服控制器（如 PID 或強化學習決策層）直接流送速度命令至機械臂，毫秒級執行延遲，內建碰撞檢測與奇異點迴避。特別適合 Roy 的邊界視覺伺服決策層引入 SAC/PPO 強化學習策略，直接通過 MoveIt Servo 進行連續實時控制，無需軌跡預規劃，加速複雜非結構化環境下的自適應操縱。[MoveIt Servo Documentation](https://moveit.picknik.ai/)
 
 **ExecuteMTCSolution 雙控制器介面支援（2026 年 4 月）**：MoveIt Pro 新增 ExecuteMTCSolution Behavior 提供兩層控制器選擇模式：(1) 標準 ROS 2 FollowJointTrajectory 控制器（如 ros2_control JTC），適合傳統位置伺服機械臂；(2) 高級 Joint Trajectory Admittance Controller (JTAC)，支援力反饋與環境互動適應。該雙模式架構允許使用者根據硬體能力靈活選擇執行策略，無需修改上層規劃代碼，完全適配 Roy 的異質機械臂系統整合與邊界自適應控制架構。[MoveIt Pro 9.2.0 Release Notes](https://docs.picknik.ai/release-notes/2026/04/29/9.2.0/)
+
+## 2026 年 5 月 4 日補充：MoveIt Pro 9.0 性能躍升與遙操作擴展
+
+**MoveIt Pro 9.0 核心演算法重構與性能爆炸性提升（2026 年 3 月）**：MoveIt Pro 首次大版本更新 9.0 於 2026 年 3 月發布，完全重構核心運動規劃引擎，淘汰傳統 OMPL、MoveIt Servo、KDL 與 IKFast 演算法，引入新一代速度最優化規劃器。性能指標達成歷史性突破：逆向運動學 (IK) 求解速度提升 35 倍、運動規劃加速度 4 倍、笛卡爾軌跡規劃器加速 30 倍。該性能躍進特別適合 Roy 的邊界視覺伺服決策層在樹莓派 5 上進行實時多臂協調規劃與高頻率感知反饋迴圈（可達 100Hz+），加速複雜非結構化環境下的自適應操縱與多臂同步控制的邊界驗證。[MoveIt Pro Newsletter March 2026 - PickNik](https://picknik.ai/2026/03/12/Newsletter-March.html)
+
+**Meta Quest 混合實境遙操作與 MoveIt Pro 深度整合（2026 年 2 月）**：MoveIt Pro 9.0+ 原生支援 Meta Quest 控制器進行沉浸式多臂遙操作，支援單臂與雙臂機械臂系統的即時指令流送。該沉浸式介面結合碰撞感知規劃與許可度控制（admittance control），用戶可在虛實混合環境中直觀進行精密操縱任務（組裝、抓取等），無需編寫複雜的位置指令。相較傳統搖桿或鍵盤遙操作，VR 介面顯著降低操作複雜度與學習曲線，特別適合 Roy 的邊界視覺伺服決策層引入沉浸式人機互動模式，或作為複雜任務的人工演示數據收集工具，加速強化學習策略的初始化訓練。該方向驗證了 XR 技術與邊界操縱決策層的深度融合潛力。[MoveIt Pro 2026 Robotics Platform Overview - PickNik](https://picknik.ai/moveit/)
