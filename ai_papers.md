@@ -1,6 +1,6 @@
 # 2026 年最新 AI 研究動態
 
-> 更新日期：2026-05-01（第七十一次更新）
+> 更新日期：2026-05-04（第七十二次更新）
 > 整理者：Roy 的 AI 研究助理
 
 ---
@@ -182,8 +182,14 @@
 ### 21. NVIDIA Cosmos Reason 2 與 Isaac GR00T N1.6 — 物理 AI 視覺推理突破
 - **機構**：NVIDIA
 - **發布時間**：2026 年 4 月
-- **摘要**：NVIDIA 推出 Cosmos Reason 2（開源推理視覺語言模型）與 Isaac GR00T N1.6（針對類人機械手臂優化的視覺語言動作模型）。GR00T N1.6 實現完整身體控制，並利用 Cosmos Reason 獲得更優的推理與環境理解能力。結合視覺、語言與運動控制的 VLA 系統（如 Figure AI Helix、Google DeepMind RT-1）已成為業界標準。
+- **摘要**：NVIDIA 推出 Cosmos Reason 2（開源推理視覺語言模型）與 Isaac GR00T N1.6（針對類人機械手臂優化的視覺語言動作模型）。GR00T N1.6 實現完整身體控制，並利用 Cosmos Reason 獲得更優的推理與環境理解能力。NVIDIA Isaac GR00T 開放模型使機器人無需複雜控制機制，直接理解自然語言指令並執行多步驟複雜任務。結合視覺、語言與運動控制的 VLA 系統（如 Figure AI Helix、Google DeepMind RT-1）已成為業界標準。
 - **重要性**：VLA 模型採用率三倍增長，現佔所有新機器人部署的 40%；ICLR 2026 收到 164 篇 VLA 相關論文，標誌著視覺語言動作模型已成為具身 AI 的核心基礎設施。
+
+### 21.5. AGIBOT WORLD 2026 — 具身 AI 異構資料集與五大研究路徑
+- **機構**：AGIBOT（哈工大與商用化合作）
+- **發布時間**：2026 年 Q1-Q2（開源釋出）
+- **摘要**：AGIBOT 釋出 AGIBOT WORLD 2026 異構資料集，涵蓋五個關鍵具身 AI 研究路徑：運動智能（Locomotion Intelligence）、操縱智能（Manipulation Intelligence）與互動智能（Interactive Intelligence）。資料集採用高精度結構化標註與多源機器人數據融合，為具身 AI 基礎模型訓練提供標準化基準。AGIBOT 同步發布八個基礎 AI 模型，形成「一體、三智」架構，覆蓋機器人全功能鏈。
+- **重要性**：標準化資料集對具身 AI 研究加速具有關鍵作用，AGIBOT WORLD 2026 成為多臂協同與複雜操縱系統的重要訓練與評估資源。
 
 ### 22. 世界模型（World Models）在物理 AI 中的突破進展
 - **機構**：NVIDIA、Google DeepMind、多個學術機構
