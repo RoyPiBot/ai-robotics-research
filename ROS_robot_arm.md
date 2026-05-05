@@ -3668,3 +3668,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ros2_control Framework 多數據類型支援擴展（2026 年 Jazzy 版本）**：ROS 2 Jazzy 版本中，ros2_control 完成功能擴展，支援超越基本 double 類型的多種數據類型於控制器和硬體層之間。該升級使複雜機械臂系統的控制訊號傳遞更為靈活，包括陣列型感測器數據、結構化力感知回饋、視覺伺服指令等直接集成於硬體無關框架。該增強特別適合 Roy 的多臂視覺伺服邊界決策層進行多模態感知數據實時融合與控制迴圈統一，支援複雜接觸估計與力控制策略的深度部署。[ROS 2 Control: Rolling Mar 2026 documentation](https://control.ros.org/rolling/doc/resources/resources.html)
 
 **MoveIt 2 Planning Pipeline 新架構與多規劃器可組合性（2026 年）**：MoveIt 2 完成 Planning Pipeline 架構重構，引入全新的模塊化規劃器組合框架，使用戶能靈活串聯全局規劃器、局部微調規劃器與軌跡優化器。新架構支援運行時動態切換規劃策略，相較舊版固定流程提升 40% 平均規劃成功率與 30% 計算效率。該改進特別適合 Roy 的邊界推理系統針對不同環境複雜度（空曠空間 vs. 狹隘工作台）自適應選擇規劃算法，加速非結構化環境下的穩健操縱。[MoveIt 2 Planning Pipeline Refactoring](https://moveit.ai/planning%20pipeline/moveit2/motion%20planning/2024/03/25/MoveIt-Planning-Pipeline-Refactoring.html)
+
+## 2026 年 5 月 5 日補充：教育型開源機械臂與 ROS 2 Control 完整框架
+
+**G-ARM 開源教育型機械臂與 ROS 2 完整整合（2025 年 Springer Nature）**：Springer Nature 最新發表研究論文「G-ARM: An open-source and low-cost robotic arm integrated with ROS2 for educational purposes」，介紹完全開源的 3D 可列印教育型協作臂。G-ARM 整合 ROS 2 Humble、MoveIt 2 軌跡規劃與視覺伺服控制，成本低於商用臂 90%，特別適合高校與機器人愛好者快速搭建控制實驗平台。該方案驗證了樹莓派 5 + ROS 2 + MoveIt 2 棧在低成本自製臂系統中的可行性與穩定性，為 Roy 的邊界視覺伺服決策層提供量化對標參考。[G-ARM: An open-source and low-cost robotic arm integrated with ROS2 - Springer Nature](https://link.springer.com/article/10.1007/s11042-025-20748-8)
+
+**ROS 2 Control 6DOF 機械臂完整教程與 Gazebo 仿真框架（2026 年 Mar）**：ROS 2 Control 官方文檔發布「Example 7: Full tutorial with a 6DOF robot」完整教學，展示從 URDF 描述、硬體控制器設定、MoveIt 2 配置到 Gazebo 仿真的全流程工作。該教程直接指導多自由度機械臂的標準化開發流程，特別適合 Roy 進行多臂系統的 ROS 2 硬體無關化設計與模擬驗證，加速原型迭代週期。[ROS 2 Control Example 7: Full tutorial with a 6DOF robot](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
