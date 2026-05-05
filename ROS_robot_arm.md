@@ -3724,3 +3724,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 邊界 AI 檢查機器人實務場景驗證（2026 年 Embedded World）**：Edge Impulse 於 Embedded World 2026 發表完整 ROS 2 原生邊界 AI 檢查機械臂系統，展示實時視覺感知與分層決策架構在工業巡檢中的應用。該系統採用低精度快速感知與高精度精確診斷的自適應雙層策略，在邊界設備（樹莓派 5、Jetson Nano）上實現 <50ms 視覺伺服延遲。該架構特別適合 Roy 進行邊界視覺伺服決策層的分層檢測與動態任務切換，加速複雜環境下的自適應操縱與實時決策迴圈驗證。[A Look Inside my Edge AI Inspection Robot (ROS 2–Native) - Edge Impulse](https://www.edgeimpulse.com/blog/edge-ai-inspection-robot-ros-2-native/)
 
 **CNN 特徵融合視覺伺服與樹莓派實時部署（2026 年）**：最新研究展示 ResNet-18 CNN 模型在樹莓派 5 上的視覺伺服特徵提取與即時視覺回饋，採用興趣點圖譜與 RGB 影像早期融合方法，支援眼在手系統中的毫秒級控制延遲。該方案已驗證於協作機械臂的複雜非結構化環境，相容 ROS 2 Humble/Jazzy，為邊界視覺伺服決策層的深度學習特徵提取與多模態控制策略驗證奠定實踐基礎。[Hybrid Deep Learning Framework for Visual Control Systems - MDPI](https://www.mdpi.com/2218-6581/14/5/66)
+
+## 2026 年 5 月 6 日補充：ROS 2 Control 框架於 125+ 協作臂的邊界推理驗證
+
+**ROS 2 Control 擴展支援與協作臂生態統一（2026 年最新）**：ROS 2 官方發佈最新 Control Framework 資源頁面，整合 Franka Robotics、Kinova Kortex、Universal Robots、xArm、KUKA 等 125+ 協作臂型號的硬體驅動與邊界推理整合指南。該統一框架原生支援 ros2_control 架構下的多臂協同視覺伺服決策層與實時軌跡控制的深度融合，提供完整的感知-規劃-執行閉迴圈驗證方案，特別適合 Roy 進行樹莓派 5 邊界推理系統的多臂視覺伺服硬體無關化開發與跨平台部署驗證。該生態成熟度確認了 ROS 2 在工業邊界推理領域的標準地位。[ROS 2 Control: Supported Robots and Resources](https://control.ros.org/rolling/doc/supported_robots/supported_robots.html)
