@@ -3692,3 +3692,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Manipulation Basics 完整課程與工業應用驗證（2026 年 The Construct）**：The Construct 推出最新「ROS 2 Manipulation Basics」線上課程，涵蓋 MoveIt 2 運動規劃、Gazebo 仿真、6DOF 機械臂建模與視覺伺服整合的完整工作流。該課程已驗證 125+ 協作臂型號的 ROS 2 驅動相容性，特別適合 Roy 進行多臂視覺伺服系統的標準化開發流程學習與工業級應用驗證。[ROS 2 Manipulation Basics - The Construct](https://www.theconstruct.ai/robotigniteacademy_learnros/ros-courses-library/ros2-manipulation-basics/)
 
 **ROS 2 Manipulation 生態穩定性確認：MoveIt 2 官方支援機械臂完整列表（2026 年 5 月）**：ROS-Industrial Consortium 發布最新協作臂支援列表，確認 Kinova Kortex、OpenMANIPULATOR、Universal Robots、xArm、KUKA、ABB 等 125+ 機械臂型號均提供原生 MoveIt 2 驅動與 ROS 2 Control 整合。該統一生態提供完整的硬體無關運動規劃、實時軌跡控制與視覺伺服決策框架，為 Roy 的多臂系統實現工業級穩定性與跨平台可遷移性奠定堅實基礎。[Supported Robots - ROS2_Control 2026](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+
+## 2026 年 5 月 5 日補充：邊界 AI 檢查機器人與工業場景驗證
+
+**邊界 AI 檢查機器人在 Embedded World 2026 實務展示**：Edge Impulse 於 Embedded World 2026 發表 ROS 2 原生邊界 AI 檢查機器人實現，展示實時設備檢測與雙層模型評分架構。該系統在移動巡檢時快速掃描潛在風險區域，僅停留於異常處進行高解析度深層檢測，實現從低精度快速感知到高精度精確診斷的自適應決策。該方案特別適合 Roy 的邊界視覺伺服決策層引入分層檢測與動態任務切換機制，加速複雜非結構化環境下的自適應操縱與實時決策迴圈。[A Look Inside my Edge AI Inspection Robot (ROS 2–Native) - Edge Impulse](https://www.edgeimpulse.com/blog/edge-ai-inspection-robot-ros-2-native/)
+
+**ROSOrin Pro 高性能邊界 AI 計算平台與 ROS 2 整合（2026 年）**：HiWonder 推出 ROSOrin Pro 高性能邊界平台，原生支援 NVIDIA Jetson Orin Nano 與樹莓派 5，內建 LLM 推理引擎與邊界視覺決策加速。該平台整合 6-DOF 機械臂與 AI 語音模組，支援自然語言驅動複雜操縱任務，實時延遲 <50ms，特別適合 Roy 的多臂視覺伺服決策層升級至邊界 LLM 整合架構，實現從純視覺伺服到多模態自然語言理解的完整升級。該方案已驗證於 ROS 2 Humble/Jazzy 環境中的穩定運行。[Embodied AI on ROS 2: The OpenClaw & ROSOrin Pro Guide - Hackster.io](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
