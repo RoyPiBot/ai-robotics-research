@@ -3704,3 +3704,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MARA 模組化機械臂：完全分散式 ROS 2.0 控制新典範（2026 年生態成熟）**：Acutronic Robotics 開發的 MARA（模組化關節機械臂）架構已達成完全產業化，每個臂段、末端執行器與感測器模組均搭載獨立的 H-ROS SoM 運行完整 ROS 2.0。該真正分散式設計消除集中式控制瓶頸，每個模組可自主決策與執行，支援熱插拔擴展與故障隔離。MARA 架構特別適合 Roy 進行多臂協作視覺伺服系統的邊界推理分散化設計，每個機械臂或末端執行器獨立運行視覺伺服決策與力控制策略，通過 Zenoh 進行高效協調，實現真正的邊界自主與全域協作的完美融合。[MARA Robotic Arm - Acutronic Robotics](https://www.acutronic-robotics.com/)
 
 **ROSOrin Pro 高性能邊界 AI 計算平台與 ROS 2 整合（2026 年）**：HiWonder 推出 ROSOrin Pro 高性能邊界平台，原生支援 NVIDIA Jetson Orin Nano 與樹莓派 5，內建 LLM 推理引擎與邊界視覺決策加速。該平台整合 6-DOF 機械臂與 AI 語音模組，支援自然語言驅動複雜操縱任務，實時延遲 <50ms，特別適合 Roy 的多臂視覺伺服決策層升級至邊界 LLM 整合架構，實現從純視覺伺服到多模態自然語言理解的完整升級。該方案已驗證於 ROS 2 Humble/Jazzy 環境中的穩定運行。[Embodied AI on ROS 2: The OpenClaw & ROSOrin Pro Guide - Hackster.io](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
+
+## 2026 年 5 月 6 日補充：ROS 2 強化學習整合與視覺伺服控制新進展
+
+**CRISP：統一 ROS 2 強化學習操控管道（2025 年 TUM）**：Technical University of Munich 發表 CRISP 框架，整合數據收集、政策訓練與硬體部署於統一 ROS 2 管道。該系統支援 Franka Robotics FR3、Kuka IIWA14 與 Kinova Gen3，具備硬體無關特性與實時部署能力。CRISP 已驗證於複雜操作任務（物體堆積、插入），特別適合 Roy 的樹莓派 5 邊界系統進行快速強化學習政策原型設計與多臂硬體驗證。[CRISP - Compliant ROS2 Controllers for Learning-Based Manipulation](https://arxiv.org/html/2509.06819v1)
+
+**數位孿生 + SAC 強化學習 + ROS 2 工業機械臂控制（2025 年）**：新研究整合 Soft Actor-Critic 強化學習、數位孿生模擬與 ROS 2 實時控制，應用於工業機械臂自適應製造。該系統實現 20ms 關節同步精度，學習曲線相較傳統方法加速 50%，已驗證於工業場景動態環境適應。該方法特別適合 Roy 的邊界視覺伺服決策層引入強化學習自適應機制，實現複雜非結構化環境下的魯棒操縱與實時控制策略更新。[Digital twin-enabled real-time control for robot arm-based manufacturing via reinforcement learning](https://link.springer.com/article/10.1007/s10845-025-02728-9)
+
+**具身 AI 視覺伺服系統：多模態感知與邊界推理融合（2026 年）**：2026 年機械臂視覺伺服系統普遍集成 4D LiDAR、RGB-D 與魚眼相機多感測器套件，支援精確路徑規劃與動態障礙物規避。同時灵巧機械手與視覺語言模型深度耦合，支援自然語言驅動精細操作、力感知與高自由度協調控制。該融合方案代表具身 AI 產業落地轉向實務應用驗證階段，特別適合 Roy 進行邊界視覺伺服決策層升級至多模態感知與 VLM 推理的完整架構設計。[Embodied AI Industry Report 2026](https://www.cbndata.com/information/295151)
