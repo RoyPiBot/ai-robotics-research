@@ -3673,4 +3673,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **G-ARM 開源教育型機械臂與 ROS 2 完整整合（2025 年 Springer Nature）**：Springer Nature 最新發表研究論文「G-ARM: An open-source and low-cost robotic arm integrated with ROS2 for educational purposes」，介紹完全開源的 3D 可列印教育型協作臂。G-ARM 整合 ROS 2 Humble、MoveIt 2 軌跡規劃與視覺伺服控制，成本低於商用臂 90%，特別適合高校與機器人愛好者快速搭建控制實驗平台。該方案驗證了樹莓派 5 + ROS 2 + MoveIt 2 棧在低成本自製臂系統中的可行性與穩定性，為 Roy 的邊界視覺伺服決策層提供量化對標參考。[G-ARM: An open-source and low-cost robotic arm integrated with ROS2 - Springer Nature](https://link.springer.com/article/10.1007/s11042-025-20748-8)
 
+## 2026 年 5 月 5 日補充：具身 AI 開源機械臂與邊界推理深度整合
+
+**reBot Arm B601-DM 開源 6+1 DoF 機械臂與具身 AI 遙操作（2026 年 4 月）**：SunFounder 發布開源 6+1 自由度機械臂 reBot Arm B601-DM，特別針對具身 AI 與遙操作應用設計。該機械臂支援完整 ROS 2 框架，內建反向馬達設計、高精度 IMU 回饋與低延遲控制迴圈（100+ Hz），特別適合邊界視覺伺服與強化學習策略部署。reBot B601-DM 已驗證與樹莓派 5、Jetson 邊界平台的深度整合，成本略低於 G-ARM，提供專業級遙操作與具身 AI 數據收集能力，為 Roy 的多臂協作視覺伺服系統提供硬體參考方案。[reBot Arm B601-DM Documentation](https://www.cnx-software.com/2026/04/17/rebot-arm-b601-dm-an-open-source-61-dof-robotic-arm-for-embodied-ai-and-teleoperation-applications/)
+
+**Brain-Inspired 神經可塑性適應控制在軟機械臂應用突破（2026 年 MIT）**：MIT SMART 團隊發表研究「A general soft robotic controller inspired by neuronal structural and plastic synapses that adapts to diverse arms, tasks, and perturbations」，揭示生物神經可塑性原理在軟機械臂自適應控制的應用。該控制器支援一次訓練、多機械臂快速適應，無需重新訓練，學習速度相較傳統強化學習加速 10 倍以上。該神經啟發式方法特別適合 Roy 的邊界視覺伺服決策層引入生物靈感自適應機制，實現複雜非結構化環境下的魯棒操縱與快速任務遷移。[Brain-inspired AI helps soft robot arms - MIT News](https://news.mit.edu/2026/neural-blueprint-human-intelligence-in-soft-robots-0219)
+
 **ROS 2 Control 6DOF 機械臂完整教程與 Gazebo 仿真框架（2026 年 Mar）**：ROS 2 Control 官方文檔發布「Example 7: Full tutorial with a 6DOF robot」完整教學，展示從 URDF 描述、硬體控制器設定、MoveIt 2 配置到 Gazebo 仿真的全流程工作。該教程直接指導多自由度機械臂的標準化開發流程，特別適合 Roy 進行多臂系統的 ROS 2 硬體無關化設計與模擬驗證，加速原型迭代週期。[ROS 2 Control Example 7: Full tutorial with a 6DOF robot](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
