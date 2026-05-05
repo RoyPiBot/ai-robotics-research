@@ -3711,4 +3711,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **數位孿生 + SAC 強化學習 + ROS 2 工業機械臂控制（2025 年）**：新研究整合 Soft Actor-Critic 強化學習、數位孿生模擬與 ROS 2 實時控制，應用於工業機械臂自適應製造。該系統實現 20ms 關節同步精度，學習曲線相較傳統方法加速 50%，已驗證於工業場景動態環境適應。該方法特別適合 Roy 的邊界視覺伺服決策層引入強化學習自適應機制，實現複雜非結構化環境下的魯棒操縱與實時控制策略更新。[Digital twin-enabled real-time control for robot arm-based manufacturing via reinforcement learning](https://link.springer.com/article/10.1007/s10845-025-02728-9)
 
+## 2026 年 5 月 6 日補充：多模態視覺伺服與深度學習協作操縱進展
+
+**混合深度學習視覺伺服框架與眼在手系統（2025-2026 年）**：最新研究提出混合深度學習框架，採用 ResNet-18 早期融合（Early Fusion）方法，將興趣點圖譜與 RGB 影像在網路首層融合，大幅改善視覺伺服系統的收斂精度與速度平滑性。該方案特別針對協作機械臂的眼在手（Eye-in-Hand）配置優化，支援 ROS 2 原生整合與即時視覺反饋迴圈，實現毫秒級控制延遲。該框架已驗證於複雜非結構化環境，特別適合 Roy 的多臂視覺伺服決策層進行深度感知融合與多模態控制策略驗證。[Hybrid Deep Learning Framework for Eye-in-Hand Visual Control Systems - MDPI](https://www.mdpi.com/2218-6581/14/5/66)
+
+**點雲基礎視覺伺服與自適應運動規劃（2026 年）**：新型 PBVS（Point-Based Visual Servoing）方法整合 YOLO v8x 物體檢測與點雲 3D 姿態估計，實現動態工作空間中的 6-DOF 自主視覺伺服操縱。該系統從攝像頭影像座標自動變換至機械臂基座坐標，搭配自適應軌跡規劃引擎，支援動態障礙避免與複雜環境中的精密操作任務。該方案已驗證於協作機械臂平台，相容 ROS 2 原生運動規劃與實時伺服控制架構，特別適合 Roy 進行邊界視覺決策層的即時物體檢測與姿態相關運動規劃的端到端整合驗證。[Point-Based Visual Servoing for Autonomous Object Handling - Mechanics Based Design of Structures and Machines Vol 54](https://www.tandfonline.com/doi/full/10.1080/15397734.2026.2636936)
+
 **具身 AI 視覺伺服系統：多模態感知與邊界推理融合（2026 年）**：2026 年機械臂視覺伺服系統普遍集成 4D LiDAR、RGB-D 與魚眼相機多感測器套件，支援精確路徑規劃與動態障礙物規避。同時灵巧機械手與視覺語言模型深度耦合，支援自然語言驅動精細操作、力感知與高自由度協調控制。該融合方案代表具身 AI 產業落地轉向實務應用驗證階段，特別適合 Roy 進行邊界視覺伺服決策層升級至多模態感知與 VLM 推理的完整架構設計。[Embodied AI Industry Report 2026](https://www.cbndata.com/information/295151)
