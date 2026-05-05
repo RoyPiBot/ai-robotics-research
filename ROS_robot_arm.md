@@ -3656,3 +3656,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 1 官方生命週期終止確認（2025 年 5 月）**：ROS Noetic 於 2025 年 5 月達成官方 EOL，標誌 ROS 1 時代的正式結束。該里程碑驗證 ROS 2 在過去三年內的產業級成熟度與生態完善，所有新系統開發應優先選用 ROS 2。該轉換確定了 Roy 的邊界多臂視覺伺服系統長期維護性與社群支援持續性，為樹莓派 5 邊界平台上的 ROS 2 深度整合奠定堅實基礎。[ROS 1 Noetic End-of-Life](https://wiki.ros.org/noetic)
 
 **ROS 1 Noetic 正式 EOL 與 ROS 2 完全接棒（2025 年 5 月）**：ROS 1 Noetic 於 2025 年 5 月正式終止生命週期（End-of-Life），所有新項目均應基於 ROS 2 進行開發。該里程碑標誌著十年 ROS 1 時代的正式結束與 ROS 2 全面產業化的確認。ROS 2 在五年內（2020-2025）從初期階段演進至完全生產就緒，覆蓋感知、規劃、控制、強化學習等全棧機械臂應用領域。特別適合 Roy 的新項目架構設計直接採納 ROS 2 標準，避免未來遺留技術債務，同時享受持續優化與社群支援。[ROS 2 Documentation Overview](https://docs.ros.org/)
+
+## 2026 年 5 月 5 日補充：MoveIt Python ROS2 工業化性能突破與邊界應用
+
+**MoveIt 2 Python API 性能爆發與 2025 年邊界部署驗證（2025-2026）**：MoveIt 2 Python API 於 2025 年完成全面性能優化，相較 ROS 1 Legacy API 運動規劃速度提升 2-3 倍，特別適合邊界設備（樹莓派 5、Jetson Nano）上的實時視覺伺服決策迴圈。工業應用驗證顯示 ARM 邊界裝置上執行 MoveIt Python 規劃可達成 65% 計算週期加速，支援毫秒級低延遲操縱。該突破使 Roy 的樹莓派 5 邊界系統能以 Python 快速迭代開發複雜視覺伺服算法，同時維持工業級實時性能保證，完美支援邊界強化學習決策層與標準化硬體驅動的深度融合。[MoveIt Python ROS2: Motion Planning Manipulation Robots 2025](https://johal.in/moveit-python-ros2-motion-planning-manipulation-robots-2025/)
+
+**MoveIt Pro ROSCon 2025 工作坊與實務應用驗證**：PickNik Robotics 於 ROSCon 2025 舉辦完整的「Hands-On Workshop with ROS 2 and MoveIt Pro」，涵蓋實務開發工作流包括新機械臂配置、行為樹設計、視覺伺服整合與行動觸發機制。該工作坊展示 MoveIt Pro 在工業場景中的快速部署能力，直接降低複雜多臂系統開發門檻，特別適合 Roy 進行邊界視覺伺服決策層原型快速驗證與硬體無關化架構設計實踐。[ROSCon 2025 MoveIt Pro Workshop - PickNik](https://picknik.ai/roscon/workshop/2025/moveit/2025/10/06/Hands-On-Workshop-with-ROS-2-and-MoveIt-Pro-at-ROSCon-2025.html)
