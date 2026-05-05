@@ -3680,3 +3680,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Brain-Inspired 神經可塑性適應控制在軟機械臂應用突破（2026 年 MIT）**：MIT SMART 團隊發表研究「A general soft robotic controller inspired by neuronal structural and plastic synapses that adapts to diverse arms, tasks, and perturbations」，揭示生物神經可塑性原理在軟機械臂自適應控制的應用。該控制器支援一次訓練、多機械臂快速適應，無需重新訓練，學習速度相較傳統強化學習加速 10 倍以上。該神經啟發式方法特別適合 Roy 的邊界視覺伺服決策層引入生物靈感自適應機制，實現複雜非結構化環境下的魯棒操縱與快速任務遷移。[Brain-inspired AI helps soft robot arms - MIT News](https://news.mit.edu/2026/neural-blueprint-human-intelligence-in-soft-robots-0219)
 
 **ROS 2 Control 6DOF 機械臂完整教程與 Gazebo 仿真框架（2026 年 Mar）**：ROS 2 Control 官方文檔發布「Example 7: Full tutorial with a 6DOF robot」完整教學，展示從 URDF 描述、硬體控制器設定、MoveIt 2 配置到 Gazebo 仿真的全流程工作。該教程直接指導多自由度機械臂的標準化開發流程，特別適合 Roy 進行多臂系統的 ROS 2 硬體無關化設計與模擬驗證，加速原型迭代週期。[ROS 2 Control Example 7: Full tutorial with a 6DOF robot](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
+## 2026 年 5 月 5 日補充：Meta-ROS 與下一代中間件架構
+
+**Meta-ROS：新一代 ROS 適應性中間件架構（2026 年 arXiv）**：新發表的 Meta-ROS 架構整合 Zenoh 與 ZeroMQ 現代通信協議，實現多機械臂系統中的高效分散式數據處理。Meta-ROS 相比標準 ROS 2 實現 30% 吞吐量提升、顯著降低訊息延遲，並原生支援音頻、圖像、視頻等多樣數據類型。該架構特別適合 Roy 的多臂視覺伺服系統中進行邊界推理與中央規劃間的高頻度低延遲通信，加速複雜非結構化環境下的分散式決策與全域協調。[Meta-ROS: A Next-Generation Middleware Architecture for Adaptive and Scalable Robotic Systems - arXiv 2601.21011v1](https://arxiv.org/abs/2601.21011)
+
+**ROS 2 事件驅動視覺伺服框架 SEBVS 與 Gazebo 原生支援（2025 年）**：ROS 2 社群開源的 SEBVS 框架提供完整的事件相機感知管線，原生支援 Gazebo 仿真環境中的 RGB-to-event 流生成。該框架採用輕量級 Transformer 融合事件流與幀資訊，在低光與高動態場景中視覺伺服控制誤差下降 40%，任務成功率提升 25%。框架已驗證於 ROS 2 Humble/Jazzy，樹莓派 5 邊界設備可直接整合進行事件驅動視覺伺服決策層的實時部署。[SEBVS: Synthetic Event-based Visual Servoing for Robot Navigation and Manipulation - arXiv 2508.17643](https://arxiv.org/abs/2508.17643)
