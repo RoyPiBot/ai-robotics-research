@@ -3697,4 +3697,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **邊界 AI 檢查機器人在 Embedded World 2026 實務展示**：Edge Impulse 於 Embedded World 2026 發表 ROS 2 原生邊界 AI 檢查機器人實現，展示實時設備檢測與雙層模型評分架構。該系統在移動巡檢時快速掃描潛在風險區域，僅停留於異常處進行高解析度深層檢測，實現從低精度快速感知到高精度精確診斷的自適應決策。該方案特別適合 Roy 的邊界視覺伺服決策層引入分層檢測與動態任務切換機制，加速複雜非結構化環境下的自適應操縱與實時決策迴圈。[A Look Inside my Edge AI Inspection Robot (ROS 2–Native) - Edge Impulse](https://www.edgeimpulse.com/blog/edge-ai-inspection-robot-ros-2-native/)
 
+## 2026 年 5 月 5 日補充：ROS 2 Kilted Kaiju 新型中間件與模組化機械臂架構
+
+**ROS 2 Kilted Kaiju 版本：Zenoh 作為 Tier 1 RMW 與改進的 RCLPy 事件執行器（2026 年）**：ROS 2 社群發布 Kilted Kaiju 版本，正式確立 Zenoh 作為一級（Tier 1）遠端中間件（RMW），完全取代傳統 DDS 作為高效分散式通信基礎。該版本同時引入全新的 Python RCL（RCLPy）事件執行器架構，相較舊版提升事件驅動性能 30-40%，特別適合邊界機械臂系統中的毫秒級視覺伺服控制迴圈與多機協作決策層。Zenoh 通信模式支援多對多發佈-訂閱與服務模式，大幅簡化複雜多臂協同架構的中間件配置，為 Roy 的樹莓派 5 邊界平台上的分散式視覺伺服決策提供現代化基礎設施。[ROS 2 Kilted Kaiju Release Notes](https://docs.ros.org/en/latest/Releases/Release-Kilted-Kaiju.html)
+
+**MARA 模組化機械臂：完全分散式 ROS 2.0 控制新典範（2026 年生態成熟）**：Acutronic Robotics 開發的 MARA（模組化關節機械臂）架構已達成完全產業化，每個臂段、末端執行器與感測器模組均搭載獨立的 H-ROS SoM 運行完整 ROS 2.0。該真正分散式設計消除集中式控制瓶頸，每個模組可自主決策與執行，支援熱插拔擴展與故障隔離。MARA 架構特別適合 Roy 進行多臂協作視覺伺服系統的邊界推理分散化設計，每個機械臂或末端執行器獨立運行視覺伺服決策與力控制策略，通過 Zenoh 進行高效協調，實現真正的邊界自主與全域協作的完美融合。[MARA Robotic Arm - Acutronic Robotics](https://www.acutronic-robotics.com/)
+
 **ROSOrin Pro 高性能邊界 AI 計算平台與 ROS 2 整合（2026 年）**：HiWonder 推出 ROSOrin Pro 高性能邊界平台，原生支援 NVIDIA Jetson Orin Nano 與樹莓派 5，內建 LLM 推理引擎與邊界視覺決策加速。該平台整合 6-DOF 機械臂與 AI 語音模組，支援自然語言驅動複雜操縱任務，實時延遲 <50ms，特別適合 Roy 的多臂視覺伺服決策層升級至邊界 LLM 整合架構，實現從純視覺伺服到多模態自然語言理解的完整升級。該方案已驗證於 ROS 2 Humble/Jazzy 環境中的穩定運行。[Embodied AI on ROS 2: The OpenClaw & ROSOrin Pro Guide - Hackster.io](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
