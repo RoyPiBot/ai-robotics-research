@@ -3718,3 +3718,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **點雲基礎視覺伺服與自適應運動規劃（2026 年）**：新型 PBVS（Point-Based Visual Servoing）方法整合 YOLO v8x 物體檢測與點雲 3D 姿態估計，實現動態工作空間中的 6-DOF 自主視覺伺服操縱。該系統從攝像頭影像座標自動變換至機械臂基座坐標，搭配自適應軌跡規劃引擎，支援動態障礙避免與複雜環境中的精密操作任務。該方案已驗證於協作機械臂平台，相容 ROS 2 原生運動規劃與實時伺服控制架構，特別適合 Roy 進行邊界視覺決策層的即時物體檢測與姿態相關運動規劃的端到端整合驗證。[Point-Based Visual Servoing for Autonomous Object Handling - Mechanics Based Design of Structures and Machines Vol 54](https://www.tandfonline.com/doi/full/10.1080/15397734.2026.2636936)
 
 **具身 AI 視覺伺服系統：多模態感知與邊界推理融合（2026 年）**：2026 年機械臂視覺伺服系統普遍集成 4D LiDAR、RGB-D 與魚眼相機多感測器套件，支援精確路徑規劃與動態障礙物規避。同時灵巧機械手與視覺語言模型深度耦合，支援自然語言驅動精細操作、力感知與高自由度協調控制。該融合方案代表具身 AI 產業落地轉向實務應用驗證階段，特別適合 Roy 進行邊界視覺伺服決策層升級至多模態感知與 VLM 推理的完整架構設計。[Embodied AI Industry Report 2026](https://www.cbndata.com/information/295151)
+
+## 2026 年 5 月 6 日補充：邊界推理與深度強化學習視覺伺服驗證進展
+
+**ROS 2 邊界 AI 檢查機器人實務場景驗證（2026 年 Embedded World）**：Edge Impulse 於 Embedded World 2026 發表完整 ROS 2 原生邊界 AI 檢查機械臂系統，展示實時視覺感知與分層決策架構在工業巡檢中的應用。該系統採用低精度快速感知與高精度精確診斷的自適應雙層策略，在邊界設備（樹莓派 5、Jetson Nano）上實現 <50ms 視覺伺服延遲。該架構特別適合 Roy 進行邊界視覺伺服決策層的分層檢測與動態任務切換，加速複雜環境下的自適應操縱與實時決策迴圈驗證。[A Look Inside my Edge AI Inspection Robot (ROS 2–Native) - Edge Impulse](https://www.edgeimpulse.com/blog/edge-ai-inspection-robot-ros-2-native/)
+
+**CNN 特徵融合視覺伺服與樹莓派實時部署（2026 年）**：最新研究展示 ResNet-18 CNN 模型在樹莓派 5 上的視覺伺服特徵提取與即時視覺回饋，採用興趣點圖譜與 RGB 影像早期融合方法，支援眼在手系統中的毫秒級控制延遲。該方案已驗證於協作機械臂的複雜非結構化環境，相容 ROS 2 Humble/Jazzy，為邊界視覺伺服決策層的深度學習特徵提取與多模態控制策略驗證奠定實踐基礎。[Hybrid Deep Learning Framework for Visual Control Systems - MDPI](https://www.mdpi.com/2218-6581/14/5/66)
