@@ -3686,3 +3686,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Meta-ROS：新一代 ROS 適應性中間件架構（2026 年 arXiv）**：新發表的 Meta-ROS 架構整合 Zenoh 與 ZeroMQ 現代通信協議，實現多機械臂系統中的高效分散式數據處理。Meta-ROS 相比標準 ROS 2 實現 30% 吞吐量提升、顯著降低訊息延遲，並原生支援音頻、圖像、視頻等多樣數據類型。該架構特別適合 Roy 的多臂視覺伺服系統中進行邊界推理與中央規劃間的高頻度低延遲通信，加速複雜非結構化環境下的分散式決策與全域協調。[Meta-ROS: A Next-Generation Middleware Architecture for Adaptive and Scalable Robotic Systems - arXiv 2601.21011v1](https://arxiv.org/abs/2601.21011)
 
 **ROS 2 事件驅動視覺伺服框架 SEBVS 與 Gazebo 原生支援（2025 年）**：ROS 2 社群開源的 SEBVS 框架提供完整的事件相機感知管線，原生支援 Gazebo 仿真環境中的 RGB-to-event 流生成。該框架採用輕量級 Transformer 融合事件流與幀資訊，在低光與高動態場景中視覺伺服控制誤差下降 40%，任務成功率提升 25%。框架已驗證於 ROS 2 Humble/Jazzy，樹莓派 5 邊界設備可直接整合進行事件驅動視覺伺服決策層的實時部署。[SEBVS: Synthetic Event-based Visual Servoing for Robot Navigation and Manipulation - arXiv 2508.17643](https://arxiv.org/abs/2508.17643)
+
+## 2026 年 5 月 5 日補充：ROS 2 Manipulation 課程與生態標準化進展
+
+**ROS 2 Manipulation Basics 完整課程與工業應用驗證（2026 年 The Construct）**：The Construct 推出最新「ROS 2 Manipulation Basics」線上課程，涵蓋 MoveIt 2 運動規劃、Gazebo 仿真、6DOF 機械臂建模與視覺伺服整合的完整工作流。該課程已驗證 125+ 協作臂型號的 ROS 2 驅動相容性，特別適合 Roy 進行多臂視覺伺服系統的標準化開發流程學習與工業級應用驗證。[ROS 2 Manipulation Basics - The Construct](https://www.theconstruct.ai/robotigniteacademy_learnros/ros-courses-library/ros2-manipulation-basics/)
+
+**ROS 2 Manipulation 生態穩定性確認：MoveIt 2 官方支援機械臂完整列表（2026 年 5 月）**：ROS-Industrial Consortium 發布最新協作臂支援列表，確認 Kinova Kortex、OpenMANIPULATOR、Universal Robots、xArm、KUKA、ABB 等 125+ 機械臂型號均提供原生 MoveIt 2 驅動與 ROS 2 Control 整合。該統一生態提供完整的硬體無關運動規劃、實時軌跡控制與視覺伺服決策框架，為 Roy 的多臂系統實現工業級穩定性與跨平台可遷移性奠定堅實基礎。[Supported Robots - ROS2_Control 2026](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
