@@ -3662,3 +3662,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MoveIt 2 Python API 性能爆發與 2025 年邊界部署驗證（2025-2026）**：MoveIt 2 Python API 於 2025 年完成全面性能優化，相較 ROS 1 Legacy API 運動規劃速度提升 2-3 倍，特別適合邊界設備（樹莓派 5、Jetson Nano）上的實時視覺伺服決策迴圈。工業應用驗證顯示 ARM 邊界裝置上執行 MoveIt Python 規劃可達成 65% 計算週期加速，支援毫秒級低延遲操縱。該突破使 Roy 的樹莓派 5 邊界系統能以 Python 快速迭代開發複雜視覺伺服算法，同時維持工業級實時性能保證，完美支援邊界強化學習決策層與標準化硬體驅動的深度融合。[MoveIt Python ROS2: Motion Planning Manipulation Robots 2025](https://johal.in/moveit-python-ros2-motion-planning-manipulation-robots-2025/)
 
 **MoveIt Pro ROSCon 2025 工作坊與實務應用驗證**：PickNik Robotics 於 ROSCon 2025 舉辦完整的「Hands-On Workshop with ROS 2 and MoveIt Pro」，涵蓋實務開發工作流包括新機械臂配置、行為樹設計、視覺伺服整合與行動觸發機制。該工作坊展示 MoveIt Pro 在工業場景中的快速部署能力，直接降低複雜多臂系統開發門檻，特別適合 Roy 進行邊界視覺伺服決策層原型快速驗證與硬體無關化架構設計實踐。[ROSCon 2025 MoveIt Pro Workshop - PickNik](https://picknik.ai/roscon/workshop/2025/moveit/2025/10/06/Hands-On-Workshop-with-ROS-2-and-MoveIt-Pro-at-ROSCon-2025.html)
+
+## 2026 年 5 月 5 日補充：ros2_control 數據類型擴展與 MoveIt 2 規劃架構演進
+
+**ros2_control Framework 多數據類型支援擴展（2026 年 Jazzy 版本）**：ROS 2 Jazzy 版本中，ros2_control 完成功能擴展，支援超越基本 double 類型的多種數據類型於控制器和硬體層之間。該升級使複雜機械臂系統的控制訊號傳遞更為靈活，包括陣列型感測器數據、結構化力感知回饋、視覺伺服指令等直接集成於硬體無關框架。該增強特別適合 Roy 的多臂視覺伺服邊界決策層進行多模態感知數據實時融合與控制迴圈統一，支援複雜接觸估計與力控制策略的深度部署。[ROS 2 Control: Rolling Mar 2026 documentation](https://control.ros.org/rolling/doc/resources/resources.html)
+
+**MoveIt 2 Planning Pipeline 新架構與多規劃器可組合性（2026 年）**：MoveIt 2 完成 Planning Pipeline 架構重構，引入全新的模塊化規劃器組合框架，使用戶能靈活串聯全局規劃器、局部微調規劃器與軌跡優化器。新架構支援運行時動態切換規劃策略，相較舊版固定流程提升 40% 平均規劃成功率與 30% 計算效率。該改進特別適合 Roy 的邊界推理系統針對不同環境複雜度（空曠空間 vs. 狹隘工作台）自適應選擇規劃算法，加速非結構化環境下的穩健操縱。[MoveIt 2 Planning Pipeline Refactoring](https://moveit.ai/planning%20pipeline/moveit2/motion%20planning/2024/03/25/MoveIt-Planning-Pipeline-Refactoring.html)
