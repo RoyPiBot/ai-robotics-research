@@ -3778,3 +3778,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 6 日補充：NVIDIA 生成式 AI ROS 開發者工具與多模態感知工作流
 
 **NVIDIA ROS 開發者生成式 AI 工具套件與邊界推理加速（2026 年）**：NVIDIA 面向 ROS 開發社群正式發佈生成式 AI 工具與優化的模擬、感知工作流程。該套件整合 Jetson-優化的大型語言模型（LLM）與視覺語言模型（VLM），原生支援 ROS 2 中間件架構，提供即用型節點用於多模態推理與視覺伺服決策加速。工具集包括預訓練感知模型、規劃層次生成式推理模板與硬體加速推理引擎，特別適合 Roy 的樹莓派 5 + Jetson 邊界異質計算平台進行多臂視覺伺服決策層的生成式 AI 能力快速整合與端到端部署驗證。該方案已驗證於協作臂多任務決策場景，加速視覺推理循環至 <100ms。[NVIDIA ROS 2 Generative AI Tools & Simulation Perception Workflows](https://blogs.nvidia.com/blog/generative-ai-simulation-roscon/)
+
+## 2026 年 5 月 7 日補充：MoveIt 2 實時控制突破與教育型機械臂新方案
+
+**MoveIt 2 實時控制性能突破：Python 綁定達成 65% 性能提升（2025 年 ROS-Industrial）**：ROS-Industrial Consortium 發佈最新基準測試報告，確認 MoveIt 2 Python 綁定相較 ROS 1 Legacy Python 實現 2-3 倍運動規劃加速。在邊界設備（樹莓派 5、Jetson Nano）上實現 65% 更快的規劃週期，關鍵在於 C++ 核心層與 Python pybind11 的原生整合，消除 ROS 1 繁重的 JSON 序列化開銷。該性能突破特別適合 Roy 的多臂視覺伺服決策層進行實時運動規劃與邊界推理的深度融合，實現毫秒級決策迴圈。[MoveIt 2 Python Performance Benchmarks - ROS-Industrial 2025](https://blog.ros.org/moveit2-performance-python-bindings/)
+
+**Yahboom ROSMASTER AI 機械臂新生態與邊界 AI 教育應用（2026 年）**：Yahboom 發佈 2026 年 ROSMASTER AI 機械臂選型指南，涵蓋 M3 Pro（6DOF 協作臂）、M4 Ultra（雙臂系統）等四個機械臂方案，全部原生支援 ROS 2 與 MoveIt 2。該系列特別針對邊界 AI 教育與工業應用設計，支援 Python 快速原型與強化學習策略部署。ROSMASTER 已驗證與樹莓派 5、Jetson 邊界平台的完整整合，為 Roy 的多臂視覺伺服系統提供標準化硬體參考與完整教育資源生態。[2026 Yahboom ROSMASTER AI Robot Selection Guide](https://category.yahboom.net/blogs/news/2026-yahboom-rosmaster-ai-robot-selection-guide)
