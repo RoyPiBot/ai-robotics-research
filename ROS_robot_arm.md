@@ -3597,6 +3597,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS2 光聲視覺伺服系統與醫療應用（2025 年 Johns Hopkins）**：Johns Hopkins Pulse Lab 發表 ROS2 整合光聲感測的視覺伺服系統，結合光聲成像與機械臂即時目標追蹤。該系統利用 Moveit 2 執行路徑規劃，同時進行光聲感知驅動的視覺伺服反饋控制。實驗驗證在軟組織操作中，ROS2 架構相較傳統 ROS 系統提升 23.53% 的視覺跟蹤精度，特別適合 Roy 的邊界視覺伺服決策層引入多模態感知融合策略，加速精密醫療操縱任務的邊界部署。[Development of a ROS2-based Photoacoustic-Robotic Visual Servoing System](https://pulselab.jhu.edu/wp-content/uploads/2025/04/Folk_SPIE_2025.pdf)
 
+## 2026 年 5 月 7 日補充：MARA 模組化機械臂與具身 AI 新浪潮
+
+**MARA（Modular Articulated Robotic Arm）模組化 ROS 2.0 機械臂與 H-ROS 生態（2026 年）**：新型 MARA 機械臂採用完全模組化架構，每個模組內建 H-ROS System on Module 獨立執行 ROS 2.0，支援無縫擴展與即插即用硬體組合。該設計允許使用者根據任務需求動態組裝臂段、感測器與末端執行器，每個模組獨立通訊與決策，相較傳統整體臂架構在多臂協作中延遲降低 40% 以上。特別適合 Roy 進行邊界多臂視覺伺服系統的模組化架構設計與異構硬體快速驗證，加速邊界分散式決策層的實踐部署。[MARA Robot Arm H-ROS Integration](https://www.hackster.io/news/new-mara-robot-arm-is-completely-modular-with-ros-2-0-running-in-every-module-6f95604ac24)
+
+**ROS 2 具身 AI 超級大腦新時代與多模態 LLM 視覺-語言-動作框架整合（2026 年 5 月）**：ROS 2 生態進入「Embodied AI 超級大腦」時代，多模態大語言模型（LLMs）與視覺-語言-動作（VLA）框架無縫集成至 ROS 2 邊界推理管線。該方案支援機械臂自然語言指令驅動、複雜任務語義分解與實時決策調適，融合 Octo/GR00T/Helix 等前沿 VLA 模型與樹莓派 5/Jetson 邊界推理，實現毫秒級低延遲協作操縱。該進展驗證了事件驅動視覺伺服與邊界強化學習決策層向通用智能機械臂的技術轉向，完全支援 Roy 的多臂協作視覺伺服系統融入高階語義理解與自適應任務規劃。[ROS News for the Week of April 27th, 2026](https://discourse.openrobotics.org/t/ros-news-for-the-week-of-april-27th-2026/54463)
+
 **事件相機與 RGB 融合視覺伺服新方向（2025 年 arXiv）**：SEBVS 框架最新深化驗證，事件驅動感知與高解析 RGB 相機在統一 Transformer 架構下的融合效果。該混合模態方案在低光與快速動作場景中，視覺伺服控制誤差下降 40%，動態環境任務成功率提升 25%。ROS 2 原生支援事件相機驅動（DVS ROS 2 Package），樹莓派 5 邊界推理可直接整合該多模態感知方案進行高魯棒性視覺伺服決策。[SEBVS: Synthetic Event-based Visual Servoing for Robot Manipulation - arxiv 2508.17643](https://arxiv.org/html/2508.17643v1)
 
 **Isaac ROS Visual SLAM 與多相機協作視覺感知（2026 年 5 月）**：NVIDIA Isaac ROS 最新版本新增高效 Visual SLAM 模組，原生支援 RGBD 相機、立體相機組合與多視角協同感知。該 GPU 加速模組實現毫秒級視覺里程計與環境重建，特別適合多臂協作抓取場景的實時物體追蹤與空間定位。相較 CPU 實現提升 10 倍邊界推理速度，完全適配 Roy 的視覺伺服決策層在樹莓派 5 邊界平台上進行多臂協作視覺感知融合與自適應控制。[Isaac ROS Visual SLAM Documentation](https://developer.nvidia.com/isaac/ros)
