@@ -3734,3 +3734,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Lyrical Luth 版本發佈（2026 年 5 月）與多平台擴展**：ROS 2 社群發佈最新 Lyrical Luth 版本，正式支援 RHEL 10、Ubuntu 26.04 與 Windows 11 等新一代作業系統，進一步鞏固 ROS 2 在邊界異質計算環境的適配性。該版本維持與 ROS 2 Humble/Jazzy 的深層相容性，為 Roy 的樹莓派 5 + Jetson 混合邊界平台提供長期穩定的軟體棧基礎，支援未來 5-10 年的系統演進與跨代硬體遷移。[Lyrical Luth (codename 'lyrical'; May, 2026) — ROS 2 Documentation](https://docs.ros.org/en/rolling/Releases/Release-Lyrical-Luth.html)
 
 **Realman 睿爾曼機械臂 ROS 2 原生驅動與邊界推理驗證（2026 年）**：Realman 睿爾曼已正式發佈協作臂的 ROS 2 原生驅動套件，支援 Ubuntu 22.04 LTS 與 ROS 2 Humble 長期支援版本（LTS 至 2027 年）。該驅動全面整合 ros2_control 架構與 MoveIt 2 運動規劃，支援實時多臂視覺伺服決策層的深度部署，特別適合 Roy 進行邊界推理系統中的協作臂硬體選型與軟體棧驗證。Realman 機械臂搭配樹莓派 5 邊界平台已驗證可達成 <100ms 視覺伺服迴圈，為實務邊界應用提供可靠的商用硬體參考。[ROS 2 Documentation Overview](https://docs.ros.org/)
+
+## 2026 年 5 月 6 日補充：Zenoh 中間件穩定性與 ROS 2 版本相容性驗證
+
+**ROS 2 Zenoh 中間件版本相容性與邊界部署成熟度（2026 年）**：ROS 官方文件確認 Zenoh 作為 Tier 1 RMW 已在 ROS 2 Jazzy（2024）及後續版本（Humble 除外）正式穩定運行。Zenoh 支援高效分散式多對多發佈-訂閱與服務模式，特別適合邊界多臂協作決策。然而，ROS 2 Humble 使用者若欲採用 Zenoh，需透過 zenoh-plugin-ros2dds 額外中間件橋接 DDS 通信，增加部署複雜度。Roy 的樹莓派 5 邊界系統建議優先鎖定 ROS 2 Jazzy 或更新版本以直接受惠 Zenoh 原生效能，避免跨版本型別雜湊不相容導致的訊息丟失問題。[Zenoh ROS 2 Documentation](https://docs.ros.org/en/humble/Installation/RMW-Implementations/Non-DDS-Implementations/Working-with-Zenoh.html)
