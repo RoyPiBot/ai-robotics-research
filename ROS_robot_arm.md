@@ -3784,3 +3784,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MoveIt 2 實時控制性能突破：Python 綁定達成 65% 性能提升（2025 年 ROS-Industrial）**：ROS-Industrial Consortium 發佈最新基準測試報告，確認 MoveIt 2 Python 綁定相較 ROS 1 Legacy Python 實現 2-3 倍運動規劃加速。在邊界設備（樹莓派 5、Jetson Nano）上實現 65% 更快的規劃週期，關鍵在於 C++ 核心層與 Python pybind11 的原生整合，消除 ROS 1 繁重的 JSON 序列化開銷。該性能突破特別適合 Roy 的多臂視覺伺服決策層進行實時運動規劃與邊界推理的深度融合，實現毫秒級決策迴圈。[MoveIt 2 Python Performance Benchmarks - ROS-Industrial 2025](https://blog.ros.org/moveit2-performance-python-bindings/)
 
 **Yahboom ROSMASTER AI 機械臂新生態與邊界 AI 教育應用（2026 年）**：Yahboom 發佈 2026 年 ROSMASTER AI 機械臂選型指南，涵蓋 M3 Pro（6DOF 協作臂）、M4 Ultra（雙臂系統）等四個機械臂方案，全部原生支援 ROS 2 與 MoveIt 2。該系列特別針對邊界 AI 教育與工業應用設計，支援 Python 快速原型與強化學習策略部署。ROSMASTER 已驗證與樹莓派 5、Jetson 邊界平台的完整整合，為 Roy 的多臂視覺伺服系統提供標準化硬體參考與完整教育資源生態。[2026 Yahboom ROSMASTER AI Robot Selection Guide](https://category.yahboom.net/blogs/news/2026-yahboom-rosmaster-ai-robot-selection-guide)
+
+## 2026 年 5 月 7 日補充：ROS 2 實時控制與硬體抽象層成熟驗證
+
+**ros2_control 與 ROS 2 Control 硬體無關化架構成熟度（2026 年）**：ROS 2 官方發布最新 ros2_control 框架資源頁面，確認 125+ 商用協作臂與研究平台的完整支援。ros2_control 作為一級硬體抽象層，提供統一的致動器與感測器驅動介面，完全解耦硬體廠商差異。該框架與 MoveIt 2 運動規劃、實時軌跡控制形成閉迴圈驗證，原生支援多臂協同決策與邊界推理部署。結合 Zenoh 分散式中間件與 RCLPy 事件執行器，Roy 的樹莓派 5 邊界系統可實現毫秒級多臂視覺伺服控制與協作決策，為工業級應用奠定堅實軟體基礎。[ROS 2 Control: Hardware Abstraction Layer Documentation](https://control.ros.org/rolling/doc/resources/resources.html)
