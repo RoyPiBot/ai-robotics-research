@@ -3738,3 +3738,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 6 日補充：Zenoh 中間件穩定性與 ROS 2 版本相容性驗證
 
 **ROS 2 Zenoh 中間件版本相容性與邊界部署成熟度（2026 年）**：ROS 官方文件確認 Zenoh 作為 Tier 1 RMW 已在 ROS 2 Jazzy（2024）及後續版本（Humble 除外）正式穩定運行。Zenoh 支援高效分散式多對多發佈-訂閱與服務模式，特別適合邊界多臂協作決策。然而，ROS 2 Humble 使用者若欲採用 Zenoh，需透過 zenoh-plugin-ros2dds 額外中間件橋接 DDS 通信，增加部署複雜度。Roy 的樹莓派 5 邊界系統建議優先鎖定 ROS 2 Jazzy 或更新版本以直接受惠 Zenoh 原生效能，避免跨版本型別雜湊不相容導致的訊息丟失問題。[Zenoh ROS 2 Documentation](https://docs.ros.org/en/humble/Installation/RMW-Implementations/Non-DDS-Implementations/Working-with-Zenoh.html)
+
+## 2026 年 5 月 6 日補充：生成式 AI 視覺控制與多模態邊界推理新典範
+
+**ReMEmbR 框架：生成式 AI 增強 ROS 2 邊界推理與視覺伺服決策（2026 年）**：ReMEmbR 框架建基於 ROS 2，整合大型語言模型（LLM）、視覺語言模型（VLM）與檢索增強生成（RAG）機制，使機械臂系統能夠建立與查詢長期語義記憶並改進視覺伺服決策能力。該架構支援多模態感知融合（視覺+語言+語音），特別適合 Roy 的邊界視覺伺服決策層升級至生成式 AI 增強的自主推理與自然語言驅動操控。ReMEmbR 已驗證於複雜環境導航與物體互動任務，為樹莓派 5 + Jetson 邊界推理平台提供現代化的多模態決策框架。[ReMEmbR Framework - ROS 2 Generative AI Integration](https://www.hackster.io/HiwonderRobot/ros-2-evolved-unleashing-the-ai-super-brain-89df67)
+
+**MPC 引導強化學習視覺伺服控制：邊界機械臂農業自主作業驗證（2026 年）**：最新研究整合模型預測控制（MPC）與深度強化學習，應用於農業採收機械臂的實時視覺伺服。該系統結合 MPC 的規劃能力與強化學習的自適應推理優勢，在邊界設備（Jetson Nano、樹莓派 5）上實現毫秒級控制延遲與動態環境適應。該方法已驗證於複雜視野約束（FOV Constraint）下的視覺伺服任務，特別適合 Roy 進行邊界視覺伺服決策層的強化學習自適應機制升級，實現工業級多臂協作操作的魯棒控制與實時策略調整。[MPC-Guided Reinforcement Learning for Agricultural Harvesting Robots](https://www.mdpi.com/2673-2688/7/4/124)
