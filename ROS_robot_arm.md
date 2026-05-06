@@ -3768,3 +3768,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **增強雙臂遙操作系統與變尺度應用驗證（2026 年 Nature Robotics）**：Nature Robotics 發表研究「Enhancing bimanual teleoperation with variable shoulder distance: manipulation in varying-scale of applications」，展示雙臂機械臂遙操作系統中肩距離自適應調整對複雜操作任務的影響。該方案整合 ROS 2 多臂協同框架，支援從微觀尺度組件組裝到宏觀尺度結構操作的全尺度應用驗證。該研究特別適合 Roy 進行樹莓派 5 邊界推理系統中的多臂視覺伺服決策層的雙臂協作控制與自適應肢體配置研究，實現複雜非結構化環境下的多臂精密操縱與協調控制。[Enhancing bimanual teleoperation with variable shoulder distance - Nature Robotics](https://www.nature.com/articles/s44182-025-00057-w)
 
 **VLM2VLA：視覺語言模型微調至動作模型的新方法（Princeton 2026）**：普林斯頓大學研究團隊發表 VLM2VLA 方法，將現有視覺語言模型（VLM）無損微調為視覺語言動作（VLA）模型，在保留原生語言理解與推理能力基礎上，直接生成 6-DOF 機械臂動作序列。該方法已在 800+ 實機試驗中驗證，在標準拾取放置任務中達成基準性能，為邊界推理系統提供高效的模型遷移路徑。該方案相比從零訓練的 VLA 模型減少 60% 的資料標註工作量，特別適合 Roy 快速原型設計邊界視覺伺服的多模態推理整合。[VLM2VLA - Vision Language Models to Vision Language Action](https://blog.ai.princeton.edu/2026/04/23/from-vision-language-models-to-robot-control-without-forgetting/)
+
+## 2026 年 5 月 6 日補充：NVIDIA 生成式 AI ROS 開發者工具與多模態感知工作流
+
+**NVIDIA ROS 開發者生成式 AI 工具套件與邊界推理加速（2026 年）**：NVIDIA 面向 ROS 開發社群正式發佈生成式 AI 工具與優化的模擬、感知工作流程。該套件整合 Jetson-優化的大型語言模型（LLM）與視覺語言模型（VLM），原生支援 ROS 2 中間件架構，提供即用型節點用於多模態推理與視覺伺服決策加速。工具集包括預訓練感知模型、規劃層次生成式推理模板與硬體加速推理引擎，特別適合 Roy 的樹莓派 5 + Jetson 邊界異質計算平台進行多臂視覺伺服決策層的生成式 AI 能力快速整合與端到端部署驗證。該方案已驗證於協作臂多任務決策場景，加速視覺推理循環至 <100ms。[NVIDIA ROS 2 Generative AI Tools & Simulation Perception Workflows](https://blogs.nvidia.com/blog/generative-ai-simulation-roscon/)
