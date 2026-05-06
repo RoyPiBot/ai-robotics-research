@@ -3788,3 +3788,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 7 日補充：ROS 2 實時控制與硬體抽象層成熟驗證
 
 **ros2_control 與 ROS 2 Control 硬體無關化架構成熟度（2026 年）**：ROS 2 官方發布最新 ros2_control 框架資源頁面，確認 125+ 商用協作臂與研究平台的完整支援。ros2_control 作為一級硬體抽象層，提供統一的致動器與感測器驅動介面，完全解耦硬體廠商差異。該框架與 MoveIt 2 運動規劃、實時軌跡控制形成閉迴圈驗證，原生支援多臂協同決策與邊界推理部署。結合 Zenoh 分散式中間件與 RCLPy 事件執行器，Roy 的樹莓派 5 邊界系統可實現毫秒級多臂視覺伺服控制與協作決策，為工業級應用奠定堅實軟體基礎。[ROS 2 Control: Hardware Abstraction Layer Documentation](https://control.ros.org/rolling/doc/resources/resources.html)
+
+## 2026 年 5 月 7 日補充：ROS 2 2025 年新功能與 MoveIt Pro 商業成熟驗證
+
+**ROS 2 2025 年架構革新：Async Components、Variants 與 URDF 統一存取（2025 年）**：ROS 2 社群於 2025 年引入三項關鍵功能：完全非同步元件架構（Async Components），支援事件驅動的毫秒級回應；原生變體支援（Variants），簡化多配置機械臂管理；統一 URDF 存取機制，所有組件可直接查詢機械臂模型結構。該三項革新大幅簡化邊界視覺伺服決策層的複雜性，支援動態硬體配置與快速模型重構，特別適合 Roy 進行樹莓派 5 上的多臂自適應控制策略迭代與邊界推理部署優化。[Resources — ROS2_Control: Rolling Mar 2026 documentation](https://control.ros.org/rolling/doc/resources/resources.html)
+
+**MoveIt Pro ROSCon 2025 實務工作坊與產業級部署驗證（2025 年 10 月）**：PickNik Robotics 於 ROSCon 2025 舉辦「Hands-On Workshop with ROS 2 and MoveIt Pro」，展示機械臂從配置到自訂行為插件開發的完整工作流程。該工作坊涵蓋新機械臂在 ROS 2 套件中的快速配置、MoveIt Pro 圖形化界面操作、及 ROS 2 Humble/Jazzy 環境下的實時軌跡執行驗證。該實務導向課程特別適合 Roy 快速學習 MoveIt Pro 在多臂協作視覺伺服系統中的部署方法，加速邊界推理平台的運動規劃層與視覺伺服決策層的深度整合驗證。[Hands-On Workshop with ROS 2 and MoveIt Pro at ROSCon 2025](https://picknik.ai/roscon/workshop/2025/moveit/2025/10/06/Hands-On-Workshop-with-ROS-2-and-MoveIt-Pro-at-ROSCon-2025.html)
