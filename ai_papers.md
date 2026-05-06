@@ -598,6 +598,29 @@
 - **重要性**：為邊緣機械臂應用提供完整硬體-軟體棧，消除了「模型能跑但實時性差」的痛點，成為小型協作機械臂與自主檢驗系統的首選平台。
 - **來源**：[OpenAI 公告](https://openai.com/index/advancing-independent-research-ai-alignment/) | [Anthropic Fellows](https://alignment.anthropic.com/2025/anthropic-fellows-program-2026/)
 
+---
+
+## 九、2026 年 5 月初補充更新 — VLA 推理與具身 AI 產業整合
+
+### 50. ACoT-VLA — 視覺語言動作模型的鏈式推理突破
+- **機構**：AgibotTech
+- **會議**：CVPR 2026
+- **論文編號**：arXiv 2601.11404
+- **摘要**：ACoT-VLA（Action Chain-of-Thought for Vision-Language-Action Models）在 CVPR 2026 被接納，引入**顯式中間推理**機制來指導動作生成。核心創新是使用 VLA 模型內建的推理路徑：先進行**任務拆解預測**與**目標圖像合成**，再將這些中間表示轉化為具體動作序列。實驗證明該方法在複雜操控任務中錯誤率較基準模型降低 15-22%，推理成本僅增加 8-12%。
+- **重要性**：揭示了 VLA 模型的推理潛力——從「端到端視覺→動作」升級為「視覺→推理→規劃→動作」的多階段流程。
+
+### 51. Meta 收購 Assured Robot Intelligence — 人形機器人基礎模型競賽升溫
+- **機構**：Meta Superintelligence Labs
+- **時間**：2026 年 5 月 4 日完成
+- **摘要**：Meta 完成對專注人形機械臂與家務機器人基礎模型創業公司 Assured Robot Intelligence (ARI) 的全額收購。ARI 的核心技術為**通用具身基礎模型**，能在不同機械體上遷移學習，特別適配家務操控與安全攔截。此舉標誌著繼 OpenAI π0、Figure Helix 之後，Meta 正式加入人形機器人基礎模型陣營，預計將整合至 Meta Superintendent 智慧代理體系。
+- **重要性**：具身 AI 從學術熱點轉向產業資本布局，全球科技巨頭爭相控制機器人控制層 IP 的競賽正式開啟。
+
+### 52. AGIBOT WORLD 2026 開源數據集——具身 AI 訓練數據標準化
+- **機構**：AGIBOT
+- **發布時間**：2026 年 5 月初
+- **摘要**：AGIBOT 公開發布 **AGIBOT WORLD 2026** 數據集，包含結構化、高品質、精確標註的真實世界機器人操作資料。涵蓋數千小時的視覺反饋、力傳感與動作軌跡，設計用於訓練下一代具身 AI 系統。與 NVIDIA Jetson 生態配合，使研究人員能以相對低成本部署端到端 VLA 訓練管線。
+- **重要性**：數據基礎設施成為具身 AI 的競爭門檻，開源數據集打破了產業數據壁壘，加速了學術與小型企業的參與。
+
 ### 50. Vision-Language-Action (VLA) 模型 ICLR 2026 百項突破
 - **機構**：ICLR 2026、Princeton AI Lab、NVIDIA
 - **發布時間**：2026 年 4 月
