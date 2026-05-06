@@ -3744,3 +3744,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ReMEmbR 框架：生成式 AI 增強 ROS 2 邊界推理與視覺伺服決策（2026 年）**：ReMEmbR 框架建基於 ROS 2，整合大型語言模型（LLM）、視覺語言模型（VLM）與檢索增強生成（RAG）機制，使機械臂系統能夠建立與查詢長期語義記憶並改進視覺伺服決策能力。該架構支援多模態感知融合（視覺+語言+語音），特別適合 Roy 的邊界視覺伺服決策層升級至生成式 AI 增強的自主推理與自然語言驅動操控。ReMEmbR 已驗證於複雜環境導航與物體互動任務，為樹莓派 5 + Jetson 邊界推理平台提供現代化的多模態決策框架。[ReMEmbR Framework - ROS 2 Generative AI Integration](https://www.hackster.io/HiwonderRobot/ros-2-evolved-unleashing-the-ai-super-brain-89df67)
 
 **MPC 引導強化學習視覺伺服控制：邊界機械臂農業自主作業驗證（2026 年）**：最新研究整合模型預測控制（MPC）與深度強化學習，應用於農業採收機械臂的實時視覺伺服。該系統結合 MPC 的規劃能力與強化學習的自適應推理優勢，在邊界設備（Jetson Nano、樹莓派 5）上實現毫秒級控制延遲與動態環境適應。該方法已驗證於複雜視野約束（FOV Constraint）下的視覺伺服任務，特別適合 Roy 進行邊界視覺伺服決策層的強化學習自適應機制升級，實現工業級多臂協作操作的魯棒控制與實時策略調整。[MPC-Guided Reinforcement Learning for Agricultural Harvesting Robots](https://www.mdpi.com/2673-2688/7/4/124)
+
+## 2026 年 5 月 6 日補充：生成式 AI 視覺語言動作模型與邊界推理加速驗證
+
+**NVIDIA Isaac GR00T N1.7：開源視覺語言動作模型新里程碑（2026 年 4 月）**：NVIDIA 於 2026 年 4 月 17 日發佈 GR00T N1.7 Early Access 版本，為 3B 參數的開源、商用授權視覺語言動作（VLA）模型。該模型採用 32 層 Diffusion Transformer 架構用於低階馬達控制，原生支援自然語言指令理解與複雜多步任務執行。GR00T N1.7 相較前代版本在視覺語義理解與動作解碼精度上提升 25-40%，特別適合 Roy 進行樹莓派 5 邊界推理系統中的自然語言驅動機械臂操控與多任務協作驗證。[NVIDIA Isaac GR00T N1.7 Release](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
+
+**VLM2VLA：視覺語言模型微調至動作模型的新方法（Princeton 2026）**：普林斯頓大學研究團隊發表 VLM2VLA 方法，將現有視覺語言模型（VLM）無損微調為視覺語言動作（VLA）模型，在保留原生語言理解與推理能力基礎上，直接生成 6-DOF 機械臂動作序列。該方法已在 800+ 實機試驗中驗證，在標準拾取放置任務中達成基準性能，為邊界推理系統提供高效的模型遷移路徑。該方案相比從零訓練的 VLA 模型減少 60% 的資料標註工作量，特別適合 Roy 快速原型設計邊界視覺伺服的多模態推理整合。[VLM2VLA - Vision Language Models to Vision Language Action](https://blog.ai.princeton.edu/2026/04/23/from-vision-language-models-to-robot-control-without-forgetting/)
