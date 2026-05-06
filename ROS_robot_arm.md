@@ -3749,4 +3749,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **NVIDIA Isaac GR00T N1.7：開源視覺語言動作模型新里程碑（2026 年 4 月）**：NVIDIA 於 2026 年 4 月 17 日發佈 GR00T N1.7 Early Access 版本，為 3B 參數的開源、商用授權視覺語言動作（VLA）模型。該模型採用 32 層 Diffusion Transformer 架構用於低階馬達控制，原生支援自然語言指令理解與複雜多步任務執行。GR00T N1.7 相較前代版本在視覺語義理解與動作解碼精度上提升 25-40%，特別適合 Roy 進行樹莓派 5 邊界推理系統中的自然語言驅動機械臂操控與多任務協作驗證。[NVIDIA Isaac GR00T N1.7 Release](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
 
+## 2026 年 5 月 6 日補充：扩散模型驅動視覺伺服與多模態邊界推理驗證
+
+**Imagine2Servo：扩散生成式 AI 增強的自主視覺伺服框架（2026 年）**：最新研究提出 Imagine2Servo 框架，利用擴散模型生成中間目標影像指導機械臂視覺伺服，突破傳統方法對預定義目標影像的依賴。該系統整合視覺語言模型的語義理解與擴散生成的目標規劃，支援開放世界物體抓取與複雜操作任務。Imagine2Servo 已驗證於協作臂的非結構化環境，特別適合 Roy 的邊界視覺伺服決策層升級至生成式 AI 驅動的自適應目標規劃與自主決策機制。[Imagine2Servo Framework](https://www.themoonlight.io/en/review/imagine2servo-intelligent-visual-servoing-with-diffusion-driven-goal-generation-for-robotic-tasks)
+
+**Mimic 視頻動作模型：預訓練網際網路尺度視頻模型用於邊界操縱任務（2026 年）**：Mimic Robotics 開發的新一代視頻動作模型，利用預訓練的網際網路尺度視頻模型配合流匹配動作解碼器，相較傳統端到端方法實現 10 倍更高的樣本效率與 2 倍加速的收斂速度。該模型原生支援 ROS 2 多臂協作架構，特別適合 Roy 進行樹莓派 5 邊界推理系統中的少樣本動作學習與快速政策遷移驗證。[Mimic Robotics Video-Action Models](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
+
+**HiWonder ArmPi Ultra / JetArm：3D 視覺與多模態 AI 融合機械臂（2026 年）**：HiWonder 推出 ArmPi Ultra 與 JetArm 系列 ROS 2 智慧機械臂，搭載 3D 深度相機、多模態 AI 大型模型與自然語言介面，支援物體辨識追蹤、場景理解與聲控操作。兩款臂均支援 ROS 2 Humble/Jazzy，整合 MoveIt 2 運動規劃與邊界視覺決策層，相容樹莓派 5 與 Jetson Nano 邊界平台。該生態已驗證於 ROS 2 邊界 AI 教育與工業應用，特別適合 Roy 進行多臂協作視覺伺服系統的完整端到端集成與邊界推理驗證。[HiWonder ArmPi Ultra & JetArm](https://www.hiwonder.com/products/armpi-ultra)
+
 **VLM2VLA：視覺語言模型微調至動作模型的新方法（Princeton 2026）**：普林斯頓大學研究團隊發表 VLM2VLA 方法，將現有視覺語言模型（VLM）無損微調為視覺語言動作（VLA）模型，在保留原生語言理解與推理能力基礎上，直接生成 6-DOF 機械臂動作序列。該方法已在 800+ 實機試驗中驗證，在標準拾取放置任務中達成基準性能，為邊界推理系統提供高效的模型遷移路徑。該方案相比從零訓練的 VLA 模型減少 60% 的資料標註工作量，特別適合 Roy 快速原型設計邊界視覺伺服的多模態推理整合。[VLM2VLA - Vision Language Models to Vision Language Action](https://blog.ai.princeton.edu/2026/04/23/from-vision-language-models-to-robot-control-without-forgetting/)
