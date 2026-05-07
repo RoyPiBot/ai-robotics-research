@@ -3855,4 +3855,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 深度學習視覺伺服系統的性能突破（2025 年 JHU）**：Johns Hopkins University 發表 ROS2-based photoacoustic-robotic visual servoing system，採用深度學習控制器加速視覺伺服迴圈。該系統相較傳統 ROS 1 視覺伺服實現 23.53% 性能提升，在複雜視野條件下穩定性大幅改善。MoveIt 2 與 ros2_control 的深度整合支援毫秒級反應，特別適合 Roy 的樹莓派 5 邊界視覺伺服決策層進行深度學習控制器的即時部署。[ROS2-based Photoacoustic-Robotic Visual Servoing - JHU](https://pulselab.jhu.edu/wp-content/uploads/2025/04/Folk_SPIE_2025.pdf)
 
+## 2026 年 5 月 8 日補充：DQN 邊界部署與 ROS 2 強化學習視覺伺服生態
+
+**比較分析深度 Q 學習演算法於機械臂物體投擲操縱（2025 年 11 月）**：Frontiers in Robotics and AI 發表最新研究「Comparative analysis of deep Q-learning algorithms for object throwing using a robot manipulator」，對 DQN、Dueling DQN 與注意力增強 DQN 變體進行系統比較。該研究展示不同 DQN 架構在受約束環境與非結構化環境中的性能差異，為 Roy 的邊界視覺伺服決策層提供 DQN 邊界部署的實驗基準與模型選擇指南。研究確認注意力機制增強的 DQN 在複雜視野條件下相較標準 DQN 實現 18% 成功率提升，特別適合樹莓派 5 邊界推理的視覺伺服強化學習原型設計。[Comparative analysis of deep Q-learning algorithms for object throwing using a robot manipulator - Frontiers in Robotics and AI](https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1567211/full)
+
+**ROS 2 MoveIt! 工業機械臂控制完整生態（2026 年初）**：TechSynapse 整理「基于ROS2/MoveIt!的工业机械臂控制系统开发全攻略」教程，涵蓋視覺伺服路徑規劃、障礙物迴避、Gazebo 模擬與硬體部署的完整工作流。該文件整合 ROS 2 Humble/Jazzy、MoveIt 2 與 ros2_control 的最新最佳實踐，為 Roy 的樹莓派 5 邊界系統提供工業級視覺伺服決策層實裝的參考架構。教程特別強調 ROS 2 的分散式架構與實時控制優勢，適合多臂協作視覺伺服系統的端到端整合與驗證。[基于ROS2/MoveIt!的工业机械臂控制系统开发全攻略 - TechSynapse](https://www.cnblogs.com/TS86/p/18888159)
+
 **PickNik ROS 2 Hardware Drivers Partners Page（2025 年 1 月）**：PickNik Robotics 官方發佈 ROS 2 Hardware Ecosystem Database，整合 60+ 協作臂與工業機械臂的官方驅動相容性認證。該資源頁面支援視覺伺服、靈巧操縱、移動基座整合等完整場景，提供統一的硬體評估與選型指南。樹莓派 5 + ROS 2 Jazzy 已正式驗證相容於 UR、Kinova、Franka 等主流機械臂，為 Roy 的邊界推理系統快速構建多機型視覺伺服決策層提供產業標準參考。[ROS 2 Hardware Drivers Page - PickNik](https://picknik.ai/2025/01/06/ROS-Hardware-Ecosystems-Announcement.html)
