@@ -3850,3 +3850,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **SEBVS：合成事件基礎視覺伺服框架（2025 年 8 月）**：最新研究提出合成事件基礎視覺伺服（SEBVS）框架，融合 RGB 高解析度圖像與非同步事件流於統一 Transformer 架構。該方法將微秒級事件感知與毫秒級幀同步，提升視覺伺服控制精度、魯棒性與任務成功率，特別適合 Roy 的樹莓派 5 邊界系統進行多感測器融合視覺伺服決策層的實時控制驗證。[SEBVS: Synthetic Event-based Visual Servoing for Robot Navigation and Manipulation - arXiv](https://arxiv.org/html/2508.17643)
 
 **AnyTeleop：通用多臂視覺遙操作系統（2023-2026 年）**：統一視覺遙操作框架支援多種機械臂、末端執行器與感測器配置，整合人工智慧感知層與力回饋控制。該系統可擴展至多臂協作操縱，相容 ROS 2 與邊界設備部署，特別適合 Roy 的多臂視覺伺服系統進行人機互動與遙操作策略的邊界推理驗證。[AnyTeleop - arXiv](https://arxiv.org/html/2307.04577v3)
+
+## 2026 年 5 月 8 日補充：深度學習視覺伺服加速與硬體生態擴展
+
+**ROS 2 深度學習視覺伺服系統的性能突破（2025 年 JHU）**：Johns Hopkins University 發表 ROS2-based photoacoustic-robotic visual servoing system，採用深度學習控制器加速視覺伺服迴圈。該系統相較傳統 ROS 1 視覺伺服實現 23.53% 性能提升，在複雜視野條件下穩定性大幅改善。MoveIt 2 與 ros2_control 的深度整合支援毫秒級反應，特別適合 Roy 的樹莓派 5 邊界視覺伺服決策層進行深度學習控制器的即時部署。[ROS2-based Photoacoustic-Robotic Visual Servoing - JHU](https://pulselab.jhu.edu/wp-content/uploads/2025/04/Folk_SPIE_2025.pdf)
+
+**PickNik ROS 2 Hardware Drivers Partners Page（2025 年 1 月）**：PickNik Robotics 官方發佈 ROS 2 Hardware Ecosystem Database，整合 60+ 協作臂與工業機械臂的官方驅動相容性認證。該資源頁面支援視覺伺服、靈巧操縱、移動基座整合等完整場景，提供統一的硬體評估與選型指南。樹莓派 5 + ROS 2 Jazzy 已正式驗證相容於 UR、Kinova、Franka 等主流機械臂，為 Roy 的邊界推理系統快速構建多機型視覺伺服決策層提供產業標準參考。[ROS 2 Hardware Drivers Page - PickNik](https://picknik.ai/2025/01/06/ROS-Hardware-Ecosystems-Announcement.html)
