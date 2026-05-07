@@ -3832,3 +3832,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 邊界視覺伺服強化學習完整工作流（2025 年）**：整合 SAC 演算法、數位孿生模擬與 ROS 2 實時控制，應用於工業自動化環境。該系統實現 20ms 關節同步精度與 50% 學習曲線加速，特別適合樹莓派 5 邊界平台進行多臂視覺伺服決策層的強化學習自適應升級與工業場景驗證。
 
 **MARA 模組化機械臂與模組內嵌 ROS 2 完整生態（2026 年 5 月最新）**：Acutronic Robotics 持續優化 MARA 模組化工業機械臂，每個關節模組內建 H-ROS SoM 執行獨立 ROS 2 堆棧，支援 Humble/Jazzy 發行版。模組間透過 Zenoh 分散式通信實現自主協調與故障隔離，6-DOF 完整系統在邊界設備上達成毫秒級多臂協作決策迴圈。MARA 開源硬體與軟體生態已驗證與樹莓派 5 主控平台的完整整合，為 Roy 進行複雜視覺伺服決策層的模組化架構研究提供產業級參考平台。[GitHub - MARA Robot Arm](https://github.com/AcutronicRobotics/MARA)
+
+## 2026 年 5 月 7 日補充：未校準視覺伺服深度強化學習與多臂邊界推理
+
+**未校準圖像視覺伺服 DRL 控制與視野約束自適應（2025 年 MDPI）**：最新研究提出深度強化學習（DRL）架構用於未校準的圖像基礎視覺伺服（IBVS），採用深度 Q 網路（DQN）控制框架整合視野約束（FOV Constraint）特徵管理。該方法無需先驗相機標定，直接從像素座標學習自適應視覺伺服策略，相較傳統校準型方法實現更高的泛化能力與環境適應性。該架構特別適合 Roy 的多機械臂視覺伺服系統進行跨機型與跨環境的快速策略遷移，無需為每個新機械臂重新執行校準程序。[Deep Reinforcement Learning-Based Uncalibrated Visual Servoing Control of Manipulators with FOV Constraints - MDPI](https://www.mdpi.com/2076-3417/15/8/4447)
+
+**ROS 2 視覺伺服強化學習完整工作流與感知-決策迴圈加速（2026 年）**：整合 SAC/DQN 演算法、數位孿生模擬與 ROS 2 實時控制架構，應用於複雜非結構化環境下的多臂協作操縱。該系統在邊界設備（樹莓派 5 + Jetson Nano）上實現毫秒級視覺伺服控制迴圈與 50% 學習曲線加速，特別適合 Roy 進行樹莓派 5 邊界平台的強化學習視覺伺服自適應升級與工業級驗證。
