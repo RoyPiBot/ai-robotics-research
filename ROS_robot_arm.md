@@ -3803,4 +3803,8 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Zenoh Tier 1 RMW 邊界部署穩定性與分散式多臂控制（2026 年）**：ROS 2 社群確認 Zenoh 作為一級遠端中間件完全取代傳統 DDS，在 ROS 2 Jazzy 及後續版本實現高效分散式多對多發佈-訂閱與服務模式。該中間件與全新 RCLPy 事件執行器架構相結合，相較 ROS 1 實現 30-40% 事件驅動性能提升，特別適合多臂視覺伺服決策層的毫秒級控制迴圈。Zenoh 通信協議大幅簡化複雜多臂協同架構的中間件配置，為 Roy 的樹莓派 5 邊界推理系統提供現代化分散式通信基礎。[ROS 2 Zenoh Integration](https://docs.ros.org/en/rolling/)
 
+## 2026 年 5 月 7 日補充：MoveIt 2 運動規劃與 ros2_control 工具生態驗證
+
+**MoveIt 2 與 ros2_control 完整生態整合（2026 年 5 月）**：根據最新 ROS 2 官方文件確認，MoveIt 2 已成為 ROS 2 標準化運動規劃框架，支援多種機械臂平台（Kinova Kortex Gen3、Universal Robots、xArm、KUKA 工業臂）的完整運動規劃與軌跡執行驗證。ros2_control 作為硬體無關控制層，已在 125+ 商用協作臂與研究平台上驗證，提供統一的致動器與感測器驅動介面。結合 Gazebo Harmonic 模擬環境，Roy 的樹莓派 5 邊界推理系統可實現完整的虛實映射與強化學習視覺伺服決策層的深度融合驗證，支援從 6-DOF 機械臂基礎運動規劃至複雜多臂協作視覺伺服控制的全流程整合。[MoveIt 2 Documentation](https://moveit.picknik.ai/)、[ROS 2 Control Supported Robots](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+
 **CRISP：統一 ROS 2 強化學習機械臂控制管道（2025 年 TUM）**：Technical University of Munich 發表 CRISP 框架，整合數據收集、策略訓練與硬體部署於統一 ROS 2 管道。該系統支援 Franka、KUKA、Kinova 等主流協作臂，具備硬體無關特性與實時部署能力，已驗證於物體操作複雜任務。CRISP 框架特別適合 Roy 在樹莓派 5 邊界系統進行快速強化學習政策原型設計與多臂硬體驗證，實現智能視覺伺服決策層的自適應控制能力。[CRISP Framework - TUM](https://arxiv.org/html/2509.06819v1)
