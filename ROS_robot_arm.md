@@ -3844,3 +3844,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Doosan 機械臂 ROS 2 Gazebo 強化學習環境（2025-2026 年 GitHub）**：開源項目「robotic_arm_environment」整合 Doosan 協作臂、Gazebo 物理模擬與 ROS 2 控制框架，提供標準化的強化學習環境用於視覺伺服決策訓練。該環境已驗證與樹莓派 5 + Jetson 邊界異質計算平台的無縫整合，包含完整的數據標註工具與策略轉移工作流程，特別適合 Roy 進行邊界視覺伺服 RL 演算法（SAC、PPO、DQN）的原型設計與硬體驗證。[Doosan Robotic Arm ROS 2 RL Environment - GitHub](https://github.com/dvalenciar/robotic_arm_environment)
 
 **ROS 2 視覺伺服強化學習完整工作流與感知-決策迴圈加速（2026 年）**：整合 SAC/DQN 演算法、數位孿生模擬與 ROS 2 實時控制架構，應用於複雜非結構化環境下的多臂協作操縱。該系統在邊界設備（樹莓派 5 + Jetson Nano）上實現毫秒級視覺伺服控制迴圈與 50% 學習曲線加速，特別適合 Roy 進行樹莓派 5 邊界平台的強化學習視覺伺服自適應升級與工業級驗證。
+
+## 2026 年 5 月 8 日補充：合成事件視覺伺服與多臂遙操作系統
+
+**SEBVS：合成事件基礎視覺伺服框架（2025 年 8 月）**：最新研究提出合成事件基礎視覺伺服（SEBVS）框架，融合 RGB 高解析度圖像與非同步事件流於統一 Transformer 架構。該方法將微秒級事件感知與毫秒級幀同步，提升視覺伺服控制精度、魯棒性與任務成功率，特別適合 Roy 的樹莓派 5 邊界系統進行多感測器融合視覺伺服決策層的實時控制驗證。[SEBVS: Synthetic Event-based Visual Servoing for Robot Navigation and Manipulation - arXiv](https://arxiv.org/html/2508.17643)
+
+**AnyTeleop：通用多臂視覺遙操作系統（2023-2026 年）**：統一視覺遙操作框架支援多種機械臂、末端執行器與感測器配置，整合人工智慧感知層與力回饋控制。該系統可擴展至多臂協作操縱，相容 ROS 2 與邊界設備部署，特別適合 Roy 的多臂視覺伺服系統進行人機互動與遙操作策略的邊界推理驗證。[AnyTeleop - arXiv](https://arxiv.org/html/2307.04577v3)
