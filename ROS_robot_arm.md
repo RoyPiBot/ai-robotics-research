@@ -3837,4 +3837,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **未校準圖像視覺伺服 DRL 控制與視野約束自適應（2025 年 MDPI）**：最新研究提出深度強化學習（DRL）架構用於未校準的圖像基礎視覺伺服（IBVS），採用深度 Q 網路（DQN）控制框架整合視野約束（FOV Constraint）特徵管理。該方法無需先驗相機標定，直接從像素座標學習自適應視覺伺服策略，相較傳統校準型方法實現更高的泛化能力與環境適應性。該架構特別適合 Roy 的多機械臂視覺伺服系統進行跨機型與跨環境的快速策略遷移，無需為每個新機械臂重新執行校準程序。[Deep Reinforcement Learning-Based Uncalibrated Visual Servoing Control of Manipulators with FOV Constraints - MDPI](https://www.mdpi.com/2076-3417/15/8/4447)
 
+## 2026 年 5 月 8 日補充：視覺伺服規劃管道與 Doosan ROS 2 強化學習環境
+
+**ROS 中視覺伺服規劃的完整管道與實戰應用（2022 年 Springer Nature）**：國際期刊論文「Planning and visual-servoing for robotic manipulators in ROS」整合視覺伺服路徑規劃與障礙物迴避於統一 ROS 框架。該研究展示從相機標定、視覺特徵追蹤、到即時軌跡生成的完整工作流程，適合 Roy 的機械臂視覺伺服系統進行規劃層與控制層的深度融合驗證。[Planning and visual-servoing for robotic manipulators in ROS - Springer Nature](https://link.springer.com/article/10.1007/s41315-022-00253-z)
+
+**Doosan 機械臂 ROS 2 Gazebo 強化學習環境（2025-2026 年 GitHub）**：開源項目「robotic_arm_environment」整合 Doosan 協作臂、Gazebo 物理模擬與 ROS 2 控制框架，提供標準化的強化學習環境用於視覺伺服決策訓練。該環境已驗證與樹莓派 5 + Jetson 邊界異質計算平台的無縫整合，包含完整的數據標註工具與策略轉移工作流程，特別適合 Roy 進行邊界視覺伺服 RL 演算法（SAC、PPO、DQN）的原型設計與硬體驗證。[Doosan Robotic Arm ROS 2 RL Environment - GitHub](https://github.com/dvalenciar/robotic_arm_environment)
+
 **ROS 2 視覺伺服強化學習完整工作流與感知-決策迴圈加速（2026 年）**：整合 SAC/DQN 演算法、數位孿生模擬與 ROS 2 實時控制架構，應用於複雜非結構化環境下的多臂協作操縱。該系統在邊界設備（樹莓派 5 + Jetson Nano）上實現毫秒級視覺伺服控制迴圈與 50% 學習曲線加速，特別適合 Roy 進行樹莓派 5 邊界平台的強化學習視覺伺服自適應升級與工業級驗證。
