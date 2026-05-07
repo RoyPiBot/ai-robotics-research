@@ -3794,3 +3794,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 2025 年架構革新：Async Components、Variants 與 URDF 統一存取（2025 年）**：ROS 2 社群於 2025 年引入三項關鍵功能：完全非同步元件架構（Async Components），支援事件驅動的毫秒級回應；原生變體支援（Variants），簡化多配置機械臂管理；統一 URDF 存取機制，所有組件可直接查詢機械臂模型結構。該三項革新大幅簡化邊界視覺伺服決策層的複雜性，支援動態硬體配置與快速模型重構，特別適合 Roy 進行樹莓派 5 上的多臂自適應控制策略迭代與邊界推理部署優化。[Resources — ROS2_Control: Rolling Mar 2026 documentation](https://control.ros.org/rolling/doc/resources/resources.html)
 
 **MoveIt Pro ROSCon 2025 實務工作坊與產業級部署驗證（2025 年 10 月）**：PickNik Robotics 於 ROSCon 2025 舉辦「Hands-On Workshop with ROS 2 and MoveIt Pro」，展示機械臂從配置到自訂行為插件開發的完整工作流程。該工作坊涵蓋新機械臂在 ROS 2 套件中的快速配置、MoveIt Pro 圖形化界面操作、及 ROS 2 Humble/Jazzy 環境下的實時軌跡執行驗證。該實務導向課程特別適合 Roy 快速學習 MoveIt Pro 在多臂協作視覺伺服系統中的部署方法，加速邊界推理平台的運動規劃層與視覺伺服決策層的深度整合驗證。[Hands-On Workshop with ROS 2 and MoveIt Pro at ROSCon 2025](https://picknik.ai/roscon/workshop/2025/moveit/2025/10/06/Hands-On-Workshop-with-ROS-2-and-MoveIt-Pro-at-ROSCon-2025.html)
+
+## 2026 年 5 月 7 日補充：MoveIt Pro 9.0 多臂協作實時控制與邊界推理驗證
+
+**MoveIt Pro 9.0 多臂協作與多鏈倫舞控制（2026 年）**：PickNik Robotics 於 2026 年發佈 MoveIt Pro 9.0 重大更新，新增多鏈倫舞控制（Multi-Chain Admittance），原生支援雙臂與多臂配置下的獨立控制與協同決策。該版本整合增強感知-動作管道與遙操作系統，支援 Meta Quest 控制器驅動多臂機械臂，碰撞感知規劃與力控制並行。該架構特別適合 Roy 的樹莓派 5 邊界推理平台進行多臂視覺伺服決策層的實時協作控制與邊界力控制整合，實現毫秒級多臂協調操縱與自適應力感知反饋迴圈。[MoveIt Pro 9.0 - PickNik Robotics](https://picknik.ai/pro/)
