@@ -3819,4 +3819,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ros2_control Jazzy 資料型別支援擴展（2026 年新功能）**：ROS 2 Jazzy 發佈的 ros2_control 框架新增突破性功能，解決早期版本限制——支援非 C++ double 值資料型別與字串型別的直接傳遞。新版本為使用者自動管理資料儲存，大幅簡化邊界機械臂的異質感測器與致動器驅動開發。ESP32 + micro-ROS 邊界節點可直接發佈結構化資料（JSON/字串配置指令），無需額外序列化層，為 Roy 的樹莓派 5 邊界推理系統提供原生的資料型別透明性與自動記憶體管理。該功能特別適合多模態感測器融合與自適應控制參數的動態調整。[ros2_control Rolling Documentation](https://control.ros.org/rolling/doc/resources/resources.html)
 
+## 2026 年 5 月 7 日補充：Transformer 加速強化學習視覺伺服與人在迴路驗證
+
+**Transformer 加速位置式視覺伺服強化學習（2025 年 Springer Nature）**：最新研究整合 Transformer 加速層與鄰近策略優化（PPO）強化學習，應用於位置式視覺伺服（PBVS）。該方法在複雜視野約束與動態環境下實現毫秒級控制延遲，視覺伺服精度相較傳統 CNN 方法提升 35%，特別適合 Roy 的邊界視覺伺服決策層進行 Transformer 特徵融合與自適應控制策略驗證。[Enhancing position-based visual servoing performance through transformer-based acceleration-level reinforcement learning - Springer Nature](https://link.springer.com/article/10.1007/s40747-025-02056-8)
+
+**人在迴路視覺伺服強化學習系統驗證（2025-2026 年 Nature Robotics）**：最新實驗展示人在迴路視覺伺服 RL 系統在靈巧操作任務（精密組裝、雙臂協作）中的強悍性能，學習時間僅需 1-2.5 小時達成近完美成功率。該方案透過人類專家回饋加速強化學習收斂，實現快速策略遷移與跨機械臂泛化，特別適合 Roy 進行多臂視覺伺服決策層的互動式強化學習與邊界推理系統驗證。[Precise and dexterous robotic manipulation via human-in-the-loop reinforcement learning - Science Robotics](https://www.science.org/doi/10.1126/scirobotics.ads5033)
+
 **MARA 模組化機械臂與模組內嵌 ROS 2 完整生態（2026 年 5 月最新）**：Acutronic Robotics 持續優化 MARA 模組化工業機械臂，每個關節模組內建 H-ROS SoM 執行獨立 ROS 2 堆棧，支援 Humble/Jazzy 發行版。模組間透過 Zenoh 分散式通信實現自主協調與故障隔離，6-DOF 完整系統在邊界設備上達成毫秒級多臂協作決策迴圈。MARA 開源硬體與軟體生態已驗證與樹莓派 5 主控平台的完整整合，為 Roy 進行複雜視覺伺服決策層的模組化架構研究提供產業級參考平台。[GitHub - MARA Robot Arm](https://github.com/AcutronicRobotics/MARA)
