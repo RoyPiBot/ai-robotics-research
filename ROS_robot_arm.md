@@ -3884,3 +3884,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **G-ARM：開源低成本教育型機械臂整合 ROS 2（2025 年 Springer Nature）**：University of Zaragoza 發表「G-ARM: An open-source and low-cost robotic arm integrated with ROS2 for educational purposes」，提供完全開源的 3D 列印 6-DOF 機械臂設計與 ROS 2 整合方案。該方案成本低於商用教育臂 80%，支援完整的視覺伺服實驗、強化學習演算法部署與多臂協作驗證。G-ARM 已驗證與樹莓派 5 邊界部署的無縫整合，特別適合 Roy 進行邊界視覺伺服決策層的教育性原型設計、成本受限場景的硬體擴展與開源社群貢獻。[G-ARM Open Source Robot Arm - Springer Nature](https://link.springer.com/article/10.1007/s11042-025-20748-8)
 
 **Elephant Robotics myCobot 280：樹莓派原生協作臂平台（2025-2026 年）**：Elephant Robotics 推出 myCobot 280 系列作為樹莓派驅動的 6-DOF 小型協作臂，支援完整 ROS 2 與樹莓派 5 原生整合，內建夾爪支援。該平台提供低成本（<$500）的邊界視覺伺服實驗平台，相容 MoveIt 2 運動規劃與 ros2_control 框架，已驗證用於教育與研究級視覺伺服決策層的快速原型設計。myCobot 280 的緊湊設計與低功耗特性特別適合 Roy 的樹莓派 5 本地邊界推理系統進行多臂視覺伺服強化學習的硬體驗證與實時控制迴圈優化。[Elephant Robotics myCobot 280 - Official](https://shop.elephantrobotics.com/products/mycobot-pi-raspberry-pi-powered-6-dof-collaborative-robot)
+
+## 2026 年 5 月 8 日補充：ROS 2 Jazzy Jalisco LTS 長期支援與 MoveIt 2 實時控制突破
+
+**ROS 2 Jazzy Jalisco 長期支援版本與機械臂生態擴展（2024-2029）**：ROS 2 Jazzy Jalisco 為第十個正式發行版本，提供長期支援至 2029 年 5 月。2026 年 4 月的最新同步涵蓋 150 個新增套件與 540 個軟體更新，特別強化 ros2_control 硬體抽象層與 rosbag2 服務資料記錄功能。MoveIt 2 與 ros2_control 的深度整合支援毫秒級實時反應，使樹莓派 5 邊界系統可穩定運行視覺伺服決策層與複雜多臂協作任務。Jazzy 的長期支援周期確保 Roy 的邊界視覺伺服平台在 3+ 年內維持最新軟體棧相容性與安全補丁，為生產級實驗驗證奠定穩固基礎。[ROS 2 Jazzy Jalisco Documentation](https://docs.ros.org/en/jazzy/Releases/Release-Jazzy-Jalisco.html)
+
+**MoveIt 2 實時機械臂控制框架突破（2026 年）**：PickNik Robotics 官方認證 MoveIt 2 為 ROS 2 機械臂運動規劃的標準解決方案，提供從 Humble 到 Jazzy 的完整版本支援。MoveIt 2 與 ros2_control 的實時協作實現硬體無關的控制器管理，支援 60+ 協作臂與工業機械臂的官方驅動認證。該框架已驗證於樹莓派 5 邊界部署，支援視覺伺服路徑規劃、障礙物迴避與複雜多臂協作場景。特別適合 Roy 進行邊界機械臂的即時視覺伺服決策層實裝、多臂協作策略開發與硬體跨型號泛化驗證。[MoveIt 2 & ROS 2 Control Integration](https://control.ros.org/)
