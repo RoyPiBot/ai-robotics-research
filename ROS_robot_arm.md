@@ -3902,3 +3902,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Kilted 多協作臂支援與邊界自由度規劃（2026 年 4 月）**：ROS 2 Kilted 發佈最新 ros2_control 版本完整支援 Denso、Fanuc、Franka、Kinova、KUKA、Universal Robots 等邊界自由度協作臂的統一控制框架。Kilted 版本強化邊界部署穩定性，針對樹莓派 5 邊界計算優化了控制迴圈與通信協議，支援 6-DOF 到 14-DOF 複雜機械臂的即時協作規劃。該版本完全相容 MoveIt 2 運動規劃與視覺伺服決策層的無縫整合，為 Roy 的邊界推理系統提供產業級協作臂多自由度協調控制基礎。[ROS 2 Control Kilted Supported Robots](https://control.ros.org/kilted/doc/supported_robots/supported_robots.html)
 
 **MoveIt 2 Servo 遠程操作與 Omniverse 數位孿生初步整合（2025-2026 年）**：MoveIt Servo 允許即時末端執行器速度指令流控制，支援 Meta Quest 控制器驅動與力感知回饋迴圈。最新研究展示 MoveIt Servo 與 NVIDIA Omniverse 基礎模型的初步整合，透過分散式 Zenoh 中間件實現高延遲容忍度的遠程操作與數位孿生視覺反饋同步。該架構適合 Roy 進行樹莓派 5 邊界視覺伺服系統的多臂遙操作演示與虛實映射視覺決策層的原型驗證。[MoveIt Servo Documentation](https://moveit.picknik.ai/)
+
+## 2026 年 5 月 9 日補充：ROS 2 Kilted Kaiju 中間件優化與性能突破
+
+**ROS 2 Kilted Kaiju (May 2025) 核心特性與邊界優化（2025-2026）**：ROS 2 Kilted Kaiju 為第十一個標準發行版本，內建 Zenoh 1.0 中間件實現全新 DDS 替代方案，相較傳統 DDS 在邊界設備上提升網路效率與安全性。該版本強化 Python 性能至 10 倍改進（C++ 事件執行器移植），支援 NV12 硬體影像編碼標準，Windows 整合 Pixi/Conda 包管理。針對樹莓派 5 邊界部署，Kilted Kaiju 已驗證毫秒級實時控制與高效能視覺伺服推理，特別適合 Roy 進行大規模分散式多臂視覺伺服決策層的跨平台邊界整合。支援至 2026 年 11 月。[ROS 2 Kilted Kaiju Release](https://docs.ros.org/en/rolling/Releases/Release-Kilted-Kaiju.html)
+
+**MoveIt 2 + Isaac Sim 官方整合教程與多臂 Omniverse 遙操作（2025-2026）**：NVIDIA Isaac Sim 提供原生 MoveIt 2 整合外掛，透過 isaac_moveit ROS 2 套件實現 Omniverse 數位孿生環境與邊界控制的無縫銜接。該整合完全支援 Humble 與 Jazzy，直接相容 6-DOF 至 14-DOF 協作臂的軌跡規劃與視覺伺服迴圈。多臂情景下，Isaac Sim 提供 GPU 加速物理模擬與實時力反饋合成，搭配 MoveIt Servo 遠程操作框架實現虛實映射的多臂遙操作驗證。該生態完全相容樹莓派 5 邊界推理系統的訓練與部署迴圈，為 Roy 進行 Omniverse 數位孿生與多臂遙操作整合提供產業級基礎。[Isaac Sim MoveIt 2 Documentation](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_ros2_moveit.html)
