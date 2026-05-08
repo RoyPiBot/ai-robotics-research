@@ -3889,4 +3889,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 Jazzy Jalisco 長期支援版本與機械臂生態擴展（2024-2029）**：ROS 2 Jazzy Jalisco 為第十個正式發行版本，提供長期支援至 2029 年 5 月。2026 年 4 月的最新同步涵蓋 150 個新增套件與 540 個軟體更新，特別強化 ros2_control 硬體抽象層與 rosbag2 服務資料記錄功能。MoveIt 2 與 ros2_control 的深度整合支援毫秒級實時反應，使樹莓派 5 邊界系統可穩定運行視覺伺服決策層與複雜多臂協作任務。Jazzy 的長期支援周期確保 Roy 的邊界視覺伺服平台在 3+ 年內維持最新軟體棧相容性與安全補丁，為生產級實驗驗證奠定穩固基礎。[ROS 2 Jazzy Jalisco Documentation](https://docs.ros.org/en/jazzy/Releases/Release-Jazzy-Jalisco.html)
 
+## 2026 年 5 月 8 日補充：多機械臂協作規劃與 ROS 2 邊界協作生態
+
+**多機器人 ROS 2 編程與協作規劃（2026 年）**：Open Source Robotics Foundation 發佈「Programming Multiple Robots with ROS 2」教材，涵蓋分散式多臂協作架構、狀態同步、衝突迴避與統一決策層設計。該教材特別強調 ROS 2 的分散式節點通訊優勢，適合 Roy 進行樹莓派 5 + 多臂邊界視覺伺服系統的跨機械臂動作編排與即時協作控制。[Programming Multiple Robots with ROS 2 - OSRF](https://osrf.github.io/ros2multirobotbook/)
+
+**MoveIt 2 實時機械臂控制與協作臂整合（2025-2026 年）**：MoveIt 2 的核心功能包括即時運動規劃、衝突檢測、軌跡執行與逆運動學，深度整合 ROS 2 通訊框架實現更快、更靈敏的規劃與控制反應。該架構已驗證相容於 Fanuc、Franka、KUKA、Universal Robots 等主流協作臂，特別適合 Roy 的視覺伺服邊界系統進行多臂動態環境下的安全協作操縱與實時視覺反饋整合。[ROS 2 Control Documentation](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+
 **MoveIt 2 實時機械臂控制框架突破（2026 年）**：PickNik Robotics 官方認證 MoveIt 2 為 ROS 2 機械臂運動規劃的標準解決方案，提供從 Humble 到 Jazzy 的完整版本支援。MoveIt 2 與 ros2_control 的實時協作實現硬體無關的控制器管理，支援 60+ 協作臂與工業機械臂的官方驅動認證。該框架已驗證於樹莓派 5 邊界部署，支援視覺伺服路徑規劃、障礙物迴避與複雜多臂協作場景。特別適合 Roy 進行邊界機械臂的即時視覺伺服決策層實裝、多臂協作策略開發與硬體跨型號泛化驗證。[MoveIt 2 & ROS 2 Control Integration](https://control.ros.org/)
