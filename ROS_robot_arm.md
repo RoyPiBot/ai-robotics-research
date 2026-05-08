@@ -3868,3 +3868,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Isaac Lab：GPU 加速機器人學習框架與 ROS 2 多臂視覺伺服訓練（2026 年）**：NVIDIA Isaac Lab 是針對機器人學習與強化學習優化的 GPU 加速框架，原生支援 ROS 2 整合與多臂並行模擬。該框架實現 1000+ 並行環境模擬，相較 CPU 模擬提升 100 倍訓練效率，特別適合 Roy 的樹莓派 5 邊界系統利用遠端 Jetson GPU 進行視覺伺服 RL 策略的大規模分散式訓練。Isaac Lab 提供完整的數位孿生環境、接觸力反饋模擬與多感測器融合，支援端到端視覺伺服策略的快速收斂與跨機型泛化。[Isaac Lab - NVIDIA](https://docs.isaacsim.omnigraph.io/en/latest/)
 
 **Isaac Sim 物理模擬與 ROS 2 邊界部署無縫整合（2025-2026 年）**：Isaac Sim 提供基於 PhysX 的 GPU 加速物理模擬，原生支援 ROS 2 Humble/Jazzy 與 MoveIt 2 視覺伺服規劃框架。該系統支援 125+ 商用機械臂模型庫、實時接觸力模擬與視覺影像合成，使 Roy 的邊界視覺伺服決策層可在完全虛實映射環境中訓練，直接轉移至硬體執行。Isaac Sim + ROS 2 整合已驗證於複雜多臂協作任務與動態環境適應，為邊界強化學習部署提供生產級模擬-實體反覆迴圈基礎。[Isaac Sim - NVIDIA](https://docs.omniverse.nvidia.com/isaacsim/latest/)
+
+## 2026 年 5 月 8 日補充：MoveIt Pro 9.0 實戰應用場景與小型協作臂生態
+
+**MoveIt Pro 9.0 增強感知-動作管道與產業應用驗證（2026 年）**：PickNik Robotics 發佈 MoveIt Pro 9.0 的產業實戰驗證案例，包括：(1) Denver Autowash 採用 MoveIt Pro 的感知-動作管道自動適應不同車型複雜曲面清洗，保持安全操作；(2) Singapore Hivebotics 應用於複雜衛浴環境自適應表面覆蓋；(3) Michigan CleanBotix 整合多臂協作清潔複雜工業設備。此類應用展示 MoveIt Pro 9.0 在感知迴路與力控制整合下的強悍適應性，特別適合 Roy 的樹莓派 5 邊界視覺伺服系統進行非結構化環境下的多臂協作任務驗證。[MoveIt Pro 9.0 Applications - PickNik Robotics](https://picknik.ai/)
+
+**Elephant Robotics myCobot 280：樹莓派原生協作臂平台（2025-2026 年）**：Elephant Robotics 推出 myCobot 280 系列作為樹莓派驅動的 6-DOF 小型協作臂，支援完整 ROS 2 與樹莓派 5 原生整合，內建夾爪支援。該平台提供低成本（<$500）的邊界視覺伺服實驗平台，相容 MoveIt 2 運動規劃與 ros2_control 框架，已驗證用於教育與研究級視覺伺服決策層的快速原型設計。myCobot 280 的緊湊設計與低功耗特性特別適合 Roy 的樹莓派 5 本地邊界推理系統進行多臂視覺伺服強化學習的硬體驗證與實時控制迴圈優化。[Elephant Robotics myCobot 280 - Official](https://shop.elephantrobotics.com/products/mycobot-pi-raspberry-pi-powered-6-dof-collaborative-robot)
