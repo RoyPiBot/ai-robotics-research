@@ -1707,6 +1707,30 @@
 - **核心議題** - 骨幹網絡選擇、VLA 架構公式化、何時納入跨具身體資料的影響
 - **實踐價值** - 提供數據驅動的設計指南，指導開發者在性能與效率間的權衡
 - **參考** - [Nature Machine Intelligence 2026](https://www.nature.com/articles/s42256-025-01168-7)
+
+#### 29. AGIBOT 新一代具身 AI 產品與模型發佈 — 全堆棧架構加速實部署（2026 年 5 月）
+- **發佈規模** - AGIBOT 在 2026 年夥伴大會展示新一代具身 AI 產品與基礎模型
+- **核心架構** - 「One Robotic Body, Three Intelligences」全堆棧設計，整合視覺、語言、動作推理
+- **產品亮點** - 四個新的機械人平台與多個開源 AI 模型，加速大規模實世界部署
+- **技術優勢** - 端到端物理 AI 系統，支援自主學習與自改進能力
+- **對 ROS 機械臂的啟示** - 展示商業化具身 AI 系統的架構範例，參考多感官融合與邊緣推理設計
+- **參考** - [AGIBOT 2026 Partner Conference](https://finance.yahoo.com/sectors/technology/articles/agibot-unveils-generation-embodied-ai-180600191.html)
+
+#### 30. CVPR 2026 Embodied AI Workshop — ManipArena 實機械臂操作挑戰賽（2026 年 5 月）
+- **競賽規模** - CVPR 官方 Embodied AI Workshop 舉辦 ManipArena 實機械臂操作挑戰賽
+- **評估任務** - 20 項真實世界操作任務，評測模型的物理推理、環境泛化、決策能力
+- **研究價值** - 從虛擬模擬進階至真實機械臂驗證，推動 VLA 模型從實驗室走向產業應用
+- **技術亮點** - 考察多機械人泛化、快速適應新環境、少樣本學習
+- **對 Roy 的參考** - 觀察最新 VLA 模型在真實世界的性能瓶頸與解決方案
+- **參考** - [CVPR 2026 Embodied AI Workshop](https://www.newswise.com/articles/cvpr-2026-showcases-how-ai-is-powering-the-next-era-of-robotics-innovation)
+
+#### 31. Foundation Models for Mobile Service Robots 系統綜述 — MDPI Robotics（2026 年 5 月）
+- **論文規模** - MDPI Robotics 刊載全面綜述，系統梳理基礎模型在移動服務機械人中的應用
+- **涵蓋範圍** - 大型語言模型 (LLM)、視覺語言模型 (VLM)、多模態大型語言模型 (MLLM) 與視覺語言動作模型 (VLA)
+- **核心發現** - 基礎模型與具身 AI 結合，讓移動機械人實現靈活理解、自適應行為、穩健決策
+- **應用場景** - 家庭服務、醫療護理、倉儲物流、社交互動
+- **對 ROS 的指導** - 集成預訓練基礎模型可大幅降低機械臂從零開始訓練的成本，實現快速落地
+- **參考** - [Foundation Models for Mobile Service Robots - MDPI](https://www.mdpi.com/2218-6581/15/3/55)
 - **遷移潛力** - 支持快速適應從模擬環境至實機部署的策略學習
 
 #### 29. CVPR 2026 EDGE Workshop — 邊緣設備高效多模態生成（Jun 2026）
