@@ -4417,3 +4417,13 @@
 #### 534. Mimic-Video — 流匹配動作解碼與 10 倍樣本效率提升（May 2026）
 - **視頻動作模型的效率突破** - Mimic Robotics 開發 mimic-video，結合預訓練網際網路規模視頻模型與流匹配動作解碼器，實現機械臂實時操縱學習的 10 倍樣本效率提升。在真實世界操縱任務上收斂速度提升 2 倍，相比傳統擴散模型推理延遲降低 50%，為邊界部署奠定新基礎
 - **開源生態的實踐效益** - mimic-video 展示將通用網際網路視頻知識遷移至具身機械人域的可行性，推動 VLA 模型從海量人工標註資料向自監督與弱監督學習的轉變。該方法特別適合企業快速部署機械人應用，降低資料標註成本 70%
+
+#### 535. World Models for Embodied AI — CVPR 2026 Workshop 核心主題（May 2026）
+- **想像力驅動的機械人規劃革命** - CVPR 2026 Embodied AI Workshop（第 6 屆）將「World Models for Embodied AI」定為核心主題，強調機械人透過訓練的物理模擬器在執行前於想像中規劃與評估動作序列。NVIDIA Cosmos、Google Genie 2 及多個學術模型已證實可從視訊學習足夠保真度的物理動力學，支援機械人規劃與決策
+- **完整認知-執行-反饋閉環** - World Models 與 VLA 的結合推進具身 AI 邁向「感知-推理-動作-模擬反饋」的完整迴圈。該方向成為 2026 年物理 AI 研究共識，預期將成熟應用於人形機械人、靈巧手與自主系統的下一代開發
+- **來源**：[CVPR 2026 Embodied AI Workshop](https://embodied-ai.org/cvpr2026/) | [NVIDIA National Robotics Week 報導](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
+
+#### 536. IJCAI-ECAI 2026 AI and Robotics Track — 前沿議題整合（May 2026）
+- **Agent 與具身系統的融合路徑** - IJCAI 2026 首次設立「AI and Robotics」專項軌道，重點議題包括視覺語言動作模型（VLA）、生成式世界模型、從語言指令/演示/教學視頻進行任務合成、大型模型在機械人中的基礎應用與實機部署。此舉標誌著傳統 AI 學術會議正式將具身智能與機械人控制列為核心研究方向
+- **跨學科協同的新時代** - 該軌道融合符號推理、強化學習、生成模型與機械人學的多學科知識，反映 AI 從語言模型單點突破向多模態具身系統全面推進的產業趨勢，為全球機械人與自主系統研發團隊提供學術交流與成果發表的統一平台
+- **來源**：[IJCAI-ECAI 2026 Call for Papers](https://2026.ijcai.org/ijcai-ecai-2026-call-for-papers-ai-and-robotics/)
