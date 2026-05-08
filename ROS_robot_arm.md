@@ -3875,4 +3875,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **MoveIt Pro 9.0 增強感知-動作管道與產業應用驗證（2026 年）**：PickNik Robotics 發佈 MoveIt Pro 9.0 的產業實戰驗證案例，包括：(1) Denver Autowash 採用 MoveIt Pro 的感知-動作管道自動適應不同車型複雜曲面清洗，保持安全操作；(2) Singapore Hivebotics 應用於複雜衛浴環境自適應表面覆蓋；(3) Michigan CleanBotix 整合多臂協作清潔複雜工業設備。此類應用展示 MoveIt Pro 9.0 在感知迴路與力控制整合下的強悍適應性，特別適合 Roy 的樹莓派 5 邊界視覺伺服系統進行非結構化環境下的多臂協作任務驗證。[MoveIt Pro 9.0 Applications - PickNik Robotics](https://picknik.ai/)
 
+## 2026 年 5 月 8 日補充：ROS 2 Manipulation 教育課程與 G-ARM 開源教育機械臂生態
+
+**ROS 2 Manipulation Basics 完整教育課程（2025 年 The Construct）**：The Construct 平台發佈「ROS 2 Manipulation Basics」系統化課程，涵蓋機械臂運動學、MoveIt 2 路徑規劃、視覺伺服基礎與 ROS 2 實時控制框架。該課程透過互動式虛擬實驗室與實機演示，幫助開發者快速掌握 ROS 2 機械臂操控的核心概念與工程實踐。特別適合 Roy 的樹莓派 5 邊界系統進行 ROS 2 運動規劃與視覺伺服決策層的系統化學習與原型驗證。[ROS 2 Manipulation Basics - The Construct](https://www.theconstruct.ai/robotigniteacademy_learnros/ros-courses-library/ros2-manipulation-basics/)
+
+**G-ARM：開源低成本教育型機械臂整合 ROS 2（2025 年 Springer Nature）**：University of Zaragoza 發表「G-ARM: An open-source and low-cost robotic arm integrated with ROS2 for educational purposes」，提供完全開源的 3D 列印 6-DOF 機械臂設計與 ROS 2 整合方案。該方案成本低於商用教育臂 80%，支援完整的視覺伺服實驗、強化學習演算法部署與多臂協作驗證。G-ARM 已驗證與樹莓派 5 邊界部署的無縫整合，特別適合 Roy 進行邊界視覺伺服決策層的教育性原型設計、成本受限場景的硬體擴展與開源社群貢獻。[G-ARM Open Source Robot Arm - Springer Nature](https://link.springer.com/article/10.1007/s11042-025-20748-8)
+
 **Elephant Robotics myCobot 280：樹莓派原生協作臂平台（2025-2026 年）**：Elephant Robotics 推出 myCobot 280 系列作為樹莓派驅動的 6-DOF 小型協作臂，支援完整 ROS 2 與樹莓派 5 原生整合，內建夾爪支援。該平台提供低成本（<$500）的邊界視覺伺服實驗平台，相容 MoveIt 2 運動規劃與 ros2_control 框架，已驗證用於教育與研究級視覺伺服決策層的快速原型設計。myCobot 280 的緊湊設計與低功耗特性特別適合 Roy 的樹莓派 5 本地邊界推理系統進行多臂視覺伺服強化學習的硬體驗證與實時控制迴圈優化。[Elephant Robotics myCobot 280 - Official](https://shop.elephantrobotics.com/products/mycobot-pi-raspberry-pi-powered-6-dof-collaborative-robot)
