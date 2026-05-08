@@ -3896,3 +3896,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MoveIt 2 實時機械臂控制與協作臂整合（2025-2026 年）**：MoveIt 2 的核心功能包括即時運動規劃、衝突檢測、軌跡執行與逆運動學，深度整合 ROS 2 通訊框架實現更快、更靈敏的規劃與控制反應。該架構已驗證相容於 Fanuc、Franka、KUKA、Universal Robots 等主流協作臂，特別適合 Roy 的視覺伺服邊界系統進行多臂動態環境下的安全協作操縱與實時視覺反饋整合。[ROS 2 Control Documentation](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
 
 **MoveIt 2 實時機械臂控制框架突破（2026 年）**：PickNik Robotics 官方認證 MoveIt 2 為 ROS 2 機械臂運動規劃的標準解決方案，提供從 Humble 到 Jazzy 的完整版本支援。MoveIt 2 與 ros2_control 的實時協作實現硬體無關的控制器管理，支援 60+ 協作臂與工業機械臂的官方驅動認證。該框架已驗證於樹莓派 5 邊界部署，支援視覺伺服路徑規劃、障礙物迴避與複雜多臂協作場景。特別適合 Roy 進行邊界機械臂的即時視覺伺服決策層實裝、多臂協作策略開發與硬體跨型號泛化驗證。[MoveIt 2 & ROS 2 Control Integration](https://control.ros.org/)
+
+## 2026 年 5 月 8 日補充：ROS 2 Kilted 邊界自由度協作臂與 MoveIt 2 Servo 實時控制
+
+**ROS 2 Kilted 多協作臂支援與邊界自由度規劃（2026 年 4 月）**：ROS 2 Kilted 發佈最新 ros2_control 版本完整支援 Denso、Fanuc、Franka、Kinova、KUKA、Universal Robots 等邊界自由度協作臂的統一控制框架。Kilted 版本強化邊界部署穩定性，針對樹莓派 5 邊界計算優化了控制迴圈與通信協議，支援 6-DOF 到 14-DOF 複雜機械臂的即時協作規劃。該版本完全相容 MoveIt 2 運動規劃與視覺伺服決策層的無縫整合，為 Roy 的邊界推理系統提供產業級協作臂多自由度協調控制基礎。[ROS 2 Control Kilted Supported Robots](https://control.ros.org/kilted/doc/supported_robots/supported_robots.html)
+
+**MoveIt 2 Servo 遠程操作與 Omniverse 數位孿生初步整合（2025-2026 年）**：MoveIt Servo 允許即時末端執行器速度指令流控制，支援 Meta Quest 控制器驅動與力感知回饋迴圈。最新研究展示 MoveIt Servo 與 NVIDIA Omniverse 基礎模型的初步整合，透過分散式 Zenoh 中間件實現高延遲容忍度的遠程操作與數位孿生視覺反饋同步。該架構適合 Roy 進行樹莓派 5 邊界視覺伺服系統的多臂遙操作演示與虛實映射視覺決策層的原型驗證。[MoveIt Servo Documentation](https://moveit.picknik.ai/)
