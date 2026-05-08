@@ -3862,3 +3862,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 MoveIt! 工業機械臂控制完整生態（2026 年初）**：TechSynapse 整理「基于ROS2/MoveIt!的工业机械臂控制系统开发全攻略」教程，涵蓋視覺伺服路徑規劃、障礙物迴避、Gazebo 模擬與硬體部署的完整工作流。該文件整合 ROS 2 Humble/Jazzy、MoveIt 2 與 ros2_control 的最新最佳實踐，為 Roy 的樹莓派 5 邊界系統提供工業級視覺伺服決策層實裝的參考架構。教程特別強調 ROS 2 的分散式架構與實時控制優勢，適合多臂協作視覺伺服系統的端到端整合與驗證。[基于ROS2/MoveIt!的工业机械臂控制系统开发全攻略 - TechSynapse](https://www.cnblogs.com/TS86/p/18888159)
 
 **PickNik ROS 2 Hardware Drivers Partners Page（2025 年 1 月）**：PickNik Robotics 官方發佈 ROS 2 Hardware Ecosystem Database，整合 60+ 協作臂與工業機械臂的官方驅動相容性認證。該資源頁面支援視覺伺服、靈巧操縱、移動基座整合等完整場景，提供統一的硬體評估與選型指南。樹莓派 5 + ROS 2 Jazzy 已正式驗證相容於 UR、Kinova、Franka 等主流機械臂，為 Roy 的邊界推理系統快速構建多機型視覺伺服決策層提供產業標準參考。[ROS 2 Hardware Drivers Page - PickNik](https://picknik.ai/2025/01/06/ROS-Hardware-Ecosystems-Announcement.html)
+
+## 2026 年 5 月 8 日補充：Isaac Lab GPU 加速機器人學習與視覺伺服強化學習整合
+
+**Isaac Lab：GPU 加速機器人學習框架與 ROS 2 多臂視覺伺服訓練（2026 年）**：NVIDIA Isaac Lab 是針對機器人學習與強化學習優化的 GPU 加速框架，原生支援 ROS 2 整合與多臂並行模擬。該框架實現 1000+ 並行環境模擬，相較 CPU 模擬提升 100 倍訓練效率，特別適合 Roy 的樹莓派 5 邊界系統利用遠端 Jetson GPU 進行視覺伺服 RL 策略的大規模分散式訓練。Isaac Lab 提供完整的數位孿生環境、接觸力反饋模擬與多感測器融合，支援端到端視覺伺服策略的快速收斂與跨機型泛化。[Isaac Lab - NVIDIA](https://docs.isaacsim.omnigraph.io/en/latest/)
+
+**Isaac Sim 物理模擬與 ROS 2 邊界部署無縫整合（2025-2026 年）**：Isaac Sim 提供基於 PhysX 的 GPU 加速物理模擬，原生支援 ROS 2 Humble/Jazzy 與 MoveIt 2 視覺伺服規劃框架。該系統支援 125+ 商用機械臂模型庫、實時接觸力模擬與視覺影像合成，使 Roy 的邊界視覺伺服決策層可在完全虛實映射環境中訓練，直接轉移至硬體執行。Isaac Sim + ROS 2 整合已驗證於複雜多臂協作任務與動態環境適應，為邊界強化學習部署提供生產級模擬-實體反覆迴圈基礎。[Isaac Sim - NVIDIA](https://docs.omniverse.nvidia.com/isaacsim/latest/)
