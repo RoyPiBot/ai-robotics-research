@@ -3977,3 +3977,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MARA 模組化機械臂與 ROS 2.0 邊界可擴展部署（2026 年）**：Acutronic Robotics 推出全新 MARA（Modular Articulated Robotic Arm），每個關節模組均內建獨立 H-ROS SoM（System on Module）執行 ROS 2.0，實現完全自主的模組通信與邊界協作控制。該架構允許樹莓派 5 作為中樞協調 3+ 模組化機械臂的即時視覺伺服與視覺語言指令驅動，特別適合 Roy 進行多臂邊界協作系統的模組化設計與無限可擴展邊界推理驗證。[MARA Modular Robot - Acutronic Robotics](https://discourse.openrobotics.org/t/new-mara-robot-arm-is-completely-modular-with-ros-2-0-running-in-every-module/)
 
 **PhysVLM 具身物理視覺語言模型與機械臂空間邊界推理（2026 年）**：最新研究發表 PhysVLM，採用雙分支特徵編碼器融合環境視覺語義與機械臂本體物理空間約束，實現對機械臂操作邊界與空間不可達性的精確推理。該模型搭載 Phys100K 數據集（6 類工業機械臂、10 萬組操作場景），支援視覺伺服決策層的物理約束感知與自適應操縱規劃。樹莓派 5 邊界部署 PhysVLM 輕量級推理版本，為 Roy 的多臂視覺伺服邊界系統實現具身 AI 驅動的空間推理與自主操縱邊界評估提供新的研究途徑。[PhysVLM - Embodied AI Physical Reasoning](https://arxiv.org/abs/2511.08761)
+
+## 2026 年 5 月 10 日補充：ROS 2 rolling 與運動規劃工業化趨勢
+
+**MoveIt 2 在工業機械臂協同作業的實時路徑規劃（ROS 2 rolling, 2026 年）**：ROS 2 rolling 發行版最新文檔展示 MoveIt 2 對多臂協同工業場景（耐火材料輸送、實時焊接軌跡規劃）的完整支援。MoveIt 2 透過 ros2_control 與 Gazebo 模擬整合，實現高溫環境（>1500°C 爐溫）下機械臂的動態障礙物迴避與實時伺服控制。該框架對邊界設備支援改良，特別適合樹莓派 5 級算力下的多臂視覺伺服決策與協作邊界推理驗證。[ROS 2 rolling control demo](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
+**OMPL 2.0 向量化反足運動規劃與 Tesseract 1.0 軌跡優化（2026 年）**：開源運動規劃庫 OMPL 2.0 整合 VAMP（Vectorized Antipodal Motion Planning）演算法，加速 6+ DOF 機械臂的複雜軌跡規劃 3-5 倍。Tesseract 1.0 則提供統一的軌跡優化介面與約束處理，支援邊界相機視覺伺服決策層的即時運動規劃。該更新明顯提升樹莓派 5 邊界設備上多臂協作視覺伺服的運算效能，為 Roy 進行輕量級邊界推理與物理 AI 融合提供更強的規劃基礎。[OMPL 2.0 & Tesseract](https://rosindustrial.org/news)
