@@ -3958,3 +3958,8 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Orbbec Gemini 305 3D 相機與 ROS 2 邊界視覺伺服平台整合（2026 年 1 月 CES）**：Orbbec 推出超小型 Gemini 305 3D 相機，針對機械臂視覺伺服應用優化，支援 NVIDIA Jetson 與樹莓派 5 原生整合。該相機實現 <50ms 深度處理延遲，支援 RGB-D 融合視覺伺服決策層的實時部署。Gemini 305 相容 ROS 2 官方驅動與 MoveIt 2 感知管道，為 Roy 的邊界視覺伺服系統提供成本效益高（<$200）的工業級 3D 感知方案。[Orbbec Gemini 305 for Robotics](https://www.orbbec.com/news/)
 
 **IEEE T-RO 事件視覺機器人特刊標準化與應用驗證（May-June 2025 截稿）**：IEEE Transactions on Robotics 正式發佈「Event-Based Vision for Robotics」特刊，預期 2026 年 3 月出版。該特刊彙整事件相機硬體標準、演算法評估基準與應用案例，特別涵蓋多臂視覺伺服、邊界感知與低延遲控制場景。Roy 的事件相機視覺伺服研究成果可參考該特刊作為產業標準參考，推進邊界機械臂實時視覺伺服的國際認可度。[IEEE Event-Based Vision for Robotics Special Issue](https://www.ieee-ras.org/publications/t-ro/special-issues/event-based-vision-for-robotics)
+## 2026 年 5 月 9 日補充：事件視覺 AI 邊界推理與物理 AI 機械臂應用趨勢
+
+**事件視覺機器學習邊界推理成本效益分析（2026 年 MDPI）**：MDPI Sensors 特刊「Event-Based Machine Vision for Edge AI Computing」統合事件相機與邊界設備深度學習推理的成本效益評估。研究確認事件視覺相較傳統 RGB 視覺降低邊界設備（樹莓派 5）運算負載 65-75%，同時實現 10-50 倍延遲改進。該評估特別針對多臂協作機械臂視覺伺服應用，證實事件相機 + 輕量級邊界推理框架（TFLite、ONNX）的能效與實時性優勢，為 Roy 的邊界視覺伺服系統提供成本約束下的感測器選型與推理架構優化參考。[Event-Based Machine Vision for Edge AI Computing - MDPI](https://www.mdpi.com/1424-8220/26/3/935)
+
+**ARM 物理 AI 與機械臂邊界部署趨勢（2026 年 Embedded World）**：ARM 在 2026 年 Embedded World 發表物理 AI 對機械臂邊界控制的驅動效應，確認邊界機械臂（樹莓派 5 + Jetson 級計算）上執行視覺伺服 RL 決策層與實時控制已成為實現自適應協作操縱的關鍵技術路線。該報告強調邊界機械臂系統需要統一整合視覺感知（事件相機）、運動規劃（MoveIt 2）與 AI 決策（邊界推理框架），特別適合 Roy 進行多臂協作邊界視覺伺服系統的端到端物理 AI 原型驗證與產業應用前景評估。[Arm Physical AI at Embedded World 2026](https://newsroom.arm.com/blog/arm-embedded-world-2026)
