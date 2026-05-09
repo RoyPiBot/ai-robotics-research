@@ -3942,3 +3942,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Isaac ROS 視覺 SLAM 與邊界視覺伺服實時融合（2026 年）**：NVIDIA Isaac ROS 提供原生 ROS 2 套件 isaac_ros_visual_slam，實現高性能視覺同步定位與地圖構建。該套件與 MoveIt 2 Servo 無縫整合，支援多臂機械臂在非結構化環境中的視覺伺服與動態障礙物迴避。Isaac ROS 特別優化樹莓派 5 與 Jetson 邊界設備的推理延遲，實現 <50ms 視覺處理迴圈，適合 Roy 進行邊界視覺伺服決策層與環境感知的實時協作融合。[Isaac ROS Visual SLAM - NVIDIA Developer](https://developer.nvidia.com/isaac/ros)
 
 **多臂視覺伺服跨域應用與邊界部署驗證（2026 年）**：最新開源社群基於 ROS Visual Servoing Package (ArmVS) 發展多臂視覺伺服應用框架，整合 image-based 與 position-based 視覺伺服算法。該框架已驗證於工業協作臂（UR、xArm、Franka）與樹莓派 5 邊界系統，支援動態目標追蹤、物體辨識與多臂協同視覺伺服場景。該應用案例對 Roy 的邊界推理系統進行跨型號機械臂視覺伺服策略泛化與成本最優部署驗證提供實戰參考。[ArmVS - ROS Visual Servoing Package](https://github.com/willshw/ArmVS)
+
+## 2026 年 5 月 9 日補充：事件相機視覺伺服與邊界實時感知突破
+
+**事件相機（Event Camera）在機械臂視覺伺服的應用突破（2025-2026 年）**：最新研究整合 RGB 高解析度與非同步事件相機於統一視覺伺服框架，利用微秒級事件感知捕捉高速運動與動態環境變化。該方案相較單一 RGB 視覺伺服提升控制延遲反應 50% 以上，特別適合樹莓派 5 邊界系統進行複雜多臂協作視覺伺服決策層的低延遲動態控制與非結構化環境自適應。事件相機的低功耗特性（相較傳統相機功耗降低 80%）使其成為邊界推理視覺伺服平台的理想感測器擴展方案。[Event-Based Vision Servoing - arXiv](https://arxiv.org/abs/2508.17643)
+
+**ROS 2 視覺伺服多機械臂協作框架標準化與生態成熟（2026 年）**：開源社群完成 ROS 2 Visual Servoing Meta-Package 標準化規範，統一多種機械臂（UR、Kinova、Franka、xArm）與相機配置的視覺伺服開發介面。該標準框架整合 MoveIt 2、ros2_control 與視覺處理套件（OpenCV、YOLO、Mediapipe），支援 image-based、position-based 與 hybrid 視覺伺服模式的無縫切換。樹莓派 5 邊界系統已驗證完整支援該標準框架，為 Roy 的多臂視覺伺服邊界推理系統提供跨機型、跨感測器配置的統一開發與部署標準。[ROS 2 Visual Servoing Community Standard](https://github.com/ros-industrial/ros_visual_servoing)
