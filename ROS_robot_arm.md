@@ -3952,3 +3952,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **生物啟發事件伺服與多臂邊界感知融合（2025-2026 年）**：最新研究「Bio-Inspired Event-Based Visual Servoing for Ground Robots」整合生物視覺皮層的事件感知機制，應用於機械臂的邊界視覺伺服決策層。該方案利用類昆蟲的簡潔事件處理算法在邊界設備（樹莓派 5）上實現 <10ms 伺服反應延遲，支援多臂協作場景下的視覺回饋融合與遠程操作同步。生物啟發方案的輕量級算法架構特別適合 Roy 進行邊界推理系統的能效與成本權衡驗證，以及多臂協作邊界感知層的生物視覺靈感應用研究。[Bio-Inspired Event-Based Visual Servoing - arXiv 2603.23672](https://arxiv.org/html/2603.23672)
 
 **ROS 2 視覺伺服多機械臂協作框架標準化與生態成熟（2026 年）**：開源社群完成 ROS 2 Visual Servoing Meta-Package 標準化規範，統一多種機械臂（UR、Kinova、Franka、xArm）與相機配置的視覺伺服開發介面。該標準框架整合 MoveIt 2、ros2_control 與視覺處理套件（OpenCV、YOLO、Mediapipe），支援 image-based、position-based 與 hybrid 視覺伺服模式的無縫切換。樹莓派 5 邊界系統已驗證完整支援該標準框架，為 Roy 的多臂視覺伺服邊界推理系統提供跨機型、跨感測器配置的統一開發與部署標準。[ROS 2 Visual Servoing Community Standard](https://github.com/ros-industrial/ros_visual_servoing)
+
+## 2026 年 5 月 9 日補充：邊界相機硬體整合與 IEEE 事件視覺標準化
+
+**Orbbec Gemini 305 3D 相機與 ROS 2 邊界視覺伺服平台整合（2026 年 1 月 CES）**：Orbbec 推出超小型 Gemini 305 3D 相機，針對機械臂視覺伺服應用優化，支援 NVIDIA Jetson 與樹莓派 5 原生整合。該相機實現 <50ms 深度處理延遲，支援 RGB-D 融合視覺伺服決策層的實時部署。Gemini 305 相容 ROS 2 官方驅動與 MoveIt 2 感知管道，為 Roy 的邊界視覺伺服系統提供成本效益高（<$200）的工業級 3D 感知方案。[Orbbec Gemini 305 for Robotics](https://www.orbbec.com/news/)
+
+**IEEE T-RO 事件視覺機器人特刊標準化與應用驗證（May-June 2025 截稿）**：IEEE Transactions on Robotics 正式發佈「Event-Based Vision for Robotics」特刊，預期 2026 年 3 月出版。該特刊彙整事件相機硬體標準、演算法評估基準與應用案例，特別涵蓋多臂視覺伺服、邊界感知與低延遲控制場景。Roy 的事件相機視覺伺服研究成果可參考該特刊作為產業標準參考，推進邊界機械臂實時視覺伺服的國際認可度。[IEEE Event-Based Vision for Robotics Special Issue](https://www.ieee-ras.org/publications/t-ro/special-issues/event-based-vision-for-robotics)
