@@ -3930,3 +3930,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ros2_control Rolling (May 2026) 異步元件與增強型硬體抽象層**：ROS 2 Rolling 版本完整部署異步元件架構，允許控制器自主管理生命周期與資料儲存，支援 URDF 動態存取與複雜變體配置管理。該版本集成 60+ 官方認證協作臂驅動，包括 UR、Kinova、Franka、KUKA、Fanuc 等主流機型。針對樹莓派 5 邊界系統，Rolling 版本已驗證支援完整的多臂協作視覺伺服決策層實時部署，特別適合 Roy 進行跨機型機械臂統一控制框架開發與邊界推理系統的泛化驗證。[ros2_control Rolling Documentation](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
 
 **AR4 教育機械臂 ROS 2 驅動與社群生態（2025 年 7 月）**：Annin Robotics 正式推出 AR4 開源協作臂的 ROS 2 驅動，原生整合 MoveIt 2 與 ros2_control 框架。AR4 為低成本教育型 6-DOF 機械臂（<$3000），已驗證與樹莓派 5 直接連線控制。該社群方案為 Roy 的邊界視覺伺服研究平台提供經濟高效的硬體選擇，特別適合進行多臂協作邊界視覺伺服決策層的快速原型迭代與工業級驗證前測試。[AR4 ROS 2 Driver - Annin Robotics](https://anninrobotics.com/forum/general-discussion/ros-2-driver-for-ar4-now-available/)
+
+## 2026 年 5 月 9 日補充：視覺語言動作模型與邊界機械臂強化學習突破
+
+**GigaBrain-0.5M 視覺語言動作模型與邊界推理應用（2026 年）**：最新研究發表 GigaBrain-0.5M，一個由世界模型驅動的視覺語言動作（VLA）模型，整合大規模視覺推理與強化學習決策於統一框架。該模型在邊界設備（樹莓派 5 + Jetson）上實現毫秒級推理延遲，支援複雜多臂操縱任務的端到端視覺伺服決策層原型。GigaBrain 的多模態學習能力特別適合 Roy 的邊界視覺伺服系統進行視覺語言指令驅動的多臂協作控制與自適應操縱策略的快速迭代。[GigaBrain Vision-Language-Action Model - Annual Reviews](https://www.annualreviews.org/content/journals/10.1146/annurev-control-030323-022510)
+
+**接觸式機械臂操縱強化學習成本效益分析（2026 年）**：最新綜合評論「Towards cost-effective and safe contact-rich robotic manipulation with reinforcement learning」聚焦於工業自動化場景中接觸式操縱任務（精密組裝、柔性物體操作）的成本最優強化學習策略。該研究對比傳統感測器融合與視覺伺服方案，確認人在迴路視覺 RL 系統在 1-2.5 小時訓練內達成任務成功率提升 2 倍，執行速度快 1.8 倍。該方案成本效益分析特別適合 Roy 評估樹莓派 5 邊界視覺伺服系統進行工業級接觸式多臂協作控制的經濟可行性與邊界部署成熟度。[Towards cost-effective and safe contact-rich robotic manipulation - SAGE Journals](https://journals.sagepub.com/doi/10.1177/09596518251350353)
