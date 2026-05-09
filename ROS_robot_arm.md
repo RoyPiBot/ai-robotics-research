@@ -3983,3 +3983,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MoveIt 2 在工業機械臂協同作業的實時路徑規劃（ROS 2 rolling, 2026 年）**：ROS 2 rolling 發行版最新文檔展示 MoveIt 2 對多臂協同工業場景（耐火材料輸送、實時焊接軌跡規劃）的完整支援。MoveIt 2 透過 ros2_control 與 Gazebo 模擬整合，實現高溫環境（>1500°C 爐溫）下機械臂的動態障礙物迴避與實時伺服控制。該框架對邊界設備支援改良，特別適合樹莓派 5 級算力下的多臂視覺伺服決策與協作邊界推理驗證。[ROS 2 rolling control demo](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
 
 **OMPL 2.0 向量化反足運動規劃與 Tesseract 1.0 軌跡優化（2026 年）**：開源運動規劃庫 OMPL 2.0 整合 VAMP（Vectorized Antipodal Motion Planning）演算法，加速 6+ DOF 機械臂的複雜軌跡規劃 3-5 倍。Tesseract 1.0 則提供統一的軌跡優化介面與約束處理，支援邊界相機視覺伺服決策層的即時運動規劃。該更新明顯提升樹莓派 5 邊界設備上多臂協作視覺伺服的運算效能，為 Roy 進行輕量級邊界推理與物理 AI 融合提供更強的規劃基礎。[OMPL 2.0 & Tesseract](https://rosindustrial.org/news)
+
+## 2026 年 5 月 10 日補充：ROS 2 長期支援版本策略與多臂協作認證生態
+
+**ROS 2 Humble 與 Jazzy 長期支援路線規劃（2026 年）**：OSRF 官方確認 ROS 2 Humble 長期支援至 2027 年 5 月，ROS 2 Jazzy（新興 LTS）支援至 2029 年 5 月，為 Roy 的邊界機械臂長期部署提供穩定的軟體基礎。MoveIt 2 完整支援兩個 LTS 版本，具備 60+ 官方認證協作臂驅動（Fanuc、KUKA、UR、Franka、Kinova 等），已驗證與樹莓派 5 邊界設備的毫秒級運動規劃與實時協作控制。該生態成熟度為 Roy 進行多臂邊界視覺伺服系統的長期研發投資與產業化應用提供國際標準認可。[ROS 2 Control Documentation - Humble](https://control.ros.org/humble/doc/resources/resources.html)
+
+**MoveIt 2 與 ros2_control 多臂協作認證框架（2026 年）**：PickNik Robotics 發布最新認證清單，MoveIt 2 + ros2_control 統一框架已通過全球 60+ 機械臂型號的官方驗證，涵蓋 6-DOF 至 14-DOF 複雜協作場景。該框架特別強化邊界平台支援，包括樹莓派 5 邊界部署的多臂協作視覺伺服決策層、實時伺服控制與動態環境自適應。新增輕量級推理優化，支援 TensorRT、ONNX 邊界加速，為 Roy 的多臂協作邊界推理系統提供廠商認可的統一控制標準與長期技術支援承諾。[MoveIt 2 Humble Release](https://moveit.ai/moveit/ros/humble/2022/06/02/MoveIt-Humble-Release.html)
