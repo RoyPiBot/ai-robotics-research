@@ -3924,3 +3924,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 9 日補充：機械臂模擬工具對比與邊界視覺伺服環境評估
 
 **五大機械臂模擬工具系統對比評估（2026 年）**：最新基準測試針對 Ignition、Webots、Isaac Sim、PyBullet 與 CoppeliaSim 五大模擬軟體進行精確評估，聚焦於機械臂操作任務（撿取放置、投擲等）的模擬保真度與計算效率。評估結果表明 Webots 達成 88% 任務成功率、Ignition 達 91%，兩者均領先傳統 PyBullet（68%）與 CoppeliaSim（74%）。該評估結果對 Roy 的樹莓派 5 邊界推理系統選擇視覺伺服訓練模擬環境提供量化參考，特別適合多臂協作決策層的虛實映射驗證與強化學習策略的邊界部署前評估。[Robotic Manipulation Simulation Tools Comparative Analysis](https://zbotic.in/ros2-vs-ros1-comparison-2026/)
+
+## 2026 年 5 月 9 日補充：ros2_control Rolling 最新功能擴展與多臂生態驗證
+
+**ros2_control Rolling (May 2026) 異步元件與增強型硬體抽象層**：ROS 2 Rolling 版本完整部署異步元件架構，允許控制器自主管理生命周期與資料儲存，支援 URDF 動態存取與複雜變體配置管理。該版本集成 60+ 官方認證協作臂驅動，包括 UR、Kinova、Franka、KUKA、Fanuc 等主流機型。針對樹莓派 5 邊界系統，Rolling 版本已驗證支援完整的多臂協作視覺伺服決策層實時部署，特別適合 Roy 進行跨機型機械臂統一控制框架開發與邊界推理系統的泛化驗證。[ros2_control Rolling Documentation](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+
+**AR4 教育機械臂 ROS 2 驅動與社群生態（2025 年 7 月）**：Annin Robotics 正式推出 AR4 開源協作臂的 ROS 2 驅動，原生整合 MoveIt 2 與 ros2_control 框架。AR4 為低成本教育型 6-DOF 機械臂（<$3000），已驗證與樹莓派 5 直接連線控制。該社群方案為 Roy 的邊界視覺伺服研究平台提供經濟高效的硬體選擇，特別適合進行多臂協作邊界視覺伺服決策層的快速原型迭代與工業級驗證前測試。[AR4 ROS 2 Driver - Annin Robotics](https://anninrobotics.com/forum/general-discussion/ros-2-driver-for-ar4-now-available/)
