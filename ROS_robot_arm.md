@@ -3963,3 +3963,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **事件視覺機器學習邊界推理成本效益分析（2026 年 MDPI）**：MDPI Sensors 特刊「Event-Based Machine Vision for Edge AI Computing」統合事件相機與邊界設備深度學習推理的成本效益評估。研究確認事件視覺相較傳統 RGB 視覺降低邊界設備（樹莓派 5）運算負載 65-75%，同時實現 10-50 倍延遲改進。該評估特別針對多臂協作機械臂視覺伺服應用，證實事件相機 + 輕量級邊界推理框架（TFLite、ONNX）的能效與實時性優勢，為 Roy 的邊界視覺伺服系統提供成本約束下的感測器選型與推理架構優化參考。[Event-Based Machine Vision for Edge AI Computing - MDPI](https://www.mdpi.com/1424-8220/26/3/935)
 
 **ARM 物理 AI 與機械臂邊界部署趨勢（2026 年 Embedded World）**：ARM 在 2026 年 Embedded World 發表物理 AI 對機械臂邊界控制的驅動效應，確認邊界機械臂（樹莓派 5 + Jetson 級計算）上執行視覺伺服 RL 決策層與實時控制已成為實現自適應協作操縱的關鍵技術路線。該報告強調邊界機械臂系統需要統一整合視覺感知（事件相機）、運動規劃（MoveIt 2）與 AI 決策（邊界推理框架），特別適合 Roy 進行多臂協作邊界視覺伺服系統的端到端物理 AI 原型驗證與產業應用前景評估。[Arm Physical AI at Embedded World 2026](https://newsroom.arm.com/blog/arm-embedded-world-2026)
+
+## 2026 年 5 月 9 日補充：模組化機械臂架構與具身 AI 邊界推理
+
+**MARA 模組化機械臂與 ROS 2.0 邊界可擴展部署（2026 年）**：Acutronic Robotics 推出全新 MARA（Modular Articulated Robotic Arm），每個關節模組均內建獨立 H-ROS SoM（System on Module）執行 ROS 2.0，實現完全自主的模組通信與邊界協作控制。該架構允許樹莓派 5 作為中樞協調 3+ 模組化機械臂的即時視覺伺服與視覺語言指令驅動，特別適合 Roy 進行多臂邊界協作系統的模組化設計與無限可擴展邊界推理驗證。[MARA Modular Robot - Acutronic Robotics](https://discourse.openrobotics.org/t/new-mara-robot-arm-is-completely-modular-with-ros-2-0-running-in-every-module/)
+
+**PhysVLM 具身物理視覺語言模型與機械臂空間邊界推理（2026 年）**：最新研究發表 PhysVLM，採用雙分支特徵編碼器融合環境視覺語義與機械臂本體物理空間約束，實現對機械臂操作邊界與空間不可達性的精確推理。該模型搭載 Phys100K 數據集（6 類工業機械臂、10 萬組操作場景），支援視覺伺服決策層的物理約束感知與自適應操縱規劃。樹莓派 5 邊界部署 PhysVLM 輕量級推理版本，為 Roy 的多臂視覺伺服邊界系統實現具身 AI 驅動的空間推理與自主操縱邊界評估提供新的研究途徑。[PhysVLM - Embodied AI Physical Reasoning](https://arxiv.org/abs/2511.08761)
