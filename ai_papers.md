@@ -4573,3 +4573,13 @@
 - **統一理解、生成與動作的多模態架構** - Intern Robotics 團隊發布 InternVLA-A1（arXiv 2601.02456），採用混合變換器（Mixture-of-Transformers）架構，統一三大專家：場景理解、視覺預知生成與動作執行。該模型於 533M 幀混合合成-真實數據集預訓練，結合世界模型式想像模組實現遠見感知的動作生成。InternVLA-A1 在日常任務中超越 π0 與 GR00T N1.5 14.5%，在動態場景（如傳送帶分揀）提升 40-73.3%
 - **空間感知引導與實機驗證的雙重突破** - 同步發布的 InternVLA-M1 引入二階段空間引導管線：空間基礎預訓練（2.3M 空間推理數據）決定「在何處動作」，空間引導動作微調決定「如何動作」。M1 在 SimplerEnv Google Robot（+14.6%）、WidowX（+17%）與 LIBERO Franka（+4.3%）基準上一致超越 π0、GR00T 與 OpenVLA。兩款模型均開源，推動學術與企業的機械臂應用快速迭代
 - **來源**：[InternVLA-A1 GitHub](https://github.com/InternRobotics/InternVLA-A1) | [InternVLA-M1 GitHub](https://github.com/InternRobotics/InternVLA-M1)
+
+#### 564. GEN-1 — Generalist AI 高效具身基礎模型與緊急應變能力（April 2026）
+- **超高成功率與數據高效的通用機械人模型** - Generalist AI 於 2026 年 4 月發布 GEN-1，實現在多數任務上超過 99% 的成功率，相比前代模型快 3 倍。該模型展現卓越的數據效率，僅需 1/10 的任務特定數據即可達成同等性能。GEN-1 特別強調緊急情景恢復與涌現行為，能在未預期的環境變化中自主調整策略，推動通用機械人的魯棒性與適應性進入新境界
+- **具身智能商業化的成熟轉折** - GEN-1 在數據效率與任務適應能力的突破意味著企業可以大幅降低機械人應用的部署成本與標註需求。該模型推動具身基礎模型從學術演示向真實製造環境的規模化應用，為工業機械人、服務機械人與自主系統的 2026 下半年商業化提供核心技術基礎
+- **來源**：[GEN-1 Scaling Embodied Foundation Models](https://generalistai.com/blog/apr-02-2026-GEN-1)
+
+#### 565. GO-2 — AGIBOT 統一推理與動作的下一代具身基礎模型（May 2026）
+- **推理與執行的完整融合架構** - AGIBOT 發布 GO-2，其下一代具身 AI 基礎模型，首次在統一架構中實現邏輯推理與精確執行的無縫結合。GO-2 整合數萬小時的實機交互數據，標誌著具身 AI 從「黑盒探索」向「真正推理-動作統一」的範式轉變。該模型在複雜長序列任務與多步驟決策中展現業界領先性能，推動機械人從單任務專門化向多任務通用化的演進
+- **商業化應用的臨界點** - GO-2 統一推理與動作的架構設計突破了傳統 VLA 模型的侷限，使機械人能進行更深層的邏輯推理與自適應規劃。該模型已應用於服務機械人、工業協作機械臂與自主移動平台，預期推動 2026 年下半年具身 AI 應用的大規模商業部署與產業化轉化
+- **來源**：[AGIBOT GO-2 Foundation Model](https://www.therobotreport.com/agibot-releases-go-2-foundation-model-embodied-ai/)
