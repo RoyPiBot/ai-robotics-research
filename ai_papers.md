@@ -4536,3 +4536,8 @@
 #### 555. ABot-M0 — 阿里巴巴地圖團隊行動流形學習與模塊化感知的操縱基礎模型（February 2026）
 - **行動流形假設與模塊化多視角感知** - 阿里巴巴 Amap CVLAB 發布 ABot-M0，採用 DiT 骨幹架構實現乾淨、連續的動作序列預測。模型引入行動流形學習（Action Manifold Learning）與雙流機制整合 Qwen3-VL 語義與幾何先驗，支援多視角輸入與 VGGT/Qwen-Image-Edit 等外掛式 3D 模組增強空間理解。在多機械臂操縱基準上超越競品，特別針對複雜抓取、裝配與細粒度手勢調整展現優異性能
 - **企業級多模態機械臂基礎模型的生態突破** - ABot-M0 與同步發布的 ABot-N0 導航模型構成完整的具身 AI 系統，推動阿里巴巴在 2026 年推出首個四足機械人。該系統標誌著中國技術企業在通用機械人基礎模型領域的重要進展，為全球機械人應用加速企業級部署奠定新基礎
+
+#### 556. EdgeViT++ — 動態 Token 修剪與混合量化的邊界視覺基礎模型（May 2026）
+- **高效邊界推理的 Vision Transformer 優化架構** - 最新研究發表動態 Token 修剪（Dynamic Token Pruning）與混合量化策略，將 Vision Transformer 在邊界設備（NVIDIA Jetson TX2/Xavier NX）上的推理延遲降低 50%，同時維持 ImageNet-1K 分類精度。該方法通過自適應注意力機制動態配置計算資源，減少冗餘區域的推理開銷，相比原始 ViT 實現最高 28.9 倍模型壓縮率
+- **邊界視覺 AI 應用的規模化部署** - EdgeViT++ 技術為智慧監控、無人機視覺推理、移動機械臂與邊界 Agent 系統提供高效視覺理解基礎。該技術特別適合資源受限環境的實時推理需求，推動視覺 Transformer 從數據中心部署向邊界設備的廣泛應用
+- **來源**：[EdgeViT++: Efficient Vision Transformers for Edge Devices](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5319357) | [Vision Transformers on the Edge: A Comprehensive Survey](https://arxiv.org/abs/2503.02891)
