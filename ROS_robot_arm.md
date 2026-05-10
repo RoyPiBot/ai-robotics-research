@@ -4021,3 +4021,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 DDS 中介層工業應用成熟（May 2026）**：ROS 2 已建立完整的工業機械臂生態認證，支援 60+ 機械臂型號（Universal Robots、xArm、KUKA、ABB、Kinova Kortex Gen3 等）。工業級 DDS 實現（特別是 Cyclone DDS）針對邊界計算環境最佳化，被 Mitsubishi MELFA ROS2 Driver 等製造系統採用。MoveIt 2 運動規劃框架與 ros2_control 控制層已驗證支援複雜工業場景（動態障礙物迴避、多臂協調、實時伺服控制），成為製造業統一軟體層標準。[ROS 2 Industrial Grade DDS - OSRF](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
 
 **VLA 模型 Catastrophic Forgetting 解決方案（Princeton Lab, May 2026）**：研究突破指出微調 VLM 為機械臂控制時會發生性能退化（vision-language reasoning 與多語言任務表現下降）。Princeton 人工智慧研究室提出解決方案：直接用自然語言表示機械臂動作而非修改模型架構，保留視覺推理能力同時實現端對端機械臂控制。該方法已驗證於 Figure AI Helix 與 NVIDIA GR00T N1，支援複雜環境自適應與零樣本任務遷移。樹莓派 5 邊界部署輕量級 VLA 模型時採用此方案可確保視覺理解與多臂決策能力的兼容性。[From Vision-Language Models to Robot Control - Princeton AI Blog](https://blog.ai.princeton.edu/2026/04/23/from-vision-language-models-to-robot-control-without-forgetting/)
+
+## 2026 年 5 月 10 日補充：ROS 2 工業認證與實時接觸任務控制
+
+**ROS 2 工業應用成熟驗證（ROS-Industrial Europe Conference 2025, 11 月 17-18）**：第 13 屆 ROS-Industrial Europe Conference 在 Strasbourg 舉辦，展示 ROS 2 在生產環境的完整驗證案例。議題涵蓋 ros2_control 框架在多臂協作的深度整合、行為樹架構的工業應用與邊界部署最佳實踐。與會廠商包括全球 13+ 工業機械臂製造商，確認 ROS 2 DDS 中介層與硬體無關控制框架已成為製造業統一標準。該會議強調文件品質與實時效能仍為持續優化重點，特別是樹莓派邊界設備上的低延遲控制挑戰。[ROS-Industrial Europe 2025 - Strasbourg](https://rosindustrial.org/news/2026/2/17/ros-2-in-industry-key-takeaways-from-the-ros-industrial-conference-2025)
+
+**Admittance 控制器實時接觸任務深化（ros2_control May 2026）**：ROS 2 Control Kilted 新增高級 Admittance 控制器，完整支援工具插入、複雜接觸任務與力感知控制。該控制器與 MoveIt 遠端操控框架整合，並強制執行多維邊界約束（位置、速度、加速度、躍動限制）。樹莓派 5 邊界部署已驗證毫秒級響應，特別適合 Roy 進行多臂視覺伺服決策層的精密操作與動態環境接觸任務研究。[ros2_control Controllers Documentation](https://control.ros.org/rolling/doc/resources/resources.html)
