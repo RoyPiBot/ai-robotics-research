@@ -4550,3 +4550,8 @@
 - **感知-推理-動作閉環的統一框架** - CVPR 2026 Embodied AI Workshop 強調多模態世界模型與視覺語言動作（VLA）系統的深度整合。超過 15 篇新論文展示世界模型不僅用於視頻預測，更被應用於機械人規劃、不確定性建模與長視野任務推理。結合 Cosmos 3、Genie 2 等開源世界模型，邊界設備可實現完整的「感知-想像-規劃-執行」認知迴圈
 - **邊界推理與合成數據的共振** - 世界模型生成的高保真度合成數據集顯著降低機械人真實世界訓練數據標註成本 65-80%。該方向推動具身 AI 應用從數據飢餓向「自生成數據迴圈」的範式轉變，為 2026 下半年機械人與自主系統的大規模部署奠定基礎
 - **來源**：[NVIDIA Cosmos World Foundation Models](https://www.nvidia.com/en-us/ai/cosmos/) | [CVPR 2026 Embodied AI Workshop](https://embodied-ai.org/cvpr2026/)
+
+#### 559. RLDX-1 — LG 支持的通用靈巧操縱基礎模型與多模態傳感融合（May 5, 2026）
+- **異質多模態整合的靈巧操縱突破** - RLWRLD（LG 支持的機械人新創）發布 RLDX-1，首個採用多流動作 Transformer（MSAT）架構整合視覺、語言、扭矩、觸覺反饋與工作記憶的通用靈巧操縱基礎模型。該模型在 ALLEX 人形機械人複雜任務中達成 86.8% 成功率，遠超 π₀.₅ 與 GR00T N1.6 的 40% 水準。相比傳統 VLA 僅處理視覺與語言輸入，RLDX-1 通過模態特定流與交叉注意機制實現完整物理感知融合，支援運動感知、長期記憶與物理傳感的端到端推理
+- **邊界推理與開源生態加速** - RLDX-1 在 RTX 5090 上達成 43.7ms/step（1.63 倍 PyTorch 加速，>22Hz 實時推理），已開放權重、源代碼與技術文件於 GitHub 與 Hugging Face。該模型標誌著工業級靈巧操縱基礎模型從學術演示向開源生態的重要轉折，推動人形機械人、五指手與複雜工業應用在 2026 下半年的規模化部署
+- **來源**：[RLDX-1 Technical Report](https://arxiv.org/abs/2605.03269) | [RLWRLD GitHub - RLDX-1](https://github.com/RLWRLD/RLDX-1) | [RLWRLD Press Release](https://www.thepickool.com/rlwrld-unveils-rldx-1-robotics-foundation-model-surpasses-benchmarks/)
