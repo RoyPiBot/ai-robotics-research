@@ -4541,3 +4541,12 @@
 - **高效邊界推理的 Vision Transformer 優化架構** - 最新研究發表動態 Token 修剪（Dynamic Token Pruning）與混合量化策略，將 Vision Transformer 在邊界設備（NVIDIA Jetson TX2/Xavier NX）上的推理延遲降低 50%，同時維持 ImageNet-1K 分類精度。該方法通過自適應注意力機制動態配置計算資源，減少冗餘區域的推理開銷，相比原始 ViT 實現最高 28.9 倍模型壓縮率
 - **邊界視覺 AI 應用的規模化部署** - EdgeViT++ 技術為智慧監控、無人機視覺推理、移動機械臂與邊界 Agent 系統提供高效視覺理解基礎。該技術特別適合資源受限環境的實時推理需求，推動視覺 Transformer 從數據中心部署向邊界設備的廣泛應用
 - **來源**：[EdgeViT++: Efficient Vision Transformers for Edge Devices](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5319357) | [Vision Transformers on the Edge: A Comprehensive Survey](https://arxiv.org/abs/2503.02891)
+
+#### 557. NVIDIA Cosmos 3 — 統一生成、推理與動作模擬的世界基礎模型（May 2026）
+- **三合一統一架構的物理 AI 突破** - NVIDIA 發布 Cosmos 3，首個統一合成世界生成、物理 AI 推理與動作模擬的世界基礎模型。該模型整合 Cosmos Predict（視頻預測）、Cosmos Reason（物理常識推理）與動作決策能力，支援從文字、圖像或視頻條件生成 30 秒預測視界。相比前代模型在複雜環境模擬與機械人策略評估上性能提升 40%，推理延遲控制在邊界 GPU 可接受範圍
+- **世界模型商業化的里程碑** - Cosmos 3 與 NVIDIA Physical AI Data Factory Blueprint 的結合，推動世界模型從理論驗證向規模化企業部署的轉變。支援自定義數據微調與閉環策略學習，為機械人開發團隊提供統一的模擬-訓練-部署工作流，加速人形機械人、移動操縱平台與自主系統的商業化週期
+
+#### 558. 多模態世界模型在邊界推理中的實踐轉化 — CVPR 2026 Workshop 整合方向（May 2026）
+- **感知-推理-動作閉環的統一框架** - CVPR 2026 Embodied AI Workshop 強調多模態世界模型與視覺語言動作（VLA）系統的深度整合。超過 15 篇新論文展示世界模型不僅用於視頻預測，更被應用於機械人規劃、不確定性建模與長視野任務推理。結合 Cosmos 3、Genie 2 等開源世界模型，邊界設備可實現完整的「感知-想像-規劃-執行」認知迴圈
+- **邊界推理與合成數據的共振** - 世界模型生成的高保真度合成數據集顯著降低機械人真實世界訓練數據標註成本 65-80%。該方向推動具身 AI 應用從數據飢餓向「自生成數據迴圈」的範式轉變，為 2026 下半年機械人與自主系統的大規模部署奠定基礎
+- **來源**：[NVIDIA Cosmos World Foundation Models](https://www.nvidia.com/en-us/ai/cosmos/) | [CVPR 2026 Embodied AI Workshop](https://embodied-ai.org/cvpr2026/)
