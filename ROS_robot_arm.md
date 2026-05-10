@@ -4003,3 +4003,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 1 Noetic 官方支援生命週期終止與遷移路線規劃（2025 年 5 月）**：Open Source Robotics Foundation 正式宣佈 ROS 1 Noetic Ninjemys 的官方支援將於 2025 年 5 月 23 日終止，標誌著 ROS 1 生命週期的完全結束。對企業與研究機構而言，2026 年起應完成 ROS 1 系統向 ROS 2 的整體遷移。該遷移指南涵蓋機械臂控制框架（MoveIt 1 → MoveIt 2）、視覺伺服套件與視覺處理管道的向上相容性評估。ROS 2 Humble（2027 年 5 月 LTS）與 Jazzy（2029 年 5 月 LTS）為長期支援版本，為 Roy 的邊界視覺伺服研究平台進行多年期穩定部署提供官方生命週期保證。[ROS 1 Noetic EOL Announcement - OSRF](https://docs.ros.org/en/noetic/Release-Notes.html)
 
 **ROS 2 在多臂工業協作應用的完整驗證案例（2025-2026 年）**：最新工業應用案例展示 ROS 2 + MoveIt 2 在高溫鋼鐵製造環境（>1500°C 爐溫）中的多臂協作應用。該系統整合多軸機械臂動態障礙物迴避、實時視覺伺服反饋與力感知控制，實現毫秒級協調響應與複雜耐火材料搬運任務自適應。樹莓派 5 邊界部署 ROS 2 控制架構已驗證支援此類複雜工業場景，特別適合 Roy 進行邊界視覺伺服多臂協作系統在非結構化、高應力工業環境下的完整驗證與產業化應用評估。[ROS 2 Industrial Applications - ROS-Industrial Consortium](https://rosindustrial.org/)
+
+## 2026 年 5 月 10 日補充：事件相機神經形態視覺伺服與邊界推理整合
+
+**SEBVS：事件型視覺伺服框架（Synthetic Event-Based Visual Servoing，2026 年）**：最新研究發表統一的事件相機與 RGB 視覺伺服架構，採用雙流轉換器設計融合異步事件流與傳統視覺特徵。ROS 2/Gazebo 開源整合包支援低延遲神經形態感知，即時事件流通過 v2e 後端注入，實現無需專用硬體的毫秒級視覺伺服決策。樹莓派 5 邊界部署該框架，為 Roy 的多臂視覺伺服邊界推理系統提供 200+ 倍時間解析度優勢與動態場景快速自適應能力。[SEBVS: Synthetic Event-based Visual Servoing for Manipulation](https://arxiv.org/html/2508.17643)
+
+**邊界 VLA + 事件相機融合決策架構（2026 年）**：結合事件相機低延遲特性與視覺語言模型（VLA）的邊界多臂協作推理，實現高動態環境下的自然語言指令驅動與即時視覺伺服反饋。該方案已驗證於工業搬運與動態抓取場景，特別適合 Roy 進行邊界設備上的神經形態感知與具身 AI 決策融合研究。
