@@ -4613,3 +4613,13 @@
 #### 569. Boston Dynamics + Google DeepMind — Gemini Robotics 基礎模型與 Atlas 認知能力升級（May 2026）
 - **大型語言模型驅動的具身智能新時代** - Boston Dynamics 與 Google DeepMind 宣布戰略合作，將 Gemini Robotics 基礎模型直接整合至 Atlas 人形機械人。該合作首次實現 LLM 驅動的高級推理與自然語言理解在頂級人形機械人硬體上的無縫融合。Atlas 現可理解複雜自然語言指令、進行多步驟任務推理，並在動態環境中自適應地調整策略，標誌著人形機械人從預編程向通用智能的關鍵轉折
 - **全球人形機械人商業化的推進劑** - 該合作展示了軟體基礎模型與頂級機械人硬體結合的商業化潛力。Atlas 搭載 Gemini Robotics 後在製造、倉儲、建築等領域的多客戶試點中展現優異的任務適應性與安全性，為 2026 下半年人形機械人大規模部署提供了技術與市場驗證的双重支撐
+
+#### 570. ShengShu Motubrain — 統一世界動作模型與機械人智能引擎（May 2026）
+- **超越多任務系統的統一世界動作模型** - ShengShu Technology 發布 Motubrain，首個統一的世界動作模型（World Action Model），以單一模型取代多個任務特定系統。該模型在 WorldArena 基準上獲得 63.77 EWM 分數，在 RoboTwin 2.0 隨機環境中的 50 個預定義任務中達成平均 96.0 分，為唯一超越 95.0 分的模型。Motubrain 整合視覺感知、物理常識推理與動作生成，支援多機械人體型與複雜環境適應
+- **企業級統一機械人智能引擎的新標杆** - Motubrain 標誌著世界模型從學術驗證向商業級生產引擎的轉變。該模型為製造、倉儲、物流等行業提供統一的機械人決策大腦，降低企業開發多任務機械人系統的複雜性與成本，加速具身 AI 在工業規模化應用的臨界點
+- **來源**：[ShengShu Motubrain Announcement](https://www.roboticstomorrow.com/news/2026/04/29/shengshu-technology-unveils-world-action-model-motubrain-one-brain-infinite-possibilities-for-robotic-intelligence/)
+
+#### 571. ICLR 2026 VLA 164 模型綜合分析 — 推理模型與世界模型趨勢（May 2026）
+- **業界首次大規模 VLA 模型生態分析** - ICLR 2026 論文深入分析 164 個視覺語言動作（VLA）模型提交，揭示離散擴散 VLA、推理驅動 VLA 與混合多模態架構的三大技術趨勢。該分析展示 VLA 從端到端學習演進至多層次認知推理，結合世界模型預測與長期任務規劃能力。重點基準包括 LIBERO、CALVIN 與 SIMPLER，展示業界在邊界部署與跨體型泛化的共同進展方向
+- **世界模型與 VLA 融合的新時代** - 分析結果表明，融合世界模型預測能力的 VLA 系統在複雜、長序列、未見過場景中的成功率相比傳統 VLA 提升 25-40%。該趨勢推動 VLA 與世界模型從相對獨立向深度融合的轉變，為 2026 下半年具身 AI 應用的商業化部署確立技術方向
+- **來源**：[ICLR 2026 Vision-Language-Action Workshop](https://iclr.cc/virtual/2026/workshop/17000) | [State of VLA Research at ICLR 2026](https://mbreuss.github.io/blog_post_iclr_26_vla.html)
