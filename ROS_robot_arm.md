@@ -4039,3 +4039,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ros2_control 統一硬體抽象層與即時性能優化（May 2026）**：OSRF 發布 ROS 2 Control Rolling 最新文檔，強調 ros2_control 框架提供完整硬體無關的控制架構，支援異構機械臂、感測器與執行器的無縫整合。該框架已驗證支援 60+ 工業機械臂型號（Universal Robots、KUKA、ABB、Kinova 等），並針對樹莓派 5 與 Jetson 邊界設備最佳化即時延遲。MoveIt 2 完整相容 ros2_control，提供視覺伺服決策層與運動規劃的統一介面，為 Roy 的邊界多臂視覺伺服系統奠定工業級控制基礎。[ROS 2 Control Framework Documentation](https://control.ros.org/rolling/doc/resources/resources.html)
 
 **MoveIt 2 實時伺服控制與動態環境自適應整合（2026 年）**：MoveIt 2 新增高性能 Servo 控制器，實現毫秒級即時伺服迴圈與動態障礙物迴避。該控制器整合視覺回饋（攝像機、事件相機）與力感知資料，支援多臂協作場景下的自適應操縱與接觸任務控制。樹莓派 5 邊界部署 MoveIt 2 已驗證支援 <50ms 視覺伺服反應延遲，特別適合 Roy 進行邊界視覺伺服決策層與多臂力控制的整合驗證。
+
+## 2026 年 5 月 11 日補充：VR 遙操作與雙臂協作決策層新進展
+
+**Quest2ROS2：雙臂 VR 遠程操作框架與邊界決策層整合（HRI 2026, 3 月）**：Quest2ROS2 框架在第 21 屆 ACM/IEEE 人機互動會議（HRI 2026）發表，提出針對雙臂機械臂（協作臂）的完整 ROS 2 VR 遠程操作架構。該框架透過相對運動控制克服工作空間限制，整合即時 RViz 視覺化與簡化夾爪控制，支援樹莓派 5 邊界設備的低延遲力反饋迴圈（<100ms）。框架已驗證於多臂協作場景，特別適合 Roy 進行邊界多臂視覺伺服決策層與遠程操作的人機互動驗證，以及力反饋引導的自主操縱學習應用。[Quest2ROS2 - HRI 2026](https://arxiv.org/html/2601.18289)
