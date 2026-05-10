@@ -4009,3 +4009,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **SEBVS：事件型視覺伺服框架（Synthetic Event-Based Visual Servoing，2026 年）**：最新研究發表統一的事件相機與 RGB 視覺伺服架構，採用雙流轉換器設計融合異步事件流與傳統視覺特徵。ROS 2/Gazebo 開源整合包支援低延遲神經形態感知，即時事件流通過 v2e 後端注入，實現無需專用硬體的毫秒級視覺伺服決策。樹莓派 5 邊界部署該框架，為 Roy 的多臂視覺伺服邊界推理系統提供 200+ 倍時間解析度優勢與動態場景快速自適應能力。[SEBVS: Synthetic Event-based Visual Servoing for Manipulation](https://arxiv.org/html/2508.17643)
 
 **邊界 VLA + 事件相機融合決策架構（2026 年）**：結合事件相機低延遲特性與視覺語言模型（VLA）的邊界多臂協作推理，實現高動態環境下的自然語言指令驅動與即時視覺伺服反饋。該方案已驗證於工業搬運與動態抓取場景，特別適合 Roy 進行邊界設備上的神經形態感知與具身 AI 決策融合研究。
+
+## 2026 年 5 月 10 日補充：ROS 2 Control Kilted LTS 與 VLA 工業操縱新進展
+
+**ROS 2 Control Kilted（Kilted Kaiju）長期支援版本與事件驅動控制元件（May 2026）**：ROS 2 最新 LTS 發行版 Kilted Kaiju 針對樹莓派 5 與邊界設備最佳化，原生支援非同步控制元件、URDF 動態訪問與硬體層聯合限制器。該版本整合事件驅動型機械臂驅動（支援脈衝信號與事件流觸發），特別適合樹莓派 5 邊界視覺伺服決策層進行低延遲事件相機反饋的多臂協作控制。ROS 2 Control 開發團隊規模翻倍，正式成為 OSRA（Open Source Robotics Alliance）專案，為 Roy 的長期邊界推理系統提供企業級維護承諾。[ROS 2 Control Kilted Documentation - May 2026](https://control.ros.org/kilted/doc/resources/resources.html)
+
+**X-VLA 與 Gemini Robotics 跨臂操縱與邊界泛化（ICLR 2026 冠軍）**：X-VLA 在 ICLR 2026 國際學習表徵會議獲得最佳視覺語言行動模型獎項，提出軟提示機制與具身嵌入學習，已驗證跨 6 個模擬平台與 3 個實體機械臂的零樣本泛化。Google Gemini Robotics 雙腦架構則整合高階具身推理與視覺伺服動作解碼器，在高混合度揀貨與子毫米精度插入任務中實現工業部署。樹莓派 5 邊界部署 X-VLA 輕量推理版本可支援多臂協作操縱的跨機型策略遷移，為 Roy 的邊界 VLA 決策層與多臂視覺伺服泛化提供最新學術與工業認可案例。[X-VLA ICLR 2026 - GitHub](https://github.com/2toinf/X-VLA)、[Gemini Robotics Dual-Brain Architecture](https://blog.roboflow.com/vision-language-action-models/)
