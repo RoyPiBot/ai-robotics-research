@@ -4563,3 +4563,13 @@
 #### 561. 具身智能系統的三層框架 — 多模態感知、世界建模與結構化策略整合（May 2026）
 - **感知-世界模型-策略的分層認知架構** - Frontiers in Robotics and AI 新論文提出具身智能系統的三層統一框架：第一層（感知層）整合視覺、聽覺、本體感覺與觸覺的多模態感受；第二層（世界建模層）通過世界模型進行物理模擬與預測規劃；第三層（策略層）結合強化學習、規劃算法與符號推理生成結構化行為。該框架統合目前零散的具身 AI 研究方向，為 VLA 系統與世界模型的有機整合提供理論與實踐指導
 - **邊界實時推理與商業化應用的方向** - 該框架強調在資源受限的邊界設備上實現三層協同的優化策略，包括動態神經網路修剪、多模態特徵蒸餾與層級化決策。該方向為 2026-2027 年邊界推理型具身 AI Agent、移動機械人與自主系統的大規模商業部署奠定設計原則與評估標準
+
+#### 562. XR-1 — 統一視覺動作碼與跨體型多機械人 VLA（November 2025）
+- **統一視覺動作表徵的共同語言** - X-Humanoid 與多所大學聯合發布 XR-1（arXiv 2511.02776），引入統一視覺動作碼（Unified Vision-Motion Codes, UVMC）作為離散潛在表徵，通過雙分支 VQ-VAE 結構同時編碼視覺動力學與機械人運動。XR-1 採用三階段訓練：自監督 UVMC 學習、跨體型機械人數據集預訓練、任務特定微調。該模型在 14,000+ 實機驗證、6 種機械人體型、120+ 項操縱任務中達成業界領先成功率，是首個通過中國國家具身 AI 標準認證的 VLA 模型
+- **跨體型泛化與邊界部署的新標竿** - XR-1 的 UVMC 架構解決傳統 VLA 跨體型泛化困難的瓶頸，支援利用人類視頻與機械人數據集的混合預訓練。該模型推動 VLA 從單一機械人設計向通用多機械人基礎模型的升級，為全球機械人應用在不同硬體平台的快速部署提供統一基礎
+- **來源**：[XR-1 論文](https://arxiv.org/abs/2511.02776) | [X-Humanoid CES 2026](https://www.prnewswire.com/news-releases/x-humanoid-showcases-fully-autonomous-and-more-useful-robotics-solutions-at-ces-2026-302656056.html)
+
+#### 563. InternVLA-A1 與 InternVLA-M1 — 混合變換器與空間引導的通用機械臂政策（January-May 2026）
+- **統一理解、生成與動作的多模態架構** - Intern Robotics 團隊發布 InternVLA-A1（arXiv 2601.02456），採用混合變換器（Mixture-of-Transformers）架構，統一三大專家：場景理解、視覺預知生成與動作執行。該模型於 533M 幀混合合成-真實數據集預訓練，結合世界模型式想像模組實現遠見感知的動作生成。InternVLA-A1 在日常任務中超越 π0 與 GR00T N1.5 14.5%，在動態場景（如傳送帶分揀）提升 40-73.3%
+- **空間感知引導與實機驗證的雙重突破** - 同步發布的 InternVLA-M1 引入二階段空間引導管線：空間基礎預訓練（2.3M 空間推理數據）決定「在何處動作」，空間引導動作微調決定「如何動作」。M1 在 SimplerEnv Google Robot（+14.6%）、WidowX（+17%）與 LIBERO Franka（+4.3%）基準上一致超越 π0、GR00T 與 OpenVLA。兩款模型均開源，推動學術與企業的機械臂應用快速迭代
+- **來源**：[InternVLA-A1 GitHub](https://github.com/InternRobotics/InternVLA-A1) | [InternVLA-M1 GitHub](https://github.com/InternRobotics/InternVLA-M1)
