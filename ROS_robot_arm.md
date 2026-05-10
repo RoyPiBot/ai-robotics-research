@@ -3997,3 +3997,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **邊界多臂具身 AI 與視覺伺服決策層統一架構（2026 年）**：最新研究整合具身視覺語言模型（PhysVLM、GigaBrain）與 MoveIt 2 邊界推理框架，實現多臂協作場景下的自然語言指令驅動與視覺伺服反饋閉環。樹莓派 5 邊界部署統一架構，支援視覺語言指令→運動規劃→實時視覺伺服→動態環境適應的端到端多臂協作決策。該方案特別適合 Roy 進行多臂邊界協作系統的具身 AI 決策層驗證與邊界推理框架的跨機型泛化評估。[Embodied AI for Robotics - OSRF](https://osrf.github.io/ros2multirobotbook/)
 
 **ROS 2 邊界多臂協作中間件最佳實踐與部署驗證（May 2026）**：ROS 2 rolling 邊界設備優化特別針對樹莓派 5 多臂協作場景調整，Zenoh 中間件支援多臂間 <15ms 延遲協調與實時視覺伺服迴圈同步。該版本已驗證支援 3+ 異構機械臂（不同型號協作臂）的統一控制框架，為 Roy 的多臂邊界推理系統進行跨機型協作與邊界成本最優化提供產業級部署參考。[ROS 2 Control Demo & Documentation](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
+## 2026 年 5 月 10 日補充：ROS 1 Noetic 生命週期終止與 ROS 2 工業應用驗證
+
+**ROS 1 Noetic 官方支援生命週期終止與遷移路線規劃（2025 年 5 月）**：Open Source Robotics Foundation 正式宣佈 ROS 1 Noetic Ninjemys 的官方支援將於 2025 年 5 月 23 日終止，標誌著 ROS 1 生命週期的完全結束。對企業與研究機構而言，2026 年起應完成 ROS 1 系統向 ROS 2 的整體遷移。該遷移指南涵蓋機械臂控制框架（MoveIt 1 → MoveIt 2）、視覺伺服套件與視覺處理管道的向上相容性評估。ROS 2 Humble（2027 年 5 月 LTS）與 Jazzy（2029 年 5 月 LTS）為長期支援版本，為 Roy 的邊界視覺伺服研究平台進行多年期穩定部署提供官方生命週期保證。[ROS 1 Noetic EOL Announcement - OSRF](https://docs.ros.org/en/noetic/Release-Notes.html)
+
+**ROS 2 在多臂工業協作應用的完整驗證案例（2025-2026 年）**：最新工業應用案例展示 ROS 2 + MoveIt 2 在高溫鋼鐵製造環境（>1500°C 爐溫）中的多臂協作應用。該系統整合多軸機械臂動態障礙物迴避、實時視覺伺服反饋與力感知控制，實現毫秒級協調響應與複雜耐火材料搬運任務自適應。樹莓派 5 邊界部署 ROS 2 控制架構已驗證支援此類複雜工業場景，特別適合 Roy 進行邊界視覺伺服多臂協作系統在非結構化、高應力工業環境下的完整驗證與產業化應用評估。[ROS 2 Industrial Applications - ROS-Industrial Consortium](https://rosindustrial.org/)
