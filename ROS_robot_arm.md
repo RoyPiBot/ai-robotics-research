@@ -4015,3 +4015,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Control Kilted（Kilted Kaiju）長期支援版本與事件驅動控制元件（May 2026）**：ROS 2 最新 LTS 發行版 Kilted Kaiju 針對樹莓派 5 與邊界設備最佳化，原生支援非同步控制元件、URDF 動態訪問與硬體層聯合限制器。該版本整合事件驅動型機械臂驅動（支援脈衝信號與事件流觸發），特別適合樹莓派 5 邊界視覺伺服決策層進行低延遲事件相機反饋的多臂協作控制。ROS 2 Control 開發團隊規模翻倍，正式成為 OSRA（Open Source Robotics Alliance）專案，為 Roy 的長期邊界推理系統提供企業級維護承諾。[ROS 2 Control Kilted Documentation - May 2026](https://control.ros.org/kilted/doc/resources/resources.html)
 
 **X-VLA 與 Gemini Robotics 跨臂操縱與邊界泛化（ICLR 2026 冠軍）**：X-VLA 在 ICLR 2026 國際學習表徵會議獲得最佳視覺語言行動模型獎項，提出軟提示機制與具身嵌入學習，已驗證跨 6 個模擬平台與 3 個實體機械臂的零樣本泛化。Google Gemini Robotics 雙腦架構則整合高階具身推理與視覺伺服動作解碼器，在高混合度揀貨與子毫米精度插入任務中實現工業部署。樹莓派 5 邊界部署 X-VLA 輕量推理版本可支援多臂協作操縱的跨機型策略遷移，為 Roy 的邊界 VLA 決策層與多臂視覺伺服泛化提供最新學術與工業認可案例。[X-VLA ICLR 2026 - GitHub](https://github.com/2toinf/X-VLA)、[Gemini Robotics Dual-Brain Architecture](https://blog.roboflow.com/vision-language-action-models/)
+
+## 2026 年 5 月 10 日補充：ROS 2 產業化成熟度與 VLA catastrophic forgetting 解決方案
+
+**ROS 2 DDS 中介層工業應用成熟（May 2026）**：ROS 2 已建立完整的工業機械臂生態認證，支援 60+ 機械臂型號（Universal Robots、xArm、KUKA、ABB、Kinova Kortex Gen3 等）。工業級 DDS 實現（特別是 Cyclone DDS）針對邊界計算環境最佳化，被 Mitsubishi MELFA ROS2 Driver 等製造系統採用。MoveIt 2 運動規劃框架與 ros2_control 控制層已驗證支援複雜工業場景（動態障礙物迴避、多臂協調、實時伺服控制），成為製造業統一軟體層標準。[ROS 2 Industrial Grade DDS - OSRF](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+
+**VLA 模型 Catastrophic Forgetting 解決方案（Princeton Lab, May 2026）**：研究突破指出微調 VLM 為機械臂控制時會發生性能退化（vision-language reasoning 與多語言任務表現下降）。Princeton 人工智慧研究室提出解決方案：直接用自然語言表示機械臂動作而非修改模型架構，保留視覺推理能力同時實現端對端機械臂控制。該方法已驗證於 Figure AI Helix 與 NVIDIA GR00T N1，支援複雜環境自適應與零樣本任務遷移。樹莓派 5 邊界部署輕量級 VLA 模型時採用此方案可確保視覺理解與多臂決策能力的兼容性。[From Vision-Language Models to Robot Control - Princeton AI Blog](https://blog.ai.princeton.edu/2026/04/23/from-vision-language-models-to-robot-control-without-forgetting/)
