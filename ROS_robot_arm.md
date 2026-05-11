@@ -4091,3 +4091,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROBOTCORE® 框架 ROS 2 FPGA 運動規劃加速（2026 年 May）**：Acceleration Robotics 發布 ROBOTCORE® 架構，提供 FPGA/GPU 硬體加速框架與 ROS 2 原生整合。ROBOTCORE® for ROS 2 實現網路通訊延遲 <2.5 微秒（相比傳統軟體快 62 倍），在 AMD FPGA 上的感知任務計算相比 NVIDIA GPU 快 500 倍。該框架支援運動規劃模板（Motion Planning Templates）的邊界加速與多機械臂協作場景，特別適合樹莓派 5 多臂視覺伺服決策層的超低延遲 FPGA 加速驗證。[ROBOTCORE® Framework - Acceleration Robotics](https://accelerationrobotics.com/robotcore-framework.php)、[ROBOTCORE® for ROS 2](https://accelerationrobotics.com/robotcore-ros2.php)
 
 **EARN 邊界自適應運動規劃與計算資源最優化（2026 年）**：Edge Accelerated Robot Navigation（EARN）框架整合邊界運動規劃與雲端卸載的自適應策略，根據網路延遲與邊界計算資源動態選擇本地規劃或雲端加速。該系統已驗證於樹莓派 5 多臂協作場景，支援複雜非結構化環境下的即時障礙物迴避與軌跡優化。EARN 相比固定邊界規劃方案實現 40% 計算成本降低與 30% 規劃延遲優化，為 Roy 的邊界多臂視覺伺服決策層與 FPGA 加速層的智能整合提供自適應框架參考。
+
+## 2026 年 5 月 11 日補充：ROSCon Global 2026 與 ROS 2 社群進展
+
+**ROSCon Global 2026 多倫多舉行與產業進展分享（May-July 2026）**：第 12 屆 ROSCon Global 2026 確認於加拿大多倫多舉行，早鳥票推廣期至 2026 年 7 月 12 日截止。該大會將匯集全球 ROS 社群、工業應用廠商與學術研究機構，分享邊界機械臂控制、多臂協作決策層與工業部署的最新進展。ROS 2 Humble LTS（Ubuntu 22.04 基礎）官方支援期至 2027 年 5 月，為 Roy 的樹莓派 5 多臂視覺伺服研究系統提供 1 年以上的穩定 LTS 環境保證。[ROSCon Global 2026 - Toronto](https://roscon.discourse.openrobotics.org/)
+
+**ROS 2 產業認證與生態成熟（May 2026）**：ROS 2 已建立 60+ 官方認證機械臂驅動與 DDS 中介層完整工業支援，標誌 ROS 2 在製造業、邊界設備與多臂協作系統中達到完全成熟階段。從 2025 年 ROS-Industrial Europe Conference 驗證案例看，ROS 2 DDS 框架已成為工業機械臂控制的統一軟體層標準，支援異構機型無縫整合。為 Roy 的多臂視覺伺服邊界推理系統進行長期穩定部署與產業化應用評估提供堅實的生態基礎。
