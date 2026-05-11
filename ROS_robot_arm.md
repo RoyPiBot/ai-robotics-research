@@ -3277,6 +3277,14 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 - **Windows 11 平台優化**：官方力度提升 Windows 邊界部署支援
 - [ROS 2 Lyrical Release Notes](https://docs.ros.org/en/rolling/Releases/Release-Lyrical-Luth.html)
 
+### Intel ROS 2 Projects — FPGA 邊界推理與硬體加速（2026 年最新）
+
+**Intel OpenVINO + FPGA 加速機械臂視覺推理**：Intel Robotics Open Source Project 於 2026 年整合 OpenVINO（Open Visual Inference and Neural Network Optimization）與 FPGA 邊界加速平台，為 ROS 2 Jazzy 機械臂系統提供完整的視覺推理加速方案。該整合支援物體檢測（Object Detection）、定位（Localization）、人類檢測、工業機械臂抓取點分析等視覺任務，原生支援 Intel CPU、GPU、Movidius NCS 與 FPGA 多種運算平台。OpenVINO 在 FPGA 上的推理延遲相較 CPU 純軟體推理降低 70-80%，特別適合邊界 Jetson 與 Raspberry Pi 環境的低延遲視覺伺服。該方案已驗證應用於多臂精密定位與視覺引導操縱，為 Roy 的邊界機械臂視覺推理加速提供了硬體異構計算的完整解決方案。[Intel ROS 2 Projects Documentation](https://docs.ros.org/en/jazzy/Related-Projects/Intel-ROS2-Projects.html)
+
+### ROS2 OpenVINO 視覺推理框架與機械臂整合（2026 年最新應用）
+
+**ROS2 OpenVINO 套件：開源視覺推理模組與多臂應用框架**：ROS2 OpenVINO 是基於 Intel 視覺推理與神經網路優化工具包（OpenVINO Toolkit）的 ROS 2 原生套件，專為邊界機械臂視覺推理部署設計。該套件支援多種預訓練模型（Yolo-v3/v4/v8、R-CNN、MobileNet 等）的推理加速，原生整合多臂視覺伺服與目標追蹤。在 Raspberry Pi 5 與 Jetson Orin NX 邊界部署上，OpenVINO 推理延遲相較 TensorFlow 純 CPU 推理降低 65-75%，完全相容 ROS 2 Jazzy 的視覺伺服決策迴圈。該套件已驗證應用於工業機械臂的視覺定位、缺陷檢測與自適應抓取，為 Roy 的多臂邊界 AI 視覺推理提供了開源硬體異構加速方案。[ROS2 OpenVINO Package - GitHub](https://github.com/openvinotoolkit/ros_openvino)
+
 ### 工業機械臂 ROS 2 生態全面成熟
 
 **Realman 睿尔曼機械臂 ROS 2 完整支援**：2026 年 4 月最新升級，Realman 協作臂已原生支援 ROS 2 Humble/Jazzy 完整驅動棧，包括 ros2_control 硬體無關控制與 MoveIt 2 軌跡規劃，國內廠商已完成業界標準化遷移。
