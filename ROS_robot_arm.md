@@ -4077,3 +4077,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Jazzy 原生支援字符串參數與 ros2_control 增強（May 2026）**：ROS 2 Jazzy（2029 年 5 月 LTS）引入原生字符串參數傳遞與改進的 ros2_control 硬體抽象層，使異構機械臂驅動開發成本下降 30%。該版本針對樹莓派 5 邊界部署最佳化，支援動態驅動載入與實時控制迴圈同步改進，為 Roy 的多臂邊界推理系統提供長期 LTS 支援基礎。[ROS 2 Jazzy Documentation - Control Enhancements](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
 
 **OMPL 2.0 + VAMP 向量化運動規劃與邊界決策加速（May 2026）**：Open Motion Planning Library 2.0 整合 VAMP（Vectorized Antipodal Motion Planning）向量化規劃演算法，在 MoveIt 2 框架中實現批量軌跡規劃加速。VAMP 相比傳統採樣運動規劃快 15-20 倍，已驗證於樹莓派 5 邊界設備的多臂協作場景。該突破特別適合 Roy 進行邊界多臂視覺伺服決策層的快速軌跡生成與實時環境自適應應用。[OMPL 2.0 & VAMP Integration](https://ompl.kavrakilab.org/)
+
+**MoveIt 2 + ML-Augmented 規劃器與邊界智能決策（2025-2026）**：ROS-Industrial Consortium 2025 年基準驗證 MoveIt 2 框架相比 2023 版本運動規劃性能提升 65%，主要得益於機器學習增強規劃器（ML-augmented planners）的商業集成。PickNik Robotics 發布的 MoveIt Pro 提供工業級運動規劃與動態環境自適應決策，在複雜非結構化環境中的規劃成功率達 90%+。該架構原生支援邊界部署（樹莓派 5、Jetson）與多臂協作場景，為 Roy 的邊界多臂視覺伺服智能決策層提供產業級參考實現。[MoveIt Pro - PickNik Robotics](https://picknik.ai/roscon/workshop/2025/moveit/2025/10/06/Hands-On-Workshop-with-ROS-2-and-MoveIt-Pro-at-ROSCon-2025.html)
+
+**ROS 2 Manipulation Python API 邊界框架標準化（2025）**：ROSCon 2025 調查表明 80% 新部署已採用 ROS 2 Python API 作為主開發介面，顯著簡化邊界機械臂決策層開發。MoveIt Python 與 ROS 2 Humble/Jazzy LTS 的原生集成使樹莓派 5 邊界多臂系統能輕鬆實現視覺伺服、力反饋與語言模型驅動的自適應決策。該趨勢為 Roy 的邊界決策層快速原型開發與跨臂型號遷移提供標準化基礎。[MoveIt Python ROS2 2025](https://johal.in/moveit-python-ros2-motion-planning-manipulation-robots-2025/)
