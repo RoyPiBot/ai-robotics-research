@@ -717,6 +717,9 @@ if __name__ == '__main__':
 - **ROS 2 Control Framework 成熟度確認（2026 年 5 月）**：ros2_control 已成為機器人控制的硬體無關標準框架，Rolling 版本支援完全非同步元件、URDF 通用存取、整合關節限制器，相比 2025 年基準效能提升 65%。官方支援機械臂清單涵蓋 Doosan、Universal Robots、KUKA、Mitsubishi MELFA、OpenMANIPULATOR 等 14+ 廠牌，標準化 ROS 接口模組化組合，簡化多廠牌機械臂控制層開發。[支援機械臂完整清單](https://control.ros.org/master/doc/supported_robots/supported_robots.html)、[資源與教程](https://control.ros.org/rolling/doc/resources/resources.html)
 - **Doosan 機械臂 ROS 2 強化學習環境（2026 年 5 月）**：GitHub robotic_arm_environment 專案提供 Doosan 機械臂完整 ROS 2 模擬環境，整合 Gazebo 仿真、強化學習訓練框架與視覺回饋。支援從模擬到實體硬體的無縫遷移，特別適合多臂協作與自適應抓取任務研究。[GitHub 連結](https://github.com/dvalenciar/robotic_arm_environment)
 - **ROS 2 Control 即時機械臂控制新標準（2026 年 5 月）**：ROS 2 Kilted Kaiju 與 Rolling 版本的 ros2_control 完全成熟，支援毫秒級控制延遲與 GPU 加速邊界推理。新版 Example 7 教程展示 6-DOF 機械臂的完整端到端流程：URDF 參數化設計 → Gazebo Harmonic 模擬 → MoveIt 2 運動規劃 → 硬體實裝。[6-DOF 機械臂完整教程](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+- **Force-Torque Sensor 廣播與即時力控制（2026 年 5 月）**：ROS 2 Jazzy ros2_control 新增 Force-Torque Sensor Broadcaster，支援實時力/力矩感測與濾波器鏈式處理，可用於協作機械臂的碰撞偵測與自適應力控制。[官方文件](https://control.ros.org/jazzy/doc/ros2_controllers/force_torque_sensor_broadcaster/doc/userdoc.html)與 [FPGA 加速力回饋研究](https://dl.acm.org/doi/10.1145/3728179.3728191) 實現超低延遲（<1ms）的硬體層力控制迴圈。
+- **深度強化學習加速機械臂自主學習（2026 年 5 月）**：企業與研究機構結合 ROS 2、深度強化學習與模擬環境，實現機械臂自主夾取學習加速。工研院案例表明，通過 DRL 算法於 Gazebo 環境預訓練，機械臂可在 12 小時內完成新工件夾取自主學習，隔日即可換工件上機，成功率超 90%，比傳統示教法快 10 倍。[GitHub: Doosan ROS 2 強化學習環境](https://github.com/dvalenciar/robotic_arm_environment)
+- **Vision-Language-Action (VLA) 多模態模型架構（2026 年新興標準）**：最新趨勢是將視覺感知（Computer Vision）、自然語言指令（LLM）與機械臂動作輸出（Action）整合進單一神經網路，使機器人具備強大的通用性與泛化能力。支援複雜工業場景如自動化分揀、精密組裝，機械臂可根據自然語言命令與環境視覺自動調整策略，無需預先編程特定任務。
 
 ---
 
