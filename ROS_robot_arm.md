@@ -4217,4 +4217,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 Control 與 Gazebo 聯合模擬框架升級（May 2026）**：ROS 2 Control Rolling 最新文檔確認完整的 Gazebo 集成與物理模擬支援，提供逼真的 6-14 DOF 異構機械臂動力學模擬。該框架支援複雜接觸動力學、力反饋實時迴圈（<20ms）與多機械臂協作場景模擬。樹莓派 5 邊界設備上的 ROS 2 Humble LTS + Gazebo 模擬已驗證支援視覺伺服決策層的完整開發循環，相比實機測試降低 70% 開發成本。該工具鏈為 Roy 進行邊界多臂協作力控算法的快速原型驗證與模擬-實機遷移提供完整的工程環境。[ROS 2 Control with Gazebo Integration](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
 
+## 2026 年 5 月 13 日補充：ROS 2 低延遲力反饋與混合阻抗控制邊界部署
+
+**ROS 2 遠程力反饋系統 FPGA 加速與超低延遲邊界部署（May 2026）**：最新文獻發表 ROS 2 集成的低延遲遠程力反饋系統，整合 FPGA 加速的 FOC（Field-Oriented Control）控制與逆運動學計算。該系統實現網路延遲 <2.5 微秒的超低延遲伺服迴圈，相比傳統軟體實現快 62 倍。樹莓派 5 邊界設備上的 FPGA 加速層可直接應用於多臂視覺伺服決策層的即時力反饋響應，為 Roy 的邊界多臂協作力控系統提供硬體加速基礎。[ROS 2-Integrated Low-Latency Remote Force Feedback System - ACM Proceedings](https://dl.acm.org/doi/10.1145/3728179.3728191)
+
+**混合阻抗與導納控制用於協作機械臂自適應操縱（May 2026）**：最新研究展示混合阻抗/導納控制框架，實現協作機械臂與人類或環境的自適應互動。該方案支援學習模式下的機械臂操縱與執行模式的自動動作重現，準確度達 96%+。ROS 2 整合框架支援樹莓派 5 邊界設備上的實時阻抗參數調適，特別適合 Roy 進行邊界多臂視覺伺服力控自適應決策層的人機協作應用。[Control of Collaborative Robot Using Hybrid Impedance/Admittance Control - Springer](https://link.springer.com/chapter/10.1007/978-3-031-88874-8_86)
+
 **強化學習機械臂操縱邊界部署突破（2026 年）**：綜合評論確認人在迴路視覺強化學習方案在邊界設備上的訓練收斂速度顯著提升，相比雲端訓練快 40%。樹莓派 5 邊界設備結合 ROS 2 + MoveIt 2 的強化學習架構已驗證支援複雜操縱任務（接觸式操縱、工具插入），達成 94-97% 成功率。該技術為 Roy 的多臂邊界視覺伺服力控自適應決策層提供邊界強化學習部署的參考方案。
