@@ -1598,6 +1598,23 @@
 
 **Roy 注意**：Gemma 4 E4B (4B) 或量化後的 Qwen 2.5-1B 可能能在 Pi 5 (16GB RAM) 上跑 local RAG 系統。
 
+---
+
+### K. 多模態代理與機械手視覺預測突破（2026 年 5 月）
+
+#### 1. UI-TARS-2 — GUI 代理新標竿
+- **特色**：原生 GUI 中心代理架構，克服數據可擴展性與多輪強化學習瓶頸
+- **應用場景**：UI 自動化、軟體測試、複雜桌面任務自動化
+- **優勢**：相比前代模型顯著提升長上下文指令跟隨與多步推理能力
+- **發佈時間**：May 2026
+
+#### 2. RLA World Model — 機械手臂視覺預測新方向
+- **核心創新**：Residual Latent Action (RLA) 框架，高保真預測未來視覺特徵
+- **應用**：機械手臂視覺控制、動作規劃、視覺伺服系統
+- **優勢**：高效率預測機械手協動、減少實時計算負擔
+- **發佈時間**：May 8, 2026
+- **對 Roy 的意義**：強化 ROS + Vision-based 機械手臂控制的 AI 基礎，提升邊緣推理效率
+
 #### 4. ROS 機械手臂專用邊緣推理生態（2026 年 4 月新增）
 - **NVIDIA Jetson T4000 + JetPack 7.1** - Blackwell 架構邊緣計算晶片，專為機械手臂與自主系統設計，支援 VLA 推理加速與 ROS 整合，毫秒級延遲實現複雜操作決策，推進邊緣 AI 從雲連接向完全離線自主決策的轉變 [NVIDIA Jetson T4000 for Robotics](https://www.edge-ai-vision.com/2026/01/accelerate-ai-inference-for-edge-and-robotics-with-nvidia-jetson-t4000-and-nvidia-jetpack-7-1/)
 - **YOLO26 邊緣最佳化** - 物件檢測模型 43% CPU 推理加速相比 YOLO11，專為無 GPU 設備優化，支援小物件精度與邊緣部署，成為 ROS 視覺感知的輕量級標準，推進機械手臂即時物體識別與操作決策的可行性 [YOLO26 Release Notes](https://blog.roboflow.com/yolo26/)
