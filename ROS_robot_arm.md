@@ -4150,3 +4150,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Humble LTS 長期支援期至 2027 年與多臂邊界部署穩定性保證（May 2026）**：ROS 2 官方確認 Humble LTS（Ubuntu 22.04 基礎）支援期延長至 2027 年 5 月，為企業與研究機構提供 2+ 年的穩定支援窗口。該 LTS 版本已驗證支援樹莓派 5 邊界多臂協作場景的完整軟體棧（ROS 2 Humble + MoveIt 2 + ros2_control + Gazebo），無需頻繁升級即可保持系統穩定性。Roy 的邊界多臂視覺伺服研究系統可基於 Humble LTS 進行長期部署與工業化驗證，同時為未來遷移至 Jazzy LTS（2029 年 5 月支援）預留升級路徑。
 
 **MoveIt Pro Joint Trajectory Admittance Controller（JTAC）多末端執行器支援（May 2026）**：PickNik Robotics 發布 MoveIt Pro 的 JTAC（Joint Trajectory Admittance Controller），原生整合多末端執行器架構，支援不同末端工具的獨立力控制參數配置。該控制器與 MoveIt Motion Task Composer 深度整合，支援遠端操控框架與邊界多臂協作決策層。已在工業精密組裝應用中驗證 98%+ 成功率，為 Roy 的多臂視覺伺服邊界力控自適應系統提供商用級參考實現。[MoveIt Pro Documentation](https://docs.picknik.ai/)
+
+## 2026 年 5 月 12 日補充：ROS 2 Lyrical Luth 異步節點與邊界多臂協作決策
+
+**ROS 2 Lyrical Luth AsyncNode 與異步回調機制（May 2026）**：ROS 2 官方確認即將發布的 Lyrical Luth（2026 年 5 月）版本引入革命性的 AsyncNode 類型，支援在 asyncio 事件迴圈上運行訂閱、服務與計時器回調。該新機制允許回調函數直接 await 任何異步操作，無需複雜的執行緒管理或事件同步，大幅降低邊界多臂協作決策層的開發複雜度。樹莓派 5 邊界平台結合 AsyncNode 可實現 Python VLA 自然語言驅動的非同步視覺伺服決策，支援動態優先級切換與實時環境自適應。該特性特別適合 Roy 進行邊界多臂視覺伺服決策層的快速原型開發與 LLM 整合。[ROS 2 Lyrical Luth Release](https://docs.ros.org/en/rolling/Releases/Release-Lyrical-Luth.html)
+
+**分布式邊界多臂協作自適應控制與 3.2ms 決策延遲（May 2026）**：最新學術驗證確認邊界多臂協作架構結合多模態感知融合與分布式邊界計算，平均決策響應時間達 3.2ms，相比傳統雲端卸載方案快 50 倍。該系統已驗證於複雜排序與組裝場景，達成 98.7% 精度。該成果直接驗證樹莓派 5 邊界設備上多臂協作視覺伺服決策層的超低延遲可行性，為 Roy 的邊界多臂力控自適應決策提供工業級技術參考。[Adaptive Control Collaborative Arms - Scientific Reports](https://www.nature.com/articles/s41598-025-18344-9)
