@@ -171,6 +171,12 @@
 - **摘要**：NVIDIA 推出 Ising 開源 AI 模型家族，專為量子處理器（QPU）校準與實時誤差修正而設計。Ising Calibration 為 35B 參數視覺語言模型，在新推出的 QCalEval 量子校準基準上超越 Gemini 3.1 Pro、Claude Opus 4.6 與 GPT-5.4；Ising Decoding 採用 3D CNN 架構，誤差修正速度提升 2.5 倍、準確度提升 3 倍，將量子處理器設置時間從數天縮短至數小時。已被 Harvard、Fermi Lab、IQM Quantum 等學術與產業領袖廣泛採用。
 - **重要性**：首個專用於量子計算的開源 AI 模型，解決容錯量子計算的關鍵瓶頸，標誌著 AI 在量子領域的應用躍升，加速量子計算實用化進程。
 
+### 24. MIT-IBM Computing Research Lab 擴展至量子計算領域
+- **機構**：MIT-IBM Computing Research Lab
+- **發布時間**：2026 年 4 月 29 日
+- **摘要**：MIT 與 IBM 聯合宣布擴展 MIT-IBM Computing Research Lab 規模，新增量子計算研究方向，與既有的 AI 研究融合。該實驗室將推進 AI 與量子計算的深度整合，加速量子電腦在 R&D、金融建模、藥物發現等領域的實用化。Q-CTRL 與 IBM 合作在量子模擬（Fermi-Hubbard 模型）上實現 3000 倍加速，通過 AI 驅動的實時誤差抑制技術，展示量子計算在經典超越中的實踐突破。
+- **重要性**：頂級研究機構的戰略性轉向，強化 AI 與量子計算的交叉融合，標誌著量子計算從理論向工程應用的加速轉變，AI 在量子誤差修正與優化中的不可或缺性日趨明確。
+
 ## 二、視覺語言行動（VLA）模型與機器人融合
 
 ### 16. 神經符號視覺語言行動模型 — Tufts 大學突破
