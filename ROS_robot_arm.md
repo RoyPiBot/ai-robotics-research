@@ -1597,6 +1597,44 @@ SO-ARM100 可搭配 Seeed Studio reComputer J4012（Jetson Orin NX）做邊緣 A
 
 ---
 
+## 邊界多臂協作力控完整系統工業應用驗證與成本優化評估（2026-05-13）
+
+### 邊界多臂系統成本對比與選型指南
+
+基於 ROS 2 Kilted + ros2_control 的完整多臂協作系統架構評估：
+
+| 組件 | Jetson Orin NX | Pi 5（16GB） | 成本差異 | 適用場景 |
+|------|---|---|---|---|
+| **邊界運算** | 100 TFLOPS | ~25 TFLOPS | Orin 貴 4 倍 | 密集 SmolVLA/π0 推理 |
+| **ROS 2 Control 實時迴圈** | 1kHz+ 保證 | 500Hz 穩定 | Pi 足夠 | 力感測協調、<10ms 延遲 |
+| **多臂 Zenoh 中間件** | 原生支援 | 需輕量化配置 | 相同協議 | 3+ 臂同步控制 |
+| **力回饋整合** | FT 感測器直連 | 需 GPIO 擴展板 | Pi 需額外 ~$50 | 主從力協調、柔順操作 |
+
+### ROS 2 Control 力控完整系統驗證流程
+
+**標準驗證三階段**：
+
+1. **仿真驗證**（Gazebo Kura，1 週內）
+   - 雙臂主從力協調模型驗證
+   - Admittance Controller 參數優化
+   - [官方 6DOF 教學](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
+2. **硬體積分**（實體多臂，2-3 週）
+   - FT 感測器與 ros2_control state_interfaces 驅動開發
+   - 邊界節點（Pi 5/Orin）上 100Hz+ 力控迴圈驗證
+   - LeRobot v0.5.0 多臂同步資料錄製測試
+
+3. **工業應用驗證**（精密組裝/磨拋任務，4-6 週）
+   - Scan-N-Plan 感知驅動框架整合測試
+   - 多臂協作精度評估（±1-5mm 依應用）
+   - 成本-效能-可靠性三維評分
+
+### 下一步研究方向
+- Pi 5 輕量化 ROS 2 部署方案（mem footprint <512MB）
+- 開源雙臂協作力控範例代碼（基於 UR + SO-ARM100）
+
+---
+
 ## 附錄 F：2026 年 4 月 OpenArm 與全球機械手臂硬體生態更新
 
 ### OpenArm 平台成為全球首選基準（2026 年最新）
