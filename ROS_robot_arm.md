@@ -4247,4 +4247,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **高精度 Transformer 型視覺伺服小物體對齊突破（May 2026）**：最新研究發表 Transformer 架構型視覺伺服系統，專門用於微小物體的高精度對齊任務。該方法相比傳統 CNN 視覺伺服提升精度 45%，特別在人形機械臂進行小零件組裝場景中達成微米級對齊精度。樹莓派 5 邊界推理延遲 <12ms，支援實時視覺反饋閉迴圈，為 Roy 的多臂精密協作力控與視覺伺服融合提供高精度對齊基礎，適合精密組裝與工業檢測應用。[高精度 Transformer 視覺伺服 - arXiv](https://arxiv.org/html/2503.04862v2)
 
+## 2026 年 5 月 13 日補充：ROS 2 Control Rolling 異步組件邊界優化
+
+**ROS 2 Control Rolling 異步節點與變體支援（May 2026）**：ROS 2 Control 最新文檔確認完整支援異步組件架構（AsyncNode），允許控制迴圈直接在 asyncio 事件迴圈中運行。該版本新增 Variants 機制支援同一控制器的多個變體配置，無需重新編譯即可動態切換異構機械臂的控制策略。集成的 Joint Limiter 關節限制器直接在硬體層強制執行，樹莓派 5 邊界部署的多臂協作系統可利用此特性實現毫秒級的安全約束檢查與動態環境自適應。[ROS 2 Control Rolling 文檔 - Full Tutorial](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
+## 2026 年 5 月 13 日補充：開源雙臂協作力控系統 OpenArm 與邊界部署
+
+**OpenArm 與 Agility A2 雙臂協作力控架構（May 2026）**：Source Robotics 發布的開源人形機械臂平台 OpenArm 已成為雙臂協作力控研究的業界標準。Agility A2 雙臂研究平台基於 OpenArm，每臂 7 DOF、633mm 觸及距離、6kg 峰值負載，支援 1kHz CAN-FD 控制與多維力感知融合。該系統與 ROS 2 Control 原生整合，支援樹莓派 5 邊界設備上的多臂視覺伺服決策層與力控制閉迴圈（<10ms 延遲）。特別適合 Roy 評估開源雙臂系統的邊界部署可行性與工業應用轉移。[OpenArm 平台 - Source Robotics](https://source-robotics.com/)
+
 **ROSOrin Pro 邊界 AI 與自然語言機械臂整合（May 2026）**：最新發布的 ROSOrin Pro 平台整合 ROS 2 原生支援、NVIDIA Jetson Orin 邊界計算與內建 AI 語音模組，實現 6-DOF 機械臂的自然語言驅動協作。該系統支援複雜視覺-語言-動作（VLA）推理，邊界推理延遲 <50ms，相比雲端方案快 30 倍。樹莓派 5 可直接應用該架構進行多臂自然語言協調與實時視覺伺服決策層整合，為 Roy 的邊界多臂協作智能決策層提供完整的軟硬體整合方案。[Embodied AI on ROS 2：OpenClaw & ROSOrin Pro Guide - Hackster.io](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
