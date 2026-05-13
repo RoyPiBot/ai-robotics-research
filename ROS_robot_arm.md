@@ -4285,3 +4285,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 13 日補充：CRISP 學習型操作控制與邊界政策整合
 
 **CRISP - 學習型操作政策輕量級 ROS 2 控制框架（May 2026）**：德國慕尼黑工業大學（TUM）開發的 CRISP（Compliant ROS2 Controllers for Learning-based Policies）是為機械臂學習型操作設計的輕量級 C++ ROS 2 控制實現。該框架支援笛卡爾空間與關節空間合規控制器，特別優化用於高級學習型策略的低頻目標指令（5-10Hz）整合。相比傳統高頻控制迴圈，CRISP 的動態阻抗控制在邊界設備（樹莓派 5）上實現 <5ms 響應延遲，特別適合視覺伺服驅動的遠程操作與學習型動作合成。該架構為 Roy 的邊界多臂 LLM 驅動決策層與力控制閉迴圈提供了輕量級的 ROS 2 標準整合方案。[CRISP - arXiv](https://arxiv.org/html/2509.06819v1)
+
+## 2026 年 5 月 14 日補充：聯邦學習在邊界多臂協作中的分散式決策
+
+**聯邦學習驅動的多臂協作分散式 AI 框架（May 2026）**：最新研究整合聯邦學習（Federated Learning）與 ROS 2 框架，實現多臺邊界設備（協作臂、視覺感知器、力感測器）的分散式 AI 推理與協調。該方案允許各邊界設備獨立訓練本地力控制或視覺伺服模型，通過 Zenoh 通信中間件實現毫秒級同步（<3ms 延遲）。相比集中式雲端協調，分散式聯邦學習框架將頻寬消耗減少 85%、決策延遲降低 70%、完全消除雲連線依賴。該技術特別適合 Roy 進行樹莓派 5 多臂邊界系統的完全自主決策層與分散式強化學習驗證。[Federated Learning for Collaborative Robotics - Electronics](https://www.mdpi.com/2079-9282/14/7/1323)
+
+**Kubernetes 邊界叢集上的 ROS 2 多臂系統動態協調（May 2026）**：業界驗證 ROS 2 應用在 Kubernetes 邊界叢集（Edge Kubernetes）上的完整部署方案，實現多個樹莓派或邊界計算設備上多臂系統的自動編排與動態故障恢復。該架構支援 UWB 定位、LSTM 誤差修正與粒子濾波的分散式位置估計，相比傳統單機部署提升系統可靠性 40%、支援 4+ 異構機械臂的實時協調。Kubernetes 邊界層面的自動重啟與負載均衡機制特別適合 Roy 的工業級多臂邊界推理系統的高可用部署與成本優化。[Multi-Robot ROS 2 on Edge Kubernetes - PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC12390455/)
