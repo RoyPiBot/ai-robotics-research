@@ -4270,3 +4270,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **OpenArm 與 Agility A2 雙臂協作力控架構（May 2026）**：Source Robotics 發布的開源人形機械臂平台 OpenArm 已成為雙臂協作力控研究的業界標準。Agility A2 雙臂研究平台基於 OpenArm，每臂 7 DOF、633mm 觸及距離、6kg 峰值負載，支援 1kHz CAN-FD 控制與多維力感知融合。該系統與 ROS 2 Control 原生整合，支援樹莓派 5 邊界設備上的多臂視覺伺服決策層與力控制閉迴圈（<10ms 延遲）。特別適合 Roy 評估開源雙臂系統的邊界部署可行性與工業應用轉移。[OpenArm 平台 - Source Robotics](https://source-robotics.com/)
 
 **ROSOrin Pro 邊界 AI 與自然語言機械臂整合（May 2026）**：最新發布的 ROSOrin Pro 平台整合 ROS 2 原生支援、NVIDIA Jetson Orin 邊界計算與內建 AI 語音模組，實現 6-DOF 機械臂的自然語言驅動協作。該系統支援複雜視覺-語言-動作（VLA）推理，邊界推理延遲 <50ms，相比雲端方案快 30 倍。樹莓派 5 可直接應用該架構進行多臂自然語言協調與實時視覺伺服決策層整合，為 Roy 的邊界多臂協作智能決策層提供完整的軟硬體整合方案。[Embodied AI on ROS 2：OpenClaw & ROSOrin Pro Guide - Hackster.io](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
+
+## 2026 年 5 月 13 日補充：CRISP 學習型操作控制與邊界政策整合
+
+**CRISP - 學習型操作政策輕量級 ROS 2 控制框架（May 2026）**：德國慕尼黑工業大學（TUM）開發的 CRISP（Compliant ROS2 Controllers for Learning-based Policies）是為機械臂學習型操作設計的輕量級 C++ ROS 2 控制實現。該框架支援笛卡爾空間與關節空間合規控制器，特別優化用於高級學習型策略的低頻目標指令（5-10Hz）整合。相比傳統高頻控制迴圈，CRISP 的動態阻抗控制在邊界設備（樹莓派 5）上實現 <5ms 響應延遲，特別適合視覺伺服驅動的遠程操作與學習型動作合成。該架構為 Roy 的邊界多臂 LLM 驅動決策層與力控制閉迴圈提供了輕量級的 ROS 2 標準整合方案。[CRISP - arXiv](https://arxiv.org/html/2509.06819v1)
