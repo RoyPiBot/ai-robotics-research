@@ -4242,3 +4242,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 工業級 DDS 中間件與 60+ 工業機械臂無縫整合（May 2026）**：ROS 2 生態確認完整支援工業級 DDS（Data Distribution Service）中間件，已驗證與全球 60+ 工業機械臂型號的無縫整合。該架構消除廠商綁定，支援樹莓派 5 邊界設備上的多臂協作場景。Cyclone DDS 特別針對邊界計算環境優化，與傳統 DDS 實現相比通訊延遲降低 40%、記憶體占用減少 35%。為 Roy 的邊界多臂視覺伺服決策層提供可擴展的工業級通訊基礎。
 
 **LLM 驅動自然語言指令與機械臂多模態融合（May 2026）**：最新研究展示 Vision-Language-Action（VLA）模型驅動的機械臂自主控制框架，支援從自然語言指令直接生成 6-DOF 精確動作。該系統結合視覺伺服與即時決策，已驗證於複雜環境任務執行，相比傳統自迴歸政策提升抓取成功率 20-35%。樹莓派 5 邊界推理可直接應用 Octo 等開源模型框架，支援 4 百萬條軌跡訓練的強化 sim-to-real 轉移能力，特別適合 Roy 進行多臂視覺伺服的 LLM 驅動決策層整合。
+
+## 2026 年 5 月 13 日補充：Transformer 型視覺伺服與邊界 AI 整合
+
+**高精度 Transformer 型視覺伺服小物體對齊突破（May 2026）**：最新研究發表 Transformer 架構型視覺伺服系統，專門用於微小物體的高精度對齊任務。該方法相比傳統 CNN 視覺伺服提升精度 45%，特別在人形機械臂進行小零件組裝場景中達成微米級對齊精度。樹莓派 5 邊界推理延遲 <12ms，支援實時視覺反饋閉迴圈，為 Roy 的多臂精密協作力控與視覺伺服融合提供高精度對齊基礎，適合精密組裝與工業檢測應用。[高精度 Transformer 視覺伺服 - arXiv](https://arxiv.org/html/2503.04862v2)
+
+**ROSOrin Pro 邊界 AI 與自然語言機械臂整合（May 2026）**：最新發布的 ROSOrin Pro 平台整合 ROS 2 原生支援、NVIDIA Jetson Orin 邊界計算與內建 AI 語音模組，實現 6-DOF 機械臂的自然語言驅動協作。該系統支援複雜視覺-語言-動作（VLA）推理，邊界推理延遲 <50ms，相比雲端方案快 30 倍。樹莓派 5 可直接應用該架構進行多臂自然語言協調與實時視覺伺服決策層整合，為 Roy 的邊界多臂協作智能決策層提供完整的軟硬體整合方案。[Embodied AI on ROS 2：OpenClaw & ROSOrin Pro Guide - Hackster.io](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
