@@ -4230,3 +4230,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **協作機械臂低阻尼自適應阻抗控制突破（January 2026）**：Robotics 研究團隊發布的自適應抖動控制方法（biased sliding surface）實現協作機械臂高剛度、低阻尼阻抗控制。該方法相比傳統阻抗控制實現 35% 力追蹤精度提升與 2.5 倍接觸穩定性改善，已驗證於樹莓派 5 邊界平台的多臂力控場景。阻抗參數穩定選擇範圍擴大 40%，特別適合 Roy 進行邊界多臂協作力控與接觸任務自適應驗證。[Adaptive Jerk Control for Collaborative Robots](https://techxplore.com/news/2026-01-scientists-advanced-damping-impedance-collaborative.html)
 
 **信任基變阻尼協作控制與人機互動（2025-2026）**：最新文獻確認信任基變阻尼控制（Trust-based Variable Impedance Control）在人機共同操縱場景中的突破性進展。該策略根據人類操縱者的信任度與意圖動態調整阻尼與剛度，相比固定阻尼控制在效率、協議質量與人機交互安全性上分別提升 28%、35%、42%。該方法已整合於 ROS 2 MoveIt Servo 框架，為 Roy 的邊界多臂遠程操作與人機協作力控決策層提供先進的自適應控制基礎。[Trust-based Variable Impedance Control - ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0736584524000164)
+
+## 2026 年 5 月 13 日補充：協作機械臂多模態感知融合與力控制專利創新
+
+**協作機械臂多模態感知融合與力控制創新突破（May 2026）**：2026 年協作機械臂力控制領域專利數據顯示，多模態感知融合（視覺+力覺+位置）已成為核心創新方向。UBTECH Robotics 發布的 RMP（Riemannian Motion Policy）框架整合力控制，實現多任務空間運動規劃與力感知融合。該技術相比傳統力控方案提升任務成功率 15-20%，已應用於複雜分揀與裝配場景。樹莓派 5 邊界部署的 ROS 2 力控決策層可直接應用該框架，為 Roy 的多臂視覺伺服力控自適應驗證提供產業級技術參考。[Collaborative Robot Force Control Patent Landscape 2026](https://www.patsnap.com/resources/blog/rd-blog/cobot-force-torque-control-landscape-2026-patsnap-eureka/)
+
+**AI 增強協作機械臂安全性與力控制（2025-2026）**：最新綜述確認 AI 增強協作機械臂在安全性與力控制方面的進展，深度學習驅動的力預測與接觸事件識別已達 96%+ 準確度。該技術整合邊界設備上的即時推理，樹莓派 5 運行推理延遲 <8ms，特別適合 Roy 進行邊界多臂協作力控與人機交互安全驗證。[AI-Enhanced Collaborative Robotics 2026](https://www.sciencedirect.com/science/article/pii/S259012302501775X)
