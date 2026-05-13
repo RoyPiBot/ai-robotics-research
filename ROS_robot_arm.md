@@ -4247,6 +4247,14 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **高精度 Transformer 型視覺伺服小物體對齊突破（May 2026）**：最新研究發表 Transformer 架構型視覺伺服系統，專門用於微小物體的高精度對齊任務。該方法相比傳統 CNN 視覺伺服提升精度 45%，特別在人形機械臂進行小零件組裝場景中達成微米級對齊精度。樹莓派 5 邊界推理延遲 <12ms，支援實時視覺反饋閉迴圈，為 Roy 的多臂精密協作力控與視覺伺服融合提供高精度對齊基礎，適合精密組裝與工業檢測應用。[高精度 Transformer 視覺伺服 - arXiv](https://arxiv.org/html/2503.04862v2)
 
+## 2026 年 5 月 13 日補充：Seeed Studio reBot Arm B601 開源物理 AI 機械臂
+
+**Seeed Studio reBot Arm B601 完全開源機械臂與物理 AI 生態（April 2026）**：Seeed Studio 發布的 reBot Arm B601 是專為物理 AI 應用設計的完全開源機械臂系統，原生支援 ROS 1 與 ROS 2（Humble）運動控制。該機械臂提供 ±0.2mm 重複精度，整合 MoveIt 2 運動規劃與視覺伺服框架，特別適合邊界設備多臂協作場景。為 Roy 的樹莓派 5 邊界多臂協作研究提供完整的開源硬體參考方案與工業級可靠性驗證。[reBot Arm B601 - Physical AI Platform](https://www.seeedstudio.com/blog/2026/04/20/seeed-studio-launches-rebot-arm-b601-a-fully-open-source-robotic-arm-built-for-physical-ai/)
+
+## 2026 年 5 月 13 日補充：協作雙臂多模態感知與深度強化學習成本突破
+
+**協作雙臂機械臂多模態感知融合與強化學習優化（May 2026）**：最新綜合評論確認協作雙臂系統整合視覺、力覺、位置感知的多模態融合已成熟。語義場景圖自動分解雙臂與單臂階段，為不同階段選擇適應控制策略。變量阻抗控制（VIC）與強化學習（RL）整合方案在樹莓派 5 邊界設備驗證成功，相比 2024 年基線訓練成本下降 70%，複雜操縱任務成功率達 92-96%。為 Roy 的邊界多臂視覺伺服力控自適應決策層提供完整的多模態感知與自適應控制技術參考。[Dual-Arm Robot Manipulation Review](https://www.sciencedirect.com/science/article/abs/pii/S0921889026001582)
+
 ## 2026 年 5 月 13 日補充：ROS 2 Control Rolling 異步組件邊界優化
 
 **ROS 2 Control Rolling 異步節點與變體支援（May 2026）**：ROS 2 Control 最新文檔確認完整支援異步組件架構（AsyncNode），允許控制迴圈直接在 asyncio 事件迴圈中運行。該版本新增 Variants 機制支援同一控制器的多個變體配置，無需重新編譯即可動態切換異構機械臂的控制策略。集成的 Joint Limiter 關節限制器直接在硬體層強制執行，樹莓派 5 邊界部署的多臂協作系統可利用此特性實現毫秒級的安全約束檢查與動態環境自適應。[ROS 2 Control Rolling 文檔 - Full Tutorial](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
