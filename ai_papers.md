@@ -4994,3 +4994,11 @@
 - **神經網路與符號推理的融合突破** - Tufts University 開發的 Neuro-Symbolic AI 系統創新性結合傳統神經網路與人類符號推理能力，在機械人複雜推理任務中展現突破性成果。該系統在 Tower of Hanoi 謎題測試中達成 95% 成功率（相比標準 VLA 的 34%），在未見過的複雜變體上成功率達 78%，而標準 VLA 完全失敗。訓練耗時僅 34 分鐘（vs 標準 VLA 的 1.5 天），能耗為 VLA 的 1%，推理時能耗為 VLA 的 5%
 - **邊界機械人推理能耗的根本性改善** - 該突破推動邊界機械人從純神經網路決策向符號-神經混合推理的升級，特別適用於低功耗環境（IoT、移動機械人、邊界設備）。Neuro-Symbolic 架構加速邊界機械人在空間推理、任務規劃與逻輯決策中的可靠執行，同時大幅降低能耗，推進長時間連續運行的自主機械人系統部署
 - **來源**：[Tufts 官方新聞](https://now.tufts.edu/2026/03/17/new-ai-models-could-slash-energy-use-while-dramatically-improving-performance) | [ScienceDaily](https://www.sciencedaily.com/releases/2026/04/260405003952.htm) | [ICRA 2026](https://www.icra2026.org)
+
+#### 634. Google Gemma 4 — 端到端推理優化與開源基礎模型突破（May 2026）
+- **推理友善的開源基礎模型** - Google 發布 Gemma 4 系列，針對高級推理與代理式工作流優化的開源模型。該系列在推理效率與參數規模的權衡上達成新的 SOTA，提供前所未有的推理性能與參數效率比。Gemma 4 支援原生長脈絡推理、多模態工具整合與邊界部署友善的量化方案，推動企業從雲端 API 向開源邊界推理的遷移
+- **開源推理生態的民主化** - Gemma 4 系列加速開源基礎模型在邊界 AI 系統中的廣泛應用，降低企業對專有模型 API 的依賴。該技術推進自主機械人、智能代理與邊界決策系統的本地化部署
+
+#### 635. TurboQuant — KV Cache 多元化量化實現邊界多模態推理能耗優化（May 2026）
+- **KV Cache 能耗瓶頸的突破** - Google ICLR 2026 發表 TurboQuant，創新性引入二步法 KV Cache 優化架構，結合 PolarQuant 向量旋轉與 Quantized Johnson-Lindenstrauss 壓縮，相比標準 KV Cache 顯著降低記憶體開銷與能耗。該方法特別優化長序列多模態推理場景，在視頻分析與複雜文檔理解中實現邊界推理延遲 <100ms
+- **長序列推理的邊界可行性** - TurboQuant 推動邊界機械人與多模態代理從短程推理向長脈絡知識理解的升級，加速視覺文檔分析、長視野任務規劃與邊界 RAG 系統的實時部署
