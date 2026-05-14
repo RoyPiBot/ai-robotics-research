@@ -5011,3 +5011,13 @@
 - **新一代高效開源視覺語言模型的邊界就緒** - 2026 上半年見證開源多模態模型的顯著突破，阿里 Qwen3-VL 在多模態推理與長文本理解上超越前代，清華 MiniCPM-V 8B 在 11 項公開基準上超越 GPT-4V、Gemini Pro 與 Claude 3，且可在行動裝置高效運行。智譜 GLM-4.5V 採用 MoE 架構（總參數 106B，活躍 12B），在視覺推理基準與邊界推理延遲上與 Gemini-2.5-Pro 相當。該波次突破標誌開源多模態生態達成與專有模型相當的能力
 - **邊界視覺決策成本的根本性下降** - 開源多模態模型的快速迭代推動邊界視覺導航、物體識別與複雜場景理解從雲端 API 依賴向本地自主的轉變。邊界推理延遲普遍降至 <100ms，推進服務機械人、工業視覺系統與邊界 AI 代理的全棧開源部署與成本優化
 - **來源**：[ClawBench 2026 開源模型排行](https://www.clawbench.com/articles/best-open-source-ai-models-2026) | [SiliconFlow 快速多模態模型評測](https://www.siliconflow.com/articles/en/fastest-open-source-multimodal-models)
+
+#### 638. ExecuTorch 1.0 GA 與 Meta 邊界推理基礎設施成熟化（May 2026）
+- **邊界推理框架的生產級成熟度達成** - Meta 於 2026 年 5 月發布 ExecuTorch 1.0 GA，正式達成生產級成熟度。該框架以超輕量級設計（50KB 基礎占用）著稱，支援從微控制器到高端手機的 12+ 硬體後端，覆蓋 HuggingFace 上超過 80% 的熱門邊界 LLM。ExecuTorch 提供標準化量化、KV Cache 管理與異構計算抽象層，使開發者無須手工優化即可快速部署邊界推理
+- **邊界 LLM 部署民主化的里程碑** - ExecuTorch 1.0 推動企業從專有邊界推理方案向開源標準化框架的遷移。該基礎設施加速邊界機械人、IoT 設備與行動應用中本地 LLM 部署，降低邊界 AI 系統的開發成本與維護負擔
+- **來源**：Meta AI 官方公告
+
+#### 639. NVIDIA TensorRT Edge-LLM 推測解碼加速與邊界多模態推理（May 2026）
+- **推測解碼與 NVFP4 量化的推理加速** - NVIDIA 發布 TensorRT Edge-LLM 高級功能，整合 EAGLE-3 推測解碼、NVFP4 量化與分塊前向傳播（Chunked Prefill）。該框架在 NVIDIA Jetson 邊界設備上實現 2-3 倍推理速度提升，同時保持輸出品質。特別優化長序列多模態推理，實現視頻字幕生成、複雜指令解析等實時應用 <80ms 延遲
+- **邊界 GPU/加速器的推理價值挖掘** - TensorRT Edge-LLM 推動邊界設備從純推理加速向混合編碼器-推測器架構升級。該技術加速自駕決策、工業視覺檢測與邊界機械人高頻決策的商業化部署
+- **來源**：[NVIDIA Developer Blog](https://developer.nvidia.com/blog/accelerating-llm-and-vlm-inference-for-automotive-and-robotics-with-nvidia-tensorrt-edge-llm/)
