@@ -4989,3 +4989,8 @@
 #### 632. 邊界多模態推理的效能突破與技術民主化（May 2026）
 - **輕量級多模態模型的邊界加速** - 2026 年上半年見證了邊界多模態推理的效能突破，輕量級視覺語言模型（7B-12B 參數）通過蒸餾、量化與 speculative decoding 等技術實現 <100ms 推理延遲。該趨勢推動企業從雲端 API 依賴向邊界本地推理的遷移，顯著降低推理成本與隱私風險。MiniCPM-V 4.5、NVIDIA Nemotron Nano Omni 與 GLM-4.5V 等開源模型成為邊界 AI 部署的新標杆
 - **視覺代理與邊界自主性的民主化** - 開源高效多模態模型的成熟加速邊界機械人與智能代理從專有系統向通用開源堆疊的遷移。該轉變推進服務機械人、工業自主系統與智能 IoT 設備在邊界環境的大規模可持續部署
+
+#### 633. Neuro-Symbolic AI 系統 — 神經符號混合推理實現 100 倍能耗優化與邊界機械人任務精度突破（May 2026）
+- **神經網路與符號推理的融合突破** - Tufts University 開發的 Neuro-Symbolic AI 系統創新性結合傳統神經網路與人類符號推理能力，在機械人複雜推理任務中展現突破性成果。該系統在 Tower of Hanoi 謎題測試中達成 95% 成功率（相比標準 VLA 的 34%），在未見過的複雜變體上成功率達 78%，而標準 VLA 完全失敗。訓練耗時僅 34 分鐘（vs 標準 VLA 的 1.5 天），能耗為 VLA 的 1%，推理時能耗為 VLA 的 5%
+- **邊界機械人推理能耗的根本性改善** - 該突破推動邊界機械人從純神經網路決策向符號-神經混合推理的升級，特別適用於低功耗環境（IoT、移動機械人、邊界設備）。Neuro-Symbolic 架構加速邊界機械人在空間推理、任務規劃與逻輯決策中的可靠執行，同時大幅降低能耗，推進長時間連續運行的自主機械人系統部署
+- **來源**：[Tufts 官方新聞](https://now.tufts.edu/2026/03/17/new-ai-models-could-slash-energy-use-while-dramatically-improving-performance) | [ScienceDaily](https://www.sciencedaily.com/releases/2026/04/260405003952.htm) | [ICRA 2026](https://www.icra2026.org)
