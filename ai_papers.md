@@ -5002,3 +5002,12 @@
 #### 635. TurboQuant — KV Cache 多元化量化實現邊界多模態推理能耗優化（May 2026）
 - **KV Cache 能耗瓶頸的突破** - Google ICLR 2026 發表 TurboQuant，創新性引入二步法 KV Cache 優化架構，結合 PolarQuant 向量旋轉與 Quantized Johnson-Lindenstrauss 壓縮，相比標準 KV Cache 顯著降低記憶體開銷與能耗。該方法特別優化長序列多模態推理場景，在視頻分析與複雜文檔理解中實現邊界推理延遲 <100ms
 - **長序列推理的邊界可行性** - TurboQuant 推動邊界機械人與多模態代理從短程推理向長脈絡知識理解的升級，加速視覺文檔分析、長視野任務規劃與邊界 RAG 系統的實時部署
+
+#### 636. Network Edge Inference for Large Language Models — 邊界 LLM 推理部署的系統綜述與優化技術棧（May 2026）
+- **邊界 LLM 推理的完整技術框架** - arXiv:2604.22906 發布《Network Edge Inference for Large Language Models: Principles, Techniques, and Opportunities》，系統化分析 LLM 邊界推理的核心挑戰與優化路徑。綜述覆蓋量化、剪枝、知識蒸餾等預部署優化技術，以及模型分割、推測解碼、KV Cache 動態管理與專家路由等邊界推理加速方案。特別針對 Google Gemini Nano（1.8B/3.25B）、LLaMA 3.2 Mobile（1B/3B）等輕量化模型的行動裝置與物聯網邊界部署提供詳細指導
+- **消費級邊界推理的成熟化標誌** - 綜述驗證 Microsoft Phi-4（14B）與 Google Gemma-2B 可在 4-6GB VRAM 上穩定運行，推動筆記型電腦、行動裝置與邊界設備的本地 LLM 推理成為主流。該技術加速邊界機械人的離線自主決策與隱私保護，推進開源推理工具（Ollama、llama.cpp）在邊界部署中的廣泛應用
+
+#### 637. 開源多模態模型突破 — Qwen3-VL、MiniCPM-V 與 GLM-4.5V 的邊界推理民主化（May 2026）
+- **新一代高效開源視覺語言模型的邊界就緒** - 2026 上半年見證開源多模態模型的顯著突破，阿里 Qwen3-VL 在多模態推理與長文本理解上超越前代，清華 MiniCPM-V 8B 在 11 項公開基準上超越 GPT-4V、Gemini Pro 與 Claude 3，且可在行動裝置高效運行。智譜 GLM-4.5V 採用 MoE 架構（總參數 106B，活躍 12B），在視覺推理基準與邊界推理延遲上與 Gemini-2.5-Pro 相當。該波次突破標誌開源多模態生態達成與專有模型相當的能力
+- **邊界視覺決策成本的根本性下降** - 開源多模態模型的快速迭代推動邊界視覺導航、物體識別與複雜場景理解從雲端 API 依賴向本地自主的轉變。邊界推理延遲普遍降至 <100ms，推進服務機械人、工業視覺系統與邊界 AI 代理的全棧開源部署與成本優化
+- **來源**：[ClawBench 2026 開源模型排行](https://www.clawbench.com/articles/best-open-source-ai-models-2026) | [SiliconFlow 快速多模態模型評測](https://www.siliconflow.com/articles/en/fastest-open-source-multimodal-models)
