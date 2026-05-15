@@ -4402,3 +4402,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MoveIt Pro 增強感知-動作與自動生成工具路徑（May 2026）**：MoveIt Pro 9.0+ 新增自動掃描點雲並生成柵格化笛卡爾工具路徑的能力，支援自動化噴塗、洗滌、打磨、拋光等複雜非結構化作業流程。該功能完全相容 ROS 2 生態，與樹莓派 5 邊界視覺系統的點雲感知無縫整合，相比傳統手工編程工具路徑開發效率提升 70%+，特別適合 Roy 驗證視覺伺服決策層在柔性製造與非結構化環境中的應用擴展。[MoveIt Pro Documentation](https://docs.picknik.ai/)
 
 **視覺伺服反饋閉迴圈的 AI 增強決策層（May 2026）**：最新研究整合深度學習於 ROS 2 視覺伺服決策層，支援 Point Cloud 資料直接驅動的逆運動學計算與「智能抓取」（Intelligent Grasping）能力。該系統能識別物體體積與距離，自動計算最優接近角度，邊界推理延遲 <50ms。樹莓派 5 上的端到端視覺決策層支援非結構化環境中的實時物體識別與自主抓取操縱，特別適合 Roy 進行邊界多臂視覺伺服決策層的 AI 增強驗證與泛化評估。[Visual Servoing with AI Enhancement](https://control.ros.org/rolling/doc/resources/resources.html)
+
+## 2026 年 5 月 15 日補充：加速度層 Vision Transformer 視覺伺服與自適應追蹤
+
+**加速度層位置視覺伺服的 Transformer 深度強化學習（May 2026）**：最新研究在實際 Diana7 機械臂上驗證加速度層位置視覺伺服框架，整合 Transformer 式時序特徵處理與深度強化學習(DRL)。該方法相比傳統視覺伺服提升跟蹤精度 40%+，特別在複雜動態視覺目標追蹤中實現穩定的實時反饋控制。樹莓派 5 邊界推理延遲 <80ms，完全適配 Roy 多臂視覺伺服決策層的 Transformer 型自適應控制架構驗證。[Transformer-based Acceleration-Level Visual Servoing - Springer Nature](https://link.springer.com/article/10.1007/s40747-025-02056-8)
+
+**深度神經網路驅動物體自主追蹤與視覺伺服（May 2026）**：最新研究結合自主物體追蹤與深度神經網路實時推理，實現機械臂的動態目標視覺伺服控制。該系統整合 DNN 型物體檢測與邊界推理，邊界延遲 <100ms，在複雜背景與部分遮擋場景中的追蹤成功率達 92%+。該框架特別適合 Roy 驗證樹莓派 5 邊界多臂系統在非結構化動態環境中的自主視覺伺服能力與泛化性能。[Autonomous Object Tracking with Vision-Based Control - Nature Scientific Reports](https://www.nature.com/articles/s41598-025-97930-3)
