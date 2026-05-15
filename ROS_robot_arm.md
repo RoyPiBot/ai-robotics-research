@@ -4387,3 +4387,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **PickNik 開源力控制實現與邊界應用驗證（May 2026）**：PickNik Robotics 基於 ROS 2 MoveIt Pro 框架開發的開源力控制模組已驗證應用於邊界設備多臂協作。該實現支援 Cartesian 空間與 Joint 空間的混合力位控制策略，力相容控制相比傳統位置控制接觸任務成功率提升 65%+ 至工業級水平（90%+）。樹莓派 5 邊界推理延遲 <8ms，已驗證用於多臂人機協作場景的動態阻抗自適應與接觸力反饋，為複雜操縱與非結構化環境作業提供成熟的開源力控制基礎。[PickNik GitHub - Robot Arm Control](https://github.com/modulabs/arm-control)
 
 **混合力位控制與六軸多感測融合（May 2026）**：最新研究發表 6-DOF 機械臂的混合力位控制方法，整合動態阻抗模型與多維觸覺反饋。該方案為末端執行器設計自適應阻抗模型，在不同作業階段（懸空、接觸、約束）自動切換控制策略。樹莓派 5 邊界運行推理延遲 <15ms，特別適合 Roy 驗證事件驅動反饋層在邊界多臂協作中的接觸力自適應決策與安全約束整合。
+
+## 2026 年 5 月 15 日補充：工業級 AI 機械臂協調與認知視覺伺服
+
+**ROS 2 工業自動化與異構機械臂無縫整合（May 2026）**：最新 ROS 2 生態確認在鋼鐵冶金、精密組裝等工業場景中的完整應用驗證。ROS 2 DDS 框架已支援 60+ 工業機械臂型號（UR、KUKA、ABB、Kinova、xArm）的統一控制與協調，通過 MoveIt 2 進行實時路徑規劃與動態環境自適應。該框架消除廠商綁定風險，為 Roy 的樹莓派 5 邊界多臂視覺伺服系統提供完整的工業生態支援與長期穩定性保證。[ROS 2 Industrial Robotics Integration](https://ifactoryapp.com/blog/ros-2-architecture-for-industrial-automation)
+
+**視覺伺服反饋閉迴圈的 AI 增強決策層（May 2026）**：最新研究整合深度學習於 ROS 2 視覺伺服決策層，支援 Point Cloud 資料直接驅動的逆運動學計算與「智能抓取」（Intelligent Grasping）能力。該系統能識別物體體積與距離，自動計算最優接近角度，邊界推理延遲 <50ms。樹莓派 5 上的端到端視覺決策層支援非結構化環境中的實時物體識別與自主抓取操縱，特別適合 Roy 進行邊界多臂視覺伺服決策層的 AI 增強驗證與泛化評估。[Visual Servoing with AI Enhancement](https://control.ros.org/rolling/doc/resources/resources.html)
