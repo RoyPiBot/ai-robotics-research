@@ -2068,6 +2068,18 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **NVIDIA cuRobo MoveIt 2 外掛發布**：NVIDIA 正式發布 cuRobo 作為 MoveIt 2 官方外掛，透過 GPU 全局最佳化框架，將軌跡規劃時間壓縮至 10-50ms，相較傳統方法快 50-100 倍。該外掛已驗證支援協作機械臂與工業機械手臂，在邊界推理環境下於 Jetson Orin Nano 與 Raspberry Pi 5（搭配 USB 加速器）達成實時性能，為多臂系統與動態環境應用開啟新可能。
 
+### 異構機械臂集群與分散式力控協調（2026 年 5 月新進展）
+
+**ROS2swarm 異構集群框架成熟化**：ROS2swarm 作為官方 ROS 2 套件已支援多種異構機械臂平臺的群組協調，提供即插即用的群體行為原語（aggregation、dispersion、collective decision-making）。框架利用 ROS 2 的 DDS/Zenoh 中介軟體實現完全分散式通訊，消除單點故障風險。在雙臂或多臂集群場景下，ROS2swarm 搭配 MoveIt 2 分佈式規劃引擎可在 <100ms 內完成全局協調決策，適合工廠多臂協作與搜救機器人群組。
+
+**Multi-Robot Collaborative Manipulation 實戰案例**：最新研究整合 HUSKY 移動底座與 KINOVA Gen3 6-DOF 機械臂，透過統一的 ROS 2 節點架構與發佈-訂閱模式實現低延遲同步控制。該系統在 Gazebo 2 與實機驗證上達成 <50ms 的協作迴圈時間，支援複雜的拿取-運輸-放置工作流。力回饋透過 ros2_control Admittance Controller 自動調節各臂端點位置與力度，實現人機安全協作與環境自適應。
+
+**事件驅動力控決策層驗證**：將事件相機視覺伺服與 ROS 2 異步事件執行器結合，構建「感知→決策→力控」的完整決策層。Bio-Inspired Event-Based Visual Servoing（BEBVS）框架已驗證支援多臂場景，相比 RGB 單模態視覺減少 60% 功耗，將力控響應延遲壓低至 <20ms。該方案透過 ROS 2 Quality of Service (QoS) 設定與優先級隊列，保證力控指令優先執行，適合高精度裝配與災害救援應用。
+
+- [ROS2swarm 官方倉庫](https://github.com/ROS2swarm/ROS2swarm)
+- [多臂協作研究論文](https://pmc.ncbi.nlm.nih.gov/articles/PMC12343253/)
+- [ROS2swarm 行為庫](https://arxiv.org/html/2405.02438v1)
+
 **人型雙臂機器人製造業應用突破**：Figure 02（OpenAI 視覺語言模型驅動）已在 BMW 製造工廠實現部署，搭載 32 自由度雙臂系統，完成汽車組裝與零件搬運；Boston Dynamics 發布的新型雙臂操作系統亦支援 ROS 2 介面，在邊界 GPU 加速（Jetson AGX）上執行實時力控制與視覺伺服。該類系統預期在 2026-2027 年進入中國製造業與電子產業的試點應用，主要用於柔性組裝與高精度檢測。
 
 ### 模組化機械臂與開源硬體生態突破（2026 年 4 月）
