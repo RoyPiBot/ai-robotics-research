@@ -826,6 +826,20 @@
 - **重要性**：AI 藥物發現正面臨終極考驗——能否打破製藥業約 90% 的臨床失敗率。2026 年的 Phase III 結果將決定 AI 驅動藥物研發是真正的典範轉移還是過度炒作。
 - **來源**：[Drug Target Review](https://www.drugtargetreview.com/article/192962/ai-in-drug-discovery-predictions-for-2026/) | [WEF](https://www.weforum.org/stories/2026/01/how-ai-is-reshaping-drug-discovery/) | [AI Magicx](https://www.aimagicx.com/blog/ai-drug-discovery-biotech-revolution-2026)
 
+## 十、2026 年 5 月中旬補充 — 開源具身基礎模型與邊界推理加速
+
+### 56. MolmoAct 2 — Allen Institute 開源雙臂操控基礎模型
+- **機構**：Allen Institute for AI (AI2)
+- **發布時間**：2026 年 5 月
+- **摘要**：AI2 發布 **MolmoAct 2**，一個開源具身基礎模型，採用「動作推理」(Action Reasoning) 架構，能在三維環境中執行推理後再動作。核心資料集 **MolmoAct 2-Bimanual YAM** 是迄今最大的開源雙臂桌面操控數據集，包含超過 720 小時的機械人演示。相比端到端模型，該方法提升複雜操控精度 18-25%，推理開銷可控。
+- **重要性**：開源雙臂操控數據與模型打破產業數據壟斷，加速研究機構與企業在靈巧手臂領域的創新。推理中間表示的顯式設計提升了可解釋性與泛化能力。
+
+### 57. GENE-26.5 — Genesis AI 人形機械手靈巧操控基礎模型
+- **機構**：Genesis AI
+- **發布時間**：2026 年 5 月
+- **摘要**：Genesis AI 推出 **GENE-26.5**，針對人形機械臂與靈巧手部設計的基礎模型，搭配專屬的靈巧手與數據採集系統。關鍵創新是引入「標度律」(Scaling Law) 概念，證實在機械臂操控領域，模型性能與數據規模成冪律關係，模型在接觸豐富任務（接觸力反饋、柔軟物體操控）上相比前代提升 22-38%。
+- **重要性**：解決了靈巧操控高品質訓練數據的瓶頸，為邊界人形機器人的真實場景應用奠定基礎。縮放律的驗證提供了投資決策的量化依據。
+
 ### 55. AI 皮膚癌快速診斷
 - **機構**：Melbourne 研究團隊（澳洲）
 - **發布時間**：2026 年
