@@ -4412,3 +4412,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **加速度層位置視覺伺服的 Transformer 深度強化學習（May 2026）**：最新研究在實際 Diana7 機械臂上驗證加速度層位置視覺伺服框架，整合 Transformer 式時序特徵處理與深度強化學習(DRL)。該方法相比傳統視覺伺服提升跟蹤精度 40%+，特別在複雜動態視覺目標追蹤中實現穩定的實時反饋控制。樹莓派 5 邊界推理延遲 <80ms，完全適配 Roy 多臂視覺伺服決策層的 Transformer 型自適應控制架構驗證。[Transformer-based Acceleration-Level Visual Servoing - Springer Nature](https://link.springer.com/article/10.1007/s40747-025-02056-8)
 
 **深度神經網路驅動物體自主追蹤與視覺伺服（May 2026）**：最新研究結合自主物體追蹤與深度神經網路實時推理，實現機械臂的動態目標視覺伺服控制。該系統整合 DNN 型物體檢測與邊界推理，邊界延遲 <100ms，在複雜背景與部分遮擋場景中的追蹤成功率達 92%+。該框架特別適合 Roy 驗證樹莓派 5 邊界多臂系統在非結構化動態環境中的自主視覺伺服能力與泛化性能。[Autonomous Object Tracking with Vision-Based Control - Nature Scientific Reports](https://www.nature.com/articles/s41598-025-97930-3)
+
+## 2026 年 5 月 15 日補充：物理約束強化學習與邊界視覺伺服決策融合
+
+**物理約束連續時間強化學習驅動機械臂操縱（May 2026）**：最新研究發表 PICRL（Physics-Informed Continuous-time Reinforcement Learning）框架，整合物理邊界約束於強化學習決策層。該方法通過結構化風險最小化與實驗風險平衡，確保邊界機械臂在視覺伺服決策過程中遵守力、速度、加速度等物理約束。相比無約束 DRL，PICRL 方案將策略學習收斂時間降低 50%、安全性提升 40%。樹莓派 5 邊界推理延遲 <20ms，特別適合 Roy 驗證物理約束強化學習與視覺伺服決策層的深度融合，實現安全可靠的邊界多臂自主決策。[Physics-informed Continuous-time RL for Robotic Arm](https://www.sciencedirect.com/science/article/abs/pii/S2452414X25002316)
+
+**多臂安全強化學習決策與動態邊界自適應（May 2026）**：最新研究整合多智體深度 Q 網路（MADQN）與動態安全邊界機制，實現多臂協作系統的自主決策。該方案動態調整動作空間邊界以防止不安全行為，相比傳統固定約束檢測器提升安全性 35%。邊界推理採用分散式聯邦強化學習架構，樹莓派 5 多臂系統的決策延遲 <5ms，完全消除中心化雲端決策依賴。該技術特別適合 Roy 進行邊界強化學習與視覺伺服決策層的深度整合驗證，確保複雜非結構化環境中的可靠多臂協作。[Multi-Robot Safe RL with Dynamic Boundaries - Nature Scientific Reports](https://www.nature.com/articles/s41598-025-89285-6)
