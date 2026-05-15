@@ -4392,4 +4392,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 工業自動化與異構機械臂無縫整合（May 2026）**：最新 ROS 2 生態確認在鋼鐵冶金、精密組裝等工業場景中的完整應用驗證。ROS 2 DDS 框架已支援 60+ 工業機械臂型號（UR、KUKA、ABB、Kinova、xArm）的統一控制與協調，通過 MoveIt 2 進行實時路徑規劃與動態環境自適應。該框架消除廠商綁定風險，為 Roy 的樹莓派 5 邊界多臂視覺伺服系統提供完整的工業生態支援與長期穩定性保證。[ROS 2 Industrial Robotics Integration](https://ifactoryapp.com/blog/ros-2-architecture-for-industrial-automation)
 
+## 2026 年 5 月 15 日補充：MoveIt Pro 9.2 邊界運算與極速運動規劃
+
+**MoveIt Pro 9.2.0 超高速運動規劃與邊界推理優化（May 2026）**：PickNik 發布 MoveIt Pro 9.2.0，完全移除對開源 MoveIt 2 的依賴，自主開發的運動規劃引擎實現革命性性能提升：逆向運動學（IK）求解速度提升 35 倍、運動規劃速度提升 4 倍、笛卡爾路徑規劃速度提升 30 倍。新版本完整支援 NVIDIA Jetson Orin 邊界計算設備，以及樹莓派 5 的低功耗邊界推理環境。該優化特別適合 Roy 的邊界多臂視覺伺服決策層在毫秒級時延要求下的實時路徑規劃與動態環境自適應。[MoveIt Pro 9.2.0 Release Notes](https://docs.picknik.ai/release-notes/2026/04/29/9.2.0/)
+
+**MoveIt Pro 增強感知-動作與自動生成工具路徑（May 2026）**：MoveIt Pro 9.0+ 新增自動掃描點雲並生成柵格化笛卡爾工具路徑的能力，支援自動化噴塗、洗滌、打磨、拋光等複雜非結構化作業流程。該功能完全相容 ROS 2 生態，與樹莓派 5 邊界視覺系統的點雲感知無縫整合，相比傳統手工編程工具路徑開發效率提升 70%+，特別適合 Roy 驗證視覺伺服決策層在柔性製造與非結構化環境中的應用擴展。[MoveIt Pro Documentation](https://docs.picknik.ai/)
+
 **視覺伺服反饋閉迴圈的 AI 增強決策層（May 2026）**：最新研究整合深度學習於 ROS 2 視覺伺服決策層，支援 Point Cloud 資料直接驅動的逆運動學計算與「智能抓取」（Intelligent Grasping）能力。該系統能識別物體體積與距離，自動計算最優接近角度，邊界推理延遲 <50ms。樹莓派 5 上的端到端視覺決策層支援非結構化環境中的實時物體識別與自主抓取操縱，特別適合 Roy 進行邊界多臂視覺伺服決策層的 AI 增強驗證與泛化評估。[Visual Servoing with AI Enhancement](https://control.ros.org/rolling/doc/resources/resources.html)
