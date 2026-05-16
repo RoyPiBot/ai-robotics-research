@@ -2898,6 +2898,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ros2_control 異步元件、變體支援與 URDF 原生整合**：2025 年 ROS 2 Control 框架在密集開發後推出重大功能擴展，包括完全的非同步組件支援、硬體變體動態切換、所有組件可直接訪問 URDF 機械臂描述，以及硬體層整合的關節限制器（Joint Limiters）。該更新使協作臂驅動程式可在邊界設備上無阻塞運行，支援動態硬體組態切換（如更換不同規格的夾爪），強化跨平台移植性。這些改進已驗證於 Jetson Orin NX 與 Raspberry Pi 5 邊界部署，成為 Roy 的多臂視覺伺服與強化學習框架的堅實基礎。[ROS2_Control Rolling Documentation - Resources](https://control.ros.org/rolling/doc/resources/resources.html)
 
+### 邊界 Physical AI 與實時決策適應（2026 年 5 月新進展）
+
+**Physical AI 框架與動態環境適應**：2026 年 Arm/NVIDIA 提出的 Physical AI 範典強調機械臂必須「感知→推理→行動」於實時環境中完成。ROS 2 邊界機械臂正整合視覺編碼（Hailo-10H/Jetson Orin）與決策層（Vision-Language-Action 模型）的雙層加速，使機械臂可在複雜動態環境中 <20ms 內做出自適應決策。該架構透過 Zenoh 分散式訊息層實現多臂間的決策共享，已驗證於不確定性高的工廠揀配與協作組裝場景，相比集中式雲端決策降低 60% 通訊延遲、提升環境適應性 35%。[Arm: Physical AI at the Edge](https://newsroom.arm.com/blog/arm-ces-2026-takeaways)、[NVIDIA Edge-First LLMs for Robotics](https://developer.nvidia.com/blog/build-next-gen-physical-ai-with-edge%E2%80%91first-llms-for-autonomous-vehicles-and-robotics/)
+
 ### PickNik ROS 2 Hardware Ecosystem 與維護者擴展（2025 年 1 月發佈、2026 年 4 月更新）
 
 **PickNik Robotics ROS 2 Hardware Drivers 官方資源中心**：PickNik 於 2025 年 1 月正式發佈 ROS 2 Hardware Drivers 資源頁面，匯總全球 60+ 協作與工業機械臂的官方 ROS 2 驅動相容性狀態。該資源提供標準化的驅動認證標籤、性能基準測試與相容性驗證，新增機械臂驅動需通過視覺伺服端對端延遲 <50ms、力控制精度 <0.1N 的官方認證。同時，ros-controls 專案已獲納入 OSRA（Open Source Robotics Association）旗下，維護者數量翻倍，異步組件、URDF 原生訪問等長期功能已在 2026 年 3 月正式穩定。該生態擴展標誌著 ROS 2 機械臂驅動邁向「標準化認證 + 社群加速」的成熟產業模式。[PickNik ROS 2 Hardware Ecosystem Database](https://picknik.ai/2025/01/06/ROS-Hardware-Ecosystems-Announcement.html)
