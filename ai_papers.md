@@ -5147,4 +5147,15 @@
 - **核心創新** - KVCOMM 首度實現多代理系統間 KV 快取的高效共享與複用，通過安全蒸餾與稀疏通信協議，在五代理設定中實現 7.8 倍推理加速
 - **技術突破** - 超過 70% KV 快取複用率，支援異質模型的互操作性，大幅降低多代理協作中的記憶體與頻寬開銷
 - **對邊界多代理系統的意義** - 解決邊界多代理部署中的核心瓶頸—推理延遲與記憶體消耗，加速工廠協調、物流自動化與邊界決策代理的實時協作
+
+#### 660. Stanford/Contextual AI 單體 vs 多代理推理效率對比研究（April 2026）
+- **核心發現** - Tran & Kiela 團隊的研究證實，在固定推理 token 預算與完美上下文利用的假設下，單體代理在多跳推理任務上的信息效率優於多代理系統。測試涵蓋 Qwen3、DeepSeek-R1-Distill-Llama 與 Gemini 2.5，驗證單一連續推理過程相比多次代理交接能更好保留相關信息
+- **實務意義** - 該研究挑戰傳統多代理設計思路，指出多代理協作的訊息損耗風險。但同時提示在高噪聲、上下文複雜度高的場景（如結構化團隊分工過濾無關信息），多代理仍可透過動態任務分解超越單體系統
+- **來源**：[Stanford & Contextual AI 研究](https://the-decoder.com/new-stanford-study-reveals-when-teaming-up-ai-agents-is-worth-the-compute/)
+
+#### 661. Google MASS — 多代理系統搜尋與工作流優化框架（2026 年初）
+- **核心創新** - Google AI 與 Cambridge 聯合發布 MASS（Multi-Agent System Search），三階段優化框架自動化多代理系統的 prompt 指令與代理拓撲設計。第一階段局部 prompt 優化，第二階段選擇高效工作流拓撲，第三階段全局系統級 prompt 優化
+- **性能突破** - MATH 數據集上優化後準確率達 84%（相比自洽性與多代理辯論的 76-80%），HotpotQA 辯論拓撲提升 3%，LiveCodeBench Executor 拓撲提升 6%。該框架大幅降低多代理系統的手動調優成本與計算資源消耗
+- **對邊界多代理協作的意義** - 推動多代理系統從手工設計向自動化優化的轉變，加速工廠決策系統、複雜任務分解與邊界代理編排的規模化部署
+- **來源**：[Google AI MASS 框架研究](https://research.google/pubs/multi-agent-design-optimizing-agents-with-better-prompts-and-topologies/)
 - **研究方向** - 代表 2026 下半年多代理系統優化的核心方向，推動邊界環境中分散式多代理的高效執行
