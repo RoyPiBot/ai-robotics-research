@@ -673,7 +673,10 @@ if __name__ == '__main__':
 - **SEBVS 事件相機視覺伺服（2025 年 8 月）**：合成事件視覺伺服框架實現 1-2 kHz 伺服迴圈率（框架式視覺僅 30-200 Hz），取放誤差收斂時間 0.6s → 0.15s，像素誤差與角度誤差相較減 2-4×，RGB+事件融合方案性能最優。[GitHub 開源](https://github.com/eventbasedvision/SEBVS)、ROS 2 Gazebo 驗證。
 - **多模態 AI 與機械臂整合（2026 年）**：最新進展包括 ArmPi Ultra 等平台整合多模態大型語言模型（MLLM），機械臂不僅執行程式碼，更能理解人類意圖。系統同步監聽語音命令、掃描環境目標物件、規劃無碰撞路徑。搭配 TOF LiDAR 和 3D 深度視覺，點雲數據直接輸入逆向運動學（IK）引擎，實現感知驅動的自適應運動規劃。
 - **ROS 2 感知驅動路徑規劃框架（2026 年）**：Scan-N-Plan 技術提供基於 3D 掃描數據的即時軌跡規劃，支援表面加工、精密組裝等應用。整合 ROS 2 perception_pcl 與 MoveIt 2，無需預設路徑，機械臂根據環境實時適應。
+- **ML-augmented Motion Planners（2026 年新進展）**：機械學習強化的軌跡規劃器承諾在 2026 年內達到 90%+ 成功率於動態環境，相比傳統 OMPL 與 MoveIt 2 提升衝突迴避與軌跡品質。已在 ROSCon 2025（1,000+ 參與者，52 個國家）與產業應用中驗證。
+- **Isaac ROS cuMotion CUDA 加速（2026 年）**：NVIDIA GPU 加速軌跡規劃引擎，支援 Jetson Thor 與 RTX 6000（Ada Generation），軌跡生成時間縮短至毫秒級。與 MoveIt 2 深度整合，特別適合邊緣推理與複雜多障礙場景。[Isaac ROS 官方頁面](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_cumotion/index.html)
 - **ROS 2 Control Rolling Release（2026 年 2-3 月）**：支援即時機械臂控制的硬體無關框架，新增 async components、URDF 直接存取、整合關節限制器（Joint Limiters）。[官方支援機械臂清單](https://control.ros.org/master/doc/supported_robots/supported_robots.html)涵蓋 Doosan、Universal Robots、KUKA 等商業機械臂及自定義設計。框架模組化組合，標準化 ROS interfaces 簡化控制層開發。
+- **ROSCon 2026 多倫多籌備（即將啟動）**：繼 ROSCon 2025 成功舉辦（10 月於紐奧良），全球機器人開源社群焦點轉向 2026 年多倫多大會。預期展示最新的邊界推理、ML 強化規劃器與樹莓派 5 實時機械臂整合案例。
 
 ### 階段五：進階提升（第 9 週以後）
 
