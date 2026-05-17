@@ -2540,6 +2540,14 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **多臂協作邊界推理與協調體系**：基於 Example 7 框架，開發者可擴展至多臂系統。Jazzy 版本的 ros2_control 支援異步組件與直接 URDF 存取，允許多臂獨立控制迴圈並透過上層協調器進行軌跡同步。結合 MoveIt 2 Servo 實時伺服與力回饋感測器，可實現複雜協作任務的動態位力混合控制。已驗證於 2-3 臂協作搬運與精密組裝場景，通訊延遲 <50ms。[ROS2_Control Rolling Documentation](https://control.ros.org/rolling/doc/resources/resources.html)
 
+### reBot Arm B601-DM：開源 6+1 DoF 具身 AI 機械臂（2026 年 5 月新增）
+
+**Seeed Studio 開源平台與 LeRobot 整合**：reBot Arm B601-DM 全開源 6 軸機械臂，專為具身 AI 與遙操作應用設計，相容 ROS 1/2、Hugging Face LeRobot、NVIDIA Isaac Sim 與 Pinocchio，提供低進入障礙的多模態決策學習平台。搭載 Jetson Nano 級邊界計算可實現視覺推理與即時軌跡規劃，成本控制在 $200-300，適合研究團隊快速原型化。[reBot Arm B601-DM — CNX Software](https://www.cnx-software.com/2026/04/17/rebot-arm-b601-dm-an-open-source-61-dof-robotic-arm-for-embodied-ai-and-teleoperation-applications/)
+
+### Digital Twin 自適應控制與混合神經網路（2026 年 5 月新增）
+
+**CNN-LSTM-Transformer 架構驗證**：Nature Scientific Reports 研究結合卷積、LSTM 與 Transformer 三層協作機制，UR10e 驗證達成 98.73% 追蹤精度。透過數位孿生進行離線訓練，Jetson Orin Nano 邊界推理實現在線微調與動態適應，為具身 AI 決策奠定基礎。[Adaptive robotic arm control through digital twin integration](https://www.nature.com/articles/s41598-025-34822-6)
+
 ---</thinking>
 
 記錄狀態中…
