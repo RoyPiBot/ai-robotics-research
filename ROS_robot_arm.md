@@ -4467,3 +4467,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ALRM：LLM 驅動機械臂操縱與自主決策框架（2026）**：Anthropic 等頂級 AI 機構聯合發表的 ALRM（Agentic LLM for Robotic Manipulation）框架整合大型語言模型與機械臂控制堆棧。該方法透過 LLM 直接生成高層操縱 API 調用序列（pick、place、move 等），由 MoveIt 2 與 ros2_control 執行具體的軌跡規劃與力控制。ALRM 無需訓練端到端神經網路，完全利用既有 ROS 2 控制基礎設施，在複雜非結構化環境的操縱任務成功率相比傳統方案提升 45%+。樹莓派 5 邊界推理延遲 <80ms，特別適合 Roy 進行 LLM 驅動多臂協作決策層與力控制自適應整合的研究驗證。[ALRM - Agentic LLM for Robotic Manipulation](https://arxiv.org/pdf/2601.19510)
 
 **Scan-N-Plan：點雲驅動實時軌跡規劃（May 2026）**：最新 ROS 工業生態推出 Scan-N-Plan 技術，基於 3D 點雲掃描自動生成實時機械臂軌跡。該系統無需傳統手工編程，直接從環境點雲生成柵格化笛卡爾工具路徑，支援噴塗、打磨、洗滌等複雜非結構化作業。邊界推理延遲 <100ms，樹莓派 5 與視覺伺服系統無縫整合，相比傳統編程方法開發效率提升 70%+，特別適合 Roy 進行邊界多臂視覺感知驅動軌跡自動生成與實時動態環境適應。[Scan-N-Plan ROS Industrial](https://rosindustrial.org/news)
+
+## 2026 年 5 月 17 日補充：MoveIt Pro 工業級支援與開放詞彙視覺管線
+
+**MoveIt Pro 9.0+ 對應 60+ 工業機械臂無縫支援（May 2026）**：PickNik Robotics 確認 MoveIt Pro 框架完整支援 UR、KUKA、ABB、Kinova、xArm 等 60+ 工業機械臂型號，透過統一的 ROS 2 Control 抽象層消除廠商綁定。MoveIt Pro 的硬體適配層已驗證相容樹莓派 5 邊界設備，運動規劃速度提升 35 倍、IK 求解加速 4 倍，支援多臂協作場景的實時視覺伺服決策與力控制閉迴圈。該框架為 Roy 的邊界多臂系統提供工業級穩定性與長期生態支援，特別適合複雜非結構化環境的多臂協作驗證。[MoveIt Pro - PickNik Robotics](https://picknik.ai/moveitpro/)
+
+**ROS 2 開放詞彙物體偵測與 3D 重建視覺管線（May 2026）**：Jetson Orin 與樹莓派 5 上的 ROS 2 Vision Pipeline 整合開放詞彙物體偵測與 3D 重建能力，支援任意物體識別而無需預先標註訓練。該管線採用 CLIP 多模態編碼器與最新 3D 感知模型，邊界推理延遲 <200ms，相比雲端調用快 40 倍。結合 NVIDIA Isaac ROS 推理加速，可直接應用於多臂視覺伺服決策層的動態環境物體識別與即時任務規劃，為 Roy 的邊界多臂系統提供完全自主的視覺理解能力。[ROS2 Open-Vocabulary Vision Pipeline](https://link.springer.com/chapter/10.1007/978-3-032-07175-0_27)
