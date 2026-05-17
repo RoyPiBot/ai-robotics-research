@@ -4474,4 +4474,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 開放詞彙物體偵測與 3D 重建視覺管線（May 2026）**：Jetson Orin 與樹莓派 5 上的 ROS 2 Vision Pipeline 整合開放詞彙物體偵測與 3D 重建能力，支援任意物體識別而無需預先標註訓練。該管線採用 CLIP 多模態編碼器與最新 3D 感知模型，邊界推理延遲 <200ms，相比雲端調用快 40 倍。結合 NVIDIA Isaac ROS 推理加速，可直接應用於多臂視覺伺服決策層的動態環境物體識別與即時任務規劃，為 Roy 的邊界多臂系統提供完全自主的視覺理解能力。[ROS2 Open-Vocabulary Vision Pipeline](https://link.springer.com/chapter/10.1007/978-3-032-07175-0_27)
 
+## 2026 年 5 月 17 日補充：多模態 AI 與 ROS 2 邊界融合
+
+**Hiwonder ArmPi Ultra ROS2 多模態 AI 大模型整合（May 2026）**：Hiwonder 最新推出的 ArmPi Ultra 將深度學習多模態 AI 模型（包括視覺、聲音、文本處理）與 ROS 2 框架完全整合。該系統支援主流開源大模型（DeepSeek、Yi、Qwen）與工業級視覺模組的原生協作，邊界推理延遲 <100ms。多模態融合層直接驅動機械臂的決策與操縱，樹莓派 5 邊界設備透過輕量級模型量化實現實時多模態處理。該方案完全適配 Roy 進行邊界多臂系統的多模態 AI 決策層與視覺伺服力控融合驗證，特別在語音控制與場景理解的複雜操縱任務中提供整合解決方案。[Hiwonder ArmPi Ultra - ROS2 Multimodal AI](https://www.hiwonder.com/products/armpi-ultra)
+
+**ROS 2 生態下雲邊協同與實時推理分級（May 2026）**：最新業界實踐驗證 ROS 2 支援靈活的雲邊協同架構，邊界設備（樹莓派 5）執行實時低延遲決策（<10ms），輕量級邊界 AI 模型處理視覺伺服與力控制，複雜語義理解任務異步卸載至雲端。該分級推理方案既保證實時性又提升決策智慧度，相比純邊界方案擴展了 AI 能力、相比純雲端方案消除延遲瓶頸。Zenoh 新一代通訊中間件支援邊界-雲端的毫秒級低延遲同步，特別適合 Roy 構建混合邊界-雲端的多臂協作智慧決策層，實現工業級可靠性與先進 AI 能力的完美平衡。
+
 **MoveIt Pro 9.0 增強感知驅動動作與遠程操作能力（April 2026）**：PickNik 發布 MoveIt Pro 9.0，重點強化掃描規劃（scan-and-plan）工作流，實現機械臂實時感知周圍環境並動態生成運動路徑，無需預編程指令。新版增強了感知至動作的管線與遠程操作系統、訓練數據收集功能。該技術已在自動洗車（Autowash）、衛生間清潔（Hivebotics）與複雜設備清潔（CleanBotix）等非結構化環境應用驗證，相比固定軌跡規劃提升任務適應性 50%+。樹莓派 5 邊界環境下的視覺伺服決策延遲 <100ms，特別適合 Roy 進行動態環境感知驅動規劃與遠程協作決策層的整合驗證。[MoveIt Pro 9.0 - PickNik Robotics](https://roboticsandautomationnews.com/2026/04/09/picknik-releases-moveit-pro-9-improve-ai-driven-robotics-variable-environments/100466/)
