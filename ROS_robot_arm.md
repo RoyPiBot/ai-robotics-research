@@ -4534,3 +4534,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 18 日補充：ROS 2 Kilted 邊界性能突破與模組化控制器生態
 
 **ROS 2 Control Kilted 五月版：硬體無關模組化控制框架（May 2026）**：ROS 2 官方確認 Kilted 版本完成模組化控制器組件庫的統一規範化。該框架支援控制器鏈式組合（cascade control）與實時事件驅動架構，樹莓派 5 邊界環境下的多臂協調控制延遲完全消除時間耦合，實現 <10ms 決策響應。Kilted 版本透過 DDS Cyclone 中間件優化，已驗證支援 70+ 工業機械臂型號無縫整合，特別優化了 ARM 架構邊界設備的實時性能與功耗效率，為複雜多臂協作系統奠定穩定可靠的控制基礎。[ROS2_Control Kilted Documentation](https://control.ros.org/kilted/doc/resources/resources.html)
+
+## 2026 年 5 月 18 日補充：Multimodal LLM 超級大腦與 ROS 2 端到端具身 AI 決策
+
+**多模態大型語言模型驅動 ROS 2 機械臂超級大腦（May 2026）**：最新研究驗證將 Multimodal Large Language Models 整合至 ROS 2 機械臂平台，賦予機械臂新一代 AI 「超級大腦」能力。該架構整合視覺編碼器（LiDAR/深度相機）、文本推理（LLM）與運動規劃決策層（MoveIt 2），使機械臂能理解複雜環境語義、分解多步操縱任務、進行動態環境自適應。高性能硬體（如 Jetson Orin）驅動，ROS 2 邊界推理延遲 <100ms；樹莓派 5 透過輕量級模型量化與邊界聯邦推理，實現 <200ms 的實時多模態決策。相比傳統硬編碼控制，LLM 驅動決策在非結構化環境的多臂協作成功率提升 50%+，特別適合 Roy 進行邊界多臂視覺伺服與具身 AI 超級大腦的深度融合驗證，解鎖複雜協作任務的端到端自主決策能力。[ROS 2 Evolved: Unleashing the AI Super Brain](https://www.hackster.io/HiwonderRobot/ros-2-evolved-unleashing-the-ai-super-brain-89df67)
