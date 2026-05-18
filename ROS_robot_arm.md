@@ -2697,6 +2697,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Gazebo Harmonic + ros2_control 無縫虛實映射**：Gazebo Harmonic 中的 `ign_ros2_control` 外掛完整相容 ros2_control Example 7（6-DOF 完整教程），支援關節限制器、碰撞偵測與摩擦模型，機械臂在模擬環境中的性能曲線與實機偏差 <3%，縮短開發週期 50% 以上。
 
+### CRISP ROS 2 力控制與順應性框架（2026 年 5 月新增）
+
+**CRISP — 學習型操控機械臂的力反饋統一框架**：技術大學慕尼黑（TUM）研究團隊於 2025 年推出 CRISP（Compliant ROS2 Controllers for Learning-Based Manipulation Policies and Teleoperation），提供統一的力控制與順應行為框架。該框架基於 ros2_control，支援力-扭矩感測器實時反饋、扭矩型控制器與 1kHz 高頻閉迴圈，使機械臂能執行複雜的力反饋操縱與學習型協作操作。CRISP 已驗證適合遠端操作示範收集、Diffusion Policy 訓練與邊界推理部署，整合視覺與力感測實現精密裝配與柔順操縱。[CRISP: Compliant ROS2 Controllers for Learning-Based Manipulation](https://arxiv.org/abs/2509.06819)
+
+**ROS 2 Jazzy 原生力-扭矩感測集成**：ROS 2 官方 ros2_control 框架在 Jazzy 版本完整支援力-扭矩（FT）感測器作為標準狀態介面。該整合支援 Effort State（力/扭矩測量）與動態控制器切換，已驗證於 Universal Robots UR10e、Doosan 與 Franka 機械臂。力反饋與視覺伺服的無縫融合成為標準工作流，開啟 ROS 2 Jazzy 上邊界推理 + 力控決策融合的新應用空間。
+
 ### NVIDIA Jetson Thor 與 Isaac ROS 2 邊界推理加速（2026 年 4 月 15 日補充）
 
 **Jetson Thor 邊界 AI 推理與機械臂視覺伺服**：Advantech 與 NVIDIA 聯合推出基於 Jetson Thor 的邊界機械臂控制器（ASR-A702/AFE-A702），整合 GPU 加速的 SLAM、多路 GMSL 攝像頭支援與 Isaac ROS 2 感知套件。該平台支援實時物件偵測、距離估計、位姿追蹤與視覺 SLAM，已驗證適合工業協作臂與移動操縱平台的視覺伺服與自主導航。Jetson Thor 相較 Jetson Orin 實現 3 倍以上的邊界推理性能提升，為 6-DOF 機械臂融合視覺-力控制的邊界自主系統奠定基礎。[Advantech Edge AI Solutions with Jetson Thor](https://www.advantech.com/en-us/resources/news/advantech-unveils-edge-ai-solutions-accelerated-by-nvidia-jetson-thor-for-robotics-medical-ai-and-data-intelligence)
