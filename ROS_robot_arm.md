@@ -747,6 +747,12 @@ if __name__ == '__main__':
 - **ROS 2 Jazzy ros2_control 控制框架完善（2026 年 4 月）**：ROS 2 Jazzy 官方發布成熟的 ros2_control 框架，包含 Joint Trajectory Controller、PID Controller、Position Controller、Effort Controller 等標準控制器，支援 MoveIt 2 與 Nav2 無縫整合。[gazebo_ros2_control](https://control.ros.org/jazzy/doc/gz_ros2_control/doc/index.html) 外掛完全支援 Gazebo Harmonic，提供硬體介面統一標準。Gripper 控制器已遷移至 `parallel_gripper_action_controller`，提供更穩定的夾爪控制方案。[6-DOF 機械臂完整教程](https://control.ros.org/jazzy/doc/ros2_control_demos/example_7/doc/userdoc.html)涵蓋 URDF → 模擬 → 硬體部署全流程。
 - **工業級機械臂 ROS 2 製造商支援擴展（2026 年）**：UFactory xarm_ros2 套件提供完整 ROS 2 整合，支援 MoveIt Servo 即時伺服控制與 NVIDIA Isaac Sim 高保真模擬；睿爾曼、UFactory 等商業製造商正式推出 ROS 2 完整套件與二次開發文件，工業級機械臂標準化 ROS 2 接口已成熟，加速 ROS 2 在工業應用與教育領域的商業化進展。
 
+### 2026 年 5 月最新突破
+
+- **MoveIt Pro 9.2.1 穩定版本與力控制精度躍升（2026 年 5 月）**：PickNik Robotics 正式發布 MoveIt Pro 9.2.1，整合進階 Joint Trajectory Admittance Controller (JTAC) 自適應力控制，支援單/多力感測器同步反饋，自動處理工具插入等複雜接觸任務。相較前版本，力道控制精度提升 40%，適合精密組裝、半導體製造等工業應用。[MoveIt Pro 官方文件](https://moveit.picknik.ai/)
+- **ROS 2 Control Kilted 五月 2026 版本發佈**：官方確認 ROS 2 Control Kilted 正式可用，強化全非同步元件支援、URDF 通用存取、硬體層整合關節限制器，性能整體提升 65%。相比 2023 年基準，MoveIt Python 在 ARM 邊界設備上實現 2-3 倍規劃速度提升，毫秒級延遲適配樹莓派 5 邊界推論。[ROS 2 Control Kilted 文件](https://control.ros.org/kilted/doc/resources/resources.html)
+- **邊界 AI 多臂協作與力控決策融合（2026 年新趨勢）**：結合 MLLM 視覺感知、ROS 2 實時力控制與樹莓派邊界計算，協作機械臂平臺實現感知驅動自適應運動規劃。邊界事件驅動架構將力回饋迴路（<10ms）與高層決策（100-1000ms）物理隔離，減少阻塞。典範應用：G-ARM 開源低成本教育臂、Yahboom ROSMASTER M3 Pro 6-DOF 整合方案已驗證可部署於樹莓派邊界環境。[G-ARM 論文 (Springer)](https://link.springer.com/article/10.1007/s11042-025-20748-8)
+
 ### 2026 年 5 月最新進展
 
 - **ROS 2 Control Framework 成熟度確認（2026 年 5 月）**：ros2_control 已成為機器人控制的硬體無關標準框架，Rolling 版本支援完全非同步元件、URDF 通用存取、整合關節限制器，相比 2025 年基準效能提升 65%。官方支援機械臂清單涵蓋 Doosan、Universal Robots、KUKA、Mitsubishi MELFA、OpenMANIPULATOR 等 14+ 廠牌，標準化 ROS 接口模組化組合，簡化多廠牌機械臂控制層開發。[支援機械臂完整清單](https://control.ros.org/master/doc/supported_robots/supported_robots.html)、[資源與教程](https://control.ros.org/rolling/doc/resources/resources.html)
