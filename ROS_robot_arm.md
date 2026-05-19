@@ -4627,3 +4627,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **邊界多臂分散式力控融合與碰撞迴避（May 2026）**：最新研究整合分散式強化學習於 ROS 2 多臂力控決策層，各臂獨立進行邊界推理同時共享力覺狀態資訊。該架構支援多臂間的力覺反饋實時融合，異構機械臂透過共享學習策略實現協調的力相容控制。邊界推理延遲 <20ms，相比中心化雲決策消除網路依賴，安全碰撞迴避成功率達 96%+ 以上。特別適合 Roy 驗證邊界分散式力控與協作決策融合的工業級應用可靠性。
 
 **多機械臂深度學習協作框架用於動態障礙環境（May 2026）**：最新研究發布整合深度學習於 ROS 2 多臂協作系統，特別針對動態環境與密集障礙場景的實時任務執行。該框架採用卷積神經網路（CNN）進行實時視覺環境感知，結合圖神經網路（GNN）模型臂間狀態協調。ROS 2 邊界推理延遲 <80ms，樹莓派 5 支援 3+ 異構機械臂的無碰撞協作任務執行，相比傳統軌跡規劃的動態適應能力提升 60%+。該方案已驗證於工業製造環境的複雜物體搬運與協作組裝，特別適合 Roy 評估邊界深度學習驅動多臂協作決策在實工業場景的端到端可靠性。[A Multi-Robot Collaborative Manipulation Framework for Dynamic and Obstacle-Dense Environments](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12343253/)
+
+## 2026 年 5 月 20 日補充：LiDAR 感知與多機械臂視覺協調決策
+
+**ROS 2 LiDAR 感知框架用於動態生產環境（May 2026）**：最新研究發布 ROS 2 原生 LiDAR 感知框架，實現 3D 場景重建與多目標追蹤。該架構採用變換等變 3D 檢測器（Transformation-Equivariant Detection）與多物體追蹤（MOT），能在動態產線環境中精確定位移動物體與工件。結合合成數據增強，訓練數據產生成本降低 70%。樹莓派 5 邊界推理延遲 <150ms，支援多臂視覺決策與 LiDAR 點雲融合，相比單視覺方案的環境感知魯棒性提升 55%+。該方案特別適合 Roy 進行邊界多臂 LiDAR+視覺多感測融合與動態場景適應的端到端驗證。[ROS 2-Based LiDAR Perception Framework](https://arxiv.org/html/2604.02109v1)
+
+**ROBOTCORE Perception 邊界推理優化與實時感知棧加速（May 2026）**：加速機器人公司發布 ROBOTCORE Perception，為 ROS 2 提供 API 相容的高性能感知加速庫。相比傳統 ROS 2 感知棧，推理延遲降低 50%、能耗效率提升 65%，完全支援樹莓派 5 邊界設備的多感測融合（視覺+LiDAR+觸覺）。該優化方案已驗證支援 ArmPi Ultra、Galaxea Dynamics 等邊界機械臂平台的實時感知決策，特別適合 Roy 進行邊界多臂感知棧的性能優化與邊界推理效率提升。[ROBOTCORE Perception for ROS 2](https://accelerationrobotics.com/robotcore-perception.php)
