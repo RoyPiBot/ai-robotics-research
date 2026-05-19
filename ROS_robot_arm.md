@@ -3602,6 +3602,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Hiwonder JetArm Pro 高性能視覺機械臂平台**：Hiwonder 推出的 JetArm Pro 為全套解決方案，搭載 Jetson Nano、Orin Nano 或 Orin NX 作為主控制器，整合 3D 視覺、力觸覺感測與邊界推理能力。該平台完全相容 ROS 1 與 ROS 2 生態，支援即時視覺伺服與深度學習推理。特別適合 Roy 的邊界機械臂視覺伺服與強化學習決策層在樹莓派 5 環境中的加速驗證。該平台驗證了 NVIDIA Jetson 與 ROS 生態的成熟度，為複雜感知決策提供充足的邊界計算資源。
 
+## 2026 年 5 月 19 日補充：ROS 2 Force/Torque 感測與 Admittance 力控制
+
+**ROS 2 Control ForceTorqueSensorBroadcaster 與標準 Wrench 訊息格式**：ROS 2 Control 框架提供 ForceTorqueSensorBroadcaster 控制器，直接發佈來自機械臂 FT 感測器的力與力矩訊息，採用標準 geometry_msgs/WrenchStamped 格式。該控制器支援 Robotiq、ATI、Bota 等主流商用 FT 感測器，通過在機械臂描述中指定感測器名稱與連結，自動管理力感測器偏差補償與 50-200Hz 低通濾波。偏差補償節點在啟動時透過 /ft_sensor/bias 服務移除重力偏差，為接觸檢測與阻抗控制提供淨化的原始力訊號。[Force Torque Sensor Broadcaster — ROS2_Control](https://control.ros.org/master/doc/ros2_controllers/force_torque_sensor_broadcaster/doc/userdoc.html)
+
+**Admittance Controller 與邊界視覺伺服融合力控制**：2026 年 ROS 2 Control Rolling 新增 Admittance Controller，實現力-位置混合控制架構。該控制器接受目標末端執行器速度與實時 FT 感測回饋，根據設定的阻尼係數與虛擬質量計算合力，使機械臂在視覺伺服決策下同時滿足力學約束。特別適合 Roy 的邊界多臂系統進行精密組裝與接觸任務操縱，實現視覺伺服引導下的力控制閉迴圈反饋。[Admittance Controller — ROS2_Control Rolling](https://control.ros.org/rolling/doc/ros2_controllers/admittance_controller/doc/userdoc.html)
+
 **ROS 社群強化學習與運動規劃工作坊深化**：ROS-Industrial Consortium Asia Pacific 於 2026 年上半年啟動針對協作臂的強化學習工作坊，涵蓋 DQN、PPO、DDPG 等演算法在機械臂控制中的實踐。搭配 Tesseract 1.0 運動規劃框架與 OMPL 2.0 VAMP 演算法的新進展，工業界正式將邊界強化學習決策層整合入標準化生產工作流。該發展方向與 Roy 的視覺伺服邊界強化學習計畫高度對齊，驗證了事件驅動視覺伺服與邊界 RL 決策層的產業應用前景。
 
 ## 2026 年 5 月 1 日補充：MPC 引導強化學習與開源 SEBVS 實現
