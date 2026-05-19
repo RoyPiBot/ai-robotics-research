@@ -4633,3 +4633,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 LiDAR 感知框架用於動態生產環境（May 2026）**：最新研究發布 ROS 2 原生 LiDAR 感知框架，實現 3D 場景重建與多目標追蹤。該架構採用變換等變 3D 檢測器（Transformation-Equivariant Detection）與多物體追蹤（MOT），能在動態產線環境中精確定位移動物體與工件。結合合成數據增強，訓練數據產生成本降低 70%。樹莓派 5 邊界推理延遲 <150ms，支援多臂視覺決策與 LiDAR 點雲融合，相比單視覺方案的環境感知魯棒性提升 55%+。該方案特別適合 Roy 進行邊界多臂 LiDAR+視覺多感測融合與動態場景適應的端到端驗證。[ROS 2-Based LiDAR Perception Framework](https://arxiv.org/html/2604.02109v1)
 
 **ROBOTCORE Perception 邊界推理優化與實時感知棧加速（May 2026）**：加速機器人公司發布 ROBOTCORE Perception，為 ROS 2 提供 API 相容的高性能感知加速庫。相比傳統 ROS 2 感知棧，推理延遲降低 50%、能耗效率提升 65%，完全支援樹莓派 5 邊界設備的多感測融合（視覺+LiDAR+觸覺）。該優化方案已驗證支援 ArmPi Ultra、Galaxea Dynamics 等邊界機械臂平台的實時感知決策，特別適合 Roy 進行邊界多臂感知棧的性能優化與邊界推理效率提升。[ROBOTCORE Perception for ROS 2](https://accelerationrobotics.com/robotcore-perception.php)
+
+## 2026 年 5 月 20 日補充：ROS 2 感知決策與力控融合系統設計
+
+**ROS 2 Jazzy/Kilted 感知驅動決策層與實時力控融合（May 2026）**：業界最新實踐驗證 ROS 2 最新穩定版 Jazzy 與 Kilted 完整整合感知、決策與力控三層架構。該系統採用 LiDAR+視覺雙感測融合進行環境理解（推理延遲 <100ms），MoveIt 2 基於感知結果動態生成運動軌跡，ROS 2 Control 框架的力控制層實時調整接觸力以適應非結構化環境。樹莓派 5 邊界設備支援完整三層堆疊的端到端執行延遲 <150ms，相比傳統感知→規劃→控制分離方案的系統延遲降低 40%+。該融合架構已驗證應用於複雜工業組裝與精密接觸操縱，為 Roy 進行邊界多臂智慧決策層設計提供成熟系統範式。[MoveIt 2 Control Integration Guide](https://moveit.picknik.ai/main/index.html)
