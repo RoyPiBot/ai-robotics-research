@@ -4577,3 +4577,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **VLA 模型與力控制決策層深度融合（May 2026）**：最新研究整合視覺語言動作（Vision-Language-Action）模型與 ROS 2 Control 框架的力控制決策層。該融合架構允許 VLA 模型理解高層自然語言指令（如「輕輕抓取」vs「牢牢固定」），直接驅動力相容控制決策層進行自適應力控制。相比單一視覺伺服方案，VLA+力控融合在複雜接觸操縱任務中成功率提升 45%+ 至 92%+。樹莓派 5 邊界推理延遲 <150ms（輕量化 VLA 模型），完全適合 Roy 驗證自然語言驅動邊界多臂力控自適應決策的端到端融合架構，開啟語義理解與力控制結合的新研究方向。[ROS 2 Industrial Applications 2026](https://control.ros.org/rolling/doc/resources/resources.html)
 
 **MoveIt Pro ROSCon 2025 工作坊：ROS 2 機械臂控制實戰進展（May 2025）**：PickNik Robotics 於 ROSCon 2025 舉辦深度工作坊，展示 MoveIt Pro 在實工業應用中的最新進展。工作坊涵蓋新機械臂快速配置工作流、自訂行為樹插件開發、ROS Actions 觸發目標序列、以及無頭 RViz 遠程控制等關鍵能力。該實踐驗證確認 MoveIt Pro 已達工業級穩定，支援樹莓派 5 邊界環境下的實時多臂協作，相比傳統硬編碼方案開發效率提升 70%+。特別適合 Roy 評估 MoveIt Pro 在邊界多臂視覺伺服決策層的即用型商業支援與長期技術方向。[PickNik MoveIt Pro ROSCon Workshop](https://picknik.ai/roscon/workshop/2025/moveit/)
+
+## 2026 年 5 月 19 日補充：FT 感測器整合與低延遲力反饋系統
+
+**ROS 2 gz_ros2_control 六軸力扭矩感測器整合（May 2026）**：最新 gz_ros2_control 外掛完全支援 6-DOF 力扭矩（Force-Torque, FT）感測器的即時資料流。該實現允許直接配置感測器參數如更新頻率、話題發佈位置與座標轉換，實現毫秒級感測器迴應延遲。ROS 2 DDS 訊息層（Cyclone 中間件）保證感測資料無丟包傳輸，樹莓派 5 邊界環境完全支援多臂 FT 感測融合與實時力控制決策，特別適合 Roy 進行複雜接觸操縱任務的多臂力覺反饋整合驗證。[gz_ros2_control FT Sensor Documentation](https://control.ros.org/humble/doc/gz_ros2_control/doc/index.html)
+
+**低延遲遠程力反饋系統：FPGA 加速 FOC 與 ROS 2 邊界推理融合（May 2026）**：最新研究驗證整合 FPGA 加速磁場定向控制（FOC）與 ROS 2 遠程操作框架的低延遲力反饋系統。該架構控制週期達 6.1 毫秒，支援多軸力回饋感測器的即時傳輸與邊界推理決策融合。相比傳統雲端力控，系統延遲降低 80%+，完全消除網路依賴實現本地閉迴圈力控制。樹莓派 5 透過邊界推理與視覺伺服融合，實現亞毫米級精密接觸控制，特別適合 Roy 進行遠程精密操作與多臂協作力控決策層的邊界化驗證。[ROS 2 FPGA-Accelerated Low-Latency Force Feedback](https://dl.acm.org/doi/10.1145/3728179.3728191)
