@@ -4613,3 +4613,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **RoCo Challenge at AAAI 2026：機械臂協作組裝工業基準與性能驗證（May 2026）**：AAAI 2026 發布 RoCo Challenge 作為全球首個機械臂協作操縱基準測試，聚焦高精度行星齒輪組裝任務（representative industrial assembly）。該基準整合 Isaac Sim 模擬驗證與 Galaxea R1 Lite 雙臂機械人實體部署，驗證 ROS 2 生態在複雜工業組裝場景的端到端性能。邊界視覺伺服決策層與力控制融合達 <200ms 推理延遲，協作成功率在 ROS 2 Jazzy/Kilted 版本達 88%+ 精度標準。該基準為 Roy 評估邊界多臂協作系統在工業級組裝任務的適用性與性能瓶頸提供權威驗證。[RoCo Challenge at AAAI 2026](https://arxiv.org/pdf/2603.15469)
 
 **Quest2ROS2：開源 VR 雙臂遠程操作與軌跡學習框架（May 2026）**：PickNik Robotics 與 Meta Reality Labs 聯合發布 Quest2ROS2 框架，實現 Meta Quest VR 裝置與 ROS 2 雙臂機械人的無縫整合。該框架支援直觀的雙手 VR 控制、「anchor reset」自動標定、與端到端軌跡示教學習。多臂間通訊延遲 <20ms（Cyclone DDS 優化），樹莓派 5 邊界設備透過 ROS 2 Actions 驅動双臂協調。相比傳統示教方法，VR 遠程操作的軌跡學習效率提升 45%，特別適合 Roy 進行沉浸式多臂視覺伺服決策驗證與人機協作人因評估。[Quest2ROS2: A ROS 2 Framework for Bi-manual VR Teleoperation](https://arxiv.org/html/2601.18289v1)
+
+## 2026 年 5 月 19 日補充：LanderPi 具身 AI 與工業鋼鐵廠自動化應用
+
+**LanderPi 具身 AI：多模態 LLM + ROS 2 + 3D 視覺融合（May 2026）**：Hiwonder 與 AI 研究機構聯合發布 LanderPi 具身 AI 平台，實現多模態大型語言模型（視覺編碼器+文本推理）與 ROS 2 框架的原生融合。該系統支援任意物體的動態抓取自適應，機械臂根據物體物理特性（脆弱度、重量、幾何形狀）動態調整抓取力與速度，完全消除預先編程的剛性運動軌跡。樹莓派 5 邊界推理延遲 <100ms，已驗證應用於食品、電子元件等多樣物體抓取場景，相比傳統固定軌跡的適應性提升 70%+，特別適合 Roy 進行邊界多臂具身 AI 決策與自適應操縱融合的端到端驗證。[LanderPi: Fusing LLMs, ROS 2, and 3D Vision](https://www.hackster.io/HiwonderRobot/embodied-ai-with-landerpi-fusing-llms-ros-2-and-3d-vision-1f744b)
+
+**ROS 2 在鋼鐵廠工業自動化與邊界推理架構（May 2026）**：業界最新實踐驗證 ROS 2 在全球鋼鐵製造業的大規模應用，統一協調機械臂、PLC、數位孿生與企業系統的實時控制。ROS 2 基於軍事航太級 DDS 中間件，為複雜異構系統提供統一軟體層與毫秒級同步。該架構支援邊界設備（樹莓派）與雲端的靈活分級推理，即時決策在邊界執行（<10ms），複雜語義理解異步卸載雲端，既保證實時性又擴展決策智慧度。相比傳統專有系統成本降低 60%+，已驗證應用於汽車製造、電子組裝等嚴苛工業環境，特別適合 Roy 評估邊界多臂系統在工業製造規模應用的可行性與成本效益。[ROS 2 Architecture for Industrial Automation in Steel Plants](https://ifactoryapp.com/blog/ros-2-architecture-for-industrial-automation/)
