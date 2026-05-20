@@ -4696,3 +4696,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **聯邦學習框架在 ROS 2 多臂協作中的應用（May 2026）**：最新研究發布 ROS 2 原生聯邦學習平台，實現多個邊界節點間的分散式協作學習。各機械臂作為獨立計算單元，在本地邊界環境進行模型訓練，隨後共享學習進度而非原始數據，消除隱私洩露風險。聯邦聚合機制使多臂系統能動態擴展知識基礎，相比集中式雲學習消除網路依賴。樹莓派 5 邊界環境支援 3+ 異構機械臂的聯邦協作，推理延遲 <100ms，特別適合 Roy 進行多廠牌邊界多臂聯邦學習驅動決策與協作智慧化。[Federated Learning for Collaborative Robotics: A ROS 2-Based Approach](https://www.mdpi.com/2079-9292/14/7/1323)
 
 **Kubernetes 編排 ROS 2 多機械臂分散式系統與無中心協調（May 2026）**：業界實踐驗證 Kubernetes 容器編排平台與 ROS 2 的深度整合，實現生產環境多機械臂系統的自動化部署、服務發現與故障轉移。Kubernetes 原生支援分散式服務通訊，相比傳統 ROS Master 單點故障風險大幅降低。該方案已驗證於多機械臂協作系統，樹莓派 5 邊界環境透過 Kubernetes 邊界節點支援跨廠牌多臂的無中心協調與動態資源調度 <5ms 延遲。消除廠商鎖定同時確保系統高可用與水平擴展，特別適合 Roy 進行邊界多臂 Kubernetes 編排架構與工業級分散式可靠性驗證。[Kubernetes and ROS 2 Multi-Robot Systems Integration](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12390455/)
+
+## 2026 年 5 月 21 日補充：睿爾曼與工業化 MoveIt 2 應用實踐
+
+**Realman 睿爾曼機械臂正式支援 ROS 2 生態（May 2026）**：業界領先的睿爾曼智能確認其全系機械臂原生支援 ROS 2 Humble/Jazzy，整合完整的 ROS 2 Control 驅動與 MoveIt 2 規劃堆疊。該生態支援模擬與實體無縫切換，樹莓派 5 邊界環境可直接控制睿爾曼機械臂，推理延遲 <20ms。企業應用已驗證多臂協作、動態抓取與工業標準化集成。[睿爾曼 ROS 2 升級公告](https://bbs.realman-robotics.cn/question/174.html)
+
+**基於 MoveIt 2 與 ROS 2 的工業機械臂控制系統完整方案（May 2026）**：業界共識文檔發布了工業級機械臂控制系統開發指南，涵蓋 URDF 建模、MoveIt 2 多規劃器串聯（STOMP+OMPL+CHOMP）、力控反饋與視覺伺服完整流程。該方案已應用於電子製造、汽車組裝等場景，相比單規劃器方案成功率提升 40%+。樹莓派 5 環境支援完整工業工作流，特別適合 Roy 進行邊界機械臂工業化應用與控制系統開發驗證。[基於 MoveIt 2 的工業機械臂控制系統開發全攻略](https://www.cnblogs.com/TS86/p/18888159)
