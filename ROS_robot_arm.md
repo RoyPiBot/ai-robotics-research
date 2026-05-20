@@ -4706,3 +4706,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Realman 睿爾曼機械臂正式支援 ROS 2 生態（May 2026）**：業界領先的睿爾曼智能確認其全系機械臂原生支援 ROS 2 Humble/Jazzy，整合完整的 ROS 2 Control 驅動與 MoveIt 2 規劃堆疊。該生態支援模擬與實體無縫切換，樹莓派 5 邊界環境可直接控制睿爾曼機械臂，推理延遲 <20ms。企業應用已驗證多臂協作、動態抓取與工業標準化集成。[睿爾曼 ROS 2 升級公告](https://bbs.realman-robotics.cn/question/174.html)
 
 **基於 MoveIt 2 與 ROS 2 的工業機械臂控制系統完整方案（May 2026）**：業界共識文檔發布了工業級機械臂控制系統開發指南，涵蓋 URDF 建模、MoveIt 2 多規劃器串聯（STOMP+OMPL+CHOMP）、力控反饋與視覺伺服完整流程。該方案已應用於電子製造、汽車組裝等場景，相比單規劃器方案成功率提升 40%+。樹莓派 5 環境支援完整工業工作流，特別適合 Roy 進行邊界機械臂工業化應用與控制系統開發驗證。[基於 MoveIt 2 的工業機械臂控制系統開發全攻略](https://www.cnblogs.com/TS86/p/18888159)
+
+## 2026 年 5 月 21 日補充：NVIDIA GPU 加速與 Isaac ROS cuMotion 邊界融合
+
+**NVIDIA Isaac ROS cuMotion GPU 加速規劃與邊界推理融合（May 2026）**：NVIDIA 發布 Isaac ROS cuMotion 軟體棧，整合 CUDA 加速的碰撞檢測與軌跡最佳化於 ROS 2 MoveIt 2 框架。該方案相比傳統 CPU 規劃延遲降低 70%+，複雜多臂協作規劃時間從 2-3 秒縮短至 200-300ms。重點突破：cuMotion 生成的軌跡時間最優（trajectory-optimal）並自動避免工作空間奇異點，特別適合邊界環境動態場景。樹莓派 5 外接 NVIDIA Jetson Orin 邊界推理卡支援完整 GPU 加速規劃棧，推理延遲 <100ms，相比純 CPU 邊界推理性能突破 5-8 倍，特別適合 Roy 進行邊界多臂 GPU 加速決策層與視覺伺服力控融合驗證。[NVIDIA Isaac ROS cuMotion GitHub](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_cumotion)
