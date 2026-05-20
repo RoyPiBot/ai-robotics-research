@@ -5535,3 +5535,11 @@
 #### 720. AgentFlow 7B — 高效多步驟推理模型（May 2026）
 - **核心創新** - AgentFlow 7B 開源模型在搜尋、數學、科學推理上超越 GPT-4o，通過自適應流程控制與工具整合達成競爭級多步推理。參數高效率設計支援邊界部署，推理延遲相比基礎 7B 模型降低 25%
 - **多代理協作潛力** - 輕量化設計適配多代理系統部署，支援 Factory Tour 與 NanoClaw 協調的分佈式推理架構，推動邊界多代理系統的端到端推理能力
+
+#### 721. Gemini 3.5 Flash — Google 新代最強代理與編碼模型（May 2026）
+- **核心突破** - Google 於 2026 年 5 月 19 日發布 Gemini 3.5 Flash，超越 Gemini 3.1 Pro 在編碼、推理與多模態理解上的性能。Terminal-Bench 2.1 達 76.2%，GDPval-AA 1656 Elo，MCP Atlas 83.6%，CharXiv Reasoning 84.2%
+- **部署優勢** - 作為 Gemini 應用與搜尋 AI Mode 的新預設模型，支援邊界推理與實時決策。為 Factory Tour 與 NanoClaw 多代理系統提供更強的端到端推理能力與工具整合基礎
+
+#### 722. Gemini Spark — 通用 AI 代理與多應用跨界推理（May 2026）
+- **代理架構** - Google 發布 Gemini Spark 通用代理，支援跨連接應用的信息推理與多步決策。整合自然語言驅動的多應用協調，適配企業與個人開發者的複雜工作流自動化場景
+- **應用潛力** - 驗證通用代理在真實場景的可行性，為邊界多代理系統（NanoClaw/Factory Tour）的跨系統協調與信息整合提供架構參考
