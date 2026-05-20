@@ -1097,6 +1097,20 @@
 - **重要性**：開源全模態模型競爭白熱化，Qwen 3.5-Omni 的發布標誌中國 AI 陣營進入與 Google/OpenAI 並駕齊驅的新階段，尤其在多語言與實時交互領域的突破加速行業標準化。
 - **來源**：[MarkTechPost](https://www.marktechpost.com/2026/03/30/alibaba-qwen-team-releases-qwen3-5-omni-a-native-multimodal-model-for-text-audio-video-and-realtime-interaction/) | [MindStudio](https://www.mindstudio.ai/blog/what-is-qwen-3-5-omni-multimodal-model)
 
+### 74. Tool-DC — 分治工具呼叫框架進度驗證
+- **研究方向**：Agent AI 與工具呼叫
+- **發布時間**：2026 年 5 月
+- **摘要**：Tool-DC 是新型分治框架，解決 LLM 在複雜工具呼叫中的決策不確定性。核心機制為「try-check-retry」迴圈，模型自動嘗試工具選擇、檢驗輸出合理性、主動修正失敗呼叫。在 ReAct 基準上相比基線提升 23% 成功率。特別適用於多工具編排、順序依賴強的任務流程。
+- **重要性**：代理 AI 中工具呼叫的準確性與容錯能力成為關鍵瓶頸，Tool-DC 標誌 LLM 行為代理從「單次呼叫」進入「自適應重試」的新階段，對機械人控制流程尤為重要。
+- **來源**：[Analytics Vidhya - Top 10 LLM Research Papers 2026](https://www.analyticsvidhya.com/blog/2026/05/top-llm-research-papers-2026/)
+
+### 75. ByteDance VideoWorld — 影片物理世界模型與機械人學習
+- **機構**：ByteDance Research
+- **發布時間**：2026 年 4-5 月
+- **摘要**：VideoWorld 框架從未標記視頻序列直接學習物理世界模型，核心創新為將「視覺預測→物理模擬→推理驗證」統一到端到端學習中。模型無需人工標註，自動習得物體運動、碰撞、摩擦等約束。已驗證在機械人軌跡規劃與環境適應中優於傳統視覺編碼器，特別在處理部分可觀測場景時表現突出。
+- **重要性**：從原始視頻學習世界模型是具身 AI 與機械人的關鍵能力。VideoWorld 無標註學習的突破意味著未來機械人可直接從現實影像自主習得物理常識，而非依賴人工模擬數據或知識編碼，對自主學習機械人系統的通用性至關重要。
+- **來源**：[Generative AI in Industrial Robotics Guide - 2026](https://www.evsint.com/generative-ai-industrial-robotics-foundation-models-code-generation-2026/)
+
 ### 74. MiniCPM-V 系列 — 邊緣設備中的 GPT-4V 級多模態突破
 - **機構**：OpenBMB 與 Tsinghua
 - **發布時間**：2026 年 4 月更新確認
