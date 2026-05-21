@@ -4726,3 +4726,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Jetson Orin 2026 年邊界推理與 ROS 2 視覺伺服加速方案（May 2026）**：NVIDIA 發布 Jetson Orin 2026 年最新整合方案，重點強化邊界 AI 推理效能。Jetson Orin Nano 相比 2023 版本推理效能提升 2 倍，配合 CUDA 12.x 與優化的 TensorRT 推理引擎，支援實時物體偵測、6D 姿態估計與視覺伺服決策。ROS 2 生態提供原生 Isaac ROS 感知管線與 MoveIt 2 視覺伺服整合，樹莓派 5 外接 Jetson Orin Nano 可實現 <50ms 端到端視覺伺服決策延遲。HiWonder JetArm 6DOF 機械臂平台已完成 Jetson Orin Nano/NX 控制器認證，特別適合 Roy 進行多臂視覺伺服邊界 GPU 加速實踐與 Sim-to-Real 驗證。[Jetson Orin 2026 性能基準](https://www.hackster.io/yahboomtechnology/how-to-choose-your-jetson-board-in-2026-75ba7e)
 
 **HiWonder JetArm 與高階視覺伺服決策融合（May 2026）**：HiWonder 發布升級版 JetArm，整合 3D 深度攝影機與 Jetson Orin 控制器，支援完整視覺伺服決策層。系統提供零件識別（物體類別、6D 姿態）、動態軌跡追蹤與力回饋整合，相比傳統預設軌跡的靈活性提升 60%+。ROS 2 MoveIt 2 與 Isaac ROS 視覺管線無縫整合，支援複雜室內環境的動態抓取決策。樹莓派 5 多臂協作系統中，邊界推理 <100ms，特別適合 Roy 進行多臂視覺伺服工業應用驗證與決策層最佳化。
+
+## 2026 年 5 月 21 日補充：實時伺服控制與深度多模態學習新突破
+
+**MoveIt 2 實時伺服（MoveIt Servo）完整實時控制架構（May 2026）**：PickNik Robotics 與 ROS 官方確認 MoveIt Servo 已成為 ROS 2 Humble 及更新版本的標準實時控制框架。該框架支援低延遲即時伺服迴圈（<10ms），可直接將遙控手臂或視覺伺服指令轉換為端點速度命令，無需預規劃路徑。整合碰撞檢測、奇異點迴避與關節限制自適應，樹莓派 5 環境下單臂實時伺服決策延遲 <15ms，特別適合 Roy 進行邊界多臂遠端操作與動態視覺伺服實踐。[MoveIt Servo 官方教學](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html)
+
+**深度多模態學習框架用於機械臂操縱（DML-RAM, 2025 年）**：最新研究發表 DML-RAM（Deep Multimodal Learning Framework for Robotic Arm Manipulation），整合視覺與狀態資訊的獨立特徵提取模型。該框架採用 VGG16/ResNet/Vision Transformer 進行影像序列特徵學習，Random Forests 與梯度下降建模機械臂狀態，融合策略在 BridgeData V2 與 Kuka 數據集上達成 MSE 0.0021 與 RMSE 0.04604，相比傳統單模態學習提升 35%+ 操縱精度。完全相容 ROS 2 推理部署，特別適合 Roy 進行邊界深度學習驅動機械臂自主操縱與非結構化環境適應性驗證。[DML-RAM arXiv](https://arxiv.org/pdf/2504.03423)
