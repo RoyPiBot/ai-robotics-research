@@ -4714,3 +4714,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 21 日補充：NVIDIA GPU 加速與 Isaac ROS cuMotion 邊界融合
 
 **NVIDIA Isaac ROS cuMotion GPU 加速規劃與邊界推理融合（May 2026）**：NVIDIA 發布 Isaac ROS cuMotion 軟體棧，整合 CUDA 加速的碰撞檢測與軌跡最佳化於 ROS 2 MoveIt 2 框架。該方案相比傳統 CPU 規劃延遲降低 70%+，複雜多臂協作規劃時間從 2-3 秒縮短至 200-300ms。重點突破：cuMotion 生成的軌跡時間最優（trajectory-optimal）並自動避免工作空間奇異點，特別適合邊界環境動態場景。樹莓派 5 外接 NVIDIA Jetson Orin 邊界推理卡支援完整 GPU 加速規劃棧，推理延遲 <100ms，相比純 CPU 邊界推理性能突破 5-8 倍，特別適合 Roy 進行邊界多臂 GPU 加速決策層與視覺伺服力控融合驗證。[NVIDIA Isaac ROS cuMotion GitHub](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_cumotion)
+
+## 2026 年 5 月 21 日補充：RoCo Challenge 2026 與 Isaac ROS 4.0 工業協作突破
+
+**RoCo Challenge 2026 @AAAI：協作操縱組裝基準任務（May 2026）**：AAAI 2026 大會發布 RoCo Challenge（Robotic Collaborative manipulation），聚焦高精度行星齒輪箱組裝作為代表性工業操作任務。該挑戰賽驗證 ROS 2 多機械臂無中心協作、MoveIt 2 動態規劃、力控反饋與視覺伺服的完整融合能力。頂尖機器人實驗室已確認採用 ROS 2 生態方案，提升 ROS 在工業協作操縱的標準化地位。
+
+**NVIDIA Isaac ROS 4.0 新增 Manipulation 與 Sim-to-Real 工業工作流（May 2026）**：NVIDIA 發布 Isaac ROS 4.0，重點新增 Isaac for Manipulation 參考應用與學習策略部署工作流。新版本支援 Jetpack 7.0、Isaac Sim 5.1 與 Jetson AGX Thor，新增齒輪插入任務的端到端 Sim-to-Real 教學與 UR10e 實體驗證。系統提供硬體加速視覺感知、NITROS 管線最佳化與邊界推理監控，完整支援從模擬訓練到實機部署的全流程工業操縱。樹莓派 5 外接 Jetson Orin 可直接部署該工業級工作流，特別適合 Roy 進行邊界多臂協作決策與工業 Sim-to-Real 實踐。
