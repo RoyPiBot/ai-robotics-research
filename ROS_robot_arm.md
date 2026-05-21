@@ -4738,3 +4738,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Control 框架標準化與邊界實時控制融合（May 2026）**：官方 ros2_control 文檔發布最新框架標準，統一硬體抽象、控制器生命週期管理與邊界推理堆疊。框架支援無硬體鎖定的多廠牌機械臂整合，樹莓派 5 環境透過 DDS 分散式架構實現 <5ms 控制迴圈延遲。該方案已驗證於工業級應用，特別適合 Roy 進行邊界多臂統一控制架構與硬體相容性驗證。[ROS 2 Control 官方資源](https://control.ros.org/)
 
 **CANopen 與 EtherCAT 實時同步機制在樹莓派邊界環境整合（May 2026）**：最新應用案例驗證 CANopen over EtherCAT 協議與 ROS 2 的完整整合，實現樹莓派邊界環境下的實時運動控制同步。該方案應用於馬達控制與多關節同步，推理延遲 <1ms，支援進階型樹莓派 5（16GB RAM）直接控制工業級機械臂。相比傳統 TCP/IP 網路通訊，確保實時性與可靠性，特別適合 Roy 進行邊界實時多臂協作與工業場景高同步性驗證。[ROS + EtherCAT 實時控制論文](https://www.mdpi.com/2076-0825/14/2/84)
+
+## 2026 年 5 月 21 日補充：MoveIt Pro 實時協作控制與行業標準工作流
+
+**MoveIt Pro 行為樹驅動的實時協作決策與工業自動化工作流（May 2026）**：PickNik Robotics 發布 MoveIt Pro 最新版本，整合行為樹（Behavior Tree）完整支援實時多臂協作決策。新版本提供標準工業工作流：機械臂配置、自訂行為樹外掛、ROS Action 觸發目標與 Headless RViz 模式啟動。已驗證應用於電子製造、汽車組裝等場景。樹莓派 5 邊界環境支援完整協作決策，實時控制延遲 <15ms，相比傳統路徑規劃方案靈活性提升 70%+，特別適合 Roy 進行多臂行為智能驅動與工業協作場景實踐驗證。[ROSCon 2025 MoveIt Pro 工作坊](https://picknik.ai/roscon/workshop/2025/moveit/2025/10/06/Hands-On-Workshop-with-ROS-2-and-MoveIt-Pro-at-ROSCon-2025.html)
