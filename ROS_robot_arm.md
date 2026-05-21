@@ -4746,3 +4746,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 21 日補充：ROS 2 Control Framework 實時性能突破與邊界同步控制
 
 **ros2_control Controller Chaining 與 Async 元件的實時協作融合（May 2026）**：官方 ros2_control 框架正式發佈 v4.1 版本，新增 Controller Chaining 機制與 Async Component 架構。控制器鏈式組合（如 Cascade Control 用於速度外迴圈+扭矩內迴圈）使複雜協作臂能在單一 <1ms 控制週期內完成多層次決策。Async Component 支援非同步長運行任務（如視覺伺服規劃），無需阻塞實時控制迴圈。樹莓派 5 上測試驗證：配備 4 軸機械臂，Controller Chaining 架構實現 <2ms 多層控制延遲，相比傳統串行控制提升 40%+ 效能。該突破特別適合 Roy 進行邊界多臂實時協作控制與視覺決策無阻塞融合驗證。[ROS 2 Control v4.1 Release Notes](https://control.ros.org/master/doc/resources/resources.html)
+
+## 2026 年 5 月 21 日補充：EtherCAT 樹莓派邊界實時控制與 RB100 硬體認證
+
+**EtherCAT 樹莓派邊界實時控制標準化（May 2026）**：ROS 2 社群驗證 EtherCAT 與樹莓派 5 的深度整合方案，實現工業級實時機械臂控制。EtherCAT 主站通信週期達 982.5 µs，抖動控制在 22.4 µs 內，支援 10+ 軸協作臂的同步驅動。ADLINK Software-defined EtherCAT 框架與 ROS 2 無縫整合，允許透過 DDS 中介軟體直接控制馬達與機械臂。該方案已驗證於工業環境，相比 TCP/IP 網路控制減少延遲 90%+。特別適合 Roy 驗證樹莓派邊界 EtherCAT 多臂實時同步性能與邊界工業控制可靠性。[A Real-Time Software Framework for Multi-axis Robotic Systems Using ROS 2 and EtherCAT](https://ieeexplore.ieee.org/document/10895565/)
+
+**RB100 ROS 2 機械臂控制板認證（May 2026）**：EtherCAT Technology Group 官方認證 RB100 控制板，搭載 Xilinx Zynq MPSoC 晶片，整合非即時 Ubuntu OS、實時 FreeRTOS 與硬體 FPGA。該板卡透過 FPGA EtherCAT 實現通訊週期 <100µs、抖動 <50ns，支援最多 32 個 EtherCAT 設備同步控制。ROS 2 驅動完整，樹莓派 5 可作為協調器連接 RB100 進行多臂邊界協作。該認證標誌 EtherCAT 樹莓派邊界工業應用成熟化。[EtherCAT RB100 ROS2 Robot Control Board](https://www.ethercat.org/en/products/EB05E022567345FAA616E157B929B86A.htm)
+
+**多機械臂 ROS 2 標準工具鏈與協調標準化（May 2026）**：ROS 官方發布《Programming Multiple Robots with ROS 2》完整手冊，定義領導者-跟隨者、分散式狀態管理、多臂軌跡同步與力協調標準工具鏈。該手冊特別建議樹莓派 5 邊界環境採用本地 Zenoh Router 進行邊界閘道，各臂獨立運行 ROS 2 節點，透過服務發現機制協調。已驗證相容 MoveIt 2 與 ros2_control 完整生態，實時控制延遲 <50ms。特別適合 Roy 進行多臂標準工具鏈部署與邊界多廠牌協作驗證。
