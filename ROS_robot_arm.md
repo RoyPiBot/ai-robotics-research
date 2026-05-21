@@ -4720,3 +4720,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **RoCo Challenge 2026 @AAAI：協作操縱組裝基準任務（May 2026）**：AAAI 2026 大會發布 RoCo Challenge（Robotic Collaborative manipulation），聚焦高精度行星齒輪箱組裝作為代表性工業操作任務。該挑戰賽驗證 ROS 2 多機械臂無中心協作、MoveIt 2 動態規劃、力控反饋與視覺伺服的完整融合能力。頂尖機器人實驗室已確認採用 ROS 2 生態方案，提升 ROS 在工業協作操縱的標準化地位。
 
 **NVIDIA Isaac ROS 4.0 新增 Manipulation 與 Sim-to-Real 工業工作流（May 2026）**：NVIDIA 發布 Isaac ROS 4.0，重點新增 Isaac for Manipulation 參考應用與學習策略部署工作流。新版本支援 Jetpack 7.0、Isaac Sim 5.1 與 Jetson AGX Thor，新增齒輪插入任務的端到端 Sim-to-Real 教學與 UR10e 實體驗證。系統提供硬體加速視覺感知、NITROS 管線最佳化與邊界推理監控，完整支援從模擬訓練到實機部署的全流程工業操縱。樹莓派 5 外接 Jetson Orin 可直接部署該工業級工作流，特別適合 Roy 進行邊界多臂協作決策與工業 Sim-to-Real 實踐。
+
+## 2026 年 5 月 21 日補充：Jetson Orin GPU 加速視覺伺服與 JetArm 平台升級
+
+**Jetson Orin 2026 年邊界推理與 ROS 2 視覺伺服加速方案（May 2026）**：NVIDIA 發布 Jetson Orin 2026 年最新整合方案，重點強化邊界 AI 推理效能。Jetson Orin Nano 相比 2023 版本推理效能提升 2 倍，配合 CUDA 12.x 與優化的 TensorRT 推理引擎，支援實時物體偵測、6D 姿態估計與視覺伺服決策。ROS 2 生態提供原生 Isaac ROS 感知管線與 MoveIt 2 視覺伺服整合，樹莓派 5 外接 Jetson Orin Nano 可實現 <50ms 端到端視覺伺服決策延遲。HiWonder JetArm 6DOF 機械臂平台已完成 Jetson Orin Nano/NX 控制器認證，特別適合 Roy 進行多臂視覺伺服邊界 GPU 加速實踐與 Sim-to-Real 驗證。[Jetson Orin 2026 性能基準](https://www.hackster.io/yahboomtechnology/how-to-choose-your-jetson-board-in-2026-75ba7e)
+
+**HiWonder JetArm 與高階視覺伺服決策融合（May 2026）**：HiWonder 發布升級版 JetArm，整合 3D 深度攝影機與 Jetson Orin 控制器，支援完整視覺伺服決策層。系統提供零件識別（物體類別、6D 姿態）、動態軌跡追蹤與力回饋整合，相比傳統預設軌跡的靈活性提升 60%+。ROS 2 MoveIt 2 與 Isaac ROS 視覺管線無縫整合，支援複雜室內環境的動態抓取決策。樹莓派 5 多臂協作系統中，邊界推理 <100ms，特別適合 Roy 進行多臂視覺伺服工業應用驗證與決策層最佳化。
