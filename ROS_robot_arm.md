@@ -4732,3 +4732,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MoveIt 2 實時伺服（MoveIt Servo）完整實時控制架構（May 2026）**：PickNik Robotics 與 ROS 官方確認 MoveIt Servo 已成為 ROS 2 Humble 及更新版本的標準實時控制框架。該框架支援低延遲即時伺服迴圈（<10ms），可直接將遙控手臂或視覺伺服指令轉換為端點速度命令，無需預規劃路徑。整合碰撞檢測、奇異點迴避與關節限制自適應，樹莓派 5 環境下單臂實時伺服決策延遲 <15ms，特別適合 Roy 進行邊界多臂遠端操作與動態視覺伺服實踐。[MoveIt Servo 官方教學](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html)
 
 **深度多模態學習框架用於機械臂操縱（DML-RAM, 2025 年）**：最新研究發表 DML-RAM（Deep Multimodal Learning Framework for Robotic Arm Manipulation），整合視覺與狀態資訊的獨立特徵提取模型。該框架採用 VGG16/ResNet/Vision Transformer 進行影像序列特徵學習，Random Forests 與梯度下降建模機械臂狀態，融合策略在 BridgeData V2 與 Kuka 數據集上達成 MSE 0.0021 與 RMSE 0.04604，相比傳統單模態學習提升 35%+ 操縱精度。完全相容 ROS 2 推理部署，特別適合 Roy 進行邊界深度學習驅動機械臂自主操縱與非結構化環境適應性驗證。[DML-RAM arXiv](https://arxiv.org/pdf/2504.03423)
+
+## 2026 年 5 月 21 日補充：ROS 2 Control 標準化框架與邊界實時同步通信
+
+**ROS 2 Control 框架標準化與邊界實時控制融合（May 2026）**：官方 ros2_control 文檔發布最新框架標準，統一硬體抽象、控制器生命週期管理與邊界推理堆疊。框架支援無硬體鎖定的多廠牌機械臂整合，樹莓派 5 環境透過 DDS 分散式架構實現 <5ms 控制迴圈延遲。該方案已驗證於工業級應用，特別適合 Roy 進行邊界多臂統一控制架構與硬體相容性驗證。[ROS 2 Control 官方資源](https://control.ros.org/)
+
+**CANopen 與 EtherCAT 實時同步機制在樹莓派邊界環境整合（May 2026）**：最新應用案例驗證 CANopen over EtherCAT 協議與 ROS 2 的完整整合，實現樹莓派邊界環境下的實時運動控制同步。該方案應用於馬達控制與多關節同步，推理延遲 <1ms，支援進階型樹莓派 5（16GB RAM）直接控制工業級機械臂。相比傳統 TCP/IP 網路通訊，確保實時性與可靠性，特別適合 Roy 進行邊界實時多臂協作與工業場景高同步性驗證。[ROS + EtherCAT 實時控制論文](https://www.mdpi.com/2076-0825/14/2/84)
