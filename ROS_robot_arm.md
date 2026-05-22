@@ -3747,6 +3747,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **DualTHOR 雙臂人形模擬平台：接觸密集與物理一致性驗證（2026 年 5 月新增）**：CMU 與 Boston Dynamics 聯合發布 DualTHOR 模擬器，專為雙臂人形機器人協作操作設計。該平台整合實時物理模擬（DART 引擎）、任務套件與應急機制，包含潛在故障的物理級低層次執行。支援多臂視覺伺服決策層在複雜碰撞-接觸密集任務（抱起重物、推拉操作）的魯棒性驗證，特別適合邊界 SAC 強化學習策略在仿真-真實間隙的快速閉環反饋。[DualTHOR: A Dual-Arm Humanoid Simulation Platform for Contingency-Aware Planning](https://arxiv.org/html/2506.16012v1)
 
+## 2026 年 5 月 22 日補充：NVIDIA 生成式 AI 生態與產業協作臂擴展
+
+**NVIDIA 生成式 AI 導入 ROS 生態（2026 年）**：NVIDIA 在 ROSCon 推出完整生成式 AI 與機械手臂/AMR 整合工具鏈，包括 GPU 加速推理、模擬與感知工作流。該倡議加速 LLM 與視覺語言動作模型在機械手臂控制中的應用，支援樹莓派邊界部署。[NVIDIA ROS 2 AI 生態](https://developer.nvidia.com/blog/implementing-robotics-applications-with-ros-2-and-ai-on-jetson-platform-2/)
+
+**ROS 2 Control 支援 125+ 商用協作臂（含上銀 HIWIN）**：ROS 2 Control 框架已完成多家領先製造商的官方驅動支援，包括 Kinova、Universal Robots、xArm、KUKA、ABB、Mitsubishi MELFA、RealMan 等，臺灣廠商上銀科技（HIWIN）機械手臂亦提供完整 ROS 支援。該硬體無關框架降低多臂異構系統整合複雜度，適合 Roy 的樹莓派邊界協作臂系統進行跨品牌驗證。[ROS 2 Control 支援機械臂列表](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
 **多代理深度強化學習組裝新進展（PLOS One 2025）**：研究驗證多代理 DRL（特別是 QMIX 與 MAPPO）在複雜軸孔組裝任務中的高效協作，相比傳統運動規劃提升任務成功率 30% 以上。該方法特別適合 Roy 的邊界多臂視覺伺服決策層整合強化學習策略，實現自適應接觸任務與動態環境協調。[Multi-agent deep reinforcement learning-based robotic arm assembly research](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0311550)
 
 ## 2026 年 5 月 4 日補充：MoveIt 2 多規劃後端整合與邊界推理加速
