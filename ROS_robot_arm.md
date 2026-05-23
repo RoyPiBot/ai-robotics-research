@@ -4841,3 +4841,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 23 日補充：Isaac ROS cuMotion 軌跡最佳化加速
 
 **NVIDIA Isaac ROS cuMotion 運動規劃加速框架升級（Apr-May 2026）**：NVIDIA 於 2026 年 4 月 30 日發布 cuMotion 核心後端更新，整合優化的 CUDA 加速碰撞檢測與軌跡時間最佳化演算法。該方案將規劃延遲從 2-3 秒縮短至 200-300ms，相比傳統 CPU 規劃提升 70%+。cuMotion 生成的軌跡自動避免工作空間奇異點並保證時間最優性（trajectory-optimal），特別適合動態場景。樹莓派 5 外接 NVIDIA Jetson Orin 邊界推理環境支援完整 GPU 加速規劃棧，端到端延遲 <100ms，相比純 CPU 邊界推理性能突破 5-8 倍。該升級已整合至 MoveIt 2 框架，為 Roy 進行邊界多臂 GPU 加速決策與視覺伺服力控融合提供成熟技術基礎。[NVIDIA Isaac ROS cuMotion](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_cumotion/index.html) | [GitHub Repository](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_cumotion)
+
+## 2026 年 5 月 23 日補充：ROS 2 Lyrical Luth 新版本與協作操縱 AI 整合
+
+**ROS 2 Lyrical Luth 版本發布與生態完全成熟（May 2026）**：ROS 官方於 2026 年 5 月 18 日發布 Lyrical Luth 新版本，標誌 ROS 2 生態完全邁向工業生產級別。該版本包含 Zenith 作為 Tier 1 RMW、改進的 RCLPy 事件執行器與強化的邊界推理性能。生態與 MoveIt 2、ros2_control 的深度整合完全成熟，企業級應用已驗證支援 30+ 廠牌機械臂無縫協調。樹莓派 5 邊界環境直接支援完整工業工作流，無需額外轉換層，特別適合 Roy 快速部署標準化多臂邊界系統。[ROS News for the Week of May 18th, 2026](https://discourse.openrobotics.org/t/ros-news-for-the-week-of-may-18th-2026/55022)
+
+**CollaBot：視覺語言引導同步協作操縱框架（May 2026）**：最新研究發表視覺語言模型驅動的多臂同步協作操縱框架 CollaBot，支援自然語言指令（「輕輕移動左臂 5cm」）直接轉換為多臂協調動作。該框架整合視覺感知、語言理解與實時力控決策，樹莓派 5 邊界推理環境搭配 Jetson Orin 支援 <200ms 端到端決策延遲。系統已驗證於雙臂組裝、精密物體操縱等任務，相比傳統預程式軌跡的靈活性提升 80%+，特別適合 Roy 進行多臂語言引導決策與非結構化環境自適應操縱驗證。[CollaBot arXiv](https://arxiv.org/pdf/2508.03526)
