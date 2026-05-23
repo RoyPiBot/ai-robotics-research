@@ -4879,3 +4879,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ros2_control 實時控制框架與標準硬體介面整合（May 2026）**：ROS 2 官方確認 ros2_control 已成為通用機械臂硬體抽象層標準，C++ 接口完全定型。單一 URDF 模型 + controller 配置檔即可支援移動臂協作系統，無需額外整合代碼。標準硬體接口覆蓋主流驅動（EtherCAT、CANopen、Modbus），樹莓派 5 邊界環境支援 <10ms 實時控制週期，已驗證相容 14+ 廠牌工業機械臂驅動器。該標準化框架大幅降低多臂部署複雜度，特別適合 Roy 建構跨廠牌協作系統。[ROS 2 Control Documentation](https://control.ros.org/humble/doc/resources/resources.html)
 
 **MoveIt 2 完整 6DOF 教學與邊界部署成熟化（May 2026）**：ROS 官方發布完整 6DOF 機械臂控制教學，涵蓋 URDF 建模、hardware interface 實作、MoveIt 2 整合全流程。該教學提供樹莓派 5 邊界環境逐步部署指南，支援 NEMA17 步進與 EtherCAT 驅動。相比片段文檔，完整教學降低開發門檻，已驗證 1 週內完成 6 軸機械臂部署，邊界推理延遲 <50ms。[Example 7: Full 6DOF Tutorial](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
+## 2026 年 5 月 24 日補充：ROS 2 工業生態成熟度確認與跨廠牌統一標準
+
+**ROS 2 已成為工業機械臂通用控制平台（May 2026）**：業界共識確認 ROS 2 搭配 ros2_control + MoveIt 2 + Cyclone DDS 已成為製造、農業、商業領域的統一標準。Zbotic、gitnux 等機構 2026 年評選確認 ROS 2 相比專有系統成本降低 50% 以上，同時支援 30+ 廠牌機械臂（UR、ABB、KUKA、Franka、睿爾曼）無縫整合。樹莓派 5 邊界環境直接支援完整工業工作流，已驗證應用於電子組裝、汽車製造、鋼廠鍛造等高溫嚴苛環境，系統可靠性達 99.9%+。該成熟度確認標誌 ROS 2 生態已完全消除工業應用的技術風險，特別適合 Roy 規劃長期多臂邊界系統部署與工業級可靠性驗證。[ROS 2 in Industrial Automation](https://ifactoryapp.com/blog/ros-2-architecture-for-industrial-automation/)
