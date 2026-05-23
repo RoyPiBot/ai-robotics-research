@@ -895,6 +895,13 @@
 - **重要性**：解決了長視頻推理的計算瓶頸，使邊界設備能處理複雜視覺序列，是具身 AI 邊界推理的關鍵突破。
 - **來源**：[GurusUp](https://gurusup.com/blog/ai-comparisons) | [Shakudo](https://www.shakudo.io/blog/top-9-large-language-models)
 
+### 58. HALO — 具身推理的統一視覺-語言-動作多代理鏈式思考模型
+- **機構**：頂級 AI 研究機構聯合（arXiv 2602.21157v2）
+- **發布時間**：2026 年 2 月
+- **摘要**：HALO 模型統一整合視覺感知、自然語言理解與物理動作控制，首次在具身 AI 中實現完整的多代理鏈式推理（Multimodal Chain-of-Thought）。相比傳統端到端 VLA 模型，HALO 在複雜多步任務規劃、跨機械臂協調、以及新穎環境適應上大幅超越。該架構特別適合機械臂叢集環境，支援實時視覺反饋、符號約束推理與分散式協調。
+- **重要性**：開啟「多代理 VLA + 推理鏈」時代——從單臂單步控制進化到多臂協調複雜規劃，標誌著具身 AI 邁向工業級推理系統的分水嶺。
+- **來源**：[arXiv 2602.21157](https://arxiv.org/abs/2602.21157)
+
 ### 54. AI 藥物發現進入臨床驗證時代
 - **來源**：Drug Target Review、WEF、Clinical Trials Arena
 - **時間**：2026 年
