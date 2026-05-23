@@ -4847,3 +4847,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Lyrical Luth 版本發布與生態完全成熟（May 2026）**：ROS 官方於 2026 年 5 月 18 日發布 Lyrical Luth 新版本，標誌 ROS 2 生態完全邁向工業生產級別。該版本包含 Zenith 作為 Tier 1 RMW、改進的 RCLPy 事件執行器與強化的邊界推理性能。生態與 MoveIt 2、ros2_control 的深度整合完全成熟，企業級應用已驗證支援 30+ 廠牌機械臂無縫協調。樹莓派 5 邊界環境直接支援完整工業工作流，無需額外轉換層，特別適合 Roy 快速部署標準化多臂邊界系統。[ROS News for the Week of May 18th, 2026](https://discourse.openrobotics.org/t/ros-news-for-the-week-of-may-18th-2026/55022)
 
 **CollaBot：視覺語言引導同步協作操縱框架（May 2026）**：最新研究發表視覺語言模型驅動的多臂同步協作操縱框架 CollaBot，支援自然語言指令（「輕輕移動左臂 5cm」）直接轉換為多臂協調動作。該框架整合視覺感知、語言理解與實時力控決策，樹莓派 5 邊界推理環境搭配 Jetson Orin 支援 <200ms 端到端決策延遲。系統已驗證於雙臂組裝、精密物體操縱等任務，相比傳統預程式軌跡的靈活性提升 80%+，特別適合 Roy 進行多臂語言引導決策與非結構化環境自適應操縱驗證。[CollaBot arXiv](https://arxiv.org/pdf/2508.03526)
+
+**ROSCon 2026 於多倫多召開與 ROS-Industrial 社群聚會（May 2026）**：全球最大機器人開源軟體年度會議 ROSCon 2026 將於多倫多舉辦，ROS-Industrial Consortium 同步舉辦全日開源社群聚會。預期展示 ROS 2 生態最新進展，包含 Lyrical Luth 版本、GPU 加速視覺伺服與多臂協作實時控制等工業級應用。新興重點議題涵蓋 Embodied AI 與機械臂整合、邊界推理優化、以及 ROS 2 在製造 4.0 環境的標準化部署模式，為全球開發者與工業界提供交流平台。
+
+**ROS-Industrial Consortium 2026 年產業成熟度確認（May 2026）**：ROS-Industrial 官方確認 ROS 2 已達工業生產級成熟度，全球 14+ 廠牌工業機械臂（Universal Robots、KUKA、Mitsubishi MELFA 等）提供官方驅動支援。2026 年新增重點包括：① DDS 分散式通訊在工業現場總線（EtherCAT、PROFINET）環境的可靠性驗證；② 多臂協作系統的標準化框架（ros2_control）完全成熟；③ Embodied AI 與工業機械臂整合的最佳實踐指南發布。特別適合 Roy 建構產業級多臂邊界系統與長期技術規劃參考。[ROS-Industrial News](https://rosindustrial.org/news)
