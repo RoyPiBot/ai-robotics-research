@@ -4867,3 +4867,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **RoCo Challenge at AAAI 2026 - 機械臂協作操縱基準測試（May 2026）**：由 AAAI 主辦的 Robotic Collaborative Assembly Assistance（RoCo）Challenge 於 2026 年發布，針對工業級協作機械臂操縱提供高精度基準測試。該基準以複雜精密裝配任務（行星齒輪組件）為核心，提供模擬環境與實機驗證數據集。支援 ROS 2 標準框架，整合 MoveIt 2、ros2_control 與力控制器，特別適合評估樹莓派邊界多臂系統在工業組裝場景的協作精度與穩定性。[RoCo Challenge AAAI 2026](https://arxiv.org/pdf/2603.15469)
 
 **HiWonder ArmPi Ultra - LLM 驅動的教育級協作臂（May 2026）**：HiWonder 推出 AI 強化版教育級機械臂 ArmPi Ultra，原生支援 ROS 2 Jazzy 與 MoveIt 2 運動規劃。該平台整合大語言模型（LLM），支援自然語言指令直接控制多臂協作任務（如「並聯分類」、「輕輕組裝」），內置視覺伺服與力回饋感測。特別優勢為低成本、完整教學資源與樹莓派原生相容性，已成為全球高校與研發機構標準化教育實驗平台，適合 Roy 進行多臂語言引導控制與邊界推理應用原型驗證。[HiWonder ArmPi Ultra](https://www.hiwonder.com/blogs/news/level-ros)
+
+## 2026 年 5 月 24 日補充：ROS 2 Lyrical Luth 工業級成熟度與 Jetson 邊界推理實時控制
+
+**ROS 2 Lyrical Luth 於 2026 年 5 月正式發佈與生態完全成熟**：ROS 官方確認 ROS 2 Lyrical Luth 已於 2026 年 5 月發佈，納入 Zenoh 作為 Tier 1 RMW（遠端中間件），支援分散式通訊、實時特性與 QoS 流量控制。生態整合 MoveIt 2、ros2_control、Cyclone DDS 完全成熟，已驗證於 30+ 工業機械臂平台。樹莓派 5 邊界環境直接支援完整工業級部署，無需轉換層，標誌 ROS 2 工業應用生態完全就緒。[ROS 2 May 2026 News](https://discourse.openrobotics.org/t/ros-news-for-the-week-of-may-18th-2026/55022)
+
+**Jetson Orin 邊界推理實時控制突破：NanoVLA 解決推理延遲與控制頻率不匹配**：研究證實 Jetson Orin 邊界推理面臨 100-500ms VLA 模型推理延遲 vs 30Hz+ 高頻控制需求的匹配難題。NanoVLA 框架（2025）透過延遲融合與解耦式非同步架構實現 52 倍加速，將推理延遲降至 50ms 內，完全相容高頻機械臂控制迴圈。Jetson Orin 提供 275 TOPS AI 性能，已驗證支援樹莓派 5 邊界環境搭配視覺伺服與多模態感知決策，端到端延遲 <150ms。該突破標誌邊界 VLA 驅動機械臂的工業級可行性確立。[Real-time Perception on Edge Devices](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12583037/)
