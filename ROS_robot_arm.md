@@ -4863,3 +4863,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 23 日補充：cuMotion 在樹莓派+Jetson 協作環境的實時性能驗證
 
 **Isaac ROS cuMotion Jetson邊界加速驗證與樹莓派多臂協作（May 2026）**：NVIDIA Isaac ROS 團隊發布樹莓派 5 + Jetson Orin 協作部署方案，將 cuMotion CUDA 加速規劃完全集成於邊界推理環境。該方案將多臂軌跡規劃從 2-3 秒縮短至 200-300ms，相比純樹莓派 CPU 推理性能提升 5-8 倍。cuMotion 生成的軌跡自動避免工作空間奇異點並保證時間最優性，特別適合動態協作場景。樹莓派 5 邊界推理層透過 ROS 2 DDS 與 Jetson Orin GPU 規劃層無縫協調，端到端決策延遲 <100ms，系統可靠性達 99.95%+。該驗證標誌邊界多臂 GPU 加速決策的工業級可行性成熟，特別適合 Roy 進行邊界多臂視覺伺服力控融合的下一代協作系統驗證。[Isaac ROS cuMotion MoveIt 2 Plugin](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_cumotion/index.html)
+
+**RoCo Challenge at AAAI 2026 - 機械臂協作操縱基準測試（May 2026）**：由 AAAI 主辦的 Robotic Collaborative Assembly Assistance（RoCo）Challenge 於 2026 年發布，針對工業級協作機械臂操縱提供高精度基準測試。該基準以複雜精密裝配任務（行星齒輪組件）為核心，提供模擬環境與實機驗證數據集。支援 ROS 2 標準框架，整合 MoveIt 2、ros2_control 與力控制器，特別適合評估樹莓派邊界多臂系統在工業組裝場景的協作精度與穩定性。[RoCo Challenge AAAI 2026](https://arxiv.org/pdf/2603.15469)
+
+**HiWonder ArmPi Ultra - LLM 驅動的教育級協作臂（May 2026）**：HiWonder 推出 AI 強化版教育級機械臂 ArmPi Ultra，原生支援 ROS 2 Jazzy 與 MoveIt 2 運動規劃。該平台整合大語言模型（LLM），支援自然語言指令直接控制多臂協作任務（如「並聯分類」、「輕輕組裝」），內置視覺伺服與力回饋感測。特別優勢為低成本、完整教學資源與樹莓派原生相容性，已成為全球高校與研發機構標準化教育實驗平台，適合 Roy 進行多臂語言引導控制與邊界推理應用原型驗證。[HiWonder ArmPi Ultra](https://www.hiwonder.com/blogs/news/level-ros)
