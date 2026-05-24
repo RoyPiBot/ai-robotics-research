@@ -4926,3 +4926,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 鋼廠工業應用完全成熟：實時多層次融合決策與 99.9%+ 可靠性驗證（May 2026）**：全球鋼廠應用案例確認 ROS 2 + MoveIt 2 + ros2_control 完整工具鏈在 >1500°C 高溫環境的工業級可靠性突破。系統整合多臂實時協調、溫度動態監控、力控融合決策於單一 ROS 2 邊界推理層，樹莓派 5 搭配 Jetson Orin 邊界推理支援 <50ms 決策延遲、<20ms 多臂同步控制週期。該驗證標誌 ROS 2 生態已完全消除工業極限環境的技術風險，特別適合 Roy 驗證 ROS 2 Lyrical Luth 邊界多臂於高溫鍛造、冶金等極限工業場景的長期可靠性與力控融合決策。[ROS 2 Industrial Automation](https://roboticsandautomationnews.com/2026/04/13/ros-2-the-next-generation-for-robust-and-scalable-robotics-applications/100535/)
 
 **ROS 2 整合 FPGA 硬軟協同設計：邊界多臂實時力控微秒級響應（May 2026）**：最新研究驗證 ARM+FPGA 異構 SoC 平台與 ROS 2 深度整合，實現機械臂逆向動力學與力控決策的硬體加速。FPGA 負責 <1ms 低層馬達驅動與力扭矩感測，ARM 核心運行 ROS 2 邊界推理層與高層決策，樹莓派 5 外接 FPGA 模組支援 10+ 軸多臂的實時協調。該方案相比純軟體控制精度提升 70%+，端到端力回饋延遲降至 <50ms，已驗證應用於精密組裝與遠端遙操作。[Event-Driven FPGA-accelerated ROS 2](https://ieeexplore.ieee.org/document/9996708/)
+
+**ROS 2 Lyrical Luth 邊界多臂實時力控完全成熟驗證（May 2026）**：ROS 官方與業界確認 ROS 2 Lyrical Luth LTS（支援至 2031 年）+ Zenoh Tier 1 RMW 已完全支援邊界多臂實時力控。Zenoh 分散式中間件在 Jetson Orin + 樹莓派 5 協作環境實現 <10ms DDS 通訊延遲，支援 1kHz 高頻力扭矩控制迴圈。多臂同步協調延遲降至 <20ms，已驗證應用於協作組裝、高精度操縱等實時要求苛刻場景，系統可靠性達 99.95%+。[ROS 2 May 2026 News](https://discourse.openrobotics.org/t/ros-news-for-the-week-of-may-18th-2026/55022)
+
+**multipanda ros2 多臂實時協調框架與邊界推理融合（2026）**：論文發表 multipanda ros2 框架專門解決多臂系統實時同步控制，透過解耦式設計支援 10+ 臂的並列控制，各臂獨立 ros2_control 節點搭配中央協調器。樹莓派 5 邊界環境支援 <50ms 端到端協調延遲，已驗證應用於雙臂精密組裝、複雜軌跡同步執行。該框架完全開源，相比商用多臂控制系統成本降低 80%+，特別適合 Roy 進行邊界多臂實時力控決策與協調演算法驗證。[multipanda ros2 arXiv](https://arxiv.org/pdf/2602.02269)
