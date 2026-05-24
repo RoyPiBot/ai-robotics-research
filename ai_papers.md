@@ -232,6 +232,12 @@
 - **摘要**：Qwen 3.6 27B 採用先進的多 Token 預測（Multi-Token Prediction）技術，實現推理吞吐量提升 2.5 倍。27B 參數密集多模態模型，整合視覺、文字與視訊理解，MTP 技術使其能並行預測多個 Token，大幅降低推理延遲與成本。在標準基準測試上性能與規模翻倍的模型相當，為生產環境提供成本效益最優的多模態推理方案。支援快速部署於 GPU 與邊緣推理硬體。
 - **重要性**：推理時計算擴展與多模態整合的實踐突破，MTP 技術為大規模 LLM 部署提供新的效率範式，推動 AI 應用的真正規模化。
 
+### 27. 邊界 LLM 推測解碼最佳化 — 高效邊界推理框架
+- **典型研究**：SLED、EdgeLLM、Pipelined Collaborative Speculative Decoding
+- **發布時間**：2025–2026 年
+- **摘要**：邊界推理領域新興的推測解碼（Speculative Decoding）優化框架。SLED（Speculative LLM Decoding Framework）透過小型草稿模型並行提議多個 Token，由目標 LLM 驗證，削減自迴歸生成的順序瓶頸，邊界推理延遲可降低 50–70%。EdgeLLM 針對邊界設備（智慧手機、IoT）的快速推理，支援原地（on-device）推理與驗證。Pipelined Collaborative Speculative Decoding 解決邊緣-雲端協作中的「通信-計算失配」問題，藉由管道化調度避免邊界等待雲端驗證。
+- **重要性**：推測解碼從雲端向邊界擴展，使輕量邊界設備能達到接近大型模型的生成品質與速度，為邊界 AI 應用（機械人控制、即時翻譯、本地化 AI 助理）奠定效率基礎。
+
 ### 23. NVIDIA Ising — 量子計算 AI 模型家族
 - **機構**：NVIDIA
 - **發布時間**：2026 年 4 月
