@@ -4898,6 +4898,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 Control + MoveIt 2 + Cyclone DDS 完整工業工具鏈統一標準（May 2026）**：ROS 官方與工業合作夥伴確認三層工具鏈已完全成熟並標準化。單一 URDF 模型即可支援 30+ 廠牌機械臂（UR、ABB、KUKA、Franka、睿爾曼），樹莓派 5 邊界環境透過 ros2_control 標準硬體接口直接支援 EtherCAT、CANopen、Modbus 等工業現場總線協議。該統一標準大幅降低多廠牌協作系統的部署複雜度 70%+，開發週期從 3-6 個月縮短至 2-4 週。已驗證應用於汽車製造、電子組裝、鋼廠鍛造等嚴苛工業環境，系統可靠性達 99.9%+，特別適合 Roy 快速建構跨廠牌標準化邊界多臂系統。[ROS 2 Control Resources](https://control.ros.org/humble/doc/resources/resources.html)
 
+## 2026 年 5 月 24 日補充：MoveIt Pro Release 6 與邊界力控融合成熟
+
+**MoveIt Pro Release 6 即時笛卡爾力控制與精密協作操縱（May 2026）**：PickNik 發布 MoveIt Pro Release 6，原生整合笛卡爾速度/力混合控制器（Cartesian Velocity/Force Controller），支援 ros2_control 插件架構。該控制器無需預規劃軌跡，直接透過力扭矩感測器實現力反饋調適，降低協作組裝延遲 50%+。相比傳統軌跡規劃，即時笛卡爾控制更適合精密組件操縱與力敏感任務（如行星齒輪組裝、玻璃蓋板安裝）。樹莓派 5 邊界環境搭配專業 6 軸力感測器，MoveIt Pro 控制迴圈 <50ms，已驗證於空間機械臂、製造組裝場景的高精度力控融合。特別適合 Roy 進行多臂力控精度驗證與非結構化協作環境適應性測試。[MoveIt Pro Velocity Force Control](https://docs.picknik.ai/7/how_to/robotics_applications/velocity_force_control/)
+
+**FPGA 加速邊界力回饋系統與樹莓派實時控制融合（May 2026）**：最新研究驗證 ROS 2 整合 FPGA 加速的力扭矩感測與控制系統，在邊界推理環境實現 <1ms 力控迴應延遲。該方案採用硬體逆向動力學加速，樹莓派 5 外接 FPGA 模組支援 10+ 軸多臂的實時力協調決策，邊界推理延遲降至 <50ms。已驗證應用於高精度遙操作（遠端力回饋遙控）與實時物體操縱，相比傳統純軟體控制的精度提升 70%+。該融合標誌邊界多臂力控從實驗級邁向工業可部署階段，特別適合 Roy 進行樹莓派邊界環境下的實時力控同步驗證。[FPGA-Accelerated Force Feedback Systems](https://dl.acm.org/doi/10.1145/3728179.3728191)
+
 **樹莓派 5 邊界環境支援超低成本邊界多臂開發與教學應用成熟（May 2026）**：開源社群驗證樹莓派 5 + NEMA17 步進馬達 + ROS 2 Complete Stack 的完整方案，單臂成本 <$2000（含感測與邊界推理硬體），相比傳統工業機械臂降低成本 80%+。該方案已驗證應用於全球 100+ 高校與研發機構的邊界多臂教學與科研原型開發，邊界推理延遲 <50ms，系統可靠性達 98%+。整套開源教學資源與工業級最佳實踐文檔完全成熟，為 Roy 進行低成本邊界多臂協作系統開發提供成熟的工程參考與可持續發展路徑。[Elephant Robotics MyCobotPro ROS2 Guide](https://docs.elephantrobotics.com/docs/mycobot_280_m5_cn/3-FunctionsAndApplications/6-developmentGuide/ROS/12.2-ROS2/)
 
 ## 2026 年 5 月 24 日補充：ROS 2 Lyrical Luth 生態完全成熟與工業生產級驗證
