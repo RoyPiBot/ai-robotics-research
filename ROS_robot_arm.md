@@ -1946,6 +1946,17 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 - [SO-100 快速入門](https://huggingface.co/docs/lerobot/en/so100)
 - [MoveIt Pro Release Notes](https://docs.picknik.ai/release-notes/)
 - [NVBlox vs Octomap — PickNik](https://picknik.ai/2026/03/04/Octomap-vs-NVBlox-Smarter-3D-Planning-in-the-Real-World.html)
+
+### MoveIt Pro 9.0 多臂實時力控與 ISS 驗證（2026 年 4-5 月）
+
+**MoveIt Pro 9.0 多臂力控增強**：PickNik 在 2026 年 4-5 月發布的 MoveIt Pro 9.0 與 9.2.0 版本，針對多臂協作系統引入原生支援，包括：
+- **雙臂與多臂獨立控制**：支援多個機械手臂的獨立控制與協調執行，整合碰撞檢測與動態路徑規劃
+- **力反饋控制架構**：基於實時控制核心，提供力順應控制器，使機械手臂能自適應於未知障礙物與變重量物體操控
+- **視覺伺服與力控融合**：支援硬體直接控制與串流功能，實現視覺伺服與基於力的控制迴路融合
+- [MoveIt Pro 9.0 Release Notes](https://docs.picknik.ai/release-notes/2026/02/12/9.0.0/) | [PickNik MoveIt Pro 公告](https://picknik.ai/news-releases/PickNik_s_MoveIt_Pro_Release_9_Advances_AI-Driven_Scan-and-Plan_for_High-Variability_Robotics.html)
+
+**JAXA ISS 多臂機器人驗證（2026 年進行中）**：JAXA 與 PickNik 合作驗證 MoveIt Pro 在國際太空站（ISS）多臂機器人系統的適用性。測試項目包括微重力環境下四臂協調操控、貨物處理與空間導航。JAXA 的 PORTRS（Payload Organization and Transportation Robotic System）計畫已完成關鍵地面驗證，建立了可重複的規劃與驗證工作流，為未來硬體在軌測試做準備。
+- [JAXA PORTRS 計畫詳情](https://picknik.ai/case-study-jaxa/) | [GITAI 空間機械臂進展](https://spectrum.ieee.org/gitai-space-robot)
 - [ROSCon 2026 官網](https://roscon.ros.org/2026/)
 - [ROS 2 Lyrical Luth 發行文件](https://docs.ros.org/en/rolling/Releases/Release-Lyrical-Luth.html)
 - [Embodied AI on ROS 2: OpenClaw & ROSOrin Pro 指南 — Hackster.io](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
