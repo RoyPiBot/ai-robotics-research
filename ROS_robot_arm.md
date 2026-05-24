@@ -779,6 +779,8 @@ if __name__ == '__main__':
 - **Vision-Language-Action (VLA) 多模態模型架構（2026 年新興標準）**：最新趨勢是將視覺感知（Computer Vision）、自然語言指令（LLM）與機械臂動作輸出（Action）整合進單一神經網路，使機器人具備強大的通用性與泛化能力。支援複雜工業場景如自動化分揀、精密組裝，機械臂可根據自然語言命令與環境視覺自動調整策略，無需預先編程特定任務。
 - **NVIDIA Isaac ROS cuMotion GPU 加速軌跡規劃（2026 年 5 月）**：NVIDIA 發布 cuMotion 模組提供 CUDA 加速碰撞檢測與軌跡最佳化，無縫整合 MoveIt 2 實現平滑無碰撞路徑規劃。相比 OMPL 軟體規劃器，cuMotion 可減少規劃時間 50~70%，在複雜環境自動生成有效軌跡，特別適合工業級多臂協作場景。最新 April 30, 2026 更新精化了規劃後端架構，針對邊界環境加入自適應碰撞檢測與即時軌跡優化，支援樹莓派 + Jetson Orin Nano 邊界推理部署。[Isaac ROS cuMotion](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_cumotion) [Isaac ROS cuMotion 文件](https://nvidia-isaac-ros.github.io/v/release-3.1/repositories_and_packages/isaac_ros_cumotion/)
 - **MoveIt 2 運動規劃完整生態（2026 年）**：MoveIt 2 於 ROS 2 Humble/Jazzy/Rolling 全面穩定，整合 OMPL 多演算法規劃引擎、場景感知碰撞檢測、MoveIt Task Constructor 任務級別抽象層。支援 Isaac ROS cuMotion GPU 加速、MoveIt Servo 即時控制、完整 URDF 到硬體部署流程，成為工業級運動規劃事實標準。[MoveIt 官方文件](https://moveit.picknik.ai/)
+- **MoveIt Pro 9.0 多臂與 AI 驅動掃描規劃（2026 年 4 月 2 日）**：PickNik Robotics 正式發佈 MoveIt Pro 9.0，引入 AI 驅動掃描與規劃（Scan-and-Plan）能力以應對高變異性工業場景。新版本強化多臂協作支援，包含自動碰撞預防、多臂路徑規劃協調、力控制與遠程操控整合。Scan-and-Plan 使用 ML 增強視覺掩膜工具，大幅降低複雜環境中的規劃失敗率。特別適合半導體製造、電子組裝等高精度應用。[MoveIt Pro 9.0 發佈說明](https://picknik.ai/news-releases/PickNik_s_MoveIt_Pro_Release_9_Advances_AI-Driven_Scan-and-Plan_for_High-Variability_Robotics.html)
+- **JAXA 國際太空站多臂機械臂系統驗證（2026 年）**：日本宇宙航空研究開發機構（JAXA）與 PickNik Robotics 合作，在國際太空站（ISS）上測試 MoveIt Pro 控制的多臂協作系統，驗證微重力環境下的即時控制與碰撞迴避能力。此應用展示 MoveIt Pro 在極限環境中的可靠性與通用性，為太空機器人與遠程操控應用樹立新基準。[相關報導](https://www.therobotreport.com/jaxa-tests-pickniks-moveit-pro-software-in-multi-armed-robotic-system-for-the-iss)
 
 ---
 
