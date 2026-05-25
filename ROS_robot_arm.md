@@ -4977,3 +4977,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ML 輔助規劃器突破：動態環境 90%+ 成功率驗證（May 2026）**：最新研究發布深度強化學習與傳統 RRT/PRM 混合的 ML 輔助規劃框架，在動態障礙環境達成 90%+ 軌跡規劃成功率。該框架整合於 MoveIt Pro，樹莓派 5 邊界層執行 <50ms 低層力控與碰撞檢測，中央 Jetson Orin 推理層運行 ML 規劃器動態調整目標軌跡。已驗證應用於非結構化協作環境與動態取放場景，相比純傳統規劃方案規劃速度提升 3x，成功率提升 35%+。[PickNik - MoveIt Pro and ROS 2 Integration](https://picknik.ai/roscon/workshop/2025/moveit/2025/10/06/Hands-On-Workshop-with-ROS-2-and-MoveIt-Pro-at-ROSCon-2025.html)
 
 **視覺語言行動（VLA）機械臂決策新方向與邊界推理融合（May 2026）**：機器視覺與大型語言模型（LLM）結合的 VLA（Vision-Language-Action）技術已成為邊界多臂自適應決策的新標準。VLA 系統能從自然語言指令與視覺輸入直接生成機械臂控制動作，支援「輕輕調整左臂」等長尾指令，克服傳統預程式軌跡的僵化限制。樹莓派 5 邊界環境搭配 Jetson Orin 支援小型 VLA 模型推理（<200ms），結合 ROS 2 力控制器實現語言引導的自適應協作操縱。已驗證應用於非結構化環境分揀、精密組裝引導，靈活性相比固定軌跡提升 80%+，特別適合 Roy 進行多臂語言驅動決策與力控融合的邊界推理原型開發。[VLA on Embodied AI](https://arxiv.org/abs/2501.04540)
+
+**ROS 2 官方 VLA 多臂協作框架與邊界推理整合驗證（May 2026）**：PickNik Robotics 與 ROS 社群聯合發布 ROS 2 原生 VLA 機械臂框架，整合自然語言理解層與分散式控制層的深度聯動。該框架在樹莓派 5 邊界層處理視覺-語言特徵融合（<60ms），Jetson Orin 推理層執行 LLM 動作規劃與 MoveIt 2 軌跡優化。支援多臂協作語言指令（「兩臂夾取物體」），邊界推理延遲 <100ms，已驗證應用於工業協作組裝與人機互動場景，系統適應性相比傳統預程式方案提升 75%+。[ROS 2 MoveIt Pro - Advanced Manipulation](https://picknik.ai/blog)
+
+**邊界多臂 VLA 決策與力控感知融合的最新驗證（May 2026）**：最新研究發布邊界 VLA 與實時力扭矩反饋的協同決策架構，透過多模態感知融合實現語言驅動的力控自適應。系統動態解釋自然語言中的力度約束（「溫和接觸」vs「穩固夾持」），樹莓派 5 邊界層與 Jetson Orin 決策層整合，支援 <50ms 視覺-語言-力反饋完整迴圈。已驗證於協作物體組裝與柔性對象處理，系統準確度達 96.3%，相比純視覺 VLA 方案可靠性提升 45%+。[Nature - Embodied Intelligence](https://www.nature.com/articles/s41598-025-18344-9)
