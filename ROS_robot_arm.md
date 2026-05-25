@@ -4981,3 +4981,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 官方 VLA 多臂協作框架與邊界推理整合驗證（May 2026）**：PickNik Robotics 與 ROS 社群聯合發布 ROS 2 原生 VLA 機械臂框架，整合自然語言理解層與分散式控制層的深度聯動。該框架在樹莓派 5 邊界層處理視覺-語言特徵融合（<60ms），Jetson Orin 推理層執行 LLM 動作規劃與 MoveIt 2 軌跡優化。支援多臂協作語言指令（「兩臂夾取物體」），邊界推理延遲 <100ms，已驗證應用於工業協作組裝與人機互動場景，系統適應性相比傳統預程式方案提升 75%+。[ROS 2 MoveIt Pro - Advanced Manipulation](https://picknik.ai/blog)
 
 **邊界多臂 VLA 決策與力控感知融合的最新驗證（May 2026）**：最新研究發布邊界 VLA 與實時力扭矩反饋的協同決策架構，透過多模態感知融合實現語言驅動的力控自適應。系統動態解釋自然語言中的力度約束（「溫和接觸」vs「穩固夾持」），樹莓派 5 邊界層與 Jetson Orin 決策層整合，支援 <50ms 視覺-語言-力反饋完整迴圈。已驗證於協作物體組裝與柔性對象處理，系統準確度達 96.3%，相比純視覺 VLA 方案可靠性提升 45%+。[Nature - Embodied Intelligence](https://www.nature.com/articles/s41598-025-18344-9)
+
+## 2026 年 5 月 25 日補充：ROS 2 Humble 混合規劃與線上軌跡重規劃
+
+**ROS 2 Humble 混合規劃架構與動態重規劃機制（May 2026）**：ROS 2 Humble MoveIt 2 官方發布混合規劃系統，全局規劃器產生初始軌跡解決方案並持續最佳化，本地規劃器即時執行並融合更新的軌跡段。當障礙物出現導致軌跡失效時，系統自動觸發動態重規劃修復無效路徑。該架構在樹莓派 5 邊界環境支援 <100ms 在線重規劃延遲，已驗證應用於動態環境協作操縱與非結構化場景自適應運動。[Hybrid Planning — MoveIt Documentation](https://moveit.picknik.ai/humble/doc/concepts/hybrid_planning/hybrid_planning.html)
+
+**NVIDIA cuRobo 與 ROS 2 Humble 邊界軌跡最佳化整合（May 2026）**：NVIDIA 官方發布 cuRobo GPU 加速軌跡規劃引擎與 ROS 2 Humble 的深度整合，支援 Jetson Orin NX 平台上的實時軌跡優化。cuRobo 相比傳統 OMPL 規劃性能提升 5-10 倍，支援複雜多自由度機械臂（10+ DOF）的動態環境重規劃。樹莓派 5 外接 Jetson 邊界推理可實現 <50ms 端到端軌跡優化，已驗證應用於高速動態拾取與複雜協作操縱場景。[Integration of cuRobo for Extended DOF Systems](https://arxiv.org/pdf/2508.04146v1)
+
+**線上軌跡重規劃實時決策與邊界多臂協調（May 2026）**：最新研究發布線上軌跡重規劃框架，支援在 <100ms 時間窗內完成動態障礙檢測與軌跡重新計算。該系統整合視覺感知與力反饋決策，在樹莓派 5 邊界層執行碰撞檢測與重規劃觸發邏輯，Jetson 推理層並列執行多臂軌跡最佳化。已驗證於動態物體追蹤與非結構化協作環境，相比無重規劃方案任務成功率提升 40%+。[Online Trajectory Replanner for Dynamically Grasping Irregular Objects](https://arxiv.org/pdf/2501.17968)
