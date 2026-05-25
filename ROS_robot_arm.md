@@ -1930,6 +1930,14 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **新一代視覺語言行為模型整合**：LeRobot v0.4.0 整合 Physical Intelligence 的 π0.5 與 NVIDIA GR00T N1.5，均為開放式 VLA 模型。π0.5 強調開放世界泛化能力，GR00T N1.5 為通用機器人推理基礎模型。同步支援 Meta-World 50+ 操控任務基準，已驗證可在 Raspberry Pi 5 邊界裝置上進行即時推理（結合 ONNX 量化）。新增 Datasets v3.0 與多 GPU 訓練簡化流程，加速研究團隊從合成資料迭代至實體硬體驗證的週期。
 
+### VLA 工業應用新進展（2026 年 5 月）
+
+**LingBot-VLA — Ant Group 工業級基礎模型（2026 年 1 月）**：Ant Group 發佈 LingBot-VLA，基於約 2 萬小時的遙操作雙臂資料訓練（來自 9 個雙臂機械臂平台）。支援自然語言指令直接驅動機械臂動作與力度控制，實現工業級複雜操縱任務（如精密組裝、物件分類）的端到端自動化。特別適合 ROS 2 邊界環境多臂協作系統集成。
+
+**SmolVLA — 輕量級開源邊界 VLA 模型（2026 年 5 月）**：消費級硬體與邊界裝置專用 VLA，僅 450M 參數，經驗證可在 Raspberry Pi 5 上進行實時推理（<100ms 延遲）。實現了模型大小與操縱精度的最優平衡，開源權重已發佈於 Hugging Face Hub，適合樹莓派多臂叢集與邊界決策層部署。
+
+**VLAS — 多模態 VLA 擴展（視覺+語音+文字）**：新一代 VLA 變體整合多模態輸入（RGB-D 視覺、語音指令、文字提示），提升人機互動自然性。支援插入操作（tool insertion）等接觸型任務的複雜推理，已在力控制與客製化操縱任務驗證優異表現。
+
 ### 本次更新資料來源
 
 - [VLA 模型 — Wikipedia](https://en.wikipedia.org/wiki/Vision-language-action_model)
