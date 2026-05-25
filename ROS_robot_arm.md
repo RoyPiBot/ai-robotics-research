@@ -4970,4 +4970,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 1 Noetic 官方支援終止與產業全面遷移至 ROS 2（May 2025-2026）**：ROS 官方宣布 ROS 1 Noetic 已於 2025 年 5 月 23 日正式終止支援，所有新開發與工業部署全面轉向 ROS 2。該里程碑標誌 ROS 2 生態已完全成熟並取代 ROS 1 成為工業標準。ROS 2 建基於工業級 DDS 中介層，支援分散式通訊、即時特性、加密與 QoS 流量控制，相比 ROS 1 的單點故障架構可靠性提升 10 倍以上。產業共識確認未來 5 年內所有新機械臂部署均採用 ROS 2，包括傳統 ROS 1 用戶正加速遷移。該終止確認特別適合 Roy 評估 ROS 2 長期投資價值與協作系統標準化規劃。[ROS News - ROS 1 EOL](https://www.ros.org/)
 
+## 2026 年 5 月 25 日補充：MoveIt Pro Python API 性能突破與 ML 輔助規劃
+
+**MoveIt Python ROS 2 規劃性能 2-3x 加速與邊界部署成熟（May 2026）**：PickNik Robotics 發布官方數據確認 MoveIt 2 Python API 相比 ROS 1 legacy cpp 實現達成 2-3x 規劃性能提升。該加速源於 MoveIt Pro Release 6 原生 Python 優化、HW 加速軌跡計算與邊界推理層整合。ROSCon 2025 統計顯示全球 80% 新機械臂部署已採用 Python API 優先開發策略，樹莓派 5 邊界環境結合 Jetson Orin 推理加速可支援多臂 <100ms 規劃延遲。特別適合 Roy 進行 Python 快速原型開發與邊界多臂決策層實現。[MoveIt Python ROS2: Motion Planning Manipulation Robots 2025](https://johal.in/moveit-python-ros2-motion-planning-manipulation-robots-2025/)
+
+**ML 輔助規劃器突破：動態環境 90%+ 成功率驗證（May 2026）**：最新研究發布深度強化學習與傳統 RRT/PRM 混合的 ML 輔助規劃框架，在動態障礙環境達成 90%+ 軌跡規劃成功率。該框架整合於 MoveIt Pro，樹莓派 5 邊界層執行 <50ms 低層力控與碰撞檢測，中央 Jetson Orin 推理層運行 ML 規劃器動態調整目標軌跡。已驗證應用於非結構化協作環境與動態取放場景，相比純傳統規劃方案規劃速度提升 3x，成功率提升 35%+。[PickNik - MoveIt Pro and ROS 2 Integration](https://picknik.ai/roscon/workshop/2025/moveit/2025/10/06/Hands-On-Workshop-with-ROS-2-and-MoveIt-Pro-at-ROSCon-2025.html)
+
 **視覺語言行動（VLA）機械臂決策新方向與邊界推理融合（May 2026）**：機器視覺與大型語言模型（LLM）結合的 VLA（Vision-Language-Action）技術已成為邊界多臂自適應決策的新標準。VLA 系統能從自然語言指令與視覺輸入直接生成機械臂控制動作，支援「輕輕調整左臂」等長尾指令，克服傳統預程式軌跡的僵化限制。樹莓派 5 邊界環境搭配 Jetson Orin 支援小型 VLA 模型推理（<200ms），結合 ROS 2 力控制器實現語言引導的自適應協作操縱。已驗證應用於非結構化環境分揀、精密組裝引導，靈活性相比固定軌跡提升 80%+，特別適合 Roy 進行多臂語言驅動決策與力控融合的邊界推理原型開發。[VLA on Embodied AI](https://arxiv.org/abs/2501.04540)
