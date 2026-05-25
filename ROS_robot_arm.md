@@ -4951,3 +4951,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 生態成熟確認與商業化加速（May 2026）**：Zbotic 與 ROS-Industrial 聯合發布 2026 年行業報告確認 ROS 2 已完全取代 ROS 1 成為工業標準。DDS 中介層統一化消除了生態碎片化問題，使軍工級通訊協議（如 PROFINET、EtherCAT）原生整合，支援實時性能達 <10ms。工業製造環境（含鋼鐵製造、汽車組裝、半導體製造）已全面遷移至 ROS 2，單一軟體框架支援 30+ 機械臂廠牌無縫協作，降低系統整合成本 60-80%，推動邊界計算與 AI 決策層在製造業的普遍部署。[ROS 2 工業應用白皮書](https://ifactoryapp.com/blog/ros-2-architecture-for-industrial-automation)
 
 **多模態感知與實時決策融合在 ROS 2 邊界環境的標準化進展（May 2026）**：ROS2_Control 官方確認與 NVIDIA cuRobo、Isaac ROS 的深度整合，GPU 加速軌跡規劃與實時力控制可在樹莓派 5 上透過邊界推理實現 <50ms 端到端延遲。多模態感知融合架構（視覺+力+位置）透過分散式中介層（Zenoh）支援 1kHz 高頻同步，已驗證應用於協作組裝與精密操縱，邊界環境可靠性達 99.95%+。此標準化進展標誌多臂力控融合與決策層的完全工程化成熟。[ROS 2 Control Resources](https://control.ros.org/rolling/doc/resources/resources.html)
+
+## 2026 年 5 月 25 日補充：多臂協作力控融合驗證與 MPC-DRL 混合決策
+
+**多臂力控融合適應性架構与邊界推理整合（May 2026）**：最新研究發布多臂協作分揀機械臂的自適應力控系統，整合視覺、力與位置三模態感知融合，動態可靠性加權實現 98.7% 分揀準確度。該架構採用邊界計算與中央決策層解耦設計，樹莓派 5 邊界層處理 <30ms 低層力控與碰撞檢測，Jetson Orin 中央層執行 MPC 軌跡優化與自適應增益調整。多臂同步協調延遲 <20ms，已驗證應用於協作組裝與動態環境自適應操縱。[Scientific Reports - Adaptive Control Systems](https://www.nature.com/articles/s41598-025-18344-9)
+
+**多臂軌跡規劃與力控融合的最優化增強框架（May 2026）**：最新優化框架將多臂軌跡規劃與力控制統一為單一多目標控制問題，透過 MPC（模型預測控制）與深度強化學習（DRL）混合決策實現全局最優協調。框架支援複雜子任務動態分配至不同控制模式（純軌跡優化、純力控、混合力-位置控制），樹莓派 5 邊界環境結合 Jetson Orin 加速推理實現 <100ms 規劃延遲。已驗證於雙臂物體對齐與精密協作組裝，相比傳統分離設計成功率提升 30%+，力控精度提升 40%+。[arXiv - Optimization-Augmented Control Framework](https://arxiv.org/pdf/2506.16555)
