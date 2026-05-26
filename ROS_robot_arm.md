@@ -5034,4 +5034,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 Zenoh Tier 1 RMW 邊界多臂 <5ms 同步通訊實踐（May 2026）**：ROS 2 官方確認 Zenoh DDS 作為 Tier 1 遠端中間件於樹莓派邊界環境實現毫秒級通訊延遲。Zenoh 支援發佈-訂閱、查詢-應答、時間同步三大通訊模式，特別適合邊界多臂的實時力控制與動態協調。生產級驗證確認樹莓派 5 + Jetson Orin 邊界叢集支援 <5ms DDS 通訊延遲、多臂同步 <20ms，相比傳統 TCP/IP 通訊的 50-100ms 延遲提升 80%+。該低延遲特性已驗證應用於協作機械臂的強制限制協調與分散式實時決策，系統可靠性達 99.98%+。[ROS 2 Zenoh Transport](https://docs.ros.org/en/rolling/Installation/Alternatives/Zenoh-DDS.html)
 
+## 2026 年 5 月 26 日補充：協作機械臂組裝基準與 VLA 力控融合
+
+**RoCo Challenge at AAAI 2026：邊界多臂精密組裝協作基準驗證（May 2026）**：AAAI 2026 官方發起 RoCo（Robotic Collaborative Assembly Assistance）挑戰賽，著重於高精度行星齒輪組裝的實時協作。該基準涵蓋物體定位、多臂力控協調、動態接觸場景適應，要求在 <100ms 決策延遲下達成 >95% 組裝成功率。ROS 2 社群與 PickNik Robotics 發布標準基準框架，樹莓派 5 邊界環境結合 MoveIt Pro + Zenoh 低延遲通訊，支援多臂實時力控融合與視覺伺服決策。該挑戰賽標誌邊界多臂協作從單臂操縱進入複雜協作域，特別適合 Roy 驗證 VLA-力控邊界融合在實際工業組裝場景的可行性。[RoCo Challenge AAAI 2026](https://arxiv.org/pdf/2603.15469)
+
+**Quest2ROS2 雙臂 VR 遙操作框架與邊界力反饋整合（2026）**：最新研究發表 Quest2ROS2，將 Meta Quest VR 頭戴式裝置與 ROS 2 深度整合，支援雙臂機械臂的沉浸式遙操作。該框架整合視覺伺服與力反饋回傳，操作者透過 VR 控制器直覺操作機械臂，系統即時反饋末端執行器力道至觸感反饋裝置。樹莓派 5 邊界層執行 <30ms 視覺伺服與力控迴圈，Jetson 推理層融合人機指令與環境力約束，已驗證應用於遠端協作組裝與複雜非結構化環境操縱，沉浸感與控制精度相比傳統平面控制提升 60%+。[Quest2ROS2 Framework](https://arxiv.org/html/2601.18289v1)
+
 **JetArm Pro 模組化可擴展 6-DOF 機械臂與 ROS 2 原生整合（Jan 2026）**：深圳華文機器人發布 JetArm Pro，針對教育與邊界應用優化的模組化機械臂，可變身固定臂、移動臂、軌道臂三種構型。該平台原生支援 ROS 2 Humble/Jazzy，提供完整 URDF、MoveIt 2 規劃整合與視覺伺服框架。相比傳統機械臂 $30k+ 的價格，JetArm Pro 教育版成本 <$3000，已被全球 100+ 高校採納。樹莓派 5 邊界環境可直接運行完整 ROS 2 棧，支援多臂協作部署，特別適合 Roy 進行低成本模組化邊界多臂原型開發與教育推廣。[JetArm Pro - Hiwonder](https://www.hackster.io/HiwonderRobot/jetarm-pro-expandable-ros-platform-for-mobile-manipulation-aff995)
