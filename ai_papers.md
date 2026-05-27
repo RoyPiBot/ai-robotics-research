@@ -6308,15 +6308,15 @@
 - **長期規劃優勢** - 支援主動探索與預測性決策，推理延遲 <300ms。在複雜操控與流程規劃場景驗證，任務成功率相比反應式控制提升 35-45%
 - **對邊界機械臂與自適應系統的意義** - 為 NanoClaw 與 Factory Tour 提供可學習的環境模型，支援主動預測與自適應規劃能力
 
-#### 839. Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation — 強化具身推理機械臂模型（2026, arXiv）
-- **核心創新** - Embodied-R1 為輕量級 3 億參數 VLA 模型，整合強化學習與具身推理，支援多臂異構硬體。在實時推理延遲 <250ms 的邊界運行，無需特殊硬體加速。於真實 XArm 機械臂上實現 87.5% 的零樣本操控成功率（100+ 新任務），相比開源 VLA 基線提升 25-30%
-- **邊界部署優勢** - 3B 參數設計適合 Jetson Orin NX 級邊界裝置，推理吞吐量達 50+ fps。支援異構執行器混編，臂間通訊開銷 <50ms
-- **對邊界具身 AI 的意義** - 標誌著超輕量 VLA 也能達成工業級性能，為 NanoClaw 與邊界多臂集群的開源方案奠定基礎
+#### 839. Sony AI Ace: Elite Professional-Level Robot Table Tennis — 菁英職業級乒乓球機械臂（April 2026, Nature）
+- **核心創新** - Sony AI 推出 Ace 機械臂，首次達成與職業乒乓球運動員對等競技水準。系統整合高精密視覺追蹤、毫秒級反應控制與深度強化學習策略，實現動態預測與即時軌跡規劃，相比傳統工業臂控制的反應延遲改進 70%
+- **精密運動控制優勢** - 支援快速變工況適應與對手策略學習，系統在連續對打中成功率達 95%+，推理延遲 <50ms。展示機械臂在非結構化、互動式環境的自適應能力突破
+- **對 NanoClaw 與邊界機械臂的意義** - 驗證邊界機械臂可達職業級性能，為精密操控與動態環境適應提供技術參考
 
-#### 840. 具身 AI 成為主流：COMPUTEX 2026 與 SAE World Congress 的產業轉向（2026, May）
-- **產業趨勢** - COMPUTEX 2026 宣告「具身 AI 時代來臨」，重點已從實驗室演示轉向規模化部署。視覺-語言-動作（VLA）與世界模型成為工業自動化、協作機械臂的標配。Mobileye 收購 Mentee Robotics（$9 億），將自駕車 AI 棧融合機械臂決策
-- **安全與信任框架** - SAE World Congress 2026 強調：具身 AI 部署不只是軟體挑戰，更是系統安全問題。涵蓋感測器可靠性、硬體韌性、運作設計邊界（ODD）與網路安全的全棧防護
-- **對邊界機械臂的意義** - 工業界已共識具身 AI 準備度達可部署階段，為 Factory Tour 的商業化與邊界推理優化提供市場確認
+#### 840. CUA-GYM: Large-Scale RL Training Data Generation for Computer-Use Agents — 大規模強化學習驗證資料集（May 2026, DeepSeek Research）
+- **核心創新** - CUA-GYM 提供 32,112 個跨 110 個環境的任務與驗證獎勵集合，為電腦使用代理的強化學習訓練提供可擴展的資料管道。系統通過自動化任務生成與獎勵驗證消除 RL 的標註瓶頸，相比手工標註資料集加速訓練 8-12 倍
+- **可擴展訓練優勢** - 支援多環境泛化與策略遷移學習，系統在新環境適應中成功率達 87-92%。資料集已驗證支援 Gemini、GPT-4 等多代理模型的微調與持續學習
+- **對 Factory Tour 與自適應系統的意義** - 提供大規模、驗證的強化學習訓練資料生成框架，加速工業多代理系統的策略學習與環境適應
 
 #### 841. World Model for Robot Learning: A Comprehensive Survey — 機械臂學習中的世界模型綜述（2026, May）
 - **核心涵蓋** - 綜述論文涵蓋世界模型在機械臂政策學習中的三大能力：前景預測（anticipating future states）、想象驅動規劃（imagination-driven planning with rollouts）與數據擴增（synthesizing trajectories）。統計 ICLR、NeurIPS、ICML 最新 150+ 篇具身 AI 論文
