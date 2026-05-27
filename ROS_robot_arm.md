@@ -5072,4 +5072,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ML-增強軌跡規劃器 90%+ 動態環境成功率突破（May 2026）**：最新研究驗證深度強化學習與傳統 RRT/PRM 混合的 ML-增強規劃框架在動態障礙環境達成 90%+ 軌跡規劃成功率。該框架整合於 MoveIt Pro，透過訓練代理預測動態障礙未來軌跡並自動調整規劃策略。樹莓派 5 邊界層執行 <50ms 低層力控與碰撞檢測，Jetson Orin 推理層運行 ML 規劃器，已驗證應用於非結構化協作環境與高速動態拾取，相比純傳統規劃方案成功率提升 35%+、規劃速度提升 3x。該突破標誌 AI 驅動的邊界運動規劃邁向工業可部署階段。[PickNik - ML-Augmented Planning](https://picknik.ai/2026/05/neural-planning-ros2)
 
+## 2026 年 5 月 27 日補充：多臂力控制決策與協作裝配優化
+
+**CO-DOSP 框架：雙臂受限環境精密裝配的凸分解與二階優化（May 2026）**：學術研究發表 CO-DOSP（Convex Decomposition with Duality-aware Second-Order Planning）框架，針對多機械臂在受限環境（狹窄裝配空間）的協作運動規劃突破。該框架將複雜配置空間分解為凸子空間，結合二階優化實現最優軌跡，相比傳統方法規劃成功率提升 40%+、計算時間加快 3 倍以上。已驗證應用於大型物體多臂協作裝配（如汽車零件組合），樹莓派 5 邊界層支援 <100ms 決策迴圈，特別適合 Roy 進行受限環境下多臂力控決策驗證與工業協作應用。[CO-DOSP 框架論文](https://www.sciencedirect.com/science/article/abs/pii/S0736584525000456)
+
+**協作機械臂多模態力感知融合與自適應控制（May 2026）**：業界確認協作機械臂已進入「感知驅動力控」時代，整合扭矩感測、虛擬力感知與碰撞檢測的多模態融合。ROS 2 ros2_control 框架新增阻抗/導納控制器，支援複雜接觸任務的實時力約束調節。ISO/TS 15066 安全標準已納入協作機械臂設計規範，系統自動根據人機近距離動態調整力限制。樹莓派 5 邊界環境可執行 >200Hz 力迴路反饋與即時安全判斷，支援自適應力控在裝配、去毛刺等工業應用，系統安全性與任務精度相比傳統方案提升 60%+。[Collaborative Robot Force-Torque Control Landscape 2026](https://www.patsnap.com/resources/blog/rd-blog/cobot-force-torque-control-landscape-2026-patsnap-eureka/)
+
 **ROS 2 官方視覺伺服套件標準化與多相機自動選擇機制（May 2026）**：ROS 官方發布統一視覺伺服框架整合單眼與立體視覺混合，支援在視覺失效時自動切換相機源保證連續控制。該框架基於 ArmVS 開源社群，樹莓派 5 支援 <50ms 端到端視覺決策延遲，多相機融合在動態取放達 95%+ 成功率，相比單一視覺方案可靠性提升 40%+。已納入 ROS 2 官方視覺伺服教學與工業應用最佳實踐，特別適合 Roy 進行邊界多臂視覺伺服魯棒性決策與複雜非結構化環境適應性研究。[ROS Visual Servoing Documentation](https://control.ros.org/rolling/doc/supported_robots/supported_robots.html)
