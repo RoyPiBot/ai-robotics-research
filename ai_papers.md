@@ -6317,3 +6317,13 @@
 - **產業趨勢** - COMPUTEX 2026 宣告「具身 AI 時代來臨」，重點已從實驗室演示轉向規模化部署。視覺-語言-動作（VLA）與世界模型成為工業自動化、協作機械臂的標配。Mobileye 收購 Mentee Robotics（$9 億），將自駕車 AI 棧融合機械臂決策
 - **安全與信任框架** - SAE World Congress 2026 強調：具身 AI 部署不只是軟體挑戰，更是系統安全問題。涵蓋感測器可靠性、硬體韌性、運作設計邊界（ODD）與網路安全的全棧防護
 - **對邊界機械臂的意義** - 工業界已共識具身 AI 準備度達可部署階段，為 Factory Tour 的商業化與邊界推理優化提供市場確認
+
+#### 841. World Model for Robot Learning: A Comprehensive Survey — 機械臂學習中的世界模型綜述（2026, May）
+- **核心涵蓋** - 綜述論文涵蓋世界模型在機械臂政策學習中的三大能力：前景預測（anticipating future states）、想象驅動規劃（imagination-driven planning with rollouts）與數據擴增（synthesizing trajectories）。統計 ICLR、NeurIPS、ICML 最新 150+ 篇具身 AI 論文
+- **實用啟示** - 世界模型從被動狀態驗證升級為主動行為探索與反事實推理的核心件。邊界部署可透過低解析度world model實現 <100ms預測延遲
+- **對邊界機械臂自適應的意義** - 為 NanoClaw 與多臂集群提供可學習環境動力學框架，支援長地平線預測與預測性決策
+
+#### 842. MemoryVLA 與多模態知識融合 — 感知-認知記憶在機械臂控制的新突破（2026, ICLR）
+- **核心創新** - MemoryVLA 在傳統 VLA 基礎上引入顯式感知記憶（visual memory）與認知記憶（task memory），支援多步驟複雜任務中的上下文保留與動態記憶檢索。在 LIBERO-90 基準上，相比基線提升 28-35% 的成功率，記憶開銷 <50MB
+- **邊界優化** - 記憶模組可量化至 int8，適合 Jetson Orin Nano（8GB）邊界部署。支援異構臂間記憶共享與增量微調
+- **對異構多臂協作的意義** - 多臂可共享任務記憶與環境上下文，加速異構機械臂間的知識遷移與集群自適應
