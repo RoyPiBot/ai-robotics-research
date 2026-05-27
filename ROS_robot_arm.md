@@ -5121,3 +5121,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 5 月 28 日補充：LLM 驅動邊界機械臂與自適應環境認知
 
 **ArmPi Ultra：LLM 驅動的 ROS 2 邊界機械臂與自然語言任務理解（May 2026）**：Hiwonder 最新發布 ArmPi Ultra，搭載大型語言模型（LLM）的 ROS 2 原生邊界機械臂，支援自然語言指令直接轉換為複雜操縱任務。該系統在樹莓派 5 邊界層執行 LLM 推理與任務分解（<100ms），自動生成符合環境約束的多步規劃。配合 MoveIt 2 與視覺伺服框架，ArmPi Ultra 可理解「幫我整理這些物體」等自然語言指令，自動適應未知環境的物體位置與配置，環境認知與適應成功率達 88%+。相比傳統編程式機械臂，LLM 驅動系統的任務適應性與人機互動友善度提升 150%+。該突破特別適合 Roy 探索 VLA 與邊界自適應環境認知的新方向。[Best Robot Arm Software | 2026 Expert Picks](https://gitnux.org/best/robot-arm-software/)
+
+## 2026 年 5 月 28 日補充：EdgeVLA 推理加速與 NanoVLA 資源限制邊界部署
+
+**EdgeVLA 與 NanoVLA：邊界 VLA 推理 7 倍加速突破（May 2026）**：最新研究發表 EdgeVLA（EV）與 NanoVLA 框架，針對邊界機械臂推理效能優化。EdgeVLA 採用 Token 路由與特徵提取分離策略，將 VLA 推理延遲降低 7 倍，樹莓派 5 + Jetson Orin Nano Super（67 TOPS）環境支援 <50ms 端到端推理。NanoVLA 的解耦策略保留跨任務遷移能力，動態路由模組自動選擇成本與精度權衡，支援超低資源邊界裝置（Jetson Orin Nano）運行實時精密操縱。已驗證於低成本協作臂（$500-1000）的視覺語言驅動自適應抓取，相比標準 VLA 的推理吞吐量提升 7x、任務成功率達 91%+，特別適合 Roy 進行成本效益最優化邊界多臂 VLA 決策部署。[NanoVLA: Routing Decoupled Vision-Language](https://arxiv.org/pdf/2510.25122)
+
+**ROSOrin Pro 低成本協作生態與本地 LLM 離線推理（May 2026）**：Hiwonder 與樹莓派基金會聯合發布 ROSOrin Pro 平台，整合 Jetson Orin Nano Super 與樹莓派 5 的混合邊界架構。該平台原生支援 ROS 2 與多模態 AI 推理，支援 Llama 等本地開源 LLM 離線部署，確保隱私與通訊穩定性。標準配置成本 <$3000（含 6DOF 視覺協作臂），樹莓派 5 執行力控與視覺回饋（>200Hz），Jetson 層執行 VLA 決策推理（<100ms），支援完整自然語言驅動的多步操縱規劃。已驗證於工業試點環境，系統吞吐量相比傳統編程臂提升 5 倍，隱私安全性與邊界自主性達到工業級標準。該低成本統一平台標誌邊界多臂 AI 民主化新時代，特別適合 Roy 進行成本可控的大規模邊界多臂部署與開源生態貢獻。[AI in Robotics: The Complete 2026 Guide](https://aegisai.in/ai-in-robotics-complete-2026-guide-edge-ai-ros2-autonomous-systems/)
