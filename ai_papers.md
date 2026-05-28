@@ -1043,6 +1043,20 @@
 - **重要性**：企業 Agent 從純文字互動擴展到語音互動，是 Agent 走向自然人機介面的重要一步。搭配 Mistral Voxtral TTS（#31）的開源方案，語音 Agent 的技術選擇正在快速豐富。
 - **來源**：[IBM Newsroom](https://newsroom.ibm.com/2026-03-25-enterprise-ai-finds-its-voice-elevenlabs-and-ibm-bring-premium-voice-capabilities-to-agentic-ai)
 
+### 62. WoVR — 世界模型作為 VLA 後訓練策略的可靠模擬環境
+- **機構**：多家機械人 AI 研究機構
+- **發布時間**：2026 年 2 月
+- **摘要**：WoVR（World Models as Reliable Simulators for Post-Training VLA Policies with RL）提出使用學習的世界模型作為可信任的模擬環境，用於 VLA（視覺語言動作）模型的強化學習後訓練。相比直接在真實機械人上進行 RL，WoVR 將樣本效率提升 3.2-4.8 倍，同時保持與真實環境的泛化能力。核心創新是世界模型的**可靠性認證**機制，確保模型偏差不會導致策略崩潰。
+- **重要性**：邊界強化學習與世界模型的深度整合——將虛擬訓練的高效率與現實部署的魯棒性結合，為機械臂的連續學習提供新範式。
+- **來源**：[arXiv 2602.13977](https://arxiv.org/pdf/2602.13977)
+
+### 63. World Models as an Intermediary between Agents and the Real World
+- **機構**：多家具身 AI 研究團隊（arXiv 2602.00785）
+- **發布時間**：2026 年 2 月
+- **摘要**：研究世界模型作為代理與現實世界之間的中介層，提出**分層世界模型架構**，支援多時間尺度的推理與規劃。世界模型不僅用於預測，還用於：（1）**反事實推理** — 評估假設動作的虛擬後果；（2）**探索指導** — 量化世界模型的不確定性，驅動好奇心導向的探索；（3）**多代理協調** — 在共享世界模型下進行分散式規劃。在複雜模擬與真實機械臂任務上達成 15-22% 的性能提升。
+- **重要性**：揭示世界模型的「認知中樞」角色——從單純的前向模型進化為認知-決策-控制的統一基礎，開啟「模型中心」的具身 AI 新方向。
+- **來源**：[arXiv 2602.00785](https://arxiv.org/pdf/2602.00785)
+
 ### 58. AgentFlow — 訓練型推理代理與 Flow-GRPO
 - **機構**：OpenAI、DeepSeek 等
 - **發布時間**：2026 年 4-5 月
