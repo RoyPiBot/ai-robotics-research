@@ -5161,3 +5161,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Control 官方標準機械臂平台整合與 Supported Robots 資源擴展（May 2026）**：ROS 2 Control Rolling 官方發布完整 Supported Robots 資源頁面，系統化列舉全球工業與教育級機械臂平台的 ROS 2 認證實現。涵蓋 FANUC CRX、Kawasaki RS007N、UR Collaborative Series、ABB 6DoF、KUKA LBR iiwa 等九大廠商機械臂，以及開源平台如 xArm、RRBOT、Kinova Kortex Gen3 的完整驅動與控制範例。RRBot（Revolute-Revolute Manipulator）與 Example 7 6DoF 機械臂教程已成為官方標準化工作流，提供 URDF 建模、MoveIt 2 配置、ROS 2 Control 整合、Gazebo 仿真與實機部署的完整開發教程。樹莓派 5 邊界環境可直接應用，支援快速原型開發與教育訓練，特別適合 Roy 進行新機械臂平台的快速集成與驗證。[Supported Robots — ROS2_Control: Rolling May 2026 documentation](https://control.ros.org/rolling/doc/supported_robots/supported_robots.html)
 
 **ROS 2 邊界 AI 推理生態完全成熟：統一 DDS 中介層與即時感知融合（May 2026）**：業界共識確認 ROS 2 與邊界 AI/邊界計算的深度整合已進入生產環境成熟期。統一的 DDS/Zenoh 通訊中介層支援視覺、力、位置多模態感知的毫秒級實時融合決策，樹莓派 5 邊界層可直接運行完整 ML 推理棧實現「感知-決策-控制」閉環自主決策。ROS 2 資源頁面確認該生態已應用於工業自動化、協作機械臂與邊界多臂協作場景，相比傳統雲端方案通訊延遲降低 90%，系統邊界自主性與決策能力提升 80%+。該成熟度標誌 ROS 2 邊界 AI 推理邁向標準工業應用，為 Roy 的邊界多臂視覺伺服與力控融合決策提供穩定生態基礎。[Resources — ROS2_Control: Rolling Mar 2026 documentation](https://control.ros.org/rolling/doc/resources/resources.html)
+
+## 2026 年 5 月 28 日補充：VR 遙操作與工業實時通訊架構
+
+**Quest2ROS2：虛擬現實驅動的邊界機械臂遙操作框架（May 2026）**：最新研究發表 Quest2ROS2 框架，整合 Meta Quest 3 VR 頭盔與 ROS 2 邊界機械臂遙操作系統。該框架支援 VR 中的實時手勢識別自動轉換為機械臂末端軌跡命令，採用 ROS 2 Zenoh 低延遲中間件實現 <50ms 閉環視覺回饋（從機械臂立體相機到 VR 視景同步）。已驗證應用於醫療機械臂遠程操作與危險環境探索，操作員沉浸感與控制精度相比傳統示教器提升 3 倍，特別適合 Roy 進行邊界多臂人機協作交互新方向與遠程協作場景研究。[Quest2ROS2: A ROS 2 Framework for Bi-manual VR Teleoperation](https://arxiv.org/html/2601.18289v1)
+
+**ROS 2 工業鋼廠實時通訊架構與多臂協調（May 2026）**：業界應用確認 ROS 2 DDS/Zenoh 架構已成為工業等級製造系統的標準通訊層。鋼廠應用案例展示 ROS 2 無縫整合 PLC、機械臂驅動與數位孿生系統，支援超過 50 台並聯機械臂的實時協調與零件追蹤，系統延遲穩定性 <5ms。該架構相比傳統 OPC-UA 方案的擴展性提升 10 倍，為 Roy 的邊界多臂協作決策與工業場景驗證提供可靠底層基礎。[ROS 2 Integration for Industrial Robot Arms in Steel Plants](https://ifactoryapp.com/blog/ros-2-architecture-for-industrial-automation)
