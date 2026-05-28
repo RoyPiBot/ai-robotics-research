@@ -3998,6 +3998,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Mimic 視頻動作模型：預訓練網際網路尺度視頻模型用於邊界操縱任務（2026 年）**：Mimic Robotics 開發的新一代視頻動作模型，利用預訓練的網際網路尺度視頻模型配合流匹配動作解碼器，相較傳統端到端方法實現 10 倍更高的樣本效率與 2 倍加速的收斂速度。該模型原生支援 ROS 2 多臂協作架構，特別適合 Roy 進行樹莓派 5 邊界推理系統中的少樣本動作學習與快速政策遷移驗證。[Mimic Robotics Video-Action Models](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
 
+## 2026 年 5 月 28 日補充：NERO 機械臂閉型 IK 求解與邊界應用最新進展
+
+**NERO 機械臂 7 自由度閉型逆運動學求解器（2026 年 5 月）**：AgileX Robotics 發佈 NERO Arm 的完整閉型 IK 求解器實現，採用臂角參數化（Arm-Angle Parameterization）與零空間最佳化（Null-Space Optimization），支援 ROS 2 原生整合與關節限制強制執行。該求解器相較傳統數值迭代方法具有確定性計算時間（<5ms）與 100% 解析解覆蓋率，特別適合樹莓派 5 邊界部署中的即時逆運動學計算與實時軌跡追蹤。NERO 系統已驗證多臂協作視覺伺服場景中的精確位姿控制，為 Roy 進行邊界推理架構下的多臂協調運動規劃提供高性能計算基礎。[NERO Arm 7DoF IK Solver Tutorial](https://www.hackster.io/agilexrobotics/how-to-build-a-robot-arm-ik-solver-in-ros2-nero-arm-parame-ab7398)
+
 **HiWonder ArmPi Ultra / JetArm：3D 視覺與多模態 AI 融合機械臂（2026 年）**：HiWonder 推出 ArmPi Ultra 與 JetArm 系列 ROS 2 智慧機械臂，搭載 3D 深度相機、多模態 AI 大型模型與自然語言介面，支援物體辨識追蹤、場景理解與聲控操作。兩款臂均支援 ROS 2 Humble/Jazzy，整合 MoveIt 2 運動規劃與邊界視覺決策層，相容樹莓派 5 與 Jetson Nano 邊界平台。該生態已驗證於 ROS 2 邊界 AI 教育與工業應用，特別適合 Roy 進行多臂協作視覺伺服系統的完整端到端集成與邊界推理驗證。[HiWonder ArmPi Ultra & JetArm](https://www.hiwonder.com/products/armpi-ultra)
 
 ## 2026 年 5 月 6 日補充：MoveIt 2 運動規劃成熟度與 ROS 1 生命週期終止確認
