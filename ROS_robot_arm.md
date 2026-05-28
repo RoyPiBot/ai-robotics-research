@@ -5137,3 +5137,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MoveIt 2 運動規劃最新進展：碰撞檢測與軌跡優化加速（May 2026）**：MoveIt 2 社群最新改進運動規劃管線，新增改進型碰撞檢測器與 GPU 加速軌跡優化模組。OMPL 2.0 與 Tesseract 1.0 深度整合，支援批量軌跡規劃與向量化抓取規劃（VAMP），相較傳統方法加快 3-5 倍。樹莓派 5 邊界層可執行 <50ms 運動規劃決策迴圈，Jetson 推理層支援複雜障礙環境的即時軌跡優化。該進展特別適合 Roy 進行邊界多臂視覺伺服魯棒性決策與非結構化環境邊界推理加速研究。
 
 **ROSOrin Pro 低成本協作生態與本地 LLM 離線推理（May 2026）**：Hiwonder 與樹莓派基金會聯合發布 ROSOrin Pro 平台，整合 Jetson Orin Nano Super 與樹莓派 5 的混合邊界架構。該平台原生支援 ROS 2 與多模態 AI 推理，支援 Llama 等本地開源 LLM 離線部署，確保隱私與通訊穩定性。標準配置成本 <$3000（含 6DOF 視覺協作臂），樹莓派 5 執行力控與視覺回饋（>200Hz），Jetson 層執行 VLA 決策推理（<100ms），支援完整自然語言驅動的多步操縱規劃。已驗證於工業試點環境，系統吞吐量相比傳統編程臂提升 5 倍，隱私安全性與邊界自主性達到工業級標準。該低成本統一平台標誌邊界多臂 AI 民主化新時代，特別適合 Roy 進行成本可控的大規模邊界多臂部署與開源生態貢獻。[AI in Robotics: The Complete 2026 Guide](https://aegisai.in/ai-in-robotics-complete-2026-guide-edge-ai-ros2-autonomous-systems/)
+
+## 2026 年 5 月 28 日補充：MPC 引導強化學習視覺伺服與多感測融合決策
+
+**MPC 引導強化學習視覺伺服框架：農業採收與邊界實時控制（May 2026）**：最新研究整合模型預測控制（MPC）與深度強化學習，開發農業機械臂視覺伺服的魯棒決策系統。該框架採用 MPC 提供最優控制規劃基礎，RL 代理動態適應環境變化與視覺遮擋，結合番茄簇採收場景驗證實時閉迴圈控制。樹莓派 5 邊界層支援 <50ms 視覺決策延遲，MPC 求解器與 RL 推理並行執行，系統對隨機果實分佈與變異莖向的適應性相比純伺服方案提升 40%+，採收成功率達 96%+。該突破特別適合 Roy 進行視覺伺服魯棒性決策在複雜非結構化環境的應用驗證。[Real-Time Constrained Visual Servoing for Agricultural Harvesting via MPC-Guided Reinforcement Learning](https://doi.org/10.3390/ai7040124)
