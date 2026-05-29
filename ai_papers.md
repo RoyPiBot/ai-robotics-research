@@ -975,6 +975,14 @@
   - **AI 臨床試驗工具**：TrialMatchAI 和 AIM-MASH 等工具正在改革患者-試驗配對和終點一致性。
   - 截至 2026 年 3 月，**尚無 AI 發現的藥物獲得 FDA 完全批准**，但多個 Phase III 結果預計年內揭曉。
 - **重要性**：AI 藥物發現正面臨終極考驗——能否打破製藥業約 90% 的臨床失敗率。2026 年的 Phase III 結果將決定 AI 驅動藥物研發是真正的典範轉移還是過度炒作。
+
+### 61. 多代理測試時強化學習用於推理
+- **論文**：Collaborative Multi-Agent Test-Time Reinforcement Learning for Reasoning
+- **發布時間**：2026 年初
+- **arXiv**：2601.09667
+- **摘要**：使用多個 LLM 代理透過測試時強化學習進行協作推理。每個代理透過試錯探索不同推理路徑，在複雜數學、程式碼、邏輯推理等多個任務上顯著提升準確率。相比單一代理，多代理協作系統能自適應調整推理策略，並透過代理間信號傳遞加速收斂。
+- **重要性**：多代理強化學習應用從單純強化轉向推理協作——每個代理各司其職建立互信機制，為具身 AI 與機械臂多代理控制提供可學習的合作框架。
+- **來源**：[Hugging Face Paper](https://huggingface.co/papers/2601.09667)
 - **來源**：[Drug Target Review](https://www.drugtargetreview.com/article/192962/ai-in-drug-discovery-predictions-for-2026/) | [WEF](https://www.weforum.org/stories/2026/01/how-ai-is-reshaping-drug-discovery/) | [AI Magicx](https://www.aimagicx.com/blog/ai-drug-discovery-biotech-revolution-2026)
 
 ## 十、2026 年 5 月中旬補充 — 開源具身基礎模型與邊界推理加速
