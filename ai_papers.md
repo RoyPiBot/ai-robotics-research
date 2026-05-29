@@ -2397,6 +2397,20 @@
 - **技術亮點** - 與 Cosmos Reason 推理引擎配套，實現世界理解與動作預測的聯合優化
 - **應用場景** - 加速機械人在多環境、多任務場景中的學習與泛化能力
 - **對機械手臂的意義** - 支援合成資料驅動的 VLA 預訓練與領域遷移，減少真實資料標註成本
+
+#### 68. CVPR 2026 Embodied AI Workshop — 世界模型與具身智能（Jun 2026, Denver）
+- **會議主題** - World Models for Embodied AI：具身 AI 代理建立與測試世界模型的新範式
+- **核心議題** - 動力學模型整合物理與幾何、經典強化學習與模型預測控制方法的復興、長地平線具身智能與多步任務規劃
+- **研究方向** - 從虛擬環境訓練模型無縫遷移至實機部署，支援安全與可信的機械人操作
+- **對機械手臂的意義** - 世界模型提升邊緣推理效率，支援零樣本環境泛化與即時動作決策
+- **參考** - [Embodied AI Workshop @ CVPR 2026](https://embodied-ai.org/cvpr2026/)
+
+#### 69. IJCAI-ECAI 2026 AI & Robotics 特別軌道 — 視覺-語言-動作融合新方向（May 2026）
+- **會議規模** - IJCAI-ECAI 2026 設置專門的 AI 與機器人聯合軌道，聚焦前沿基礎模型應用
+- **核心投稿方向** - 視覺-語言-動作 VLA 模型、生成式世界模型用於控制與規劃、機械人與環境的交互式學習
+- **跨領域評估** - 強調跨機械人平台泛化、跨環境泛化、跨任務泛化的聯合評估標準
+- **對邊緣推理的啟示** - VLA 模型在本地 Jetson 上實現低延遲推理，支援複雜操作任務的自主決策
+- **參考** - [IJCAI-ECAI 2026 Call for Papers](https://2026.ijcai.org/ijcai-ecai-2026-call-for-papers-ai-and-robotics/)
 - **參考** - [NVIDIA Cosmos @ Research](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
 
 #### 68. LingBot-VLA — Alibaba 開源通用機械人大腦（Mar 2026）
