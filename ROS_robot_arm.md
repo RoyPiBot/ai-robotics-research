@@ -837,6 +837,8 @@ ros2 launch <套件名稱> <launch檔名>
 - [Yahboom DOFBOT](https://category.yahboom.net/products/dofbot-pi)
 - [Arctos Robotics](https://arctosrobotics.com/)
 - [Interbotix 機械手臂文件](https://docs.trossenrobotics.com/interbotix_xsarms_docs/)
+- [reBot Arm B601-DM](https://github.com/Seeed-Projects/reBot-DevArm) — Seeed 開源 6+1 DoF 機械臂，2026 完整 ROS 2 Humble + MoveIt 2 支援，適合具身 AI 與遠端操作應用
+- [ROS 2 機械臂驅動擴展](https://discourse.openrobotics.org/t/nine-more-robot-arms-now-have-ros-2-drivers-including-fanuc-and-kawasaki/50156) — 2026 新增九款 OEM 機械臂（FANUC、Kawasaki 等）的 ROS 2 官方驅動支援
 
 ### 社群與活動
 - [ROS Discourse 論壇](https://discourse.openrobotics.org/)
@@ -853,6 +855,7 @@ ros2 launch <套件名稱> <launch檔名>
 - [Meta-ROS — 下一代中介層，吞吐量比標準 ROS 2 高 30%](https://arxiv.org/html/2601.21011v1)
 - [ROS 2 Kilted Kaiju Release Notes](https://docs.ros.org/en/rolling/Releases/Release-Kilted-Kaiju.html)
 - [ros-realtime Pi 映像](https://github.com/ros-realtime/ros-realtime-rpi4-image) — Pi 3/4/5 預裝 ROS 2 + Linux RT
+- **具身 AI 新浪潮** — ROS 2 與多模態 LLM 整合，賦予機械臂即時推理、任務分解與語義理解能力。推動工業機械手臂從單一工廠自動化向多機隊協調（OpenRMF）與非結構化環境應用擴展
 - **Lyrical Luth ROS 2 新版本**（2026 年 5 月）— 第十二個官方版本，新增插件構造函數支援、改善即時控制能力
 - **Embodied AI 與 LLM 整合** — OpenClaw Agent 框架整合 GPT-4/Llama 3，使 ROS 2 機器人具備環境感知與自主決策能力
 
