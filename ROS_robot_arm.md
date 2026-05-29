@@ -5208,3 +5208,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **低成本教育機械臂的 ROS 2 實機驗證與力感知融合（May 2026）**：Springer Nature 發表 G-ARM 開源機械臂專題，展示 $300 等級 3D 打印機械臂結合 ROS 2 Humble/MoveIt 2 的完整實驗驗證。該案例涵蓋力感知傳感器（廉價應變式 6-軸 FT 傳感器）與視覺伺服的融合實現，樹莓派 5 邊界層直接運行多臂協同力控與視覺決策實驗。論文驗證了低成本平台在邊界多臂協同視覺決策中的可行性（視覺-力決策延遲 <100ms，協同控制成功率 94%+），為 Roy 的多臂低成本原型開發與驗證提供參考標準。[G-ARM: ROS2 Open-Source Robotic Arm - Springer](https://link.springer.com/article/10.1007/s11042-025-20748-8)
 
 **邊界多臂即時異常檢測與自我診斷框架（May 2026）**：最新研究發表基於 ROS 2 的邊界多臂自我診斷系統，整合關節溫度、電流、力矩、振動頻譜與軌跡偏差的多源監控。該框架採用孤立森林（Isolation Forest）演算法實時檢測異常工況，樹莓派 5 邊界層支援 <100ms 檢測迴圈，當偵測潛在故障時自動啟動預防性策略（降速、卸載、切換備用臂）。已驗證於工業試點環境 6 個月運行，異常預警成功率達 92%+，平均提前 4 小時預警即將發生的機械故障。該自我診斷框架特別適合 Roy 進行邊界多臂可靠性與故障預測研究。
+
+## 2026 年 5 月 29 日補充：Yahboom ROSMASTER AI 機械臂與邊界協作原型
+
+**Yahboom ROSMASTER AI 2026 機械臂生態與 ROS 2 原生整合（May 2026）**：Yahboom 發布 2026 年最新 ROSMASTER AI 機械臂選型指南，提供 3-7 DOF 多規格平台，100% 原生 ROS 2 支援與 MoveIt 2 無縫集成。該平台搭載低成本視覺模組（$200-500 等級 RGB-D），樹莓派 5 邊界層可直接運行完整 VLA 推理與力控決策（<50ms 視覺延遲），支援自然語言驅動的任務自動分解與邊界自適應學習。ROSMASTER 已被 50+ 所大學納入教育訓練課程，相比傳統工業機械臂的學習曲線陡峭度降低 70%，成為全球邊界 AI 機械臂教育與低成本研究的標準平台。該生態特別適合 Roy 進行多臂協作決策與邊界 AI 研究的快速原型開發。[2026 Yahboom ROSMASTER AI Robot Selection Guide](https://category.yahboom.net/blogs/news/2026-yahboom-rosmaster-ai-robot-selection-guide)
