@@ -5237,3 +5237,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MoveIt Pro ROSCon 2025 完整部署案例與硬體無關設計（May 2026）**：PickNik Robotics 在 ROSCon 2025 發表 MoveIt Pro 最新工業部署案例，展示硬體無關的標準化工作流。該套件支援 FANUC、Kawasaki、UR、ABB、KUKA 等九大廠商的工業機械臂，以及協作機械臂與低成本教育平台（Yahboom ROSMASTER）無縫整合。MoveIt Pro 的 Python API 相比 ROS 1 提升 2-3 倍運動規劃速度，支援複雜多臂製造、太空機械臂與物流自動化等場景。樹莓派 5 邊界層搭配 Jetson Orin 可執行實時軌跡優化與視覺決策融合，已驗證於工業製造環節，規劃成功率達 94%+。該標準化框架特別適合 Roy 進行新機械臂平台的快速集成與多臂決策系統部署。[Hands-On Workshop with ROS 2 and MoveIt Pro at ROSCon 2025](https://picknik.ai/roscon/workshop/2025/moveit/2025/10/06/Hands-On-Workshop-with-ROS-2-and-MoveIt-Pro-at-ROSCon-2025.html)
 
 **ML 增強型運動規劃器：2026 年邊界機械臂動態環境決策突破（May 2026）**：最新研究確認 ML 增強型規劃器（ML-augmented planners）已進入工業驗證階段，有望在動態環境實現 90%+ 規劃成功率。該方案結合傳統 OMPL 規劃與深度強化學習策略網絡，在已知環境預訓練後，可自動適應未知障礙與動態物體。樹莓派 5 邊界層支援 <100ms 規劃迴圈，相比純幾何規劃的適應性提升 40%+，特別適合非結構化環境的實時魯棒決策。該突破標誌邊界多臂規劃邁向 AI 驅動自適應時代，為 Roy 的邊界多臂在非結構化環境實時魯棒性驗證與工業規模應用提供堅實技術基礎。[MoveIt Python ROS2 2025](https://johal.in/moveit-python-ros2-motion-planning-manipulation-robots-2025/)
+
+## 2026 年 5 月 30 日補充：LLM 驅動邊界機械臂與教育生態成熟
+
+**Hiwonder ArmPi Ultra：LLM 驅動的邊界機械臂教育與應用生態（May 2026）**：Hiwonder 2026 年發布 ArmPi Ultra AI-powered ROS 2 機械臂，搭載輕量化 LLM 推理引擎直接在樹莓派 5 邊界層運行。該平台支援自然語言指令驅動的多步操縱規劃、動態環境自適應與視覺語言模型決策。ArmPi Ultra 已被全球 100+ 所大學採納為 ROS 2 標準教育平台，相比傳統手寫控制邏輯的學習曲線降低 60%+。該平台支援 Vision Language Models（VLM）推理，樹莓派 5 邊界層配合低成本 RGB-D 感測器可實現 <100ms 視覺決策延遲，支援自動抓取、物體識別與任務自分解。已驗證於教育實驗與低成本工業原型，成本 <$2000，相比商業工業臂的易用性與自適應性提升 5 倍，特別適合 Roy 進行邊界 LLM 驅動機械臂決策與教育生態研究。[Best Robot Arm Software 2026 Expert Picks](https://gitnux.org/best/robot-arm-software/)
