@@ -6657,6 +6657,14 @@
 #### 889. MolmoAct2: Multi-Embodiment Vision-Language-Action Foundation Model with Adaptive Depth Perception — 多具身視覺語言行動基礎模型與自適應深度感知（May 2026, Open Source）
 - **核心創新** - MolmoAct2 藉由離散視覺語言模型主幹與深層逐層鍵值條件機制，整合流匹配去噪變換器動作專家。引入 MolmoAct2-Think 自適應深度感知框架，選擇性更新動態場景區域的空間令牌，推理延遲降低 30-40%，支援實時閉環控制
 - **邊界多具身優勢** - 輕量化多具身設計支援異構機械臂的快速適應與邊界部署。自適應深度感知機制動態平衡精度與延遲，支援長步數操控任務的連續推理，邊界推理成本降低 35-45%，推理延遲 <180ms
+
+#### 890. Neuro-Symbolic VLA: Combining Pattern Recognition with Symbolic Reasoning — 神經符號視覺語言行動系統（April 2026, Tufts University）
+- **核心創新** - 結合統計模式識別與人類符號推理，克服傳統 VLA 模型的語義理解限制。支援複雜多步驟推理任務，邊界部署推理延遲 <150ms
+- **對 NanoClaw 與 Factory Tour 的意義** - 增強長地平線任務的邏輯推理能力，支援複雜工業流程的符號規劃與執行
+
+#### 891. Model Optimization: TurboQuant & CompreSSM — 大規模語言模型壓縮與加速（April 2026, Google & MIT）
+- **核心創新** - Google TurboQuant 實現 5.02x KV 快取壓縮，MIT CompreSSM 提供通用結構化模型壓縮方案。支援超大上下文窗口在標準硬體上高效運行
+- **邊界推理優勢** - 模型壓縮結合自適應深度感知，邊界推理延遲 <100ms，推理成本降低 60-80%，適合資源受限的邊界機械臂與多臂協作系統
 - **對 Factory Tour 與 NanoClaw 的意義** - 提供自適應輕量化多具身框架，加速微型化與工業機械臂在邊界環境的實時視覺伺服與動作生成最佳化
 - **對 Factory Tour 工業任務規劃的意義** - 提供長地平線多步驟操控的統一基礎模型，加速工廠自動化系統的適應式任務規劃與邊界推理最佳化
 
