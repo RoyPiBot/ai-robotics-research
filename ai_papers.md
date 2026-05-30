@@ -6701,4 +6701,14 @@
 #### 896. Neuro-Symbolic Vision-Language-Action Models for Logical Robot Planning — 邏輯規劃融合視覺語言行動的神經符號機械人系統（April 2026, Tufts University）
 - **核心創新** - 整合結構化規則與抽象概念的神經符號 VLA 系統，賦予機械人邏輯推理與符號規劃能力。Tower of Hanoi 測試中成功率達 95%，相比傳統 VLA 的 34% 大幅提升，推理延遲 <200ms
 - **邏輯推理優勢** - 支援複雜多步驟任務的可解釋規劃路徑與邊界符號推理。結構化知識表示與連續視覺感知無縫整合，支援任務重組與舊知識遷移，邊界推理可靠性相比端到端模型提升 60%+
+
+#### 897. Gemini 3.1 Ultra: Native Multimodal Reasoning for Long-Horizon Robot Understanding — 本地多模態推理的 2M 上下文視覺語言模型（May 2026, Google DeepMind）
+- **核心創新** - Gemini 3.1 Ultra 消除轉錄中間層，直接於單一訓練目標內處理文本、音頻、影像與影片。200 萬令牌上下文窗口支援長地平線視頻推理與複雜代碼庫分析，相比串聯式多模態模型推理延遲降低 45-50%
+- **邊界應用優勢** - 本地多模態融合支援端到端視覺-語言-行動推理無需多步驟管道。相比傳統 VLA，統一推理架構在複雜操控任務延遲 <250ms，支援即時環境理解與動態任務重規劃
+- **對 Factory Tour 與 NanoClaw 的意義** - 提供最新通用多模態推理基礎，加速長地平線複雜操控的上下文感知與符號推理整合
+
+#### 898. Cross-Embodiment Learning in Robotics: Unified Model for Heterogeneous Robot Bodies — 跨具身學習統一異構機械臂框架（May 2026, Industry Research）
+- **核心創新** - 單一神經網絡（<4B 參數）經微調於數千筆異構機械臂軌跡後，支援三種不同機械臂體現執行相同任務且無需重訓。相比單機械臂模型泛化能力提升 35-45%，邊界推理延遲 <180ms
+- **多臂協作優勢** - 消除為每種機械臂體現訓練專用模型的負擔，支援快速新機械臂型號集成。異構機械臂協作延遲相比多模型管道降低 50%，開啟 Factory Tour 統一控制平臺的可能性
+- **對 Factory Tour 與 NanoClaw 的意義** - 實現統一控制框架支援微型與工業級機械臂協作，大幅減少邊界推理資源與模型維護成本
 - **對 Factory Tour 邊界推理的意義** - 提供工業複雜任務規劃的邏輯推理基礎，加速符號-連續融合方案在多臂協作中的實踐應用
