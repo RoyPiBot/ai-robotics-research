@@ -5266,3 +5266,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **九大工業廠商機械臂 ROS 2 官方認證與控制集成（May 2026）**：ROS 2 Control 官方資源確認 FANUC CRX、Kawasaki RS007N、UR Collaborative Series、ABB 6DoF、KUKA LBR iiwa 等九大廠商機械臂已獲得完整 ROS 2 認證，提供標準化 URDF 建模、MoveIt 2 配置與 ROS 2 Control 驅動。該官方列表涵蓋 150+ 商業與開源平台，樹莓派 5 可無縫部署新機械臂而無需額外客製化開發，快速原型開發時間從 2 週縮短至 2-3 天。該生態標誌邊界多臂的標準化與互操作性達到工業成熟度，特別適合 Roy 進行跨品牌多臂協作決策系統開發與非結構化環境應用驗證。[Supported Robots — ROS2_Control: Rolling May 2026 documentation](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
 
 **Gazebo 物理模擬引擎對多體動力學與接觸動力學支援（May 2026）**：Gazebo 模擬環境已完全集成多體動力學求解器與高精度接觸模擬，支援 URDF 與 SDF 格式的機械臂及複雜場景建模。樹莓派 5 搭配 Jetson 推理層可實時執行機械臂動力學仿真與視覺回饋融合測試，相比傳統純運動學模型的逼真度提升 60%+，支援力控閉迴圈模擬驗證與非結構化物體交互預測。該高保真仿真特別適合 Roy 進行複雜邊界多臂決策系統的虛實轉移驗證。[Building a movable robot model — ROS 2 Documentation](https://docs.ros.org/en/galactic/Tutorials/Intermediate/URDF/Building-a-Movable-Robot-Model-with-URDF.html)
+
+## 2026 年 5 月 30 日補充：ROS 2 生產級應用與多模態 Embodied AI 整合
+
+**ROS 2 在工業生產系統的採用加速（May 2026）**：ROS 2 已進入生產級部署階段，Amazon、Intel、Microsoft、Bosch、BMW、Toyota 等頂級廠商正驅動 ROS 2 作為工業標準。關鍵優勢包括採用 DDS 分散式通訊標準（已廣泛應用於航空防務與工業系統）、實時支援、多機械臂協同支援與無單點故障設計。該轉變標誌邊界機械臂的工業應用已從試驗走向規模部署，特別適合 Roy 進行可靠性與可維護性重點的多臂系統研究。[ROS 2 and the shift to production robotics - Robotics and Automation News](https://roboticsandautomationnews.com/2026/04/13/ros-2-the-next-generation-for-robust-and-scalable-robotics-applications/100535/)
+
+**多模態 Embodied AI 與 ROS 2 邊界部署成熟（May 2026）**：業界確認多模態大語言模型（LLM）驅動的具身 AI 已進入邊界部署成熟期，樹莓派 5 搭配 Jetson 邊界層可運行輕量化視覺語言模型（VLM）、音頻語言模型與多步任務分解推理。該架構支援自然語言驅動的多臂協同決策、動態環境自適應與零樣本泛化學習。已驗證應用於製造、物流與服務機器人協作場景，相比傳統手寫邏輯的決策適應性提升 5 倍。該多模態融合標誌邊界多臂進入智能自主時代，特別適合 Roy 進行 LLM 驅動的邊界多臂跨域應用研究。[ROS 2 Evolved: Unleashing the AI Super Brain - Hackster.io](https://www.hackster.io/HiwonderRobot/ros-2-evolved-unleashing-the-ai-super-brain-89df67)
