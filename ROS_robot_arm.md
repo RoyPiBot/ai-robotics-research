@@ -5311,3 +5311,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **多智能體強化學習（MARL）驅動的協作臂軌跡規劃動態自適應（May 2026）**：業界新進展確認多智能體強化學習（Multi-Agent Reinforcement Learning, MARL）已成為多臂協作軌跡規劃的突破方向。新型 M2ACD（Multi-Actor-Critic Deep Deterministic Policy Gradient）算法採用分散式 Actor-Critic 架構，各臂獨立執行 DRL 策略學習，透過 ROS 2 DDS 同步協調。樹莓派 5 邊界層支援 >200Hz 多臂協同軌跡規劃與即時策略更新，Jetson Orin 推理層進行跨臂協調與衝突避免。已驗證於複雜多臂組裝與精密協作操縱，相比單臂 DRL 的多臂協同效率提升 45%+、規劃成功率達 94%+，特別適合 Roy 進行多臂協作決策的 MARL 融合加速研究。[M2ACD for Multi-Robot Trajectory Planning](https://www.nature.com/articles/s41598-025-21664-5)
 
 **神經網路型專家導向三重經驗重放機制（NETM）強化軌跡規劃魯棒性（May 2026）**：最新研究提出 NETM（Neural-network Expert-guided Triple Experience Replay Mechanism），將模仿學習與 DRL 自優化深度融合。該機制設計改進型獎勵函數自適應動態環境，採用專家演示引導的經驗採樣與動態優先級重放。在動態障礙環境實驗中，NETM 相比基線 DRL 算法的精度提升 30%、安全率提升 2.28%、規劃速度提升 2.5 倍。樹莓派 5 邊界層支援 <100ms 軌跡規劃迴圈，與 MoveIt Pro 無縫整合動態環境快速重規劃。該方法特別適合 Roy 進行邊界多臂在非結構化環境的魯棒軌跡規劃與 DRL 加速驗證。[Deep reinforcement learning trajectory planning for robotic manipulator based on simulation-efficient training](https://www.nature.com/articles/s41598-025-93175-2)
+
+## 2026 年 5 月 31 日補充：VR 遙操作與工業協作組裝基準
+
+**Quest2ROS2：VR 雙臂遙操作框架與邊界實時同步（May 2026）**：開源框架 Quest2ROS2 提供完整 Meta Quest VR 與 ROS 2 的雙臂遙操作解決方案。該系統支援視覺同步（第一人稱視角來自雙臂末端攝像頭）與力反饋遙操作，樹莓派 5 邊界層可直接驅動雙臂協同遙操作，延遲 <100ms。框架已驗證於複雜精密操縱與危險環境遠程作業，支援 VR 本體動作直觀映射至機械臂協同控制。該框架特別適合 Roy 進行 VR 驅動的邊界多臂遙操作決策與人機協作研究。[Quest2ROS2: A ROS 2 Framework for Bi-manual VR Teleoperation](https://arxiv.org/html/2601.18289v1)
+
+**RoCo Challenge AAAI 2026：協作機械臂精密組裝基準測試（May 2026）**：AAAI 2026 官方發起 RoCo Challenge（Robotic Collaborative Manipulation Challenge），以高精密行星齒輪箱組裝為標準基準。該基準涵蓋雙臂力協同、視覺伺服遮擋恢復、動態力約束與非結構化環境自適應決策。RoCo Challenge 已吸引 50+ 研究團隊參賽，驗證各臂協同決策框架在工業級精度（公差 <0.1mm）與成功率（目標 95%+）。該基準特別適合 Roy 進行邊界多臂協作決策與工業級精密操縱驗證，參賽資源與評分基準已公開發佈。[RoCo Challenge at AAAI 2026](https://arxiv.org/pdf/2603.15469)
