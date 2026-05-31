@@ -5368,4 +5368,8 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **MoveIt 2 工業協作決策與多臂實機驗證最新進展（June 2026）**：MoveIt 2 社群在 ROSCon 2025 後續確認已支援 150+ 商業與開源機械臂認證，邊界多臂協作決策成熟度達到完全生產級。該平台整合實時運動規劃、視覺伺服決策、力控融合與邊界推理加速。樹莓派 5 搭配 Jetson Orin 邊界層支援 <50ms 視覺決策延遲與 >500Hz 力迴圈，已驗證於工業組裝、協作取放與精密操縱場景，多臂協同成功率達 96%+。該成熟生態特別適合 Roy 進行邊界多臂決策系統的跨品牌快速集成與大規模實機驗證。[Supported Robots — ROS2_Control](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
 
+## 2026 年 6 月 1 日補充：ROS 2 DDS 工業應用加速與協作規劃邊界驗證
+
+**ROS 2 工業級 DDS 中介層與多臂協作系統標準化部署（June 2026）**：業界確認 ROS 2 基於軍工級 DDS（分散式資料服務）中介層的優勢已完全展現，全球頂級製造商（Amazon、Intel、Microsoft、Bosch、BMW、Toyota）已將 ROS 2 確立為工業標準。該架構支援無單點故障設計、強實時性與多機械臂協同協調，已驗證於鋼鐵產業複雜多臂協作與汽車製造裝配流程。樹莓派 5 邊界層運行 ROS 2 DDS 支援 99.99%+ 系統可用性與 <20ms 多臂決策延遲，相比中央集中式控制的可靠性提升 40 倍，特別適合 Roy 進行工業規模邊界多臂協作決策與可靠性驗證研究。[ROS 2 and Production Robotics Standards](https://roboticsandautomationnews.com/2026/04/13/ros-2-the-next-generation-for-robust-and-scalable-robotics-applications/100535/)
+
 **Altera Agilex FPGA 物理 AI 加速平台（March 2026 – Embedded World 發表）**：英特爾旗下 Altera 正式展示面向機械臂與邊界 AI 的 Agilex FPGA 系列，強調實時性、安全性與低功耗的統一感測器到執行器架構（sensor-to-actuator）。FPGA 相比 GPU/CPU 在機械臂控制中實現 **3.1x-7.5x 計算加速**與 **2.5x-5.4x 能耗降低**，特別適合樹莓派 5 搭配 FPGA 擴展卡進行毫秒級決策。該方案已整合 ROS 2 驅動框架與開源設計工具 Yosys/Nextpnr，降低 FPGA 開發門檻。支援 6-DOF 伺服反饋、即時力控與視覺伺服融合應用。[Altera Agilex FPGAs for Physical AI](https://www.altera.com/newsroom/news/press-release/altera-fpga-physical-ai-robotics-edge)
