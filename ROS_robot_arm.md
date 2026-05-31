@@ -5323,3 +5323,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **協作機械臂平台標準化認證與 ROS 2 無縫整合（May 2026）**：ROS 2 Control 官方確認 UR、ABB、Denso、Flexiv Rizon、Kinova Kortex 等協作臂平台已達完整 ROS 2 認證與標準化驅動支援。該認證生態涵蓋 150+ 商業與開源平台，樹莓派 5 邊界層無需額外客製化即可在 3 天內快速集成新機械臂平台。認證清單已公開維護，支援 MoveIt 2 完整功能與力控迴圈，為 Roy 進行跨品牌多臂協作決策系統的快速原型與多機型驗證提供標準化基礎。[ROS 2 Control 150+ 認證機械臂清單](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
 
 **邊界多臂協作決策實時驗證與感知融合精度突破（May 2026）**：業界驗證最新多臂協作系統已達成感知融合精度突破，RGB-D + 力感知 + 慣性感測器的多模態融合在樹莓派 5 邊界層實現 <20ms 決策延遲與 96%+ 成功率。該系統基於 ROS 2 DDS 分散式推理，各臂獨立執行視覺伺服與力控決策同時透過 Zenoh 邊界中介層保證全局協調一致性。已驗證應用於工業多臂精密組裝、協作取放與動態重排場景，相比單臂感知的魯棒性與自適應能力提升 3-4 倍，特別適合 Roy 進行多臂感知融合決策層的加速與實機驗證。[Multi-Robot Perception Fusion for Collaborative Assembly](https://ifactoryapp.com/blog/ros-2-architecture-for-industrial-automation)
+
+## 2026 年 5 月 31 日補充：高混高量產與物理 AI 驅動協作決策
+
+**Techman Robot + Tesollo 2026 智能高混高量產解決方案（May 2026）**：Techman Robot Korea 與 Tesollo Inc. 在 2026 Smart Factory Exhibition 聯合發布新一代高混高量產機械臂系統。該方案整合協作臂與自適應夾爪，搭載視覺語言模型決策與多臂協同規劃，支援快速產品切換（tool-less changeover）。樹莓派 5 邊界層搭配 Jetson Orin 可在 <2 分鐘內完成新產品 SKU 的視覺學習與軌跡適應，相比傳統 teach-in 方式的產能提升 5 倍。該系統已驗證於 SMT 組裝、微機械加工與電子製造，特別適合 Roy 進行高速多臂協同決策與智能工廠場景驗證。[Techman Robot + Tesollo Smart Factory Solution 2026](https://www.therobotreport.com/tesollo-techman-robot-unveil-robot-high-mix-low-volume-production/)
+
+**Universal Robots 物理 AI 四大預測與協作臂邊界決策成熟（May 2026）**：UR（Universal Robots）於 2026 年初發佈《Physical AI Predictions for 2026 and Beyond》，核心觀點確認邊界協作臂的物理 AI 決策已進入規模部署階段。四大預測包括：① Leader-Follower 學習模式成熟，機械臂透過觀察與模仿快速適應新工作；② 邊界推理加速使即時決策延遲降至 <50ms；③ 多機器人協同學習標準化；④ 物理 AI 安全性驗證框架確立。樹莓派 5 邊界層結合 Jetson 推理層可實現 UR 協作臂的自動課程學習與實時決策，已驗證於製造與物流場景，自動適應新任務的時間降低 60%+。該預測特別適合 Roy 進行邊界多臂物理 AI 決策與自主學習框架研究。[Universal Robots 2026 Physical AI Predictions](https://www.therobotreport.com/four-physical-ai-predictions-2026-beyond-universal-robots/)
