@@ -847,6 +847,12 @@ ros2 launch <套件名稱> <launch檔名>
 - [r/ROS — Reddit](https://www.reddit.com/r/ROS/)
 - [ros2edu.github.io](https://ros2edu.github.io/) — ROS 2 教學方法論社群
 - **iRoboCity2030 Summer School** — 西班牙馬德里，2026/06/22-26（ROS 2 + AI + 田野機器人）
+- **RoCo Challenge at AAAI 2026** — 機械臂協作組裝基準測試，特別針對高精度工業應用（如行星齒輪箱組裝），藉以推進多臂協作決策層與視覺伺服的邊界實現
+
+### ROS 2 Control 硬體抽象層強化（2026）
+- ROS 2 Control 已成為 ROS 2 生態中的核心硬體驅動框架，支援 14+ 工業機械臂廠商的原生驅動
+- 新增 Admittance 接觸控制器，支援複雜工具插入與力道反饋任務
+- 動態型別支援提升 Python 開發效率，特別適合邊緣計算環境的快速整合
 - **ROSCon Global 2026** — 加拿大多倫多 Sheraton Centre，2026/09/22-24（已開放投稿，全程實體）([官網](https://roscon.ros.org/2026/))
 - **ROSCon Espana 2026** — 西班牙瓦倫西亞，2026/10/27-28
 
