@@ -997,6 +997,21 @@
 - **來源**：[Hugging Face Paper](https://huggingface.co/papers/2601.09667)
 - **來源**：[Drug Target Review](https://www.drugtargetreview.com/article/192962/ai-in-drug-discovery-predictions-for-2026/) | [WEF](https://www.weforum.org/stories/2026/01/how-ai-is-reshaping-drug-discovery/) | [AI Magicx](https://www.aimagicx.com/blog/ai-drug-discovery-biotech-revolution-2026)
 
+### 62. GLM-4.5V — 多模態推理與視覺指令執行新標竿
+- **機構**：清華大學 / 智譜 AI
+- **發布時間**：2026 年 5-6 月
+- **摘要**：GLM-4.5V 基於 MoE 混合專家架構，結合 32B 活躍參數與 1,000 萬 token 超長上下文，在 MMMU-Pro、CharXiv 等複雜視覺推理基準上達成 **85%+ 準確率**，超越 Gemini 3 Pro。特別優勢在於**視覺指令執行**與**文件 OCR 精準度**，完整支援中文複雜文檔理解。邊界裝置推理延遲保持 <400ms，成為具身 AI 視覺導航與工業檢測系統首選。
+- **重要性**：多模態推理與指令執行從「理解圖像」進化到「執行視覺指令」——為機械臂視覺導引、複雜文檔自動化、邊界視覺決策系統奠定基礎。
+- **來源**：[SiliconFlow](https://www.siliconflow.com/articles/en/best-multimodal-ai-models) | [AI/ML API Blog](https://aimlapi.com/blog/top-llm-models-in-2026-the-best-ai-models-for-reasoning-coding-multimodal-tasks)
+
+### 63. Google Gemini 3.5 Flash — 視覺推理性能突破與邊界推理加速
+- **機構**：Google DeepMind
+- **發布時間**：2026 年 5 月底至 6 月初
+- **基準成績**：CharXiv Reasoning **84.2%**（相比 Gemini 3.1 Pro 提升），推理速度快 **4 倍**
+- **摘要**：Gemini 3.5 Flash 在多模態理解與推理速度上實現突破性平衡。相比上代 Gemini 3.1 Pro，在複雜圖表推理、文檔理解、科學視覺推理上性能提升明顯，同時端到端推理延遲優化至 <300ms，成為生產環境最快的邊界多模態推理模型。支援文本、圖像、短影片統一處理，尤其在跨模態理解與實時反饋場景中表現卓越。
+- **重要性**：視覺推理邁入「高效時代」——速度 × 精準度的結合使機械臂即時視覺決策、工業邊界 AI 檢測系統、多臂協作視覺導航成為現實而非實驗。
+- **來源**：[SiliconFlow Best Multimodal AI](https://www.siliconflow.com/articles/en/best-multimodal-ai-models)
+
 ## 十、2026 年 5 月中旬補充 — 開源具身基礎模型與邊界推理加速
 
 ### 56. MolmoAct 2 — Allen Institute 開源雙臂操控基礎模型
