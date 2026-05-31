@@ -6785,3 +6785,11 @@
 #### 910. FDSNet: Dynamic Multimodal Fusion Stage Selection via Feature Disagreement Scoring — 邊界感知融合的動態多模態選擇機制（2026, arXiv）
 - **核心創新** - 提出特徵一致性評分機制動態選擇多模態融合階段，消除固定融合架構的效率損耗。支援 LiDAR+RGB+Thermal 異構感測器自適應融合，邊界推理延遲 <120ms，推理成本相比固定融合降低 35-45%
 - **邊界動態感知優勢** - 根據環境條件動態調整融合策略，支援無人機-機械臂異構協作的實時感知同步，為 Factory Tour 與 NanoClaw 協作系統的動態感知融合奠基
+
+#### 911. Real-Time Decentralized Model Predictive Control for Cooperative Multi-Robot Object Transport — 多臂協作運輸的分散式即時預測控制（May 2026, Scientific Reports）
+- **核心創新** - 提出事件觸發通訊策略實現分散式 MPC，各機械臂自主計算本地控制動作同時維持協調。支援異構多臂系統的實時協調運輸，通訊頻寬相比集中式降低 60%，協調延遲 <150ms，複雜物體運輸任務成功率達 96.2%
+- **多臂協作優勢** - 消除單點故障與全局決策的計算瓶頸，支援動態隊伍重組與在線故障恢復。事件驅動協調機制適應複雜環境變化與負載不平衡，為工業多臂協作奠基可擴展基礎
+
+#### 912. Kinematically Synchronous Real-Time Planning for Cooperative Multi-Arm Manipulation — 多臂同步即時規劃與協調控制（May 2026, arXiv）
+- **核心創新** - 整合逆運動學求解與自碰撞迴避的中央協調器，支援異構多臂對的實時同步規劃。自適應取樣動態平衡協調精度與執行效率，複雜多臂裝配任務推理延遲 <180ms，規劃成功率達 93.8%
+- **異構協作優勢** - 統一框架支援不同自由度與驅動特性的機械臂快速集成，協調延遲相比分解式方案降低 45%，適合 Factory Tour 中工業機械臂與 NanoClaw 微型臂的混合部署
