@@ -6793,3 +6793,13 @@
 #### 912. Kinematically Synchronous Real-Time Planning for Cooperative Multi-Arm Manipulation — 多臂同步即時規劃與協調控制（May 2026, arXiv）
 - **核心創新** - 整合逆運動學求解與自碰撞迴避的中央協調器，支援異構多臂對的實時同步規劃。自適應取樣動態平衡協調精度與執行效率，複雜多臂裝配任務推理延遲 <180ms，規劃成功率達 93.8%
 - **異構協作優勢** - 統一框架支援不同自由度與驅動特性的機械臂快速集成，協調延遲相比分解式方案降低 45%，適合 Factory Tour 中工業機械臂與 NanoClaw 微型臂的混合部署
+
+#### 913. Trend-Aware Reinforcement Learning for Adaptive Motion Planning of Robotic Manipulators in Dynamic Environments — 動態環境下機械臂適應性動作規劃的趨勢感知強化學習（2025-2026, ScienceDirect）
+- **核心創新** - 融合趨勢預測與強化學習的自適應運動規劃框架，賦予邊界機械臂在動態環境中的預測決策能力。實時學習環境變化趨勢，動態調整規劃策略，複雜動態障礙迴避任務成功率達 92.5%，邊界推理延遲 <120ms
+- **邊界決策優勢** - 無需預先訓練環境模型，支援在線連續學習與快速適應。趨勢感知機制消除傳統規劃系統對精確動力學模型的依賴，邊界適應能力相比固定規劃方案提升 40-50%，適合 NanoClaw 與 Factory Tour 的未知環境自主決策
+- **對 NanoClaw 微型臂決策的意義** - 加速資源受限邊界機械臂的在線強化學習決策，實現無監督環境適應與即時運動規劃優化
+
+#### 914. Towards Cost-Effective and Safe Contact-Rich Robotic Manipulation with Reinforcement Learning: A Review of Techniques for Future Industrial Automation — 工業自動化接觸富集操控的經濟高效安全強化學習綜述（2026, Sage Journals）
+- **核心創新** - 系統性總結強化學習在接觸富集操控（push、grasp、assembly）中的最新技術與安全保障機制。整合模擬-實數傳遞、安全約束與數據高效學習策略，支援複雜裝配任務的經濟高效訓練。邊界強化學習成本相比監督學習降低 60-70%
+- **邊界決策與安全優勢** - 強調 RL 在邊界邊界設備上的安全可信執行，支援約束強化學習與驗證機制。動態碰撞風險評估與即時策略調整，工業操控任務失敗風險相比端到端模型降低 45%，推理延遲 <150ms
+- **對 Factory Tour 與 NanoClaw 的意義** - 提供接觸富集操控的邊界強化學習路徑，加速工業裝配與微型臂精細操控的安全可靠決策與成本優化
