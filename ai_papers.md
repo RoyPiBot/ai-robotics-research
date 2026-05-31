@@ -6755,4 +6755,12 @@
 #### 904. LiteVLA-H: Dual-Rate Vision-Language-Action Inference for Onboard Aerial Guidance — 雙率視覺語言行動推理的空中邊界導航（May 2026, arXiv:2605.00884）
 - **核心創新** - 緊湊 256M 參數多模態骨幹與邊界導向推理堆棧，支援無人機實時視覺伺服與語言指令執行。雙率推理機制動態平衡感知精度與動作生成延遲，邊界推理延遲 <120ms，功耗 <5W
 - **輕量化多模態優勢** - 證明超小型參數 VLA（<3B）在即時控制的可行性，支援動態量化與漸進式載入。相比完整 VLA 推理成本降低 70%+，適合資源極受限的邊界設備（IoT、無人機、微型機械臂）
+
+#### 905. XR-1: Unified Vision-Motion Codes for Vision-Language-Action Modeling — 統一視覺動作編碼的多機械臂 VLA（ICLR 2026 Submission）
+- **核心創新** - 提出統一視覺動作碼（UVMC）作為離散潛在表示，同時編碼視覺動力學與機械人動作。採用雙分支 VQ-VAE 共享碼本的架構，支援人類與機械人示演的共同預訓練，相比 Groot-N.1.5 與 Pi0 在真實世界操控任務成功率提升 15-25%
+- **多具身優勢** - 統一離散表示消除不同機械臂體現間的知識轉移障礙，支援跨形態少樣本微調與零樣本泛化。邊界推理延遲 <180ms，推理成本降低 40%+
+
+#### 906. VLM4VLA: Evaluating Vision-Language Models as Backbones for Vision-Language-Action Tasks — VLA 骨幹 VLM 選擇的綜合評估（ICLR 2026 Submission）
+- **核心創新** - 系統性比較數十個 VLM 作為 VLA 骨幹的性能，發現下游 VLA 任務性能與 VLM 在標準基準上的性能無相關性。首次揭示高效 VLA 開發的骨幹選擇法則，指導輕量化 VLA 架構設計
+- **對邊界 VLA 優化的意義** - 打破「更大 VLM=更好 VLA」的迷思，驗證緊湊 VLM 配合任務特化微調可達成最優邊界效率。推理成本相比盲目大型 VLM 堆疊降低 50-70%，為 NanoClaw 與 Factory Tour 的輕量化 VLA 選型提供學術指導
 - **對 NanoClaw 微型機械臂的意義** - 提供超輕量化 VLA 框架，加速微型機械臂與無人機協作系統的邊界本地推理最佳化
