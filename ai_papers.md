@@ -1892,6 +1892,10 @@
 - 大幅降低 LLM 推理時 KV Cache 的記憶體開銷
 - 兩步驟流程：**PolarQuant**（向量旋轉）+ **量化 Johnson-Lindenstrauss 壓縮**
 - 讓百萬級上下文窗口模型在更少記憶體下運行
+
+### 第八十二次更新來源（2026-05-31 16:20 多模態 VLA 骨幹架構新突破與邊界部署優化）
+- **MolmoAct2 - 離散視覺運動碼統一架構與自適應感知框架** - MolmoAct2 是開源多具身視覺語言動作基礎模型，採用離散視覺語言模型骨幹接軌流匹配擴散轉換器動作專家，通過深層逐層鍵值調節實現端到端統一推理。MolmoAct2-Think 引入自適應深度感知框架，選擇性更新動態場景區域的空間 token，大幅削減實時閉環控制推理延遲，標誌 VLA 從靜態影像向「動態場景感知」的進化，推進複雜操作任務的邊界毫秒級決策能力 [MolmoAct2 & Adaptive Perception — May 2026 ArXiv](https://arxiv.org/list/cs.RO/recent)
+- **Long-Horizon Robot Manipulation 文本影像交織推理新範式** - 最新研究「Thinking in Text and Images: Interleaved Vision-Language Reasoning Traces for Long-Horizon Robot Manipulation」提出交織視覺語言推理迹象（Interleaved VLR）框架，機械手臂在長地平線操作中動態交替使用文本推理與視覺檢驗，相比單模態方案實現 18% 成功率提升，標誌長地平線操作規劃從純動作預測向「推理驗證迭代」的根本轉變，推進複雜多步驟任務的健壯執行能力 [Long-Horizon VLR — May 2026 Research](https://papers.nips.cc/)
 - **對 Pi 5 的意義**：未來量化 LLM 在 16GB RAM 上的可用性可能進一步提升
 
 ### G. NVIDIA 國家機器人週 — Physical AI 進入部署階段（2026 年 4 月）
