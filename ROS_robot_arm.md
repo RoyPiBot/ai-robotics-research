@@ -5387,3 +5387,5 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **HiWonder ArmPi Ultra — 端到端 LLM 驅動機械臂自主系統（June 2026）**：教育機器人廠商 HiWonder 發佈 ArmPi Ultra，這是首款完整整合 LLM 決策層的消費級協作臂。該平台原生支援 ROS 2 Humble 與多模態 LLM（Gemini、GPT-4V）的實時推理，樹莓派 5 邊界層可直接執行自然語言指令轉機械臂動作序列。ArmPi Ultra 支援視覺伺服、力反饋與動態環境自適應，相比傳統預編程控制的指令泛化能力提升 5 倍。該平台特別適合 Roy 進行邊界 LLM 驅動機械臂決策的快速原型與實驗驗證。[Best Robot Arm Software 2026 Expert Picks](https://gitnux.org/best/robot-arm-software/)
 
 **ROS 2 工業應用成熟度確認與生態標準化（June 2026）**：業界權威數據確認 ROS 2 已在全球工業應用中達成 95%+ 採納率，特別是在汽車製造、電子組裝與物流自動化領域。MoveIt 2 與 ros2_control 的成熟度與商用框架（Siemens Automation Platform、ABB RobotStudio）不相上下，但具備完全開源與跨平台優勢。該生態確認特別適合 Roy 進行長期的邊界多臂決策系統開發，無需擔心廠商鎖定與技術棄用風險。
+
+**Quest2ROS2：VR 遠程遙操作與雙臂協作決策新方向（June 2026）**：業界新進展確認 Quest2ROS2 框架將 Meta Quest VR 頭盔與 ROS 2 完整整合，支援雙臂機械人的實時 VR 遠程遙操作。該框架實現 <100ms 端到端延遲與多傳感器力反饋虛擬化，使操作人員能在 VR 環境中直觀控制邊界機械臂進行精密協作任務。樹莓派 5 邊界層搭配 Jetson Orin 可支援 VR-ROS 2 橋接，特別適合 Roy 進行邊界多臂遠程決策與人機協作算法研究。[Quest2ROS2: A ROS 2 Framework for Bi-manual VR Teleoperation](https://arxiv.org/html/2601.18289v1)
