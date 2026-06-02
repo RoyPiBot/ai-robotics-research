@@ -5413,3 +5413,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **LanderPi：多模態 LLM + 3D 視覺 + ROS 2 融合架構（2026）**：HiWonder 推出的 LanderPi 平台完整融合多模態大型語言模型、立體視覺感知與 ROS 2 邊界控制框架。該平台支援自然語言指令驅動的複雜視覺推理與動態場景理解，通過 3D 點雲融合進行精密物體操縱與協作決策。樹莓派 5 邊界層可直接運行視覺語言模型推理，支援邊界 LLM 加速與本地隱私保護。已驗證於多臂協作組裝、動態環境導航與自適應物體分類，相比純視覺伺服的任務泛化能力提升 4 倍，特別適合 Roy 進行邊界 LLM 驅動具身 AI 與多臂整合研究。[Embodied AI with LanderPi](https://www.hackster.io/HiwonderRobot/embodied-ai-with-landerpi-fusing-llms-ros-2-and-3d-vision-1f744b)
 **LanderPi：整合 LLM、ROS 2 與 3D 視覺的具身 AI 機械臂平台（June 2026）**：新興開源項目 LanderPi 完整展示了 Large Language Models（LLM）與 ROS 2 協作機械臂的深度融合。該平台採用多模態 LLM 實現視覺場景理解與任務語義解析，樹莓派 5 邊界層負責高速視覺伺服與力控決策，Jetson Orin 推理層執行 LLM 推理與動態軌跡重規劃。LanderPi 支援自然語言驅動的動態抓握調整（adaptive grasp adjustment），根據物體的物理狀態即時優化夾爪與軌跡，突破傳統剛性預編程控制的侷限。已驗證於複雜物體操縱與工業協作場景，語言指令理解準確率 92%+，相比傳統預編程控制的任務泛化能力提升 3 倍。該整合特別適合 Roy 進行邊界 LLM 驅動機械臂決策與具身 AI 應用研究。[Embodied AI with LanderPi: Fusing LLMs, ROS 2, and 3D Vision](https://www.hackster.io/HiwonderRobot/embodied-ai-with-landerpi-fusing-llms-ros-2-and-3d-vision-1f744b)
+
+## 2026 年 6 月 2 日補充：開源仿真環境比較與邊界推理框架成熟
+
+**Webots 與 Ignition 仿真保真度對比確認（June 2026）**：業界最新研究系統比較主流開源仿真環境在 ROS 2 機械臂協作任務中的保真度。Webots 仿真環境在複雜物體操縱任務達成 88% 成功率，具備最優的物理引擎簡化效率與運算速度；Ignition（已更名 Gazebo）高保真動力學達成 91% 成功率，接觸力反饋逼真度最佳。該對比驗證樹莓派 5 搭配 Jetson 邊界層推薦在 Webots 進行快速算法迭代，於 Gazebo Harmonic 進行最終的高保真虛實轉移驗證，相比單環境開發可縮短開發週期 40%+。特別適合 Roy 進行邊界多臂決策的雙環境混合驗證與工業應用快速迭代。[Best Open-Source Robotics Platforms for Developers in 2026](https://entrepreneurloop.com/top-open-source-robotics-platforms-2026/)
