@@ -2097,6 +2097,18 @@
 - **創新設計** - 整合觸覺感知至 VLA 框架，支援按鈕推動、轉旋鈕、插入插頭等精密操作任務
 - **學習機制** - 在實際部署中從人類反饋在線學習，實現持續改進
 - **多感官整合** - 融合視覺、語言與觸覺信號，提升機械手臂在物理交互中的魯棒性
+
+#### 16. NVIDIA Cosmos 3 — 統一世界基礎模型（2026 年 5 月 COMPUTEX 發表）
+- **核心創新** - 首個統一合成世界生成、視覺推理與動作模擬的世界基礎模型
+- **技術基礎** - 基於影片、機器人資料與模擬環境訓練，支援多任務推理與泛化
+- **機械手臂應用** - 加速 ROS 手臂從視覺輸入到動作執行的推理，實現複雜環境下的自主決策
+- **參考**：[NVIDIA Cosmos — CEO 發表](https://www.nvidia.com/en-us/ai/cosmos/) / [NVIDIA National Robotics Week 2026](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
+
+#### 17. Genesis AI GENE-26.5 — 人類級物理操作機器人大腦（2026 年 5 月）
+- **突破意義** - 首款賦予機器人人類級別物理操作能力的 AI 大腦
+- **應用範圍** - 精密裝配、複雜把控、多物體協作操作
+- **異構協作潛力** - GENE-26.5 統一多臂系統控制框架的重要基礎，支援異構機械手聯動操作
+- **參考**：[Genesis AI GENE-26.5 發佈](https://www.prnewswire.com/news-releases/genesis-ai-unveils-gene-26-5--the-first-ai-brain-to-enable-robots-with-human-level-physical-manipulation-capabilities-302763638.html)
 - **對 ROS 手臂的意義** - 為複雜精密操作（組裝、修復）提供全感官指導策略
 - **參考** - [Microsoft Rho-Alpha 公告](https://theaiinsider.tech/2026/01/22/microsoft-announces-robotics-model-rho-alpha-built-on-companys-vision-language-models/)
 
