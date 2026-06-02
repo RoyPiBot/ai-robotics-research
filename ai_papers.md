@@ -1,6 +1,6 @@
 # 2026 年最新 AI 研究動態
 
-> 更新日期：2026-05-30（第九十四次更新）
+> 更新日期：2026-06-02（第九十五次更新）
 > 整理者：Roy 的 AI 研究助理
 
 ---
@@ -996,6 +996,20 @@
 - **重要性**：多代理強化學習應用從單純強化轉向推理協作——每個代理各司其職建立互信機制，為具身 AI 與機械臂多代理控制提供可學習的合作框架。
 - **來源**：[Hugging Face Paper](https://huggingface.co/papers/2601.09667)
 - **來源**：[Drug Target Review](https://www.drugtargetreview.com/article/192962/ai-in-drug-discovery-predictions-for-2026/) | [WEF](https://www.weforum.org/stories/2026/01/how-ai-is-reshaping-drug-discovery/) | [AI Magicx](https://www.aimagicx.com/blog/ai-drug-discovery-biotech-revolution-2026)
+
+### 62. Physical Intelligence π0.5 — 亞毫米級精度與在線強化學習突破
+- **機構**：Physical Intelligence
+- **發布時間**：2026 年 6 月初
+- **摘要**：Physical Intelligence 的 π0.5 模型實現了業界首次亞毫米級精度的 VLA 系統，突破了過往視覺語言行動模型的空間精度瓶頸。透過在線強化學習（Online RL）技術，模型能自我改進與實時適應，在精細操作任務（如微電子組裝、精密切割）中達到工業級可靠性。支援多臂協作與異構機械體泛化，為製造業與實驗室自動化應用奠定基礎。
+- **重要性**：VLA 模型從感知層面躍升至工業級精密控制，亞毫米級精度標誌著具身 AI 邁向高端製造應用的里程碑，在線學習能力使機械臂能持續自我優化而無需重新訓練。
+
+### 63. Google DeepMind GR00T N2 — World Action Model 新架構
+- **機構**：Google DeepMind
+- **發布時間**：2026 年 5 月–6 月
+- **摘要**：Google 推出 GR00T N2 版本，採用革命性「World Action Model」架構，從根本上改變了 VLA 的推理方式。新架構將世界狀態建模與動作選擇解耦，使模型能更好地理解環境動態與因果關係。在新任務與新環境適應測試中，成功率相比傳統 VLA 提升 **2 倍以上**，顯著降低了新場景部署的數據需求。支援跨機械體泛化與動態物體操作。
+- **重要性**：VLA 架構創新進入新範式——World Action Model 的出現標誌著從行為克隆向真正的世界模型的轉變，為異構多臂協作系統的統一控制框架提供新方向。
+
+> **更新日期**：2026-06-02（第九十五次更新）
 
 ### 62. XR-1 — 視覺-運動統一離散編碼突破
 - **會議**：ICLR 2026 投稿
