@@ -997,6 +997,20 @@
 - **來源**：[Hugging Face Paper](https://huggingface.co/papers/2601.09667)
 - **來源**：[Drug Target Review](https://www.drugtargetreview.com/article/192962/ai-in-drug-discovery-predictions-for-2026/) | [WEF](https://www.weforum.org/stories/2026/01/how-ai-is-reshaping-drug-discovery/) | [AI Magicx](https://www.aimagicx.com/blog/ai-drug-discovery-biotech-revolution-2026)
 
+### 62. Vision-Language-Action (VLA) 模型 — 2026 年具身 AI 的統一架構
+- **機構**：OpenAI、Google DeepMind、NVIDIA、Meta 等
+- **發布時間**：2026 年（綜合進展）
+- **摘要**：VLA 模型已成為 2026 年機械人 AI 的主流架構，取代傳統感知-規劃-控制管線。端到端神經網路直接處理相機影像、關節位置與自然語言指令，生成物理動作序列。Embedded Vision Summit 2026 確認 VLA 從實驗概念躍升為工程團隊主動實裝的核心技術。核心進展包括：**XR-1**（統一視覺-運動碼本 UVMC）、**VLM4VLA**（VLM 骨幹選擇最佳實踐）、**Cosmos Policy**（NVIDIA 影片基礎模型微調）等突破。
+- **重要性**：統一架構簡化具身 AI 開發流程，加速多臂協調、視覺導航、自主駕駛等應用的工業級部署。
+- **來源**：[Vision-Language-Action Models for Robotics 2026](https://www.indexbox.io/blog/vision-language-action-models-the-key-ai-architecture-for-robotics-in-2026/)
+
+### 63. NVIDIA Isaac GR00T — 開源自然語言機械臂控制模型族
+- **機構**：NVIDIA
+- **發布時間**：2026 年
+- **摘要**：NVIDIA 推出 Isaac GR00T 開源模型族，賦能機械臂理解自然語言指令並執行複雜多步任務。模型採用視覺-語言-動作統一架構，支援任務規劃、視覺反饋與實時適應。特別適合零售自動化、製造業碼垛、物流分揀等場景。與業界 VLA 基準相容，降低開源社群採用前沿具身 AI 技術的門檻。
+- **重要性**：NVIDIA 開放企業級 VLA 模型為開源生態，推動機械臂 AI 民主化，加速工業機械人智慧化落地。
+- **來源**：[NVIDIA Blog - National Robotics Week 2026](https://blogs.nvidia.com/blog/national-robotics-week-2026/)
+
 ### 62. Physical Intelligence π0.5 — 亞毫米級精度與在線強化學習突破
 - **機構**：Physical Intelligence
 - **發布時間**：2026 年 6 月初
