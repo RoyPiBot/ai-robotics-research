@@ -3098,6 +3098,14 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **多智能體強化學習與視覺伺服協調的邊界推理**：將多智能體深度強化學習（MARL）與 ROS 2 Zenoh 結合，實現多臂精密操作系統的分散式自主決策。每支機械臂上搭載輕量化 Actor-Critic 網絡（<100MB），在邊界設備（Jetson Orin NX）獨立執行視覺伺服策略，同時透過 Zenoh 共享目標檢測結果與衝突預測。該分散式方法相較集中式規劃支援無延遲邊界決策（<20ms），已驗證於工廠揀配、雙臂精密組裝與無人農業採摘應用，為 Roy 的多臂協作提供完整的邊界-視覺-學習統一框架。
 
+### OpenClaw ROSOrin Pro 具身 AI 多通道機械臂控制平台（2026 年 6 月新進展）
+
+**OpenClaw Agent Framework 與 ROSOrin Pro 邊界具身 AI 統一標準**：Hiwonder 與 OpenClaw 聯盟發佈的 ROSOrin Pro 平台整合 ROS 2 標準控制框架與邊界具身 AI 推理，搭載 NVIDIA Jetson Orin Nano/Orin NX，原生支援 6-DOF 協作臂與多智能體決策。該平台透過 OpenClaw Agent Framework 提供標準化的機械臂感知-決策-控制介面，支援自然語言指令驅動的任務規劃（LLM+視覺編碼），多臂間透過 ROS 2 Zenoh 即時共享環境狀態與衝突迴避決策。相比傳統的單機械臂系統，ROSOrin Pro 支援跨平台多通道消息傳遞與協作臂決策評估，已驗證於工廠自動化與研究機構的具身 AI 學習場景。[Embodied AI on ROS 2: The OpenClaw & ROSOrin Pro Guide - Hackster.io](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
+
+### Hugging Face LeRobot 與 reBot Arm 開源機械臂深度學習支援（2026 年 6 月進展）
+
+**reBot Arm B601-DM 完整整合 Hugging Face LeRobot 視覺操作框架**：Seeed Studio 正加速 reBot Arm 與 Hugging Face LeRobot 開源學習框架的整合，透過標準化的 ROS 2 介面與完整的資料集合發佈流程，使低成本開源機械臂可直接訓練視覺驅動的操作策略（Imitation Learning/Reinforcement Learning 雙軌）。LeRobot 對 reBot Arm 的原生支援預期 2026 年底完成，屆時研究機構與教育機構可快速使用公開的人類示範資料集進行微調，加速邊界機械臂從監督學習到自主決策的轉變。該整合代表開源機械臂生態邁向「硬體開放 + 演算法共享」的新時代，為 Roy 的多臂學習提供標準化訓練框架。
+
 ### 具身 AI 平台 LanderPi — ROS 2 與多模式 LLM 融合（2026 年 4 月）
 
 **LanderPi 融合 LLM、ROS 2 與 3D 視覺的具身 AI 架構**：Hiwonder 於 2026 年 4 月發表 LanderPi 具身 AI 平台，原生整合多模式大語言模型（Vision-Language-Action）、ROS 2 Humble、3D TOF LiDAR 與深度相機。該平台搭載 Jetson Orin Nano/NX，支援即時場景理解、自然語言任務分解與多臂協作規劃。相較傳統預編程機械臂，LanderPi 通過多模式推理實現「語言驅動的機械臂自主操縱」，單個 LLM 推理週期 <500ms，視覺伺服迴圈維持 >60Hz。該平台標誌著 ROS 2 邊界機械臂進入「自然語言界面」時代，適合複雜現場工況、倉儲揀配與人機協作場景。[Embodied AI with LanderPi: Fusing LLMs, ROS 2, and 3D Vision](https://www.hackster.io/HiwonderRobot/embodied-ai-with-landerpi-fusing-llms-ros-2-and-3d-vision-1f744b)
