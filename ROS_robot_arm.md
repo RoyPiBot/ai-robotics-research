@@ -5532,3 +5532,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **LeRobot 與 reBot Arm B601-DM 官方完整支援認證（June 2026）**：Hugging Face LeRobot 正式完成 reBot Arm B601-DM 的官方驅動與完整策略支援。該認證涵蓋 6-DOF 關節空間控制、視覺伺服與力反饋集成，樹莓派 5 邊界層可直接運行 LeRobot 的 22 個預訓練多任務策略。reBot Arm 在開源社群貢獻度排名躍升至第四，已成為 Physical Intelligence 研究的標準平台，相比早期版本的軟體生態完整度提升 8 倍。該官方支援特別適合 Roy 進行 reBot Arm 的端到端 Physical Intelligence 應用開發與邊界多臂決策驗證。
 
 **Eclipse Zenoh 1.9.0 「Longwang」發布與 ROS 2 RMW 整合（June 2026）**：Eclipse 開源基金會發布 Zenoh 1.9.0 長期支援版本，引入原生 ROS 2 RMW Zenoh 驅動與雲邊協作最佳化。該版本在 Wi-Fi 與 4G 網路環境下的通訊延遲相比同期方案降低 35-45%，特別針對分散式多臂系統進行了邊界-邊界與邊界-雲端通訊最佳化。樹莓派 5 搭配 Jetson Orin 的邊界層現可通過 Zenoh 實現跨地域多臂協作，機械臂軌跡誤差漂移最小化，支援毫秒級決策同步與故障自癒。該整合特別適合 Roy 進行分散式機械臂系統的邊界通訊優化與工業級網路可靠性驗證。[Eclipse Zenoh 1.9.0](https://zenoh.io/)
+
+## 2026 年 6 月 4 日補充：ROS 2 Control 資源與開源 6-DOF 臂完整支援
+
+**ROS 2 Control Framework 6-DOF 完整範例與樹莓派整合（June 2026）**：ROS 官方 Documentation 更新至 May 2026，發布完整的 6-DOF 機械臂 ROS 2 Control 示例（Example 7）與軟體堆疊。該範例涵蓋關節軌跡控制、力反饋迴圈與視覺伺服完整集成，樹莓派 5 邊界層可直接運行標準化硬體抽象層無需修改驅動。ROS 2 Control 與 MoveIt 2 的整合已達生產級成熟度，支援 150+ 商業與開源機械臂平台無縫互換，實現工業級異品牌多臂協同系統快速原型。[ROS 2 Control Example 7 Documentation](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
