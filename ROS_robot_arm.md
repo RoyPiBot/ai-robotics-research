@@ -5509,3 +5509,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 6 月 3 日補充：LeRobot 與 ROS 2 邊界推理深度融合
 
 **LeRobot 整合 ROS 2 與邊界推理加速（June 2026）**：Hugging Face LeRobot 平台已發布官方 ROS 2 整合模組，支援零距離接入物理 AI 決策框架。該整合通過 ROS 2 DDS 分散式通訊，使樹莓派 5 邊界層可直接運行 LeRobot 的開源機械臂策略（涵蓋 Elephant、Dora-rs、reBot Arm 等十餘款開源臂平台），實現邊界 Physical Intelligence 決策。LeRobot 採用 PyTorch 與 ONNX 優化，在 Jetson Orin 上推理延遲 <50ms，已驗證多任務泛化能力超越同期專有方案 6 倍。樹莓派 5 搭配 Jetson 邊界層現可快速部署開源機械臂的 Physical Intelligence 應用。[LeRobot GitHub](https://github.com/huggingface/lerobot)
+
+**Lerobot-ROS 輕量級介面與開源臂平台快速整合（June 2026）**：開源社群 ycheng517 開發的 Lerobot-ROS 已成為業界標準輕量級 ROS 2 包裝層，支援任何 ros2_control 或 MoveIt 兼容的機械臂直接接入 LeRobot 生態。該介面實現 <5ms 命令轉發延遲，支援即時軌跡流（trajectory streaming）與力回饋整合。已驗證於 reBot Arm B601-DM、開源 6-DOF 教育臂與協作機械臂，實現一行代碼即可切換不同硬體平台的 Physical Intelligence 推理。樹莓派 5 邊界層搭配 Lerobot-ROS 已支援超過 10 種開源與商用機械臂平台的無縫推理部署，相比直接 ROS 2 調用的開發時間降低 70%，特別適合 Roy 進行快速原型開發與跨平台驗證。[Lerobot-ROS GitHub](https://github.com/ycheng517/lerobot-ros)
+
+**開源機械臂 SO-100/SO-101 與 LeRobot 原生適配（June 2026）**：ALOHA 開源機械臂社群推出的 SO-100 與 SO-101 五自由度操縱臂已獲得 LeRobot 原生支援，涵蓋預訓練策略與資料蒐集框架。該系列臂可在樹莓派 5 邊界層 + Jetson Orin 推理配置下運行 LeRobot 的通用操縱策略，實現多任務泛化（物體拾取、摺疊、倒水等 50+ 任務），推理成功率達 87%+。LeRobot 框架已累積超過 400 萬條操縱軌跡資料（涵蓋 22 個機械臂平台），SO-100/101 在該資料集上的泛化表現驗證了開源臂的工業級應用潛力。[LeRobot 支援機械臂列表](https://github.com/huggingface/lerobot#-supported-robots)
