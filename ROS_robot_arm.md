@@ -3648,6 +3648,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **模仿學習強化視覺伺服神經網絡泛化能力**：最新研究將視覺伺服 DNN 與模仿學習（Imitation Learning）整合，透過專家示範軌跡訓練神經網絡策略，實現機械臂在複雜非結構化環境中的自主抓取與協作操縱。該方案於複雜光照與遮擋場景下達成 92-96% 成功率，相較傳統特徵提取方法降低訓練成本 65%。結合 SEBVS 框架的事件驅動視覺，毫秒級反應時間支援高速動態應用。[SEBVS: Synthetic Event-based Visual Servoing for Robot Navigation and Manipulation](https://arxiv.org/html/2508.17643)
 
+### 運動規劃與數位雙生整合生態（2026 年 6 月新進展）
+
+**MoveIt 2 與 Gazebo Harmonic 深度整合**：最新 2026 年生態調查顯示，ROS 2 運動規劃已完全成熟。MoveIt 2 提供完整的軌跡規劃、碰撞檢測與抓取管道，與 Gazebo Harmonic 數位模擬環境無縫協作，支援虛實映射與自動化測試流程。NEMA17 步進馬達透過 ros2_control 的 joint_trajectory_controller 可直接整合至機械臂系統，無需額外驅動開發，特別適合低成本邊界部署與樹莓派多臂系統。[ROS 2 Control 資源列表](https://control.ros.org/humble/doc/resources/resources.html)
+
+**硬體整合標準化方案**：ROS 2 Humble（April 2026）確認了 ros2_control 作為硬體抽象層的穩定性，支援 14 家工業機械臂廠商的原生驅動。機械臂與移動基座的統一控制框架消除了多臂協作的驅動複雜度，使 Roy 的樹莓派邊界多臂系統可透過模組化設定檔無縫整合異構硬體。[支援機械臂列表](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+
 ### 多機器人協作 SLAM 與邊界強化學習深化（2026 年 4 月 30 日）
 
 **Learning-Based Multi-Robot Active SLAM 市場應用擴展**：2025-2026 年發表的多機器人主動 SLAM 框架整合學習型規劃與分散式因子圖估計。該方案支援多臂移動基座隊伍在未知環境中自主協作導航、動態目標追蹤與視覺伺服操縱，無中央伺服器設計降低通訊延遲至 <300ms。市場預測協作機械臂市場 2025 年達 USD 1.8B，2026 年擴增至 USD 2.3B（CAGR 22.8%），驗證此技術的工業應用價值。[Learning-Based Multi-Robot Active SLAM](https://www.mdpi.com/2076-3417/16/3/1412) | [Collaborative Mobile-Manipulator Robots Market 2026](https://www.futuremarketinsights.com/reports/collaborative-mobile-manipulator-robots-market)
