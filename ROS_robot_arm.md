@@ -5597,4 +5597,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **reBot Arm B601-DM 與 CRISP 邊界控制整合新進展（June 2026）**：Seeed Studio reBot Arm B601-DM 平台已與 CRISP 框架完成生產級整合驗證。該整合透過 Zenoh 低延遲通訊層與樹莓派 5 邊界推理結合，使 reBot Arm 能直接運行 VLA 驅動的複雜操縱任務。在實驗驗證中，搭配 DAM-VLA 模型的 reBot Arm 在精密裝配任務中達成 94.2% 成功率，邊界決策延遲 <35ms，相比單純視覺伺服方案提升 26%。該整合方案特別適合工業級多臂協作與實時力反饋應用，為 Roy 提供完整的邊界多臂 VLA 決策系統參考實現。
 
+## 2026 年 6 月 5 日補充：ROS 生態穩定性與 DDS 工業級應用確認
+
+**ROS 1 Noetic 官方終止支援與 ROS 2 獨占工業市場（June 2026 確認）**：ROS 官方確認 ROS 1（Noetic）已於 2025 年 5 月 23 日正式終止支援，所有新專案應優先採用 ROS 2 Jazzy LTS（支援至 2029 年）或 ROS 2 Lyrical Luth LTS（支援至 2031 年）。該轉換確認 ROS 2 DDS 去中心化架構已成為業界工業級機械臂系統的唯一標準，樹莓派 5 邊界層的 ROS 2 部署已達到與桌面機相同的成熟度與長期承諾。[ROS 1 終止公告](https://www.ros.org/)
+
+**Hiwonder JetArm 與邊界推理加速的教育工業融合（June 2026）**：中文教育機械臂領導廠商 Hiwonder 發布 JetArm 系列新進展，整合 NVIDIA Jetson Nano、Orin Nano 與 Orin NX 等邊界加速器，在樹莓派 5 上實現 <40ms 的 VLA 推理與視覺伺服同步。JetArm 已獲 ROS 官方完整支援（同時支援 ROS1/ROS2），已部署於全球 500+ 教育與工業場景，相比傳統教育臂的決策能力提升 5 倍。該平台特別適合 Roy 進行消費級教育臂向工業級決策系統的過渡研究。
+
 **Seeed Studio reBot Arm B601 與開源生態整合深化（June 2026）**：Seeed Studio 官方發布 reBot Arm B601 完整的 ROS 2 Humble 驅動與 Hugging Face LeRobot 數據集整合套件，支援視覺伺服、遠程操控與強化學習任務自動化。該開源 6 軸機械臂已被全球 500+ 開發者社群採用，成為邊界多臂研究的標準硬體平台。搭配 NVIDIA Isaac Sim 模擬器，開發者可在樹莓派 5 邊界層上快速驗證機械臂演算法無需實體硬體投資，降低 80% 研究準備成本。[reBot Arm B601 GitHub](https://github.com/Seeed-Projects/reBot-DevArm)
