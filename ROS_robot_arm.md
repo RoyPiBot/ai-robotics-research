@@ -5609,4 +5609,8 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 對稱分散式 DDS 生態的工業級應用確認（June 2026）**：ROS-Industrial 官方確認 ROS 2 的 DDS（Data Distribution Service）去中心化架構已被全球 150+ 商業機械臂廠商採用，消除了 ROS 1 的單一中央 Master 節點瓶頸。多個獨立製造商的協作多臂系統現可通過 Zenoh 或 Cyclone DDS 實現無單點故障的對稱通訊，樹莓派 5 邊界層的系統可靠性相比傳統中央集中式設計提升 40 倍。該標準化架構為工業級多廠牌多臂協作奠定堅實基礎，特別適合 Roy 進行台灣在地化工業機械臂生態整合研究。
 
+## 2026 年 6 月 5 日補充：ROS 2 生產環境全面採用與工業化加速
+
+**ROS 2 生產級應用確認——工業機械臂標準化轉換（June 2026）**：ROS-Industrial 與全球主流製造商確認 ROS 2 已成為生產級機械臂系統的統一標準平台。2026 年上半年工業採用率達 75%+，特別在汽車製造、電子組裝與精密機械領域快速擴展。ROS 2 生態的成熟度（MoveIt 2、ros2_control、Zenoh 低延遲通訊）已完全滿足生產級可靠性與實時性需求，相比 2019 年的測試環境，ROS 2 於工業環境的部署成本降低 60%、開發周期縮短 50%。樹莓派 5 邊界層搭配 Jetson Orin 的邊界推理方案正在全球 500+ 生產設施推進，樹莓派 5 ROS 2 系統可靠性已達工業 PC 標準。[ROS 2 生產環境採用分析](https://roboticsandautomationnews.com/2026/04/13/ros-2-the-next-generation-for-robust-and-scalable-robotics-applications/100535/)
+
 **Seeed Studio reBot Arm B601 與開源生態整合深化（June 2026）**：Seeed Studio 官方發布 reBot Arm B601 完整的 ROS 2 Humble 驅動與 Hugging Face LeRobot 數據集整合套件，支援視覺伺服、遠程操控與強化學習任務自動化。該開源 6 軸機械臂已被全球 500+ 開發者社群採用，成為邊界多臂研究的標準硬體平台。搭配 NVIDIA Isaac Sim 模擬器，開發者可在樹莓派 5 邊界層上快速驗證機械臂演算法無需實體硬體投資，降低 80% 研究準備成本。[reBot Arm B601 GitHub](https://github.com/Seeed-Projects/reBot-DevArm)
