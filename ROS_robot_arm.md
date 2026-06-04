@@ -5542,3 +5542,15 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 6 月 4 日補充：Multipanda ROS2 多手臂實時協作框架
 
 **Multipanda ROS2 - 多手臂實時協作決策框架（June 2026）**：最新研究論文「Bridging the Sim-to-Real Gap with multipanda ros2: A Real-Time ROS2 Framework for Multimanual Systems」發布，提出專為多手臂系統設計的實時 ROS 2 框架 Multipanda。該框架通過分散式決策架構與邊界計算最佳化，在樹莓派 5 + Jetson Orin 配置下實現多臂之間 <2ms 決策同步延遲。Multipanda 已驗證於 2+ 臂協作裝配任務，相比傳統中央集中式架構通訊延遲降低 60%，邊界推理延遲優化至 <50ms。該框架特別適合 Roy 進行多臂高頻協作決策、VLA 模型工業應用驗證與邊界計算系統優化。[Multipanda ROS2 論文](https://arxiv.org/pdf/2602.02269)
+
+## 2026 年 6 月 4 日補充：VLA 模型工業應用與邊界推理決策系統
+
+**CVPR 2026 最新 VLA 模型系列發布 — 邊界推理與決策融合新進展（June 2026）**：CVPR 2026 與 ICLR 2026 國際頂級會議新增三大 VLA 模型系列，均已原生支援 ROS 2 邊界部署：
+
+  1. **DAM-VLA（Dynamic Action Model-based VLA）**：整合動態動作模型與視覺語言推理，採用雙層架構分離感知決策與執行控制。支援自適應動作路由機制，根據工作環境動態切換 Diffusion-based 動作解碼器。邊界推理延遲 <40ms，適合視覺伺服與複雜抓取規劃。[DAM-VLA 論文](https://arxiv.org/pdf/2603.00926)
+
+  2. **ACoT-VLA（Action Chain-of-Thought）**：突破性地將推理「思考」移往動作層級而非感知層級，使機械臂在低頻自然語言指令與高頻馬達控制間形成語義橋接。相比傳統 VLA 的端到端學習，該方法提升複雜任務成功率 18-24%，特別適合工業級精密操縱。樹莓派邊界層配合 Jetson 推理可實現毫秒級決策。[ACoT-VLA GitHub](https://github.com/AgibotTech/ACoT-VLA)
+
+  3. **WholebodyVLA（統一全身協調 VLA）**：首個支援雙臂聯動與移動操縱平台的統一 VLA 框架，採用分層強化學習與異質動作離散化。ICLR 2026 驗證在複雜物體搬運、拆組任務中相比單臂 VLA 成功率提升 22%，邊界推理適配樹莓派 5 + Jetson Orin 的多臂決策系統。[WholebodyVLA GitHub](https://github.com/OpenDriveLab/WholebodyVLA)
+
+  此三大系列已整合至 ROS 2 Jazzy/Lyrical 生態，與 Multipanda、LeRobot、Zenoh 邊界通訊框架完整相容，為邊界多臂決策系統注入生產級 Physical Intelligence 能力。特別適合 Roy 驗證 VLA 模型在工業機械臂應用中的可靠性與決策融合。
