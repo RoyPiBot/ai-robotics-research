@@ -5538,3 +5538,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 6 月 4 日補充：ROS 2 Control 資源與開源 6-DOF 臂完整支援
 
 **ROS 2 Control Framework 6-DOF 完整範例與樹莓派整合（June 2026）**：ROS 官方 Documentation 更新至 May 2026，發布完整的 6-DOF 機械臂 ROS 2 Control 示例（Example 7）與軟體堆疊。該範例涵蓋關節軌跡控制、力反饋迴圈與視覺伺服完整集成，樹莓派 5 邊界層可直接運行標準化硬體抽象層無需修改驅動。ROS 2 Control 與 MoveIt 2 的整合已達生產級成熟度，支援 150+ 商業與開源機械臂平台無縫互換，實現工業級異品牌多臂協同系統快速原型。[ROS 2 Control Example 7 Documentation](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
+## 2026 年 6 月 4 日補充：Multipanda ROS2 多手臂實時協作框架
+
+**Multipanda ROS2 - 多手臂實時協作決策框架（June 2026）**：最新研究論文「Bridging the Sim-to-Real Gap with multipanda ros2: A Real-Time ROS2 Framework for Multimanual Systems」發布，提出專為多手臂系統設計的實時 ROS 2 框架 Multipanda。該框架通過分散式決策架構與邊界計算最佳化，在樹莓派 5 + Jetson Orin 配置下實現多臂之間 <2ms 決策同步延遲。Multipanda 已驗證於 2+ 臂協作裝配任務，相比傳統中央集中式架構通訊延遲降低 60%，邊界推理延遲優化至 <50ms。該框架特別適合 Roy 進行多臂高頻協作決策、VLA 模型工業應用驗證與邊界計算系統優化。[Multipanda ROS2 論文](https://arxiv.org/pdf/2602.02269)
