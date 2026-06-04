@@ -4877,6 +4877,14 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **NVIDIA Isaac ROS cuMotion GPU 加速規劃與邊界推理融合（May 2026）**：NVIDIA 發布 Isaac ROS cuMotion 軟體棧，整合 CUDA 加速的碰撞檢測與軌跡最佳化於 ROS 2 MoveIt 2 框架。該方案相比傳統 CPU 規劃延遲降低 70%+，複雜多臂協作規劃時間從 2-3 秒縮短至 200-300ms。重點突破：cuMotion 生成的軌跡時間最優（trajectory-optimal）並自動避免工作空間奇異點，特別適合邊界環境動態場景。樹莓派 5 外接 NVIDIA Jetson Orin 邊界推理卡支援完整 GPU 加速規劃棧，推理延遲 <100ms，相比純 CPU 邊界推理性能突破 5-8 倍，特別適合 Roy 進行邊界多臂 GPU 加速決策層與視覺伺服力控融合驗證。[NVIDIA Isaac ROS cuMotion GitHub](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_cumotion)
 
+## 2026 年 6 月補充：開源人形臂、邊界 VLA 優化與 WebXR 遠程操控
+
+**OpenArm — 完全開源人形機械臂與 VLA 標準化研究平台（June 2026）**：新發布的 OpenArm 專案提供 7-DOF 人形機械臂（成本 $6,500 USD），專為物理 AI 與接觸豐富任務設計。完全開源設計支援遠程操作、模仿學習與仿真訓練，核心創新為「OpenArm Cell」— 標準化研究環境，打破不同機械臂平台間的 VLA 訓練碎片化。該平台已吸引全球研究機構進行跨平台 VLA 模型評估與轉移學習，相比廠商專有平台降低研究部署成本 80%+。樹莓派多臂協作架構可直接整合 OpenArm，進行邊界 VLA 決策驗證。[openarm.dev](https://openarm.dev)
+
+**AURA-Mem — 邊界設備 VLA 記憶體優化與樹莓派部署突破（June 2026）**：最新研究解決邊界機械臂部署的 VLA 記憶體瓶頸，採用「常數大小循環記憶體」技術大幅降低 VRAM 需求。該技術使 VLA 模型能在樹莓派等資源受限設備上直接執行，推理延遲 <200ms，打破「VLA 必須雲端推理」的傳統認知。相比純雲端推理延遲提升 60%+，特別適合 Roy 進行邊界多臂自主 VLA 決策層與低成本部署驗證。
+
+**SpesRobotics Teleop — WebXR 多模態遠程操作框架（Updated June 2026）**：支援手機/VR 頭盔透過 WebXR API 控制機械臂，原生 ROS 2 整合（發佈目標幀、訂閱姿態數據），內建 Pinocchio 正逆運動學與伺服控制。237+ 星標開源專案，Apache 2.0 授權，相容任意 ROS 2 機械臂平台，特別適合遠程協作與危險環境操作驗證。
+
 ## 2026 年 5 月 21 日補充：RoCo Challenge 2026 與 Isaac ROS 4.0 工業協作突破
 
 **RoCo Challenge 2026 @AAAI：協作操縱組裝基準任務（May 2026）**：AAAI 2026 大會發布 RoCo Challenge（Robotic Collaborative manipulation），聚焦高精度行星齒輪箱組裝作為代表性工業操作任務。該挑戰賽驗證 ROS 2 多機械臂無中心協作、MoveIt 2 動態規劃、力控反饋與視覺伺服的完整融合能力。頂尖機器人實驗室已確認採用 ROS 2 生態方案，提升 ROS 在工業協作操縱的標準化地位。
