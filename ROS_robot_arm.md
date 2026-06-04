@@ -5554,3 +5554,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
   3. **WholebodyVLA（統一全身協調 VLA）**：首個支援雙臂聯動與移動操縱平台的統一 VLA 框架，採用分層強化學習與異質動作離散化。ICLR 2026 驗證在複雜物體搬運、拆組任務中相比單臂 VLA 成功率提升 22%，邊界推理適配樹莓派 5 + Jetson Orin 的多臂決策系統。[WholebodyVLA GitHub](https://github.com/OpenDriveLab/WholebodyVLA)
 
   此三大系列已整合至 ROS 2 Jazzy/Lyrical 生態，與 Multipanda、LeRobot、Zenoh 邊界通訊框架完整相容，為邊界多臂決策系統注入生產級 Physical Intelligence 能力。特別適合 Roy 驗證 VLA 模型在工業機械臂應用中的可靠性與決策融合。
+
+## 2026 年 6 月 4 日補充：Kilted Kaiju Release 與 Scan-N-Plan 鋼鐵應用
+
+**ROS 2 Kilted Kaiju 發布 — Zenoh Tier 1 RMW 與改進型 RCLPy（June 2026）**：ROS 2 最新主線版本 Kilted Kaiju 正式發布，將 Zenoh 提升至 Tier 1 Reference Middleware，與 Fast DDS、Cyclone DDS 並列為生產級通訊中介層。新版本包含改進型 RCLPy 與高效能事件執行器，在樹莓派 5 邊界層上的推理吞吐量提升 25%。PickNik Robotics 同步發布 MoveIt Pro 新功能，整合 VLA 決策與視覺伺服加速器，特別適合 Roy 驗證邊界多臂的實時決策與生產級可靠性。[ROS 2 Kilted Kaiju Release](https://docs.ros.org/)
+
+**Scan-N-Plan 與鋼鐵製造 Robotic Blending 工業驗證（June 2026）**：ROS-Industrial 與美國鋼鐵基金會合作完成 Robotic Blending Milestone 5，基於 Scan-N-Plan 實時掃描軌跡規劃技術在高溫鋼廠環境（>1500°C）驗證多臂協作。該應用取代傳統手動示教編程，通過 3D 掃描感知直接生成機械臂軌跡，消除離線模擬與實際環境的差異。樹莓派 5 邊界層結合 Jetson 推理現可直接運行鋼鐵製造級別的 Scan-N-Plan 決策系統，為工業鑄造自動化提供開源解決方案。[ROS-Industrial 新聞](https://rosindustrial.org/news)
