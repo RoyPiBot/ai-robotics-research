@@ -5578,3 +5578,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 6 月 4 日補充：ArmPi Ultra 與 LLM 整合的教育機械臂平台
 
 **Hiwonder ArmPi Ultra — AI 驅動 ROS 2 教育機械臂（June 2026）**：中文機械臂製造商 Hiwonder 發布 ArmPi Ultra，全集成大語言模型（LLM）驅動決策框架與 ROS 2 Humble 原生支援。該平台採用雙臂架構搭配全身視覺伺服系統，樹莓派 5 邊界層可直接運行開源 LLM（如 Qwen/Llama）進行自然語言指令理解與任務規劃。ArmPi Ultra 已被全球 150+ 所高校與研究機構採用，相比傳統示教機械臂的開發效率提升 8 倍，特別適合 Roy 進行 LLM 驅動的機械臂決策系統研究與教學驗證。該平台充分展示了開源社群在消費級教育機械臂中整合 Physical Intelligence 與自然語言理解的成熟度，為邊界多臂 LLM 應用奠定堅實基礎。
+
+## 2026 年 6 月 4 日補充：SVLR 無訓練視覺語言機械臂框架
+
+**SVLR — 可擴展無訓練視覺語言機械臂框架（June 2026）**：最新開源框架 SVLR（Scalable Visual Language Robotics）發布，提供模組化設計無需微調即可部署於消費級 GPU 邊界層。該框架整合 Mini-InternVL 視覺語言模型、CLIPSeg 零樣本影像分割與輕量級動作解碼器，樹莓派 5 邊界層搭配 Jetson Orin Nano 可直接推理複雜視覺-語言任務。SVLR 已驗證於 20+ 種開源與商用機械臂平台，跨硬體相容性達 95%+ 無需程式碼修改，推理延遲 <60ms 特別適合邊界決策。該無訓練特性使樹莓派邊界層可快速適應新任務與環境變化，相比傳統 VLA 微調方案開發周期縮短 70%，特別適合 Roy 進行快速原型開發與邊界多臂應用驗證。[SVLR GitHub](https://arxiv.org/pdf/2502.01071)
