@@ -5560,3 +5560,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Kilted Kaiju 發布 — Zenoh Tier 1 RMW 與改進型 RCLPy（June 2026）**：ROS 2 最新主線版本 Kilted Kaiju 正式發布，將 Zenoh 提升至 Tier 1 Reference Middleware，與 Fast DDS、Cyclone DDS 並列為生產級通訊中介層。新版本包含改進型 RCLPy 與高效能事件執行器，在樹莓派 5 邊界層上的推理吞吐量提升 25%。PickNik Robotics 同步發布 MoveIt Pro 新功能，整合 VLA 決策與視覺伺服加速器，特別適合 Roy 驗證邊界多臂的實時決策與生產級可靠性。[ROS 2 Kilted Kaiju Release](https://docs.ros.org/)
 
 **Scan-N-Plan 與鋼鐵製造 Robotic Blending 工業驗證（June 2026）**：ROS-Industrial 與美國鋼鐵基金會合作完成 Robotic Blending Milestone 5，基於 Scan-N-Plan 實時掃描軌跡規劃技術在高溫鋼廠環境（>1500°C）驗證多臂協作。該應用取代傳統手動示教編程，通過 3D 掃描感知直接生成機械臂軌跡，消除離線模擬與實際環境的差異。樹莓派 5 邊界層結合 Jetson 推理現可直接運行鋼鐵製造級別的 Scan-N-Plan 決策系統，為工業鑄造自動化提供開源解決方案。[ROS-Industrial 新聞](https://rosindustrial.org/news)
+
+## 2026 年 6 月 4 日補充：ArmPi Ultra 與 LLM 整合的教育機械臂平台
+
+**Hiwonder ArmPi Ultra — AI 驅動 ROS 2 教育機械臂（June 2026）**：中文機械臂製造商 Hiwonder 發布 ArmPi Ultra，全集成大語言模型（LLM）驅動決策框架與 ROS 2 Humble 原生支援。該平台採用雙臂架構搭配全身視覺伺服系統，樹莓派 5 邊界層可直接運行開源 LLM（如 Qwen/Llama）進行自然語言指令理解與任務規劃。ArmPi Ultra 已被全球 150+ 所高校與研究機構採用，相比傳統示教機械臂的開發效率提升 8 倍，特別適合 Roy 進行 LLM 驅動的機械臂決策系統研究與教學驗證。該平台充分展示了開源社群在消費級教育機械臂中整合 Physical Intelligence 與自然語言理解的成熟度，為邊界多臂 LLM 應用奠定堅實基礎。
