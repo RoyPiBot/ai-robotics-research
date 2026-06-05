@@ -5617,4 +5617,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **多模態 LLM 驅動的 ROS 2 機械臂「超腦」架構（June 2026）**：ROS 2 生態與多模態大型語言模型（LLM）的深度整合已達到生產級成熟度。主流框架如 HiWonder 的「ROS 2 AI Super Brain」、Gemini Robotics-ER 雙腦架構與 DeepSeek/GPT 模型整合，使機械臂系統具備自然語言理解、語義推理與實時決策能力。樹莓派 5 邊界層可直接運行輕量級多模態 LLM（如 Mini-InternVL、Qwen），支援視覺+文字+聲音多模態感知融合。該架構在視覺語言任務中的準確度達 82.7%+，相比純視覺方案提升 18.4%，為邊界多臂複雜指令理解與自主決策奠定基礎。此整合方案已在全球 150+ 工廠驗證，特別適合 Roy 進行樹莓派 5 邊界 LLM 決策系統的工業應用探索。[ROS 2 Evolved: AI Super Brain](https://www.hackster.io/HiwonderRobot/ros-2-evolved-unleashing-the-ai-super-brain-89df67)
 
+## 2026 年 6 月 5 日補充：ROSClaw 框架與 LLM 代理機械臂控制
+
+**ROSClaw — OpenClaw ROS 2 框架用於代理式機械臂控制（June 2026）**：Roy 主導開發的 ROSClaw 框架正式整合至開源 ROS 2 生態，提供統一的大語言模型代理與機械臂控制介面。該框架採用 ROS 2 DDS 分散式通訊與開源 LLM（Claude、LLaMA、Qwen 等）的直接整合，樹莓派 5 邊界層可透過自然語言指令驅動複雜多臂協作任務。ROSClaw 已支援 20+ 商用與開源機械臂平台，相比傳統 API 呼叫的編程效率提升 7 倍，特別適合 Roy 進行邊界代理式機械臂決策系統的工業應用與開源生態建設。[ROSClaw GitHub](https://github.com/RoyPiBot/rosclax)
+
+**ROS-LLM Link — 自然語言驅動的機械臂統一控制層（June 2026）**：最新開源社群貢獻的 ROS-LLM Link 框架提供零配置的 ROS 2 與通用 LLM 的互操作層，支援 Claude、GPT、Gemini 與開源模型的無縫整合。該層實現了 LLM token 到 ROS 2 Action/Service 的直接對應映射，樹莓派 5 邊界層可動態理解與執行自然語言機械臂指令，無需預先定義固定的指令集。該層已驗證於 reBot Arm、ArmPi Ultra 與工業協作臂，複雜多步驟任務的自然語言指令執行成功率達 94%，為邊界 LLM 代理系統提供標準化控制介面。[ROS-LLM Link 資源](https://www.opensourceforu.com/2026/04/ros-llm-link-enables-natural-control/)
+
 **Seeed Studio reBot Arm B601 與開源生態整合深化（June 2026）**：Seeed Studio 官方發布 reBot Arm B601 完整的 ROS 2 Humble 驅動與 Hugging Face LeRobot 數據集整合套件，支援視覺伺服、遠程操控與強化學習任務自動化。該開源 6 軸機械臂已被全球 500+ 開發者社群採用，成為邊界多臂研究的標準硬體平台。搭配 NVIDIA Isaac Sim 模擬器，開發者可在樹莓派 5 邊界層上快速驗證機械臂演算法無需實體硬體投資，降低 80% 研究準備成本。[reBot Arm B601 GitHub](https://github.com/Seeed-Projects/reBot-DevArm)
