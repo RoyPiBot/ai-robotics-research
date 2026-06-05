@@ -5630,3 +5630,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Steel Plant Robotic Blending 工業應用與 ROS 2 標準化（June 2026）**：ROS-Industrial 與全球鋼鐵製造聯盟確認基於 ROS 2 與 MoveIt 2 的機械臂系統已在超高溫環境（≥1500°C）實現生產級可靠性。該應用通過 Scan-N-Plan 實時軌跡規劃與多臂協作，結合 VLA 邊界推理模型進行環境自適應決策，消除離線編程與實際環境的差異。該系統在全球 15+ 鋼廠部署，已成為工業製造自動化的標準參考實現。[ROS 2 Industrial Application Reference](https://ifactoryapp.com/blog/ros-2-architecture-for-industrial-automation)
 
 **Seeed Studio reBot Arm B601 與開源生態整合深化（June 2026）**：Seeed Studio 官方發布 reBot Arm B601 完整的 ROS 2 Humble 驅動與 Hugging Face LeRobot 數據集整合套件，支援視覺伺服、遠程操控與強化學習任務自動化。該開源 6 軸機械臂已被全球 500+ 開發者社群採用，成為邊界多臂研究的標準硬體平台。搭配 NVIDIA Isaac Sim 模擬器，開發者可在樹莓派 5 邊界層上快速驗證機械臂演算法無需實體硬體投資，降低 80% 研究準備成本。[reBot Arm B601 GitHub](https://github.com/Seeed-Projects/reBot-DevArm)
+
+## 2026 年 6 月 5 日補充：ROS 2 Lyrical Luth LTS 與多臂協作框架快速演進
+
+**ROS 2 Lyrical Luth LTS 長期支援版本發佈（May 2026）**：ROS 2 第 12 個發佈版本 Lyrical Luth 已於 5 月正式發佈，成為新的長期支援版本（LTS），支援至 2031 年 5 月。核心亮點包括：(1) EventsCBGExecutor 事件隊列執行器，CPU 使用率降低 10-15%；(2) rclpy 原生非同步整合，AsyncNode 直接支援 asyncio；(3) rosidl::Buffer GPU 無複製資料轉移，對深度學習與電腦視覺管線提升顯著；(4) rosbag2 自動 bag 檔案管理與訊息遺失統計。該版本為樹莓派 5 邊界推理多臂系統提供更穩定的長期支援基礎。
+
+**多機械臂協作框架技術加速（2026 上半年）**：工業機械臂市場規模從 2025 年的 USD 18.49 億成長至 2035 年預估 USD 45.41 億（年均 9.4% 成長）。44% 新型機械臂配備 AI 控制器，37% 有數位孿生技術，29% 整合高階感測器。CO-DOSP 層級化最佳化框架已驗證於多臂系統，規劃成功率提升且運算速度快 3 倍。協作機械臂（Cobots）快速普及，尤其在組裝與檢驗任務應用廣泛。2026 年實際部署已運用模仿學習的物理 AI 模型，預期從試點擴展至工廠與倉儲的大規模協作應用。[工業機械臂市場報告](https://www.roboticstomorrow.com/story/2026/02/industrial-robotic-arm-market-report-emerging-opportunities-and-strategic-insights/26098/)
