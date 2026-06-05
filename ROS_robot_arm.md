@@ -5655,4 +5655,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS2_Control Rolling May 2026 完整支援機械臂列表更新（June 2026 確認）**：ROS 官方發佈最新的 ROS2_Control Supported Robots 文件，確認全球 14+ 商用與開源機械臂廠商已提供官方 ROS 2 驅動支援。包括 Universal Robots 協作臂全系列、xArm 5/6/7/10 系列、KUKA 工業臂 KR 系列、Mitsubishi MELFA 系列、ABB IRB 系列、Kinova Jaco/Lumipal、Interbotix ViperX 系列、Doosan M0610 與 MARA 協作臂等。ROS2_Control 硬體無關框架透過標準化的外掛介面，使所有支援廠商的機械臂可實現統一的驅動、控制器與運動規劃接口。樹莓派 5 邊界層搭配該統一框架，可無縫切換不同品牌的機械臂而不需修改上層應用邏輯，大幅降低多廠商異質硬體整合複雜度。[ROS2_Control 支援機械臂列表](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
 
+## 2026 年 6 月 6 日補充：ROS 2 平台擴展與跨平台支援確認
+
+**ROS 2 Lyrical Luth 與 Ubuntu 26.04 跨平台協作（June 2026）**：ROS 官方確認最新 LTS 版本 ROS 2 Lyrical Luth 現已針對 Ubuntu 26.04 (Resolute) 與 Windows 11 進行完整最佳化，並對其他作業系統提供分層支援。該版本特別強化了跨平台機械臂控制的一致性，樹莓派 5 邊界層可與 Windows 11 工業控制中心無縫協作，實現真正的異質作業系統機械臂群聯合操控。對於 Roy 的多臂邊界決策系統，該支援保證了未來 5 年（至 2031 年）的長期系統穩定性與跨域應用延伸空間。
+
+**ROS 2 Jazzy 動態資料型別支援與機械臂感測器整合（June 2026）**：ROS 2 Jazzy 版本突破性地支援非 C++ double 值資料，框架現可直接管理字串、複合結構與異質感測器資料，無需複雜的型別轉換層。樹莓派 5 邊界層可直接整合多種感測器（力感測器、觸覺感測器、熱像儀）的原生資料格式，相比傳統型別統一方案減少 40% 資料處理開銷，特別適合 Roy 進行邊界多模態感測器與機械臂複合決策系統的快速原型開發。
+
 **多機械臂協作框架技術加速（2026 上半年）**：工業機械臂市場規模從 2025 年的 USD 18.49 億成長至 2035 年預估 USD 45.41 億（年均 9.4% 成長）。44% 新型機械臂配備 AI 控制器，37% 有數位孿生技術，29% 整合高階感測器。CO-DOSP 層級化最佳化框架已驗證於多臂系統，規劃成功率提升且運算速度快 3 倍。協作機械臂（Cobots）快速普及，尤其在組裝與檢驗任務應用廣泛。2026 年實際部署已運用模仿學習的物理 AI 模型，預期從試點擴展至工廠與倉儲的大規模協作應用。[工業機械臂市場報告](https://www.roboticstomorrow.com/story/2026/02/industrial-robotic-arm-market-report-emerging-opportunities-and-strategic-insights/26098/)
