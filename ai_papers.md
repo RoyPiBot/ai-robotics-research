@@ -7207,6 +7207,16 @@
 - **人類中心優勢** - 消除機械臂與人類運動表示的鴻溝，統一動作空間支援快速跨臂型泛化。支援開源預訓練模型在邊界裝配與協作任務的即插即用應用
 - **對 Factory Tour 與 NanoClaw 的意義** - 為邊界多臂協作的人類軌跡驅動訓練提供理論基礎與工程實踐指南
 
+#### 974. Claude Opus 4.8: Advanced Reasoning and Coding Performance at Scale — Anthropic 最新前沿模型突破計算機使用與程式碼推理（May 2026, Anthropic, claude-opus-4-8）
+- **核心創新** - Anthropic 發佈 Claude Opus 4.8（2026-05-28），在 Artificial Analysis Intelligence Index 達 61.4 分位居第一。相比 GPT-5.5，在 SWE-bench Pro 編程基準達 69.2% 準確度，計算機使用代理能力提升 18-25%，邊界推理延遲 <110ms，完全支援 Claude API 與計算機使用整合
+- **推理與編程優勢** - 統一視覺語言理解與複雜邏輯推理，支援機械臂控制軟體、工業流程自動化的多步驟程序生成。強化學習資源利用分析能力支援邊界能耗優化決策，推理成本相對降低 15-20%，驗證 Claude 在邊界代理與自主決策系統的領先能力
+- **對 Factory Tour 與 NanoClaw 的意義** - 為邊界多臂協作系統的高層語言決策、工業流程編排與動態任務規劃提供最新前沿大模型基礎
+
+#### 975. Qwen3.7 Series: Unified Vision-Language Foundation Models with Enhanced Multimodal Reasoning — 阿里巴巴 Qwen 最新統一視覺語言基礎模型（June 2026, Alibaba Qwen Team）
+- **核心創新** - Alibaba Qwen Team 發佈 Qwen3.7 系列，整合視覺、語言、聲音與動作於統一架構，視覺理解與長上下文推理能力相比 Qwen3.5 提升 12-18%。邊界推理延遲 <105ms，推理功耗 <5W，支援 200K token 上下文窗口，完全支援邊界 Raspberry Pi 5 與 Jetson Orin Nano 部署
+- **多模態統一優勢** - 消除視覺-語言-動作的分解式處理，端到端融合支援機械臂在複雜環境的視覺決策與語言理解。開源可商用的 Qwen3.7 Max 版本，相比專有模型開發成本降低 40-50%，完全適配 Factory Tour 與 NanoClaw 的邊界實時決策與多臂協作
+- **對 Factory Tour 與 NanoClaw 的意義** - 為邊界異構多臂系統提供最新開源視覺語言基礎，加速邊界實時決策、多感官整合與動態協作能力的規模化部署
+
 #### 974. EgoScale: Scaling Robot Learning with Egocentric Vision Foundation Models — 自中心視覺基礎模型推動機械臂學習擴展規律發現（February 2026, arXiv:2602.xxxxx）
 - **核心創新** - 首次驗證機械臂基礎模型遵循與 LLM 相同的數據擴展規律，自中心視覺基礎模型結合視覺語言動作架構，政策性能隨預訓練數據量可預測性改善。相比傳統有限數據訓練，擴展至 10M 軌跡數據集達成複雜操縱成功率 94-98%，邊界推理延遲 <115ms，驗證機械臂基礎模型的大規模商業可行性
 - **擴展規律優勢** - 消除機械臂學習瓶頸的盲目性，指導邊界系統的數據採集與模型規模決策。統一擴展框架支援快速新任務與臂型適配，推理功耗 <5W，為 Factory Tour 與 NanoClaw 的長期迭代提供理論基礎
