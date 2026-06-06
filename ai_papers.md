@@ -7401,6 +7401,18 @@
 - **暗光應對優勢** - 打破視覺決策對光照環境的依賴，觸覺提供視覺盲點的高保真接觸幾何與力狀態感知。支援全天候自主操控與動態暗光場景的實時觸覺反饋閉迴圈
 - **對 Factory Tour 與 NanoClaw 的意義** - 實現工業環境低光條件下的可靠多臂協作，加速 24/7 自主工廠運營的觸覺感知基礎設施部署
 
-> **更新日期**：2026-06-06 06:50（第一百四十三次更新）
-- **本次更新** - 補充事件相機觸覺傳感器 Evetac 與低光視覺-觸覺融合框架（論文 1009-1010），聚焦暗光快速運動場景的邊界機械臂感知
-- **下次方向** - 探索事件相機與動態觸覺神經編碼在複雜多臂協調中的邊界推理優化
+#### 1011. CVPR 2026 多模態 AI 新趨勢與具身 AI 爆發式增長 — 視覺-語言-動作模型成研究主軸（June 2026, CVPR 2026 Denver）
+- **核心趨勢** - CVPR 2026（06月3-7日）創紀錄收到 4,089 篇論文，其中多模態 AI 論文佔比從去年 4.9% 激增至 10.6%，具身 AI 與機械人研究從 2.9% 跳升至 6.2%，成為歷年增長幅度最大的兩大方向。視覺-語言-動作模型（VLA）成為整合視覺理解、影片分析、動作預測與三維重建的新統一框架，重塑視覺研究組織方式
+- **研究聚焦** - 機械臂動作分組（action chunking）、推理能力增強、強化學習整合、邊界推理加速成為論文主流。CVPR 2026 彙聚超過 100 家技術企業與 AI 開發者，凸顯具身 AI 在視覺科學社群的核心地位。跨機械臂形態泛化與多模態感知融合驅動新一代 VLA 框架的創新
+- **對 Factory Tour 與 NanoClaw 的意義** - CVPR 2026 多模態 AI 論文激增預示視覺-語言-動作統一框架正成為具身 AI 標準架構，為邊界機械臂多臂協作系統的通用決策提供產業級驗證與開源生態支撑
+- **來源**：[CVPR 2026 Records](https://www.techtimes.com/articles/317852/20260605/cvpr-2026-breaks-records-multimodal-ai-doubles-share-4089-papers-rewrite-field-direction.htm) | [roboticsandautomationnews.com](https://roboticsandautomationnews.com/2026/05/19/cvpr-2026-to-showcase-next-generation-of-embodied-ai-robotics-and-autonomous-systems/101727/)
+
+#### 1012. Google Gemini Omni — 首個端到端「任意到任意」多模態推理模型與跨模態統一決策（June 2026, Google DeepMind）
+- **核心創新** - Google 發佈 Gemini Omni，首個原生「any-to-any」多模態推理模型，原生支援文本、音訊、圖像、影片同時輸入，在統一推理引擎內執行跨模態推理。相比分解式多模態管線，Gemini Omni 消除模態轉碼瓶頸，實現真正端到端的多模態理解。推理延遲 <300ms，推理功耗優化至邊界設備友善水準
+- **跨模態推理優勢** - 統一音視頻文本輸入的端到端推理，支援複雜混合現實場景的機械臂決策。消除傳統視覺→文本→動作的分解管線延遲，直接在統一模態空間進行感知融合與動作規劃，為多模態機械臂控制提供新型推理架構
+- **對 Factory Tour 與 NanoClaw 的意義** - Gemini Omni 的跨模態統一推理為邊界多臂系統提供業界首創的端到端多模態決策框架，加速視覺-聲音-觸覺融合的複雜協作任務規劃，推動具身 AI 邁向真正多感官統一決策時代
+- **來源**：[Google Gemini Omni 2026](https://orbilontech.com/gemini-omni/) | [Best Multimodal AI Models](https://enlightlab.com/top-multimodal-ai-models-for-2026/)
+
+> **更新日期**：2026-06-06 08:46（第一百四十五次更新）
+- **本次更新** - 補充 CVPR 2026 多模態 AI 與具身 AI 爆發趨勢及 Google Gemini Omni 端到端跨模態推理架構（論文 1011-1012）
+- **下次方向** - 探索 Gemini Omni 跨模態推理在動態複雜多臂協調中的邊界部署與語義對齐最佳實踐
