@@ -5694,3 +5694,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 6 月 6 日補充：RGMC 2026 與邊界自主式臂操縱競技
 
 **RGMC 2026（Robotic Grasping and Manipulation Competition）— 邊界自主抓取與組裝競技（June 2026）**：全球機械臂自主操縱年度競技大賽 RGMC 2026 正式啟動，包含「物體識別與自主抓取」與「移動操縱組裝」雙軌競賽。競賽規則要求參賽機械臂系統於樹莓派邊界層運行視覺語言模型決策，從透明盒內自主識別已知與未知物體並精確抓取、搬運至目標位置（重複精度 ±5mm），並完成簡單組裝任務。該競賽著重邊界推理自主決策而非雲端計算，樹莓派 5 搭配 Jetson Orin Nano 的邊界方案已被多個頂級隊伍採用（包括 MIT、清華大學、東京大學）。RGMC 2026 預期將展示邊界 VLA 模型在未結構化環境下的實際操縱能力，相比傳統示教編程的開發效率提升 10 倍以上，為 Roy 提供邊界多臂自主決策系統的國際實踐基準與優化方向。[RGMC 2026 競賽網站](https://sites.google.com/view/rgmcomp)
+
+## 2026 年 6 月 6 日補充：ROS 1 Noetic 生命周期終止與 DDS 分散式通訊全面推進
+
+**ROS 1 Noetic 停止支援與 ROS 2 全面生產化過渡（May 2025 已執行）**：ROS 1 Noetic 已於 2025 年 5 月到達生命周期終止（End-of-Life），正式標誌 ROS 開源社群的版本轉換里程碑。ROS 1 自 2007 年起已服務 18 年，Noetic 為最後一個 ROS 1 主要版本。自此，全球機械臂與邊界應用開發完全遷移至 ROS 2，樹莓派 5 邊界層應採用 ROS 2 Humble、Jazzy 或最新的 Lyrical Luth LTS 版本以確保長期支援。[ROS 1 生命周期官方公告](https://wiki.ros.org/ROS/Release)
+
+**ROS 2 DDS 分散式通訊架構在邊界多臂系統的優勢確認（June 2026）**：ROS 2 採用 Data Distribution Service（DDS）為核心通訊中介層，完全移除了 ROS 1 中央 Master Node 架構。該分散式設計對樹莓派 5 邊界多臂系統具有重要優勢：(1) **無單點故障** — 邊界層任一節點失效不影響整體系統運行；(2) **低延遲通訊** — Cyclone DDS 推薦用於邊界計算環境，性能優於其他 DDS 實現；(3) **Quality of Service 管理** — 支援實時優先級隊列，確保機械臂控制命令優先於感測器資料傳輸。工業應用如 Mitsubishi MELFA ROS 2 Driver 已採用此架構實現毫秒級同步控制。樹莓派 5 + Jetson Orin Nano 邊界叢集可透過 Fast DDS/Cyclone DDS 無縫實現 Pub/Sub 訊息分發，特別適合多臂協作與即時視覺伺服應用。
