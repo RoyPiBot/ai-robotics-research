@@ -5735,3 +5735,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 6 月 7 日補充：ROS 2 Jazzy 機械臂控制框架與多機器人協作推進
 
 **ROS 2 Jazzy manipulator control 穩定版本與工業機械臂全覆蓋（June 2026）**：ROS 官方完成 ROS 2 Jazzy 機械臂控制框架的穩定化發布，ros2_control 框架已通過 Kinova Kortex Gen3、Mitsubishi MELFA、Universal Robots、KUKA IIWA 等主流工業機械臂的完整認證。Jazzy 版本強化了 Controller Manager 的多控制器動態加載能力，支援在運行時無中斷地切換力控制、軌跡追蹤、視覺伺服控制器。樹莓派 5 搭配 Jetson Orin Nano 的邊界異構架構可直接運用 ROS 2 Jazzy 的生產級 ros2_control 驅動堆棧，實現毫秒級同步控制與多機械臂協作。該版本特別適合 Roy 進行樹莓派邊界機械臂控制與多臂協作決策系統的研究與開發。[ros2_control Jazzy 文件](https://control.ros.org/jazzy/index.html)
+
+## 2026 年 6 月 7 日補充：ROS 2 Jazzy 官方機械臂廠商認證拓展
+
+**ROS 2 Jazzy 官方認證支援機械臂完整廠商清單（June 2026）**：ROS 官方發布 ROS 2 Jazzy 完整支援機械臂清單，包括 Kinova Kortex Gen3、Mitsubishi MELFA RV1A、ROBOTIS OpenMANIPULATOR、Universal Robots 全系列、xArm 系列、ABB 工業臂（EGM 介面）、KUKA IIWA/KUKA Med（KUKA Fast Robot Interface）。Mobile Manipulator 支援包括 Husarion ROSbot XL + OpenMANIPULATOR-X/MoveIt2、TIAGo。樹莓派 5 邊界層可無縫透過統一 ROS 2 驅動架構支援全球主流工業機械臂品牌，特別適合 Roy 進行跨品牌異質機械臂邊界決策系統整合。[Jazzy 支援機械臂清單](https://control.ros.org/jazzy/doc/supported_robots/supported_robots.html)
