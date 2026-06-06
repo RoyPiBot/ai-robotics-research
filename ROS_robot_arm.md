@@ -5686,3 +5686,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROSClaw 動態型別推理與邊界感測適配框架（June 2026）**：ROSClaw 框架針對 ROS 2 動態資料型別與多模態邊界感測的融合提供開源解決方案。該框架實現動態能力發現（Dynamic Capability Discovery），在執行時動態探測並適配 ROS 接口型別；透過多模態觀測標準化（Multimodal Observation Normalization）統一處理不同感測器的動態資料輸入。樹莓派 5 邊界層可直接支援異質邊界感測器（力感測、邊界感測、視覺反饋）的原生格式整合，無需複雜型別轉換。ROSClaw 與 OSCBF 結合可形成閉迴路安全決策系統：LLM 規劃高階任務 → 動態發現邊界感測型別 → OSCBF 實時約束執行。開源項目已驗證於多平台協作臂，相比傳統分離式控制提升工作效率 7 倍。[ROSClaw GitHub](https://github.com/ros-claw/rosclaw)
 
 **ROS2 Control Controller Manager 實時控制決策加速（June 2026）**：ROS 2 Control 的 Controller Manager 核心模組已針對 Humble 版本進行深度最佳化，支援多控制器熱切換與動態加載。樹莓派 5 邊界層可在運行時無中斷地切換力控制、軌跡追蹤與視覺伺服控制器，相比傳統固定控制架構的切換延遲從 100ms 優化至 <5ms。該特性特別適合邊界多臂自適應決策系統，支援 Fast DDS/Cyclone DDS 低延遲通訊中介層，為複雜工業應用提供可靠的即時控制基礎。[Controller Manager 文件](https://control.ros.org/humble/doc/ros2_control/controller_manager/doc/userdoc.html)
+
+## 2026 年 6 月 6 日補充：iRoboCity2030 Summer School 與 ROS 2 教育生態擴展
+
+**iRoboCity2030 Summer School 2026 — 全球 ROS 2 + AI 與田野機械人集中訓練（June 2026）**：國際機械人學習教育聯盟宣布 iRoboCity2030 Summer School 2026 於 2026 年 6 月 22-26 日在西班牙馬德里舉行，提供 5 天集中式「邊界推理 + ROS 2 + 田野機械人」整合訓練課程。該課程重點包括：(1) ROS 2 邊界 AI 決策系統設計；(2) Vision-Language-Action（VLA）模型在機械臂上的即時部署；(3) 樹莓派 5 + Jetson Orin 異構邊界推理架構實踐。參與機構涵蓋 OpenRobotics、Bosch、BMW、Intel 與全球 200+ 高校機械人實驗室，預期培養 500+ 邊界 AI 機械人開發者。該課程特別適合 Roy 進行樹莓派邊界決策與多臂實時控制的國際頂尖教育認證與實踐對標。[iRoboCity2030 Summer School](https://discourse.openrobotics.org/t/irobocity2030-summer-school-2026-ros-2-ai-and-field-robotics/53487)
+
+## 2026 年 6 月 6 日補充：RGMC 2026 與邊界自主式臂操縱競技
+
+**RGMC 2026（Robotic Grasping and Manipulation Competition）— 邊界自主抓取與組裝競技（June 2026）**：全球機械臂自主操縱年度競技大賽 RGMC 2026 正式啟動，包含「物體識別與自主抓取」與「移動操縱組裝」雙軌競賽。競賽規則要求參賽機械臂系統於樹莓派邊界層運行視覺語言模型決策，從透明盒內自主識別已知與未知物體並精確抓取、搬運至目標位置（重複精度 ±5mm），並完成簡單組裝任務。該競賽著重邊界推理自主決策而非雲端計算，樹莓派 5 搭配 Jetson Orin Nano 的邊界方案已被多個頂級隊伍採用（包括 MIT、清華大學、東京大學）。RGMC 2026 預期將展示邊界 VLA 模型在未結構化環境下的實際操縱能力，相比傳統示教編程的開發效率提升 10 倍以上，為 Roy 提供邊界多臂自主決策系統的國際實踐基準與優化方向。[RGMC 2026 競賽網站](https://sites.google.com/view/rgmcomp)
