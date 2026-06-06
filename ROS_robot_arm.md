@@ -5711,4 +5711,8 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **樹莓派 5 + Hailo-8L NPU 邊界視覺推理的成本突破（June 2026）**：開源社群確認樹莓派 5 搭配 Hailo-8L NPU（~50 美元）可實現 15-30 FPS 的實時視覺推理，成本僅為 Jetson Orin Nano 的 1/3。該組合特別適合教育級機械臂視覺伺服與基礎 VLA 推理。樹莓派 5 邊界層可直接執行 YOLO、ResNet 等輕量化視覺模型，無需複雜的量化流程。總系統成本（6-DOF 機械臂 + 樹莓派 5 + Hailo-8L + ROS 2）已降至 USD 500-1,000，相比 2025 年的 USD 3,000-5,000 系統成本大幅下降，為 Roy 進行樹莓派邊界教育級多臂視覺決策系統提供成本可行的新選擇。
 
+## 2026 年 6 月 6 日補充：COMPUTEX 2026 Jetson Orin 邊界 AI 機械臂平台驗證
+
+**COMPUTEX 2026 Jetson Orin 邊界 AI 平台與機械臂整合展示（June 2026）**：COMPUTEX 2026 期間，DFI 展示最新 NVIDIA Jetson Orin 邊界 AI 平台（X6-ORN-GMSL、X6X-ORN、X6a-AGX），其中 X6a-AGX 提供 275 TOPS AI 計算力，支援多通道視覺處理與高速資料傳輸。NVIDIA 同步推出 Jetson Thor（基於 Blackwell GPU）提供 2,070 FP4 teraflops 計算能力，較上代 Jetson Orin 提升 7.5 倍計算力與 3.5 倍能效。JetPack 7.2 新增對 NemoClaw agentic AI framework 的原生支援，使樹莓派 + Jetson Orin 邊界層可直接運行 LLM 驅動的機械臂自主決策。Aetina 與 NVIDIA、Franka Robotics 合作展示 AI 驅動機械臂系統完整原型，驗證了邊界 VLA 推理 + ROS 2 控制的工業實用性，為 Roy 提供最新的邊界多臂決策系統參考部署方案。[DFI Jetson 邊界 AI 平台](https://www.prnewswire.com/apac/news-releases/dfi-showcases-nvidia-jetson-orin-based-edge-ai-platforms-for-vision-applications-at-computex-2026-302786603.html)
+
 **COMPUTEX 2026 Jetson Orin 邊界 AI 平台生產級驗證（June 2026）**：DFI 與 Advantech 於 COMPUTEX 2026 展示的 Jetson Orin 邊界 AI 平台已驗證於工業級機械臂與多感測器融合系統。該平台支援多目標追蹤、SLAM 同時定位與地圖繪製、多感測器融合決策，相比上一代 Jetson 性能提升 8 倍。樹莓派 5 邊界層搭配 Jetson Orin 可直接運行多模態 LLM（Mini-InternVL）與複雜機械臂操縱模型，端到端延遲 <60ms。該架構已在全球 500+ 生產設施驗證，特別適合 Roy 進行邊界多臂協作與工業級決策系統的國際對標開發。
