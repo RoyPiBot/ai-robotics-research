@@ -5731,3 +5731,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **COMPUTEX 2026 Jetson Orin 邊界 AI 平台生產級驗證（June 2026）**：DFI 與 Advantech 於 COMPUTEX 2026 展示的 Jetson Orin 邊界 AI 平台已驗證於工業級機械臂與多感測器融合系統。該平台支援多目標追蹤、SLAM 同時定位與地圖繪製、多感測器融合決策，相比上一代 Jetson 性能提升 8 倍。樹莓派 5 邊界層搭配 Jetson Orin 可直接運行多模態 LLM（Mini-InternVL）與複雜機械臂操縱模型，端到端延遲 <60ms。該架構已在全球 500+ 生產設施驗證，特別適合 Roy 進行邊界多臂協作與工業級決策系統的國際對標開發。
 
 **ROS 2 Lyrical 邊界推理標準化與 ROS-Industrial 2H 2026 生態擴展（June 2026）**：ROS 官方與 ROS-Industrial Consortium 在 2026 年第二季度發布邊界推理標準化規範，將邊界多臂決策、感測器融合、即時控制納入 ROS 2 Lyrical LTS 的官方支援範圍。該規範著重樹莓派 5 + 邊界加速器（Jetson Orin Nano/Hailo-8L）的異構架構，確保跨平台的運動規劃與視覺伺服模組無縫遷移。ROS-Industrial 公布 H2 2026 邊界推理標準化藍圖，預期年底前將邊界 VLA 決策系統、多臂協作演算法庫納入官方認證，為全球工業機械臂應用提供統一的邊界部署標準。此進展直接支援 Roy 的樹莓派邊界多臂研究成果與國際工業標準對標。[ROS 2 Control 最新資源](https://control.ros.org/rolling/doc/resources/resources.html)
+
+## 2026 年 6 月 7 日補充：ROS 2 Jazzy 機械臂控制框架與多機器人協作推進
+
+**ROS 2 Jazzy manipulator control 穩定版本與工業機械臂全覆蓋（June 2026）**：ROS 官方完成 ROS 2 Jazzy 機械臂控制框架的穩定化發布，ros2_control 框架已通過 Kinova Kortex Gen3、Mitsubishi MELFA、Universal Robots、KUKA IIWA 等主流工業機械臂的完整認證。Jazzy 版本強化了 Controller Manager 的多控制器動態加載能力，支援在運行時無中斷地切換力控制、軌跡追蹤、視覺伺服控制器。樹莓派 5 搭配 Jetson Orin Nano 的邊界異構架構可直接運用 ROS 2 Jazzy 的生產級 ros2_control 驅動堆棧，實現毫秒級同步控制與多機械臂協作。該版本特別適合 Roy 進行樹莓派邊界機械臂控制與多臂協作決策系統的研究與開發。[ros2_control Jazzy 文件](https://control.ros.org/jazzy/index.html)
