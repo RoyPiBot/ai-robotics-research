@@ -5700,3 +5700,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 1 Noetic 停止支援與 ROS 2 全面生產化過渡（May 2025 已執行）**：ROS 1 Noetic 已於 2025 年 5 月到達生命周期終止（End-of-Life），正式標誌 ROS 開源社群的版本轉換里程碑。ROS 1 自 2007 年起已服務 18 年，Noetic 為最後一個 ROS 1 主要版本。自此，全球機械臂與邊界應用開發完全遷移至 ROS 2，樹莓派 5 邊界層應採用 ROS 2 Humble、Jazzy 或最新的 Lyrical Luth LTS 版本以確保長期支援。[ROS 1 生命周期官方公告](https://wiki.ros.org/ROS/Release)
 
 **ROS 2 DDS 分散式通訊架構在邊界多臂系統的優勢確認（June 2026）**：ROS 2 採用 Data Distribution Service（DDS）為核心通訊中介層，完全移除了 ROS 1 中央 Master Node 架構。該分散式設計對樹莓派 5 邊界多臂系統具有重要優勢：(1) **無單點故障** — 邊界層任一節點失效不影響整體系統運行；(2) **低延遲通訊** — Cyclone DDS 推薦用於邊界計算環境，性能優於其他 DDS 實現；(3) **Quality of Service 管理** — 支援實時優先級隊列，確保機械臂控制命令優先於感測器資料傳輸。工業應用如 Mitsubishi MELFA ROS 2 Driver 已採用此架構實現毫秒級同步控制。樹莓派 5 + Jetson Orin Nano 邊界叢集可透過 Fast DDS/Cyclone DDS 無縫實現 Pub/Sub 訊息分發，特別適合多臂協作與即時視覺伺服應用。
+
+## 2026 年 6 月 6 日補充：NVIDIA GR00T N1.7 邊界部署與 VLA 雙層認知架構成熟化
+
+**NVIDIA GR00T N1.7 邊界推理已進入商業早期訪問（June 2026）**：NVIDIA 推出的 GR00T（Generalist Robot Operating system Transformer）N1.7 模型已在 Jetson Orin 系列邊界硬體上實現完整邊界推理部署，相比之前的外部 API 呼叫方案，完全邊界化推理降低了延遲至 50-100ms（端到端運動推理迴圈），適合樹莓派 5 + Jetson Orin Nano 異構邊界多臂系統實時決策。NVIDIA 已確認 GR00T N2 將於 2026 年底發布，採用新型世界行動模型架構，預期比現有 VLA 模型成功率提升 2 倍以上，特別適合機械臂在非結構化環境下的自適應操縱與推理能力提升。[GR00T N1.7 技術文件](https://developer.nvidia.com/gr00t)
+
+**工業級 VLA 雙層認知架構普遍採用（June 2026）**：Figure AI 的 Helix VLA 已在寶馬工廠人形機器人上驗證，證實了 VLA 工業部署的可行性。業界普遍採用的雙層認知架構包括：(1) **System 2（高級規劃層）** — 大語言模型處理自然語言指令分解為子目標；(2) **System 1（快速執行層）** — 輕量視覺馬達控制策略 (30-50Hz) 直接將相機影像轉為運動指令。該架構特別適合樹莓派邊界層，高級規劃可在本地邊界 LLM 執行（開源 Llama/Mistral），視覺馬達策略可用 SmolVLA 或 MobileVLA 快速推理，整個系統可以完全離線運行，無需雲端依賴。
