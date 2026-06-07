@@ -1437,6 +1437,24 @@
 - **重要性**：邊緣推理從「文本補全」進入「複雜推理」時代，語音 AI Agent、物聯網決策、車載系統等場景大幅擴展，成為 2026 下半年邊緣 AI 部署的重要驅動。
 - **來源**：[SiliconFlow: Best LLMs for Edge AI 2026](https://www.siliconflow.com/articles/en/best-LLMs-for-real-time-inference-on-edge)
 
+## 十三、2026 年 6 月初更新 — ICRA 2026 觸覺融合與多感官智能新方向
+
+### 77. RobOmni — 綜合多模態評估基準與觸覺感測（ICRA 2026）
+- **機構**：Daimon Robotics、Galbot
+- **發布時間**：2026 年 6 月 5 日（ICRA 2026）
+- **摘要**：Daimon Robotics 與 Galbot 聯合發佈 **RobOmni**，業界首個包含觸覺感測的綜合多模態機械人評估基準。核心創新為 omni-modal 模擬套件、接觸豐富型操控任務評估協議、以及 Sim-to-Real 驗證管線。RobOmni 涵蓋視覺、力感、位置回饋的多感官融合，揭示觸覺反饋在精密操控中的效益：pick-and-place 精度提升 21.9%，插入任務成功率從 25-40% 躍升至 90%。
+- **重要性**：標誌著多感官融合從「可選特性」進入「評估標配」，為邊界多臂系統的力控協作提供公開基準，加速觸覺感測的商業化與標準化。
+- **來源**：[The Manila Times - RobOmni 發布](https://www.manilatimes.net/2026/06/05/tmt-newswire/globenewswire/daimon-and-galbot-jointly-release-robomni-an-omni-modal-evaluation-benchmark-including-tactile-sensing-for-physical-interaction/2359328)
+
+### 78. Xense Robotics 觸覺智能技術系統 — ICRA 2026 全棧展示
+- **機構**：Xense Robotics
+- **發布時間**：2026 年 6 月 3 日（ICRA 2026）
+- **摘要**：Xense Robotics 在 ICRA 2026 展示完整棧觸覺智能技術，涵蓋：（1）**觸覺感知硬體** — TacCap-Gripper 五指靈巧手；（2）**數據採集** — 高保真觸覺信號採集；（3）**觸覺世界模型** — 接觸動態預測網絡；（4）**VTLA 模型** — Vision-Tactile-Language-Action 統一架構。系統在接觸豐富任務上相比純視覺方案性能提升 19-28%，推理延遲 <300ms，已進入邊界設備部署階段。
+- **重要性**：觸覺融合從個別研究進入端到端產品化，VTLA 架構標誌觸覺與視覺-語言-動作的深度整合，為邊界多臂協作機器人的實時動態力控奠定基礎。
+- **來源**：[PR Newswire - Xense Robotics ICRA 2026](https://www.prnewswire.com/news-releases/touch-ignites-physical-intelligence-xense-robotics-showcases-the-real-ability-of-tactile-intelligence-at-icra-2026-302790324.html)
+
+> **更新日期**：2026-06-07（第九十六次更新）
+
 ### 77. Genie 3 — Google 通用世界模型與實時交互式模擬
 - **機構**：Google DeepMind
 - **發布時間**：2026 年 5 月（新發現）
