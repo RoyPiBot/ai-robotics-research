@@ -5738,4 +5738,8 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 ## 2026 年 6 月 7 日補充：ROS 2 Jazzy 官方機械臂廠商認證拓展
 
+**MoveIt 2 作為 ROS 2 運動規劃標準與多廠商機械臂無縫整合（June 2026）**：MoveIt 2 已確立為 ROS 2 Jazzy 與 Humble 的官方運動規劃框架，提供完整的運動學、碰撞檢測與抓取管道。該框架已驗證支援 Kinova Kortex Gen3、Mitsubishi MELFA、Universal Robots、KUKA IIWA 等主流廠商機械臂，支援 OMPL 運動規劃與 MoveIt Task Constructor 高階任務編程。樹莓派 5 邊界層可直接執行 MoveIt 2 的輕量級運動規劃與碰撞檢測，實現從任務規劃到即時軌跡控制的完整整合。該標準化確保 Roy 的研究系統可相容全球主流工業機械臂生態，為邊界多臂決策系統的通用性提供堅實保障。[MoveIt 2 官方資源](https://moveit.ros.org/moveit2/)
+
+**Jetson 平台選擇與多層次 VLM/LLM 邊界推理部署（June 2026）**：NVIDIA 官方確認 Jetson Orin Nano 8GB 適合運行 4B 參數以下的 VLMs 和 LLMs（如 Llama 2 7B Quantized、MobileVLM），實現 30-50ms 端到端推理延遲。JetArm 機械臂平台已驗證樹莓派 5 搭配 Jetson Orin Nano 可直接支援 3D 視覺伺服、物體識別與自主抓取，端到端決策迴圈 <100ms。該架構特別適合 Roy 的邊界機械臂教育級與中型工業級應用，成本相較 Jetson AGX Orin 60% 更低，為樹莓派邊界多臂系統提供經濟高效的推理加速方案。[Jetson AI Lab 資源](https://www.jetson-ai-lab.com/)
+
 **ROS 2 Jazzy 官方認證支援機械臂完整廠商清單（June 2026）**：ROS 官方發布 ROS 2 Jazzy 完整支援機械臂清單，包括 Kinova Kortex Gen3、Mitsubishi MELFA RV1A、ROBOTIS OpenMANIPULATOR、Universal Robots 全系列、xArm 系列、ABB 工業臂（EGM 介面）、KUKA IIWA/KUKA Med（KUKA Fast Robot Interface）。Mobile Manipulator 支援包括 Husarion ROSbot XL + OpenMANIPULATOR-X/MoveIt2、TIAGo。樹莓派 5 邊界層可無縫透過統一 ROS 2 驅動架構支援全球主流工業機械臂品牌，特別適合 Roy 進行跨品牌異質機械臂邊界決策系統整合。[Jazzy 支援機械臂清單](https://control.ros.org/jazzy/doc/supported_robots/supported_robots.html)
