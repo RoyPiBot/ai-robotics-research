@@ -5769,3 +5769,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 6 月 7 日補充：Gazebo + ROS 2 Jazzy 完整機械臂模擬與物理驗證工作流程
 
 **Gazebo 9.0 與 ROS 2 Jazzy 深度整合 — 機械臂模擬測試標準化（June 2026）**：Gazebo 模擬器完成與 ROS 2 Jazzy 的深度整合，支援 ros2_control 硬體抽象層無縫對接。樹莓派 5 邊界層可直接執行 Gazebo 物理模擬環境，運行 MoveIt 2 運動規劃並實時驗證機械臂軌跡。該工作流程支援多臂協作、碰撞檢測與感測器融合模擬，相比傳統分離的模擬環境，統一的 ROS 2 生態降低 60% 模擬器配置複雜度。適合 Roy 進行樹莓派邊界機械臂決策系統的模擬驗證與實物部署前測試。[ROS 2 Simulation 官方資源](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/ROS2-Humble-Simulation.html)
+
+## 2026 年 6 月 7 日補充：ROS 2 Control 6DOF 機械臂標準化與 MoveIt 2 路徑規劃
+
+**ROS 2 Control Jazzy 版本 6DOF 機械臂完整教程與官方認證（June 2026）**：ROS 官方發布《ROS 2 Control: Example 7 - Full tutorial with a 6DOF robot》完整教程，詳細說明如何使用 ros2_control 硬體抽象層與 Joint Trajectory Controller 驅動標準 6DOF 機械臂。該教程涵蓋 URDF 模型定義、控制器配置、Gazebo 模擬與實物機械臂部署的全流程。樹莓派 5 搭配 Jetson Orin Nano 可直接遵循該標準教程實現 6DOF 機械臂的實時運動控制。[ROS 2 Control 6DOF 教程](https://control.ros.org/jazzy/doc/ros2_control_demos/example_7/doc/userdoc.html)
+
+**MoveIt 2 — ROS 2 官方運動規劃與軌跡優化標準（June 2026）**：MoveIt 2 確立為 ROS 2 Jazzy 與 Humble 的官方標準運動規劃框架，提供完整的機械臂逆運動學求解、碰撞檢測與運動軌跡優化。該框架已整合 OMPL（Open Motion Planning Library）與 TrajOpt，支援複雜場景下的即時路徑規劃。樹莓派 5 邊界層可直接執行 MoveIt 2 的輕量級規劃器實現毫秒級延遲的路徑規劃與碰撞迴避，為邊界多臂決策系統提供穩定的運動規劃基礎。[MoveIt 2 官方資源](https://moveit.ros.org/moveit2/)
