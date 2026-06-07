@@ -1097,6 +1097,30 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 - [官方教程](https://www.therobotreport.com/moveit-2-enables-realtime-robot-arm-control-ros2/)驗證了多款商業機械臂（UR 系列、Franka Emika）的即時性能
 - **關鍵指標**：端點定位精度 ±1mm、控制迴圈延遲 < 2ms，適合精密裝配與高速動作場景
 
+### ROS 2 Lyrical Luth LTS（2026 年 5 月）— 5 年長期支援版本
+
+**ROS 2 Lyrical Luth 成為新一代 LTS 標準**：
+- 於 2026 年 5 月正式發布，提供至 2031 年 5 月的 5 年長期支援
+- 配合 Ubuntu 26.04 作為主要 Tier 1 平台，確保穩定性與相容性
+- **效能改進**：新的 CallbackGroupEventsExecutor 比 Single/Multithreaded 執行器節省 10-15% CPU 使用率
+- **Python 非同步支援**：rclpy 新增 AsyncNode 基類，原生整合 Python asyncio 事件迴圈，適合邊界 AI 應用
+- **零複製資料傳輸**：rosidl::Buffer 支援 CPU/GPU 無複製發佈訂閱，初期支援 rmw_fastrtps_cpp
+- 包含 239 位貢獻者、110 位測試者參與，近 2,651 個測試案例驗證
+- [官方文件](https://docs.ros.org/en/lyrical/Releases/Release-Lyrical-Luth.html)
+
+### NVIDIA GR00T N2 與 Isaac 人型機器人平台（2026 年 6 月新進展）
+
+**GR00T N2 — 下一代機器人基礎模型**：
+- 基於 DreamZero 研究的新世界行為模型，在新環境中成功率較領先視覺語言行動模型提升 2 倍以上
+- 預計 2026 年底推出，目前在 MolmoSpaces 與 RoboArena 排名第一的通用機器人策略
+- 支援 ROS 2 與 Isaac Sim 仿真環境無縫整合
+
+**Isaac GR00T Reference Humanoid 完整配置**：
+- **手臂性能**：搭載 Sharpa Wave 五指靈巧手，22 自由度操作，臂力可達 120 N⋅m，腿力可達 360 N⋅m
+- **計算核心**：使用 NVIDIA Jetson Thor 提供實時推理與控制能力
+- **發布時程**：由 Unitree 於 2026 年 Q4 推出參考設計方案
+- [NVIDIA 官方公告](https://nvidianews.nvidia.com/news/nvidia-and-global-robotics-leaders-take-physical-ai-to-the-real-world)
+
 **ros2_control 支援機器人生態擴展**（2026 年 3-4 月）：
 - [官方支援列表](https://control.ros.org/master/doc/supported_robots/supported_robots.html)新增 10+ 機械臂平台，涵蓋工業、協作與研究應用
 - Doosan, ABB, Kuka, Stäubli 等主流廠商機械臂均可透過 ros2_control adapter 無縫整合
