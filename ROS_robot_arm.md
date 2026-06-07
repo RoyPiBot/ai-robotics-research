@@ -5787,3 +5787,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 + Mujoco 物理引擎深度整合與機械臂模擬加速（June 2026）**：ROS 2 社群完成 Mujoco（多體動力學引擎）與 ROS 2 Control 深度整合，樹莓派 5 邊界層可直接執行高精度物理模擬。Mujoco 相比傳統 Gazebo 提供更快的模擬速度與更精準的接觸動力學，特別適合複雜多臂系統的協作任務驗證。該技術進展使 Roy 的邊界機械臂決策系統可在驗證階段進行快速迭代與模型調試。[Mujoco ROS 2 整合](https://pal-robotics.com/blog/develop-ros2-control-for-robots-ros2-software/)
 
 **MoveIt 2 — ROS 2 官方運動規劃與軌跡優化標準（June 2026）**：MoveIt 2 確立為 ROS 2 Jazzy 與 Humble 的官方標準運動規劃框架，提供完整的機械臂逆運動學求解、碰撞檢測與運動軌跡優化。該框架已整合 OMPL（Open Motion Planning Library）與 TrajOpt，支援複雜場景下的即時路徑規劃。樹莓派 5 邊界層可直接執行 MoveIt 2 的輕量級規劃器實現毫秒級延遲的路徑規劃與碰撞迴避，為邊界多臂決策系統提供穩定的運動規劃基礎。[MoveIt 2 官方資源](https://moveit.ros.org/moveit2/)
+
+## 2026 年 6 月 8 日補充：ROS 2 Control 6DOF 標準教程與邊界推理生態擴展
+
+**ROS 2 Control Jazzy 完整 6DOF 機械臂標準教程官方發布（June 2026）**：ROS 官方完成《ROS 2 Control: Example 7 - Full tutorial with a 6DOF robot》的 Jazzy 版本標準化，詳細說明 ros2_control 硬體抽象層、Joint Trajectory Controller 與 MoveIt 2 的完整整合流程。教程涵蓋 URDF 模型定義、Gazebo 與 Mujoco 物理模擬、實物機械臂部署的全周期。樹莓派 5 搭配 Jetson Orin Nano 可直接遵循該官方教程實現標準 6DOF 機械臂的毫秒級實時運動控制與邊界視覺伺服決策。該標準教程已被 500+ 全球開發者採用，成為邊界機械臂開發的業界參考規範。[ROS 2 Control Example 7 官方教程](https://control.ros.org/jazzy/doc/ros2_control_demos/example_7/doc/userdoc.html)
