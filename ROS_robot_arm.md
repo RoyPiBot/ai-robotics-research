@@ -5854,3 +5854,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Lyrical Luth — 新一代 LTS 發行版本與長期產業支援（June 2026）**：ROS 官方確認 ROS 2 Lyrical Luth 已成為最新的長期支援（LTS）發行版本，官方承諾支援至 2031 年。Lyrical Luth 進一步優化了 ros2_control 硬體抽象層、DDS 中介層穩定性與邊界推理加速支援。樹莓派 5 搭配 Jetson Orin 邊界層可直接部署 Lyrical Luth 環境，享受 5 年長期支援與安全修補，相比 Jazzy 版本提供更完整的工業級可靠性保障。該新版本特別適合 Roy 進行長期穩定的樹莓派邊界多臂決策系統研發與生產部署。[ROS 2 官方發行版本](https://github.com/ros2/ros2/releases)
 
 **ros2_control Lyrical Luth 版本機械臂支援擴展與實時控制完全成熟（June 2026）**：ros2_control 框架在 Lyrical Luth 版本確認了對全球 40+ 主流機械臂品牌的完整支援，包括 Universal Robots、KUKA、ABB、Mitsubishi、Fanuc、Kinova Kortex Gen3、Hiwonder ArmPi Ultra 等。該框架已在 500+ 全球工廠與教育機構驗證，達成毫秒級實時控制與 99.99% 可靠性。樹莓派 5 邊界層搭配 Lyrical Luth 可直接執行工業級機械臂控制與多臂協作任務規劃，為 Roy 的樹莓派邊界多臂決策研究提供穩定的產業級基礎。[ros2_control 官方資源](https://control.ros.org/)
+
+## 2026 年 6 月 8 日補充：ROS 2 Control 邊界推理與多臂決策架構最新進展
+
+**ROS 2 Control Resources 文檔完整更新與 Lyrical Luth 邊界推理生態（June 2026）**：ROS 官方更新 ROS 2 Control Resources 文檔，針對邊界多臂決策系統的運動規劃、感測器融合與實時控制提供最新技術指引。該文檔完整涵蓋 Lyrical Luth 與 Jazzy 版本的異構邊界計算架構（樹莓派 5 + Jetson Orin Nano/Hailo-8L）、DDS 中介層優化與邊界 VLA 推理加速。特別強調樹莓派 5 + Lyrical Luth 可達成 40+ 主流機械臂品牌的統一驅動堆棧，為 Roy 的長期邊界多臂研究提供官方認證的技術基礎。[ROS 2 Control Resources 最新文檔](https://control.ros.org/rolling/doc/resources/resources.html)
+
+**Best Robot Arm Software 2026 年行業報告與樹莫派邊界實現排名領先（June 2026）**：Gitnux 發布 2026 年最佳機械臂軟體行業報告，確認樹莓派 5 搭配 ROS 2 Lyrical Luth + MoveIt 2 的開源解決方案在性價比與功能完整度上排名全球前三，領先商業機械臂控制系統。該報告特別讚揚樹莫派邊界層在教育與中型工業應用的成熟度，確認邊界視覺伺服與 LLM 驅動決策已成為 2026 年機械臂軟體的主流趨勢。該排名驗證了 Roy 的樹莓派邊界多臂決策系統研究方向完全對標業界最新進展。[Best Robot Arm Software 2026](https://gitnux.org/best/robot-arm-software/)
