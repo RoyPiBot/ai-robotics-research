@@ -1082,7 +1082,22 @@
 - **摘要**：Google 推出 GR00T N2 版本，採用革命性「World Action Model」架構，從根本上改變了 VLA 的推理方式。新架構將世界狀態建模與動作選擇解耦，使模型能更好地理解環境動態與因果關係。在新任務與新環境適應測試中，成功率相比傳統 VLA 提升 **2 倍以上**，顯著降低了新場景部署的數據需求。支援跨機械體泛化與動態物體操作。
 - **重要性**：VLA 架構創新進入新範式——World Action Model 的出現標誌著從行為克隆向真正的世界模型的轉變，為異構多臂協作系統的統一控制框架提供新方向。
 
-> **更新日期**：2026-06-02（第九十五次更新）
+### 65. CaP-X — Code-as-Policy 代理機械臂控制框架
+- **機構**：Fei-Fei Li（李飛飛）、NVIDIA、UC Berkeley、Stanford、Carnegie Mellon
+- **發布時間**：2026 年 3 月（ICML 2026）
+- **論文編號**：arXiv 2603.22435
+- **摘要**：CaP-X 是開源框架，透過大型語言模型（LLM）與視覺語言模型（VLM）自動為機械臂生成可執行 Python 程式碼。核心創新是 **CaP-Agent0**（訓練自由代理）與 **CaP-RL**（強化學習版本），實現多輪交互故障恢復、視覺反饋自適應、自動技能合成與集成推理。在複雜堆疊、擦拭、雙臂協作任務中成功率達人類水平，並支援模擬-真實機械臂轉移學習。
+- **重要性**：邊界多感應器融合與故障自恢復框架新標準——LLM 驅動的代碼生成模式取代傳統端到端控制，支援即時故障診斷、程式碼級修復與可解釋決策，為工業級機械臂智慧化奠定堅實基礎。
+- **來源**：[arXiv 2603.22435](https://arxiv.org/abs/2603.22435) | [GitHub CaP-X](https://github.com/capgym/cap-x)
+
+### 66. 邊界 AI 感應器融合核心架構 — mmWave+Camera+FPGA 統一堆棧
+- **機構**：Texas Instruments、D3 Embedded、Lattice、NVIDIA
+- **發布時間**：2026 年 4 月（Embedded World 2026）
+- **摘要**：業界首次推出實用化 **邊界感應器融合堆棧** 標準，整合毫波雷達（mmWave）、RGB-D 攝像機、FPGA 感應橋接與 NVIDIA Holoscan，在單一硬體平臺上同步處理多源感應數據。系統延遲 <50ms，支援 100 TOPS+ 邊界推理能力，專為人形機械人與自主系統設計。核心突破：感應器從被動組件升級為主動智慧基礎設施，融合管線內嵌於晶片層級，支援實時故障檢測與冗餘傳感自動切換。
+- **重要性**：邊界感應器融合從研究進入工程實踐——毫米級延遲與多模態感應整合使機械臂具備局部物理推理能力，無需依賴遠端伺服器，為邊界機械臂的自主決策與故障自恢復提供感知基礎設施。
+- **來源**：[Embedded World 2026](https://www.automation-mag.com/news/110769-edge-ai-robotics-platforms-target-physical-ai-deployment) | [NVIDIA Holoscan](https://developer.nvidia.com/blog/nvidia-igx-thor-powers-industrial-medical-and-robotics-edge-ai-applications/)
+
+> **更新日期**：2026-06-09（第九十六次更新）
 
 ### 62. XR-1 — 視覺-運動統一離散編碼突破
 - **會議**：ICLR 2026 投稿
