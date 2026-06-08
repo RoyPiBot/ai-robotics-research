@@ -5843,3 +5843,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Control 工業級 DDS 中介層驗證完成（June 2026）**：開源社群與業界確認 ROS 2 基於工業級 DDS（Cyclone DDS + Zenoh）中介層已在全球鋼鐵廠、汽車製造、電子裝配等環境完成毫秒級控制延遲驗證。分散式 ROS 2 架構在多臂協作系統中相比傳統中央集中式降低 60% 通訊延遲，達成工業應用可靠性要求。樹莓派 5 邊界層搭配 Jetson Orin 可無縫部署工業級多臂視覺伺服系統，完整支援即時碰撞檢測與力反饋控制。[ROS 2 Control 官方資源](https://control.ros.org/humble/doc/resources/resources.html)
 
 **邊界 VLA 推理生態決策架構突破（June 2026）**：EdgeVLA 與 NanoVLA 在邊界層實現 7-52 倍推理加速，配合 NVIDIA TensorRT-LLM 優化相比 2025 年進一步降低 60% 延遲。樹莓派 5 + 輕量級邊界加速器（Hailo-8L、Jetson Orin Nano）可直接運行複雜視覺馬達決策，支援多臂空間理解與自適應軌跡規劃。該技術進展為 Roy 的邊界多臂智能化系統提供高效經濟推理基礎，已驗證於 40+ 主流機械臂品牌生態。
+
+## 2026 年 6 月 8 日補充：ROSOrin Pro 與 Raspberry Pi 5 原生邊界多臂 AI 整合
+
+**ROSOrin Pro — 樹莫派 5 原生支援的邊界多臂 AI 決策平台（June 2026）**：HiWonder 與開源社群發布 ROSOrin Pro 平台，樹莓派 5 原生支援 6-DOF 協作機械臂 + Jetson Orin Nano 邊界推理加速 + 本地 Llama 大語言模型的完整整合。該方案支援自然語言指令驅動的機械臂決策、視覺伺服與力反饋控制，無需雲端支援。ROSOrin Pro 已驗證於教育機構與研發環境，提供完整的 ROS 2 + MoveIt 2 工具鏈與開源文檔，特別適合 Roy 快速部署樹莓派邊界多臂原型與決策層研究。[Embodied AI on ROS 2 with ROSOrin Pro](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
+
+**AMD Ryzen AI + ROS 2 邊界計算整合與工業視覺應用（June 2026）**：Edge AI and Vision Alliance 發布 Ryzen AI Max+ 395（Strix-Halo）與 ROS 2 的邊界計算整合方案，採用 AMD Ryzen AI NPU + iGPU 提供高能效邊界推理。該方案支援即時機械臂視覺感知（物體偵測、6-DOF 姿態估計、點雲處理），相比傳統 CPU 推理功耗降低 70% 同時性能提升 8-12 倍。已驗證應用於邊界工業檢測與機械臂視覺伺服，為樹莓派多臂系統提供異構計算加速的替代方案。[Building Robotics Applications with Ryzen AI and ROS 2](https://www.edge-ai-vision.com/2026/04/building-robotics-applications-with-ryzen-ai-and-ros-2/)
