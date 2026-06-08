@@ -5821,3 +5821,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Isaac Sim 8.0 與 ROS 2 邊界推理閉迴路驗證框架（June 2026）**：NVIDIA Isaac Sim 8.0 完成與 ROS 2 Control 深度整合，樹莓派 5 邊界層可直接執行高保真物理模擬並與實時 ROS 2 控制迴圈無縫同步。Isaac Sim 支援 URDF、MJCF 與 CAD 格式機械臂模型匯入，提供毫秒級感測器模擬（相機、力感測、IMU）與動力學驗證。該框架特別適合 Roy 的邊界多臂決策系統先在模擬環境進行閉迴路視覺伺服驗證，再遷移至實機，相比傳統分離模擬方式降低 70% 研發週期。[Isaac Sim ROS 2 整合](https://developer.nvidia.com/isaac-sim)
 
 **TempoVLA 與 AffordanceVLA — 機械臂自適應執行速度與任務affordance推理（June 2026）**：arXiv 最新研究發布 TempoVLA（時間可控視覺馬達模型）與 AffordanceVLA，使機械臂在邊界層可根據自然語言動態調整執行速度並推理物體操作affordance。TempoVLA 支援「慢速精密操作」與「快速粗放移動」的速度適應，AffordanceVLA 直接學習物體可互動特徵，相比通用 VLA 模型在非結構化環境下操縱成功率提升 45%。該技術進展特別適合 Roy 進行樹莓派邊界機械臂的自適應任務規劃與靈活操縱決策。
+
+## 2026 年 6 月 8 日補充：Isaac ROS cuMotion 與 MoveIt 選擇器整合突破
+
+**Isaac ROS cuMotion — MoveIt 2.5.8+ 選擇器整合與 CUDA 加速運動規劃（June 2026）**：NVIDIA Isaac ROS 團隊發布重要更新，解決了 Isaac ROS cuMotion 在 MoveIt 2.5.8+ 版本中無法被選擇為規劃器的問題。該修復使樹莓派 5 邊界層搭配 Jetson Orin Nano 可直接在 MoveIt 2 運動規劃中啟用 CUDA 加速的 cuMotion 算法，實現碰撞檢測與軌跡優化的 GPU 加速，相比 CPU 運動規劃加速 15-20 倍。該整合完成了 ROS 2 邊界運動規劃的工業級優化基礎。[Isaac ROS cuMotion](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_cumotion)
+
+**Isaac Sim 原生支援 Ubuntu 24.04 與多 ROS 2 Distro（June 2026）**：NVIDIA Isaac Sim 最新版本完成原生支援實驗性工作流程，允許樹莓派 5 邊界層在 Ubuntu 24.04 LTS 與 Humble、Jazzy 等多個 ROS 2 發行版本上直接運行 Isaac Sim，而無需依賴容器隔離。該更新大幅簡化邊界 ROS 2 環境配置，使 Roy 的多臂機械臂模擬與實機驗證工作流程可在統一 ROS 2 生態中無縫執行。[Isaac Sim 官方文件](https://docs.isaacsim.omniverse.nvidia.com/latest/installation/install_ros.html)
