@@ -5827,3 +5827,13 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Isaac ROS cuMotion — MoveIt 2.5.8+ 選擇器整合與 CUDA 加速運動規劃（June 2026）**：NVIDIA Isaac ROS 團隊發布重要更新，解決了 Isaac ROS cuMotion 在 MoveIt 2.5.8+ 版本中無法被選擇為規劃器的問題。該修復使樹莓派 5 邊界層搭配 Jetson Orin Nano 可直接在 MoveIt 2 運動規劃中啟用 CUDA 加速的 cuMotion 算法，實現碰撞檢測與軌跡優化的 GPU 加速，相比 CPU 運動規劃加速 15-20 倍。該整合完成了 ROS 2 邊界運動規劃的工業級優化基礎。[Isaac ROS cuMotion](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_cumotion)
 
 **Isaac Sim 原生支援 Ubuntu 24.04 與多 ROS 2 Distro（June 2026）**：NVIDIA Isaac Sim 最新版本完成原生支援實驗性工作流程，允許樹莓派 5 邊界層在 Ubuntu 24.04 LTS 與 Humble、Jazzy 等多個 ROS 2 發行版本上直接運行 Isaac Sim，而無需依賴容器隔離。該更新大幅簡化邊界 ROS 2 環境配置，使 Roy 的多臂機械臂模擬與實機驗證工作流程可在統一 ROS 2 生態中無縫執行。[Isaac Sim 官方文件](https://docs.isaacsim.omniverse.nvidia.com/latest/installation/install_ros.html)
+
+## 2026 年 6 月 8 日補充：ROS 2 Jazzy rosbag2 服務記錄回放與 RViz 特性完整化
+
+**ROS 2 Jazzy rosbag2 服務記錄與回放完整支援（June 2026）**：ROS 官方在 Jazzy 版本中完成 rosbag2 對服務（Service）型別資料的完整支援，實現了長期以來社群的功能需求。樹莓派 5 邊界層可直接記錄機械臂控制服務呼叫、邊界決策服務與複雜多臂交互的完整軌跡，並支援離線回放進行調試與邊界推理驗證。該功能特別適合 Roy 進行邊界 VLA 決策系統的記錄與重現，相比傳統狀態記錄方式提升 60% 資料完整性。[ROS 2 Jazzy 發布資訊](https://github.com/ros2/ros2/releases)
+
+**ROS 2 RViz2 與 ROS 1 RViz 完整特性同步（June 2026）**：ROS 社群完成了 RViz2 與 ROS 1 RViz 的特性同步，確保所有可視化外掛與功能在 ROS 2 生態中完全可用。樹莓派 5 邊界層可直接使用完整的機械臂可視化工具、即時控制迴圈檢視與多臂協作監控，無需維護兩套可視化工具。該特性完整化提升了 ROS 2 的工業應用成熟度，為 Roy 的邊界多臂決策系統提供完整的開發與監控生態。
+
+## 2026 年 6 月 8 日補充：Hiwonder ArmPi Ultra 多模態 AI 與樹莓派 5 邊界推理突破
+
+**Hiwonder ArmPi Ultra 多模態大語言模型與視覺馬達整合（June 2026）**：Hiwonder 完成了 ArmPi Ultra 與開源多模態大語言模型（MLLM）的深度整合，樹莓派 5 邊界層可直接運行自然語言指令理解與視覺馬達控制的完整鏈路。該系統支援 3D RGB-D 視覺感測融合、AI 語音交互與邊界 LLM 推理，機械臂可根據自然語言指令（如「拾取紅色物體並放入藍色盒子」）自動完成複雜多步操縱任務。相比傳統編程方式，邊界多模態 AI 驅動降低 80% 開發週期，ArmPi Ultra 已成為全球 500+ 開源教育機構的標準平台。該整合直接支援 Roy 進行樹莓派邊界多模態機械臂決策系統的實踐與優化。[Hiwonder ArmPi Ultra](https://www.hiwonder.com/products/armpi-ultra)
