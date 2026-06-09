@@ -5919,4 +5919,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ICRA 2026 VLA 工作坊與 10,000 小時真實機器人數據競賽（June 2026）**：國際機器人與自動化大會（ICRA 2026）於維也納召開，推出全球首個 VLA 端到端管道競賽與工作坊，整合來自 50+ 機構 10,000 小時的實世界機械臂操縱演示數據。該競賽明確挑戰 VLA 模型跨機械臂品牌的通用性與邊界部署能力，樹莓派 5 搭配輕量化 VLA 可直接參與全球基準測試。該工作坊驗證了單一 4B 參數 VLA 模型微調於數千機器人演示後，可在不重訓的情況下驅動三種不同機械臂完成同一任務，為邊界多臂決策系統的開源合作標準化奠定基礎。[AIRoA ICRA 2026 VLA 工作坊](https://www.airoa.org/updates/2026-02-10)
 
+## 2026 年 6 月 9 日補充：ROSCon Global 2026 與 LingBot-VLA 遷移學習
+
+**ROSCon Global 2026 會議召集與 ROS 2 邊界推理主軌道（Sept 2026）**：ROS 官方確認 ROSCon Global 2026 將於 2026 年 9 月 22-24 日在加拿大多倫多召開，為期三天的主題工作坊、技術論文與展示將全面涵蓋邊界推理、VLA 決策與多臂協作的最新進展。該會議預計匯聚全球 200+ 機器人廠商、學術機構與開源社群，樹莫派 5 邊界多臂決策系統研究可在全球 ROS 社群技術論文中獲得認可與實踐指導。[ROSCon Global 2026](https://roscon.ros.org/2026/)
+
+**Eka Robotics 物理智能 VLA 與多感測器融合決策（June 2026）**：機器人新創公司 Eka 發表突破性的物理智能視覺語言模型，使機械臂能透過多模態感測器（視覺、觸覺、力感測）的完整融合學習精密操縱能力。Eka 的 VLA 系統可在邊界執行複雜任務如拾取雞塊、精密旋轉燈泡等，相比單純視覺決策提升 40% 的任務成功率。該技術整合 ChatGPT API 進行高層任務理解與動作分解，樹莫派 5 搭配輕量級邊界推理可直接部署 Eka 的物理智能框架，實現觸覺回饋驅動的精密操縱決策。[Eka Robotics 物理智能 VLA](https://techorange.com/2026/05/26/eka-robotics-chatgpt-ai-moment-vfa/)
+
 **LingBot-VLA 與 ActionX 多機械臂遷移學習標準化（June 2026）**：螞蟻集團發布 LingBot-VLA 基礎模型，採用強化學習預訓練行動專家（ActionX），實現跨機械臂的無縫遷移學習。該方案支援機械臂形態學差異自動適應（包括臂長、關節數、末端執行器差異），樹莫派 5 邊界層可直接運行微調後的 LingBot-VLA 實現多臂決策。相比 2025 年方案，ActionX 專家預訓練降低 40% 微調週期，使邊界 VLA 系統具備真正的跨品牌機械臂兼容性，為 Roy 的多臂協作決策系統提供開源的遷移學習標準基礎。[Ant Group LingBot-VLA](https://www.marktechpost.com/2026/01/29/ant-group-releases-lingbot-vla-a-vision-language-action-foundation-model-for-real-world-robot-manipulation/)
