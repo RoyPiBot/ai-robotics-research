@@ -5908,3 +5908,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **九個新 OEM 機械臂獲得 ROS 2 驅動程式支援（June 2026）**：ROS 社群於 2026 年新增九個國際主流機械臂品牌的 ROS 2 驅動支援，包括 FANUC、Kawasaki、Yaskawa 等工業級系統，現已達成 40+ 全球機械臂品牌的統一驅動堆棧。新增驅動完整支援 ros2_control 硬體抽象層、MoveIt 2 運動規劃與即時控制迴圈，確認 ROS 2 已成為全球工業機械臂軟體標準。樹莓派 5 邊界層可透過統一的 ROS 2 驅動堆棧直接協調多品牌機械臂，無需廠商特定的專有軟體，大幅簡化邊界多臂決策系統的硬體整合複雜度。
 
 **NVIDIA Isaac 與 ROS 2 邊界推理整合生產驗證（June 2026）**：NVIDIA 已將其 Isaac 機器人平臺完整整合至 ROS 2 Lyrical Luth 生態，統一提供模擬（Isaac Sim with Gazebo）、AI 推理（Isaac Perceptor）與硬體加速（Jetson Orin 原生支援）。該整合使樹莓派 5 搭配 Jetson Orin Nano 邊界層可無縫執行 NVIDIA 的視覺感知模型、VLA 推理與軌跡優化，相比獨立部署降低 40% 系統集成時間。NVIDIA 已在 50+ 全球工廠驗證該生態的生產級可靠性，為 Roy 的樹莫派邊界多臂 AI 決策系統提供業界領先的硬體加速與統一軟體架構。
+
+## 2026 年 6 月 9 日補充：Hiwonder 輕量級 LLM 驅動臂與模組化平臺
+
+**ArmPi Ultra — LLM 驅動的輕量級學習機械臂（June 2026）**：Hiwonder 正式發佈 ArmPi Ultra，該機械臂整合大型語言模型（LLM）實現自然語言任務分解與智能決策。ArmPi Ultra 內建 ROS 2 完整支援、樹莓派 4/5 相容，搭配輕量級 LLM（Phi-4 或 Gemini Nano）可在邊界執行視覺理解與任務規劃。該平臺特別適合教育與研究應用，支援 Python API 快速迭代與多模態感知整合，是入門級 ROS 2 機械臂操控與 LLM 決策驗證的理想選擇。[Hiwonder ArmPi Ultra 官網](https://www.hiwonder.com/blogs/news/level-ros)
+
+**JetArm Pro — 6-DOF 模組化機械臂平臺（June 2026）**：Hiwonder 推出 JetArm Pro，為可擴展的 6-DOF 機械臂設計，支援多臂協作與移動式操控機器人（Mobile Manipulation）擴展。JetArm Pro 的 ROS 2 驅動完整支援 MoveIt 2 運動規劃、ros2_control 即時控制與 Jetson Orin Nano 邊界推理。該平臺模組化設計允許用戶快速擴展末端效應器、視覺感測與力感測器，是樹莓派 5 邊界層進行多臂協作研究與工業應用驗證的標準參考平臺。[JetArm Pro Hackster.io 介紹](https://www.hackster.io/HiwonderRobot/jetarm-pro-expandable-ros-platform-for-mobile-manipulation-aff995)
