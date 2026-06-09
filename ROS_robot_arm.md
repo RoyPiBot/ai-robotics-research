@@ -3897,6 +3897,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 社群邊界推理與 Multimodal LLM 整合新浪潮**：ROS 2 工業生態進入「具身 AI 超級大腦」時代，多模態大語言模型（LLMs）與視覺-語言-動作（VLA）框架無縫集成至 ROS 2 邊界推理管線，實現機械臂的語義推理與複雜任務分解。Lyrical Luth 版本新增事件流標準支援與 GPU 加速推理優化，使 Roy 的樹莓派 5 邊界系統可整合最新的 Octo/GR00T/Helix 等 VLA 模型，在毫秒級延遲內完成自然語言指令驅動的多臂協作操縱。該進展驗證了事件驅動視覺伺服與邊界強化學習決策層向通用智能機械臂的技術轉向。[ROS News Apr 27 2026](https://discourse.openrobotics.org/t/ros-news-for-the-week-of-april-27th-2026/54463)
 
+## 2026 年 6 月 10 日補充：ICRA 2026 與工業級機械臂平台進展
+
+**PAL Robotics 推出 7-DOF ROS 2 研究級協作臂平台**：PAL Robotics 於 ICRA 2026（維也納）正式推出全新的 7 自由度協作臂，採用專有的系列彈性執行器（Series Elastic Actuators, SEA）技術。該平台重量 <10kg，承載 3kg，搭載 1kHz 低階控制迴圈，深度整合 ros_control 架構與 MoveIt 2 運動規劃。該機械臂專為複雜操作研究設計，支援視覺伺服、力反饋與邊界推理應用，為 Roy 的多感測器融合決策系統提供產業級硬體驗證平台。該平台已獲國際認可，適合樹莓派 5 邊界推理與視覺伺服決策層的實機驗證。[PAL Robotics ICRA 2026 新品發表](https://roboticsandautomationnews.com/2026/05/14/pal-robotics-unveils-new-robotic-arm-platform-for-advanced-ai-driven-manipulation/101537/)
+
+**工業應用快速重新配置趨勢（小時級 vs. 周級）**：2026 年工業機械臂應用中，快速任務重新配置能力成為關鍵指標。業界報告顯示，採用 ROS 2 Control 標準框架的機械臂系統可在 **小時級** 內完成晶圓搬運、PCB 檢測、元件放置等複雜任務的軟體重配置，相較傳統方案的週級部署大幅降低停機時間。此趨勢驗證了邊界推理層多感測器融合決策系統在工業自動化中的實際價值，為 Roy 的視覺伺服+力控+位置融合決策架構提供市場驅動力與應用前景。
+
 ## 2026 年 5 月 3 日補充：Embodied AI 應用與多臂協作視覺伺服實踐
 
 **MoveIt Pro 工業硬體生態擴展與協作臂統一框架**：PickNik Robotics 推出的 MoveIt Pro 平台於 2025-2026 年完成對廣泛硬體生態的原生支援，包含 Kinova、ROBOTIS、Universal Robots、xArm、ABB、KUKA 等 125+ 協作臂型號，實現硬體無關化的高層操縱抽象。MoveIt Pro 結合了運動規劃、視覺伺服、力控反饋與碰撞迴避等完整能力，特別適合 Roy 的多臂異構系統進行統一的軟體架構設計與跨平台驗證。該方案已在 ROSCon 2025 展示工業應用案例，驗證了邊界視覺伺服決策層與標準化硬體驅動層的深度整合。[PickNik MoveIt Pro Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/)
