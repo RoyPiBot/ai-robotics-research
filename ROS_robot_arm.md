@@ -5896,3 +5896,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 6 月 9 日補充：邊界視覺伺服與力控制整合驗證
 
 **ROS 2 邊界視覺伺服與力反饋閉迴路決策整合（June 2026）**：開源社群完成邊界視覺伺服（Visual Servoing）與力控制（Force Control）的深度整合驗證框架，樹莫派 5 搭配 Jetson Orin Nano 與六軸力感測器（FT Sensor）可實時執行視覺目標追蹤與力約束下的精密操縱。該框架支援視覺特徵點追蹤、力控制迴圈與 MoveIt 2 軌跡規劃的多模態融合決策，在精密組裝任務中達成 <1mm 位置精度與 <5N 力控制精度。ROS 2 Lyrical Luth 原生支援該決策框架，特別適合 Roy 進行樹莫派邊界多臂力控視覺伺服系統的生產驗證與強化學習決策優化。
+
+## 2026 年 6 月 9 日補充：ROS 2 Lyrical Luth 新增控制特性與邊界多臂協作
+
+**ROS 2 Lyrical Luth 新增硬體感測與控制器管理特性（June 2026）**：ROS 官方在 Lyrical Luth 版本引入 MagneticFieldSensor 語義元件支援磁力計感測、優化 controller_manager 在控制鏈故障時的自動降級策略（故障隔離無需全系統重啟），並新增 INDIVIDUAL_BEST_EFFORT 與 REGEX 介面配置類型。樹莓派 5 搭配多臂系統可利用磁力感測實現微弱磁場環境下的精密定位，控制器管理的故障隔離保證多臂協作系統的持續運作與故障恢復。
+
+**生產級 VLA 邊界推理架構三大工程策略（June 2026）**：Figure AI、Tesla 與 NVIDIA 確認 2026 年邊界 VLA 推理採用三大標準工程策略：(1) Action Chunking——單次推理輸出 8-50 個連續動作以降低推理頻率，機械臂開迴路執行同時計算下一批動作；(2) 非同步 System 1/System 2 架構——重量級 VLM 於 5-10 Hz 規劃任務，輕量級 diffusion 或 flow-matching 專家於 50-100 Hz 輸出連續馬達命令；(3) 雙層決策系統——System 2 負責高層語言任務規劃，System 1 以視覺幀驅動 30-50 Hz 低階馬達控制。樹莓派 5 邊界層可直接應用該三層架構實現穩定的邊界多臂視覺語言決策。
