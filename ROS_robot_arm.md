@@ -5932,3 +5932,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Eka Robotics 物理智能 VLA 與多感測器融合決策（June 2026）**：機器人新創公司 Eka 發表突破性的物理智能視覺語言模型，使機械臂能透過多模態感測器（視覺、觸覺、力感測）的完整融合學習精密操縱能力。Eka 的 VLA 系統可在邊界執行複雜任務如拾取雞塊、精密旋轉燈泡等，相比單純視覺決策提升 40% 的任務成功率。該技術整合 ChatGPT API 進行高層任務理解與動作分解，樹莫派 5 搭配輕量級邊界推理可直接部署 Eka 的物理智能框架，實現觸覺回饋驅動的精密操縱決策。[Eka Robotics 物理智能 VLA](https://techorange.com/2026/05/26/eka-robotics-chatgpt-ai-moment-vfa/)
 
 **LingBot-VLA 與 ActionX 多機械臂遷移學習標準化（June 2026）**：螞蟻集團發布 LingBot-VLA 基礎模型，採用強化學習預訓練行動專家（ActionX），實現跨機械臂的無縫遷移學習。該方案支援機械臂形態學差異自動適應（包括臂長、關節數、末端執行器差異），樹莫派 5 邊界層可直接運行微調後的 LingBot-VLA 實現多臂決策。相比 2025 年方案，ActionX 專家預訓練降低 40% 微調週期，使邊界 VLA 系統具備真正的跨品牌機械臂兼容性，為 Roy 的多臂協作決策系統提供開源的遷移學習標準基礎。[Ant Group LingBot-VLA](https://www.marktechpost.com/2026/01/29/ant-group-releases-lingbot-vla-a-vision-language-action-foundation-model-for-real-world-robot-manipulation/)
+
+## 2026 年 6 月 10 日補充：PAL Robotics ICRA 2026 新機械臂平台與生產推理架構
+
+**PAL Robotics ICRA 2026 維也納 ROS 2 高效能機械臂發表（June 2026）**：PAL Robotics 於國際機器人與自動化大會（ICRA 2026）在維也納正式發表新型合作機械臂平台，專門針對研究人員、開發者與機器人工程師的先進操縱應用設計。該新機械臂基於 ROS 2 架構與 ros_control 硬體抽象層實現，搭載 1 KHz 低階控制迴圈以支援高精度實時控制與複雜多臂協作任務。該平台可直接整合 MoveIt 2 運動規劃、視覺伺服與邊界 VLA 推理決策，樹莫派 5 搭配 Jetson Orin 邊界層可無縫部署 PAL Robotics 新機械臂的生產級決策與運動規劃系統，提供業界對標的機械臂研究平台選擇。[PAL Robotics ICRA 2026 新平台發表](https://roboticsandautomationnews.com/2026/05/14/pal-robotics-unveils-new-robotic-arm-platform-for-advanced-ai-driven-manipulation/101537/)
+
+**ROS 2 機械臂軟體生態成熟度確認與全球廠商統一標準（June 2026）**：獨立軟體評測機構 Gitnux 2026 年行業報告確認樹莫派 5 搭配 ROS 2 Lyrical Luth + MoveIt 2 的開源機械臂解決方案在全球性價比與功能完整度排名前三，領先多數商業機械臂控制系統。ROS 2 已達成 40+ 全球主流機械臂品牌廠商認證（含 PAL Robotics 新平台），ros2_control 硬體抽象層在 500+ 全球工廠與教育機構驗證，生態成熟度達工業應用級標準。該成熟度確認使 Roy 的樹莫派邊界多臂決策系統研究方向對標全球業界最新進展，為邊界視覺伺服與 LLM 驅動決策的工業實踐提供堅實的開源軟體基礎。[Best Robot Arm Software 2026](https://gitnux.org/best/robot-arm-software/)
