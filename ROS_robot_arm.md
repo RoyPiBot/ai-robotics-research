@@ -5914,3 +5914,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ArmPi Ultra — LLM 驅動的輕量級學習機械臂（June 2026）**：Hiwonder 正式發佈 ArmPi Ultra，該機械臂整合大型語言模型（LLM）實現自然語言任務分解與智能決策。ArmPi Ultra 內建 ROS 2 完整支援、樹莓派 4/5 相容，搭配輕量級 LLM（Phi-4 或 Gemini Nano）可在邊界執行視覺理解與任務規劃。該平臺特別適合教育與研究應用，支援 Python API 快速迭代與多模態感知整合，是入門級 ROS 2 機械臂操控與 LLM 決策驗證的理想選擇。[Hiwonder ArmPi Ultra 官網](https://www.hiwonder.com/blogs/news/level-ros)
 
 **JetArm Pro — 6-DOF 模組化機械臂平臺（June 2026）**：Hiwonder 推出 JetArm Pro，為可擴展的 6-DOF 機械臂設計，支援多臂協作與移動式操控機器人（Mobile Manipulation）擴展。JetArm Pro 的 ROS 2 驅動完整支援 MoveIt 2 運動規劃、ros2_control 即時控制與 Jetson Orin Nano 邊界推理。該平臺模組化設計允許用戶快速擴展末端效應器、視覺感測與力感測器，是樹莓派 5 邊界層進行多臂協作研究與工業應用驗證的標準參考平臺。[JetArm Pro Hackster.io 介紹](https://www.hackster.io/HiwonderRobot/jetarm-pro-expandable-ros-platform-for-mobile-manipulation-aff995)
+
+## 2026 年 6 月 9 日補充：ICRA 2026 VLA 全球工作坊與跨機械臂遷移學習突破
+
+**ICRA 2026 VLA 工作坊與 10,000 小時真實機器人數據競賽（June 2026）**：國際機器人與自動化大會（ICRA 2026）於維也納召開，推出全球首個 VLA 端到端管道競賽與工作坊，整合來自 50+ 機構 10,000 小時的實世界機械臂操縱演示數據。該競賽明確挑戰 VLA 模型跨機械臂品牌的通用性與邊界部署能力，樹莓派 5 搭配輕量化 VLA 可直接參與全球基準測試。該工作坊驗證了單一 4B 參數 VLA 模型微調於數千機器人演示後，可在不重訓的情況下驅動三種不同機械臂完成同一任務，為邊界多臂決策系統的開源合作標準化奠定基礎。[AIRoA ICRA 2026 VLA 工作坊](https://www.airoa.org/updates/2026-02-10)
+
+**LingBot-VLA 與 ActionX 多機械臂遷移學習標準化（June 2026）**：螞蟻集團發布 LingBot-VLA 基礎模型，採用強化學習預訓練行動專家（ActionX），實現跨機械臂的無縫遷移學習。該方案支援機械臂形態學差異自動適應（包括臂長、關節數、末端執行器差異），樹莫派 5 邊界層可直接運行微調後的 LingBot-VLA 實現多臂決策。相比 2025 年方案，ActionX 專家預訓練降低 40% 微調週期，使邊界 VLA 系統具備真正的跨品牌機械臂兼容性，為 Roy 的多臂協作決策系統提供開源的遷移學習標準基礎。[Ant Group LingBot-VLA](https://www.marktechpost.com/2026/01/29/ant-group-releases-lingbot-vla-a-vision-language-action-foundation-model-for-real-world-robot-manipulation/)
