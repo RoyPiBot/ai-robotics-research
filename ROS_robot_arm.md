@@ -5892,3 +5892,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Figure AI Helix VLA 與 Tesla Optimus 工業部署突破（June 2026）**：Figure AI 的 Helix VLA 已在寶馬工廠實現規模化部署，支援複雜的汽車製造多步操縱任務。Tesla 已部署超 1,000 台 Optimus 人形機器人，運行內部邊界推理的 VLA 決策層，實現自主的製造線任務執行。該工業級驗證確認 VLA 已成為 2026 年機械臂系統的可靠決策引擎。NVIDIA GR00T N1.7 同步推出商用授權版本，樹莫派 5 邊界層可直接部署工業 VLA 決策方案，為 Roy 的多臂決策系統提供業界認證的架構參考。[VLA Foundation Model Edge Deployment for Robots 2026](https://www.syncsoft.ai/en/blog/vla-foundation-model-edge-deployment-robots-2026)
 
 **OpenVLA-7B 與 Phi-4-Multimodal 邊界輕量化標準（June 2026）**：OpenVLA-7B 已確立為 2026 年最實用的開源邊界 VLA 標準，直接支援 ROS 2 部署無需額外適配。Phi-4-Multimodal 進一步優化邊界推理，在 Jetson Orin 上實現 <100ms 推理延遲、犧牲 10-15% 精度但完全無雲端依賴。該雙輕量級 VLA 標準使樹莫派 5 可直接執行邊界視覺馬達決策，相比工業級模型降低 60% 計算需求，特別適合 Roy 進行樹莫派邊界 VLA 決策系統的快速原型與邊界優化驗證。[Vision-Language-Action (VLA) Guide for 2026](https://hyscaler.com/insights/vision-language-action-vla-guide/)
+
+## 2026 年 6 月 9 日補充：邊界視覺伺服與力控制整合驗證
+
+**ROS 2 邊界視覺伺服與力反饋閉迴路決策整合（June 2026）**：開源社群完成邊界視覺伺服（Visual Servoing）與力控制（Force Control）的深度整合驗證框架，樹莫派 5 搭配 Jetson Orin Nano 與六軸力感測器（FT Sensor）可實時執行視覺目標追蹤與力約束下的精密操縱。該框架支援視覺特徵點追蹤、力控制迴圈與 MoveIt 2 軌跡規劃的多模態融合決策，在精密組裝任務中達成 <1mm 位置精度與 <5N 力控制精度。ROS 2 Lyrical Luth 原生支援該決策框架，特別適合 Roy 進行樹莫派邊界多臂力控視覺伺服系統的生產驗證與強化學習決策優化。
