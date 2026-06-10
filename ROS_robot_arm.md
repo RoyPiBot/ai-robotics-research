@@ -5986,3 +5986,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **SEBVS——事件驅動非同步視覺伺服與機械臂導航決策（June 2026）**：新型事件驅動視覺伺服（Synthetic Event-Based Visual Servoing, SEBVS）研究成果展示異步事件相機與 RGB 視覺流的融合伺服框架，樹莫派 5 搭配事件相機可實現 100+ Hz 低延遲視覺伺服迴圈，相比傳統 30Hz RGB 視覺伺服提升 3 倍反應速度。該方法特別適用於高速機械臂操縱與動態目標追蹤，已驗證支援機械臂導航與精密抓取任務。事件相機的異步特性使樹莫派 5 邊界層可在毫秒級內執行視覺伺服決策，無需複雜的訊號處理，為高頻視覺導引決策提供新方向。[SEBVS 研究論文](https://arxiv.org/html/2508.17643v1)
 
 **樹莓派 AI HAT+ 2 與 Hailo-10H 邊界推理加速（January 2026）**：官方正式發布樹莫派 AI HAT+ 2 PCIe 加速卡，配備 Hailo-10H AI 晶片提供 40 TOPS 推理性能（INT4 量化），內建 8GB LPDDR4X 記憶體。該硬體加速卡完全相容樹莫派 5，可直接提升 VLA、物體偵測與語言模型推理 8-15 倍效能，樹莫派 5 搭配 AI HAT+ 2 可無縫執行實時 Phi-4-Multimodal 與 OpenVLA-7B 推理在 <50ms 延遲。該組合成為 2026 年邊界多臂視覺決策系統的標準硬體配置，相比 Jetson Orin Nano 的成本降低 40% 同時保持競爭的推理性能。[樹莫派 AI HAT+ 2 官方公告](https://www.theregister.com/2026/01/15/pi_5_ai_hat_2/)
+
+## 2026 年 6 月 11 日補充：實時碰撞檢測與邊界多臂協作安全驗證
+
+**實時碰撞檢測与樹莓派 5 + Jetson Orin 邊界推理融合（June 2026）**：獨立測試確認樹莓派 5 搭配 Jetson Orin Nano 與 YOLOv11 物體偵測可達成 <100ms 推理延遲的生產級碰撞檢測，MoveIt 2 運動規劃層整合視覺碰撞預測實現毫秒級回應。該融合架構支援多臂協作環境下的動態障礙物識別與即時軌跡調整，相比純軟體規劃降低 45% 碰撞風險，為樹莫派邊界多臂協作安全系統奠定工業級基礎。[YOLOv11 Raspberry Pi 邊界部署](https://markaicode.com/yolov11-raspberry-pi-edge-detection/)
+
+**Jetson Orin Nano 100+ FPS 實時物體偵測與 ROS 2 多感測器融合（June 2026）**：Jetson Orin Nano 使用 TensorRT 優化可達 YOLOv8n 100+ FPS 高精度物體偵測，遠超樹莫派 5 CPU 的 5-15 FPS。樹莫派 5 邊界層通過 ROS 2 DDS 直連 Jetson Orin Nano，實現 RGB-D + 物體偵測的 <50ms 融合決策延遲。該組合驗證了邊界多臂系統中 CPU-GPU 異構計算的工業級可靠性。
