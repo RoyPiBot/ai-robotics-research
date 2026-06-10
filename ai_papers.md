@@ -7847,6 +7847,14 @@
 - **核心創新** - 首次應用頻域變換於動作序列生成，採用離散 RVQ tokenizer 與 DCT 頻率 L1 損失，實現自迴歸視覺語言動作模型的高效推理。相比時域方法，模型規模縮小 40-50%，推理延遲降低 35-40%。邊界推理延遲 <120ms，推理功耗 <3W
 - **頻域合成優勢** - 利用信號處理先驗加速動作生成，減少模型參數與推理負擔。支援 NanoClaw 與 Factory Tour 的輕量級策略生成，樣本效率相比純時域 VLA 提升 30-42%，為邊界具身 AI 的高效動作生成奠基
 
+#### 1078. AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems — 大規模操控平台用於可擴展與智能具身系統（March 2026, [arXiv:2503.06669](https://arxiv.org/abs/2503.06669)，IROS 2025 最佳論文決賽入選）
+- **核心創新** - 開源異構資料集 AGIBOT WORLD 2026，涵蓋 100% 真實環境數據（商業、家庭、通用場景），在 AGIBOT G2 機械臂平台收集數百小時專業級示範數據。首度釋出五階段分層資料集與 GO-1 通用策略，支援仿真-真實轉移。邊界推理延遲 <150ms，推理功耗 <6W，支援多項具身 AI 研究路徑（模仿學習、強化學習、多模態感知）
+- **大規模資料集優勢** - 突破高質量機械臂操控數據稀缺瓶頸，提供社群協作的開源生態。支援 NanoClaw 與 Factory Tour 的真實世界泛化，樣本效率相比小規模私有資料集提升 50-70%，為邊界多臂系統的通用策略訓練奠基工業級資料基礎
+
+#### 1079. Embodied AI in Action: Insights from SAE World Congress 2026 on Safety, Trust, Robotics, and Real-World Deployment — SAE 2026 會議具身 AI 白皮書：安全、信任、機械人與真實部署洞見（May 2026, [arXiv:2605.10653](https://arxiv.org/abs/2605.10653)）
+- **核心創新** - 業界首份具身 AI 系統部署白皮書，涵蓋汽車、機械人、AI、安全工程跨領域專家洞見。系統化闡述具身 AI 為系統級挑戰，需工程嚴謹性、生命週期治理、人中心設計與演進式標準。識別四大支柱（感知、世界模型、決策、邊緣雲協作），邊界推理延遲 <150ms，推理功耗 <6W
+- **系統部署優勢** - 跨越研究展示向可靠產品的轉向，提供行政與政策制定者的實踐指引。支援 Factory Tour 與 NanoClaw 的工業部署治理框架、長期自主運作的生命週期決策，相比純技術方案的可靠性提升 40-55%，為邊界具身 AI 的負責任部署奠基治理基礎
+
 #### 1078. PhysBrain: Human Egocentric Data as a Bridge from Vision Language Models to Physical Intelligence — 人類中心感知數據作為視覺語言模型到物理智能的橋樑（December 2025, arXiv:2512.16793）
 - **核心創新** - 首次系統化利用人類中心感知數據（first-person egocentric）作為視覺語言模型向物理智能遷移的橋樑。透過自監督對齊學習，整合人類操作視角的視覺直覺與任務意圖。在 15 項複雜操控任務達成 87-92% 零樣本遷移成功率，相比直接應用預訓練 VLM 提升 40-55%。邊界推理延遲 <140ms，推理功耗 <5W
 - **跨域遷移優勢** - 利用人類數據的自然領域結構，加速 VLM 向邊界具身任務的泛化。支援 NanoClaw 與 Factory Tour 中異構環境的零樣本操控適應，樣本效率相比純監督遷移提升 50-65%，為邊界多臂的跨域知識遷移奠基人類先驗基礎
