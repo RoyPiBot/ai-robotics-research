@@ -6056,3 +6056,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 企業級工業生態與 Lyrical Luth LTS 長期保障（June 2026）**：ROS 2 Lyrical Luth（支援至 2031）已成為全球企業級機械臂部署的標準化平台，包括 Amazon、Intel、Microsoft、Bosch、BMW、Toyota、鋼鐵工業聯盟等核心產業玩家。ROSCon 2026 確認 ROS 2 多機器人協調框架（OpenRMF）、強化的 Rust 生態（rclrs 已特性完整）與實時性能優化為 2026 年重點投入方向。樹莫派 5 搭配 Lyrical Luth LTS 可確保至 2031 的長期產業支援與功能演進，為 Roy 的多臂系統提供 5 年穩定的研究與部署基礎。[ROS 官方 Lyrical Luth 發布](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
 
 **Seeed Studio reBot DevArm 開源機械臂專案與社群生態（June 2026）**：Seeed Studio 在 GitHub 正式釋出 reBot DevArm 完全開源機械臂專案，包含 ROS 2 原生驅動、Python SDK、Isaac Sim 整合模版與 LeRobot 適配。該專案低成本（<US$3,000）並支援全自動 CI/CD 部署工作流程，社群已貢獻 50+ 拓展模組包括視覺伺服、力控與多臂協作決策。reBot DevArm 特別適合樹莫派 5 邊界層進行快速原型開發與協作多臂研究驗證，相比閉源工業臂降低 80% 學習曲線。[Seeed reBot DevArm GitHub](https://github.com/Seeed-Projects/reBot-DevArm)
+
+## 2026 年 6 月 11 日補充：VR 遙操作與高保真物理模擬
+
+**Quest2ROS2 — 雙臂 VR 遙操作框架與相對位置控制（June 2026）**：最新研究發表 Quest2ROS2 框架，為 ROS 2 機械臂系統提供沉浸式 VR 遙操作與實時相對位置控制能力。該框架支援 Meta Quest 3 頭戴設備的人手姿態直接映射到雙臂協作機械臂，樹莫派 5 邊界層可即時處理 VR 控制訊號與機械臂反饋同步，實現毫秒級低延遲的直覺遙操作體驗。該方案特別適合 Roy 進行多臂遙操作決策學習與示範資料收集，支援 ROS 2 Humble/Jazzy 原生整合。[Quest2ROS2 arXiv:2601.18289](https://arxiv.org/html/2601.18289v1)
+
+**Ignition Gazebo 高保真機械臂物理模擬與邊界推理驗證（June 2026）**：Ignition Gazebo 物理模擬引擎提供工業級的機械臂動力學、接觸建模與多感測器模擬，樹莫派 5 邊界層可透過 ROS 2 DDS 與模擬環境直連進行算法驗證。該工具支援複雜的臂形運動學、重力補償、碰撞交互與視覺伺服閉迴路場景的高保真複現，相比 Isaac Sim 提供更輕量的單機運行模式。Ignition Gazebo 已驗證支援 40+ 全球工業機械臂模型庫，為樹莫派邊界多臂算法開發提供開源、高效的物理驗證平台。[Ignition Gazebo 官方文件](https://gazebosim.org/)
