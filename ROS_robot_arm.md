@@ -6038,3 +6038,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Lyrical Luth LTS 長期支援（May 2026）**：ROS 官方發布 Lyrical Luth 為最新長期支援版本，支援週期至 2031 年 5 月，專門針對 Ubuntu 26.04 LTS（Resolute）與 Windows 11 優化。該版本完整支援樹莫派 5 與 Jetson 邊界層，內建 MagneticFieldSensor 磁力計支援、強化的控制器故障隔離機制與 REGEX 介面配置，相比 Jazzy 降低 25% 邊界推理配置複雜度。ROSCon 2026 確認 Lyrical Luth 為工業應用標準版本，樹莫派 5 搭配該版本可確保至 2031 年的長期軟體支援與功能演進。
 
 **Seeed Studio reBot Arm — 教育級邊界機械臂完整方案（June 2026）**：Seeed Studio 發布 reBot Arm 系列，內建 ROS 2 完整驅動與 Python SDK，支援動力學、軌跡規劃與重力補償演算法。該機械臂原生支援 Isaac Sim、LeRobot 與多種邊界推理框架，樹莫派 5 可直接無縫整合 reBot Arm 進行視覺伺服與 VLA 決策驗證，成本控制在 US$3,000 以內相比工業臂降低 70%，特別適合 Roy 進行邊界多感測器融合與協作決策的快速原型研究。[Seeed reBot Arm 官網](https://www.seeedstudio.com/)
+
+## 2026 年 6 月 11 日補充：AMD Ryzen AI 邊界推理與 ADLINK ROScube
+
+**AMD Ryzen AI Max+ 395 與 ROS 2 邊界機械臂推理加速（June 2026）**：AMD 發佈 Ryzen AI Max+ 395（Strix-Halo）平台的 ROS 2 邊界推理套件，整合 AMD AI NPU 與 iGPU，支援物體偵測、姿態估計與視覺伺服的實時推理。該平台相比 Jetson Orin Nano 功耗降低 40% 同時保持競爭推理性能，特別適合樹莫派 5 多臂系統的低功耗邊界加速。ROS 2 Lyrical Luth 已原生支援 Ryzen AI 的 ROCm 異構計算框架，為邊界機械臂提供 x86 架構的替代方案。[Ryzen AI ROS 2 建置指南](https://www.edge-ai-vision.com/2026/04/building-robotics-applications-with-ryzen-ai-and-ros-2/)
+
+**ADLINK ROScube 與 ROS 2 邊界整合解決方案（June 2026）**：ADLINK 推出 ROScube 一體化邊界 ROS 2 計算平台，預整合 MoveIt 2、Nav2 與多臂協作決策框架，支援樹莓派 5 與多種邊界加速卡（Hailo、Jetson 等）的無縫集成。該解決方案為樹莫派多臂邊界決策系統提供工業級的硬體整合與軟體棧，相比自組裝降低 60% 整合時間，為 Roy 的邊界多臂系統驗證提供產業認證的參考架構。[ADLINK ROScube](https://www.adlinktech.com/en/ros2-solution)
