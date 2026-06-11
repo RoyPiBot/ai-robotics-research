@@ -4048,6 +4048,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 Jazzy Jalisco 4 月與 1 月套件大爆發（2026 年持續演進）**：ROS 2 Jazzy Jalisco 作為 LTS 發行版支持至 2029 年，2026 年 4 月新增 150 個套件與 540 項更新、1 月亦新增 71 個套件與 514 項更新。新增套件涵蓋邊界視覺推理、事件驅動感知、多臂協作運動規劃與機器學習整合等核心領域。該持續演進確保 Roy 的樹莓派 5 ROS 2 基礎設施獲得最新的硬體適配、驅動優化與算法改進，特別是邊界視覺伺服決策層對實時感知與低延遲控制迴圈的支援。[ROS 2 Jazzy Jalisco Updates 2026](https://discourse.openrobotics.org/t/new-packages-for-jazzy-jalisco-2026-04-13/54004)
 
+## 2026 年 6 月 11 日補充：PAL Robotics 新平台與 Seeed Studio reBot Arm
+
+**PAL Robotics ROS 2 新機械臂平台（2026 年 5 月）**：PAL Robotics 推出新的 ROS 2 基礎機械臂平台，採用 ros_control 架構，搭載 1 KHz 低階控制迴圈，旨在加速研究與工業應用部署。該平台將在 ICRA 2026 維也納大會正式發表，提供詳細規格與即時演示。特別適合 Roy 進行邊界視覺伺服控制與多臂協作系統的模塊化驗證。
+
+**Seeed Studio reBot Arm B601 開源機械臂（2026 年 4 月）**：Seeed Studio 推出 reBot Arm B601 全開源機械臂，原生支援 ROS 1 與 ROS 2 (Humble) 運動控制與系統協調，為具身 AI 應用提供實惠硬體平台。該開源設計允許 Roy 進行邊界推理與視覺伺服決策層的快速原型驗證，加速從模擬到實體硬體的轉移。[Seeed Studio reBot Arm B601](https://www.seeedstudio.com/blog/2026/04/20/seeed-studio-launches-rebot-arm-b601-a-fully-open-source-robotic-arm-built-for-physical-ai/)
+
 **Qualcomm Dragonwing IQ10 機械臂專用邊界推理晶片與 ROS 2 原生支援（2026 年新推出）**：Qualcomm 於 2026 年發布新一代 Dragonwing IQ10 機械臂邊界推理處理器，專為工業機械臂、協作臂與人形機器人設計，支援實時視覺感知推理、觸覺感知融合與邊界決策執行。該晶片原生支援 ROS 2 框架，與 MoveIt 2 直接整合，相較 Jetson 邊界平台在邊界推理功耗降低 40% 而性能維持同級。該方案特別適合 Roy 的多臂視覺伺服邊界推理系統升級，實現從樹莓派 5 CPU 推理至專用邊界 AI 晶片的性能躍進，支援複雜物體偵測、姿態估計與多模態感知融合的 100Hz+ 實時推理迴圈。[Qualcomm Dragonwing IQ10 Robotics Platform](https://www.qualcomm.com/robotics)
 
 **ROS 2 邊界推理性能基準與 ML 增強規劃突破**（2025-2026）：ROS-Industrial Consortium 官方基準測試驗證，MoveIt 2 Python API 在 ARM 邊界裝置（Jetson Nano/樹莓派 5）上達成 65% 運動規劃週期加速，相較 2023 基線。同時，ML 增強規劃器在動態環境中達成 90%+ 成功率預測，為邊界決策層引入機器學習加速提供實驗依據。該進展驗證了邊界推理視覺伺服與標準化規劃框架的深度整合，特別適合 Roy 的樹莓派 5 邊界系統評估 ML 加速規劃對複雜非結構化環境自適應控制的實踐價值。[ROS-Industrial Performance Benchmarks 2025-2026](https://rosindustrial.org/news)
