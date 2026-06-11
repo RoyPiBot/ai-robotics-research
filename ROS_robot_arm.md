@@ -6026,3 +6026,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **PAL Robotics TIAGo-Next ROS 2 完全平台（June 2026）**：PAL Robotics 官方發布最新 TIAGo-Next 協作機械臂平台，以 ROS 2 與 ros_control 架構為核心基礎。該平台搭載 1 KHz 低層控制迴圈、完整的力回饋感測與邊界視覺伺服支援，已於 ICRA 2026 維也納展示。TIAGo-Next 與 ROS 2 Jazzy 實現完全原生整合，支援 MoveIt 2 動作規劃與 Nav2 自主導航，樹莫派 5 搭配邊界加速可無縫執行完整的感知-決策-控制流程。該平台適合 Roy 進行邊界多臂與移動操縱平台的研究與驗證。[PAL Robotics TIAGo-Next 官方](https://roboticsandautomationnews.com/2026/05/14/pal-robotics-unveils-new-robotic-arm-platform-for-advanced-ai-driven-manipulation/101537/)
 
 **Hiwonder ArmPi Ultra — LLM 驅動的智慧協作機械臂（June 2026）**：Hiwonder 發布 ArmPi Ultra 系列，整合大型語言模型（LLM）作為高階決策引擎，基於 ROS 2 與 ros_control 標準化架構。ArmPi Ultra 支援自然語言指令、視覺語言理解與即時軌跡生成，樹莫派 5 邊界層結合本地量化 LLM（如 Phi-4）可完整執行任務理解-規劃-執行的端到端工作流程。該平台強調成本効益性，相比專業協作臂價格降低 60% 同時保留生產級控制品質，特別適合 Roy 進行邊界 AI 驅動多臂決策的探索與驗證。[Hiwonder ArmPi Ultra](https://www.hiwonder.com/blogs/news/level-ros)
+
+## 2026 年 6 月 11 日補充：邊界檢測機器人與多機械臂協作框架
+
+**邊界 AI 檢測機器人與 ROS 2 原生整合（June 2026）**：Edge Impulse 與業界廠商合作展示邊界 AI 檢測機器人，於 Embedded World 2026 演示實時邊界推理架構。該系統採用兩層推理策略：(1) 快速移動檢測層——在機械臂移動過程中使用輕量級物體檢測模型（<50ms 延遲）掃描環境，快速識別潛在風險區域；(2) 精密驗證層——當檢測到目標時停止並採集高品質影像，用第二層 CNN 模型進行精密分類與確認。該架構特別適合樹莫派 5 邊界層進行工業檢測與品質管控，相比傳統持續高精度推理降低 70% 計算負荷。[Edge AI Inspection Robot ROS 2](https://www.edgeimpulse.com/blog/edge-ai-inspection-robot-ros-2-native/)
+
+**RoboOS — 跨身體多機械臂協作與統一決策框架（June 2026）**：新型 RoboOS 階層式具身 AI 框架實現跨機械臂品牌與多代理協作的統一決策，支援多機械臂、多模態感測與多任務場景的自適應規劃。該框架基於 ROS 2 與 MoveIt 2 深度整合，支援異構機械臂（PAL Robotics、Kinova、UR 等不同品牌）的動態協調、碰撞檢測與任務分解。RoboOS 在邊界層可實現 <100ms 多臂決策延遲，樹莫派 5 搭配 Jetson Orin 可直接執行複雜多臂組裝、搬運與協作操縱任務。該框架為 Roy 進行樹莫派邊界多臂協作系統的跨品牌研究提供統一的開源基礎。[RoboOS arXiv:2505.03673](https://arxiv.org/html/2505.03673v2)
