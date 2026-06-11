@@ -6014,3 +6014,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **GuideWalk — 多地形自主導航與行走協調（June 2026）**：新型 GuideWalk 框架專注於機械臂搭載的移動式機器人在多種地形環境下的自主導航與行走穩定性。該系統整合視覺感知、地形分類與動態平衡控制，使樹莫派 5 邊界層可驅動移動機械臂適應複雜環境（斜坡、不規則地面、障礙物）的自主行走與操縱協調。相比傳統路徑規劃方案，GuideWalk 降低 50% 跌落風險與失衡，為邊界多臂移動操縱系統的戶外應用提供可靠的導航決策基礎。[GuideWalk 研究論文](https://arxiv.org/)
 
 **數位雙生與 ROS 2 工業協同決策系統（June 2026）**：最新工業應用驗證結合雙向物理-虛擬對映的數位雙生框架與 ROS 2 DDS 中介層，統一協調多臂系統、PLC、感測器與企業系統於實時決策環境。該系統整合 CNN-LSTM-Transformer 混合神經網路實現動態場景的自適應控制，樹莫派 5 邊界層可即時執行基於數位孿生驗證的多臂決策，相比傳統工業自動化系統降低 50% 系統集成複雜度與部署週期。該技術已於製造業、藥業無菌室等複雜環境驗證，為 Roy 的樹莫派邊界多臂生產級決策系統提供工業級數位孿生對標。[Digital Twin Adaptive Control 論文](https://www.nature.com/articles/s41598-025-34822-6)
+
+## 2026 年 6 月 11 日補充：PAL Robotics ROS 2 新平台與 AI 驅動機械臂
+
+**PAL Robotics TIAGo-Next ROS 2 完全平台（June 2026）**：PAL Robotics 官方發布最新 TIAGo-Next 協作機械臂平台，以 ROS 2 與 ros_control 架構為核心基礎。該平台搭載 1 KHz 低層控制迴圈、完整的力回饋感測與邊界視覺伺服支援，已於 ICRA 2026 維也納展示。TIAGo-Next 與 ROS 2 Jazzy 實現完全原生整合，支援 MoveIt 2 動作規劃與 Nav2 自主導航，樹莫派 5 搭配邊界加速可無縫執行完整的感知-決策-控制流程。該平台適合 Roy 進行邊界多臂與移動操縱平台的研究與驗證。[PAL Robotics TIAGo-Next 官方](https://roboticsandautomationnews.com/2026/05/14/pal-robotics-unveils-new-robotic-arm-platform-for-advanced-ai-driven-manipulation/101537/)
+
+**Hiwonder ArmPi Ultra — LLM 驅動的智慧協作機械臂（June 2026）**：Hiwonder 發布 ArmPi Ultra 系列，整合大型語言模型（LLM）作為高階決策引擎，基於 ROS 2 與 ros_control 標準化架構。ArmPi Ultra 支援自然語言指令、視覺語言理解與即時軌跡生成，樹莫派 5 邊界層結合本地量化 LLM（如 Phi-4）可完整執行任務理解-規劃-執行的端到端工作流程。該平台強調成本効益性，相比專業協作臂價格降低 60% 同時保留生產級控制品質，特別適合 Roy 進行邊界 AI 驅動多臂決策的探索與驗證。[Hiwonder ArmPi Ultra](https://www.hiwonder.com/blogs/news/level-ros)
