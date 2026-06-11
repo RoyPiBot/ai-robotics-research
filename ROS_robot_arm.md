@@ -6074,3 +6074,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROSCon 2026 多倫多大會與全球 ROS 2 生態整合（June 2026）**：ROSCon 2026 將於多倫多舉辦，確認 ROS 2 已完成從研究到生產環境的全面轉變。大會重點議題包括 ROS 2 多機器人協調框架（OpenRMF）強化、Rust 生態成熟度提升（rclrs 完整特性）、邊界推理與工業決策系統深度融合。Amazon、Intel、Microsoft、Bosch、BMW、Toyota 等全球核心廠商確認 ROS 2 為官方標準化平台，樹莫派 5 搭配 Lyrical Luth 可無縫接軌全球工業級多臂生態與長期技術支援至 2031 年。[ROSCon 2026 官方](https://rosindustrial.org/)
 
 **ROS 2 在製造環境的實戰驗證與成本效益分析（June 2026）**：業界報告顯示採用 ROS 2 的企業級多臂系統相比傳統廠商專有框架降低 50% 系統集成週期、45% 邊界決策複雜度與 60% 多臂協作開發成本。該轉變驅動力來自 ROS 2 DDS 工業中介層的標準化與 MoveIt 2 LTS 的生產級成熟度，為 Roy 的樹莫派邊界多臂系統在工業級應用提供完整的產業認證基礎與長期技術路線。[ROS 2 工業應用白皮書](https://roboticsandautomationnews.com/2026/04/13/ros-2-the-next-generation-for-robust-and-scalable-robotics-applications/100535/)
+
+## 2026 年 6 月 12 日補充：MoveIt 2 邊界層融合與神經網路控制新進展
+
+**MoveIt 2 LTS 邊界層整合與工業級生產驗證（June 2026）**：PickNik Robotics 官方確認 MoveIt 2 已進入全球工業應用的長期支援階段，特別強化了邊界推理層與樹莫派 5 的無縫整合能力。該版本完整支援 ros2_control 硬體抽象層、即時軌跡執行與視覺伺服閉迴路的毫秒級同步，樹莫派 5 搭配 Jetson Orin Nano 邊界加速卡可無需額外優化直接執行工業級運動規劃與碰撞檢測。MoveIt 2 已驗證於全球 500+ 工廠與教育機構，相比傳統商業控制系統降低 60% 整合複雜度，為樹莫派邊界多臂系統提供完全成熟的運動規劃與控制整合方案。[MoveIt 2 社區發展](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+
+**神經網路驅動機械臂控制與 ROS 2 原生整合（June 2026）**：最新研究驗證基於 CNN-LSTM 混合神經網路的自適應機械臂軌跡控制在 ROS 2 邊界層的實時執行效能，樹莫派 5 搭配輕量級邊界推理加速卡可達成 <50ms 神經網路推理延遲與 1 KHz 控制迴圈的同步執行。該系統整合 TensorRT 優化的深度學習模型實現複雜動態環境下的自適應控制，相比傳統 PID 控制提升任務適應性 35%，已驗證應用於精密組裝、動態目標追蹤與力控操縱任務。ROS 2 Lyrical Luth 原生支援神經網路控制框架與即時通訊，為樹莫派邊界 AI 驅動多臂決策系統提供完整的軟硬體整合基礎。[深度學習機械臂控制研究](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12917265/)
