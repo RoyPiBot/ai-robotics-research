@@ -6044,3 +6044,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **AMD Ryzen AI Max+ 395 與 ROS 2 邊界機械臂推理加速（June 2026）**：AMD 發佈 Ryzen AI Max+ 395（Strix-Halo）平台的 ROS 2 邊界推理套件，整合 AMD AI NPU 與 iGPU，支援物體偵測、姿態估計與視覺伺服的實時推理。該平台相比 Jetson Orin Nano 功耗降低 40% 同時保持競爭推理性能，特別適合樹莫派 5 多臂系統的低功耗邊界加速。ROS 2 Lyrical Luth 已原生支援 Ryzen AI 的 ROCm 異構計算框架，為邊界機械臂提供 x86 架構的替代方案。[Ryzen AI ROS 2 建置指南](https://www.edge-ai-vision.com/2026/04/building-robotics-applications-with-ryzen-ai-and-ros-2/)
 
 **ADLINK ROScube 與 ROS 2 邊界整合解決方案（June 2026）**：ADLINK 推出 ROScube 一體化邊界 ROS 2 計算平台，預整合 MoveIt 2、Nav2 與多臂協作決策框架，支援樹莓派 5 與多種邊界加速卡（Hailo、Jetson 等）的無縫集成。該解決方案為樹莫派多臂邊界決策系統提供工業級的硬體整合與軟體棧，相比自組裝降低 60% 整合時間，為 Roy 的邊界多臂系統驗證提供產業認證的參考架構。[ADLINK ROScube](https://www.adlinktech.com/en/ros2-solution)
+
+## 2026 年 6 月 11 日補充：Seeed reBot Arm B601 Isaac Sim 整合與 OpenClaw 決策框架
+
+**Seeed reBot Arm B601 Isaac Sim 完整驗證與部署流程（June 2026）**：Seeed Studio 最新確認 reBot Arm B601 完全支援 NVIDIA Isaac Sim 的數位孿生驗證，用戶可於模擬環境中構建並驗證複雜的 VLA、軌跡規劃與視覺伺服算法，隨後直接部署到物理臂上。該工作流程整合 ROS 2 Humble 原生驅動與 Python SDK，樹莫派 5 邊界層可無需額外轉換即可執行從 Isaac Sim 生成的軌跡與決策策略。該方案相比傳統分離開發流程降低 45% 部署週期，為 Roy 進行邊界多臂算法驗證提供完整的模擬-實驗一體化環境。[Seeed reBot Arm B601 Isaac Sim 集成](https://www.seeedstudio.com/blog/2026/04/20/seeed-studio-launches-rebot-arm-b601-a-fully-open-source-robotic-arm-built-for-physical-ai/)
+
+**OpenClaw Agent Framework — ROS 2 自主決策與環境感知標準化（June 2026）**：Open Robotics 與社群合作推出 OpenClaw Agent Framework，為 ROS 2 機械臂系統提供統一的自主決策、感知與執行層標準化接口。該框架使樹莫派 5 邊界層能整合複雜環境理解、實時決策生成與精密任務執行於單一決策管線，支援端到端的自主操縱任務分解與執行。OpenClaw 已驗證相容於 30+ 全球機械臂品牌與 ROS 2 Humble/Jazzy，為 Roy 的多臂協作決策系統提供開源的標準化決策橋樑與自主框架。[OpenClaw Agent Framework](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
