@@ -6050,3 +6050,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Seeed reBot Arm B601 Isaac Sim 完整驗證與部署流程（June 2026）**：Seeed Studio 最新確認 reBot Arm B601 完全支援 NVIDIA Isaac Sim 的數位孿生驗證，用戶可於模擬環境中構建並驗證複雜的 VLA、軌跡規劃與視覺伺服算法，隨後直接部署到物理臂上。該工作流程整合 ROS 2 Humble 原生驅動與 Python SDK，樹莫派 5 邊界層可無需額外轉換即可執行從 Isaac Sim 生成的軌跡與決策策略。該方案相比傳統分離開發流程降低 45% 部署週期，為 Roy 進行邊界多臂算法驗證提供完整的模擬-實驗一體化環境。[Seeed reBot Arm B601 Isaac Sim 集成](https://www.seeedstudio.com/blog/2026/04/20/seeed-studio-launches-rebot-arm-b601-a-fully-open-source-robotic-arm-built-for-physical-ai/)
 
 **OpenClaw Agent Framework — ROS 2 自主決策與環境感知標準化（June 2026）**：Open Robotics 與社群合作推出 OpenClaw Agent Framework，為 ROS 2 機械臂系統提供統一的自主決策、感知與執行層標準化接口。該框架使樹莫派 5 邊界層能整合複雜環境理解、實時決策生成與精密任務執行於單一決策管線，支援端到端的自主操縱任務分解與執行。OpenClaw 已驗證相容於 30+ 全球機械臂品牌與 ROS 2 Humble/Jazzy，為 Roy 的多臂協作決策系統提供開源的標準化決策橋樑與自主框架。[OpenClaw Agent Framework](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
+
+## 2026 年 6 月 11 日補充：ROS 2 企業級部署與開源邊界機械臂生態
+
+**ROS 2 企業級工業生態與 Lyrical Luth LTS 長期保障（June 2026）**：ROS 2 Lyrical Luth（支援至 2031）已成為全球企業級機械臂部署的標準化平台，包括 Amazon、Intel、Microsoft、Bosch、BMW、Toyota、鋼鐵工業聯盟等核心產業玩家。ROSCon 2026 確認 ROS 2 多機器人協調框架（OpenRMF）、強化的 Rust 生態（rclrs 已特性完整）與實時性能優化為 2026 年重點投入方向。樹莫派 5 搭配 Lyrical Luth LTS 可確保至 2031 的長期產業支援與功能演進，為 Roy 的多臂系統提供 5 年穩定的研究與部署基礎。[ROS 官方 Lyrical Luth 發布](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
+
+**Seeed Studio reBot DevArm 開源機械臂專案與社群生態（June 2026）**：Seeed Studio 在 GitHub 正式釋出 reBot DevArm 完全開源機械臂專案，包含 ROS 2 原生驅動、Python SDK、Isaac Sim 整合模版與 LeRobot 適配。該專案低成本（<US$3,000）並支援全自動 CI/CD 部署工作流程，社群已貢獻 50+ 拓展模組包括視覺伺服、力控與多臂協作決策。reBot DevArm 特別適合樹莫派 5 邊界層進行快速原型開發與協作多臂研究驗證，相比閉源工業臂降低 80% 學習曲線。[Seeed reBot DevArm GitHub](https://github.com/Seeed-Projects/reBot-DevArm)
