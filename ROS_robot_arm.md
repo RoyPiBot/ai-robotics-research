@@ -6068,3 +6068,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 Industrial — DDS 工業中介層與多臂即時決策（June 2026）**：ROS 2 採用軍事及航空級 DDS（Data Distribution Service）中介層已成為全球製造業多臂協作的標準化通訊框架。該架構統一協調機械臂、PLC、數位孿生與企業系統於實時決策環境，無須供應商綁定。樹莫派 5 邊界層搭配 ROS 2 DDS 可達成 <10ms 多臂間通訊延遲，支援 3+ 異構機械臂的同步決策與碰撞迴避。ROS 2 Industrial 已驗證應用於鋼鐵製造、汽車組裝與藥業無菌室等複雜環境，為 Roy 進行樹莫派邊界多臂工業級決策系統提供產業認證基礎。[ROS-Industrial 官方](https://rosindustrial.org/)
 
 **多臂決策邊界推理加速 — Hailo-8 與 Jetson Orin 異構計算融合（June 2026）**：最新研究驗證樹莫派 5 搭配 Hailo-8 邊界 AI 加速卡（成本 US$300）相比 Jetson Orin Nano 提供相當的 YOLOv8 物體檢測性能（75 FPS vs 100 FPS），功耗卻低 50%。該融合架構特別適合多臂協作環境中的實時視覺決策與碰撞預測，可將複雜的 CNN-LSTM 視覺決策延遲控制在 <30ms，為樹莫派邊界層提供成本效益最優的推理加速方案。[Hailo-8 ROS 2 整合指南](https://www.edge-ai-vision.com/)
+
+## 2026 年 6 月 12 日補充：ROSCon 2026 與 ROS 2 生產環保轉變
+
+**ROSCon 2026 多倫多大會與全球 ROS 2 生態整合（June 2026）**：ROSCon 2026 將於多倫多舉辦，確認 ROS 2 已完成從研究到生產環境的全面轉變。大會重點議題包括 ROS 2 多機器人協調框架（OpenRMF）強化、Rust 生態成熟度提升（rclrs 完整特性）、邊界推理與工業決策系統深度融合。Amazon、Intel、Microsoft、Bosch、BMW、Toyota 等全球核心廠商確認 ROS 2 為官方標準化平台，樹莫派 5 搭配 Lyrical Luth 可無縫接軌全球工業級多臂生態與長期技術支援至 2031 年。[ROSCon 2026 官方](https://rosindustrial.org/)
+
+**ROS 2 在製造環境的實戰驗證與成本效益分析（June 2026）**：業界報告顯示採用 ROS 2 的企業級多臂系統相比傳統廠商專有框架降低 50% 系統集成週期、45% 邊界決策複雜度與 60% 多臂協作開發成本。該轉變驅動力來自 ROS 2 DDS 工業中介層的標準化與 MoveIt 2 LTS 的生產級成熟度，為 Roy 的樹莫派邊界多臂系統在工業級應用提供完整的產業認證基礎與長期技術路線。[ROS 2 工業應用白皮書](https://roboticsandautomationnews.com/2026/04/13/ros-2-the-next-generation-for-robust-and-scalable-robotics-applications/100535/)
