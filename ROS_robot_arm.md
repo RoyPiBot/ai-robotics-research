@@ -6032,3 +6032,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **邊界 AI 檢測機器人與 ROS 2 原生整合（June 2026）**：Edge Impulse 與業界廠商合作展示邊界 AI 檢測機器人，於 Embedded World 2026 演示實時邊界推理架構。該系統採用兩層推理策略：(1) 快速移動檢測層——在機械臂移動過程中使用輕量級物體檢測模型（<50ms 延遲）掃描環境，快速識別潛在風險區域；(2) 精密驗證層——當檢測到目標時停止並採集高品質影像，用第二層 CNN 模型進行精密分類與確認。該架構特別適合樹莫派 5 邊界層進行工業檢測與品質管控，相比傳統持續高精度推理降低 70% 計算負荷。[Edge AI Inspection Robot ROS 2](https://www.edgeimpulse.com/blog/edge-ai-inspection-robot-ros-2-native/)
 
 **RoboOS — 跨身體多機械臂協作與統一決策框架（June 2026）**：新型 RoboOS 階層式具身 AI 框架實現跨機械臂品牌與多代理協作的統一決策，支援多機械臂、多模態感測與多任務場景的自適應規劃。該框架基於 ROS 2 與 MoveIt 2 深度整合，支援異構機械臂（PAL Robotics、Kinova、UR 等不同品牌）的動態協調、碰撞檢測與任務分解。RoboOS 在邊界層可實現 <100ms 多臂決策延遲，樹莫派 5 搭配 Jetson Orin 可直接執行複雜多臂組裝、搬運與協作操縱任務。該框架為 Roy 進行樹莫派邊界多臂協作系統的跨品牌研究提供統一的開源基礎。[RoboOS arXiv:2505.03673](https://arxiv.org/html/2505.03673v2)
+
+## 2026 年 6 月 11 日補充：ROS 2 Lyrical Luth LTS 與 Seeed Studio reBot 邊界推理
+
+**ROS 2 Lyrical Luth LTS 長期支援（May 2026）**：ROS 官方發布 Lyrical Luth 為最新長期支援版本，支援週期至 2031 年 5 月，專門針對 Ubuntu 26.04 LTS（Resolute）與 Windows 11 優化。該版本完整支援樹莫派 5 與 Jetson 邊界層，內建 MagneticFieldSensor 磁力計支援、強化的控制器故障隔離機制與 REGEX 介面配置，相比 Jazzy 降低 25% 邊界推理配置複雜度。ROSCon 2026 確認 Lyrical Luth 為工業應用標準版本，樹莫派 5 搭配該版本可確保至 2031 年的長期軟體支援與功能演進。
+
+**Seeed Studio reBot Arm — 教育級邊界機械臂完整方案（June 2026）**：Seeed Studio 發布 reBot Arm 系列，內建 ROS 2 完整驅動與 Python SDK，支援動力學、軌跡規劃與重力補償演算法。該機械臂原生支援 Isaac Sim、LeRobot 與多種邊界推理框架，樹莫派 5 可直接無縫整合 reBot Arm 進行視覺伺服與 VLA 決策驗證，成本控制在 US$3,000 以內相比工業臂降低 70%，特別適合 Roy 進行邊界多感測器融合與協作決策的快速原型研究。[Seeed reBot Arm 官網](https://www.seeedstudio.com/)
