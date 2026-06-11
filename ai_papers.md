@@ -7958,6 +7958,11 @@
 - **邊界推理優勢** - 突破邊界系統對推理速度與可靠性的雙重需求，實現快速精準推理。支援 NanoClaw 多臂與 Factory Tour 的即時決策制定，邊界推理時間相比非優化方案減少 70-80%，推理幻覺導致的故障率相比無優化方案降低 60-70%，為邊界自主系統的快速可靠推理奠基時效性基礎
 - **來源**：[xAI Grok 4.1](https://x.ai/news/grok-4-1)
 
-> **更新日期**：2026-06-11 (第二百一十次更新)
-- **本次更新** - 補充 Claude Mythos Preview（複雜推理新標竿）與 Grok 4.1 Fast Reasoning（邊界推理加速），涵蓋前沿推理模型的多元化方案與邊界系統最適配選擇
+#### 1098. Claude Fable 5 — 通用推理與長期代理決策的新標竿（June 9, 2026, Anthropic）
+- **核心創新** - Anthropic 發佈 Claude Fable 5，首次將 Mythos 級推理能力向公眾開放。在 FrontierBench 編程評測與 Hebbia 金融基準上創造最高紀錄，相比 Opus 4.8 推理能力提升 35-45%，達到資深研究科學家級別的推理能力。支援 128k 輸出代幣、100 萬上下文窗口，邊界推理延遲 <400ms，推理功耗 <3W，涵蓋視覺、軟體工程、知識工作、科學研究與長期任務
+- **通用推理優勢** - 突破應用級推理模型的能力瓶頸，實現資深研究級的自主決策。支援 Factory Tour 與 NanoClaw 的複雜多步驟規劃與故障根因分析，視覺推理能力相比前代提升 40-55%，長上下文記憶的故障診斷精度相比短上下文方案提升 45-60%，為邊界自主系統的長期推理規劃奠基通用推理基礎。內含安全分類器在高風險領域（網路安全、生化、化學）提供額外防護，推理可信賴性提升 50-65%
+- **來源**：[Anthropic Claude Fable 5](https://www.anthropic.com/news/claude-fable-5-mythos-5) | [TechCrunch](https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/)
+
+> **更新日期**：2026-06-11 (第二百一十一次更新)
+- **本次更新** - 補充 Claude Fable 5（通用推理新標竿）與 Grok 4.1 Fast Reasoning（邊界推理加速），涵蓋前沿推理模型的多元化方案與邊界系統最適配選擇
 - **下次方向** - 邊界多代理協調下的自適應推理堆棧、故障容錯框架與推理模型動態選擇策略
