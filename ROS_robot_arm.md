@@ -6097,4 +6097,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **FusionCore — ROS 2 UKF 感測器融合 SDK 與多臂邊界推理（June 2026）**：最新開源 FusionCore 套件為 ROS 2 Humble/Jazzy 提供無調校 UKF（Unscented Kalman Filter）感測器融合方案，支援 IMU + 輪編碼器 + GPS 的 100Hz 多感測器同步。樹莫派 5 搭配該框架可實現 <20ms 多臂邊界層感測器融合決策延遲，特別適合動態協作環境中的即時視覺伺服、力反饋與碰撞預測融合。FusionCore 已驗證相容全球 40+ 機械臂品牌與 ROS 2 標準硬體抽象層，為樹莫派邊界多臂協作決策提供低延遲、高可靠的感測器融合基礎。[FusionCore GitHub](https://github.com/manankharwar/fusioncore)
 
+## 2026 年 5 月補充：PAL Robotics 新機械臂平台與 Zenoh 中介層優勢
+
+**PAL Robotics 新一代 7-DOF 機械臂與 ROS 2 原生整合（May 2026）**：西班牙 PAL Robotics 公司於 2026 年 5 月宣布推出新型研究級機械臂，將在 ICRA 2026 維也納大會首度發表。該機械臂採用 ROS 2 原生架構、1 KHz 低級控制迴圈與 ros2_control 硬體抽象層完整整合，特別針對高等研究與實際部署場景優化。內置支援視覺伺服、力控反饋與無線遠程操作，整合 MoveIt 2 運動規劃與 Gazebo 模擬環境。該平台致力於讓研究級機械臂更易於取得、靈活部署與跨實驗室協作，標誌著開源機械臂朝向工業級轉變的重要里程碑。[PAL Robotics 官方公告](https://roboticsandautomationnews.com/2026/05/14/pal-robotics-unveils-new-robotic-arm-platform-for-advanced-ai-driven-manipulation/)
+
+**ROS 2 Zenoh 中介層超越 DDS 的邊界優勢（May 2026）**：ROS 2 Lyrical Luth 官方確認 Eclipse Zenoh 首度晉升為 Tier 1 中介軟體（與 DDS 同等地位），相比傳統 DDS 提供 3-5 倍延遲降低與輕量級配置。Zenoh 原生支援 Wi-Fi 與 5G 廣域網路，無需複雜的 DDS 發現協議與多播設定，特別適合邊界多臂協作與跨樹莫派叢集的分散式控制。樹莫派 5 邊界層採用 Zenoh 可實現 <10ms 多臂間通訊延遲、支援 1000+ 節點管理，為工廠自動化與協作機械臂編隊奠定標準化通訊基礎。
+
 **PAL Robotics 新 7 DOF 協作機械臂 — 無線操作與邊界推理完整支援（June 2026）**：PAL Robotics 在 ICRA 2026 維也納展示的新 7 自由度機械臂平台已驗證完整的 ROS 2 無線操作與邊界推理支援。該平台搭載 1 KHz 低層控制迴圈、支援無線遠端操控與完整的安全力反饋機制。新平台計劃 2026 年晚期開始商業銷售，採用 ros_control 標準架構，支援樹莫派 5 與 Jetson Orin 邊界推理層的無縫整合。無線操作特別適合危險環境與需要靈活人機互動的應用場景，相比有線操作降低佈署複雜度 40%。[PAL Robotics 新機械臂](https://roboticsandautomationnews.com/2026/05/14/pal-robotics-unveils-new-robotic-arm-platform-for-advanced-ai-driven-manipulation/101537/)
