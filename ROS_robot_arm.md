@@ -4547,6 +4547,14 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 Control Kilted Effort Commands 與多力感測器非結構化環境力控（May 2026）**：ROS 2 Control Rolling 官方文檔確認完整的 Effort Commands 實現，原生支援基於力/扭矩的直接控制命令與多力感測器融合。該框架通過 `sensor_name` 參數無縫整合異構力感測器（FT sensor），支援 3+ 協作臂的同步力控制決策。FPGA 加速的逆運動學與 FOC 控制層已驗證將力反饋決策延遲降至 <10ms，樹莓派 5 邊界部署的多臂系統可直接應用於精密工具插入、非結構化環境接觸任務與動態環境自適應力控制。[ROS 2 Control: Rolling May 2026 Documentation](https://control.ros.org/rolling/doc/getting_started/getting_started.html)
 
+## 2026 年 6 月 12 日補充：PAL Robotics 新平台與 Agentic AI 多臂協作規劃
+
+**PAL Robotics 新型 ROS 2 機械臂平台與 1KHz 低級控制迴圈（May-June 2026）**：[PAL Robotics](https://roboticsandautomationnews.com/2026/05/14/pal-robotics-unveils-new-robotic-arm-platform-for-advanced-ai-driven-manipulation/101537/) 於 2026 年 5 月發佈新款研究級機械臂平台，基於 ROS 2 與 ros_control 架構，搭載 1KHz 低級控制迴圈以支持高精度動態任務。該平台旨在降低機械臂操縱應用的開發成本，將於 ICRA 2026 維也納國際會議正式展示。特別適合樹莓派 5 邊界多臂視覺伺服與力控制系統的工業級驗證。
+
+**Agentic AI 驅動的多臂協作智慧規劃（2026 年行業趨勢）**：[2026 年機器人行業趨勢](https://robodk.com.tw/blog/top-robotics-trends-2026/)顯示 Agentic AI 成為關鍵驅動力，指運用智慧技術進行推理、規劃並在大規模企業流程中採取自主行動。多臂協作系統已整合 Agentic AI 框架進行動態工作流規劃、多臂任務分配與環境自適應決策。結合 VLA 模型與邊界推理層，多臂系統可實現自然語言驅動的協作規劃、衝突檢測與實時優先級調整。
+
+**ISO 10218 與 ANSI/RIA R15.06 協作應用新定義（2026）**：最新工業機器人安全標準已從「協作機械臂」分類轉向「協作應用」定義，安全性評估改為基於應用場景而非機器人類型。該標準變化允許更靈活的多臂混合部署（傳統臂+協作臂）、動態安全邊界設定與實時力約束管理，特別適合樹莓派 5 邊界環境的多臂協作系統設計與合規驗證。
+
 ## 2026 年 5 月 13 日補充：ROS 2 Lyrical Luth Joint Trajectory Controller 邊界驗證與力反饋自適應
 
 **ROS 2 Lyrical Luth Joint Trajectory Controller 深度學習驅動邊界優化（May 2026）**：ROS 2 Lyrical Luth 發布的改進 Joint Trajectory Controller 整合機器學習反饋迴圈，支援樹莓派 5 邊界設備上的動態參數自動調優。該控制器新增 `trajectory_smoothing` 與 `velocity_profile_adaptation` 參數，無需手動調整即可適應異構機械臂的負載變化與邊界計算資源波動。樹莓派 5 多臂協作場景實測顯示軌跡追蹤誤差相比 Kilted 版本降低 32%，力反饋穩定性達 99.3%，為 Roy 的邊界多臂視覺伺服決策層與力控制融合提供自適應軌跡生成基礎。[ROS 2 Lyrical Luth - Joint Trajectory Enhancement](https://control.ros.org/rolling/doc/ros2_control_demos/example_7/doc/userdoc.html)
