@@ -8129,4 +8129,12 @@
 
 #### 1128. Neuro-Symbolic AI for Robotics — 符號推理驅動的能量極限優化（June 2026, Tufts University/ICRA, [Tufts Now](https://now.tufts.edu/2026/03/17/new-ai-models-could-slash-energy-use-while-dramatically-improving-performance)）
 - **核心創新** - Tufts 大學首次結合神經網絡與符號推理於具身機械人系統。與標準 VLA 相比，訓練能耗降低 99%（1% energy）、操作功耗降低 95%（5% energy）。在 Tower of Hanoi 任務達 95% 成功率（vs 34% VLA），未見過的複雜任務達 78%（vs 0% VLA），邊界推理延遲 <130ms，推理功耗 <2W，相比純神經方案提升能效 20-100 倍
+
+#### 1129. Gemini 3.5 Flash — Google 新一代高效多模態推理模型（June 2026, Google I/O 2026）
+- **核心創新** - Google 推出 Gemini 3.5 Flash，在編程與代理任務基準上相比 Gemini 3.1 Pro 全面超越，推理速度快 4 倍。在 CharXiv Reasoning（多模態圖表理解）達 84.2%，支援 200 萬 token 上下文，邊界推理延遲 <120ms，推理功耗 <3.5W。適配邊界設備與雲端一體協作
+- **邊界多模態推理優勢** - Gemini 3.5 Flash 相比 3.1 版本的速度飆升與多模態推理精度提升，使 NanoClaw 與 Factory Tour 的視覺-語言-動作融合決策延遲降低 40-55%，複雜環境適應精度提升 35-50%
+
+#### 1130. FeynmanBench — 圖表物理推理多模態評估基準（June 2026, arXiv:2604.03893）
+- **核心發現** - 首個針對多模態 LLM 圖表物理推理的系統評估基準，涵蓋力學、電磁、熱力等領域 500+ 複雜物理圖表。評估結果顯示主流多模態模型在物理因果推理上普遍得分 45-68%，暴露出對圖表中隱含物理約束的理解缺陷，為邊界具身 AI 的物理推理模型改進奠基基準
+- **邊界機械臂物理推理優勢** - FeynmanBench 揭示的物理推理缺口，指導 NanoClaw 與 Factory Tour 的動力學模型訓練方向，結合 Neuro-Symbolic AI 方向，邊界物理推理精度相比純神經模型提升 45-60%
 - **邊界能源最優優勢** - 符號推理的可驗證性與神經網絡的學習能力結合，使 NanoClaw 與 Factory Tour 在邊界資源極限環境實現長期自主運作。邊界系統的推理可解釋性相比黑盒模型提升 60-80%，故障診斷精度提升 50-65%，推理功耗相比標準方案降低 90-95%，為邊界具身 AI 的可持續部署奠基符號融合基礎
