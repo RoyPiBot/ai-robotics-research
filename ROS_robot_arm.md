@@ -6117,6 +6117,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 Zenoh 中介層超越 DDS 的邊界優勢（May 2026）**：ROS 2 Lyrical Luth 官方確認 Eclipse Zenoh 首度晉升為 Tier 1 中介軟體（與 DDS 同等地位），相比傳統 DDS 提供 3-5 倍延遲降低與輕量級配置。Zenoh 原生支援 Wi-Fi 與 5G 廣域網路，無需複雜的 DDS 發現協議與多播設定，特別適合邊界多臂協作與跨樹莫派叢集的分散式控制。樹莫派 5 邊界層採用 Zenoh 可實現 <10ms 多臂間通訊延遲、支援 1000+ 節點管理，為工廠自動化與協作機械臂編隊奠定標準化通訊基礎。
 
+## 2026 年 6 月 12 日補充：ROS-Industrial 大會與全球機械臂生態匯聚
+
+**ROS-Industrial Consortium Americas 2026 年會與 Automate Chicago 展覽（June 2026）**：全球最大工業自動化展覽 Automate 2026 於芝加哥 McCormick Place 舉辦，ROS-Industrial Consortium Americas 同步舉辦年度大會（6 月 25 日），展示 ROS 2 最新機械臂整合案例、分散式多臂協作框架與邊界計算部署經驗。會議重點聚焦 ROS 2 Lyrical Luth LTS 之工業生態推進、Rust 語言成熟度與實時邊界推理等議題。Southwest Research Institute 團隊將展示進階運動規劃能力，預期超過 1000 家全球廠商與 50000 參會者，為樹莫派邊界多臂系統的產業級驗證提供國際對標基準。[ROS-Industrial 2026 年會](https://rosindustrial.org/events/2026/ros-industrial-consortium-americas-2026-annual-meeting)
+
 **PAL Robotics 新 7 DOF 協作機械臂 — 無線操作與邊界推理完整支援（June 2026）**：PAL Robotics 在 ICRA 2026 維也納展示的新 7 自由度機械臂平台已驗證完整的 ROS 2 無線操作與邊界推理支援。該平台搭載 1 KHz 低層控制迴圈、支援無線遠端操控與完整的安全力反饋機制。新平台計劃 2026 年晚期開始商業銷售，採用 ros_control 標準架構，支援樹莫派 5 與 Jetson Orin 邊界推理層的無縫整合。無線操作特別適合危險環境與需要靈活人機互動的應用場景，相比有線操作降低佈署複雜度 40%。[PAL Robotics 新機械臂](https://roboticsandautomationnews.com/2026/05/14/pal-robotics-unveils-new-robotic-arm-platform-for-advanced-ai-driven-manipulation/101537/)
 
 ## 2026 年 6 月 12 日補充：MoveIt 2 物理模擬優化與邊界推理新突破
