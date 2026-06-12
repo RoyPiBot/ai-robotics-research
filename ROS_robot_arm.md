@@ -3038,6 +3038,14 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 Zenoh 分散式視覺伺服同步**：多臂系統的視覺伺服回饋現可透過 Zenoh 的硬體時間同步（TSYNC）機制實現亞毫秒級的跨機械臂位姿同步。相較傳統 DDS，Zenoh 在廣域邊界網路上的延遲降低 3-5 倍，支援 >1000 個視覺伺服節點的統一編排。ROS 2 Lyrical Luth（2026 年 5 月）將正式推廣該能力，使分散式多臂協作的視覺導引操縱成為主流。[ROS 2 Lyrical Luth Zenoh Support](https://docs.ros.org/en/rolling/Releases/Release-Lyrical-Luth.html)
 
+### PAL Robotics 新型 ROS 2 協作臂平台發布（2026 年 5 月 14 日新增）
+
+**PAL Robotics 7-DOF ROS 2 原生機械臂**：PAL Robotics 於 2026 年 5 月正式發布新一代 ROS 2 原生協作臂，採用 7-DOF 設計、<10kg 自重、3kg 負載容量，內建 1kHz 低階控制迴圈與 AI-ready 架構。該機械臂將於 ICRA 2026 維也納大會正式揭幕，預計 2026 年下半年開始商業銷售。該平台完整支援 ros2_control、MoveIt 2 與視覺伺服整合，標誌著協作臂進入 ROS 2 原生時代，適合邊界 AI 驅動的自主操縱與多臂協作場景。[PAL Robotics ROS 2 Platform](https://roboticsandautomationnews.com/2026/05/14/pal-robotics-unveils-new-robotic-arm-platform-for-advanced-ai-driven-manipulation/101537/)
+
+### ROSConFr 2026 與 ROS-Industrial 美洲會議（2026 年 6 月補充）
+
+**ROSConFr 2026 巴黎會議與機械臂應用前沿**：ROSConFr 2026 將於 6 月 22-25 日在巴黎舉行，聚焦 ROS 生態與機械臂應用最新進展。同期，ROS-Industrial Consortium 美洲年度會議於 6 月 25 日在芝加哥 Automate 展覽會舉辦，重點涵蓋 AI 工業機器人、邊界推理整合與多臂協作系統的標準化部署經驗。該會議為全球研究者與工業從業者分享 ROS 2 機械臂實踐、邊界視覺伺服與強化學習應用的重要平台，Roy 的多臂協作視覺伺服邊界強化學習研究可參照該會議的最新進展。[ROSConFr 2026](https://www.isir.upmc.fr/news/the-rosconfr-2026-conference-is-coming-to-paris-from-june-22-to-25-2026/?lang=en) • [ROS-Industrial Consortium Americas](https://rosindustrial.org/events/2026/ros-industrial-consortium-americas-2026-annual-meeting)
+
 ### ROS 2 Hardware Drivers 視覺伺服驅動標準化（2026 年 1 月新公布）
 
 **ROS 2 Hardware Drivers Page — 視覺伺服與邊界驅動統一標準**：PickNik Robotics 於 2025 年 1 月發布《ROS 2 Hardware Drivers Page: A New Resource for the ROS Community》，正式推廣視覺伺服、夾持器控制與敏感力矩反饋驅動的標準化認證。該頁面整合 60+ 協作臂與工業機械臂的驅動狀態評等，對應 ROS 2 版本相容性與視覺伺服支援程度。新增驅動需通過官方審核，驗證視覺伺服回饋迴圈的延遲 <50ms 與力控制精度 <0.1N，正式納入 ROS 2 官方生態認證。該標準化推動邊界機械臂視覺伺服應用的統一部署與驗證，加速企業採用 ROS 2 的信心與完整性保障。[ROS 2 Hardware Drivers Page](https://picknik.ai/2025/01/06/ROS-Hardware-Ecosystems-Announcement.html)
