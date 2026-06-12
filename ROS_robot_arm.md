@@ -6096,3 +6096,5 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 6 月 12 日補充：感測器融合與多臂協作智慧規劃驗證
 
 **FusionCore — ROS 2 UKF 感測器融合 SDK 與多臂邊界推理（June 2026）**：最新開源 FusionCore 套件為 ROS 2 Humble/Jazzy 提供無調校 UKF（Unscented Kalman Filter）感測器融合方案，支援 IMU + 輪編碼器 + GPS 的 100Hz 多感測器同步。樹莫派 5 搭配該框架可實現 <20ms 多臂邊界層感測器融合決策延遲，特別適合動態協作環境中的即時視覺伺服、力反饋與碰撞預測融合。FusionCore 已驗證相容全球 40+ 機械臂品牌與 ROS 2 標準硬體抽象層，為樹莫派邊界多臂協作決策提供低延遲、高可靠的感測器融合基礎。[FusionCore GitHub](https://github.com/manankharwar/fusioncore)
+
+**PAL Robotics 新 7 DOF 協作機械臂 — 無線操作與邊界推理完整支援（June 2026）**：PAL Robotics 在 ICRA 2026 維也納展示的新 7 自由度機械臂平台已驗證完整的 ROS 2 無線操作與邊界推理支援。該平台搭載 1 KHz 低層控制迴圈、支援無線遠端操控與完整的安全力反饋機制。新平台計劃 2026 年晚期開始商業銷售，採用 ros_control 標準架構，支援樹莫派 5 與 Jetson Orin 邊界推理層的無縫整合。無線操作特別適合危險環境與需要靈活人機互動的應用場景，相比有線操作降低佈署複雜度 40%。[PAL Robotics 新機械臂](https://roboticsandautomationnews.com/2026/05/14/pal-robotics-unveils-new-robotic-arm-platform-for-advanced-ai-driven-manipulation/101537/)
