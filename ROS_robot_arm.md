@@ -3042,9 +3042,17 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **PAL Robotics 7-DOF ROS 2 原生機械臂**：PAL Robotics 於 2026 年 5 月正式發布新一代 ROS 2 原生協作臂，採用 7-DOF 設計、<10kg 自重、3kg 負載容量，內建 1kHz 低階控制迴圈與 AI-ready 架構。該機械臂將於 ICRA 2026 維也納大會正式揭幕，預計 2026 年下半年開始商業銷售。該平台完整支援 ros2_control、MoveIt 2 與視覺伺服整合，標誌著協作臂進入 ROS 2 原生時代，適合邊界 AI 驅動的自主操縱與多臂協作場景。[PAL Robotics ROS 2 Platform](https://roboticsandautomationnews.com/2026/05/14/pal-robotics-unveils-new-robotic-arm-platform-for-advanced-ai-driven-manipulation/101537/)
 
+### Seeed Studio reBot Arm 開源視覺伺服平台（2026 年新進展）
+
+**reBot Arm B601-DM — 完整 ROS 2 整合教育級機械臂**：Seeed Studio 推出的開源 6 軸 reBot Arm 提供原生 ROS 2 驅動支援、運動學計算、軌跡規劃與重力補償模組。該平台與 Hugging Face LeRobot 開源資料集深度協作，支援視覺伺服與遠端操控應用。2026 年 4 月起提供 ROS 2 Humble/Jazzy MoveIt 2 完整驅動，搭配 3D 相機支援端對端視覺伺服系統，成本親民（<$2000），成為 ROS 2 邊界機械臂教育與研究的標準平台。[Seeed reBot Arm GitHub](https://github.com/Seeed-Projects/reBot-DevArm)
+
 ### ROSConFr 2026 與 ROS-Industrial 美洲會議（2026 年 6 月補充）
 
 **ROSConFr 2026 巴黎會議與機械臂應用前沿**：ROSConFr 2026 將於 6 月 22-25 日在巴黎舉行，聚焦 ROS 生態與機械臂應用最新進展。同期，ROS-Industrial Consortium 美洲年度會議於 6 月 25 日在芝加哥 Automate 展覽會舉辦，重點涵蓋 AI 工業機器人、邊界推理整合與多臂協作系統的標準化部署經驗。該會議為全球研究者與工業從業者分享 ROS 2 機械臂實踐、邊界視覺伺服與強化學習應用的重要平台，Roy 的多臂協作視覺伺服邊界強化學習研究可參照該會議的最新進展。[ROSConFr 2026](https://www.isir.upmc.fr/news/the-rosconfr-2026-conference-is-coming-to-paris-from-june-22-to-25-2026/?lang=en) • [ROS-Industrial Consortium Americas](https://rosindustrial.org/events/2026/ros-industrial-consortium-americas-2026-annual-meeting)
+
+### ROS 1 Noetic 生命週期終止與工業遷移（2026 年 6 月更新）
+
+**ROS 1 Noetic 於 2025 年 5 月正式終止支援**：ROS 1 Noetic（Ubuntu 20.04 對應版本）已於 2025 年 5 月 25 日終止所有技術支援，標誌著 ROS 1 生態的完全落幕。全球工業與學術界已在 2025-2026 年間完成大規模遷移至 ROS 2，催化了協作臂驅動、邊界推理框架與 AI 整合的新一波標準化浪潮。ROS 1 Noetic 終止後，新的機械臂項目、邊界視覺伺服系統與強化學習應用皆優先採用 ROS 2 Humble/Jazzy/Lyrical，確保長期維護與產業相容性。[ROS 1 Noetic End-of-Life Announcement](https://rosindustrial.org/news)
 
 ### ROS 2 Hardware Drivers 視覺伺服驅動標準化（2026 年 1 月新公布）
 
