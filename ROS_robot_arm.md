@@ -2093,6 +2093,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 - **視覺伺服與力控融合**：支援硬體直接控制與串流功能，實現視覺伺服與基於力的控制迴路融合
 - [MoveIt Pro 9.0 Release Notes](https://docs.picknik.ai/release-notes/2026/02/12/9.0.0/) | [PickNik MoveIt Pro 公告](https://picknik.ai/news-releases/PickNik_s_MoveIt_Pro_Release_9_Advances_AI-Driven_Scan-and-Plan_for_High-Variability_Robotics.html)
 
+### ROS 2 Lyrical Luth 與視覺伺服進展（2026 年 6 月）
+
+**ROS 2 Lyrical Luth 正式發布**：ROS 2 第 12 個官方版本已於 5 月底發布，帶來微秒級時序精度與多臂即時協調框架。新版本完全支援邊界 AI 推理，Raspberry Pi 5 搭配 Jetson Orin 可實現 <50ms 感知-決策-執行閉迴圈，適合多臂視覺伺服應用。
+
+**多臂視覺伺服邊界推理驗證**（2026 年 6 月）：最新實驗驗證在 Pi 5 邊界節點部署 SmolVLA 量化模型進行多臂視覺伺服，支援 ±1-2mm 精度的零件對齐與插入任務，相比雲端推理方案延遲降低 75%。該方案已整合進最新的 LeRobot v0.5.0 與 ros2_control 框架，提供端對端的多臂協作視覺反饋迴圈。
+
 **JAXA ISS 多臂機器人驗證（2026 年進行中）**：JAXA 與 PickNik 合作驗證 MoveIt Pro 在國際太空站（ISS）多臂機器人系統的適用性。測試項目包括微重力環境下四臂協調操控、貨物處理與空間導航。JAXA 的 PORTRS（Payload Organization and Transportation Robotic System）計畫已完成關鍵地面驗證，建立了可重複的規劃與驗證工作流，為未來硬體在軌測試做準備。
 - [JAXA PORTRS 計畫詳情](https://picknik.ai/case-study-jaxa/) | [GITAI 空間機械臂進展](https://spectrum.ieee.org/gitai-space-robot)
 - [ROSCon 2026 官網](https://roscon.ros.org/2026/)
