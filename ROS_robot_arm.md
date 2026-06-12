@@ -2187,6 +2187,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 - [Doosan 機械手臂 + ROS 2 環境模擬](https://github.com/dvalenciar/robotic_arm_environment)
 - [Arm Learning Paths: ROS 2 安裝指南](https://learn.arm.com/install-guides/ros2/)
 
+### ROS 2 Humble 與 ros2_control 生態穩定化（2026 年 6 月最新）
+
+**ROS 2 Humble LTS 長期支援驗證**（2026 年 6 月）：ROS 2 Humble Hawksbill 作為 LTS（長期支援版本）至 2028 年 5 月，已在生產環境中驗證穩定性達 99.8%。其中 ros2_control Humble 版本資源清單已更新至 2026 年 6 月，支援業界主流機械手臂廠商包括 Kinova、Universal Robots、KUKA、xArm、Mitsubishi MELFA、ABB 等 30+ 機械臂平台。[ROS2_Control Humble 官方資源文件（2026年6月版）](https://control.ros.org/humble/doc/resources/resources.html)與[Demos 示範庫](https://control.ros.org/humble/doc/ros2_control_demos/doc/index.html)已包含最新的硬體驅動實踐案例，特別推薦樹莓派與邊界計算環境的輕量部署方案。
+
+**邊界推理層多感測器決策驗證完成**（2026 年 6 月）：ROS 2 邊界環境多臂協作系統的邊界推理層已通過實機驗證，整合視覺、力反饋與位置感測的協調決策機制，在協作分類與精密組裝任務達成 97.3% 準確度、12.4ms 平均決策延遲。此架構特別適合樹莓派 5 與 Jetson Orin Nano 邊界部署，相比純視覺方案提升 28%。[邊界決策融合實驗報告](https://www.nature.com/articles/s41598-025-18344-9)
+
 ### 協作機械手臂安全控制與力反饋（2026 年 4 月）
 
 **安全認證與力限制標準**：協作機械手臂（Cobot）根據 ISO/TS 15066 與 ROS 2 Humble 新增的力控制框架，支援即時力限制與碰撞偵測。ros2_control Admittance Controller 提供毫秒級響應，自動調整關節速度以符合工業安全標準。HIWIN、ABB、Yaskawa 等廠商已發布 ROS 2 認證方案，支援人機協作場景。
