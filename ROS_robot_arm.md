@@ -1116,6 +1116,21 @@ Interop SIG（互操作性特別興趣小組）於 4 月 2 日召開會議，討
 - [官方教程](https://www.therobotreport.com/moveit-2-enables-realtime-robot-arm-control-ros2/)驗證了多款商業機械臂（UR 系列、Franka Emika）的即時性能
 - **關鍵指標**：端點定位精度 ±1mm、控制迴圈延遲 < 2ms，適合精密裝配與高速動作場景
 
+### PickNik ROS 2 Hardware Ecosystem 資源中心（2025 年 1 月）
+
+PickNik Robotics 推出 ROS 2 Hardware Drivers 專門資源頁面，集中展示支援 ROS 2 的機械手臂與硬體生態：
+- **硬體支援範疇**：涵蓋視覺伺服、靈巧操作、移動底盤複合機器人等完整應用場景
+- **驅動程式統一**：標準化了不同廠商機械臂的 ROS 2 Control 介面，加速新手臂整合週期
+- **社群協作**：匯集 OSRF、ROS Industrial 等業界主導者，確保資源的持續更新與可靠性
+- [PickNik Hardware Ecosystem](https://picknik.ai/hardware-ecosystem/)
+
+### ArUco 標記視覺伺服與 ROS 2 Jazzy 整合（2026 年 5 月）
+
+基於 OpenCV 與 ArUco 標記的實時視覺伺服框架在 ROS 2 Jazzy 與 Gazebo Harmonic 成熟落地：
+- **感知管道**：即時檢測 ArUco 標記位置，透過比例控制器調整機械臂末端執行器的對齊精度
+- **多機器人協調**：支援單臂與多臂編隊，不同機械臂共同追蹤同一目標或相互間隔保持
+- **邊界部署**：相容 Raspberry Pi 5 + USB Coral TPU 加速，輕量級推理達 30+ FPS
+
 ### ROS 2 Lyrical Luth LTS（2026 年 5 月）— 5 年長期支援版本
 
 **ROS 2 Lyrical Luth 成為新一代 LTS 標準**：
