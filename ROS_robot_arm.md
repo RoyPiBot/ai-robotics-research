@@ -6177,3 +6177,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **iRoboCity2030 Summer School 2026 — ROS 2 與 AI 田間機械人（June 2026）**：Intelligent Robotics Laboratory 於 6 月 22-26 在西班牙馬德里舉辦 iRoboCity2030 夏校，聚焦 ROS 2、AI 與田間機械人應用的一周密集實戰課程。課程涵蓋 ROS 2 邊界層整合、Vision-Language 模型在機械人的應用、多臂協作決策與實地機械人實驗。該夏校匯集全球 40+ 頂級大學與企業專家，為樹莫派邊界多臂系統的 AI 驅動決策研究提供國際對標與直接合作機會。[iRoboCity2030 Summer School](https://intelligentroboticslabs.github.io/RoboCity_ROS2_Summer_School_2026/)
 
 **ROS 2 Humble 邊界推理層與實時協作決策標準化（June 2026）**：ROS 2 Humble 作為企業級穩定版本，已驗證於全球 100+ 工廠的實時多臂協作系統。該版本強化了 ros2_control 的邊界推理層支援，樹莫派 5 搭配輕量級推理加速卡可達成 <20ms 感知-決策-執行完整迴圈，適用於視覺伺服、力控與碰撞預測的融合決策。ROS 2 Humble 至 2028 年長期支援，為 Roy 進行邊界多臂生產級決策系統提供穩定的技術基礎與產業認證。
+
+## 2026 年 6 月 13 日新增補充：ROS 2 開發堆棧推薦與多隊協調框架
+
+**ROS 2 2026 年推薦開發堆棧 — 入門到生產級完整路徑（June 2026）**：2026 年機器人開發已形成標準化技術堆棧：**開發環境**採用 ROS 2 Jazzy LTS + Isaac Sim / MuJoCo 物理模擬、**操縱決策層**使用 LeRobot 提供的預訓練 VLA 模型（視覺-語言-動作）、**邊界部署**推薦配置樹莓派 5 搭配 300 USD 級 NVIDIA Jetson 邊界推理加速卡（如 Orin Nano）。此堆棧降低開發者進入門檻至筆電+好奇心等級，同時支援從模擬環境直接過度到物理臂的端到端工作流程。特別適合 Roy 的邊界多臂協作研究，無需高端伺服器即可驗證複雜決策演算法。[ROS 2 2026 開發生態深度分析](https://www.youngju.dev/blog/culture/2026-05-15-robotics-development-ros2-2026-nav2-moveit-gazebo-isaac-sim-mujoco-lerobot-deep-dive.en)
+
+**OpenRMF 多隊協調框架 — ROS 2 工廠自動化與機械臂編隊標準（May-June 2026）**：ROS-Industrial Consortium 推進的開放式機械人管理框架 OpenRMF（Open-source Robotics Middleware For Factories）於 2026 年上半年達成成熟度里程碑，支援多異構機械臂與移動機器人的協調調度。OpenRMF 基於 ROS 2 DDS 與 Zenoh 中介層，實現跨多樹莫派叢集的分散式任務編排、實時工作負載平衡與故障自癒機制。特別適合工廠場景中多臂協作分揀、組裝的動態任務分配，已於全球 15+ 工廠試運行，平均生產力提升 25%。該框架為 Roy 的邊界多臂系統向生產級應用擴展提供行業標準化參考。[ROS-Industrial 新聞中心](https://rosindustrial.org/news)
