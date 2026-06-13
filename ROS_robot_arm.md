@@ -6168,4 +6168,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **MoveIt 2 與 Gazebo 高保真碰撞檢測融合（June 2026）**：MoveIt 2 官方整合 Gazebo 物理引擎的高保真碰撞檢測，樹莫派 5 邊界層可於 Isaac Sim 與 Gazebo 模擬環境中預驗證複雜多臂操縱軌跡，隨後直接部署到物理臂上無需額外調校。該融合方案支援複雜的接觸動力學與視覺伺服閉迴路場景的高保真複現，相比單純軟體规劃降低 35% 實機部署失敗率，為樹莫派邊界多臂決策驗證提供完整的物理孿生開發工作流程。[Gazebo MoveIt 2 整合文檔](https://control.ros.org/master/doc/supported_robots/supported_robots.html)
 
+## 2026 年 6 月 13 日補充：Gemini Robotics 邊界 VLA 與 iRoboCity2030 AI 機械人夏校
+
+**Gemini Robotics On-Device — Google DeepMind 邊界 VLA 模型（June 2026）**：Google DeepMind 正式推出 Gemini Robotics On-Device，最強大的視覺-語言-動作 (VLA) 模型已最佳化可在機械人邊界層本地執行無雲端延遲。該模型支援樹莫派 5 搭配邊界推理加速卡時的複雜靈巧操縱能力，包括摺疊衣物、解開包包、精密組裝等高自由度任務。Gemini Robotics On-Device 達成優異的視覺、語意與行為泛化能力，跨異構機械臂平台（ALOHA、雙臂 Franka、人形 Apollo）通用，特別適合樹莫派邊界多臂的自然語言指令理解與端到端操縱決策。[Gemini Robotics 官方](https://deepmind.google/models/gemini-robotics/)
+
+**iRoboCity2030 Summer School 2026 — ROS 2 與 AI 田間機械人（June 2026）**：Intelligent Robotics Laboratory 於 6 月 22-26 在西班牙馬德里舉辦 iRoboCity2030 夏校，聚焦 ROS 2、AI 與田間機械人應用的一周密集實戰課程。課程涵蓋 ROS 2 邊界層整合、Vision-Language 模型在機械人的應用、多臂協作決策與實地機械人實驗。該夏校匯集全球 40+ 頂級大學與企業專家，為樹莫派邊界多臂系統的 AI 驅動決策研究提供國際對標與直接合作機會。[iRoboCity2030 Summer School](https://intelligentroboticslabs.github.io/RoboCity_ROS2_Summer_School_2026/)
+
 **ROS 2 Humble 邊界推理層與實時協作決策標準化（June 2026）**：ROS 2 Humble 作為企業級穩定版本，已驗證於全球 100+ 工廠的實時多臂協作系統。該版本強化了 ros2_control 的邊界推理層支援，樹莫派 5 搭配輕量級推理加速卡可達成 <20ms 感知-決策-執行完整迴圈，適用於視覺伺服、力控與碰撞預測的融合決策。ROS 2 Humble 至 2028 年長期支援，為 Roy 進行邊界多臂生產級決策系統提供穩定的技術基礎與產業認證。
