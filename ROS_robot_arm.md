@@ -6254,3 +6254,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS2Learn 與 gym-gazebo2 框架 — 深度強化學習模型訓練（June 2026）**：ROS2Learn 是 ROS 2 官方認可的深度強化學習框架，專門針對模組化機械臂（MARA）的策略訓練。該框架整合 Gazebo 物理模擬與 ROS 2 通訊層，支援樹莫派 5 邊界層直接在模擬環境訓練 PPO、TRPO、ACKTR 等先進策略梯度演算法，無需高端 GPU 伺服器，相比傳統強化學習降低 35% 的計算資源需求。gym-gazebo2 工具包進一步簡化環境配置，支援 ROS 2 機械臂即插即用的強化學習訓練，為邊界多臂的自主決策與泛化能力驗證提供統一框架。
 
 **UniROS 跨模擬與真實機械臂強化學習框架（June 2026）**：UniROS 架構實現從 Gazebo 模擬環境到物理臂的無縫強化學習遷移，支援樹莫派 5 在模擬環境訓練策略後直接部署至真實機械臂無需重新調校。該框架整合 ROS 2 Humble 邊界層推理與力控反饋迴圈，已驗證相容 ALOHA、雙臂協作臂與人形機器人平台，顯著降低 RL 模型從虛擬到現實的泛化差距（Sim-to-Real Gap），為邊界多臂自適應操縱與強化學習驗證提供完整的開發生態。
+
+## 2026 年 6 月 14 日補充：ROSOrin Pro 與 multipanda 多臂協作框架
+
+**ROSOrin Pro — 教育級 6-DOF ROS 2 機械臂與邊界推理整合（June 2026）**：HiWonder 推出的 ROSOrin Pro 為平衡教育與研究的 6 自由度機械臂，原生支援 ROS 2 Humble 與 Jazzy。該平台特別針對 Raspberry Pi 5 與 NVIDIA Jetson Orin Nano 邊界推理加速卡的無縫整合，內置 1 KHz 低層控制迴圈與 ros2_control 驅動。獨特的 AI 語音模組支援自然語言指令解析，使用者可直接用語言指令機械臂進行複雜操縱任務。該平台已應用於全球 50+ 大學研究機構，相比工業級機械臂顯著降低成本，特別適合樹莫派邊界多臂教學與自主決策研究。[HiWonder ROSOrin 指南](https://www.hackster.io/HiwonderRobot/embodied-ai-on-ros-2-the-openclaw-rosorin-pro-guide-30fd26)
+
+**multipanda ROS 2 多臂框架與邊界 RL 同步（June 2026）**：multipanda 為 ROS 2 原生多臂協調框架，支援異構機械臂的統一控制介面。該框架基於 ROS 2 DDS Zenoh 實現分散式邊界推理，樹莫派 5 可協調多臂的實時碰撞迴避、任務分解與動態重規劃。支援 ros2_control 標準，相比傳統多臂系統降低整合複雜度，為邊界多臂 RL 實機部署與 Sim-to-Real 泛化測試提供框架基礎。
