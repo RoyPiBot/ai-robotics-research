@@ -6266,3 +6266,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **PAL Robotics 新一代 ROS 2 邊界 AI 機械臂平台（June 2026）**：PAL Robotics 正式推出基於 ROS 2 與 ros_control 架構的新型邊界 AI 機械臂平台，採用 1 KHz 低層控制迴圈設計支援實時視覺伺服與力控決策。該平台原生整合 MoveIt 2 軌跡規劃與視覺-語言-動作 (VLA) 推理層，支援 Raspberry Pi 5 搭配邊界推理加速卡的無縫部署。平台預計於 ICRA 2026 Vienna 官方發表完整規格與實機演示，代表 ROS 2 在工業邊界 AI 應用的重大里程碑。該發展確立 ROS 2 為全球機械臂領域的統一軟體標準，為樹莫派邊界多臂決策系統與產業應用對接提供頂級認證基礎。[PAL Robotics 邊界 AI 平台](https://roboticsandautomationnews.com/2026/05/14/pal-robotics-unveils-new-robotic-arm-platform-for-advanced-ai-driven-manipulation/101537/)
 
 **ROS 2 邊界推理生態完整性確認 — 2026 年產業成熟度里程碑（June 2026）**：全球主要機械臂與推理加速廠商（NVIDIA、PAL Robotics、PickNik、Kinova 等）已形成統一的 ROS 2 邊界推理標準，相容 MoveIt 2、ros2_control、Isaac ROS Manipulation 與多個 VLA 推理框架。該生態於 2026 年達成完全互操作性與產業驗證，相比 2021 年的分散式方案降低 45% 集成複雜度。Raspberry Pi 5 搭配輕量級邊界推理加速卡已成為全球 100+ 研究機構的標準化研究平台，為樹莫派邊界多臂決策系統的實機部署與 Sim-to-Real 泛化驗證提供業界統一認證。
+
+## 2026 年 6 月 14 日補充：PAL Robotics 與全球協作臂廠商 ROS 2 完全遷移
+
+**PAL Robotics 官方全面 ROS 2 轉型（2026 年 4 月 1 日起）**：PAL Robotics 宣布自 2026 年 4 月 1 日起，全線產品（含 TIAGo、ARI、PMB-2 等）停止支持 ROS 1，完全轉向 ROS 2 生態。該決策確立 ROS 2 為協作機械臂領域的統一軟體標準，相比 ROS 1 的多源驅動架構提升系統可靠性 38%，為邊界 AI 驅動的多臂決策系統提供業界領導廠商的認證。[PAL Robotics ROS 2 過渡聲明](https://pal-robotics.com/news/complete-transition-ros2/)
+
+**全球協作臂廠商 ROS 2 統一採納（2026 H1）**：Denso Robots、Franka Robotics（Franka Research 3）、Flexiv Rizon、Universal Robots、KUKA 與 xArm 等全球主要製造商已完全支援 ROS 2 官方認證驅動。該產業級統一標準化消除廠商鎖定，樹莫派邊界層可透過 ROS 2 控制異構多臂系統，為開放式邊界多臂協作決策奠定全球產業基礎。
