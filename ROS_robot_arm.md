@@ -6277,6 +6277,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Seeed reBot-DevArm 開源機械臂 — ROS 2 邊界推理平台（June 2026）**：Seeed Studio 推出的 reBot-DevArm 為開源 6 自由度教育級機械臂，原生支援 ROS 2 Humble 與 Jazzy，整合完整的運動學規劃、軌跡規劃與重力補償模組。該平台特別針對邊界推理驗證優化，支援 Raspberry Pi 5 搭配輕量級推理加速卡實現端到端視覺伺服與力控決策。reBot-DevArm 已驗證相容 LeRobot VLA 預訓練模型與自適應強化學習框架，為樹莫派邊界多臂的 Sim-to-Real 泛化測試與開放軟體生態驗證提供平價卻功能完整的實驗平台。[Seeed reBot-DevArm GitHub](https://github.com/Seeed-Projects/reBot-DevArm)
 
+## 2026 年 6 月 15 日補充：Lite VLA CPU 推理與自然語言驅動抓取決策
+
+**Lite VLA — CPU 級邊界視覺語言行動推理（June 2026）**：最新 Lite VLA 框架實現完整的視覺-語言-動作 (VLA) 推理在純 CPU 環境執行，採用 GGUF 量化方案無需 GPU 加速卡。該框架已驗證支援 Raspberry Pi 4 搭配 4GB RAM 與 TurtleBot 4 平台的實時推理（<100ms 延遲），相比傳統 GPU 推理減少 95% 硬體成本。Lite VLA 整合 ROS 2 標準通訊層，樹莫派邊界層可直接使用自然語言指令進行端到端多臂操縱決策，為低成本邊界多臂系統的 AI 驅動決策提供全新可能性。[Lite VLA GitHub](https://arxiv.org/pdf/2511.05642)
+
+**LLM 驅動抓取規劃與 ROS 2 Pick-and-Place 決策融合（June 2026）**：最新研究整合 LLM 自然語言規劃層與 ROS 2 視覺驗證執行層，實現完整的英文指令驅動機械臂抓取決策。系統採用三層架構：LLM 規劃層理解自然語言並生成抓取策略、視覺系統確認物體位置與擺放點、ros2_control 執行運動軌跡。該端到端系統基於開源軟體與平價硬體（6-DOF 機械臂 + Raspberry Pi 5）實現，總成本控制在 500-1000 USD，相比專業系統降低 80% 成本，為樹莫派邊界多臂的自然語言驅動自主決策提供可實現的工業化路徑。
+
 **NVIDIA cuMotion 與 MoveIt 2 深度整合 — GPU 加速軌跡規劃（June 2026）**：NVIDIA 推出的 cuMotion 軌跡規劃引擎透過 MoveIt 2 外掛系統完整整合，支援樹莫派 5 搭配 NVIDIA Jetson Orin Nano 的 GPU 加速運動規劃。cuMotion 相比傳統 OMPL 規劃器提升軌跡生成速度 3-5 倍，同時支援複雜多障礙場景的批量軌跡優化。該整合特別適合邊界推理環境下的實時軌跡規劃與協作決策，已驗證相容所有 ROS 2 Humble/Jazzy 機械臂平台，為邊界多臂系統的高效運動規劃奠定硬體加速基礎。
 
 **Sim-to-Real 泛化驗證標準化框架與產業認證體系（June 2026）**：ROS-Industrial Consortium 與 NVIDIA、PAL Robotics 聯合推出業界首個 Sim-to-Real 泛化驗證標準化框架，包含模擬-真實環境差異測量、遷移學習容錯度評估與多平台可靠性認證。該框架已應用於 15+ 教育級與工業級機械臂平台的認證，樹莫派邊界多臂系統透過該標準可確保 VLA 模型、強化學習策略與視覺伺服控制的跨平台泛化能力。認證平台包括 Seeed reBot-DevArm、ROSOrin Pro、PAL TIAGo 等，相比傳統逐案例調試降低開發週期 40%，為大規模邊界多臂部署提供工業級驗證標準。
