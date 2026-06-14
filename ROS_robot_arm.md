@@ -3547,6 +3547,14 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **工業機械臂動作規劃性能 65% 加速**：根據 ROS-Industrial Consortium 2026 年基準測試，搭載 MoveIt Python API 的工業協作臂系統相較 2023 年基線實現 65% 的動作規劃週期加速。該性能提升源於 MoveIt 2 核心演算法最佳化、邊界推理加速（特別在 Jetson Orin NX、Raspberry Pi 5 等 ARM 平台），以及 ROS 2 中介軟體 Zenoh 的低延遲通訊。該成果使複雜多臂環境下的即時動作規劃執行時間從 200-300ms 縮短至 100-150ms，為 Roy 的邊界多臂協作決策提供了經產業驗證的性能保證。[MoveIt Python ROS2: Motion Planning Manipulation Robots 2025](https://johal.in/moveit-python-ros2-motion-planning-manipulation-robots-2025/)
 
+### PAL Robotics 新一代研究級機械臂平台（2026 年 5 月新發布）
+
+**AIready 架構與邊界 AI 整合**：PAL Robotics 於 2026 年 5 月（ICRA 2026 前正式發布）推出新一代研究級機械臂平台，配備 7 自由度協作臂、視覺伺服模組與 NVIDIA Jetson Orin 邊界計算單元。該平台原生支援 ROS 2 Lyrical、MoveIt 2 與視覺語言動作（VLA）模型直接部署，無需額外驅動開發。特別適合邊界 AI 研究、多臂協作與具身智能實驗，預期 2026 年下半年開始商業供應。[PAL Robotics 新機械臂平台發布](https://roboticsandautomationnews.com/2026/05/14/pal-robotics-unveils-new-robotic-arm-platform-for-advanced-ai-driven-manipulation/101537/)
+
+### multipanda ros2 — 實時多臂系統 ROS 2 框架（2026 年新進展）
+
+**縮小模擬-實機差距的分散式控制架構**：新發布的 multipanda ros2 框架針對多臂協作系統設計，實現 Sim-to-Real 轉移與實時分散式控制。該框架直接透過 ROS 2 DDS 協調多個 Franka Emika Panda 或相容協作臂，支援共享工作空間內的無碰撞軌跡規劃與力控制融合。框架已驗證於樹莓派 5 邊界決策環境，相比集中式控制方案降低 40% 通訊延遲，適合多臂分類、組裝與協作操縱任務。[Bridging the Sim-to-Real Gap with multipanda ros2](https://arxiv.org/pdf/2602.02269)
+
 ### Tesseract Motion Planning Engine 1.0 預發版本（2026 年 4 月進度）
 
 **Tesseract 朝向 1.0 釋出：API 穩定化與插件架構轉型**：Tesseract 是專為機械臂運動規劃設計的高性能引擎，近期已達成 API 穩定化、單元測試擴充、以及動作規劃管線的完整插件化架構轉型。該專案正進行增強碰撞檢測器整合與 Task Composer 優化，預計 1.0 版本將提供相較 MoveIt 2 更低的規劃延遲（<80ms）與更好的軌跡品質。Tesseract 作為獨立運動規劃引擎已支援 ROS 2 無縫整合，特別適合對性能與客製化流程有高需求的邊界多臂應用。[Tesseract Planning Library - Path Planning for Robotic Manipulation](https://tesseract.readthedocs.io/)
