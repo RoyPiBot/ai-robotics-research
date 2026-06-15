@@ -6336,3 +6336,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **MoveIt Pro — PickNik 商業級機械臂操縱平台（June 2026）**：PickNik Robotics 推出 MoveIt Pro 商業軟體平台，以開源 MoveIt 為基礎延伸非結構環境下的運動規劃、抓取、視覺感知與行為序列化能力。該平台預集成 40+ 機械臂品牌的標準驅動與硬體驅動頁面（ROS 2 Hardware Drivers Page），為樹莫派邊界多臂系統提供生產級的軟體棧與維護支援。MoveIt Pro 已驗證應用於全球 50+ 工業場景，相比傳統自主開發降低 60% 實機部署週期，特別適合 Roy 的邊界多臂協作決策向產業應用規模化的技術升級路徑。[PickNik ROS 2 硬體生態公告](https://picknik.ai/2025/01/06/ROS-Hardware-Ecosystems-Announcement.html)
 
 **第 13 屆 ROS-Industrial Europe 2025 會議 — 生產環境最佳實踐分享（November 2025）**：ROS-Industrial Europe Conference 2025 於 11 月在 Strasbourg 舉辦，來自全球的工業從業者、研究者與技術供應商分享 ROS 2 在生產環境的實機部署經驗。會議重點涵蓋邊界推理機械臂的實時控制、DDS 通訊架構最佳化、多臂協作編隊控制與視覺伺服系統整合。該會議確認 ROS 2 已達產業生產就緒成熟度，為樹莫派邊界多臂系統的工業應用部署提供國際認證與最佳實踐指引。
+
+## 2026 年 6 月 15 日補充：MoveIt Pro 9.0 性能突破與工業級部署成熟化
+
+**MoveIt Pro Release 9 性能躍進 — AI 驅動掃描規劃工作流程（April 2026）**：PickNik Robotics 在 2026 年 4 月推出 MoveIt Pro 9.0，實現了逆運動學求解速度 **35 倍提升**、運動規劃 **4 倍加速**、笛卡爾空間規劃 **30 倍優化**，支援 AI 驅動的「掃描-規劃」（Scan-and-Plan）工作流程，使機械臂能在非結構化環境中即時感知環境並動態生成軌跡。已驗證相容 KUKA KR Cybertech、Universal Robots、Kawasaki、FANUC 等工業機械臂品牌，特別適合樹莫派邊界多臂系統在變工況場景下的視覺伺服決策與自適應路徑規劃，預計加速工業級應用部署週期 40-50%。[MoveIt Pro 9.0 官方公告](https://picknik.ai/news-releases/PickNik_s_MoveIt_Pro_Release_9_Advances_AI-Driven_Scan-and-Plan_for_High-Variability_Robotics.html)
