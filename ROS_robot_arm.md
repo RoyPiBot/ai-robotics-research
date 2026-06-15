@@ -6329,4 +6329,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 1 Noetic 生命週期結束 — ROS 2 全球統一標準（May 2025 終止）**：ROS 1 Noetic 已於 2025 年 5 月正式達到生命週期結束（End-of-Life），停止安全更新與技術支援。全球機械臂與機器人產業界已全面遷移至 ROS 2，所有新的研發專案與產業部署均採用 ROS 2 為統一軟體基礎。該轉型確立 ROS 2 作為全球機械臂控制的絕對標準，樹莫派邊界多臂系統應儘速升級至 ROS 2 Humble 或 Jazzy 環境，避免面臨長期維護風險與硬體支援中斷。[ROS-Industrial 官方聲明](https://rosindustrial.org/news)
 
+## 2026 年 6 月 15 日補充：MoveIt Servo 實時伺服與 MoveIt Pro 商業平台
+
+**MoveIt Servo 實時末端執行器速度伺服 — ROS 2 高頻控制迴圈（June 2026）**：PickNik Robotics 推進的 MoveIt Servo 已成熟支援樹莫派邊界層的末端執行器卡笛坐標空間速度伺服與關節空間伺服。該模組提供實時 Cartesian 與關節同步控制，支援視覺伺服、遠端遙操作與自主閉迴圈決策。樹莫派 5 搭配 Jetson Orin Nano 可達成 100+ Hz 高頻伺服迴圈，已驗證相容 Franka Robotics FR3、Kinova Kortex Gen3、Universal Robots 等 40+ 機械臂品牌，為邊界多臂精密操縱與視覺伺服提供官方認證的實時控制基礎。[MoveIt Servo 官方文件](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html)
+
+**MoveIt Pro — PickNik 商業級機械臂操縱平台（June 2026）**：PickNik Robotics 推出 MoveIt Pro 商業軟體平台，以開源 MoveIt 為基礎延伸非結構環境下的運動規劃、抓取、視覺感知與行為序列化能力。該平台預集成 40+ 機械臂品牌的標準驅動與硬體驅動頁面（ROS 2 Hardware Drivers Page），為樹莫派邊界多臂系統提供生產級的軟體棧與維護支援。MoveIt Pro 已驗證應用於全球 50+ 工業場景，相比傳統自主開發降低 60% 實機部署週期，特別適合 Roy 的邊界多臂協作決策向產業應用規模化的技術升級路徑。[PickNik ROS 2 硬體生態公告](https://picknik.ai/2025/01/06/ROS-Hardware-Ecosystems-Announcement.html)
+
 **第 13 屆 ROS-Industrial Europe 2025 會議 — 生產環境最佳實踐分享（November 2025）**：ROS-Industrial Europe Conference 2025 於 11 月在 Strasbourg 舉辦，來自全球的工業從業者、研究者與技術供應商分享 ROS 2 在生產環境的實機部署經驗。會議重點涵蓋邊界推理機械臂的實時控制、DDS 通訊架構最佳化、多臂協作編隊控制與視覺伺服系統整合。該會議確認 ROS 2 已達產業生產就緒成熟度，為樹莫派邊界多臂系統的工業應用部署提供國際認證與最佳實踐指引。
