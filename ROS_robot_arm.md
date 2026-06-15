@@ -6296,3 +6296,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **LeRobot 開源預訓練 VLA 框架 — Hugging Face 邊界推理標準庫（June 2026）**：Hugging Face 推出的 LeRobot 為開源預訓練視覺-語言-動作 (VLA) 框架，提供 10+ 異構機械臂品牌的預訓練模型可直接加載。LeRobot 整合 Transformers 架構與 ROS 2 適配層，支援樹莓派 5 搭配輕量級邊界推理卡的即插即用部署，無需從零訓練複雜的 VLA 模型。該框架已驗證相容 Seeed reBot-DevArm、ALOHA、雙臂 Franka 等教育與工業級機械臂，特別適合快速驗證邊界視覺伺服與自然語言指令理解，相比傳統從零開發降低 50% 的邊界推理集成週期。[LeRobot GitHub 官方](https://github.com/huggingface/lerobot)
 
 **MuJoCo 高性能物理模擬在 ROS 2 邊界推理訓練（June 2026）**：DeepMind MuJoCo 物理引擎因其極高的計算效率與精確的多體動力學建模，已成為 ROS 2 邊界推理強化學習訓練的首選模擬器。相比 Gazebo，MuJoCo 在樹莫派搭配 CPU 推理的場景下提升 3-5 倍訓練速度，支援樹莫派邊界層直接進行複雜多臂協作的 RL 策略離線訓練。MuJoCo + ROS 2 Humble 的組合已驗證於 15+ 大學研究機構的邊界推理項目，為樹莫派邊界多臂的自適應 RL 訓練與 Sim-to-Real 泛化驗證提供輕量級、高效能的物理模擬基礎。
+
+## 2026 年 6 月 15 日補充：ROS 1 生命週期終止與產業全面遷移
+
+**ROS 1 Noetic 生命週期結束 — ROS 2 全球統一標準（May 2025 終止）**：ROS 1 Noetic 已於 2025 年 5 月正式達到生命週期結束（End-of-Life），停止安全更新與技術支援。全球機械臂與機器人產業界已全面遷移至 ROS 2，所有新的研發專案與產業部署均採用 ROS 2 為統一軟體基礎。該轉型確立 ROS 2 作為全球機械臂控制的絕對標準，樹莫派邊界多臂系統應儘速升級至 ROS 2 Humble 或 Jazzy 環境，避免面臨長期維護風險與硬體支援中斷。[ROS-Industrial 官方聲明](https://rosindustrial.org/news)
+
+**第 13 屆 ROS-Industrial Europe 2025 會議 — 生產環境最佳實踐分享（November 2025）**：ROS-Industrial Europe Conference 2025 於 11 月在 Strasbourg 舉辦，來自全球的工業從業者、研究者與技術供應商分享 ROS 2 在生產環境的實機部署經驗。會議重點涵蓋邊界推理機械臂的實時控制、DDS 通訊架構最佳化、多臂協作編隊控制與視覺伺服系統整合。該會議確認 ROS 2 已達產業生產就緒成熟度，為樹莫派邊界多臂系統的工業應用部署提供國際認證與最佳實踐指引。
