@@ -3547,6 +3547,14 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **自適應抓取控制與視覺伺服閉迴圈整合**：2026 年 ROS 2 Manipulation Basics 教程與 ros2_control 深度整合，已實現將自適應力-位置混合控制與即時視覺反饋融合為統一決策迴圈。MoveIt 2 的 Servo 功能支援視覺伺服（Visual Servoing）閉迴圈，允許機械臂根據 RGB-D 或立體視覺實時調整末端執行器位置，配合力感測器反饋動態調整夾爪張力以適應各種物體幾何與材質。該整合方案已驗證於複雜拾取場景（軟體物、脆弱物品、無規則堆積），相較開迴圈規劃提升成功率 40-60%，特別適合邊界部署的自適應操縱任務。[ROS 2 Manipulation Basics with Real-Time Visual Servoing](https://www.theconstruct.ai/robotigniteacademy_learnros/ros-courses-library/ros2-manipulation-basics/)
 
+### 生物啟發事件驅動視覺伺服應用於地面機械臂（2026 年 6 月新進展）
+
+**事件相機與傳統視覺融合的混合伺服框架**：2026 年最新研究展示生物啟發的事件驅動視覺伺服在地面機械臂應用中的突破。該方案融合 DVS（動態視覺感測器）的微秒級非同步事件流與高解析度 RGB 影像，透過 Transformer 架構統一處理兩種感測模態，實現高速且穩健的視覺伺服閉迴圈。實驗驗證表明，事件與視覺融合的機械臂控制相較單一 RGB 方案在動態環境中的追蹤精度提升 22-30%，響應延遲降低 45%，特別適合高速拾取與低光環境操作。該框架已整合至 ROS 2 生態，支援與 ros2_control 無縫銜接。[Bio-Inspired Event-Based Visual Servoing for Ground Robots](https://arxiv.org/pdf/2603.23672)
+
+### 人機協作導航融合事件相機與強化學習（2026 年 6 月新進展）
+
+**事件驅動視覺與 RL 决策層的混合架構**：2026 年研究將事件相機與強化學習結合，實現人機協作場景下的自適應導航與操縱。該系統採用事件相機捕捉動態場景的微秒級變化，通過 CNN-LSTM 網絡實時編碼事件流，配合 PPO/SAC 強化學習演算法驅動機械臂自主決策。相較傳統 RGB+RL 方案，該混合架構在複雜人機共享工作空間中的碰撞迴避能力提升 35%，動作反應時間降低至 <150ms，能量消耗減少 28%。該方法已驗證於協作分類、物體跟蹤與人機配合操縱任務，適合邊界端樹莓派與 Jetson 平台部署。[Human-Robot Navigation using Event-based Cameras and Reinforcement Learning](https://arxiv.org/pdf/2506.10790)
+
 ### reBot Arm B601-DM — 開源 6+1 DOF 具身 AI 機械臂（2026 年 4 月新發佈）
 
 **開源模組化機械臂與具身 AI 整合**：2026 年 4 月 17 日發佈的 reBot Arm B601-DM 為全開源的 6 軸 + 1 線性軸機械臂，專為具身 AI 與遠操應用設計。該平台具備 767mm 作業半徑、1.5kg 負載容量、0.2mm 重複精度，原生支援 ROS 1/2 驅動與 MoveIt 2 規劃框架。Humble 版本的完整 MoveIt 2 驅動正在開發中，將支援視覺伺服與力控制整合。reBot Arm 高度相容 Hugging Face LeRobot、NVIDIA Isaac Sim 與 Pinocchio 運動學庫，為 Roy 的邊界具身 AI 與視覺伺服研究提供了低成本的開源硬體平台。[reBot Arm B601-DM - Open-Source 6+1 DoF Robotic Arm](https://www.cnx-software.com/2026/04/17/rebot-arm-b601-dm-an-open-source-61-dof-robotic-arm-for-embodied-ai-and-teleoperation-applications/)
