@@ -907,6 +907,8 @@ ros2 launch <套件名稱> <launch檔名>
 
 ### 前沿技術
 - [ROS 2 Control 框架](https://control.ros.org/rolling/doc/resources/resources.html) — 硬體無關的模組化控制系統，2026 支援 Franka FR3、Kinova、Universal Robots 等工業機械手臂
+- **PAL Robotics 新輕量機械臂（2026/05）** — 7 自由度、<10kg 重量、3kg 負載、1KHz 低階控制迴圈、計劃 ICRA 2026 在維也納發表、2026 下半年商用上市
+- **Quest2ROS2 雙臂虛擬遙操作框架** — 整合 Meta Quest VR 與 ROS 2，支援雙手臂同步遙控與力反饋，適合遠端操作與操作記錄學習
 - [ROS-Z — Rust + Zenoh 原生 ROS 2 實作](https://fosdem.org/2026/schedule/event/BQ8DVM-ros-z/)（FOSDEM 2026 發表）
 - [Meta-ROS — 下一代中介層，吞吐量比標準 ROS 2 高 30%](https://arxiv.org/html/2601.21011v1)
 - [ROS 2 Kilted Kaiju Release Notes](https://docs.ros.org/en/rolling/Releases/Release-Kilted-Kaiju.html)
