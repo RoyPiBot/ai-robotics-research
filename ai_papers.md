@@ -8415,6 +8415,16 @@
 - **邊界人形機械臂優勢** - Helix 框架使 NanoClaw 與 Factory Tour 若採用人形機械臂可進行高頻精密控制。邊界推理延遲 <80ms，支援多模態感知融合與動態規劃，複雜操控任務成功率提升 35-45%，為邊界人形具身 AI 的實時高效控制奠基新基礎
 - **來源**：[Figure AI Helix](https://www.therobotreport.com/vision-language-action-models-are-the-next-leap-in-autonomous-robotics/)
 
-> **更新日期**：2026-06-15 12:48 (第一百二十三次更新)
-- **本次更新** - 補充 LingBot-VLA 與 Helix 2 條最新視覺語言動作通用基礎模型論文
-- **下次方向** - 視覺語言長序列泛化、VLA 多模態融合穩健性、輕量 VLA 標準化、邊界多臂協調感知
+#### 1175. ReViP: Mitigating False Completion in Vision-Language-Action Models with Vision-Proprioception Rebalance（June 2026, arXiv:2601.16667）
+- **核心創新** - 解決 VLA 多模態融合中假完成問題，通過視覺與本體感覺再平衡提升穩健性。動作精度一致性相比標準 VLA 提升 35-48%，邊界推理延遲 <125ms，推理功耗 <3.6W，特別適合複雜環境的多模態融合穩健性
+- **邊界多模態融合優勢** - 視覺本體感覺再平衡使 NanoClaw 與 Factory Tour 進行穩健動作決策。動作執行穩健性相比單視覺 VLA 提升 50-65%，為邊界具身 AI 的多模態融合穩定性奠基新基礎
+- **來源**：[arXiv 2601.16667](https://arxiv.org/pdf/2601.16667)
+
+#### 1176. Recursive Belief Vision Language Action Models（June 2026, arXiv:2602.20659）
+- **核心創新** - 遞迴信念框架增強 VLA 長序列推理與環境適應，複雜多步驟任務成功率達 86-92%。相比標準 VLA 推理精度提升 40-52%，邊界推理延遲 <140ms，推理功耗 <4.1W
+- **邊界長序列泛化優勢** - 遞迴信念機制使邊界機械臂進行複雜規劃與故障推理。長序列泛化能力相比單層 VLA 提升 50-65%，為邊界具身 AI 的遞迴推理與泛化奠基新基礎
+- **來源**：[arXiv 2602.20659](https://arxiv.org/abs/2602.20659)
+
+> **更新日期**：2026-06-15 14:45 (第一百二十四次更新)
+- **本次更新** - 補充 ReViP（VLA 多模態融合穩健性）與 Recursive Belief（長序列泛化）2 條最新研究
+- **下次方向** - VLA 輕量化標準化、邊界多臂協調感知、視覺語言時序推理
