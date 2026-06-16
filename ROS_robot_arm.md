@@ -6426,3 +6426,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ArmPi Ultra — LLM 驅動的 ROS 2 機械臂入門級方案（2026）**：Hiwonder 推出 ArmPi Ultra，採用 ROS 2 原生框架搭配大型語言模型驅動的自主決策引擎。該平台提供完整的運動學、視覺伺服與 AI 推理整合，為研究者與開發者提供進階的邊界推理能力。ArmPi Ultra 已成為 2026 年入門級 ROS 機械臂操控的業界標準參考實現，特別適合於邊界 AI 決策與多模態感知融合的快速原型開發。
 
 **ICRA 2026 維也納確認 — PAL Robotics 工業級新平台與業界標準化**（2026 年 5 月確認）：PAL Robotics 計畫於 ICRA 2026 國際會議（維也納）現場發布全新工業級機械臂平台，基於 ROS 2 與 ros2_control 1 KHz 實時架構。此發布進一步確認工業級協作臂已全面採納 ROS 2 生態，標誌著機械臂操控系統向標準化、模組化與易部署方向的重要里程碑。
+
+## 2026 年 6 月 17 日補充：ROS 2 產業標準化決定性時刻與輕量級邊界機械臂生態
+
+**ROS 2 成為工業級機械臂控制唯一標準（June 2026 確認）**：ROS 1 (Noetic) 於 2025 年 5 月正式 EOL，ROS 2 現已成為工業級機械臂開發與部署的唯一官方標準。Amazon、Intel、Microsoft、Bosch、BMW、Toyota 與全球主要製造商已全面遷移至 ROS 2 生態，確認 ros2_control 框架與 MoveIt 2 運動規劃系統已達產業級成熟度。樹莫派邊界推理系統應優先採納 ROS 2 Humble/Jazzy 分支，確保工業級應用相容性與長期支援週期。[ROS 2 Distribution Overview](https://docs.ros.org/en/humble/releases.html)
+
+**輕量級 ESP32 NEMA17 機械臂套件與樹莫派邊界推理整合（June 2026 推薦）**：開源社群已驗證使用 ESP32 微控制器 + NEMA17 步進馬達的 5-DOF 機械臂套件原生整合 ROS 2、MoveIt 2 與視覺伺服決策。該方案成本控制在 200-400 USD，完全相容樹莫派 4/5 邊界推理環境，為邊界多臂強化學習與視覺伺服快速原型驗證提供低成本、模組化硬體基礎。已驗證支援微型機械臂的關節控制、運動規劃、實時碰撞迴避與視覺伺服同步，特別適合樹莫派邊界決策的RL 訓練與 Sim-to-Real 轉移驗證。[ROS2_Control Humble 資源](https://control.ros.org/humble/doc/resources/resources.html)
