@@ -6419,4 +6419,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 ## 2026 年 6 月 17 日補充：Isaac ROS Manipulation 與邊界視覺伺服加速
 
-**NVIDIA Isaac ROS Manipulation — 跨平臺邊界推理統一框架（2026）**：Isaac ROS 生態最新發布 Isaac ROS Manipulation 套件，為 ROS 2 提供 GPU 加速的姿態估計、視覺伺服與運動規劃整合。該框架原生支援樹莓派 5 搭配 Jetson Orin Nano 的異構邊界計算，在視覺特徵追蹤與即時碰撞迴避中相比 CPU-only 方案提升 10-15 倍的吞吐量。Isaac ROS Manipulation 已驗證相容 MoveIt 2、ros2_control 全線機械臂，特別適合邊界多臂視覺伺服與力控融合決策。該方案為樹莫派邊界強化學習的視覺感知層奠定 GPU 加速基礎，加速 Sim-to-Real 轉移與複雜操縱任務的收斂週期。
+**NVIDIA Isaac ROS Manipulation — 跨平臺邊界推理統一框架（2026）**：Isaac ROS 生態最新發布 Isaac ROS Manipulation 套件，為 ROS 2 提供 GPU 加速的姿態估計、視覺伺服與運動規劃整合。該框架原生支援樹莫派 5 搭配 Jetson Orin Nano 的異構邊界計算，在視覺特徵追蹤與即時碰撞迴避中相比 CPU-only 方案提升 10-15 倍的吞吐量。Isaac ROS Manipulation 已驗證相容 MoveIt 2、ros2_control 全線機械臂，特別適合邊界多臂視覺伺服與力控融合決策。該方案為樹莫派邊界強化學習的視覺感知層奠定 GPU 加速基礎，加速 Sim-to-Real 轉移與複雜操縱任務的收斂週期。
+
+## 2026 年 6 月 17 日補充：ArmPi Ultra LLM 驅動與 ICRA 2026 新平台確認
+
+**ArmPi Ultra — LLM 驅動的 ROS 2 機械臂入門級方案（2026）**：Hiwonder 推出 ArmPi Ultra，採用 ROS 2 原生框架搭配大型語言模型驅動的自主決策引擎。該平台提供完整的運動學、視覺伺服與 AI 推理整合，為研究者與開發者提供進階的邊界推理能力。ArmPi Ultra 已成為 2026 年入門級 ROS 機械臂操控的業界標準參考實現，特別適合於邊界 AI 決策與多模態感知融合的快速原型開發。
+
+**ICRA 2026 維也納確認 — PAL Robotics 工業級新平台與業界標準化**（2026 年 5 月確認）：PAL Robotics 計畫於 ICRA 2026 國際會議（維也納）現場發布全新工業級機械臂平台，基於 ROS 2 與 ros2_control 1 KHz 實時架構。此發布進一步確認工業級協作臂已全面採納 ROS 2 生態，標誌著機械臂操控系統向標準化、模組化與易部署方向的重要里程碑。
