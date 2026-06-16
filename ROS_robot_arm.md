@@ -6416,3 +6416,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **Scan-N-Plan 三維掃描驅動軌跡規劃 — 工業機械臂智能編程（2026）**：ROS-Industrial 生態最新發展的 Scan-N-Plan 技術採用 3D 點雲掃描實時生成機械臂軌跡，直接消除傳統工業機械臂的手工編程環節。該系統整合視覺感測與 MoveIt 2 運動規劃，可在複雜工業場景實現自適應軌跡生成，加速工程樣機到批量製造的部署週期。樹莫派邊界層搭配深度相機可驅動邊界軌跡決策，為動態變工況環境提供實時感知驅動的運動規劃能力。
 
 **multipanda ros2 — 多臂實時系統的 Sim-to-Real 統一框架（2026）**：arXiv 最新論文發表 multipanda ros2，為多臂機械臂系統在 Gazebo 與實機間提供統一的 ROS 2 硬體抽象層。該框架原生支援即時控制迴圈與分散式決策，相比傳統多臂控制方案大幅降低模擬-實機轉移的複雜度。已驗證相容樹莫派 5 邊界層與多款工業機械臂，為複雜多臂系統的快速原型與實際部署提供開源基礎設施。
+
+## 2026 年 6 月 17 日補充：Isaac ROS Manipulation 與邊界視覺伺服加速
+
+**NVIDIA Isaac ROS Manipulation — 跨平臺邊界推理統一框架（2026）**：Isaac ROS 生態最新發布 Isaac ROS Manipulation 套件，為 ROS 2 提供 GPU 加速的姿態估計、視覺伺服與運動規劃整合。該框架原生支援樹莓派 5 搭配 Jetson Orin Nano 的異構邊界計算，在視覺特徵追蹤與即時碰撞迴避中相比 CPU-only 方案提升 10-15 倍的吞吐量。Isaac ROS Manipulation 已驗證相容 MoveIt 2、ros2_control 全線機械臂，特別適合邊界多臂視覺伺服與力控融合決策。該方案為樹莫派邊界強化學習的視覺感知層奠定 GPU 加速基礎，加速 Sim-to-Real 轉移與複雜操縱任務的收斂週期。
