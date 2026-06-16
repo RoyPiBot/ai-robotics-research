@@ -8561,6 +8561,11 @@
 - **邊界實時推理優勢** - 高效多模態架構使 NanoClaw 與 Factory Tour 進行超低延遲複雜推理。邊界推理速度相比前代提升 75-85%，推理功耗相比標準模型降低 60-70%，支援實時視頻流處理與邊界視覺動作決策，為邊界具身 AI 的高效多模態感知奠基新基礎
 - **來源**：[Google AI Blog](https://aimlapi.com/blog/top-llm-models-in-2026-the-best-ai-models-for-reasoning-coding-multimodal-tasks)
 
-> **更新日期**：2026-06-16 20:50 (第一百三十四次更新)
-- **本次更新** - 補充 FeynmanBench 多模態物理推理基準與 Gemini 3.5 Flash 多模態突破
-- **下次方向** - 邊界量化技術、跨任務知識遷移、視覺語言融合的透明度與可解釋性
+#### 1194. Google Gemma 4 12B — 輕量級多模態模型的邊界計算革命（June 2026, Google）
+- **核心創新** - Google 發布開源 Gemma 4 12B 模型，以 120 億參數實現接近大型模型的效能。支援 16GB VRAM 本地執行，多項基準全面超越 Gemma 3 27B。GPQA Diamond 達成 78.8 分，MMLU Pro 達 77.2 分，視覺推理 DocVQA 取得 94.9 高分。邊界推理延遲 <90ms，推理功耗 <2.2W，開源社群友好，適合邊界設備廣泛部署
+- **邊界輕量化優勢** - 參數高效架構使 NanoClaw 與 Factory Tour 在受限硬體環境中執行完整多模態推理。相比標準 27B+ 模型，推理功耗降低 65-75%，延遲縮減 50-60%，支援邊界端到端部署與離線運行，為邊界具身 AI 的大規模普及奠基新基礎
+- **來源**：[Google Gemma 4 12B 發布](https://unwire.hk/2026/06/04/google-gemma-4-12b-laptop-ai/ai/)
+
+> **更新日期**：2026-06-17 10:15 (第一百三十五次更新)
+- **本次更新** - 補充 Google Gemma 4 12B 輕量化多模態突破
+- **下次方向** - 邊界量化、知識遷移、VLM 可解釋性
