@@ -99,6 +99,12 @@
 - **發布時間**：2026 年 4 月 2 日
 - **摘要**：Google 推出 Gemma 4，提供 2.3B 至 31B 參數四個規模變體，全為原生多模態架構。Gemma 4 31B Dense 模型在 Arena AI 排名全球開源模型前三，具備強大的視覺理解與推理能力，開源權重預計採寬鬆授權發布。
 
+### 15. TurboQuant — Google KV Cache 量化技術（ICLR 2026）
+- **機構**：Google Research
+- **發布時間**：2026 年 6 月（ICLR 2026 論文發表）
+- **摘要**：Google 發表的極端量化演算法 TurboQuant，利用 PolarQuant 向量旋轉與 Quantized Johnson-Lindenstrauss 壓縮方法，將 KV cache 壓縮至約 3 位元精度。在 NVIDIA H100 GPU 上實現 5-6 倍記憶體減少、高達 8 倍注意力計算加速。核心優勢：數據無關（無需校準集）、無需重訓練、對標準 Transformer 立即生效。已被多個開源實現採用並整合到生產系統。
+- **重要性**：解決大型語言模型推理時 KV cache 的核心瓶頸，在不犧牲精度的前提下大幅降低記憶體消耗和計算延遲，對於邊界部署與長上下文推理應用具有革命性意義。
+
 ### 15. Microsoft MAI-Code-1-Flash 與 MAI-Thinking-1 — 代碼生成與推理系列
 - **機構**：Microsoft（Build 2026 大會發表）
 - **發布時間**：2026 年 6 月初
