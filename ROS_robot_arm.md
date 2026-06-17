@@ -6444,3 +6444,11 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS 2 成為工業級機械臂控制唯一標準（June 2026 確認）**：ROS 1 (Noetic) 於 2025 年 5 月正式 EOL，ROS 2 現已成為工業級機械臂開發與部署的唯一官方標準。Amazon、Intel、Microsoft、Bosch、BMW、Toyota 與全球主要製造商已全面遷移至 ROS 2 生態，確認 ros2_control 框架與 MoveIt 2 運動規劃系統已達產業級成熟度。樹莫派邊界推理系統應優先採納 ROS 2 Humble/Jazzy 分支，確保工業級應用相容性與長期支援週期。[ROS 2 Distribution Overview](https://docs.ros.org/en/humble/releases.html)
 
 **輕量級 ESP32 NEMA17 機械臂套件與樹莫派邊界推理整合（June 2026 推薦）**：開源社群已驗證使用 ESP32 微控制器 + NEMA17 步進馬達的 5-DOF 機械臂套件原生整合 ROS 2、MoveIt 2 與視覺伺服決策。該方案成本控制在 200-400 USD，完全相容樹莫派 4/5 邊界推理環境，為邊界多臂強化學習與視覺伺服快速原型驗證提供低成本、模組化硬體基礎。已驗證支援微型機械臂的關節控制、運動規劃、實時碰撞迴避與視覺伺服同步，特別適合樹莫派邊界決策的RL 訓練與 Sim-to-Real 轉移驗證。[ROS2_Control Humble 資源](https://control.ros.org/humble/doc/resources/resources.html)
+
+## 2026 年 6 月 17 日補充：UniROS 統一框架與 CRISP 控制器
+
+**UniROS — 統一 ROS 強化學習框架（June 2026）**：UniROS 框架提供統一的 ROS 2 強化學習訓練與部署管道，原生支援實機與模擬環境的無縫轉移。該框架已驗證相容多款機械臂平台，整合樹莫派邊界層的實時控制迴圈，為邊界多臂的 RL 訓練加速 Sim-to-Real 轉移。[UniROS 研究論文](https://pmc.ncbi.nlm.nih.gov/articles/PMC12473579/)
+
+**CRISP 遵從式 ROS 2 控制器（June 2026）**：CRISP 框架針對機械臂學習型操縱設計遵從式控制器，支援機器人無關的 ROS 2 實現，相容多臂遙操作與策略部署。該方案為樹莫派邊界多臂的力控融合決策與安全遵從操作提供開源基礎設施。[CRISP 論文](https://arxiv.org/pdf/2509.06819)
+
+**ROSCon 2026 Toronto 重點確認**：社群共識強調 AI 驅動解決方案（模仿學習、強化學習）與 ROS 2 工業應用最佳化為年度重點，進一步確認邊界多臂的 RL 與視覺伺服融合為產業級應用核心方向。
