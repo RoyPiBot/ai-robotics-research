@@ -6507,3 +6507,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROS2_Control 6 月新教程與 6-DOF 機械臂完整示例（June 2026）**：ROS 官方文件更新 Example 7 完整教程，提供 6-DOF 機械臂的端到端控制範例，涵蓋硬體驅動、運動規劃與視覺伺服的無縫整合。該教程已驗證相容 Humble/Jazzy 分支，為樹莫派邊界層的多臂協作決策與視覺伺服實踐奠定最新官方基準。
 
 **MoveIt Servo 實時視覺伺服與低延遲關節控制（June 2026）**：MoveIt 框架的 Realtime Servo 模組已整合高效率的 JointTrajectoryController，直接相容位置/速度型控制器與 JointGroupPosition/JointGroupVelocity 指令。該模組透過光流估計、DCEM 採樣與模型預測控制（MPC）進行視覺特徵追蹤，實現即時視覺伺服的閉環抓取與目標追蹤。樹莓派 5 邊界層執行 Realtime Servo 相比傳統開迴路規劃降低 30-40% 的任務失敗率，特別適合非結構化環境與部分可觀測性下的自適應操縱。[[MoveIt Realtime Servo 教程](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html)]
+
+## 2026 年 6 月 18 日補充：PAL Robotics 官方 ROS 2 生態轉換確認與產業支援機械人清單
+
+**PAL Robotics 完全轉向 ROS 2 Humble 標準部署（April 1, 2026）**：PAL Robotics 自 2026 年 4 月 1 日起官方停止 ROS 1 支援，所有平台產品（PM-SA、ARI、Talos 等）已全面遷移至 ROS 2 Humble + Ubuntu 22.04 LTS 標準基準。該轉換確認 ROS 2 工業級成熟度已達全球領導機械臂廠商的可靠性與支援標準，樹莫派邊界多臂系統應優先採納 Humble 分支確保廠商相容性與長期維護週期。
+
+**ROS 2 Jazzy 支援機械人生態清單擴展（June 2026）**：ROS 2 Jazzy 最新支援列表已涵蓋工業級主流機械臂：Kinova Kortex Gen3、Husarion ROSbot XL、Mitsubishi MELFA、Universal Robots (UR 系列)、Stäubli TX2、ABB IRB 等。該完整支援清單確認 ROS 2 已成為全球機械臂標準控制層，ros2_control 框架的驅動程式品質已達高帶寬實時控制（>500 Hz）基準，為樹莫派邊界多臂系統的異構機械臂協調決策奠定完整的官方支援生態。[[ROS 2 控制框架支援清單](https://control.ros.org/jazzy/doc/supported_robots/supported_robots.html)]
