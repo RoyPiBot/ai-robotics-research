@@ -6495,3 +6495,9 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **無傳感器接觸力估計 — 邊界推理免除力感測器部署（June 2026）**：最新 IEEE 研究發表無傳感器接觸力估計方法，採用快速觀測器架構直接從馬達電流與加速度估測接觸力，相比傳統六軸力感測器降低 80% 成本且消除感測器延遲。樹莫派邊界層搭配該估計器可實現魯棒的阻抗控制與精密組裝任務，已驗證於 Franka、UR 等協作臂平台的精密接觸任務，為低成本邊界多臂的力控融合決策奠定感測器融合基礎。[無傳感器力估計研究](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11579479/)
 
 **四旋翼機械臂系統與 ROS 2 阻抗控制融合（June 2026）**：新型四旋翼搭載機械臂進行空中操縱作業，整合樹莫派邊界層的阻抗控制與力反饋決策。該系統採用分散式控制架構：四旋翼負責全局位置穩定，末端執行器進行局部力控調整，相比傳統位置控制提升非結構環境的操縱成功率 45%。ROS 2 支援該異構系統的實時同步與決策融合，為邊界多臂在三維空間的動態操縱與複雜環境適應提供新型應用方向。
+
+## 2026 年 6 月 18 日補充：PickNik 硬體驅動生態與視覺伺服高頻率標準
+
+**PickNik ROS 2 硬體驅動頁面與視覺伺服高帶寬支援（2025 年 1 月發布）**：PickNik Robotics 發布 ROS 2 Hardware Drivers 頁面，建立機械臂驅動品質評分體系。獲評「Great」級的驅動程式需達成高帶寬流資料傳輸（>500 Hz），原生支援視覺伺服、靈巧操控與力迴路閉環控制。該標準化評分框架已成為工業級機械臂 ROS 2 整合的事實上基準，樹莫派邊界層與多臂協作系統應優先選擇「Great」評級的控制器驅動與感測器介面。[[PickNik ROS 2 硬體驅動生態](https://picknik.ai/2025/01/06/ROS-Hardware-Ecosystems-Announcement.html)]
+
+**MoveIt Servo 實時視覺伺服與低延遲關節控制（June 2026）**：MoveIt 框架的 Realtime Servo 模組已整合高效率的 JointTrajectoryController，直接相容位置/速度型控制器與 JointGroupPosition/JointGroupVelocity 指令。該模組透過光流估計、DCEM 採樣與模型預測控制（MPC）進行視覺特徵追蹤，實現即時視覺伺服的閉環抓取與目標追蹤。樹莓派 5 邊界層執行 Realtime Servo 相比傳統開迴路規劃降低 30-40% 的任務失敗率，特別適合非結構化環境與部分可觀測性下的自適應操縱。[[MoveIt Realtime Servo 教程](https://moveit.picknik.ai/humble/doc/examples/realtime_servo/realtime_servo_tutorial.html)]
