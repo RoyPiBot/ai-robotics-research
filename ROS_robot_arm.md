@@ -1047,6 +1047,15 @@ G-ARM 是 2025-2026 年最值得關注的教育用機械手臂專案：
 **運動規劃效能躍升**：
 - **Python API 採用率**：2025 ROSCon 調查顯示 80% 新專案採用 Python 介面，相比 2023 年基線運動規劃速度快 65%
 - **動態環境適應**：ML 增強規劃器在動態環境中成功率超過 90%，預期 2026 年成為工業標準
+
+#### PAL Robotics ICRA 2026 新機械手臂平台（2026 年 6 月）
+
+PAL Robotics 在維也納 ICRA 2026 會議（6 月 1-5 日）發表全新機械手臂研究平台：
+
+- **Series Elastic Actuators**：採用 PAL 自有的序列彈性制動器技術（同 TIAGo Pro / KANGAROO），內建合規性與精密力控
+- **ROS 2 + ros_control 原生整合**：1 kHz 低層控制環，支援實時位置與力控命令
+- **視覺-力控邊界融合**：結合視覺伺服與力回饋構成完整邊界感知控制迴圈，適用於接觸操作任務
+- **研究導向設計**：模組化架構便於學術研究與高級應用開發
 - **実用資源**：[ros2_control_demos](https://github.com/ros-controls/ros2_control_demos) GitHub repository 提供完整範本與 Gazebo 模擬，可直接用於教學和原型開發
 
 ### 嵌入式視覺伺服與邊界 AI 應用（2026 年 4 月新增）
