@@ -5142,6 +5142,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **Jetson Orin 2026 年邊界推理與 ROS 2 視覺伺服加速方案（May 2026）**：NVIDIA 發布 Jetson Orin 2026 年最新整合方案，重點強化邊界 AI 推理效能。Jetson Orin Nano 相比 2023 版本推理效能提升 2 倍，配合 CUDA 12.x 與優化的 TensorRT 推理引擎，支援實時物體偵測、6D 姿態估計與視覺伺服決策。ROS 2 生態提供原生 Isaac ROS 感知管線與 MoveIt 2 視覺伺服整合，樹莓派 5 外接 Jetson Orin Nano 可實現 <50ms 端到端視覺伺服決策延遲。HiWonder JetArm 6DOF 機械臂平台已完成 Jetson Orin Nano/NX 控制器認證，特別適合 Roy 進行多臂視覺伺服邊界 GPU 加速實踐與 Sim-to-Real 驗證。[Jetson Orin 2026 性能基準](https://www.hackster.io/yahboomtechnology/how-to-choose-your-jetson-board-in-2026-75ba7e)
 
+## 2026 年 6 月 19 日補充：高精度變換器視覺伺服與眼動追蹤操作融合
+
+**Transformer 架構高精度視覺伺服用於微小物件對齐（June 2026）**：最新研究發表高精度變換器基礎視覺伺服框架，專門用於對齐微小物件（毫米級精度）。該架構採用多頭自注意機制學習視覺特徵與伺服決策的長期依賴關係，相比 CNN 型視覺伺服的精度提升 35%+。ROS 2 整合後樹莓派 5 邊界推理延遲 <80ms，完全支援複雜接觸操縱中的高精度末端定位與力控適應。特別適合 Roy 進行邊界多臂微組裝與精密操縱視覺伺服决策層深化驗證。[High-Precision Transformer-Based Visual Servoing](https://arxiv.org/pdf/2503.04862)
+
+**眼動追蹤驅動輔助機械臂日常任務協助系統（June 2026）**：新研究整合眼動追蹤（Eye-Tracking）與 ROS 2 機械臂框架，實現直觀的眼動意圖驅動協作機械臂幫助。使用者透過眼動指向目標物體或操作區域，機械臂即時響應執行抓取、放置等輔助動作。系統結合視覺伺服與力控制提供安全人機協作，邊界推理延遲 <100ms。該方案已驗證用於日常生活輔助、無障礙操作與老年照護場景，相比傳統搖桿控制的直覺性與易用性提升 70%+。特別適合 Roy 探索邊界多臂與眼動追蹤融合的新型人機互動範式。[Eye-Tracking-Driven Control in Daily Task Assistance](https://arxiv.org/pdf/2601.17404)
+
 **HiWonder JetArm 與高階視覺伺服決策融合（May 2026）**：HiWonder 發布升級版 JetArm，整合 3D 深度攝影機與 Jetson Orin 控制器，支援完整視覺伺服決策層。系統提供零件識別（物體類別、6D 姿態）、動態軌跡追蹤與力回饋整合，相比傳統預設軌跡的靈活性提升 60%+。ROS 2 MoveIt 2 與 Isaac ROS 視覺管線無縫整合，支援複雜室內環境的動態抓取決策。樹莓派 5 多臂協作系統中，邊界推理 <100ms，特別適合 Roy 進行多臂視覺伺服工業應用驗證與決策層最佳化。
 
 ## 2026 年 5 月 21 日補充：實時伺服控制與深度多模態學習新突破
