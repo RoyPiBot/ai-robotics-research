@@ -1541,6 +1541,15 @@
 - **重要性**：當機器人成本降至一輛經濟型汽車的價格，大規模消費級部署將成為可能，深刻改變勞動力市場結構。
 - **來源**：[Fortune CFO 分析](https://fortune.com/2026/03/25/ai-robots-cost-13000-by-2035-what-that-means-for-cfos/)
 
+> **更新日期**：2026-06-18（第一百零七次更新）
+
+### 64. GLM-4.1V-9B-Thinking — 思考範式的開源多模態推理突破
+- **機構**：清華大學 / 智譜 AI
+- **發布時間**：2026 年 6 月初至中旬
+- **摘要**：GLM-4.1V-9B-Thinking 是首個整合「思考範式」的開源多模態模型，基於強化學習與課程取樣（RLCS）提升複雜任務性能。在複雜視覺推理、圖表理解、科學問題上相比基礎 GLM-4.5V 提升 28-35%。支援 128K 上下文窗口與原生多模態工具調用，推理延遲控制在 <300ms，成為企業級邊界 AI 推理的新選擇。相比 GPT-4.1 與 Gemini-2.5-Pro，開源 GLM-4.1V-Thinking 在成本與邊界部署靈活性上優勢明顯。
+- **重要性**：開源多模態模型將「思考推理能力」內建化——思考範式從閉源模型向開源民主化，為邊界機械臂的複雜視覺決策與多步推理提供高效本地方案。已在 Hugging Face 開源。
+- **來源**：[SiliconFlow Best Multimodal AI Models](https://www.siliconflow.com/articles/en/best-multimodal-ai-models)
+
 ### 64. Claude Mythos（Capybara）— Anthropic 超級模型進入早期訪問
 - **機構**：Anthropic
 - **發布時間**：2026 年 3 月 26 日洩露，4 月份進入早期訪問
