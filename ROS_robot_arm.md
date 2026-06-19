@@ -6647,6 +6647,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **FPGA 場定向控制（FOC）與 ROS 2 邊界決策融合加速（June 2026）**：ACM HEART 2025 最新發表整合 FPGA 加速的場定向控制演算法與 ROS 2 即時決策層，將多臂力控反應時間控制在 6.1ms 周期內。該系統原生支援分散式力感測器數據融合、多臂碰撞檢測與同步力矩限制調整，樹莫派邊界層可利用專用力控硬體實現 <2ms 多臂力反饋決策延遲。該架構特別適合人機協作環境的即時安全力限制與高精度遠端操縱應用。
 
+## 2026 年 6 月 20 日補充：PAL Robotics 新生成機械臂平台與實時協作決策標準
+
+**PAL Robotics 新生成機械臂平台 — 1 KHz 低層控制與 ROS 2 Humble 標準整合（May 2026）**：PAL Robotics 於 2026 年 5 月發表全新機械臂平台，特別針對高精度協作應用設計。該平台搭載 1 KHz 低層控制迴路，透過 ROS 2 Humble 高效硬體抽象層驅動，支援樹莫派 5 邊界層的即時決策融合與視覺伺服反饋。該新平台已公開發表預計於 ICRA 2026 維也納年會展示，商業化銷售預計於 2026 年下半年啟動。樹莫派邊界多臂系統應關注該平台之生產級可靠性驗證，作為未來工業化部署的標準協作臂參考。[[PAL Robotics 新聞稿](https://roboticsandautomationnews.com/2026/05/14/pal-robotics-unveils-new-robotic-arm-platform-for-advanced-ai-driven-manipulation/101537/)]
+
+**ROS-Industrial 邊界視覺伺服與自適應控制標準整合（June 2026）**：ROS-Industrial 官方將視覺伺服與邊界決策的標準框架擴展至 Humble/Jazzy LTS 版本，樹莫派 5 邊界層搭配該標準框架可直接整合 Intel RealSense/Luxonis OAK-D 深度攝影機，實現即時視覺特徵追蹤與力控融合的無縫協作。該標準化整合降低多臂邊界系統的開發複雜度，為工業化部署奠定完整的軟體工具鏈。
+
 ## 2026 年 6 月 20 日補充：邊界 VLA 推理優化與工業機械臂生態擴展
 
 **DySL-VLA 與 RAPID 邊界 VLA 推理優化框架（June 2026）**：最新研究推出 DySL-VLA（Dynamic-Static Layer-Skipping VLA）與 RAPID 邊界推理架構，聚焦視覺語言動作模型在樹莫派 5 邊界環境的高效部署。DySL-VLA 採用動態層跳過技術，根據輸入複雜度自適應調整推理深度，相比傳統 VLA 推理延遲降低 30-40%。RAPID 框架進一步支援邊界與雲端推理動態分割，複雜操縱任務的推理延遲控制在 80-120ms，支援即時決策融合、多臂協作與力反饋控制。該方案特別適合邊界計算資源受限環境下的強化學習策略優化與自適應多臂協作決策。
