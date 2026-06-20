@@ -6675,3 +6675,7 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 **ROSOrin Pro — 雙臂協作多感測融合與知覺驅動決策框架（June 2026）**：ROSOrin Pro 整合 6-DOF 機械臂對、TOF LiDAR SLAM、3D 立體視覺與 AI 語音互動模組。該平台透過統一 ROS 2 Humble 控制棧實現多感測融合，視覺與觸覺反饋同步於樹莫派邊界決策層，支援複雜的雙臂協作組裝、柔物操控與人機互動場景。ROSOrin Pro 已驗證應用於精密組裝與工業檢測，提供工業級多臂視覺伺服系統的完整參考架構與實戰驗證經驗。
 
 **ROS 2 工業機械臂 OEM 驅動生態爆發式擴展（June 2026）**：自 2026 年初至今，全球已有 23+ 工業與協作機械臂廠商推出官方 ROS 2 驅動，新增 FANUC、Kawasaki、ABB 等傳統工業巨頭與 PAL Robotics、Unitree、HiWonder 等新興平台。全球已有 129+ 官方認證 ROS 2 相容機械臂、夾爪、感測器平台涵蓋教育級（G-ARM €171）至工業級（>100kg），樹莫派 5 邊界層可與任意「Great」評級驅動的機械臂無縫整合，加速多臂系統原型開發與規模化部署。
+
+## 2026 年 6 月 20 日補充：ROS 2 Kilted Kaiju 與 Zenoh 工業級通訊層標準化
+
+**ROS 2 Kilted Kaiju 發行版本與 Zenoh 中介軟體標準化（June 2026）**：Open Robotics 發布 ROS 2 Kilted Kaiju (KK) 最新穩定版本，提升 Zenoh 為 Tier 1 RMW（中介軟體層）。Zenoh 相比 DDS 實現 30-50% 的網路延遲降低，特別適合邊界多臂系統跨樹莓派叢集的實時協作決策。ROS 2 KK 搭配 Zenoh 可支援 <5ms 多臂協調延遲與分散式邊界計算，為工業級機械臂網路部署標準化奠定基礎。新版本支援至 2026 年 11 月，樹莫派 5 邊界多臂系統應優先採納 Zenoh 作為跨機器人通訊層實現低延遲協作。[[ROS 2 Kilted Kaiju 新聞](https://www.openrobotics.org/blog/tag/ROS+2)]
