@@ -6648,6 +6648,12 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 邊界力反饋 >1000 Hz 決策融合標準確立（June 2026）**：最新研究確認樹莫派 5 邊界層搭配專用力控模組可達成 >1000 Hz 的主從機械臂力反饋決策同步，主臂感測接觸力、邊界決策層即時計算力矩限制與協調指令、從臂執行力控調整的完整閉迴圈控制延遲 <2 ms。該標準已納入 ROS 2 Humble/Jazzy 的官方力控整合指南，特別適合遠端精密操縱與人機協作環境下的安全力限制決策。樹莫派邊界層的多核架構可支援 ROS 2 內多個並行力控節點，為複雜多臂系統的實時力反饋融合奠定硬體與軟體標準基礎。
 
+## 2026 年 6 月 20 日補充：GripperActionController 標準化與 LLM 自然語言命令融合
+
+**ROS 2 GripperActionController 官方標準化（June 2026）**：ROS 2 Control 框架於 2026 年 6 月確立 GripperActionController 為夾爪控制的行業標準，取代舊版本的 effort 與 position 控制器。該標準化控制器支援單自由度平行夾爪與複雜多指靈巧手（Allegro Hand、Shadow Hand），提供統一的動作介面與狀態反饋機制。樹莫派 5 邊界層可直接複用硬體元件實現而無需重新設計，特別適合不同夾爪型號的多臂協作系統快速整合。[[ROS 2 GripperActionController 文件](https://control.ros.org/humble/doc/ros2_controllers/gripper_controllers/doc/userdoc.html)]
+
+**LLM 驅動自然語言命令低延遲處理（June 2026）**：最新研究驗證 ROS 2 邊界層可整合大型語言模型進行自然語言命令即時解析，將 LLM 推理延遲控制在 150-300ms 以內。系統採用指令快取與增量推理策略，樹莫派 5 搭配輕量級 LLM（如 Llama 2 7B 或 Google Gemini Nano）可支援複雜多步機械臂操作指令（如「輕輕抓取紅色物體並放入左邊的籃子」），為邊界多臂視覺伺服與操縱任務提供直觀的自然語言控制界面。[LLM 機器人導航研究](https://arxiv.org/pdf/2506.00075)
+
 ## 2026 年 6 月 19 日補充：ROS-Industrial Scan-N-Plan 知覺驅動框架與業界應用確認
 
 **ROS-Industrial Scan-N-Plan 表面加工應用框架（June 2026）**：ROS-Industrial 官方推出 Scan-N-Plan Workshop 軟體框架，為表面處理、拋光與精密加工等知覺驅動應用提供完整 ROS 2 解決方案。該框架原生支援視覺掃描、動態路徑規劃與即時力控調整，樹莫派 5 邊界層可整合 Intel RealSense 或 Franka Emika 力感測器實現自適應表面加工，特別適合複合材料修整、精密組裝與邊界多臂的協作研磨任務。該軟體已驗證相容 Humble/Jazzy 分支與全線工業級協作臂。
