@@ -6685,3 +6685,5 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 ## 2026 年 6 月 20 日補充：ROS 2 Kilted Kaiju 與 Zenoh 工業級通訊層標準化
 
 **ROS 2 Kilted Kaiju 發行版本與 Zenoh 中介軟體標準化（June 2026）**：Open Robotics 發布 ROS 2 Kilted Kaiju (KK) 最新穩定版本，提升 Zenoh 為 Tier 1 RMW（中介軟體層）。Zenoh 相比 DDS 實現 30-50% 的網路延遲降低，特別適合邊界多臂系統跨樹莓派叢集的實時協作決策。ROS 2 KK 搭配 Zenoh 可支援 <5ms 多臂協調延遲與分散式邊界計算，為工業級機械臂網路部署標準化奠定基礎。新版本支援至 2026 年 11 月，樹莫派 5 邊界多臂系統應優先採納 Zenoh 作為跨機器人通訊層實現低延遲協作。[[ROS 2 Kilted Kaiju 新聞](https://www.openrobotics.org/blog/tag/ROS+2)]
+
+**FANUC/Comau/Schunk 傳統工業臂 ROS 2 支援全面啟動（June 2026）**：全球主流工業機械臂廠商在 2026 年 ICRA 與 Automate 期間宣布全面支援 ROS 2，涵蓋 FANUC M-10iD/12、Comau NJ-135 與 Schunk PGN-plus 系列。各廠商推出官方 ROS 2 Control 驅動與 Zenoh RMW 適配，使樹莫派 5 邊界層可直接驅動工業級機械臂實現低延遲協作決策。該全球生態轉向標誌著 ROS 2 已成為工業機械臂控制的事實標準，特別適合邊界多臂系統的規模化工業部署。[[ROS News June 2026](https://discourse.openrobotics.org/t/ros-news-for-the-week-of-june-8th-2026/55449)]
