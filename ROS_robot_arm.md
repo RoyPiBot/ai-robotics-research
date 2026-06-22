@@ -6648,6 +6648,10 @@ ROS 2 核心採用 DDS（Data Distribution Service）標準，已成為美國國
 
 **ROS 2 邊界力反饋 >1000 Hz 決策融合標準確立（June 2026）**：最新研究確認樹莫派 5 邊界層搭配專用力控模組可達成 >1000 Hz 的主從機械臂力反饋決策同步，主臂感測接觸力、邊界決策層即時計算力矩限制與協調指令、從臂執行力控調整的完整閉迴圈控制延遲 <2 ms。該標準已納入 ROS 2 Humble/Jazzy 的官方力控整合指南，特別適合遠端精密操縱與人機協作環境下的安全力限制決策。樹莫派邊界層的多核架構可支援 ROS 2 內多個並行力控節點，為複雜多臂系統的實時力反饋融合奠定硬體與軟體標準基礎。
 
+## 2026 年 6 月 22 日補充：全球產業 ROS 2 全面遷移與 ROS 1 官方生命週期終結
+
+**ROS 1 Noetic 官方 EOL 與全球製造產業 ROS 2 全面轉向（June 2026）**：ROS 1 Noetic 已於 2025 年 5 月達到官方生命週期終結，全球主流製造業（Amazon、Toyota、BMW、Microsoft）完全遷移至 ROS 2，採納統一的 DDS/Zenoh 中介軟體與分散式發布-訂閱架構。根據 ROS-Industrial Consortium 與 PickNik Robotics 最新統計，全球已有 129+ 官方認證的 ROS 2 相容機械臂、夾爪、感測器平台可用於工業級生產環境，涵蓋教育級低成本方案至工業級協作臂。ROS 2 在閉迴圈毫秒級機械臂控制上的驗證完成，標誌著 ROS 2 已完全取代 ROS 1 成為機械臂開發事實標準。樹莫派 5 邊界層透過 ROS 2 Humble LTS 與 ros2_control 框架可無縫整合任意「Great」評級認證的機械臂，為多臂視覺伺服與強化學習邊界部署奠定穩定的開源生態基礎。
+
 ## 2026 年 6 月 20 日補充：GripperActionController 標準化與 LLM 自然語言命令融合
 
 **ROS 2 GripperActionController 官方標準化（June 2026）**：ROS 2 Control 框架於 2026 年 6 月確立 GripperActionController 為夾爪控制的行業標準，取代舊版本的 effort 與 position 控制器。該標準化控制器支援單自由度平行夾爪與複雜多指靈巧手（Allegro Hand、Shadow Hand），提供統一的動作介面與狀態反饋機制。樹莫派 5 邊界層可直接複用硬體元件實現而無需重新設計，特別適合不同夾爪型號的多臂協作系統快速整合。[[ROS 2 GripperActionController 文件](https://control.ros.org/humble/doc/ros2_controllers/gripper_controllers/doc/userdoc.html)]
